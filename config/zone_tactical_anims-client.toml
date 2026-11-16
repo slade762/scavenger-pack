@@ -263,6 +263,16 @@
 	cityFog = 56.0
 	#Anomaly Zone health/stamina panel: show health only while hurt and stamina only while it's being used.
 	vitalsAutoHide = true
+	#Mark the spots for your active PDA jobs on screen (diamond + distance).
+	pdaJobMarkers = true
+	#Zone soundtrack: pick music by place (city, underground, the Bar, day/night, emission) from the Zone Soundtrack resource pack.
+	zoneMusic = true
+	#Volume of Anomaly Zone's emission siren and rumble (1.0 = as the mod ships it).
+	#Range: 0.0 ~ 1.0
+	emissionVolume = 0.4
+	#PDA screen brightness while a shader pack is on (Anomaly Zone paints it at 0.35; shaders then darken it further).
+	#Range: 0.1 ~ 2.0
+	pdaShaderBrightness = 1.0
 
 [holster]
 	#Gun in hotbar slot 1 is slung on your back when not held. 1 draws it, 1 again (or H) slings it.
@@ -288,6 +298,8 @@
 	scale = 0.52
 	#Slinging goes to a hidden 10th slot = truly empty hands (false = an empty/other hotbar slot).
 	emptyHand = true
+	#Quest-giver NPCs (CustomNPCs) wear the gun they hold slung on their back instead of in their hands.
+	npcSling = true
 
 	#Where the slung gun goes while a backpack is worn (strapped to the backpack's side).
 	[holster.backpack]
@@ -317,11 +329,11 @@
 	enabled = true
 	#Grass/leaf colour drained toward grey (0 = vanilla, 1 = fully grey).
 	#Range: 0.0 ~ 1.0
-	grassDesaturate = 0.0
+	grassDesaturate = 0.65
 	#Dry tint mixed into grass/leaves (#RRGGBB).
 	grassTintColor = "#7E7650"
 	#Range: 0.0 ~ 1.0
-	grassTint = 0.0
+	grassTint = 0.3
 	#Water surface colour (#RRGGBB) and how much it replaces the biome's own.
 	waterColor = "#48523C"
 	#Range: 0.0 ~ 1.0
@@ -332,8 +344,8 @@
 	waterFog = 0.85
 	#Sky colour drained toward grey.
 	#Range: 0.0 ~ 1.0
-	skyDesaturate = 0.0
+	skyDesaturate = 0.65
 	#Distance fog colour drained toward grey.
 	#Range: 0.0 ~ 1.0
-	fogDesaturate = 0.0
+	fogDesaturate = 0.55
 

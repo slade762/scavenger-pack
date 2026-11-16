@@ -68,3 +68,9 @@
 	#Turn off Into The Zone's emission (the one without the siren). Anomaly Zone's emission stays.
 	itzEmissionsOff = true
 
+[pda]
+	#Multiplier on the wait between new PDA contract offers. Anomaly Zone waits 30-60 min after a job (5-15 min otherwise);
+	#0.33 makes that about 10-20 min (2-5 min). 1.0 = Anomaly Zone's default.
+	#Range: 0.05 ~ 1.0
+	contractWait = 0.33
+

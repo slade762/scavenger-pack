@@ -1,7 +1,8 @@
 {
-  "shaderHash": "3515dbc35992fe8888239d6c0b0c31da81d7800bec10127a4040209251c63162",
+  "shaderHash": "c5865195795779fe4dfc4aa2a6cc272db6c1bd82989c9edb123a585bd393e989",
   "EPVersion": "1.10.5",
-  "styleReimagined": true,
+  "styleReimagined": false,
   "styleUnbound": false,
-  "firstEPOptionsTimestamp": "2026-11-16T03:56:26.435118200Z"
+  "firstEPOptionsTimestamp": "2026-11-16T10:13:30.669597400Z",
+  "timesSettingsChanged": 5
 }

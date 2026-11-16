@@ -186,7 +186,7 @@ hash = "a5ba22e63061c1fb67f0f895f17681351eaeccc225faef966c29ee630593275e"
 
 [[files]]
 file = "config/euphoria_patcher/.data.json"
-hash = "7bb8a633dd8e6e77c86d80a7a75f5a0c4c891c1201f8f32544cf2281460b0937"
+hash = "d252694ca1a89fbe655e21a53b7e2e72b67a2939ccd7f5ca21f03c92ab6774e5"
 
 [[files]]
 file = "config/euphoria_patcher/settings.toml"
@@ -678,7 +678,7 @@ hash = "f72dc2bce12a55066bd33e50c47b1ad33b1bdda65778cb5653d876e1fec3694d"
 
 [[files]]
 file = "config/oculus.properties"
-hash = "78a22de6fb00f44503c859a16b1e174d6d21fb54b3367c7a5e8914d7f2499e34"
+hash = "9132584a4d56c6c80b99a2fa534f0f48532fbe139d547e7a63cce68428307627"
 
 [[files]]
 file = "config/particlerain/config.json"
@@ -1474,11 +1474,11 @@ hash = "e766740f523b7da0d0cdc9db47f6e69c16489509c6b5e1eee63742c295f5f508"
 
 [[files]]
 file = "config/zone_tactical_anims-client.toml"
-hash = "95de23522744f8bf9feb6dd4ca933e72cd5507c3274cf960849cb31a088c80bb"
+hash = "6b374da2bb9a15000de37d757a71ed580bbc62db275af7578eca43d8d9a61b21"
 
 [[files]]
 file = "config/zone_tactical_anims-common.toml"
-hash = "e2dd595c64c3c503188d7c0369882222397e44ef5fd8031964d72761183e521f"
+hash = "b06526708301601be2e5fdea13b9fe6dc8e364980e80a47858b5fdb267456bd3"
 
 [[files]]
 file = "customnpcs/assets/customnpcs/sounds.json"
@@ -2222,11 +2222,11 @@ metafile = true
 
 [[files]]
 file = "mods/zone_tactical_anims-0.1.0.jar"
-hash = "29a59fd053c09c0089946b2c10e4613cefd9cddb83588277ed40041d822bad51"
+hash = "fce17111962830e68c76339af501279121a53db343c2cce071594afb2b91d79c"
 
 [[files]]
 file = "options.txt"
-hash = "a2b862d0d27a5e877489940d06ce02b270f0880c32e71e31174fc52c6a292e93"
+hash = "4b9e56e310da17a8251c76779126addd7d20d70aa740db08161db48817b66443"
 preserve = true
 
 [[files]]
@@ -2248,13 +2248,8 @@ hash = "4fb4dbe302df1dd784ca4a2cd51be6f2cff96817eee1d918a57fb0eaee5ad3ea"
 preserve = true
 
 [[files]]
-file = "shaderpacks/ComplementaryReimagined_r5.9.3.zip.txt"
-hash = "69eda2e50416816360e9daf21efbc3375d9a0826aa257c3fd3a0847b46d23031"
-
-[[files]]
-file = "shaderpacks/complementaryreimagined-r5-9-3.pw.toml"
-hash = "08c118963b29e6fd9d0c901aec68fced00dde409af5ab17f8ad3287c2dbac172"
-metafile = true
+file = "shaderpacks/ComplementaryReimagined_r5.9.3 + EuphoriaPatches_1.10.5.txt"
+hash = "923099f839727de310410901b81231456c77ad567533fdd6b13c48f0ffb76605"
 
 [[files]]
 file = "tacz/.export-state.json"
