@@ -1847,11 +1847,6 @@ hash = "4e50ec7cfbb16937a03a3a46fb619245abe943ef86c1a3afe29d7cf63bd45011"
 metafile = true
 
 [[files]]
-file = "mods/concord-deco-2-4-0.pw.toml"
-hash = "2cef40fb43101ad751efbe19255092adc1499b5fb69cb66c77f06c9fb428626c"
-metafile = true
-
-[[files]]
 file = "mods/controlling-forge-1-20-1-12-0-2.pw.toml"
 hash = "99683ca82c37cb67028db0895f8d78894b77207bc01c61c9edb987ff83323f42"
 metafile = true
@@ -1929,11 +1924,6 @@ metafile = true
 [[files]]
 file = "mods/enhancedai-3-3-7-5.pw.toml"
 hash = "9cb542d89b3609f0a89918dad243ebf5601447eff39303062cea5d115c3a78a4"
-metafile = true
-
-[[files]]
-file = "mods/entityculling-forge-1-12-1-mc1-20-1.pw.toml"
-hash = "f580f6eafa0b7fad2775151a195bd4c9a90c439584293a1def2a86b5479dda77"
 metafile = true
 
 [[files]]
@@ -2016,11 +2006,6 @@ hash = "d5d398b1bb9047a26b7067207b2f24cb80e9c97c4673226a81e5b5b9ed90c9cb"
 metafile = true
 
 [[files]]
-file = "mods/intothezone-1-1-1-20-1.pw.toml"
-hash = "f7c1f937e6728f6201064ff64a91c9f7e1c7e3208ec0db4f8631aeb12e86668a"
-metafile = true
-
-[[files]]
 file = "mods/inventoryfree-1-20-1-3-2-1.pw.toml"
 hash = "422970edba5dc5d64dc83ac97caf42d7334651b4be0eef3f64044d73948a81e5"
 metafile = true
@@ -2081,11 +2066,6 @@ hash = "a387f7dcb6566e93149041783437f19b6faee8209f44bf2caf054b2b816a2a41"
 metafile = true
 
 [[files]]
-file = "mods/notenoughanimations-forge-1-12-7-mc1-20-1.pw.toml"
-hash = "bd47adeafbd59f808a41157f597d60e1ea5e96b569b557bb89b33a6efb20a3fc"
-metafile = true
-
-[[files]]
 file = "mods/oculus-mc1-20-1-1-8-0.pw.toml"
 hash = "4e75c5d3a2e65be0f35d68c7fed7e0aa1068b8d6399476f457d0205a284ab252"
 metafile = true
@@ -2108,11 +2088,6 @@ metafile = true
 [[files]]
 file = "mods/player-jetpack-forge-1-20-1-1-0-0.pw.toml"
 hash = "0ed0b25c37cd05a38531b788d38b74e4c067cc9029536446f8f928536a39438e"
-metafile = true
-
-[[files]]
-file = "mods/project-rubezh-2-5-5-forge-1-20-1.pw.toml"
-hash = "f2e955fa8df7f6e3d583641d99dc436f1174f6a5875d9b9da2a4606dc96e45db"
 metafile = true
 
 [[files]]
@@ -2186,11 +2161,6 @@ hash = "9f583275135f3a5693c7a8757e8d520932e5a5db5711bb8c5e37c6425621dd8b"
 metafile = true
 
 [[files]]
-file = "mods/subtleeffects-forge-1-20-1-1-15-1-hotfix-1.pw.toml"
-hash = "8211af743e9ba99ec013c9d32a4e657804f419f74e691af0362a8fbd43a0f528"
-metafile = true
-
-[[files]]
 file = "mods/tacz-1-20-1-1-1-8-hotfix2.pw.toml"
 hash = "9206260775faf6b7ca962c2a355ed3ac8326fdd5adb7610cef9b06527c260d91"
 metafile = true
@@ -2203,11 +2173,6 @@ metafile = true
 [[files]]
 file = "mods/tacznpcs-2-1-0-1-20-1.pw.toml"
 hash = "2596da86a8c7e1f99777e4330140d3f569145a003583c3ca64eb8ecb4d811165"
-metafile = true
-
-[[files]]
-file = "mods/tarkovdayz-1-0-2-forge-1-20-1.pw.toml"
-hash = "fcc6eb350fa95e13c8ab92ffa978d71b804fdea8329c6e025ba3b7ad7f477b1f"
 metafile = true
 
 [[files]]
@@ -2257,7 +2222,7 @@ metafile = true
 
 [[files]]
 file = "mods/zone_tactical_anims-0.1.0.jar"
-hash = "a9f6bbd60cf36029e85ccd00dd50be7114daf384ae5a3dca06c2909cbb2a4a74"
+hash = "29a59fd053c09c0089946b2c10e4613cefd9cddb83588277ed40041d822bad51"
 
 [[files]]
 file = "options.txt"
@@ -2267,11 +2232,6 @@ preserve = true
 [[files]]
 file = "resourcepacks/fa-player-v1-0.pw.toml"
 hash = "89f43eea800ad0400abedcadc8d8ae987ad92beb8c6b91e870ec62a503ea64c4"
-metafile = true
-
-[[files]]
-file = "resourcepacks/freanimated-3blue-7v0-10.pw.toml"
-hash = "e812b5e16d0cf2947d6523035d6b84a6166a37c0e6f69c07050073def2ae51a3"
 metafile = true
 
 [[files]]
