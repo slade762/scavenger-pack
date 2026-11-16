@@ -1,0 +1,13 @@
+name = "TacZ Mesh Loader [TML]"
+filename = "tacz-mesh-loader-forge-1.20.1-0.1.8.1.jar"
+side = "both"
+
+[download]
+url = "https://edge.forgecdn.net/files/9296/532/tacz-mesh-loader-forge-1.20.1-0.1.8.1.jar"
+hash-format = "sha1"
+hash = "e6dbf98b35770d7bb53c82baa2264b6543ccf5ca"
+
+[update]
+[update.curseforge]
+file-id = 9296532
+project-id = 1549522

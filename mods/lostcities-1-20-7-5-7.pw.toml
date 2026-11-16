@@ -1,0 +1,13 @@
+name = "The Lost Cities"
+filename = "lostcities-1.20-7.5.7.jar"
+side = "both"
+
+[download]
+url = "https://edge.forgecdn.net/files/9055/133/lostcities-1.20-7.5.7.jar"
+hash-format = "sha1"
+hash = "a92d8e537aa86297468629503f895c102ed132e5"
+
+[update]
+[update.curseforge]
+file-id = 9055133
+project-id = 269024

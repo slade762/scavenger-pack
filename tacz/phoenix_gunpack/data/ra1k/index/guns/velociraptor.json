@@ -1,0 +1,9 @@
+{
+    "name": "ra1k.gun.akv.name",
+    "display": "ra1k:velociraptor_display",
+    "data": "ra1k:velociraptor_data",
+    "tooltip": "ra1k.gun.akv.desc",
+    "type": "rifle",
+    "item_type": "modern_kinetic",
+    "sort": 23
+}

@@ -1,0 +1,120 @@
+{
+  "ammo": "tacz:545x39",
+  "ammo_amount": 30,
+  "extended_mag_ammo_amount": [
+    40,
+    45,
+    80
+  ],
+  "script": "ra1k:gun_logic",
+  "script_param": {
+    "reload_feed": 1.23,
+    "reload_cooldown": 2.1,
+    "empty_feed": 2.33,
+    "empty_cooldown": 2.6,	
+	
+	
+	"jam_chance": 0.01, 
+    "jam_cooldown": 1.2,
+	
+    "reload_xmag_1_feed": 1.43,
+    "reload_xmag_1_cooldown": 2.1,
+    "empty_xmag_1_feed": 2.53,
+    "empty_xmag_1_cooldown": 2.8,	
+    "reload_xmag_2_feed": 1.43,
+    "reload_xmag_2_cooldown": 2.1,
+    "empty_xmag_2_feed": 2.53,
+    "empty_xmag_2_cooldown": 2.8,
+    "reload_xmag_3_feed": 2.2,
+    "reload_xmag_3_cooldown": 2.9,
+    "empty_xmag_3_feed": 2.6,
+    "empty_xmag_3_cooldown": 3.0
+  },
+  "can_crawl": true,
+  "can_slide": true,
+  "bolt": "closed_bolt",
+  "rpm": 700,
+  "bullet": {
+    "life": 0.8,
+    "bullet_amount": 1,
+    "damage": 13,
+    "tracer_count_interval": 0,
+    "extra_damage": {
+      "armor_ignore": 0.20,
+      "head_shot_multiplier": 1.4,
+      "damage_adjust": [
+        {"distance": 45, "damage": 7.5},
+        {"distance": 90, "damage": 7},
+        {"distance": "infinite", "damage": 6.5}
+      ]
+    },
+    "speed": 360,
+    "gravity": 0.15,
+    "knockback": 0,
+    "friction": 0.02,
+    "ignite": {
+      "entity": false,
+      "block": false
+    },
+    "ignite_entity_time": 3,
+    "pierce": 2
+  },
+  "fire_sound": {
+    "fire_multiplier": 1.0,
+    "silence_multiplier": 1.0
+  },
+  "reload": {
+    "type": "magazine",
+    "infinite": false,
+    "feed": {
+      "empty": 2.53,
+      "tactical": 1.43
+    },
+    "cooldown": {
+      "empty": 2.8,
+      "tactical": 2.1
+    }
+  },
+  "draw_time": 0.42,
+  "put_away_time": 0.63,
+  "aim_time": 0.3,
+  "sprint_time": 0.2,
+  "weight": 4.2,
+  "movement_speed": {
+    "base": 0.0,
+    "aim": -0.2,
+    "reload": -0.15
+  },
+  "fire_mode": [  
+    "auto",
+	"semi"
+  ],
+  "crawl_recoil_multiplier": 0.8,
+  "recoil": {
+    "pitch": [
+      {"time": 0, "value": [0.85, 0.85]},
+      {"time": 0.25, "value": [0.6, 0.6]},
+      {"time": 0.45, "value": [0.175, 0.175]},
+      {"time": 0.6, "value": [0, 0]}
+    ],
+    "yaw": [
+      {"time": 0, "value": [-0.5, 0.5]},
+      {"time": 0.25, "value": [0, 0]}
+    ]
+  },
+  "hurt_bob_tweak_multiplier": 0.05,
+  "inaccuracy": {
+    "stand": 0.1,
+    "move": 0.15,
+    "sneak": 0.1,
+    "lie": 0.1,
+    "aim": 0.10
+  },
+  "allow_attachment_types": [
+    "scope",
+    "laser",
+    "grip",
+    "muzzle",
+    "extended_mag"
+  ]
+}

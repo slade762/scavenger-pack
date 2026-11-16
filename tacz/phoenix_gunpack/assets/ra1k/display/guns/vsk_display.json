@@ -1,0 +1,57 @@
+{
+  "model": "ra1k:gun/vsk_geo",
+  "texture": "ra1k:gun/uv/vsk",
+  "hud": "ra1k:gun/hud/vsk",
+  "slot": "ra1k:gun/slot/vsk",
+  "lod": {
+    "model": "ra1k:gun/lod/vsk",
+    "texture": "ra1k:gun/lod/vsk"
+  },
+  "animation": "ra1k:vsk",
+  "state_machine": "ra1k:ar_state_machine",
+  "default_animation": "ra1k:1",
+  "third_person_animation": "default",
+  "transform": {
+    "scale": {
+      "thirdperson": [0.6, 0.6, 0.6],
+      "ground": [0.6, 0.6, 0.6],
+      "fixed": [1.2, 1.2, 1.2]
+    }
+  },
+  "muzzle_flash": {
+    "type": "renew",
+    "texture": "tacz:flash/common_muzzle_flash",
+    "scale": 0.75,
+    "smoke_scale": 1.65,
+    "initial_speed_scale": 1.7,
+    "smoke_particle_count": 16
+  },
+  "shell": {
+    "initial_velocity": [5, 2, 1],
+    "random_velocity": [1, 1, 0.25],
+    "acceleration": [0.0, -10, 0.0],
+    "angular_velocity": [360, -1200, 90],
+    "living_time": 1.0
+  },
+  "ammo": {
+    "tracer_color": "#e3c372"
+  },
+  "sounds": {
+     "silence": "tacz:qbz_191/qbz191_silence",
+    "silence_3p": "tacz:qbz_191/qbz191_silence_3p",
+	"shoot": "tacz:qbz_191/qbz191_shoot",
+    "shoot_3p": "tacz:qbz_191/qbz191_shoot_3p",
+    "inspect_empty": "",
+    "draw": "tacz:mk14/mk14_draw",
+	"reload_empty": "",
+    "reload_tactical": "",
+    "put_away": "tacz:mk14/mk14_put_away",
+    "dry_fire": "tacz:dry_fire",
+    "fire_select": "tacz:fire_select",
+    "head_hit": "tacz:head_hit",
+    "flesh_hit": "tacz:flesh_hit",
+    "kill": "tacz:kill",
+    "melee_push": "tacz:melee_stock/melee_stock_01",
+    "melee_stock": "tacz:melee_stock/melee_stock_03"
+  }
+}

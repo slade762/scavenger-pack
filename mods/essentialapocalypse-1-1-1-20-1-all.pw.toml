@@ -1,0 +1,13 @@
+name = "Essential Apocalypse"
+filename = "essentialapocalypse-1.1-1.20.1-all.jar"
+side = "both"
+
+[download]
+url = "https://edge.forgecdn.net/files/7887/1/essentialapocalypse-1.1-1.20.1-all.jar"
+hash-format = "sha1"
+hash = "c9a1449bf5423734fd99b446b0b4a1d3cf4a34e6"
+
+[update]
+[update.curseforge]
+file-id = 7887001
+project-id = 1224643

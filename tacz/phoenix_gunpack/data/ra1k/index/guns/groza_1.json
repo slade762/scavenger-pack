@@ -1,0 +1,8 @@
+{
+  "name": "ra1k.gun.groza_1.name",
+  "display": "ra1k:groza_1_display",
+  "data": "ra1k:groza_1_data",
+  "tooltip": "ra1k.gun.groza_1.desc",
+  "type": "rifle",
+  "sort": 23
+}

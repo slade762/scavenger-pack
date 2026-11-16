@@ -1,0 +1,20 @@
+{
+    "materials": [
+        {
+          "item": {
+            "tag": "forge:ingots/gold"
+          },
+          "count": 30
+        },
+        {
+          "item": {
+            "tag": "forge:ingots/iron"
+          },
+          "count": 80
+        }
+    ],
+    "result": {
+      "type": "gun",
+      "id": "ra1k:sr_2m"
+    }
+  }

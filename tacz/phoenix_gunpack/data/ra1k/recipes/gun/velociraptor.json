@@ -1,0 +1,21 @@
+{
+  "materials": [
+	{
+      "item": {
+        "tag": "forge:ingots/iron"
+      },
+      "count": 75
+    },
+	{
+      "item": {
+        "tag": "forge:gems/lapis"
+      },
+      "count": 10
+    }
+  ],
+  "result": {
+    "type": "gun",
+    "id": "ra1k:velociraptor"
+  },
+  "type": "tacz:gun_smith_table_crafting"
+}

@@ -1,0 +1,144 @@
+{
+  "ammo": "tacz:9x21",
+  "rpm": 900,
+  "script": "ra1k:gun_logic",
+   "script_param": {
+    "reload_feed": 1.3,
+    "reload_cooldown": 2.1,
+    "empty_feed": 1.83,
+    "empty_cooldown": 2.6,	
+	
+	"jam_chance": 0.01, 
+    "jam_cooldown": 1.3,
+	
+    "reload_xmag_1_feed": 1.33,
+    "reload_xmag_1_cooldown": 2.1,
+    "empty_xmag_1_feed": 1.83,
+    "empty_xmag_1_cooldown": 2.6,	
+	
+    "reload_xmag_2_feed": 1.3,
+    "reload_xmag_2_cooldown": 2.1,
+    "empty_xmag_2_feed": 1.83,
+    "empty_xmag_2_cooldown": 2.6,
+	
+    "reload_xmag_3_feed": 1.2,
+    "reload_xmag_3_cooldown": 2.1,
+    "empty_xmag_3_feed": 1.8,
+    "empty_xmag_3_cooldown": 2.6
+  },
+  "bullet": {
+    "life": 0.8,
+    "bullet_amount": 1,
+    "damage": 10,
+    "tracer_count_interval": 0,
+    "extra_damage": {
+      "armor_ignore": 0.3,
+      "head_shot_multiplier": 1.5,
+      "damage_adjust": [
+        {"distance": 15, "damage": 8},
+        {"distance": 45, "damage": 6.5},
+        {"distance": "infinite", "damage": 4}
+      ]
+    },
+    "speed": 140,
+    "gravity": 0.1,
+    "knockback": 0,
+    "friction": 0.02,
+    "ignite": false,
+    "pierce": 1
+  },
+  //"heat":  {
+    // 过热上限
+    //"max": 50,
+    // 每发子弹过热值
+    //"per_shot": 1.3,
+    // 冷却倍率，过热值的减少速度会随着时间增加
+    // t时间(秒)内可以冷却的过热值可以参考: max = cooling_multiplier * t^2
+    //"cooling_multiplier": 1,
+    // 冷却延迟，ms
+    //"cooling_delay": 1600,
+    // 完全过热后，开始过热的延迟时间，ms
+//"over_heat_time": 3000,
+    // 以下将在使用过热进度(0-1)在最小值和最大值之间线性插值，然后与原始数值相乘
+    // 最小不准确度影响
+    //"min_inaccuracy": 1,
+    // 最大不准确度影响
+    //"max_inaccuracy": 2.2,
+    // 最小射速影响
+    //"min_rpm_mod": 1,
+    // 最大射速影响
+    //"max_rpm_mod": 1
+  //},
+  "ammo_amount": 20, 
+  "extended_mag_ammo_amount": [
+    30,
+    30,
+    30
+  ],
+  "bolt": "closed_bolt",
+  "reload": {
+    "type": "magazine",
+    "feed": {
+      "empty": 2.0,
+      "tactical": 1.73
+    },
+    "cooldown": {
+      "empty": 2.3667,
+      "tactical": 2.1333
+    }
+  },
+  "draw_time": 0.85,
+  "put_away_time": 0.4667,
+  "sprint_time": 0.21,
+  "aim_time": 0.15,
+  "weight": 2,
+  "movement_speed": {
+    "base": 0.0,
+    "aim": 0.0,
+    "reload": 0
+  },
+  "crawl_recoil_multiplier": 0.75,
+  "fire_mode": [
+    "auto",
+    "semi"
+  ],
+  "allow_attachment_types": [
+    "scope",
+	"muzzle",
+	"laser",
+    "extended_mag"
+  ],
+  "recoil": {
+    "pitch": [
+      {"time": 0, "value": [0.85, 0.85]},
+      {"time": 0.12, "value": [0.65, 0.65]},
+      {"time": 0.3, "value": [-0.2, -0.2]},
+      {"time": 0.45, "value": [0, 0]}
+    ],
+    "yaw": [
+      {"time": 0, "value": [-0.25, 0.2]},
+      {"time": 0.12, "value": [-0.25, 0.2]},
+      {"time": 0.3, "value": [0, 0]}
+    ]
+  },
+  "inaccuracy": {
+    "stand": 0.175,
+    "move": 0.262,
+    "sneak": 0.175,
+    "lie": 0.175,
+    "aim": 0.175
+  },
+  "melee": {
+    "distance": 1,
+    "cooldown": 0.6,
+    "default": {
+      "animation_type": "melee_stock",
+      "distance": 1,
+      "range_angle": 40,
+      "cooldown": 0.2,
+      "damage": 5,
+      "knockback": 0.4,
+      "prep": 0.1
+    }
+  }
+}

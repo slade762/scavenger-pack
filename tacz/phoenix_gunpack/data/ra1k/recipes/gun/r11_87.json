@@ -1,0 +1,21 @@
+{
+  "materials": [
+    {
+      "item": {
+        "tag": "forge:ingots/iron"
+      },
+      "count": 64
+    },
+	{
+      "item": {
+        "tag": "forge:gems/quartz"
+      },
+      "count": 16
+    }
+  ],
+  "result": {
+    "type": "gun",
+    "id": "ra1k:r11_87"
+  },
+  "type": "tacz:gun_smith_table_crafting"
+}

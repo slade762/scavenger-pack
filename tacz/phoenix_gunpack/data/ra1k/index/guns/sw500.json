@@ -1,0 +1,8 @@
+{
+    "name": "ra1k.gun.sw500.name",
+    "display": "ra1k:sw500_display",
+    "data": "ra1k:sw500_data",
+    "tooltip":"ra1k.gun.sw500.desc",
+    "type": "pistol",
+    "sort": 23
+}

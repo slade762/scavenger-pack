@@ -1,0 +1,13 @@
+name = "RPG Prefab Houses"
+filename = "rpgprefabhouses-1.20.1-2.1.0.jar"
+side = "both"
+
+[download]
+url = "https://edge.forgecdn.net/files/9549/134/rpgprefabhouses-1.20.1-2.1.0.jar"
+hash-format = "sha1"
+hash = "957dcec71f2e1488f332893c8dfd8f6d68a77e72"
+
+[update]
+[update.curseforge]
+file-id = 9549134
+project-id = 1728119

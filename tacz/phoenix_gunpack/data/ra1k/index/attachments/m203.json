@@ -1,0 +1,8 @@
+{
+  "name": "ra1k.attachment.m203.name",
+  "tooltip": "ra1k.attachment.ugl.desc",
+  "display": "ra1k:m203_display",
+  "data": "ra1k:ugl_data",
+  "type": "grip",
+  "sort": 23
+}

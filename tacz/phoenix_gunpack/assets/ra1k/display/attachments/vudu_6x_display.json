@@ -1,0 +1,21 @@
+{
+  "slot": "ra1k:attachment/slot/vudu",
+  "model": "ra1k:attachment/vudu_6x_geo",
+  "texture": "tacz:attachment/uv/scope_vudu",
+  "lod": {
+    "model": "ra1k:attachment/lod/vudu",
+    "texture": "ra1k:attachment/lod/vudu"
+  },
+  "zoom": [
+    6.5
+  ],
+  "views_fov": [
+    30.0
+  ],
+  "scope": true,
+  "sight": false,
+  "sounds": {
+    "install": "tacz:attachments/scope_general_c",
+    "uninstall": "tacz:attachments/scope_general_c"
+  }
+}

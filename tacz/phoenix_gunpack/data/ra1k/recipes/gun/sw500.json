@@ -1,0 +1,33 @@
+{
+  "materials": [
+    {
+      "item": {
+        "tag": "forge:gems/diamond"
+      },
+      "count": 6
+    },
+    {
+      "item": {
+        "tag": "forge:ingots/gold"
+      },
+      "count": 95
+    },
+    {
+      "item": {
+        "tag": "forge:ingots/iron"
+      },
+      "count": 164
+    },
+    {
+      "item": {
+        "tag": "forge:rods/blaze"
+      },
+      "count": 2
+    }
+  ],
+  "result": {
+    "type": "gun",
+    "id": "ra1k:sw500"
+  },
+  "type": "tacz:gun_smith_table_crafting"
+}

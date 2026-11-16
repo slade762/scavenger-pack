@@ -1,0 +1,7 @@
+{
+  "name": "ra1k.gun.hk_mp5a5.name",
+  "display": "ra1k:hk_mp5a5_bolt_display",
+  "data": "ra1k:hk_mp5a5_bolt_data",
+  "tooltip": "ra1k.gun.hk_mp5a5.desc",
+  "type": "smg"
+}

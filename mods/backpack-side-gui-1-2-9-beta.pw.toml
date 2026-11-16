@@ -1,0 +1,13 @@
+name = "Backpack Side GUI"
+filename = "backpack_side_gui-1.2.9-beta.jar"
+side = "both"
+
+[download]
+url = "https://edge.forgecdn.net/files/8592/336/backpack_side_gui-1.2.9-beta.jar"
+hash-format = "sha1"
+hash = "93b3419d25168801f692eacdb1e888fc77a92707"
+
+[update]
+[update.curseforge]
+file-id = 8592336
+project-id = 1568132

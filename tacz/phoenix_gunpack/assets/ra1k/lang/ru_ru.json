@@ -1,0 +1,372 @@
+{
+	//v1.0
+	"ra1k.gun.vss.name":"ВСС \"Винторез\"",	
+	"ra1k.gun.vss.desc":"Винтовка снайперская специальная - ад для снайпера",
+	"ra1k.gun.aksu.name":"АКС-74У",	
+	"ra1k.gun.aksu.desc":"Ксюха - лучшая подруга танкиста\n\n[Автор модели: laffey]",	
+	"ra1k.gun.akv.name":"Aklys Defense Velociraptor",
+	"ra1k.gun.akv.desc":"Веслоцерапторрррррррррр \n\n[Автор модели: Le Long]",
+	"ra1k.gun.mod4.name":"АС \"Вал\" МОД-4",
+	"ra1k.gun.mod4.desc":"Современная модифиция \"вала\"",
+	
+	//v1.1
+	"ra1k.gun.fn57.name":"FN 57",
+	"ra1k.gun.fn57.desc":"НЕ ВЗДУМАЙ ШУТИТЬ ПРО 67 \n\n[Автор модели: duskdawn]" ,
+	
+	//v1.3
+	"ra1k.gun.hk_mp5a5.name":"МП-5 А5 с болтовым затвором",
+	"ra1k.gun.hk_mp5a5.desc":"Какого ху....",
+	"ra1k.gun.ak50lite.name":"АК-50 облегченная версия",
+	"ra1k.gun.ak50lite.desc":"КОМУ ЭТО ПРИШЛО В ГОЛОВУ?!? Ах, ну да, Брендон...",
+	
+	//v1.4
+	"ra1k.gun.voldemort.name":"Палочка Волан-де-Морта",
+	"ra1k.gun.voldemort.desc":"На всякий пожарный, я твое имя называть не буду",
+	
+	//v1.5
+	"ra1k.gun.sa58.name":"DS Arms SA-58",
+	"ra1k.gun.sa58.desc":"Левая рука свободного мира \n\n[Автор звуков: rene_m]",
+	
+	//v1.5.1
+	"ra1k.gun.m590.name":"Mossberg M590",
+	"ra1k.gun.m590.desc":"Тактикульный малой",
+	
+	//v1.6
+	"ra1k.gun.vsk.name":"ВСК-94",
+	"ra1k.gun.vsk.desc":"Оправдывает свою цену на 100 процентов",
+	
+	//v1.7
+	"ra1k.gun.nl545.name":"CG NL-545",
+	"ra1k.gun.nl545.desc":"Такой же серый, как и Питерское небо",
+		
+	//v1.7.2
+	"ra1k.gun.shorty.name":"Super Shorty",
+	"ra1k.gun.shorty.desc":"Размер не имеет значения",
+	
+	//v1.8
+	"ra1k.gun.ak50.name":"AK-50",
+	"ra1k.gun.ak50.desc":"КРУПНО Н****Й КАЛИБЕРНАЯ СНАЙПЕРСКАЯ ВИНТОВКА БРЕНДОНА ХЕРРЕРЫ \n[Автор модели: BeansBen]",
+	
+	//v1.8.1
+	"ra1k.gun.nl545_fde.name":"§6CG NL-545 GP",
+	"ra1k.gun.nl545_fde.desc":"Питерский мутант под 545х39",
+	
+	//v1.9
+	"ra1k.gun.ak57.name":"AK-57",
+	"ra1k.gun.ak57.desc":"Нарисуйте им бронижилет на улыбках",
+	"ra1k.gun.ak224.name":"AK-224",
+	"ra1k.gun.ak224.desc":"Самый точный АК на диком западе",
+	
+	//v2.0
+	"ra1k.gun.ak74.name":"АК-74",
+	"ra1k.gun.ak74.desc":"Лучший друг любого солдата \n\n[Автор модели: laffey]",
+	"ra1k.gun.ak74_gp25.name":"АК-74 (ГП-25)",
+	"ra1k.gun.ak74_gp25.desc":"Самый лучший друг любого солдата",
+	"ra1k.gun.ak105.name":"§6Fuller Phoenix §rАК-105",
+	"ra1k.gun.ak105.desc":"Он родился из пепла",
+	"ra1k.gun.uar15.name":"UAR-15",
+	"ra1k.gun.uar15.desc":"Украинская винтовка, созданая что бы заменить АК",
+	"ra1k.gun.groza.name":"Гранатометный комплекс Оц-14 \"Гроза-4\" ",
+	"ra1k.gun.groza.desc":"Супер балумба \n\n[Автор модели: Ahpu_]",
+	"ra1k.gun.groza_gp25.name":"Гранатометный комплекс Оц-14 \"Гроза-4\" (ГП-25)",
+	"ra1k.gun.groza_gp25.desc":"Нераздельное дуо",		
+	"ra1k.gun.sa58_m203.name":"DS Arms SA-58 (М203)",
+	"ra1k.gun.sa58_m203.desc":"Еще одна рука свободного мира",
+	
+	//v2.0.3
+	"ra1k.gun.rpk74.name":"РПК-74",
+	"ra1k.gun.rpk74.desc":"Вроде и пулимет, а вроде и не нет",
+	
+	//v2.0.4
+	"ra1k.gun.vulkan.name":"Вулкан-М",
+	"ra1k.gun.vulkan.desc":"Создан на основе АК-74",
+	"ra1k.gun.vssk.name":"ВССК \"Выхлоп\"",
+	"ra1k.gun.vssk.desc":"Абсолютно бесшумная крупнокалиберная снайперская винтовка",
+	"ra1k.gun.sr_3m.name":"СР-3М \"Вихрь\"",
+	"ra1k.gun.sr_3m.desc":"Прям как АсВал, но без глушителя",	
+	"ra1k.gun.mp155.name":"MP-155",
+	"ra1k.gun.mp155.desc":"Более тактический, чем кажется на первый взгляд",
+	"ra1k.gun.mk47.name":"CMMG МК-47 \"Мутант\"",
+	"ra1k.gun.mk47.desc":"Зачем выбирать между АК и М16? Возьми сразу оба!",
+	"ra1k.gun.rsh12.name":"РШ-12", 
+	"ra1k.gun.rsh12.desc":"Не зря его прозвали \"Слонобой\"",
+	
+	
+	//v2.0.5
+	"ra1k.gun.magic_ak.name":"§6ВОЛШЕБНЫЙ §dАК",
+	"ra1k.gun.magic_ak.desc":"ОНА МЯУ МЯУ ДЕВОЧКА С ВОЛШЕБНЫМ АК \n[Мем по Deltarune]\n[Авторы песни: Blizzy & chai 2 leaves!]",
+	"ra1k.gun.aristotel.name":"§lАРИСТОТЕЛЬ",
+	"ra1k.gun.aristotel.desc":"Как говорил §mАристотель §rСократ, книги - самое опасное оружие человека",	
+	"ra1k.gun.groza_1.name":"Оц-14 \"Гроза-1\"",
+	"ra1k.gun.groza_1.desc":"Легендарный росийский буллпап \n\n[Автор модели: Ahpu_]",
+	"ra1k.gun.ots12.name":"Оц-12 \"Тисс\"", 
+	"ra1k.gun.ots12.desc":"Внебрачный сын Ксюхи и Грозы",
+	"ra1k.gun.spear.name":"§6SIG Sauers MCX Spear",
+	"ra1k.gun.spear.desc":"*Вы наполнены Демократией",
+	"ra1k.gun.spear_m203.name":"§6MCX Spear (M203)",
+	"ra1k.gun.spear_m203.desc":"Демократия делает БАБАХ",
+	"ra1k.gun.rhino19.name":"Chiappa Rhino 9x19",
+	"ra1k.gun.rhino19.desc":"С этим \"носорогом\" шутки хихихи",
+	
+	//2.0.6
+	"ra1k.gun.m870_obrez.name":"Обрез М870",
+	"ra1k.gun.m870_obrez.desc":"Привет из Контр Страйка!",
+	"ra1k.gun.r11_87.name":"Remington 11-87",
+	"ra1k.gun.r11_87.desc":"Антон Чигур никого не убивал",
+	"ra1k.gun.sw500.name":"S&W 500",
+	"ra1k.gun.sw500.desc":"Самый мощный револьвер в мире\n(После РШ-12 конечно же)",
+	"ra1k.gun.fort12.name":"Форт-12",
+	"ra1k.gun.fort12.desc":"Классика украинской оружейной инженерии",
+	"ra1k.gun.sr_2m.name":"СР-2М \"Вереск\"",
+	"ra1k.gun.sr_2m.desc":"Это разве не название ютуб канала?",
+	"ra1k.gun.pm.name":"Пистолет Макарова",
+	"ra1k.gun.pm.desc":"Легенда, побывавшая и в Чернобыле, и в Москве",
+	"ra1k.gun.ak444.name":"AK-444 Marlin",
+	"ra1k.gun.ak444.desc":"Самый дико-западный АК на диком западе",
+	
+	//v?.?.?
+		
+	//"ra1k.gun.ultima.name":"MP-155 \"Ультима\"",
+	//"ra1k.gun.ultima.desc":"Это ружье умнее тебя",
+	
+	//VERY, VERY INTERESTING
+	
+	"ra1k.ammo.avada.name": "Авада Кедавра",
+	"ra1k.ammo.valkyrie.name": "§cПатроны 224 Valkyrie",
+	"ra1k.ammo.444marlin.name": "§cПатроны 444 Marlin",
+	"ra1k.ammo.40mm.name": "§dСоветская 40 милиметровая граната",
+	
+	
+	"ra1k.attachment.sight_magnifier.name":"Голографический прицел с магнифером",
+	"ra1k.attachment.sight_magnifier_off.name":"Голографический прицел с магнифером (Переключенный)",
+	"ra1k.attachment.vudu_2x.name":"Прицел Vudu 1-6x (Переключенный)",
+	"ra1k.attachment.vudu_6x.name":"Прицел Vudu 1-6x",
+	"ra1k.attachment.sight_magnifier.desc":"\n§eВы можите менять кратность \n\nТакже работает с прицелами из Arips Attachments и Laffey(Только на оружии из Phoenix Gunpack)",
+	
+	
+	"ra1k.attachment.pso1.name":"Прицел снайперский оптический",
+	"ra1k.attachment.pso1.desc":"Легендарный прицел для ВСС, АС \"Вал\", СВД и т.д",
+	"ra1k.attachment.ehs1.name":"Голографический прицел с магнифером",
+	"ra1k.attachment.ehs1.desc":"Техническая реализация вызывает сомнения :/",
+	"ra1k.attachment.okp7.name":"Калиматорный прицел ОКП-7",
+	"ra1k.attachment.okp7.desc":"Крутая вещь под \"ласточкин хвост\"",
+	"ra1k.attachment.cobra.name":"Калиматорный прицел EKP-8-18 \"Кобра\"",
+	"ra1k.attachment.cobra.desc":"Крутая вещь под \"ласточкин хвост\" с крутым названием ",
+	"ra1k.attachment.939.name":"Глушитель для 9x39мм",
+	"ra1k.attachment.939.desc":"Подходит к ВСК-94, СР-3М и т.д",
+	"ra1k.attachment.fpx_sight_552.name":"§6Голографический калиматор Miltech 552",
+	"ra1k.attachment.sight_velociraptor.name":"Калиматор для Velociraptor'a",
+	"ra1k.attachment.cover.name":"Стандартная крышка ствольной коробки",
+	"ra1k.attachment.handguard_tactical.name":"Стандартное тактическое цевье",
+	"ra1k.attachment.kit_lmg.name":"Автоматический модуль",
+	"ra1k.attachment.kit_lmg.desc":"МАКСИМАЛЬНАЯ МОЩЬ\n\n§e*Открывает автоматический режим стрельбы",
+	"ra1k.attachment.spear_silencer.name":"Глушитель для MCX Spear",
+	"ra1k.attachment.spear_silencer.desc":"Экслюзивная бесшумность",
+	
+	"ra1k.handguard.green.name":"§aЗеленое цевье",
+	"ra1k.handguard_laser.green.name":"§aЗеленое цевье с ЛЦУ",
+	"ra1k.handguard.red.name":"§cКрасное цевье",
+	"ra1k.handguard_laser.red.name":"§cКрасное цевье с ЛЦУ",
+	"ra1k.handguard.sand.name":"§eПесчаное цевье",
+	"ra1k.handguard_laser.sand.name":"§eПесчаное цевье с ЛЦУ",
+	"ra1k.handguard.grey.name":"§7Тактическое цевье",
+	"ra1k.handguard_laser.grey.name":"§7Тактическое цевье с ЛЦУ",
+	"ra1k.handguard.desc":"Укрась свою пушку",
+	
+	"ra1k.attachment.m203.name":"Подствольный гранатомет М203",
+	"ra1k.attachment.gp25.name":"ГП-25 \"Костёр\"",
+	"ra1k.attachment.ugl.desc":"\n§eВыберете одиночный режим стрельбы после установки модуля",
+	
+	"ra1k.attachment.extended_mag.name":"Разширеный магазин",
+	"ra1k.attachment.extended_mag.desc":"Больше патронов, больше шансов промахнутся",
+	"ra1k.attachment.flip_mag.name":"Спаренный магазин",
+	"ra1k.attachment.flip_mag.desc":"Один магазин по цене двух!",
+	"ra1k.attachment.fast_mag.name":"Быстрый магазин",
+	"ra1k.attachment.fast_mag.desc":"Делает ваше оружие легче",
+	"ra1k.attachment.drum_mag.name":"Барабанный магазин",
+	"ra1k.attachment.drum_mag.desc":"Зарядить барабан быстрее, чем каждый раз перезаряжать оружие",
+	"ra1k.attachment.m590_mag.name":"Магазин для M590",
+	"ra1k.attachment.m590_mag.desc":"Быстрее, чем заряжать по 1 патрону"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	//Ты думал здесь что то будет?
+}

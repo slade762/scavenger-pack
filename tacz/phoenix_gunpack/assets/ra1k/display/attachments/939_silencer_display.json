@@ -1,0 +1,9 @@
+{
+  "slot": "ra1k:attachment/slot/939_silencer",
+  "model": "ra1k:attachment/939_silencer_geo",
+  "texture": "ra1k:attachment/uv/939_silencer",
+  "sounds": {
+    "install": "tacz:attachments/scope_general_d",
+    "uninstall": "tacz:attachments/scope_general_d"
+  }
+}

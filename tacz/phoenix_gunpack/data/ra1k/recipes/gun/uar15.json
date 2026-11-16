@@ -1,0 +1,30 @@
+{
+  "materials": [
+    {
+      "item": {
+        "tag": "forge:ingots/iron"
+      },
+      "count": 48
+    },
+	{
+      "item": {
+        "tag": "forge:ingots/gold"
+      },
+      "count": 10
+    },
+    {
+      "item": {
+        "tag": "forge:gems/lapis"
+      },
+      "count": 10
+    }
+  ],
+  "result": {
+    "type": "gun",
+    "id": "ra1k:uar15",
+	"attachments": {
+      "grip": "tacz:grip_vertical_talon"
+    }
+  },
+  "type": "tacz:gun_smith_table_crafting"
+}

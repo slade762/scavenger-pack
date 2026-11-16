@@ -1,0 +1,13 @@
+name = "AmbiEngine"
+filename = "AmbiEngine-Forge-1.20.1-1.0.1.jar"
+side = "both"
+
+[download]
+url = "https://edge.forgecdn.net/files/9498/869/AmbiEngine-Forge-1.20.1-1.0.1.jar"
+hash-format = "sha1"
+hash = "4f9423bd883c2e9440818bc170439af4ce9270ae"
+
+[update]
+[update.curseforge]
+file-id = 9498869
+project-id = 1780410

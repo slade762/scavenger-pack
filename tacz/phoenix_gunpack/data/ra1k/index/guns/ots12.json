@@ -1,0 +1,8 @@
+{
+  "name": "ra1k.gun.ots12.name",
+  "display": "ra1k:ots12_display",
+  "data": "ra1k:ots12_data",
+  "tooltip": "ra1k.gun.ots12.desc",
+  "type": "rifle",
+  "sort": 23
+}

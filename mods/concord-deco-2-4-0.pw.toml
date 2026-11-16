@@ -1,0 +1,13 @@
+name = "Concord's military deco (military deco and blocks)"
+filename = "concord_deco-2.4.0.jar"
+side = "both"
+
+[download]
+mode = "metadata:curseforge"
+hash-format = "sha1"
+hash = "d5728235be271722cd5709bc55a93a9210ef9b47"
+
+[update]
+[update.curseforge]
+file-id = 9509410
+project-id = 1685773

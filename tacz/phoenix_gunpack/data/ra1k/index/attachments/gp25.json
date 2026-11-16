@@ -1,0 +1,8 @@
+{
+  "name": "ra1k.attachment.gp25.name",
+  "display": "ra1k:gp25_display",
+  "tooltip": "ra1k.attachment.ugl.desc",
+  "data": "ra1k:ugl_data",
+  "type": "grip",
+  "sort": 23
+}

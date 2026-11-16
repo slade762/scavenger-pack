@@ -1,0 +1,13 @@
+name = "Ambi (Ambient Sounds) "
+filename = "AmbiMod-Forge-1.20.1-1.2.0.jar"
+side = "both"
+
+[download]
+url = "https://edge.forgecdn.net/files/9454/314/AmbiMod-Forge-1.20.1-1.2.0.jar"
+hash-format = "sha1"
+hash = "359764b42659e5e3b986114db6a5bfc5c6203343"
+
+[update]
+[update.curseforge]
+file-id = 9454314
+project-id = 1594541

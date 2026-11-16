@@ -1,0 +1,13 @@
+name = "Brimm Armors | Tactical Military Armors"
+filename = "brimm-3.0.1.jar"
+side = "both"
+
+[download]
+url = "https://edge.forgecdn.net/files/9073/11/brimm-3.0.1.jar"
+hash-format = "sha1"
+hash = "18c8b0f032b71b9f834e24170182bd90d719e089"
+
+[update]
+[update.curseforge]
+file-id = 9073011
+project-id = 1281654

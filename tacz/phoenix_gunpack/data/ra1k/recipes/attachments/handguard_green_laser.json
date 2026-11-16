@@ -1,0 +1,27 @@
+{
+  "materials": [
+    {
+      "item": {
+        "tag": "forge:ingots/iron"
+      },
+      "count": 15
+    },
+	{
+      "item": {
+        "tag": "forge:dusts/redstone"
+      },
+      "count": 4
+    },
+	{
+      "item": {
+        "tag": "forge:dyes/green"
+      },
+      "count": 1
+    }
+  ],
+  "result": {
+    "type": "attachment",
+    "id": "ra1k:handguard_green_laser"
+  },
+  "type": "tacz:gun_smith_table_crafting"
+}

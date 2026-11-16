@@ -1,0 +1,21 @@
+{
+  "materials": [
+    {
+      "item": {
+        "tag": "forge:ingots/iron"
+      },
+      "count": 10
+    },
+	{
+      "item": {
+        "tag": "forge:gems/quartz"
+      },
+      "count": 5
+    }
+  ],
+  "result": {
+    "type": "attachment",
+    "id": "ra1k:m590_mag"
+  },
+  "type": "tacz:gun_smith_table_crafting"
+}

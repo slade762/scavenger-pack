@@ -1,0 +1,17 @@
+{
+  "slot": "ra1k:attachment/slot/cobra",
+  "model": "ra1k:attachment/cobra_geo",
+  "adapter": "cover",
+  "texture": "ra1k:attachment/uv/cobra",
+  "zoom": [
+    1.5
+  ],
+  "scope": false,
+  "sight": true,
+  "show_mount": false,
+  "fov": 55.0,
+  "sounds": {
+    "install": "tacz:attachments/scope_general_c",
+    "uninstall": "tacz:attachments/scope_general_c"
+  }
+}

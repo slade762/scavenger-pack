@@ -1,0 +1,6 @@
+{
+  "feature": "anomalyzone:valhalla_bubble_spawn",
+  "placement": [
+    { "type": "minecraft:count", "count": 0 }
+  ]
+}

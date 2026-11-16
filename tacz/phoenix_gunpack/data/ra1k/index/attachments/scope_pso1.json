@@ -1,0 +1,8 @@
+{
+  "name": "ra1k.attachment.pso1.name",
+  "display": "ra1k:scope_pso1_display",
+  "tooltip": "ra1k.attachment.pso1.desc",
+  "data": "ra1k:retro_2x_ak_data",
+  "type": "scope",
+  "sort": 23
+}

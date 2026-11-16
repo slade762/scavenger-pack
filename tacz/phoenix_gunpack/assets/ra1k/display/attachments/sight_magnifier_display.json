@@ -1,0 +1,15 @@
+{
+  "slot": "ra1k:attachment/slot/sight_magnifier",
+  "model": "ra1k:attachment/sight_magnifier_geo",
+  "texture": "ra1k:attachment/uv/sight_magnifier",
+  "zoom": [
+	3
+  ],
+  "scope": true,
+  "sight": false,
+  "fov": 70.0,
+  "sounds": {
+    "install": "tacz:attachments/scope_general_b",
+    "uninstall": "tacz:attachments/scope_general_b"
+  }
+}

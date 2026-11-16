@@ -1,0 +1,27 @@
+{
+  "materials": [
+    {
+      "item": {
+        "tag": "forge:ingots/iron"
+      },
+      "count": 64
+    },
+    {
+      "item": {
+        "tag": "forge:ingots/gold"
+      },
+      "count": 32
+    },
+	{
+      "item": {
+        "tag": "forge:rods/blaze"
+      },
+      "count": 1
+    }
+  ],
+  "result": {
+    "type": "gun",
+    "id": "ra1k:fpx_ak105"
+  },
+  "type": "tacz:gun_smith_table_crafting"
+}

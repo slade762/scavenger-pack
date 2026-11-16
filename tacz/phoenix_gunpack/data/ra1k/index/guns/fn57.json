@@ -1,0 +1,8 @@
+{
+    "name": "ra1k.gun.fn57.name",
+    "display": "ra1k:fn57_display",
+    "data": "ra1k:fn57_data",
+    "tooltip":"ra1k.gun.fn57.desc",
+    "type": "pistol",
+    "sort": 23
+}

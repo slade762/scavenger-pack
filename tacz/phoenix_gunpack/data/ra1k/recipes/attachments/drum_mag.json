@@ -1,0 +1,21 @@
+{
+  "materials": [
+    {
+      "item": {
+        "tag": "forge:ingots/iron"
+      },
+      "count": 60
+    },
+	{
+      "item": {
+        "tag": "forge:ingots/gold"
+      },
+      "count": 20
+    }
+  ],
+  "result": {
+    "type": "attachment",
+    "id": "ra1k:drum_mag"
+  },
+  "type": "tacz:gun_smith_table_crafting"
+}

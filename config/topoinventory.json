@@ -1,0 +1,74 @@
+{
+  "_comment": "Topological Inventory Configuration: Customize item shapes, sizes, and weights for vanilla \u0026 any modded items.",
+  "_syntax_examples": "Use \u00271x3\u0027 (width x height) for boxes, or {\u0027shape\u0027: [\u0027XX\u0027, \u0027.X\u0027, \u0027.X\u0027]} for polyominos.",
+  "item_sizes": {
+    "// Vanilla Weapon \u0026 Tool Examples": "",
+    "minecraft:diamond_sword": "1x3",
+    "minecraft:netherite_sword": "1x3",
+    "minecraft:crossbow": "2x3",
+    "minecraft:shield": "2x3",
+    "minecraft:potion": "1x1",
+    "minecraft:glass_bottle": "1x1",
+    "minecraft:bow": {
+      "shape": [
+        ".X",
+        "XX",
+        ".X"
+      ]
+    },
+    "minecraft:diamond_pickaxe": {
+      "shape": [
+        "XXX",
+        ".X.",
+        ".X."
+      ]
+    },
+    "minecraft:netherite_pickaxe": {
+      "shape": [
+        "XXX",
+        ".X.",
+        ".X."
+      ]
+    },
+    "minecraft:iron_pickaxe": {
+      "shape": [
+        "XXX",
+        ".X.",
+        ".X."
+      ]
+    },
+    "minecraft:golden_pickaxe": {
+      "shape": [
+        "XXX",
+        ".X.",
+        ".X."
+      ]
+    },
+    "minecraft:stone_pickaxe": {
+      "shape": [
+        "XXX",
+        ".X.",
+        ".X."
+      ]
+    },
+    "minecraft:wooden_pickaxe": {
+      "shape": [
+        "XXX",
+        ".X.",
+        ".X."
+      ]
+    },
+    "// Modded Items Integration Examples (Replace with IDs from any mod)": "",
+    "create:wrench": "1x2",
+    "create:extendo_grip": "1x4",
+    "farmersdelight:skillet": "2x2",
+    "tetra:modular_sword": "1x3",
+    "immersiveengineering:revolver": "2x2"
+  },
+  "item_weights_kg": {
+    "// Custom Weights in Kilograms (kg)": "",
+    "minecraft:anvil": 30.0,
+    "minecraft:gold_block": 19.3,
+    "minecraft:netherite_ingot": 2.5
+  }
+}

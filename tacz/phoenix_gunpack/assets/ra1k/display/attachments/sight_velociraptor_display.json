@@ -1,0 +1,17 @@
+{
+  "slot": "ra1k:attachment/slot/sight_velociraptor",
+  "model": "ra1k:attachment/sight_velociraptor_geo",
+  "adapter": "cover",
+  "texture": "ra1k:attachment/uv/sight_velociraptor",
+  "zoom": [
+    1.3
+  ],
+  "scope": false,
+  "sight": true,
+  "show_mount": false,
+  "fov": 55.0,
+  "sounds": {
+    "install": "tacz:attachments/scope_general_c",
+    "uninstall": "tacz:attachments/scope_general_c"
+  }
+}

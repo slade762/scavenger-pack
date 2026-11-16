@@ -1,0 +1,9 @@
+{
+  "hidden": true,
+  "name": "ra1k.attachment.cover.name",
+  "display": "ra1k:cover_display",
+  "tooltip": "ra1k.handguard.desc",
+  "data": "ra1k:cobra_data",
+  "type": "scope",
+  "sort": 23
+}

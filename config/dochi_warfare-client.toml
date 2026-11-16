@@ -1,0 +1,66 @@
+
+#Client-only DW editor appearance settings.
+[ui]
+	#DW editor rendering style.
+	#texture uses assets/dochi_warfare/textures/gui/dw_ui.png; drawing keeps the legacy flat-color renderer.
+	renderStyle = "texture"
+
+#Client-only DW editor UI sound settings.
+[uiSounds]
+	#Play DW GUI open, button click, and category navigation sounds on this client.
+	enabled = true
+	#Master volume multiplier for DW GUI sounds on this client.
+	#Range: 0.0 ~ 1.0
+	volume = 1.0
+
+#Client-only TACZ Fire NPC visual feedback settings.
+[visualAlerts]
+	#Render TACZ Fire NPC awareness icons above managed NPC heads on this client.
+	enabled = true
+	#Maximum distance in blocks where awareness icons are rendered.
+	#Range: 4.0 ~ 256.0
+	maxDistance = 32.0
+	#Show ? when an NPC is suspicious or investigating a sound/damage/ally death.
+	showSuspicious = true
+	#Show a dim ? when an NPC is investigating the last seen target position.
+	showLastSeen = true
+	#Show ! when an NPC has detected an enemy but has not fully engaged.
+	showAlerted = true
+	#Show !! when an NPC is actively engaged.
+	showEngaged = true
+	#Milliseconds to keep the last awareness icon visible after the server clears it.
+	#Range: 0 ~ 30000
+	alertHoldMs = 1200
+	#Awareness icon text size multiplier.
+	#Range: 0.25 ~ 4.0
+	scale = 1.0
+	#Extra height above the NPC head where awareness icons are rendered.
+	#Range: 0.0 ~ 3.0
+	yOffset = 0.72
+	#Render awareness icon text with shadow.
+	textShadow = true
+	#Text rendered for suspicious/investigating awareness.
+	suspiciousText = "?"
+	#Text rendered for last-seen-position investigation.
+	lastSeenText = "?"
+	#Text rendered when an NPC has detected an enemy but is not fully engaged.
+	alertedText = "!"
+	#Text rendered when an NPC is actively engaged.
+	engagedText = "!!"
+	#Hex RGB/ARGB color for ? suspicious icons.
+	suspiciousColor = "#FFE35A"
+	#Hex RGB/ARGB color for dim ? last-seen icons.
+	lastSeenColor = "#70747C"
+	#Hex RGB/ARGB color for ! alerted icons.
+	alertedColor = "#FFB347"
+	#Hex RGB/ARGB color for !! engaged icons.
+	engagedColor = "#FF4040"
+
+#Client-only gun feedback settings.
+[guns]
+	#Minimum ticks between local hurt-camera shake starts from PointBlank hits.
+	#0 preserves immediate camera response for every successful hit.
+	#Values from 1 to 50 keep rapid damage but suppress repeated camera restarts inside the interval.
+	#Range: 0 ~ 50
+	pointBlankHitShakeIntervalTicks = 10
+

@@ -1,0 +1,8 @@
+{
+  "name": "ra1k.attachment.kit_lmg.name",
+  "display": "ra1k:kit_lmg_display",
+  "tooltip": "ra1k.attachment.kit_lmg.desc",
+  "data": "ra1k:kit_lmg_data",
+  "type": "muzzle",
+  "sort": 23
+}

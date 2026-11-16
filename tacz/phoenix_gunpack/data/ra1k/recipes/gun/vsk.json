@@ -1,0 +1,26 @@
+{
+  "materials": [
+	{
+      "item": {
+        "tag": "forge:ingots/iron"
+      },
+      "count": 74
+    },
+	{
+      "item": {
+        "tag": "forge:gems/amethyst"
+      },
+      "count": 1
+    }
+  ],
+  "result": {
+    "type": "gun",
+    "id": "ra1k:vsk",
+	"attachments": {
+      "scope": "ra1k:scope_pso1",
+	  "muzzle": "ra1k:939_silencer",
+	  "stock": "tacz:oem_stock_heavy"
+    }
+  },
+  "type": "tacz:gun_smith_table_crafting"
+}

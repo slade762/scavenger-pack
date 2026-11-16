@@ -1,0 +1,56 @@
+{
+  "model": "ra1k:gun/groza_geo",
+  "texture": "ra1k:gun/uv/groza",
+  "hud": "ra1k:gun/hud/groza",
+  "slot": "ra1k:gun/slot/groza",
+  "animation": "ra1k:groza",
+  "state_machine": "ra1k:groza_state_machine",
+  "use_default_animation": "rifle",
+  "default_animation": "ra1k:1",
+  "third_person_animation": "default",
+  "transform": {
+    "scale": {
+      "thirdperson": [0.6, 0.6, 0.6],
+      "ground": [0.6, 0.6, 0.6],
+      "fixed": [1.2, 1.2, 1.2]
+    }
+  },
+  "muzzle_flash": {
+    "type": "renew",
+    "texture": "tacz:flash/common_muzzle_flash",
+    "scale": 0.75,
+    "smoke_scale": 1.65,
+    "initial_speed_scale": 1.7,
+    "smoke_particle_count": 16
+  },
+  "iron_zoom": 1.33,
+  "zoom_model_fov": 55,
+  "shell": {
+    "initial_velocity": [5, 2, 1],
+    "random_velocity": [1, 1, 0.25],
+    "acceleration": [0.0, -10, 0.0],
+    "angular_velocity": [360, -1200, 90],
+    "living_time": 1.0
+  },
+  "sounds": {
+    "shoot": "ra1k:aksu/ots14_shoot",
+    "shoot_3p": "ra1k:aksu/ots14_shoot_mono3p",
+	"silence": "ra1k:aksu/ots14_silence",
+    "silence_3p": "tacz:ak47/ak47_silence_3p",
+	"draw": "tacz:qbz_95/qbz_95_draw",
+    "put_away": "tacz:qbz_95/qbz_95_put_away"
+    
+   },
+  "offhand_show": {
+    "pos": [1, 19, 4],
+    "rotate": [0, 0, 50],
+    "scale": [0.5, 0.5, 0.5]
+  },
+  "hotbar_show": {
+    "0": {
+      "pos": [-1, 19, 3],
+      "rotate": [-180, 0, 130],
+      "scale": [0.5, 0.5, 0.5]
+    }
+  }
+}

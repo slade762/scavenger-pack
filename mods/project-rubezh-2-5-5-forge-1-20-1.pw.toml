@@ -1,0 +1,13 @@
+name = "Project Rubezh"
+filename = "project_rubezh_-2.5.5-forge-1.20.1.jar"
+side = "both"
+
+[download]
+mode = "metadata:curseforge"
+hash-format = "sha1"
+hash = "581b83dbc74428b38846b73b1dd55e78f3347949"
+
+[update]
+[update.curseforge]
+file-id = 7310896
+project-id = 1400956

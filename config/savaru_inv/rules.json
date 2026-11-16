@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "rules": [
+    { "tag": "#minecraft:swords", "size": [1, 2] },
+    { "tag": "#minecraft:pickaxes", "size": [1, 2] },
+    { "tag": "#minecraft:axes", "size": [1, 2] },
+    { "tag": "#minecraft:shovels", "size": [1, 2] },
+    { "tag": "#minecraft:hoes", "size": [1, 2] },
+    { "item": "minecraft:shield", "size": [2, 2] },
+    { "tag": "#minecraft:beds", "size": [2, 3] },
+    { "tag": "#minecraft:doors", "size": [1, 2] }
+  ],
+  "defaultRule": { "size": [1, 1] },
+  "containers": {
+    "enabled": true,
+    "whitelist": [],
+    "blacklist": []
+  }
+}

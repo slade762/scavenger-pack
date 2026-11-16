@@ -1,0 +1,9 @@
+{
+  "hidden": false,
+  "name": "ra1k.attachment.cobra.name",
+  "display": "ra1k:cobra_display",
+  "tooltip": "ra1k.attachment.cobra.desc",
+  "data": "ra1k:cobra_data",
+  "type": "scope",
+  "sort": 23
+}

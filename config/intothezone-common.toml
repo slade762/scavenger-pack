@@ -1,0 +1,32 @@
+
+["World Properties"]
+	#The min delay in ticks to the next emission. This must be a non-negative integer. Default = 100000
+	#Range: 0 ~ 1000000
+	emissionDelay = 1000000
+
+["Entity Properties"]
+
+	["Entity Properties"."Fog Cloud Properties"]
+		#The speed at which the fog clouds will travel. Default = 0.05
+		#Range: 0.01 ~ 1.0
+		cloudSpeed = 0.05
+		#The Max X position that fog clouds will travel to. Default = 1000
+		cloudMaxX = 1000
+		#The Min X position that fog clouds will travel to. Default = -1000
+		cloudMinX = -1000
+		#The Max Z position that fog clouds will travel to. Default = 1000
+		cloudMaxZ = 1000
+		#The Min Z position that fog clouds will travel to. Default = -1000
+		cloudMinZ = -1000
+
+	["Entity Properties"."Poppy Field Properties"]
+		#The radius of the Poppy Field Anomaly. This must be a non-negative integer. Default = 32
+		#Range: 1 ~ 100
+		poppyFieldSize = 32
+		#The max duration of one level of the Tired effect, in seconds. This must be a non-negative integer. Default = 30
+		#Range: 1 ~ 1000
+		tiredMaxDuration = 30
+		#The min duration of one level of the Tired effect, in seconds. This must be a non-negative integer, and less than the max duration. Default = 20
+		#Range: 1 ~ 1000
+		tiredMinDuration = 20
+

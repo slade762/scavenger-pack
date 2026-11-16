@@ -1,0 +1,13 @@
+name = "RarityCore"
+filename = "raritycore-1201.14.4.jar"
+side = "both"
+
+[download]
+url = "https://edge.forgecdn.net/files/8970/26/raritycore-1201.14.4.jar"
+hash-format = "sha1"
+hash = "5097ebebe36da6895f8eed8c90c35617e55c4046"
+
+[update]
+[update.curseforge]
+file-id = 8970026
+project-id = 1441762

@@ -1,0 +1,9 @@
+{
+  "name": "ra1k.gun.aristotel.name",
+  "tooltip": "ra1k.gun.aristotel.desc",
+  "display": "ra1k:aristotel_display",
+  "data": "ra1k:aristotel_data",
+  "type": "rpg",
+  "item_type": "modern_kinetic",
+  "sort": 1
+}

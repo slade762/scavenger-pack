@@ -1,0 +1,8 @@
+{
+  "name": "ra1k.attachment.vudu_2x.name",
+  "display": "ra1k:vudu_2x_display",
+  "tooltip": "ra1k.attachment.sight_magnifier.desc",
+  "data": "ra1k:sight40_small_data",
+  "type": "scope",
+  "sort": 23
+}

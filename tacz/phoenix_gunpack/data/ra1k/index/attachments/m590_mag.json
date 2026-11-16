@@ -1,0 +1,8 @@
+{
+  "name": "ra1k.attachment.m590_mag.name",
+  "tooltip": "ra1k.attachment.m590_mag.desc",
+  "display": "ra1k:m590_mag_display",
+  "data": "ra1k:m590_mag_data",
+  "type": "extended_mag",
+  "sort": 23
+}

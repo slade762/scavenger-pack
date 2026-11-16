@@ -1,0 +1,7 @@
+{
+  "slot": "ra1k:attachment/slot/m590_mag",
+  "sounds": {
+    "install": "tacz:attachments/extended_mag_install",
+    "uninstall": "tacz:attachments/extended_mag_uninstall"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "name": "ra1k.gun.groza_gp25.name",
+  "display": "ra1k:groza_gp25_display",
+  "data": "ra1k:groza_gp25_data",
+  "tooltip": "ra1k.gun.groza_gp25.desc",
+  "type": "rpg",
+  "sort": 23
+}

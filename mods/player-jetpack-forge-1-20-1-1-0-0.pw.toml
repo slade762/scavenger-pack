@@ -1,0 +1,13 @@
+name = "Player Jetpack"
+filename = "player-jetpack-forge-1.20.1-1.0.0.jar"
+side = "both"
+
+[download]
+url = "https://edge.forgecdn.net/files/9306/765/player-jetpack-forge-1.20.1-1.0.0.jar"
+hash-format = "sha1"
+hash = "125da7aad4468622c6f8bc0e6519f0ee17874cc4"
+
+[update]
+[update.curseforge]
+file-id = 9306765
+project-id = 1762822

@@ -1,0 +1,9 @@
+{
+  "name": "ra1k.attachment.handguard_tactical.name",
+  "display": "ra1k:handguard_tactical_display",
+  "data": "ra1k:sight40_small_data",
+  "tooltip": "ra1k.handguard.desc",
+  "type": "laser",
+  "hidden": true,
+  "sort": 24
+}

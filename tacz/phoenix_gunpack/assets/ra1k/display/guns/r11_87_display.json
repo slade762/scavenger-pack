@@ -1,0 +1,76 @@
+{
+  "model": "ra1k:gun/r11_87_geo",
+  "texture": "ra1k:gun/uv/r11_87",
+  "lod": {
+    "model": "ra1k:gun/lod/r11_87",
+    "texture": "ra1k:gun/lod/r11_87"
+  },
+  "hud": "ra1k:gun/hud/r11_87",
+  "slot": "ra1k:gun/slot/r11_87",
+  // 弹药计量样式，可选值：”normal“(显示实际值)、”percent“(显示百分比)，默认为”normal“
+  "ammo_count_style": "normal",
+  // tooltip的伤害显示样式，可选值：”total“(总伤害)、”per_projectile“(单发弹丸伤害x弹丸数量)，默认为”per_projectile“
+  "damage_style": "per_projectile",
+  "animation": "ra1k:r11_87",
+  "state_machine": "ra1k:r11_87_state_machine",
+
+ 
+  
+  "shell": {
+    "initial_velocity": [7.5, 2, -2.5],
+    "random_velocity": [3.5, 1.5, 0.25],
+    "acceleration": [-1.5, -10, 0.0],
+    "angular_velocity": [360, -1200, 90],
+    "living_time": 1.0
+  },
+  "default_animation": "ra1k:1",
+  "third_person_animation": "default",
+  "player_animator_3rd": "ra1k:shotgun.player_animation",
+  "show_crosshair": false,
+  "transform": {
+    "scale": {
+      "thirdperson": [0.6, 0.6, 0.6],
+      "ground": [0.6, 0.6, 0.6],
+      "fixed": [1.2, 1.2, 1.2]
+    }
+  },
+  "muzzle_flash": {
+    "type": "renew",
+    "texture": "tacz:flash/common_muzzle_flash",
+    "scale": 0.05,
+    "smoke_scale": 1.85,
+    "initial_speed_scale": 1.1,
+    "smoke_particle_count": 24
+  },
+  "iron_zoom": 1.2,
+  "sounds": {
+    "draw": "tacz:m870/m870_draw",
+    "shoot": "ra1k:shoot/r11_87",
+    "shoot_3p": "ra1k:shoot/r11_87_mono3p",
+    "silence": "tacz:ai_awp/awp_silence",
+    "silence_3p": "tacz:ai_awp/awp_silence_3p",
+    "put_away": "tacz:m870/m870_put_away",
+    "melee_push": "tacz:melee_stock/melee_stock_02",
+    "melee_stock": "tacz:melee_stock/melee_stock_03"
+  },	
+  // 副手枪械显示
+  "offhand_show": {
+    "pos": [1, 20, 3.5],
+    "rotate": [0, 0, 60],
+    "scale": [0.5, 0.5, 0.5]
+  },
+  "hotbar_show": {
+    "0": {
+      "pos": [-1, 20, 3],
+      "rotate": [-180, 0, 120],
+      "scale": [0.5, 0.5, 0.5]
+    }
+  },
+  "controllable": {
+    "semi": {
+      "low_frequency": 0.25,
+      "high_frequency": 0.5,
+      "time": 100
+    }
+  }
+}

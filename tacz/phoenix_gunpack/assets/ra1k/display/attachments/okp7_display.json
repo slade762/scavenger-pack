@@ -1,0 +1,17 @@
+{
+  "slot": "ra1k:attachment/slot/okp7",
+  "model": "ra1k:attachment/okp7_geo",
+  "adapter": "cover",
+  "texture": "ra1k:attachment/uv/okp7",
+  "zoom": [
+    1.3
+  ],
+  "scope": false,
+  "sight": true,
+  "show_mount": false,
+  "fov": 65.0,
+  "sounds": {
+    "install": "tacz:attachments/scope_general_d",
+    "uninstall": "tacz:attachments/scope_general_d"
+  }
+}

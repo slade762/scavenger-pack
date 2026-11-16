@@ -1,0 +1,8 @@
+{
+  "name": "ra1k.attachment.okp7.name",
+  "display": "ra1k:okp7_display",
+  "tooltip": "ra1k.attachment.okp7.desc",
+  "data": "ra1k:okp7_data",
+  "type": "scope",
+  "sort": 23
+}

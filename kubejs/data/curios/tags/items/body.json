@@ -1,0 +1,57 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "projectarmor_:diy_chestplate",
+      "required": false
+    },
+    {
+      "id": "projectarmor_:d_3_crx_chestplate",
+      "required": false
+    },
+    {
+      "id": "projectarmor_:a_6b_4_chestplate",
+      "required": false
+    },
+    {
+      "id": "projectarmor_:a_6b_2_chestplate",
+      "required": false
+    },
+    {
+      "id": "projectarmor_:nfm_chestplate",
+      "required": false
+    },
+    {
+      "id": "projectarmor_:a_6b_5_chestplate",
+      "required": false
+    },
+    {
+      "id": "projectarmor_:lbt_chestplate",
+      "required": false
+    },
+    {
+      "id": "projectarmor_:ghel_chestplate",
+      "required": false
+    },
+    {
+      "id": "projectarmor_:un_chestplate",
+      "required": false
+    },
+    {
+      "id": "projectarmor_:iotv_chestplate",
+      "required": false
+    },
+    {
+      "id": "projectarmor_:fs_chestplate",
+      "required": false
+    },
+    {
+      "id": "projectarmor_:wartech_chestplate",
+      "required": false
+    },
+    {
+      "id": "projectarmor_:a_6b_43_chestplate",
+      "required": false
+    }
+  ]
+}

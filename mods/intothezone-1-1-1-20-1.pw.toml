@@ -1,0 +1,13 @@
+name = "Into The Zone"
+filename = "intothezone-1.1-1.20.1.jar"
+side = "both"
+
+[download]
+mode = "metadata:curseforge"
+hash-format = "sha1"
+hash = "889bd681ba7e4282fe6357854e3421d64fce70c6"
+
+[update]
+[update.curseforge]
+file-id = 7139054
+project-id = 1320408

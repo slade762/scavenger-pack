@@ -1,0 +1,8 @@
+{
+  "name": "ra1k.attachment.939.name",
+  "tooltip": "ra1k.attachment.939.desc",
+  "display": "ra1k:939_silencer_display",
+  "data": "ra1k:939_silencer_data",
+  "type": "muzzle",
+  "sort": 23
+}

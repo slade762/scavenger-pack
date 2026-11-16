@@ -1,0 +1,13 @@
+name = "Search Carefully"
+filename = "searchcarefully-1201.10.0.jar"
+side = "both"
+
+[download]
+url = "https://edge.forgecdn.net/files/8245/371/searchcarefully-1201.10.0.jar"
+hash-format = "sha1"
+hash = "ba776cb31fa32d6f590856764ffe3b8225e3f62a"
+
+[update]
+[update.curseforge]
+file-id = 8245371
+project-id = 1443142

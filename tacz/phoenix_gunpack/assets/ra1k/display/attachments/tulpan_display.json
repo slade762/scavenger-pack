@@ -1,0 +1,20 @@
+{
+  "slot": "ra1k:attachment/slot/tulpan",
+  "model": "ra1k:attachment/tulpan_geo",
+  "adapter": "cover",
+  "lod": {
+    "model": "ra1k:attachment/lod/pso1",
+    "texture": "ra1k:attachment/lod/pso1"
+  },
+  "texture": "ra1k:attachment/uv/tulpan",
+  "zoom": [
+    4
+  ],
+  "scope": true,
+  "show_mount": false,
+  "fov": 55.0,
+  "sounds": {
+    "install": "tacz:attachments/scope_general_d",
+    "uninstall": "tacz:attachments/scope_general_d"
+  }
+}

@@ -1,0 +1,13 @@
+name = "Euphoria Patches"
+filename = "EuphoriaPatcher-1.10.5-r5.9.3-forge.jar"
+side = "both"
+
+[download]
+url = "https://edge.forgecdn.net/files/8884/681/EuphoriaPatcher-1.10.5-r5.9.3-forge.jar"
+hash-format = "sha1"
+hash = "66c44811b2972871aa6855b89c45e05d509efed9"
+
+[update]
+[update.curseforge]
+file-id = 8884681
+project-id = 915902

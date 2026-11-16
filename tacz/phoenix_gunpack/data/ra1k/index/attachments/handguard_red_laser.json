@@ -1,0 +1,8 @@
+{
+  "name": "ra1k.handguard_laser.red.name",
+  "display": "ra1k:handguard_red_laser_display",
+  "data": "ra1k:hg_laser_data",
+  "type": "laser",
+  "tooltip": "ra1k.handguard.desc",
+  "sort": 25
+}

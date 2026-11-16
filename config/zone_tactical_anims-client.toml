@@ -1,0 +1,339 @@
+
+[fresh_animations]
+	#Degrees the legs are turned while a gun is out (Fresh Animations).
+	#Negative = turn left (counter-clockwise seen from above), positive = right.
+	#Range: -90.0 ~ 90.0
+	legOffset = 35.0
+	#Max degrees the hips turn toward your movement direction (diagonals).
+	#Range: 0.0 ~ 90.0
+	maxHipTurn = 45.0
+	#Left strafe: false = Fresh Animations' normal left strafe,
+	#true = the right strafe played in reverse (experimental).
+	mirrorLeftStrafe = false
+	#Max degrees the torso turns off your aim while moving with a gun (hip-fire). 0 = off.
+	#Range: 0.0 ~ 45.0
+	torsoTwist = 20.0
+	#(old setting, no longer used)
+	#Range: 0.0 ~ 6.0
+	landingDip = 1.5
+	#How long the landing dip lasts, in seconds.
+	#Range: 0.1 ~ 1.0
+	landingTime = 0.35
+	#(old setting, no longer used - Fresh Animations bobs the torso now)
+	#Range: 0.0 ~ 3.0
+	walkBob = 0.6
+	#Degrees the arms/gun bob with each step.
+	#Range: 0.0 ~ 15.0
+	walkBobArms = 1.0
+	#Shifts the bounce timing against the footsteps (degrees). Change if the dip isn't on the footfall.
+	#Range: -180.0 ~ 180.0
+	walkBobPhase = 0.0
+	#Landing with a gun: how much the upper body follows Fresh Animations' leg crouch.
+	#1.0 = exactly (feet stay planted), 0 = off.
+	#Range: 0.0 ~ 2.0
+	landingFollow = 1.0
+	#Raised weapon: degrees the torso turns into the shooting stance (negative = the other way).
+	#Range: -90.0 ~ 90.0
+	raisedTorsoYaw = 10.0
+	#Raised weapon: degrees the torso leans forward.
+	#Range: -30.0 ~ 30.0
+	raisedTorsoPitch = 2.0
+	#How much the gun arms follow the torso's movement (landing drop, walk bob). 1.0 = fully, 0 = not at all.
+	#Range: 0.0 ~ 1.5
+	armFollow = 1.0
+	#Raised: how much the gun arms turn with the torso stance (1.0 = together, 0 = not, -1.0 = opposite).
+	#Range: -1.5 ~ 1.5
+	armsWithTorso = 0.0
+	#Raised: degrees to turn the gun arms' aim. Negative = gun toward your left, positive = right.
+	#Range: -90.0 ~ 90.0
+	raisedArmYaw = -12.0
+	#Same as armFollow, but while the weapon is raised (lower = stiffer, steadier aim).
+	#Range: 0.0 ~ 1.5
+	armFollowRaised = 0.5
+	#Raised: lowers (+) or raises (-) the support (left) arm, in degrees.
+	#Range: -45.0 ~ 45.0
+	raisedLeftArmPitch = 20.0
+	#While aiming down sights: how much the gun arms follow torso movement (0 = rock steady).
+	#Range: 0.0 ~ 1.5
+	adsArmFollow = 0.1
+	#While aiming down sights: degrees the head tilts onto the stock (cheek weld). Negative = other way, 0 = off.
+	#Range: -30.0 ~ 30.0
+	adsHeadTilt = 20.0
+	#While aiming: how much to cancel the torso's walking sway (1.0 = fully steady, 0 = natural sway).
+	#Range: 0.0 ~ 1.0
+	adsTorsoSteady = 1.0
+	#Raised weapon while moving: how much of the torso stance to keep (legs face the walk direction then).
+	#Range: 0.0 ~ 1.0
+	movingTorsoYaw = 0.5
+	#Footstep sounds, view bob and gun bob all follow the third-person leg animation (Fresh Animations step cycle).
+	stepSync = true
+	#Shift (degrees) of the footfall within the leg cycle. Tune if steps land between footfalls. /zta reload after editing.
+	#Range: -360.0 ~ 360.0
+	stepPhase = 90.0
+
+[first_person]
+	#Field of view for the gun in first person (like STALKER's HUD FOV).
+	#70 = normal. Higher = gun looks smaller/further away, lower = bigger. Scopes are not affected.
+	#Range: 40.0 ~ 110.0
+	viewModelFov = 85.0
+	#Degrees the gun tilts down in first person when lowered (negative = up).
+	#Range: -60.0 ~ 60.0
+	lowerPitch = 18.0
+	#How far the gun drops in first person when lowered (negative = up).
+	#Range: -1.0 ~ 1.0
+	lowerDrop = 0.05
+	#Shaders: reload the shader pack once, 2 seconds after you first hold a gun in a world.
+	#Works around black streaks that TaCZ guns can leave in Oculus shaders until a reload.
+	shaderFixOnFirstGun = true
+	#Shaders: draw held guns in the shadow pass. false = players still cast a shadow, but the gun doesn't (much cheaper).
+	gunShadows = false
+
+[third_person]
+	#(old setting, no longer used)
+	#Range: 0.0 ~ 80.0
+	lowerArmAngle = 15.0
+	#Lowered (low ready) pose in third person, in degrees [pitch, yaw, roll].
+	#Arm angles adapted from Dochi's Warfare 'low ready' NPC pose (MIT licence, credit: Dochi).
+	#Torso. Pitch leans forward, yaw turns, roll tilts.
+	lowBody = [6.0, 0.0, 0.0]
+	#Right arm (trigger hand). Pitch -90 = straight forward, 0 = hanging down.
+	lowRightArm = [-70.0, -30.0, 4.0]
+	#Left arm (support hand).
+	lowLeftArm = [-60.0, 28.0, -24.0]
+	#Extra turn on the gun itself while lowered, pivoting at the hand (arms don't move).
+	#[pitch, yaw, roll]: pitch + = muzzle up, yaw + = muzzle swings toward the support hand, roll + = cants the gun.
+	lowGun = [0.0, 30.0, 0.0]
+
+[lowered]
+	#Degrees the lowered gun is angled across your body (first AND third person).
+	#Positive = muzzle toward your left, negative = right, 0 = straight.
+	#Range: -60.0 ~ 60.0
+	lowerYaw = 20.0
+
+[visor]
+	#Camera effect while wearing a face-covering helmet in first person (looking through a visor).
+	enabled = true
+	#Helmets that count as face-covering (item ids). Hidden helmets (Anomaly Zone's hide key) don't count.
+	helmets = ["anomalyzone:tishina_helmet", "anomalyzone:scientific_helmet", "anomalyzone:k105a_helmet", "anomalyzone:experiment_n83_helmet", "itz:hazmat_mask", "itz:exo_bulat_helmet", "itz:exo_berill_helmet", "itz:exo_corundum_helmet", "itz:exo_marauder_helmet"]
+	#Lens bulge (fisheye). 0 = off.
+	#Range: 0.0 ~ 1.0
+	distortion = 0.1
+	#Colour fringing toward the screen edges. 0 = off.
+	#Range: 0.0 ~ 2.0
+	fringe = 0.2
+	#Film grain strength. 0 = off.
+	#Range: 0.0 ~ 1.0
+	grain = 0.0
+	#Glow around bright areas. 0 = off (also the cheapest setting).
+	#Range: 0.0 ~ 3.0
+	bloom = 0.4
+	#Dark corners. 0 = off.
+	#Range: 0.0 ~ 1.0
+	vignette = 0.35
+	#Seconds to fade in/out when the helmet goes on or off.
+	#Range: 0.0 ~ 5.0
+	fadeSeconds = 1.0
+	#Black mask frame around the view (rounded corners, nose bridge). 0 = off, 1 = solid black.
+	#Range: 0.0 ~ 1.0
+	mask = 1.0
+	#Size of the mask opening. Bigger = frame pushed further out of view.
+	#Range: 0.7 ~ 1.5
+	maskSize = 0.86
+	#true = every helmet counts as face-covering, except the ones in openHelmets.
+	#false = only the helmets in the helmets list count.
+	allHelmets = true
+	#Helmets that do NOT cover the face (item ids, e.g. "minecraft:leather_helmet"). Used when allHelmets = true.
+	openHelmets = []
+	#Masks and respirators: no visor overlay and no muffling, but you still hear the breathing loop.
+	breathingOnly = ["itz:rookie_respirator"]
+
+[helmet]
+	#Seconds the take-off sequence lasts (the helmet flips at the halfway point).
+	#Range: 0.2 ~ 10.0
+	secondsOff = 3.0
+	#Seconds the put-on sequence lasts.
+	#Range: 0.2 ~ 10.0
+	secondsOn = 3.0
+	#Third-person arm pose at the head, degrees [pitch, yaw, roll] for the right arm (left is mirrored).
+	#Pitch -180 = straight up, -90 = straight forward. Roll tips the hands toward each other.
+	armPose = [-150.0, 0.0, 22.0]
+	#Volume of the breathing loop while a face-covering helmet is on. 0 = off.
+	#Range: 0.0 ~ 2.0
+	breathingVolume = 0.6
+	#How muffled world sounds are while a face-covering helmet is on. 0 = off, 1 = heavy.
+	#Range: 0.0 ~ 1.0
+	muffle = 0.6
+	#Tiny, very short echo of sounds bouncing around inside a face-covering helmet. 0 = off, 1 = strong.
+	#Range: 0.0 ~ 1.0
+	reverb = 0.7
+	#Simple Voice Chat: how muffled YOUR voice sounds to others while your mouth is covered (helmet or respirator). 0 = off.
+	#Range: 0.0 ~ 1.0
+	voiceMuffle = 0.6
+	#First person: degrees your view dips down (head bows) while taking a helmet off or putting it on. 0 = off.
+	#Range: 0.0 ~ 60.0
+	headDip = 20.0
+
+[spores]
+	#Glowing spores drifting through the air in radiation areas.
+	enabled = true
+	#Biomes that always have spores in the air.
+	biomes = ["anomalyzone:red_forest"]
+	#Also show spores for a few seconds whenever your radiation dose is climbing (rad anomalies, vents).
+	whenIrradiated = true
+	#Spores spawned per tick around you (they live ~8-16 s, so 1.0 = roughly 250 in the air).
+	#Range: 0.0 ~ 10.0
+	density = 1.2
+	#How far around you they appear (blocks).
+	#Range: 4.0 ~ 48.0
+	radius = 18.0
+
+[combat_audio]
+	#Tarkov-style gunshot distance / echo and longer-range footsteps.
+	enabled = true
+	#TaCZ sounds whose range is at least this many blocks count as gunshots (reloads etc. are 16-24).
+	#Range: 1.0 ~ 1000.0
+	shotMinRange = 40.0
+	#How much distant gunshots lose their crack (high frequencies). 0 = off, 1 = strong.
+	#Range: 0.0 ~ 1.0
+	shotDarken = 0.85
+	#Distance (blocks) where shots start to sound distant: echo begins, crack fades. Closer = dry and sharp.
+	#Range: 0.0 ~ 500.0
+	tailStart = 60.0
+	#Distance (blocks) where the echo tail is at full strength.
+	#Range: 1.0 ~ 1000.0
+	tailFull = 200.0
+	#Loudness of the echo tail. 0 = off.
+	#Range: 0.0 ~ 1.0
+	tailGain = 0.6
+	#How far (blocks) other players', NPCs' and mobs' footsteps can be heard. Vanilla is 16.
+	#Range: 16.0 ~ 96.0
+	stepRange = 34.0
+	#Footstep loudness multiplier for others (vanilla 1.0).
+	#Range: 1.0 ~ 6.0
+	stepBoost = 2.5
+	#Loudness of other players' and NPCs' gunshots (your own gun is unchanged). 1 = TaCZ default.
+	#Range: 0.05 ~ 1.0
+	otherShotGain = 0.55
+
+[ui]
+	#Paint over Inventory Free's locked slots in modded screens (backpacks etc.).
+	hideLockedSlots = true
+	#Fade the hotbar out when you haven't touched it for a while. It comes back when you switch or pick up items.
+	hotbarFade = true
+	#Seconds before the hotbar starts fading.
+	#Range: 0.5 ~ 60.0
+	hotbarFadeDelay = 4.0
+	#Seconds the fade takes.
+	#Range: 0.05 ~ 5.0
+	hotbarFadeTime = 0.8
+	#XP, hearts, armour and hunger fade with the hotbar. Hearts come back when hurt/healed or low, hunger when low or eating.
+	fadeVitals = true
+	#Seconds hearts/hunger stay up after a change.
+	#Range: 0.5 ~ 60.0
+	vitalsShowSeconds = 5.0
+	#Hearts always shown at or below this many hearts.
+	#Range: 0.0 ~ 20.0
+	lowHearts = 4.0
+	#Hunger always shown at or below this many drumsticks.
+	#Range: 0.0 ~ 10.0
+	lowFood = 3.0
+	#First person: hide your bare arm when you're holding nothing.
+	hideEmptyHand = true
+	#Anomaly Zone's health/stamina panel on the left (out from under the ammo counter).
+	vitalsLeft = true
+	#Distance from the left edge.
+	#Range: 0 ~ 400
+	vitalsMargin = 8
+	#Replace the crosshair with a tiny dot.
+	crosshairDot = true
+	#Dot colour as ARGB (0xAARRGGBB as a number). Default: white at ~70%.
+	#Range: 0 ~ 4294967295
+	crosshairDotColor = 3036676095
+	#STALKER-style identification: look at someone to see their name and faction (green friendly, red hostile, white neutral).
+	factionId = true
+	#How far away (blocks) you can identify someone.
+	#Range: 4.0 ~ 128.0
+	factionIdRange = 48.0
+	#Draw the Anomaly Zone PDA at full brightness (it goes dark under shaders otherwise).
+	pdaFullbright = true
+	#Fade the helmet visor overlay out while the PDA is held up, so its corners aren't hidden.
+	pdaHideVisor = true
+	#Fog distance (blocks) inside the City of Gresham. 0 = normal fog.
+	#Range: 0.0 ~ 512.0
+	cityFog = 56.0
+	#Anomaly Zone health/stamina panel: show health only while hurt and stamina only while it's being used.
+	vitalsAutoHide = true
+
+[holster]
+	#Gun in hotbar slot 1 is slung on your back when not held. 1 draws it, 1 again (or H) slings it.
+	enabled = true
+	#Back position, in blocks, relative to the torso (x = sideways, y = down, z = out from the back).
+	#Range: -1.0 ~ 1.0
+	x = 0.0
+	#Range: -1.0 ~ 1.5
+	y = 0.35
+	#Range: -1.0 ~ 1.0
+	z = 0.22
+	#Extra distance from the back when wearing chest armor.
+	#Range: 0.0 ~ 0.5
+	armorZ = 0.06
+	#Rotation, degrees.
+	#Range: -360.0 ~ 360.0
+	yaw = 0.0
+	#Range: -360.0 ~ 360.0
+	roll = 45.0
+	#Range: -360.0 ~ 360.0
+	pitch = 180.0
+	#Range: 0.1 ~ 3.0
+	scale = 0.52
+	#Slinging goes to a hidden 10th slot = truly empty hands (false = an empty/other hotbar slot).
+	emptyHand = true
+
+	#Where the slung gun goes while a backpack is worn (strapped to the backpack's side).
+	[holster.backpack]
+		#Sideways (negative = your right side).
+		#Range: -1.0 ~ 1.0
+		x = -0.5
+		#Range: -1.0 ~ 1.5
+		y = 0.3
+		#Out from the back.
+		#Range: -1.0 ~ 1.0
+		z = 0.3
+		#Range: -360.0 ~ 360.0
+		yaw = 88.0
+		#Range: -360.0 ~ 360.0
+		roll = 100.0
+		#Range: -360.0 ~ 360.0
+		pitch = 180.0
+
+[pose]
+	#Third person, weapon raised: how much of TaCZ's sideways torso twist to keep (0 = torso square with the legs, 1 = TaCZ default).
+	#Range: 0.0 ~ 1.0
+	raisedTorsoTwist = 1.0
+
+[atmosphere]
+	#Bleak Zone colours on every biome (existing world too): drained grass/leaves, murky water, greyer sky and fog.
+	#Changes show on chunks re-rendered (F3+A reloads them).
+	enabled = true
+	#Grass/leaf colour drained toward grey (0 = vanilla, 1 = fully grey).
+	#Range: 0.0 ~ 1.0
+	grassDesaturate = 0.0
+	#Dry tint mixed into grass/leaves (#RRGGBB).
+	grassTintColor = "#7E7650"
+	#Range: 0.0 ~ 1.0
+	grassTint = 0.0
+	#Water surface colour (#RRGGBB) and how much it replaces the biome's own.
+	waterColor = "#48523C"
+	#Range: 0.0 ~ 1.0
+	water = 0.8
+	#Underwater fog colour (#RRGGBB) and amount.
+	waterFogColor = "#252B1E"
+	#Range: 0.0 ~ 1.0
+	waterFog = 0.85
+	#Sky colour drained toward grey.
+	#Range: 0.0 ~ 1.0
+	skyDesaturate = 0.0
+	#Distance fog colour drained toward grey.
+	#Range: 0.0 ~ 1.0
+	fogDesaturate = 0.0
+

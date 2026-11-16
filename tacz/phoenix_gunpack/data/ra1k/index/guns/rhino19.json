@@ -1,0 +1,8 @@
+{
+  "name": "ra1k.gun.rhino19.name",
+  "display": "ra1k:rhino19_display",
+  "data": "ra1k:rhino19_data",
+  "tooltip": "ra1k.gun.rhino19.desc",
+  "type": "pistol",
+  "sort": 23
+}

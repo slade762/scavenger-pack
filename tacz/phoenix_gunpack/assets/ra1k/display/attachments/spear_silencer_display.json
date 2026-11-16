@@ -1,0 +1,9 @@
+{
+  "slot": "ra1k:attachment/slot/spear_silencer",
+  "model": "ra1k:attachment/spear_silencer_geo",
+  "texture": "ra1k:attachment/uv/spear_silencer",
+  "sounds": {
+    "install": "tacz:attachments/muzzle_general",
+    "uninstall": "tacz:attachments/muzzle_general"
+  }
+}

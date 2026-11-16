@@ -1,0 +1,13 @@
+name = "Particular ✨ Reforged"
+filename = "particular-1.20.1-Forge-1.6.1.jar"
+side = "both"
+
+[download]
+url = "https://edge.forgecdn.net/files/9595/386/particular-1.20.1-Forge-1.6.1.jar"
+hash-format = "sha1"
+hash = "bc343bc4c3fef0c16307b8f14415ef73cf211263"
+
+[update]
+[update.curseforge]
+file-id = 9595386
+project-id = 1219053

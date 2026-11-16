@@ -1,0 +1,31 @@
+type = fancymenu_layout
+
+layout-meta {
+  identifier = %fancymenu:universal_layout%
+  render_custom_elements_behind_vanilla = false
+  last_edited_time = 1794797800000
+  is_enabled = true
+  widget_identifier_revision = 2
+  randommode = false
+  randomgroup = 1
+  randomonlyfirsttime = false
+  layout_index = 1
+  universal_layout_whitelist = select_world_screen;create_world_screen;edit_world_screen;experiments_screen;edit_game_rules_screen;confirm_experimental_features_screen;join_multiplayer_screen;direct_join_server_screen;edit_server_screen;connect_screen;safety_screen;net.minecraftforge.client.gui.ModListScreen
+  universal_layout_blacklist = 
+  [loading_requirement_container_meta:7a1c2e90-5b1d-4f0e-9a43-2c6e8d1f0b77-1794797800000] = [groups:][instances:]
+}
+
+menu_background {
+  instance_identifier = 694ded8e-4368-45a4-9a37-1c1539401b2c-1794797800000
+  background_type = video
+  show_background = true
+  loop = true
+  volume = 1.0
+  sound_source = music
+  parallax = false
+  parallax_intensity_x = 0.02
+  parallax_intensity_y = 0.02
+  invert_parallax = false
+  play_in_editor = true
+  source = [source:local]/config/fancymenu/assets/scavenger_title.mp4
+}

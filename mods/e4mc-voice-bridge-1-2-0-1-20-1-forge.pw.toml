@@ -1,0 +1,13 @@
+name = "Voice Bridge for e4mc"
+filename = "e4mc-voice-bridge-1.2.0-1.20.1-forge.jar"
+side = "both"
+
+[download]
+url = "https://edge.forgecdn.net/files/9582/326/e4mc-voice-bridge-1.2.0-1.20.1-forge.jar"
+hash-format = "sha1"
+hash = "c4a4bbd2935bb94620eb4c4c1a0a49cd1d9e9042"
+
+[update]
+[update.curseforge]
+file-id = 9582326
+project-id = 1801344

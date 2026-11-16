@@ -1,0 +1,9 @@
+{
+  "name": "ra1k.gun.voldemort.name",
+  "tooltip": "ra1k.gun.voldemort.desc",
+  "display": "ra1k:voldemort_display",
+  "data": "ra1k:voldemort_data",
+  "type": "rpg",
+  "item_type": "modern_kinetic",
+  "sort": 1
+}

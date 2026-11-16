@@ -1,0 +1,13 @@
+name = "Dochi`s Warfare"
+filename = "dochi_warfare-0.3.0.jar"
+side = "both"
+
+[download]
+url = "https://edge.forgecdn.net/files/9069/389/dochi_warfare-0.3.0.jar"
+hash-format = "sha1"
+hash = "4e05717212d6676e52bf6f45e741cf6992eeb696"
+
+[update]
+[update.curseforge]
+file-id = 9069389
+project-id = 1553237

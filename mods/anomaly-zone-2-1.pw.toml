@@ -1,0 +1,13 @@
+name = "Anomaly Zone"
+filename = "Anomaly_Zone-2.1.jar"
+side = "both"
+
+[download]
+url = "https://edge.forgecdn.net/files/9481/457/Anomaly_Zone-2.1.jar"
+hash-format = "sha1"
+hash = "6b5b6088a09801ae50176b3fdd98a230a4671e81"
+
+[update]
+[update.curseforge]
+file-id = 9481457
+project-id = 1604795

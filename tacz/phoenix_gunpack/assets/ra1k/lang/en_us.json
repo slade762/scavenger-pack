@@ -1,0 +1,203 @@
+{	
+	//v1.0
+	"ra1k.gun.vss.name":"VSS Sniper rifle",	
+	"ra1k.gun.vss.desc":"Rusian legendary sniper rifle",
+	"ra1k.gun.aksu.name":"AKS-74u",	
+	"ra1k.gun.aksu.desc":"Mini-version AK-74 \n\n[model by laffey]",	
+	"ra1k.gun.akv.name":"Aklys Defense Velociraptor",
+	"ra1k.gun.akv.desc":"Velociraptorrrrrrrrrrr \n\n[model by Le Long]",
+	"ra1k.gun.mod4.name":"AsVal Mod4",
+	"ra1k.gun.mod4.desc":"Modern modification for \"Val\"",
+	
+	//v1.1
+	"ra1k.gun.fn57.name":"Fn Five/SeveN",
+	"ra1k.gun.fn57.desc":"NOT THE SIX SEVEN!!! \n\n[model by duskdawn]",
+	
+	//v1.3
+	"ra1k.gun.hk_mp5a5.name":"HK-MP5A5 bolt action",
+	"ra1k.gun.hk_mp5a5.desc":"What the fu....",
+	"ra1k.gun.ak50lite.name":"AK-50 lite",
+	"ra1k.gun.ak50lite.desc":"Brendon`s Herrera worst gun... But its beautiful  ",
+	
+	//v1.4
+	"ra1k.gun.voldemort.name":"Voldemorts wsnd",
+	"ra1k.gun.voldemort.desc":"It's better not to say your name",
+	
+	//v1.5
+	"ra1k.gun.sa58.name":"DS Arms SA58 rifle",
+	"ra1k.gun.sa58.desc":"The left hand of the free world \n\n[sounds by rene_m]",
+		
+	//v1.5.1
+	"ra1k.gun.m590.name":"Mossberg 590 tactical shotgun",
+	"ra1k.gun.m590.desc":"My little friend",
+	
+	//v1.6
+	"ra1k.gun.vsk.name":"VSK-94 rifle",
+	"ra1k.gun.vsk.desc":"Cheap russian gun. Very cheap",
+	
+	//v1.7
+	"ra1k.gun.nl545.name":"Custom Guns NL-545",
+	"ra1k.gun.nl545.desc":"THIS IS NOT QBZ-191",
+	
+	//v1.7.2
+	"ra1k.gun.shorty.name":"Serbu Super Shorty",
+	"ra1k.gun.shorty.desc":"Super shorty, super fasty",
+	
+	//v1.8
+	"ra1k.gun.ak50.name":"AK-50",
+	"ra1k.gun.ak50.desc":"BRENDON`S HERRERA ANTI F*****G MATEREAL SNIPER RIFLE \n[model by BeansBen]",
+	
+	//v1.8.1
+	"ra1k.gun.nl545_fde.name":"§6Custom Guns NL-545 GP",
+	"ra1k.gun.nl545_fde.desc":"THIS IS NOT QBZ-191",
+	
+	//v1.9
+	"ra1k.gun.ak57.name":"AK-57 SMG",
+	"ra1k.gun.ak57.desc":"Draw a body armor on their smiling faces",
+	"ra1k.gun.ak224.name":"AK-224 DMR",
+	"ra1k.gun.ak224.desc":"The most accurate AK in this world",
+	
+	//v2.0
+	"ra1k.gun.ak74.name":"AK-74",
+	"ra1k.gun.ak74.desc":"Truly legendary rifle \n\n[model by laffey]",		
+	"ra1k.gun.ak74_gp25.name":"AK-74 (GP-25)",
+	"ra1k.gun.ak74_gp25.desc":"Truly legendary rifle with truly legendary grenade launcher",
+	"ra1k.gun.ak105.name":"§6Fuller Phoenix §rAK-105",
+	"ra1k.gun.ak105.desc":"He rise from the ashes",
+	"ra1k.gun.uar15.name":"Zbroyar UAR-15",
+	"ra1k.gun.uar15.desc":"Ukrainian assault rifle",
+	"ra1k.gun.groza.name":"Grenade launcher complex Ots-14 \"Groza-4\"",
+	"ra1k.gun.groza.desc":"Russian special bullpup rifle",
+	"ra1k.gun.groza_gp25.name":"Grenade launcher complex Ots-14 \"Groza-4\" (GP-25)",
+	"ra1k.gun.groza_gp25.desc":"They are made for each other",
+	"ra1k.gun.sa58_m203.name":"DS Arms SA58 (M203)",
+	"ra1k.gun.sa58_m203.desc":"Another hand of the free world",
+	
+	
+	//v2.0.3
+	"ra1k.gun.rpk74.name":"RPK-74",
+	"ra1k.gun.rpk74.desc":"Not a machine gun, but its machine gun",
+	
+	//v2.0.4
+	"ra1k.gun.vulkan.name":"IPI Malyuk \"Vulcan\"",
+	"ra1k.gun.vulkan.desc":"Ukrainian baby",
+	"ra1k.gun.vssk.name":"VSSK \"Vykhlop\"",
+	"ra1k.gun.vssk.desc":"VSSK! NOT THE VKS!",
+	"ra1k.gun.mk47.name":"CMMG MK-47 \"Mutant\"",
+	"ra1k.gun.mk47.desc":"Why choose between the AK and the AR15? Just take both",
+	"ra1k.gun.rsh12.name":"RSH-12 anti matereal revolver", 
+	"ra1k.gun.rsh12.desc":"Requiem",	
+	"ra1k.gun.mp155.name":"MP-155 shotgun",
+	"ra1k.gun.mp155.desc":"More tacticool, then you think",
+	"ra1k.gun.sr_3m.name":"SR-3M \"Vikhr\"",
+	"ra1k.gun.sr_3m.desc":"AsVal but without silencer lol",	
+	
+	
+	
+	//v2.0.5
+	"ra1k.gun.magic_ak.name":"§6MAGIC §dAK",
+	"ra1k.gun.magic_ak.desc":"SHE'S MEW MEW GIRL WITH MAGIC AK \n[Deltarune meme]\n[Song by Blizzy & chai 2 leaves!]",	
+	"ra1k.gun.aristotel.name":"The \"Aristotel\" book",
+	"ra1k.gun.aristotel.desc":"Books are the most important thing of all\n Plus, they make excellent weapons",
+	"ra1k.gun.groza_1.name":"Ots-14 \"Groza-1\"",
+	"ra1k.gun.groza_1.desc":"Russian bullpup rifle \n\n[model by Ahpu_]",
+	"ra1k.gun.spear.name":"§6M7 Battle Rifle",
+	"ra1k.gun.spear.desc":"ABSOLUTE DEMOCRACY",
+	"ra1k.gun.spear_m203.name":"§6M7 (M203)",
+	"ra1k.gun.spear_m203.desc":"DEMOCRACY GOES BOOM-BOOM",
+	"ra1k.gun.ots12.name":"Ots-12 \"Tiss\"", 	
+	"ra1k.gun.ots12.desc":"Son of the AKS-74u and \"Groza\"",
+	"ra1k.gun.rhino19.name":"9x19 Rhino Revolver",
+	"ra1k.gun.rhino19.desc":"Maybe you dont want to shoot with this rhino",
+	
+	
+	//2.0.6
+	"ra1k.gun.m870_obrez.name":"Sawed-off M870",
+	"ra1k.gun.m870_obrez.desc":"Hello from Counter Strike!",
+	"ra1k.gun.r11_87.name":"Remington 11-87",
+	"ra1k.gun.r11_87.desc":"The choice of a professional killer",
+	"ra1k.gun.sw500.name":"S&W Model 500",
+	"ra1k.gun.sw500.desc":"The most powerful revolver in the world",
+	"ra1k.gun.fort12.name":"Fort-12",
+	"ra1k.gun.fort12.desc":"Modern Ukrainian Makarov",
+	"ra1k.gun.sr_2m.name":"SR-2M \"Veresk\"",
+	"ra1k.gun.sr_2m.desc":"Power of AK in a SMG",
+	"ra1k.gun.pm.name":"Makarov PM",
+	"ra1k.gun.pm.desc":"Soviet oficers pistol",
+	"ra1k.gun.ak444.name":"AK-444 Marlin",
+	"ra1k.gun.ak444.desc":"The westornmost AK in this world",
+	
+	
+	//v?.?.?	
+	//"ra1k.gun.ak74_rust.name":"Rusty AK-74",
+	//"ra1k.gun.ak74_rust.desc":"Truly old gun", 
+	//"ra1k.gun.ultima.name":"MP-155 \"Ultima\" smart shotgun",
+	//"ra1k.gun.ultima.desc":"This gun is smarter than you",
+
+	
+	
+	//VERY, VERY INTERESTING
+	
+	
+	
+	"ra1k.ammo.avada.name": "Avada Kedavra spel",
+	"ra1k.ammo.valkyrie.name": "§c224 Valkyrie",
+	"ra1k.ammo.444marlin.name": "§c444 Marlin",
+	"ra1k.ammo.40mm.name": "§dSoviet 40mm grenade",
+	
+	"ra1k.attachment.pso1.name":"PSO-1 sniper scope",
+	"ra1k.attachment.pso1.desc":"Legendary scope for VSS, AsVal, SVD, etc",
+	//"ra1k.attachment.ehs1.name":"Holographic sight with magnifier",
+	//"ra1k.attachment.ehs1.desc":"strange technical implementation :/",
+	"ra1k.attachment.okp7.name":"OKP-7 sight",
+	"ra1k.attachment.okp7.desc":"Russian red dot sight for VSS, AsVal etc",
+	"ra1k.attachment.cobra.name":"Cobra sight",
+	"ra1k.attachment.cobra.desc":"Russian red dot sight for VSS, AsVal etc \n But with cool name",
+	"ra1k.attachment.939.name":"Silencer for 9x39mm",
+	"ra1k.attachment.939.desc":"Russian silencer for VSK-94, SR-3m etc",
+	"ra1k.attachment.fpx_sight_552.name":"§6Sight Miltech 552",
+	"ra1k.attachment.sight_velociraptor.name":"Sight for Velociraptor",
+	"ra1k.attachment.cover.name":"Default receiver cover",
+	"ra1k.attachment.handguard_tactical.name":"Default tactical handguard",
+	"ra1k.attachment.kit_lmg.name":"Full auto module",
+	"ra1k.attachment.kit_lmg.desc":"MAXIMUM POWER\n\n§e*Unlock auto fire mode",
+	"ra1k.attachment.spear_silencer.name":"M7 silencer",
+	"ra1k.attachment.spear_silencer.desc":"Exclusive silence",
+
+	
+	"ra1k.handguard.green.name":"§aCustom green handguard",
+	"ra1k.handguard_laser.green.name":"§aCustom green handguard with laser",
+	"ra1k.handguard.red.name":"§cCustom red handguard",
+	"ra1k.handguard_laser.red.name":"§cCustom red handguard with laser",
+	//"ra1k.handguard.sand.name":"§eCustom sand handguard",
+	//"ra1k.handguard_laser.sand.name":"§eCustom sand handguard with laser",
+	"ra1k.handguard.grey.name":"§7Custom tactical handguard",
+	"ra1k.handguard_laser.grey.name":"§7Custom tactical handguard with laser",
+	"ra1k.handguard.desc":"Decorate your gun!",
+	
+	
+	"ra1k.attachment.sight_magnifier.name":"Sight with magnifier",
+	"ra1k.attachment.sight_magnifier_off.name":"Sight with magnifier (Switched)",
+	"ra1k.attachment.vudu_2x.name":"Vudu 1-6x Scope (Switched)",
+	"ra1k.attachment.vudu_6x.name":"Vudu 1-6x Scope",
+	"ra1k.attachment.sight_magnifier.desc":"\n§eYou can change zoom \n\nAlso works with sights from Arips Attachments and Laffey(Only on guns from Phoenix Gunpack)",
+	
+	
+	"ra1k.attachment.m203.name":"M203 underbarrel grenade launcher",
+	"ra1k.attachment.gp25.name":"GP-25 underbarrel grenade launcher",
+	"ra1k.attachment.ugl.desc":"\n§eSelect SEMI fire mode after installation",
+	
+	"ra1k.attachment.fast_mag.name":"Fast Magazine",
+	"ra1k.attachment.fast_mag.desc":"Make your gun lighter",
+	"ra1k.attachment.flip_mag.name":"Flip Magazine",
+	"ra1k.attachment.flip_mag.desc":"One magazine for the price of two!",
+	
+	
+	"ra1k.attachment.extended_mag.name":"Extended Magazine",
+	"ra1k.attachment.extended_mag.desc":"More bullets, more chances to miss",
+	"ra1k.attachment.drum_mag.name":"Drum Magazine",
+	"ra1k.attachment.drum_mag.desc":"Loading the drum is faster than reloading the gun each time",
+	"ra1k.attachment.m590_mag.name":"Mossberg 590 Magazine",
+	"ra1k.attachment.m590_mag.desc":"Faster, than manual reload"
+	
+}

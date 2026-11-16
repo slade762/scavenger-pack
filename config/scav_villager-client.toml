@@ -1,0 +1,24 @@
+
+#界面音效
+[ui]
+	#是否用模组的成就 / 配方音效替换原版。 false = 完全用回原版音效（不播自定义音，也不压原版的号角声）。
+	achievementSounds = true
+	#每次进入世界是否弹入场提示框、并播三遍入场音频。
+	joinSound = false
+	#本地玩家死亡提示音的冷却（秒）。0 = 每次死亡都响。
+	#Range: 0 ~ 600
+	playerDeathCooldownSeconds = 5
+
+#客户端
+[client]
+	#同一只生物、同一句语音在这个时间窗内重复到达时丢弃（毫秒）。 服务端和客户端各有一份生物实例，靠这个挡掉被播两遍的语音。
+	#Range: 0 ~ 2000
+	duplicateWindowMillis = 250
+
+#228 弹窗（塔科夫“严重错误”整活：跳出后点确认会被踢回主菜单）
+[228]
+	#是否开启。false = 每分钟的那次随机判定完全不跑，永远不会自己弹窗。 /228 test 仍可手动触发一次，方便确认关没关干净。
+	error228Enabled = false
+	#弹窗弹出时是否播放报错音效 ui.error_228。false = 静悄悄地弹窗。
+	error228Sound = true
+

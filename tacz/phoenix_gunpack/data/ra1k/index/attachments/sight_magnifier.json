@@ -1,0 +1,8 @@
+{
+  "name": "ra1k.attachment.sight_magnifier.name",
+  "tooltip": "ra1k.attachment.sight_magnifier.desc",
+  "display": "ra1k:sight_magnifier_display",
+  "data": "ra1k:sight40_small_data",
+  "type": "scope",
+  "sort": 23
+}

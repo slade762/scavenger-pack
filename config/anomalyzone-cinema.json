@@ -1,0 +1,21 @@
+{
+  "cinema.hands_on_f1": false,
+  "cinema.hide_hands": false,
+  "cinema.hide_mod_hud": false,
+  "cinema.hide_crosshair": false,
+  "cinema.bars_pct": 0.0,
+  "cinema.bars_f1_only": true,
+  "cinema.no_shake": false,
+  "cinema.no_contam_fx": false,
+  "cinema.smooth_camera": false,
+  "cinema.smooth_ms": 150,
+  "cinema.smooth_pitch_pct": 100,
+  "cinema.smooth_sens_pct": 100,
+  "cinema.freecam": false,
+  "cinema.freecam_speed": 8.0,
+  "cinema.freecam_boost": 4.0,
+  "cinema.freecam_inertia": 150,
+  "cinema.zoom_factor": 3.0,
+  "cinema.zoom_slow": true,
+  "cinema.zoom_smooth": 6
+}

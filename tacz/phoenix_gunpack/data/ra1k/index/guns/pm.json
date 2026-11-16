@@ -1,0 +1,8 @@
+{
+    "name": "ra1k.gun.pm.name",
+    "display": "ra1k:pm_display",
+    "data": "ra1k:pm_data",
+    "tooltip":"ra1k.gun.pm.desc",
+    "type": "pistol",
+    "sort": 23
+}

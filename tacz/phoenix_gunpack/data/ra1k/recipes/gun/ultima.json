@@ -1,0 +1,31 @@
+{
+  "materials": [
+    {
+      "item": {
+        "tag": "forge:ingots/iron"
+      },
+      "count": 64
+    },
+    {
+      "item": {
+        "tag": "forge:rods/blaze"
+      },
+      "count": 1
+    },
+	{
+      "item": {
+        "tag": "forge:dusts/redstone"
+      },
+      "count": 10
+    }
+  ],
+  "result": {
+    "type": "gun",
+    "id": "ra1k:mp155",
+	"attachments": {
+	  "laser": "ra1k:handguard_grey",
+	  "muzzle": "ra1k:kit_lmg"
+    }	
+  },
+  "type": "tacz:gun_smith_table_crafting"
+}

@@ -1,0 +1,13 @@
+name = "MidnightLib"
+filename = "midnightlib-forge-1.9.2+1.20.1.jar"
+side = "both"
+
+[download]
+url = "https://edge.forgecdn.net/files/7318/663/midnightlib-forge-1.9.2%2B1.20.1.jar"
+hash-format = "sha1"
+hash = "ff01aa718b71249012c41d9926d3fd2982809fdb"
+
+[update]
+[update.curseforge]
+file-id = 7318663
+project-id = 488090

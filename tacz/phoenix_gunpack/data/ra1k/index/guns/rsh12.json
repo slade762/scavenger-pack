@@ -1,0 +1,8 @@
+{
+    "name": "ra1k.gun.rsh12.name",
+    "display": "ra1k:rsh12_display",
+    "data": "ra1k:rsh12_data",
+    "tooltip":"ra1k.gun.rsh12.desc",
+    "type": "pistol",
+    "sort": 23
+}

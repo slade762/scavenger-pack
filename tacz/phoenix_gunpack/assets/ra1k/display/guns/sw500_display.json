@@ -1,0 +1,63 @@
+{
+  "model": "ra1k:gun/sw500_geo",
+  "texture": "ra1k:gun/uv/sw500",
+  "lod": {
+    "model": "ra1k:gun/lod/sw500",
+    "texture": "ra1k:gun/lod/sw500"
+  },
+  "hud": "ra1k:gun/hud/sw500",
+  "slot": "ra1k:gun/slot/sw500",
+  "animation": "ra1k:sw500",
+  "default_animation": "ra1k:1",
+  "state_machine": "tacz:taurus500_state_machine",
+  "player_animator_3rd": "tacz:pistol_default.player_animation",
+  "transform": {
+    "scale": {
+      "thirdperson": [0.6, 0.6, 0.6],
+      "ground": [0.6, 0.6, 0.6],
+      "fixed": [1.2, 1.2, 1.2]
+    }
+  },
+  "iron_zoom": 2,
+  "zoom_model_fov": 45,
+  "shell": {
+    "initial_velocity": [8.0, 5.0, -0.5],
+    "random_velocity": [2.5, 1.5, 0.25],
+    "acceleration": [0.0, -20, 0.0],
+    "angular_velocity": [720, -1280, 90],
+    "living_time": 1.0
+  },
+  "muzzle_flash": {
+    "type": "renew",
+    "texture": "tacz:flash/common_muzzle_flash",
+    "scale": 0.75,
+    "smoke_scale": 1.65,
+    "initial_speed_scale": 1.7,
+    "smoke_particle_count": 16
+  },
+  "sounds": {
+    "draw": "tacz:taurus500/taurus500_draw",
+    "put_away": "tacz:taurus500/taurus500_put_away",
+    "shoot": "ra1k:shoot/sw500",
+    "shoot_3p": "ra1k:shoot/sw500_mono3p"
+  },
+  "offhand_show": {
+    "pos": [4, 13, -2],
+    "rotate": [-90, -35, 90],
+    "scale": [0.5, 0.5, 0.5]
+  },
+  "hotbar_show": {
+    "0": {
+      "pos": [-5, 13, -2],
+      "rotate": [-90, -35, 90],
+      "scale": [0.5, 0.5, 0.5]
+    }
+  },
+  "controllable": {
+    "semi": {
+      "low_frequency": 1,
+      "high_frequency": 1,
+      "time": 200
+    }
+  }
+}

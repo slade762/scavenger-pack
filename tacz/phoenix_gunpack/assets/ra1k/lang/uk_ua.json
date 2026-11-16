@@ -1,0 +1,197 @@
+{
+	//v1.0
+	"ra1k.gun.vss.name":"ВС \"Вінтар\"",	
+	"ra1k.gun.vss.desc":"Легендарна гвинтівка із сталкеру",
+	"ra1k.gun.aksu.name":"АКМ-74У",	
+	"ra1k.gun.aksu.desc":"Маленький, але ефективний\n\n[model by laffey]",	
+	"ra1k.gun.akv.name":"Трицираптор",
+	"ra1k.gun.akv.desc":"Динозавр рррррррррр \n\n[model by Le Long]",
+	"ra1k.gun.mod4.name":"АС \"Ловина\" МОД-4",
+	"ra1k.gun.mod4.desc":"Сучасна модифиція \"Ловини\"",
+	
+	//v1.1
+	"ra1k.gun.fn57.name":"ФТ-57",
+	"ra1k.gun.fn57.desc":"Серйозна відповідь на \"67\" \n\n[model by duskdawn]",
+	
+	//v1.3
+	"ra1k.gun.hk_mp5a5.name":"Viper5 з болтовою дією",
+	"ra1k.gun.hk_mp5a5.desc":"Якого біса....",
+	"ra1k.gun.ak50lite.name":"АКМ-50 лайт",
+	"ra1k.gun.ak50lite.desc":"Брендоне, зупинись...",
+	
+	//v1.4
+	"ra1k.gun.voldemort.name":"Волдемортова палочка",
+	"ra1k.gun.voldemort.desc":"Про всяк випадок, твоє ім'я казати не буду",
+	
+	//v1.5
+	"ra1k.gun.sa58.name":"СА-58 \"Бастион\"",
+	"ra1k.gun.sa58.desc":"Тактична версія ФАЛа \n\n[sounds by rene_m]",
+	
+	//v1.5.1
+	"ra1k.gun.m590.name":"M860",
+	"ra1k.gun.m590.desc":"Тактикульний малий",
+	
+	//v1.6
+	"ra1k.gun.vsk.name":"ВКс  \"Тінь\" ",
+	"ra1k.gun.vsk.desc":"Дуже дешева альтернатива Вінтарю",
+	
+	//v1.7
+	"ra1k.gun.nl545.name":"AL-545",
+	"ra1k.gun.nl545.desc":"Мутант калашу з емкою для великих відстаней",
+	
+	//v1.7.2
+	"ra1k.gun.shorty.name":"Супер короткий М860",
+	"ra1k.gun.shorty.desc":"Розмір - це не головне",
+	
+	//v1.8
+	"ra1k.gun.ak50.name":"AKM-50",
+	"ra1k.gun.ak50.desc":"БРЕНДОНСЬКА ВЕЛИКОКАЛІБЕРНА БІСОВА СНАЙПЕРСЬКА ГВИНТІВКА \n\n[model by BeansBen]",
+	
+	//v1.8.1
+	"ra1k.gun.nl545_fde.name":"§6AL-545 FDE",
+	"ra1k.gun.nl545_fde.desc":"Мутант калашу з емкою для малих відстаней",
+	
+	//v1.9
+	"ra1k.gun.ak57.name":"AKM-57",
+	"ra1k.gun.ak57.desc":"Цього разу це зробив не Брендон....",
+	"ra1k.gun.ak224.name":"AKM-224",
+	"ra1k.gun.ak224.desc":"Точнішого АК не знайдеш",
+	
+	//v2.0
+	"ra1k.gun.ak74.name":"АКМ-74С",
+	"ra1k.gun.ak74.desc":"Вірний товариш у будь який час \n\n[model by laffey]",
+	"ra1k.gun.ak74_gp25.name":"АКМ-74С (ГП-25)",
+	"ra1k.gun.ak74_gp25.desc":"Зробіть їм бавовну",
+	"ra1k.gun.ak105.name":"§6Fuller Phoenix §rАКМ-105",
+	"ra1k.gun.ak105.desc":"Він народився із попелу",
+	"ra1k.gun.uar15.name":"Зброяр UAR-15",
+	"ra1k.gun.uar15.desc":"Українська гвинтівка, яка замінює родянські калаши \n§9-----\n§e-----",
+	"ra1k.gun.groza.name":"Гром С-14",
+	"ra1k.gun.groza.desc":"Найкращий друг сталкера",
+	"ra1k.gun.groza_gp25.name":"Гром С-14 (ГП-25)",
+	"ra1k.gun.groza_gp25.desc":"Вони тепер нерозлучні",
+	"ra1k.gun.sa58_m203.name":"СА-58 \"Бастион\" (М203)",
+	"ra1k.gun.sa58_m203.desc":"Великий бабах",
+	
+	//v2.0.3
+	"ra1k.gun.rpk74.name":"РКМ-74",
+	"ra1k.gun.rpk74.desc":"Кремезний калаш",
+	
+	//v2.0.4	
+	"ra1k.gun.vulkan.name":"Дніпро",
+	"ra1k.gun.vulkan.desc":"Героям Слава!\n§9-----\n§e-----",
+	"ra1k.gun.vssk.name":"ВКС \"Туман\"",
+	"ra1k.gun.vssk.desc":"ТИХО. ДУЖЕ ТИХО",
+	"ra1k.gun.mk47.name":"АР-47 \"Мутант\"",
+	"ra1k.gun.mk47.desc":"Ще один мутант у зоні",
+	"ra1k.gun.rsh12.name":"Rhino 12", 
+	"ra1k.gun.rsh12.desc":"Цей звір може здолати слона",
+	"ra1k.gun.mp155.name":"МП-155 ",
+	"ra1k.gun.mp155.desc":"Підходить не тільки для полювання",
+	"ra1k.gun.sr_3m.name":"СП-3 \"Вихір\"",
+	"ra1k.gun.sr_3m.desc":"Як Ловина, але без глушнику",
+	
+	
+	//v2.0.5
+	"ra1k.gun.magic_ak.name":"§6ЧАРІВНИЙ §dАК",
+	"ra1k.gun.magic_ak.desc":"ВОНА МЯУ МЯУ ДІВЧИНА ІЗ КАРІВНИМ КАЛАШЕМ \n[Мем по Deltarune]\n[Song by Blizzy & chai 2 leaves!]",
+	"ra1k.gun.aristotel.name":"§lАРИСТОТЕЛЬ",
+	"ra1k.gun.aristotel.desc":"Книги - це безмежне джерело мудрості \nА також найнебезпечніша зброя людства",
+	"ra1k.gun.spear.name":"§6MSX M77",
+	"ra1k.gun.spear.desc":"Я вже чую цей смак демократії",
+	"ra1k.gun.spear_m203.name":"§6MSX M77 (М203)",
+	"ra1k.gun.spear_m203.desc":"Я вже чую цей смак демократії... Та пороху",
+	"ra1k.gun.rhino19.name":"Rhino 9x19mm",
+	"ra1k.gun.rhino19.desc":"Цей \"Носоріг\" навіть мухи не скривдить",	
+	"ra1k.gun.ots12.name":"\"Верба\" С-12", 
+	"ra1k.gun.ots12.desc":"Гарне дерево. Але не зброя",
+	
+	
+	//v2.0.6
+	"ra1k.gun.m870_obrez.name":"Обріз М870",
+	"ra1k.gun.m870_obrez.desc":"Привіт з Контр Страйку!",
+	"ra1k.gun.r11_87.name":"Rem 11-87",
+	"ra1k.gun.r11_87.desc":"Старим тут не місце",
+	"ra1k.gun.sw500.name":"S&W 500",
+	"ra1k.gun.sw500.desc":"Найпотужніший револьвер у світі",
+	"ra1k.gun.fort12.name":"Форт-12",
+	"ra1k.gun.fort12.desc":"Старий патрон, нова обгортка",
+	"ra1k.gun.sr_2m.name":"СП-2 \"Дзвін\"",
+	"ra1k.gun.sr_2m.desc":"Чую дзвін, але не чую де він",
+	"ra1k.gun.pm.name":"ПТМ",
+	"ra1k.gun.pm.desc":"Гей, Скіфе! Ти пістолет загубив",
+	"ra1k.gun.ak444.name":"AKM-444 Marlin",
+	"ra1k.gun.ak444.desc":"Західнішого АК не знайдеш",
+	//v?.?.?
+	
+	//"ra1k.gun.ultima.name":"MП-155 \"Максима\"",
+	//"ra1k.gun.ultima.desc":"Ця зброя розумніша за тебе",	
+	//VERY, VERY INTERESTING
+	
+	
+	
+	"ra1k.ammo.avada.name": "Авада Кедавра",
+	"ra1k.ammo.valkyrie.name": "§cПатрони 224 Valkyrie",
+	"ra1k.ammo.444marlin.name": "§cПатрони 444 Marlin",
+	"ra1k.ammo.40mm.name": "§dРодянська 40мм граната",
+	"ra1k.gun.groza_1.name":"Гром С-14-1",
+	"ra1k.gun.groza_1.desc":"Не вистачаає однієї деталі... \n\n[model by Ahpu_]",
+	
+	"ra1k.attachment.pso1.name":"Оптичний приціл ПСО-1",
+	"ra1k.attachment.pso1.desc":"Легендарний приціл для \"Вінтаря\", АКМ, \"Ловини\" та інш.",
+	"ra1k.attachment.ehs1.name":"Голографічний приціл з магніфером",
+	"ra1k.attachment.ehs1.desc":"Дуже дивна технічна реалізація :/",
+	"ra1k.attachment.okp7.name":"Каліматорний приціл OKP-7",
+	"ra1k.attachment.okp7.desc":"Незамінна річь, якщо маєш \"Вінтар\"",
+	"ra1k.attachment.cobra.name":"Каліматорний приціл \"Кобра\"",
+	"ra1k.attachment.cobra.desc":"Назва класна, як і приціл",
+	"ra1k.attachment.939.name":"Глушник 9x39mm",
+	"ra1k.attachment.939.desc":"Створений для ВКс",
+	"ra1k.attachment.fpx_sight_552.name":"§6Каліматорний приціл Miltech 552",
+	"ra1k.attachment.sight_velociraptor.name":"Каліматорний приціл для Трицераптора",
+	"ra1k.attachment.cover.name":"Звичайна кришка ствольної коробки",
+	"ra1k.attachment.handguard_tactical.name":"Звичайна тактична цівка",
+	"ra1k.attachment.kit_lmg.name":"Автоматичний модуль",
+	"ra1k.attachment.kit_lmg.desc":"МАКСИМАЛЬНА ПОТУЖНІСТЬ\n\n§e*Відчиняє автоматичний реежим вогню",
+	"ra1k.attachment.spear_silencer.name":"Глушник для M77",
+	"ra1k.attachment.spear_silencer.desc":"Екслюзивна буззвучність",
+	
+	"ra1k.attachment.m203.name":"Підствольний гранатомет М203",
+	"ra1k.attachment.gp25.name":"Підствольний гранатомет ГП-25 \"Вогнище\"",
+	"ra1k.attachment.ugl.desc":"\n§eЗмініть режим вогню на одинарний після того, як поставили модуль",
+	
+	
+	
+	"ra1k.attachment.sight_magnifier.name":"Голографічний приціл з магніфером",
+	"ra1k.attachment.sight_magnifier_off.name":"Голографічний приціл з магніфером (Змінений)",
+	"ra1k.attachment.vudu_2x.name":"Приціл Vudu 1-6x (Змінений)",
+	"ra1k.attachment.vudu_6x.name":"Приціл Vudu 1-6x",
+	"ra1k.attachment.sight_magnifier.desc":"§eВи можите змінити прицилювання \n\nТакож прцює з Arips Attachments та Laffey(Тільки на зброї з Phoenix Gunpack)",
+	
+	
+	"ra1k.handguard.green.name":"§aЗелена цівка",
+	"ra1k.handguard_laser.green.name":"§aЗелена цівка з ЛЦВ",
+	"ra1k.handguard.red.name":"§cЧервона цівка",
+	"ra1k.handguard_laser.red.name":"§cЧервона цівка з ЛЦВ",
+	"ra1k.handguard.sand.name":"§eПіщана цівка",
+	"ra1k.handguard_laser.sand.name":"§eПіщана цівка з ЛЦВ",
+	"ra1k.handguard.grey.name":"§7Тактична цівка",
+	"ra1k.handguard_laser.grey.name":"§7Тактична цівка з ЛЦВ",
+	"ra1k.handguard.desc":"Прикрась свою зброю",
+	
+	
+	"ra1k.attachment.extended_mag.name":"Розширений магазин",
+	"ra1k.attachment.extended_mag.desc":"Більше куль, більше шансів промазати",
+	"ra1k.attachment.drum_mag.name":"Барабанний магазин",
+	
+	"ra1k.attachment.flip_mag.name":"Подвійний магазин",
+	"ra1k.attachment.flip_mag.desc":"Магазин один, а ціною як два!",
+	"ra1k.attachment.fast_mag.name":"Швидкий магазин",
+	"ra1k.attachment.fast_mag.desc":"Робить вашу зброю легшою",
+	
+	"ra1k.attachment.drum_mag.desc":"Зарядити барабан швидше, ніж кожного разу перезаряджати зброю",
+	"ra1k.attachment.m590_mag.name":"Магазин для М860",
+	"ra1k.attachment.m590_mag.desc":"Швидше, ніж заряджати поодинці"
+	
+	//Героям Слава!
+}

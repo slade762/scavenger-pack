@@ -1,0 +1,21 @@
+{
+  "materials": [   
+	{
+      "item": {
+        "tag": "forge:ingots/iron"
+      },
+      "count": 60
+    }
+  ],
+  "result": {
+    "type": "gun",
+    "id": "ra1k:vss",
+	"attachments": {
+      "stock": "tacz:oem_stock_light",
+	  "extended_mag": "ra1k:xmag",
+	  "scope": "tacz:empty",
+	  "laser": "ra1k:handguard_tactical"
+    }
+  },
+  "type": "tacz:gun_smith_table_crafting"
+}

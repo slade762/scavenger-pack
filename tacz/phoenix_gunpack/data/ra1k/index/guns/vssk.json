@@ -1,0 +1,8 @@
+{
+  "name": "ra1k.gun.vssk.name",
+  "display": "ra1k:vssk_display",
+  "data": "ra1k:vssk_data",
+  "tooltip": "ra1k.gun.vssk.desc",
+  "type": "sniper",
+  "sort": 23
+}

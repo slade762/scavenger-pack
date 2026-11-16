@@ -1,0 +1,8 @@
+{
+    "name": "ra1k.gun.ak57.name",
+    "display": "ra1k:ak57_display",
+    "data": "ra1k:ak57_data",
+    "tooltip":"ra1k.gun.ak57.desc",
+    "type": "smg",
+    "sort": 233
+}

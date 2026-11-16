@@ -1,0 +1,21 @@
+{
+  "materials": [
+    {
+      "item": {
+        "tag": "forge:ingots/iron"
+      },
+      "count": 15
+    },
+	{
+      "item": {
+        "tag": "forge:dyes/gray"
+      },
+      "count": 1
+    }
+  ],
+  "result": {
+    "type": "attachment",
+    "id": "ra1k:handguard_grey"
+  },
+  "type": "tacz:gun_smith_table_crafting"
+}

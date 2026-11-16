@@ -1,0 +1,93 @@
+{
+  "model": "ra1k:gun/spear_m203_geo",
+  "texture": "ra1k:gun/uv/spear_m203",
+  "lod": {
+    "model": "ra1k:gun/lod/spear",
+    "texture": "ra1k:gun/lod/spear"
+  },
+  "hud": "ra1k:gun/hud/spear_m203",
+  "slot": "ra1k:gun/slot/spear_m203",
+  "ammo_count_style": "normal",
+  "damage_style": "per_projectile",
+  "animation": "ra1k:spear_m203",
+  "state_machine": "ra1k:ugl_state_machine",
+  "default_animation": "ra1k:1",
+  "third_person_animation": "default",
+  "player_animator_3rd": "tacz:rifle_default.player_animation",
+  "show_crosshair": false,
+  "transform": {
+    "scale": {
+      "thirdperson": [0.6, 0.6, 0.6],
+      "ground": [0.6, 0.6, 0.6],
+      "fixed": [1.2, 1.2, 1.2]
+    }
+  },
+  "muzzle_flash": {
+    // 效果类型：renew 为新版粒子系统，default 为旧版贴图火光
+    "type": "renew",
+    // 枪焰贴图，仅 default 模式使用
+    "texture": "tacz:flash/common_muzzle_flash",
+    // 枪焰大小缩放，不影响枪烟
+    "scale": 0.25,
+    // 枪烟大小缩放，与 scale 独立
+    "smoke_scale": 1.25,
+    // 枪烟扩散速度倍率，初速度 = 6 × 该值
+    "initial_speed_scale": 1.7,
+    // 单次开火的枪烟粒子数量，不填则用内置默认 15
+    "smoke_particle_count": 16
+  },
+  "iron_zoom": 1.33,
+  "zoom_model_fov": 50,
+  "ammo": {
+    "tracer_color": "#FF8888"
+  },
+  "sounds": {
+    "shoot": "tacz:m320/m320_shoot",
+    "shoot_3p": "tacz:m320/m320_shoot",
+    "reload_empty": "tacz:fn_fal/reload_empty",
+    "reload_tactical": "tacz:fn_fal/reload_tactical",
+    "inspect": "",
+    "inspect_empty": "",
+    "draw": "tacz:fn_fal/draw",
+    "put_away": "tacz:fn_fal/put_away",
+    "silence": "tacz:m320/m320_shoot",
+    "silence_3p": "tacz:m320/m320_shoot",
+    "dry_fire": "tacz:dry_fire",
+    "fire_select": "tacz:fire_select",
+    "head_hit": "tacz:head_hit",
+    "flesh_hit": "tacz:flesh_hit",
+    "kill": "tacz:kill",
+    "melee_bayonet": "tacz:melee_bayonet/melee_bayonet_01",
+    "melee_push": "tacz:melee_stock/melee_stock_01",
+    "melee_stock": "tacz:melee_stock/melee_stock_02"
+  },
+  "offhand_show": {
+    "pos": [1, 20, 3.5],
+    "rotate": [0, 0, 60],
+    "scale": [0.5, 0.5, 0.5]
+  },
+  "hotbar_show": {
+    "0": {
+      "pos": [-1, 20, 3],
+      "rotate": [-180, 0, 120],
+      "scale": [0.5, 0.5, 0.5]
+    }
+  },
+  "controllable": {
+    "semi": {
+      "low_frequency": 0.25,
+      "high_frequency": 0.5,
+      "time": 100
+    },
+    "auto": {
+      "low_frequency": 0.15,
+      "high_frequency": 0.25,
+      "time": 80
+    },
+    "burst": {
+      "low_frequency": 0.25,
+      "high_frequency": 0.5,
+      "time": 100
+    }
+  }
+}

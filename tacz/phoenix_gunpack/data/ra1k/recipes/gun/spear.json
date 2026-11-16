@@ -1,0 +1,33 @@
+{
+  "materials": [
+    {
+      "item": {
+        "tag": "forge:ingots/iron"
+      },
+      "count": 128
+    },
+    {
+      "item": {
+        "tag": "forge:rods/blaze"
+      },
+      "count": 2
+    },
+	{
+      "item": {
+        "tag": "forge:gems/lapis"
+      },
+      "count": 16
+    },
+     {
+      "item": {
+        "tag": "forge:gems/quartz"
+      },
+      "count": 32
+    }
+  ],
+  "result": {
+    "type": "gun",
+    "id": "ra1k:spear"
+  },
+  "type": "tacz:gun_smith_table_crafting"
+}

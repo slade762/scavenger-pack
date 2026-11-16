@@ -1,0 +1,30 @@
+{
+  "materials": [
+    {
+      "item": {
+        "tag": "minecraft:logs"
+      },
+      "count": 7
+    },
+	{
+      "item": {
+        "tag": "forge:ingots/iron"
+      },
+      "count": 40
+    },
+	{
+      "item": {
+        "tag": "forge:gems/amethyst"
+      },
+      "count": 1
+    }
+  ],
+  "result": {
+    "type": "gun",
+    "id": "ra1k:vss",
+	"attachments": {
+	  "scope": "ra1k:scope_pso1"
+    }
+  },
+  "type": "tacz:gun_smith_table_crafting"
+}

@@ -1,0 +1,10 @@
+{
+  "model": "ra1k:attachment/cover_geo",
+  "texture": "ra1k:attachment/uv/cover",
+  "adapter": "cover",
+  "mount_offset": [
+    0,
+    0,
+    0
+  ]
+}

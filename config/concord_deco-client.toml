@@ -1,0 +1,23 @@
+
+[graphics]
+	#Whether the mod draws with its own shaders: the blurred view through the binoculars and
+	#the bussol. Off, the eyepieces are drawn from a ready made mask at almost no cost, for shader
+	#packs or weak graphics cards.
+	shaders = true
+
+[binoculars]
+	#Size of the eyepieces on screen. Larger shows more of the world and less of the black;
+	#from about 1.9 the black leaves the screen entirely.
+	#Range: 0.6 ~ 3.0
+	eyepieceSize = 1.25
+	#How strongly the view goes out of focus toward the rims of the eyepieces. 0 turns it off.
+	#Range: 0.0 ~ 3.0
+	blur = 1.0
+
+[impacts]
+	#Whether a bullet of Superb Warfare leaves a crack on reinforced concrete where it hits.
+	cracks = true
+	#Whether a puff of smoke and dust flies off reinforced concrete where a bullet of Superb
+	#Warfare hits it.
+	smoke = true
+

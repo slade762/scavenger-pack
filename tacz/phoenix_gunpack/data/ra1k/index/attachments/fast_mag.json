@@ -1,0 +1,8 @@
+{
+  "name": "ra1k.attachment.fast_mag.name",
+  "display": "ra1k:fast_mag_display",
+  "data": "ra1k:fast_mag_data",
+  "tooltip": "ra1k.attachment.fast_mag.desc",
+  "type": "extended_mag",
+  "sort": 23
+}

@@ -1,0 +1,226 @@
+{
+    "illagers": {
+        "aligned": [
+            "illagers",
+            "monster"
+        ],
+        "opposed": [
+            "villagers"
+        ],
+        "equipment": {
+            "table": "tacznpcs:npc/illager",
+            "dropChances": {
+                "mainhand": 1,
+                "head": 0.2,
+                "chest": 0.2,
+                "legs": 0.2,
+                "feet": 0.2
+            }
+        },
+        "skin": [
+            {
+                "id": "tacznpcs:entity/illager1.png"
+            },
+            {
+                "id": "tacznpcs:entity/illager1.png"
+            },
+            {
+                "id": "tacznpcs:entity/illager1.png"
+            },
+            {
+                "id": "tacznpcs:entity/illager2.png"
+            }
+        ]
+    },
+    "villagers": {
+        "aligned": [
+            "villagers"
+        ],
+        "opposed": [
+            "illagers",
+            "monster"
+        ],
+        "equipment": {
+            "table": "tacznpcs:npc/villager",
+            "dropChances": {
+                "mainhand": 1,
+                "head": 0.2,
+                "chest": 0.2,
+                "legs": 0.2,
+                "feet": 0.2
+            }
+        },
+        "skin": [
+            {
+                "id": "tacznpcs:entity/villager2.png"
+            },
+            {
+                "id": "tacznpcs:entity/villager2.png"
+            },
+            {
+                "id": "tacznpcs:entity/villager2.png"
+            },
+            {
+                "id": "tacznpcs:entity/villager1.png"
+            }
+        ]
+    },
+    "default": {
+        "primary": "%tacz:glock_17",
+        "skin": {
+            "id": "tacznpcs:entity/default.png"
+        },
+        "opposed": [
+            "monster"
+        ]
+    },
+    "bandits": {
+        "aligned": [
+            "bandits"
+        ],
+        "opposed": [
+            "monster",
+            "mutants",
+            "players",
+            "scavengers",
+            "villagers",
+            "zombies",
+            "pacifists"
+        ],
+        "equipment": {
+            "table": "zone:npc/bandit",
+            "dropChances": {
+                "mainhand": 0.12,
+                "head": 0.05,
+                "chest": 0.05,
+                "legs": 0.05,
+                "feet": 0.05
+            }
+        },
+        "skin": [
+            {
+                "id": "itz:textures/entity/bandit/bandit_1.png"
+            },
+            {
+                "id": "itz:textures/entity/bandit/bandit_2.png"
+            },
+            {
+                "id": "itz:textures/entity/bandit/bandit_3.png"
+            },
+            {
+                "id": "itz:textures/entity/bandit/bandit_4.png"
+            },
+            {
+                "id": "itz:textures/entity/bandit/bandit_5.png"
+            },
+            {
+                "id": "itz:textures/entity/bandit/bandit_6.png"
+            }
+        ]
+    },
+    "bandit_leader": {
+        "aligned": [
+            "bandits"
+        ],
+        "opposed": [
+            "monster",
+            "mutants",
+            "players",
+            "scavengers",
+            "villagers",
+            "zombies",
+            "pacifists"
+        ],
+        "equipment": {
+            "table": "zone:npc/bandit_leader",
+            "dropChances": {
+                "mainhand": 0.3,
+                "head": 0.0,
+                "chest": 0.15,
+                "legs": 0.0,
+                "feet": 0.0
+            }
+        },
+        "skin": [
+            {
+                "id": "itz:textures/entity/bandit/bandit_6.png"
+            }
+        ]
+    },
+    "scavengers": {
+        "aligned": [
+            "scavengers",
+            "players",
+            "villagers",
+            "pacifists"
+        ],
+        "opposed": [
+            "bandits",
+            "monster",
+            "mutants",
+            "zombies"
+        ],
+        "equipment": {
+            "table": "zone:npc/scavenger",
+            "dropChances": {
+                "mainhand": 0.1,
+                "head": 0.0,
+                "chest": 0.0,
+                "legs": 0.0,
+                "feet": 0.0
+            }
+        },
+        "skin": [
+            {
+                "id": "anomalyzone:textures/entity/ambient/ambient_08_debut_suit2.png"
+            },
+            {
+                "id": "anomalyzone:textures/entity/ambient/ambient_09_misc1.png"
+            },
+            {
+                "id": "anomalyzone:textures/entity/ambient/ambient_11_misc3.png"
+            },
+            {
+                "id": "anomalyzone:textures/entity/ambient/ambient_07_freedom_wind2.png"
+            },
+            {
+                "id": "anomalyzone:textures/entity/ambient_npc.png"
+            }
+        ]
+    },
+    "pacifists": {
+        "aligned": [
+            "pacifists",
+            "players",
+            "scavengers",
+            "villagers"
+        ],
+        "opposed": [
+            "bandits",
+            "monster",
+            "mutants",
+            "zombies"
+        ],
+        "equipment": {
+            "table": "zone:npc/pacifist",
+            "dropChances": {
+                "mainhand": 0.1,
+                "head": 0.0,
+                "chest": 0.0,
+                "legs": 0.0,
+                "feet": 0.0
+            }
+        },
+        "skin": [
+            {
+                "id": "anomalyzone:textures/entity/ambient/ambient_07_freedom_wind2.png"
+            },
+            {
+                "id": "anomalyzone:textures/entity/ambient/ambient_09_misc1.png"
+            },
+            {
+                "id": "anomalyzone:textures/entity/ambient/ambient_11_misc3.png"
+            }
+        ]
+    }
+}

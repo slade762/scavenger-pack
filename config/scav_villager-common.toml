@@ -1,0 +1,102 @@
+
+#总开关
+[general]
+	#模组总开关。false = 不再有 alert / fight / 躲 TNT 等额外反应，也不接管播放与语音仲裁。注意：资源包替换掉的 idle / hurt / death 语音是资源层面的，这个开关撤不掉，想把语音也换回原版得把模组从 mods 目录移除。
+	enableMod = true
+	#村民的语音与 AI 反应（alert / fight / 躲 TNT）。
+	enableVillager = true
+	#掠夺者的语音与 AI 反应。
+	enablePillager = true
+	#警卫村民（Guard Villagers）的适配；没装那个模组时这项无效。
+	enableGuard = true
+	#详细日志：true = 每一句语音都打进日志（排查用，平时建议 false）。
+	verboseLog = false
+
+#语音
+[voice]
+	#所有语音的音量倍率，在原版音量基础上再乘一次。1.0 = 原样。
+	#Range: 0.0 ~ 2.0
+	volume = 1.0
+	#幼年生物（小村民）是否按原版规则升到约 1.5 倍音高。
+	babyPitch = true
+	#一句 idle（环境音）播完之后，隔多少 tick 才可能响下一句（20 tick = 1 秒）。 原版固定 80，但单人模式下服务端和客户端各有一份生物实例、各摇各的， 实际听感约 3 秒一句；我们掐掉了客户端那份（否则同一句会播两遍）， 只剩服务端一份就变成约 6 秒一句 —— 所以这里默认压到 20，补回原版单人那个密度。 想要原版服务端那份的稀疏感就填 80。
+	#Range: 0 ~ 600
+	ambientIntervalTicks = 20
+
+#警觉喊话（发现玩家 / 敌对生物时那一句 alert）
+[alert]
+	#村民察觉到玩家的距离（格）。
+	#Range: 0.0 ~ 64.0
+	playerDetectRange = 5.0
+	#同一只村民被玩家触发 alert 的冷却（秒），避免刷屏。
+	#Range: 0 ~ 3600
+	playerAlertCooldownSeconds = 60
+	#同一只村民被敌对生物触发 alert 的冷却（秒）。
+	#Range: 0 ~ 3600
+	hostileAlertCooldownSeconds = 60
+	#alert 检测在玩家周围多大范围内进行（格）。
+	#Range: 8.0 ~ 128.0
+	alertSearchRange = 24.0
+
+#战斗喊话（边打边喊 / 边跑边喊）
+[fight]
+	#一句喊完到下一句开始的间隔（秒）。
+	#Range: 0 ~ 60
+	fightGapSeconds = 2
+	#挨打 / 被追后维持“边跑边喊”多久（秒）。
+	#Range: 1 ~ 120
+	fightFleeSeconds = 8
+	#判定“被敌对生物追着”的距离（格）。
+	#Range: 1.0 ~ 32.0
+	fightChaseRange = 8.0
+	#丢失目标 / 打死目标后是否播一句 clear 收尾。
+	clearEnabled = true
+
+#手雷 / TNT 反应
+[tnt]
+	#察觉点燃 TNT 的距离（格）。
+	#Range: 1.0 ~ 32.0
+	tntDetectRange = 8.0
+	#手雷喊话的冷却（秒）。
+	#Range: 0 ~ 60
+	tntShoutCooldownSeconds = 5
+	#看不见 TNT 之后再跑多久才算脱险（秒）。
+	#Range: 0 ~ 60
+	tntKeepSeconds = 3
+	#发现 TNT 时是否强制逃跑。false = 只喊话，不夺走移动控制权。
+	tntFleeEnabled = true
+
+#目击死亡喊话（看见附近有同族死了，掐掉手上的话喊一句）
+[witness]
+	#是否开启。false = 完全不加这个反应。
+	witnessEnabled = true
+	#死者周围多少格内的村民 / 警卫村民 / 掠夺者会喊（格）。
+	#Range: 1.0 ~ 32.0
+	witnessRange = 10.0
+	#同一只生物目击喊话的冷却（秒）。连环死亡时靠这个避免刷屏。
+	#Range: 0 ~ 120
+	witnessCooldownSeconds = 5
+
+#性能
+[performance]
+	#每隔几 tick 检测一次（20 tick = 1 秒）。调大省性能，调小反应更快。
+	#Range: 1 ~ 20
+	checkIntervalTicks = 10
+	#村民（战斗喊话 / 躲 TNT）在玩家周围的处理半径（格）。
+	#Range: 8.0 ~ 128.0
+	villagerSearchRange = 32.0
+	#掠夺者在玩家周围的处理半径（格）。
+	#Range: 8.0 ~ 128.0
+	pillagerSearchRange = 48.0
+	#警卫村民在玩家周围的处理半径（格）。
+	#Range: 8.0 ~ 128.0
+	guardSearchRange = 32.0
+	#生物刚出现（放下 / 生成 / 区块加载）时先安静多少 tick，20 tick = 1 秒。
+	# 注意这个值是"计时器起点"，原版判定是 random.nextInt(1000) < ambientSoundTime++，
+	# 从 -N 涨到触发阈值平均还要约 45 tick，所以填 60 实际是放下后约 5 秒才第一句 idle；
+	# 以前填 100 意味着要等 7 秒多，而且每次区块加载都会重新静默一遍，
+	# 听感上就是"idle 变稀了"。alert 最长 70 tick（3.5 秒），60 已经盖得住，
+	# 真叠上了也会被"喊话期间掐掉 idle"那道闸拦下。
+	#Range: 0 ~ 1200
+	spawnQuietTicks = 60
+

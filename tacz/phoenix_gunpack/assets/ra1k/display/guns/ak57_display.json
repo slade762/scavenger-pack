@@ -1,0 +1,53 @@
+{
+  "model": "ra1k:gun/ak57_geo",
+  "texture": "ra1k:gun/uv/ak57",
+  "hud": "ra1k:gun/hud/ak57",
+  "slot": "ra1k:gun/slot/ak57",
+  "state_machine": "ra1k:ar_state_machine",
+  "animation": "ra1k:ak57",
+  "lod": {
+    "model": "ra1k:gun/lod/ak57",
+    "texture": "ra1k:gun/lod/ak57"
+  },
+  "default_animation": "ra1k:1",
+  "third_person_animation": "default",
+  "transform": {
+    "scale": {
+      "thirdperson": [0.6, 0.6, 0.6],
+      "ground": [0.6, 0.6, 0.6],
+      "fixed": [1.2, 1.2, 1.2]
+    }
+  },
+  "muzzle_flash": {
+    "type": "renew",
+    "texture": "tacz:flash/common_muzzle_flash",
+    "scale": 0.75,
+    "smoke_scale": 1.65,
+    "initial_speed_scale": 1.7,
+    "smoke_particle_count": 16
+  },
+  "sounds": {
+    "reload_empty": "tacz:p320/p320_reload_empty",
+    "reload_tactical": "tacz:p320/p320_reload_tactical",
+    "inspect": "tacz:p320/p320_inspect",
+    "inspect_empty": "tacz:p320/p320_inspect_empty",
+    "draw": "tacz:p320/p320_draw",
+    "put_away": "tacz:p320/p320_put_away",
+	"shoot": "tacz:ump45/ump45_shoot",
+    "shoot_3p": "tacz:ump45/ump45_shoot_3p",
+    "silence": "tacz:ump45/ump45_silence",
+    "silence_3p": "tacz:ump45/ump45_silence_3p"
+  },
+  "offhand_show": {
+    "pos": [4, 13, -1],
+    "rotate": [-90, -35, 90],
+    "scale": [0.5, 0.5, 0.5]
+  },
+  "hotbar_show": {
+    "0": {
+      "pos": [-5, 13, -1],
+      "rotate": [-90, -35, 90],
+      "scale": [0.5, 0.5, 0.5]
+    }
+  }
+}

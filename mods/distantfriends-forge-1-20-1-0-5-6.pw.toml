@@ -1,0 +1,13 @@
+name = "Distant Friends"
+filename = "DistantFriends-forge-1.20.1-0.5.6.jar"
+side = "both"
+
+[download]
+url = "https://edge.forgecdn.net/files/8489/193/DistantFriends-forge-1.20.1-0.5.6.jar"
+hash-format = "sha1"
+hash = "68a8734337b1110e58600d056688cc0c99adbb7c"
+
+[update]
+[update.curseforge]
+file-id = 8489193
+project-id = 839197

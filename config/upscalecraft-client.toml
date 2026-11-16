@@ -1,0 +1,36 @@
+#Render the 3D world at a lower resolution and upscale it.
+enabled = true
+#Upscaling algorithm: BILINEAR (plain), FSR1 (AMD FidelityFX Super Resolution 1.0), TEMPORAL (jittered temporal accumulation).
+#Allowed Values: BILINEAR, FSR1, TEMPORAL
+upscaler = "FSR1"
+#Internal render resolution as a fraction of the window (1.0 = native).
+#FSR 1 presets: Quality 0.77, Balanced 0.59, Performance 0.50, Ultra Performance 0.33
+#Range: 0.25 ~ 1.0
+render_scale = 0.67
+#Post-upscale sharpening strength (RCAS, FSR1 and TEMPORAL). 0 disables the sharpening pass.
+#Range: 0.0 ~ 1.0
+sharpness = 0.8
+#TEMPORAL only: sharpen moving and freshly revealed pixels a bit more, because the temporal
+#reconstruction is softer there (camera turns, walking). Has no effect while sharpness is 0.
+motion_sharpening = true
+#Sharpen textures by lowering the mip level (log2 of the render scale) while upscaling.
+#Reduces blocky/pixelated leaves and distant textures.
+mip_bias = true
+#Use the TEMPORAL upscaler together with an Iris/Oculus shader pack?
+#AUTO: only when the pack's own temporal anti-aliasing is off (it would blur the image otherwise), else FSR1.
+#ALWAYS: always use TEMPORAL. NEVER: always fall back to FSR1 while a shader pack is active.
+#Allowed Values: AUTO, ALWAYS, NEVER
+temporal_with_shaders = "AUTO"
+#Dynamic resolution: adjusts the render scale automatically to keep the GPU time of the world pass
+#inside the frame budget of dynamic_target_fps. Replaces render_scale while enabled.
+dynamic_resolution = false
+#Target frame rate for dynamic resolution. 0 = automatic (monitor refresh rate or FPS limit).
+#Range: 0 ~ 1000
+dynamic_target_fps = 0
+#Lowest render scale dynamic resolution may use.
+#Range: 0.25 ~ 1.0
+dynamic_min_scale = 0.5
+#Highest render scale dynamic resolution may use (1.0 = native, no upscaling).
+#Range: 0.25 ~ 1.0
+dynamic_max_scale = 1.0
+

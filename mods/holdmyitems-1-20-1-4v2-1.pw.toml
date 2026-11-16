@@ -1,0 +1,13 @@
+name = "Hold My Items - Reforged"
+filename = "holdmyitems-1.20.1-4v2.1.jar"
+side = "both"
+
+[download]
+url = "https://edge.forgecdn.net/files/9425/414/holdmyitems-1.20.1-4v2.1.jar"
+hash-format = "sha1"
+hash = "a4f7aadb9c0886a095d0f394c0ad05670033af32"
+
+[update]
+[update.curseforge]
+file-id = 9425414
+project-id = 1246920

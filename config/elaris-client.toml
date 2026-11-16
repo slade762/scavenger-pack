@@ -1,0 +1,941 @@
+elarisEnabled = true
+
+#NeoFlood RTX Settings
+[rtx]
+	#Whether NeoFlood RTX block lighting is enabled by default.
+	enabled = false
+	#Enable NeoFlood tracing for lava outside the Nether. Disabled uses an isolated vanilla BlockLightEngine with budgeted lava-only propagation. Lava RTX tracing is always disabled in the Nether.
+	lavaTracingEnabled = false
+	#Enable entity and block-entity shadows. Direct GPU local shadows render them into point-light cubemaps and shade their surfaces; NeoCPU/legacy modes use their own dynamic paths; plain NeoFlood lighting uses lightweight entity occlusion.
+	entityShadowsEnabled = true
+	#Exact number of background NeoFlood solver threads. A value of 1 runs exactly one background source solve at a time; it is not a CPU multiplier. Maximum matches logical CPU count, capped at 24.
+	#Range: 1 ~ 16
+	worldTracingWorkers = 1
+	#Maximum light propagation radius in blocks. The effective radius is the smallest of this value and the light-level falloff reach; the packed source volume has a fixed maximum radius of 36 blocks. lowering it is the most direct performance lever because solver cost scales with the cube of the radius.
+	#Range: 16 ~ 36
+	floodRadiusCap = 36
+	#Blends between the nearest straight-line back-projection sample and exact bilinear sampling on the previous shell. 0 gives crisp block-resolution shadows; 1 gives a smooth sub-voxel penumbra. Both remain aligned to the real source angle.
+	#Range: 0.0 ~ 1.0
+	floodPenumbraSoftness = 0.59
+	#Edge seal for mixed lit/dark back-projection footprints. 0 keeps full bilinear blending; 4 selects the nearest projected sample at an occluder boundary. Unlike the legacy implementation, this never multiplies visibility and cannot accumulate into black axis-aligned wedges.
+	#Range: 0.0 ~ 4.0
+	floodCornerSeal = 1.35
+	#Symmetric sharpness of the sub-voxel back-projection fractions. 1.0 is exact geometric interpolation. Above 1.0 sharpens transitions; below 1.0 broadens them. The curve is axis-neutral and never prefers X, Y or Z.
+	#Range: 0.25 ~ 4.0
+	floodDirectionalBias = 0.25
+	#Upper bound on source solves granted to one background batch. A batch starts at most once every 50 ms and is additionally capped by World Trace Workers. Manual player source changes use one dedicated high-priority worker.
+	#Range: 1 ~ 64
+	floodUpdateBudget = 8
+
+#Independent block light experiment
+[blockLightTest]
+	#Use vanilla light propagation with a separate lightweight colored block-light renderer. Does not use NeoFlood, GpuShadowVanilla or GPU shadow volumes.
+	enabled = false
+
+#Vanilla GPU
+[vanillaGpu]
+	#Enable GpuShadowVanilla. Vanilla remains the only block-light propagation engine; one-time point-light depth captures bake a camera-centred RGBA8 receiver volume. Enabling this runtime-disables NeoFlood, NeoCPU local shadows, and legacy GPU local lighting without deleting their code or config values.
+	enabled = false
+	#GpuShadowVanilla shadow quality expressed as pixels per block. The config screen snaps to 1, 2, 4, 8, 16, 32, 64, 128, 256, or 512 px/block. Higher steps increase the one-shot fine receiver bake quality; normal world rendering still performs one R8 lookup per pixel and never loops over lights. Values above 256 px/block use substantially more VRAM for the baked receiver textures.
+	#Range: 1 ~ 512
+	pixelsPerBlock = 32
+	#Maximum camera distance for sources included in the baked vanilla clipping volume. Higher values capture more village lights but require more source cubemaps when entering a new area.
+	#Range: 16 ~ 64
+	sourceDistance = 41
+	#Maximum GpuShadowVanilla cubemap faces captured per rendered frame while the cache is dirty. Higher values make new shadows appear faster but can cause a larger short GPU spike while capturing.
+	#Range: 1 ~ 300
+	captureBudget = 300
+	#Maximum nearest non-lava sources baked into the current volume. GpuShadowVanilla automatically adapts cubemap capture tile resolution so every value on this slider (up to 40) fits the shared 4096x4096 depth atlas; fine receiver pixels-per-block quality is unchanged.
+	#Range: 4 ~ 40
+	maxSources = 25
+	#Allow CUTOUT terrain (leaves, grass and other alpha-tested block geometry) to participate in GpuShadowVanilla. Disabled by default for a strict performance mode: CUTOUT uses the normal Embeddium terrain shader, receives no GpuShadowVanilla receiver lookup, runs no GpuShadowVanilla CUTOUT prepass, and is omitted from GpuShadowVanilla point-light cubemap captures.
+	cutout = false
+	#Bake the visual style of legacy Fast GPU Shadows directly into GpuShadowVanilla. Source color, exponential attenuation, wrapped diffuse response and source-local cubemap visibility are accumulated during bake into a tiny directional 3D field. Normal rendering performs a fixed six cached 3D lookups regardless of whether 4 or 40 sources are active.
+	fastGpuShadows = false
+	#Strength multiplier for baked Fast GPU Shadows direct colored light. 1.0 matches the legacy Fast GPU Shadows visual intensity.
+	#Range: 0.0 ~ 2.0
+	fastGpuShadowsStrength = 0.97
+	#Wrapped diffuse floor used by baked Fast GPU Shadows. 0.16 matches the legacy Fast GPU Shadows shader; higher values make local light wrap farther around surfaces.
+	#Range: 0.0 ~ 0.5
+	fastGpuShadowsDiffuseWrap = 0.14
+	#Refresh affected source cubemaps and the baked volume when nearby block geometry changes. Disable only for debugging static scenes.
+	geometryUpdates = false
+	#Enable GpuShadowVanilla GPU diagnostics. Uses asynchronous OpenGL timer queries and writes one summary per second to latest.log: capture GPU ms, fine-bake GPU ms, dirty/captured faces, source count, bake count, and pixels-per-block.
+	debug = false
+
+#Realistic Shadows
+[realisticShadows]
+	#Enable occlusive face shadows that cut RTX block light by projecting solid occluders onto visible receiver faces.
+	enabled = false
+	#Enable the new source-local NeoCPUUUShadows engine. This bypasses legacy NeoShadows/ElarisGpuShadows, keeps Torch light-source scanning active for NeoCPU, and routes entity shadows to NeoCPU when entityShadowsEnabled is also on.
+	neoCpuShadowsEnabled = false
+	#Enable GPU local point lighting and shadowed cubemap visibility directly inside normal terrain and entity shaders. The system can work alone, as an RTX near-field LOD, or be bypassed in RTX-only mode.
+	gpuShadowsEnabled = false
+	#GPU_ONLY renders nearby emissive blocks with GPU direct lighting and does not start NeoFlood. HYBRID hands the near field to GPU lighting while NeoFlood remains available for the transition and outer field. NEOFLOOD_ONLY bypasses GPU local lighting and uses the clean NeoFlood block-lighting pipeline.
+	#Allowed Values: GPU_ONLY, HYBRID, NEOFLOOD_ONLY
+	gpuLocalLightingMode = "GPU_ONLY"
+	#Maximum camera distance in blocks for GPU local lights. The outer 20 percent is a smooth GPU/RTX transition band. Cubemap modes become expensive at high distances; Fast Spread is designed for low-end GPUs.
+	#Range: 4 ~ 64
+	gpuLocalLightDistance = 42
+	#Legacy GPU local shadow renderer. CUBEMAP_HARD keeps precise block/entity caster shadows with a comparison filter. CUBEMAP_SOFT keeps the expensive PCSS path. The old FAST_SPREAD enum value remains readable only for config-file compatibility and is treated as CUBEMAP_HARD; its visual path now lives under Vanilla GPU -> Fast GPU Shadows.
+	#Allowed Values: FAST_SPREAD, CUBEMAP_HARD, CUBEMAP_SOFT
+	gpuLocalShadowMode = "CUBEMAP_SOFT"
+	#Bake Cubemap Hard local lighting into a camera-centred six-direction RGB receiver volume. Runtime terrain/entity lighting then uses a fixed 1-3 texture lookups instead of looping over every source. While enabled, PCSS and dynamic entity shadow casters are disabled.
+	gpuHardShadowBakeEnabled = false
+	#Maximum Cubemap Hard faces captured per frame while baked hard shadows are enabled. The same budget also scales directional receiver bake progress. Higher values finish sooner but can cause a larger one-time GPU spike.
+	#Range: 1 ~ 300
+	gpuHardShadowCaptureBudget = 1
+	#Legacy compatibility key from the removed Fast Spread renderer. It is no longer used; Fast GPU Shadows now live under Vanilla GPU and are baked instead of using NeoFlood spread visibility.
+	#Range: 0.0 ~ 1.0
+	gpuSpreadOcclusionStrength = 1.0
+	#Maximum number of closest lights used by Cubemap Hard, baked Cubemap Hard, and PCSS local-shadow rendering. The historical key name is retained for config-file compatibility.
+	#Range: 4 ~ 32
+	gpuFastSpreadMaxLights = 32
+	#Legacy compatibility key. New versions use gpuLocalShadowMode instead.
+	gpuShadowsBlurEnabled = false
+	#Maximum FPS for scanning and rebuilding dynamic entity and block-entity casters in GPU Local Shadows, ElarisEngine, and NeoCPU shadows.
+	#Range: 10 ~ 120
+	entityUpdateFps = 63
+	#Scale of the shadowless scene capture used only by legacy/NeoCPU realistic shadows. It does not affect direct GPU Local Shadows.
+	#Range: 0.01 ~ 1.0
+	renderScale = 1.0
+
+#ElarisSkyRenderer Shadows
+[skyShadows]
+	#Enable directional Sun/Moon lighting on blocks and entities through CelestiaShadowEngine.
+	skyLightEnabled = true
+	#Tint celestial lighting with dynamic Sun, sunset, Moon, sky, and ground colors.
+	skyLightColorsEnabled = true
+	#Minimum caster reach in blocks. Also controls entity-shadow depth; terrain and clouds expand automatically.
+	#Range: 32 ~ 512
+	rayLength = 248
+	#Resolution of the near directional depth map.
+	#Range: 256 ~ 4096
+	nearResolution = 2304
+	#Resolution of the far directional depth map.
+	#Range: 256 ~ 4096
+	farResolution = 1536
+	#Near cascade radius in blocks.
+	#Range: 16 ~ 128
+	nearRadius = 31
+	#How often the near GPU shadow cascade is refreshed in seconds. Lower values make nearby shadows appear and react faster, but rebuild the near shadow map more often.
+	#Range: 0.01 ~ 5.0
+	nearUpdateIntervalSeconds = 1.2
+	#Far cascade radius in blocks.
+	#Range: 64 ~ 384
+	farRadius = 248
+	#Minimum interval between far cascade updates.
+	#Range: 50 ~ 3000
+	farUpdateMs = 1050
+	#Directional shadow filter samples. Supported values are 1 and 4.
+	#Range: 1 ~ 4
+	filterSamples = 1
+	#Use hardware linear PCF filtering for near and far celestial shadow maps.
+	softShadowsEnabled = true
+	#Render vanilla clouds into directional sky-shadow depth maps.
+	cloudShadowsEnabled = false
+	#Render entities into a separate frequently updated celestial shadow map.
+	entityShadowsEnabled = false
+	#Resolution of the celestial entity shadow map.
+	#Range: 512 ~ 2048
+	entityShadowResolution = 1536
+	#Half-width of the celestial entity shadow area around the camera in blocks.
+	#Range: 16 ~ 128
+	entityShadowRadius = 16
+	#Maximum update rate of the celestial entity shadow map. 61 updates every rendered frame.
+	#Range: 10 ~ 61
+	entityShadowUpdateFps = 61
+	#Sun direct-light strength in percent.
+	#Range: 0.0 ~ 200.0
+	sunLightStrengthPercent = 200.0
+	#Moon direct-light strength in percent.
+	#Range: 0.0 ~ 200.0
+	moonLightStrengthPercent = 200.0
+	#Range: 0 ~ 16777215
+	sunZenithColor = 16766136
+	#Range: 0.0 ~ 200.0
+	sunZenithStrengthPercent = 59.5
+	#Range: 0 ~ 16777215
+	sunsetColor = 16742963
+	#Range: 0.0 ~ 200.0
+	sunsetStrengthPercent = 92.0
+	#Range: 0 ~ 16777215
+	moonColor = 6717613
+	#Range: 0.0 ~ 200.0
+	moonStrengthPercent = 24.0
+	#Hemispheric sky ambient-light strength in percent.
+	#Range: 0.0 ~ 200.0
+	ambientStrengthPercent = 30.0
+	realisticShadowTemperature = true
+	#Range: 0.0 ~ 1.0
+	shadowTemperatureStrength = 1.0
+	#Range: -100 ~ 100
+	shadowTemperatureBias = 0
+	#How much vanilla torch/lamp block light remains visible inside GPU-cast Sun shadows in percent. 0 hides the extra block-light contribution in bright Sun shadows, 100 keeps the full vanilla contribution there. Direct sunlight remains daylight-adapted. Does not affect GPU local lighting.
+	#Range: 0.0 ~ 100.0
+	vanillaBlockLightInSunShadowsPercent = 10.0
+
+#ElarisSkyRenderer
+[sky]
+	#Enable cinematic physical sky rendering.
+	enabled = true
+	#Sky cubemap face resolution. 256/512 are economical; 1024 uses 96 MiB for the double-buffered HDR sky.
+	#Range: 256 ~ 1024
+	cacheResolution = 512
+	#Minimum pause after a completed physical sky cubemap bake before the next bake can start.
+	#Range: 0.1 ~ 2.0
+	bakeUpdateIntervalSeconds = 0.8
+	#Split sky cubemap baking into smaller tiles and spread the work across frames to reduce visible stalls.
+	smoothBake = true
+	#Bake work units per frame. With smooth baking enabled this is tiles per frame; otherwise it is whole cubemap faces per frame.
+	#Range: 1 ~ 6
+	workPerFrame = 1
+	#Tile size used by smooth sky baking. Smaller tiles reduce per-frame stalls but take more frames to finish a full cubemap.
+	#Allowed Values: SIZE_512, SIZE_256, SIZE_128
+	tileSize = "SIZE_256"
+	#Size multiplier for the vanilla rendered sun disc.
+	#Range: 0.1 ~ 3.0
+	sunSize = 0.47
+	#Size multiplier for the vanilla rendered moon disc.
+	#Range: 0.1 ~ 3.0
+	moonSize = 0.54
+
+#Three Layer Vanilla Clouds
+[clouds]
+	#Replace the normal vanilla/Embeddium cloud draw with Elaris's three independently configurable vanilla-style cloud layers. Minecraft's own Clouds option must still be Fast or Fancy. Disabled by default.
+	enabled = false
+
+	#Low cloud layer
+	[clouds.layer1]
+		#Render the low cloud layer.
+		enabled = true
+		#Absolute Y height in blocks.
+		#Range: 64.0 ~ 384.0
+		height = 150.0
+		#Wind speed multiplier relative to vanilla clouds.
+		#Range: 0.0 ~ 3.0
+		speed = 1.25
+		#Wind direction in degrees. 0 = +X, 90 = +Z.
+		#Range: 0.0 ~ 360.0
+		direction = 0.0
+		#Horizontal vanilla cloud pattern scale.
+		#Range: 0.25 ~ 4.0
+		scale = 0.8
+		#Layer opacity in percent.
+		#Range: 0.0 ~ 100.0
+		opacity = 65.0
+		#Fancy-cloud vertical thickness in blocks. Fast clouds remain flat.
+		#Range: 0.5 ~ 16.0
+		thickness = 4.0
+		#Brightness multiplier applied after Minecraft's time/weather cloud color.
+		#Range: 0.25 ~ 1.5
+		brightness = 0.95
+		#Cloud amount/fullness. 50 preserves approximately the vanilla mask, lower values erode it and higher values expand it toward overcast.
+		#Range: 0.0 ~ 100.0
+		coverage = 42.0
+		#Soft alpha feather around the pixel cloud mask, measured in source texture pixels.
+		#Range: 0.0 ~ 4.0
+		edgeSoftness = 0.0
+		#Periodic shape perturbation that breaks up uniformly expanded cloud masses while keeping the texture perfectly tileable.
+		#Range: 0.0 ~ 100.0
+		variation = 10.0
+		#How strongly rain/thunder pushes this layer toward full overcast coverage.
+		#Range: 0.0 ~ 100.0
+		weatherInfluence = 40.0
+		#Additional brightness reduction during heavy rain/thunder.
+		#Range: 0.0 ~ 100.0
+		stormDarkening = 25.0
+		#Approximate horizontal cloud radius in blocks.
+		#Range: 128 ~ 1024
+		renderDistance = 384
+
+	#Main cloud layer
+	[clouds.layer2]
+		#Render the main cloud layer.
+		enabled = true
+		#Absolute Y height in blocks.
+		#Range: 64.0 ~ 384.0
+		height = 200.0
+		#Wind speed multiplier relative to vanilla clouds.
+		#Range: 0.0 ~ 3.0
+		speed = 1.0
+		#Wind direction in degrees. 0 = +X, 90 = +Z.
+		#Range: 0.0 ~ 360.0
+		direction = 10.0
+		#Horizontal vanilla cloud pattern scale.
+		#Range: 0.25 ~ 4.0
+		scale = 1.0
+		#Layer opacity in percent.
+		#Range: 0.0 ~ 100.0
+		opacity = 80.0
+		#Fancy-cloud vertical thickness in blocks. Fast clouds remain flat.
+		#Range: 0.5 ~ 16.0
+		thickness = 4.0
+		#Brightness multiplier applied after Minecraft's time/weather cloud color.
+		#Range: 0.25 ~ 1.5
+		brightness = 1.0
+		#Cloud amount/fullness. 50 preserves approximately the vanilla mask, lower values erode it and higher values expand it toward overcast.
+		#Range: 0.0 ~ 100.0
+		coverage = 50.0
+		#Soft alpha feather around the pixel cloud mask, measured in source texture pixels.
+		#Range: 0.0 ~ 4.0
+		edgeSoftness = 0.0
+		#Periodic shape perturbation that breaks up uniformly expanded cloud masses while keeping the texture perfectly tileable.
+		#Range: 0.0 ~ 100.0
+		variation = 8.0
+		#How strongly rain/thunder pushes this layer toward full overcast coverage.
+		#Range: 0.0 ~ 100.0
+		weatherInfluence = 70.0
+		#Additional brightness reduction during heavy rain/thunder.
+		#Range: 0.0 ~ 100.0
+		stormDarkening = 35.0
+		#Approximate horizontal cloud radius in blocks.
+		#Range: 128 ~ 1024
+		renderDistance = 448
+
+	#High cloud layer
+	[clouds.layer3]
+		#Render the high cloud layer.
+		enabled = true
+		#Absolute Y height in blocks.
+		#Range: 64.0 ~ 384.0
+		height = 270.0
+		#Wind speed multiplier relative to vanilla clouds.
+		#Range: 0.0 ~ 3.0
+		speed = 0.55
+		#Wind direction in degrees. 0 = +X, 90 = +Z.
+		#Range: 0.0 ~ 360.0
+		direction = 350.0
+		#Horizontal vanilla cloud pattern scale.
+		#Range: 0.25 ~ 4.0
+		scale = 1.7
+		#Layer opacity in percent.
+		#Range: 0.0 ~ 100.0
+		opacity = 50.0
+		#Fancy-cloud vertical thickness in blocks. Fast clouds remain flat.
+		#Range: 0.5 ~ 16.0
+		thickness = 3.0
+		#Brightness multiplier applied after Minecraft's time/weather cloud color.
+		#Range: 0.25 ~ 1.5
+		brightness = 0.95
+		#Cloud amount/fullness. 50 preserves approximately the vanilla mask, lower values erode it and higher values expand it toward overcast.
+		#Range: 0.0 ~ 100.0
+		coverage = 38.0
+		#Soft alpha feather around the pixel cloud mask, measured in source texture pixels.
+		#Range: 0.0 ~ 4.0
+		edgeSoftness = 0.0
+		#Periodic shape perturbation that breaks up uniformly expanded cloud masses while keeping the texture perfectly tileable.
+		#Range: 0.0 ~ 100.0
+		variation = 15.0
+		#How strongly rain/thunder pushes this layer toward full overcast coverage.
+		#Range: 0.0 ~ 100.0
+		weatherInfluence = 100.0
+		#Additional brightness reduction during heavy rain/thunder.
+		#Range: 0.0 ~ 100.0
+		stormDarkening = 45.0
+		#Approximate horizontal cloud radius in blocks.
+		#Range: 128 ~ 1024
+		renderDistance = 512
+
+[materials]
+	#PBR terrain materials: OFF, BUILTIN defaults, LABPBR resource-pack maps with builtin fallback.
+	#Allowed Values: OFF, BUILTIN, LABPBR
+	mode = "LABPBR"
+	#Strength of LabPBR normal maps.
+	#Range: 0.0 ~ 2.0
+	normalStrength = 1.0
+	#Maximum side of each material atlas; smaller limits reduce video memory usage.
+	#Range: 256 ~ 4096
+	textureLimit = 2048
+
+#Planar Reflections
+[reflections]
+	#Whether planar reflections are enabled.
+	enabled = false
+	#Enable bilinear filtering for planar reflection textures. Disabling it preserves sharp pixels.
+	bilinearFiltering = true
+	#Resolution scale for both exact and feed planar reflection render targets.
+	#Range: 0.1 ~ 1.0
+	renderScale = 0.5
+	#Maximum additional world renders per frame, including mutual reflections.
+	#Range: 1 ~ 8
+	updatesPerFrame = 2
+	#Minimum refresh interval for an unchanged reflection camera. Moving cameras update within the render budget.
+	#Range: 0 ~ 1000
+	updateIntervalMs = 50
+	#Enable one level of reflections inside other reflections. Costs extra world renders.
+	mutualReflections = false
+	#Player-centered reflection render radius in blocks. Reflections smoothly fade to transparent near the boundary.
+	#Range: 5 ~ 200
+	distance = 24
+	#Reflection scan update interval in milliseconds.
+	#Range: 5 ~ 5000
+	scanIntervalMs = 800
+
+#PostEffects Quality
+[postEffects]
+	#MINIMUM / MEDIUM / HIGH: atmosphere buffer scale and volumetric integration accuracy. Does not change artistic intensity or the selected upscaler.
+	#Allowed Values: MINIMUM, MEDIUM, HIGH
+	quality = "HIGH"
+	#Legacy compatibility key. Atmosphere resolution is now controlled by postEffects.quality; this value is ignored.
+	#Range: 0.1 ~ 1.0
+	renderScale = 0.44
+
+#Block-light-only Dual Kawase bloom
+[kawaseBloom]
+	#MINIMUM keeps legacy sourceScale/levels. MEDIUM: 75% source, 5 bands; HIGH: full source, 7 bands and hot-pixel suppression.
+	#Allowed Values: MINIMUM, MEDIUM, HIGH
+	quality = "MEDIUM"
+	#Enable isolated bloom for blocks whose current state emits vanilla block light.
+	enabled = true
+	#Final additive bloom intensity.
+	#Range: 0.0 ~ 3.0
+	intensity = 0.55
+	#Dual Kawase sample offset per pyramid pass.
+	#Range: 0.5 ~ 4.0
+	radius = 2.45
+	#Number of downsample levels. More levels spread bloom farther and cost more passes.
+	#Range: 2 ~ 7
+	levels = 5
+	#Resolution of the bloom source mask. Half resolution saves full-screen source bandwidth.
+	#Range: 0.25 ~ 1.0
+	sourceScale = 0.5
+	#Minimum normalized block emission included in the source mask.
+	#Range: 0.0 ~ 1.0
+	sourceThreshold = 0.05
+	#Camera-centred source registry volume radius in blocks.
+	#Range: 8 ~ 32
+	sourceDistance = 24
+	#Reject blurred samples hidden behind nearer scene geometry.
+	depthOcclusion = false
+	#Depth edge tolerance in view-space blocks.
+	#Range: 0.01 ~ 2.0
+	depthTolerance = 0.35
+
+#ElarisSkyRenderer God Rays
+[skyGodRays]
+	#Whether Screen-Space ElarisSkyRenderer God Rays (Sun/Moon rays) are enabled.
+	skyGodRaysEnabled = true
+	#Size multiplier for sun disc and halo response in ElarisSkyRenderer God Rays.
+	#Range: 0.5 ~ 2.0
+	sunSize = 0.94
+	#Size multiplier for moon disc and halo response in ElarisSkyRenderer God Rays.
+	#Range: 0.5 ~ 2.0
+	moonSize = 0.65
+	#Enable the small additive cinematic Sun/Moon disc highlight used by ElarisSkyRenderer God Rays.
+	celestialDiscEnabled = true
+	#Enable the separate cinematic Sun/Moon halo used by ElarisSkyRenderer God Rays.
+	haloEnabled = true
+	#Visual preset for the ElarisSkyRenderer God Rays sliders.
+	#Allowed Values: DEFAULT, CINEMATIC, CUSTOM
+	visualPreset = "CUSTOM"
+	#Overall intensity multiplier for ElarisSkyRenderer God Rays shafts.
+	#Range: 0.0 ~ 2.5
+	rayIntensity = 1.63
+	#Overall intensity multiplier for the separate Sun/Moon halo.
+	#Range: 0.0 ~ 2.5
+	haloIntensity = 1.63
+	#Overall intensity multiplier for the small Sun/Moon disc highlight.
+	#Range: 0.0 ~ 2.0
+	discIntensity = 0.97
+	#Size multiplier for the separate Sun/Moon halo.
+	#Range: 0.5 ~ 2.5
+	haloSize = 1.25
+	#Size multiplier for the small Sun/Moon disc highlight.
+	#Range: 0.5 ~ 1.8
+	discSize = 1.18
+	#Sun color used when the sun is high in the sky, stored as 0xRRGGBB.
+	#Range: 0 ~ 16777215
+	sunDayColor = 16772295
+	#Sun color used near sunrise and sunset, stored as 0xRRGGBB.
+	#Range: 0 ~ 16777215
+	sunsetColor = 16747584
+	#Base moon color, stored as 0xRRGGBB.
+	#Range: 0 ~ 16777215
+	moonBaseColor = 12108497
+	#Moon halo color, stored as 0xRRGGBB.
+	#Range: 0 ~ 16777215
+	moonHaloColor = 10400736
+	#How strongly rain, thunder and haze affect ElarisSkyRenderer God Rays.
+	#Range: 0.0 ~ 2.0
+	weatherInfluence = 1.19
+	#How much the effect is suppressed in the center so the vanilla Sun/Moon texture stays readable.
+	#Range: 0.0 ~ 2.0
+	centerSuppression = 1.5
+
+#Volumetric Rays
+[volumetricRays]
+	#Enable world-space Sun/Moon volumetric shafts raymarched through the existing GPU sky-shadow cascades.
+	skyVolumetricGodRaysEnabled = true
+	#Overall brightness multiplier for ElarisSkyRenderer Volumetric God Rays.
+	#Range: 0.0 ~ 3.0
+	intensity = 0.97
+	#Atmospheric scattering density used by ElarisSkyRenderer Volumetric God Rays. Higher values make shafts denser and more opaque-looking.
+	#Range: 0.0 ~ 3.0
+	density = 0.76
+	#Legacy compatibility key. Volumetric ray samples are now 8 / 16 / 32 according to postEffects.quality; this value is ignored.
+	#Range: 8 ~ 32
+	raymarchSamples = 13
+	#Distance brightness equalization for volumetric rays. 0 keeps physical path-length accumulation; 100 makes fully lit shafts nearly uniform regardless of how close the scene surface is.
+	#Range: 0.0 ~ 100.0
+	rayUniformityPercent = 0.0
+	#Artistic side-angle visibility for volumetric shafts. 0 keeps the original strongly directional phase response; 100 raises side-angle scattering toward a neutral visibility floor without reducing the forward highlight.
+	#Range: 0.0 ~ 100.0
+	sideVisibilityPercent = 0.0
+	#Suppresses broad, low-structure volumetric haze created by the artistic Ray Uniformity and Side Visibility boosts without simply lowering Ray Intensity. 0 preserves the original output exactly. Higher values increasingly remove blanket-like screen tint in open views while preserving the physical directional component and shadow-structured shafts. Default: 40%.
+	#Range: 0.0 ~ 100.0
+	hazeSuppressionPercent = 41.0
+	#Allow the separate Celestial Entity Shadow Map to occlude volumetric shafts. This only has an effect while Entity Shadows are enabled under Celestial Shadows.
+	entityOcclusion = false
+	#Maximum raymarch distance in blocks. Actual distance is capped by the far sky-shadow cascade coverage.
+	#Range: 16.0 ~ 384.0
+	maxDistance = 144.0
+	#Forward-scattering focus. Higher values concentrate the brightest volumetric shafts around the Sun/Moon direction.
+	#Range: 0.0 ~ 0.95
+	anisotropy = 0.53
+	#Percent of CelestiaLighting direct color mixed into volumetric rays. 0 is white, 100 fully follows dawn/day/sunset/moon color.
+	#Range: 0.0 ~ 100.0
+	celestialColorInfluencePercent = 100.0
+	#Automatically raises only Ray Uniformity and Side Visibility as vanilla skylight at the camera falls. The configured slider values remain the minimum/base at skylight 15. The Full Adaptation Skylight setting controls the skylight level at which both adapted values have already reached 100%. Skylight is sampled every 2 game ticks (~10 Hz) and the response is smoothed over roughly 0.5 seconds. Intensity, Density, Anisotropy and all other volumetric settings are never modified.
+	autoAdaptation = true
+	#Vanilla SKY light level at or below which Auto Adaptation has fully raised Ray Uniformity and Side Visibility to 100%. 15 is the most aggressive setting; 0 waits until complete skylight darkness. The slider is presented from 15 down to 0. Default: 4.
+	#Range: 0 ~ 15
+	fullAdaptationSkylight = 0
+
+#Camera
+[camera]
+	#Enable the cinematic lens flare effect from the Sun and Moon independently from ElarisSkyRenderer God Rays.
+	lensFlareEnabled = true
+	#Overall intensity multiplier for the entire lens flare effect.
+	#Range: 0.0 ~ 3.0
+	flareIntensity = 1.87
+	#Intensity multiplier for the anamorphic horizontal streak only.
+	#Range: 0.0 ~ 3.0
+	streakIntensity = 1.0
+	#Length multiplier for the anamorphic horizontal streak.
+	#Range: 0.25 ~ 3.0
+	streakLength = 1.0
+	#Width multiplier for the anamorphic horizontal streak.
+	#Range: 0.25 ~ 3.0
+	streakWidth = 1.0
+	#How strongly the lens flare splits into red, green and blue channels.
+	#Range: 0.0 ~ 3.0
+	chromaticSpread = 1.0
+	#Intensity multiplier for the circular lens ghosts.
+	#Range: 0.0 ~ 3.0
+	ghostIntensity = 1.0
+	#Size multiplier for the circular lens ghosts.
+	#Range: 0.35 ~ 3.0
+	ghostSize = 1.0
+	#Spacing multiplier that pushes the flare ghosts farther across the screen.
+	#Range: 0.35 ~ 3.0
+	flareSpread = 1.0
+
+#Filmic Tonemap
+[Tonemap]
+	#Enable the low-cost filmic Tonemap integrated into the ElarisSkyRenderer God Rays composite pass.
+	enabled = true
+	#Color grading visual style preset: FILMIC_NATURAL, FANTASY_VIBRANT, or NORDIC_ATMOSPHERIC.
+	#Allowed Values: FILMIC_NATURAL, FANTASY_VIBRANT, NORDIC_ATMOSPHERIC
+	colorPreset = "NORDIC_ATMOSPHERIC"
+	#Exposure compensation in stops before the filmic curve.
+	#Range: -2.0 ~ 2.0
+	exposure = 1.14
+	#Strength of the gentle S-curve contrast.
+	#Range: 0.0 ~ 1.0
+	contrast = 0.18
+	#How strongly bright highlights roll off instead of clipping to white.
+	#Range: 0.0 ~ 1.0
+	highlightCompression = 0.65
+	#Adds a subtle toe to deepen flat shadows without crushing them.
+	#Range: 0.0 ~ 1.0
+	shadowDepth = 0.1
+	#Overall color saturation multiplier.
+	#Range: 0.0 ~ 2.0
+	saturation = 1.0
+	#Luminance-aware saturation boost that mainly affects muted colors.
+	#Range: 0.0 ~ 1.0
+	vibrance = 0.18
+	#Display gamma used around the filmic operation.
+	#Range: 1.6 ~ 2.8
+	gamma = 2.2
+	#Blend between the original image and the filmic result.
+	#Range: 0.0 ~ 1.0
+	strength = 1.0
+
+#Fog
+[AtmosphereFog]
+	#Enable atmospheric distance AtmosphereFog.
+	fogEnabled = true
+	#Volumetric fog density multiplier: 0 skips the fog pass, 1 preserves the existing fog. Updated live without recompiling shaders.
+	#Range: 0.0 ~ 1.0
+	intensity = 1.0
+	#Enable restrained Sun and Moon scattering glow, even when distance AtmosphereFog is disabled.
+	fogCelestialScatteringEnabled = false
+	#True extinction multiplier. The shader squares this value so the upper range can produce very dense AtmosphereFog without changing its color toward white.
+	#Range: 0.0 ~ 20.0
+	density = 7.12
+	#Brightness of the AtmosphereFog scattering color, independent from extinction/density.
+	#Range: 0.25 ~ 1.2
+	scatteringBrightness = 1.2
+	#Maximum luminance allowed for AtmosphereFog color. Preserves hue while preventing dense AtmosphereFog from becoming a white wall.
+	#Range: 0.15 ~ 1.2
+	maxBrightness = 1.16
+	#Additional optical density inside nearby chunks.
+	#Range: 0.0 ~ 5.0
+	nearDensityBoost = 0.0
+	#Distance over which the nearby density boost builds up.
+	#Range: 4.0 ~ 128.0
+	nearBoostRange = 55.0
+	#Tint AtmosphereFog from the shared CelestiaLighting state so dawn, sunset, daytime and moonlight affect its color.
+	dynamicCelestialColor = true
+	#How strongly CelestiaLighting color is mixed into AtmosphereFog when dynamic color is enabled.
+	#Range: 0.0 ~ 1.0
+	celestialColorBlend = 0.63
+	#Distance in blocks before the custom AtmosphereFog starts becoming visible.
+	#Range: 0.0 ~ 160.0
+	startDistance = 8.0
+	#Distance in blocks over which AtmosphereFog reaches full local strength after its start point. Zero makes it appear almost immediately.
+	#Range: 0.0 ~ 64.0
+	nearFade = 42.6
+	#Maximum opacity of the custom AtmosphereFog. Keeping this below one prevents a white wall.
+	#Range: 0.0 ~ 1.0
+	maxOpacity = 0.64
+	#How strongly the AtmosphereFog inherits the blue sky gradient instead of a neutral gray.
+	#Range: 0.0 ~ 1.0
+	skyTint = 0.78
+	#Intensity of directional Sun and Moon scattering in the AtmosphereFog.
+	#Range: 0.0 ~ 5.0
+	scatteringStrength = 2.06
+	#Controls how AtmosphereFog builds with distance. Values below 1 make nearby AtmosphereFog much stronger; values above 1 keep the foreground clearer.
+	#Range: 0.35 ~ 3.0
+	distanceCurve = 2.54
+	#Vertical AtmosphereFog thickness in blocks. Larger values let the AtmosphereFog extend higher and make its density change more slowly with altitude.
+	#Range: 50.0 ~ 384.0
+	height = 81.0
+
+#Experimental Water
+[water]
+	#Enable Elaris's procedural realistic water. Disabled by default while experimental.
+	enabled = true
+	#Reject refracted samples that would pull foreground geometry through the water surface.
+	depthAwareRefraction = true
+	#STANDARD (Low) keeps existing Elaris water. HIGH adds spectral waves and underwater optics (OpenGL 4.3). VANILLA disables Elaris water and restores the ordinary Minecraft/Embeddium fluid path. Switching rebuilds chunks without restarting.
+	#Allowed Values: STANDARD, HIGH, VANILLA
+	quality = "VANILLA"
+	#Enable the finest texture-driven micro-ripple band. When disabled, the shader skips the extra high-frequency texture sample completely.
+	detailWaves = true
+	#Water shader scale relative to the window, capped at world resolution. SSR quality imposes a minimum: Minimum 25%, Medium 50%, High 100%. ESS does not multiply the scale again. Matching full-size water can resolve without a second geometry draw.
+	#Range: 0.25 ~ 1.0
+	renderScale = 0.45
+	#Strength of the packed micro-ripple normal field. Geometry remains perfectly flat.
+	#Range: 0.0 ~ 5.0
+	waveStrength = 0.44
+	#Spatial frequency multiplier for the irregular micro-ripple field.
+	#Range: 0.25 ~ 10.0
+	waveScale = 6.49
+	#Animation speed multiplier for the moving micro-ripple field.
+	#Range: 0.0 ~ 6.0
+	waveSpeed = 4.07
+	#Strength of the finest high-frequency micro-ripple band when Detail Waves is enabled.
+	#Range: 0.0 ~ 1.0
+	detailStrength = 0.58
+	#Screen-space refraction amount. This is not SSR and performs no reflection tracing.
+	#Range: 0.0 ~ 4.0
+	refractionStrength = 3.27
+	#Beer-Lambert absorption/scattering strength with water thickness.
+	#Range: 0.0 ~ 3.0
+	absorptionStrength = 2.34
+	#Approximate depth in blocks over which water transitions from shallow to deep appearance.
+	#Range: 2.0 ~ 48.0
+	visibilityDepth = 2.0
+	#Extra surface presence at grazing view angles. No reflection sample is used.
+	#Range: 0.0 ~ 1.5
+	fresnelStrength = 1.5
+	#Shape of the grazing-angle Fresnel response.
+	#Range: 1.0 ~ 10.0
+	fresnelPower = 3.9
+	#Minimum surface tint mixed over shallow refracted water.
+	#Range: 0.0 ~ 0.6
+	surfaceOpacity = 0.07
+	#Sun/moon specular highlight intensity.
+	#Range: 0.0 ~ 2.0
+	specularStrength = 2.0
+	#Sun/moon microfacet glint sharpness. Higher values produce a tighter highlight while the finite roughness floor keeps the highlight water-like instead of a single plastic dot.
+	#Range: 16.0 ~ 512.0
+	specularSharpness = 281.0
+	#Enable water-only screen-space reflections. Disabled by default. SSR traces the already-rendered main scene color/depth and never renders the world a second time.
+	ssrEnabled = true
+	#Strength of valid screen-space reflection hits before Fresnel/view-angle weighting.
+	#Range: 0.0 ~ 2.0
+	ssrStrength = 1.03
+	#Maximum view-space distance in blocks traced by water SSR. Longer rays can reflect farther terrain but cost the same number of samples at lower spatial precision.
+	#Range: 4.0 ~ 128.0
+	ssrMaxDistance = 45.0
+	#Depth thickness accepted as a screen-space SSR hit. Raise this if thin/distant reflections have holes; lower it if reflections stick to unrelated geometry.
+	#Range: 0.02 ~ 2.0
+	ssrThickness = 2.0
+	#Width of the screen-edge fade used to hide SSR rays leaving the visible scene.
+	#Range: 0.01 ~ 0.4
+	ssrEdgeFade = 0.01
+	causticsEnabled = true
+	#Range: 0.0 ~ 2.0
+	causticsIntensity = 1.0
+	shorelineFadeEnabled = true
+	#Range: 0.05 ~ 1.0
+	shorelineFadeDistance = 0.35
+
+#Shared Screen-Space Reflections
+[ssr]
+	#MINIMUM / MEDIUM / HIGH. Controls ray traversal, hit refinement, material resolution and history filtering. Water and materials share this preset.
+	#Allowed Values: MINIMUM, MEDIUM, HIGH
+	preset = "MEDIUM"
+	#Screen-space reflections on opaque Embeddium PBR terrain. Requires PBR materials. Does not re-render world geometry. Disabled by default.
+	materialsEnabled = false
+	#Legacy compatibility key. Reflection trace quality is now controlled by ssr.preset; this value is ignored.
+	#Range: 0.25 ~ 1.0
+	quality = 0.4
+
+#Diffuse lighting model, independent of GTAO and PBR selection.
+[lighting]
+	#LOW keeps existing lighting. HIGH adds colored directional/hemisphere diffuse lighting in the terrain pass; renderer reload only, no game restart.
+	#Allowed Values: LOW, HIGH
+	quality = "HIGH"
+
+#Ground-truth ambient occlusion. OpenGL raster passes; HUD and hands are excluded.
+[gtao]
+	#Contact-scale indirect occlusion, conservatively combined with existing vanilla/material shading. Disabled by default.
+	enabled = true
+	#MINIMUM / MEDIUM / HIGH. Controls resolution, horizon directions and samples.
+	#Allowed Values: MINIMUM, MEDIUM, HIGH
+	quality = "MINIMUM"
+
+#Experimental Rain Puddles
+[rainPuddles]
+	#Maximum virtual puddle depth in blocks. The PNG grayscale map scales this value; geometry remains on the block surface.
+	#Range: 0.005 ~ 0.2
+	maxDepth = 0.195
+	#Exponent applied to the grayscale depth map. Above 1 emphasizes deeper centers while keeping thin edges shallow.
+	#Range: 0.35 ~ 3.0
+	depthCurve = 2.95
+	#How much the underlying block darkens under the wet fringe and puddle body.
+	#Range: 0.0 ~ 0.6
+	wetDarkening = 0.52
+	#Visual coverage of the puddle material. Lower values reveal more of the original block while preserving depth-driven wetness.
+	#Range: 0.1 ~ 1.0
+	surfaceOpacity = 1.0
+	#Width and softness of the transition from dry block to wet fringe to visible water.
+	#Range: 0.0 ~ 1.0
+	edgeSoftness = 0.51
+	#Strength of packed micro-normal ripples on the puddle surface. Does not displace geometry.
+	#Range: 0.0 ~ 2.0
+	waveStrength = 0.05
+	#Spatial frequency of the puddle micro-ripple field.
+	#Range: 0.25 ~ 10.0
+	waveScale = 9.15
+	#Animation speed of the small moving puddle surface ripples.
+	#Range: 0.0 ~ 4.0
+	waveSpeed = 1.64
+	#Strength of procedural circular rain rings layered over the micro-normal field.
+	#Range: 0.0 ~ 2.0
+	rippleStrength = 0.46
+	#Screen-space distortion of the block color seen through the virtual puddle depth.
+	#Range: 0.0 ~ 3.0
+	refractionStrength = 2.63
+	#Enable non-planar screen-space reflections for command-created rain puddles. Uses the already-rendered scene color/depth only.
+	ssrEnabled = false
+	#Strength of valid puddle SSR hits after Fresnel and confidence weighting.
+	#Range: 0.0 ~ 2.0
+	ssrStrength = 1.03
+	#Maximum screen-space reflection ray distance in blocks for puddles.
+	#Range: 4.0 ~ 96.0
+	ssrMaxDistance = 45.0
+	#Depth crossing tolerance for accepting puddle SSR hits.
+	#Range: 0.02 ~ 2.0
+	ssrThickness = 2.0
+	#Fade width near screen borders where puddle SSR naturally loses information.
+	#Range: 0.01 ~ 0.4
+	ssrEdgeFade = 0.19
+
+#Experimental Wet Surfaces
+[wet]
+	#Apply Elaris's wet-film material to visible upward-facing SOLID terrain surfaces. This is a screen-space material pass and does not scan blocks on the CPU.
+	enabled = false
+	#Virtual optical wet-film depth in blocks. Geometry remains unchanged; this scales refraction and depth-driven shading.
+	#Range: 0.005 ~ 0.2
+	maxDepth = 0.2
+	#Exponent applied to the procedural wet depth field. Higher values emphasize the deeper-looking parts of the film.
+	#Range: 0.35 ~ 3.0
+	depthCurve = 3.0
+	#How much the underlying solid terrain darkens under the wet film.
+	#Range: 0.0 ~ 0.6
+	wetDarkening = 0.6
+	#Visual presence of the wet material over the original terrain color.
+	#Range: 0.1 ~ 1.0
+	surfaceOpacity = 1.0
+	#Softness of the upward-surface selection and blend around geometric edges.
+	#Range: 0.0 ~ 1.0
+	edgeSoftness = 0.62
+	#Strength of packed micro-normal ripples on globally wet terrain. No geometry displacement is performed.
+	#Range: 0.0 ~ 2.0
+	waveStrength = 0.05
+	#Spatial frequency of the moving wet micro-normal field.
+	#Range: 0.25 ~ 10.0
+	waveScale = 9.15
+	#Animation speed of the moving wet micro-normal layers.
+	#Range: 0.0 ~ 4.0
+	waveSpeed = 1.64
+	#Strength of procedural circular rain rings on wet terrain.
+	#Range: 0.0 ~ 2.0
+	rippleStrength = 0.46
+	#Screen-space distortion of terrain color through the virtual wet film.
+	#Range: 0.0 ~ 3.0
+	refractionStrength = 2.71
+	#Strength of Elaris's analytic sky/environment fallback. It fills missing SSR and keeps wet-film normals readable at near-normal camera angles without a planar reflection pass.
+	#Range: 0.0 ~ 2.0
+	environmentReflectionStrength = 1.03
+	#Strength of the bounded sun/moon microfacet highlight on Wet Surfaces. Uses Elaris celestial direction/color and reacts to micro waves and rain rings.
+	#Range: 0.0 ~ 2.0
+	celestialSpecularStrength = 2.0
+	#Minimum dielectric wet sheen at near-normal viewing angles. This does not raise SSR itself; it only prevents the wet film from visually disappearing when looking downward.
+	#Range: 0.0 ~ 0.25
+	sheenFloor = 0.145
+	#Strength of subtle lighting contrast produced by rain-ring and micro-normal slopes. It modulates lighting from the normal rather than drawing bright ring decals.
+	#Range: 0.0 ~ 2.0
+	rippleHighlightStrength = 2.0
+	#Enable non-planar SSR for globally wet terrain. Rays trace the final visible scene depth; no mirrored camera or second world render is used.
+	ssrEnabled = true
+	#Strength of valid wet-surface SSR hits after Fresnel and confidence weighting.
+	#Range: 0.0 ~ 2.0
+	ssrStrength = 2.0
+	#Maximum screen-space reflection ray distance in blocks for Wet Surfaces.
+	#Range: 4.0 ~ 96.0
+	ssrMaxDistance = 4.0
+	#Depth crossing tolerance for accepting Wet Surfaces SSR hits.
+	#Range: 0.02 ~ 2.0
+	ssrThickness = 2.0
+	#Fade width near screen borders where Wet Surfaces SSR loses visible scene information.
+	#Range: 0.01 ~ 0.4
+	ssrEdgeFade = 0.01
+
+#ESS / Elaris Super Sampling
+[ess]
+	#Legacy storage key for the unified upscaler selection. Enables shared reduced-resolution world rendering for one ESS or Vulkan SDK reconstruction algorithm. Disabled by default.
+	enabled = true
+	#PERFORMANCE: ESS 1.1 spatial reconstruction. QUALITY: ESS 2.0 temporal reconstruction with integrated antialiasing. Legacy ESS_1_0 / ESS_1_1 values migrate to PERFORMANCE.
+	#Allowed Values: PERFORMANCE, QUALITY, ESS_1_0, ESS_1_1
+	mode = "QUALITY"
+	#Internal resolution: ESS Ultra/Quality/Balanced/Performance = 85/77/67/58%; SDKs = 77/67/58/50%. LEGACY preserves an older renderScale until a preset is selected.
+	#Allowed Values: LEGACY, ULTRA_QUALITY, QUALITY, BALANCED, PERFORMANCE
+	preset = "LEGACY"
+	#Legacy internal world render scale, used only with preset=LEGACY. Choosing a preset in the menu also updates this value.
+	#Range: 0.5 ~ 0.85
+	renderScale = 0.77
+	#Reconstruction sharpness. 0 disables added sharpening; higher values restore more apparent texture detail after upscale.
+	#Range: 0.0 ~ 1.0
+	sharpness = 0.35
+	#Optional measured native/upscaler comparison. May use native rendering when reconstruction costs more. Selection is preserved; recalibrates on settings, world or output changes.
+	autoByFrameTime = false
+	#Optional bounded SDK queue wait. Allows temporary ESS fallback on a busy queue; can change image stability.
+	limitVulkanQueueWait = false
+	#Keep up to two SDK sizes on discrete GPUs. During continuous resize use ESS until the size is stable for 100 ms. Extra SDK memory; disabled by default.
+	cacheVulkanSizes = false
+	#Two shared frame sets, one SDK history. Adds one frame of world latency and extra VRAM. Disabled with ESS FG; disabled by default.
+	pipelineVulkanFrames = false
+	#Experimental sky-only MRT for CPU/Neo shadows with NeoSky, without ESS/PBR/High lighting. Unknown draws fall back to a full capture; disabled by default.
+	singleWorldShadowCapture = false
+	#Experimental real entity/foliage vertex motion for Vulkan SDKs. Extra draw calls, CPU vertex history and motion buffer; reloads resources when changed. Improves temporal stability rather than FPS; disabled by default.
+	geometryMotionForVulkan = false
+	#CPU queue wait budget when limitVulkanQueueWait is enabled.
+	#Range: 0.0 ~ 20.0
+	vulkanQueueWaitMs = 2.0
+	#Obsolete migration key, ignored and reset to false. An explicitly selected upscaler always runs unless the new autoByFrameTime option is enabled.
+	autoNative = false
+
+#Standalone world antialiasing. Mutually exclusive with every upscaler; HUD and text stay native.
+[antialiasing]
+	#OFF, FXAA, SMAA (spatial 1x), SMAA_2X (two real-frame samples), SMAA_4X (Elaris four real-frame samples, not MSAA+T2x). AA disables all upscalers.
+	#Allowed Values: OFF, FXAA, SMAA, SMAA_2X, SMAA_4X
+	mode = "OFF"
+
+#ESS FG / Elaris Super Sampling Frame Generation
+[essFg]
+	#Enable ESS FG 2.5. Interpolates real world frames with depth-based movement and conservative history rejection. HUD and hands stay native. Adds presentation latency; automatically bypassed at high real FPS or insufficient rendering headroom. Disabled by default.
+	enabled = false
+	#Obsolete FG compatibility key; unused by ESS FG 2.5. Retained so old config files remain readable.
+	#Range: 0.0 ~ 1.0
+	reprojectionStrength = 1.0
+	#Obsolete FG compatibility key; unused by ESS FG 2.5. Depth guards are controlled by the current reconstruction shaders.
+	#Range: 0.0 ~ 0.35
+	historyStability = 0.06
+	#Camera movement in blocks that forces a real render. A safety cap of 0.75 blocks also applies. Menus, fluid transitions, zoom changes and history older than 80 ms force real rendering.
+	#Range: 0.25 ~ 16.0
+	cameraCutDistance = 9.25
+	#Camera rotation in degrees that forces a real render. A safety cap of 6 degrees also applies.
+	#Range: 5.0 ~ 90.0
+	cameraCutAngle = 14.0
+
+#Opt-in access to advanced experimental rendering features. Disabled by default.
+[experiments]
+	#Unlock Vulkan SDK upscalers and future Vulkan effects. These features are under development and can be very unstable. Disabling hides their settings and prevents runtime use even if old Vulkan selector keys remain enabled.
+	advancedMode = false
+
+#Experimental Vulkan SDK super resolution. World rasterization remains OpenGL; HUD and hands stay native.
+[experimentalVulkan]
+	#Legacy storage key for the unified upscaler selector: together with ess.enabled, chooses the Vulkan SDK instead of ESS. Requires Windows x64, Vulkan 1.2, OpenGL timer queries and explicit fragment outputs, matching GPU/driver and external memory/semaphores. If unavailable, ESS uses OpenGL. Disabled by default.
+	enabled = false
+	#FSR31: shader-based FSR 3.1.4. DLSS: NVIDIA RTX only. XESS: restricted to the active Intel GPU in Elaris, with additional Intel runtime checks.
+	#Allowed Values: FSR31, DLSS, XESS
+	upscaler = "FSR31"
+	#Requested DLSS SR transformer model: K (DLSS 4, lower cost) or M (DLSS 4.5, higher cost). Packaged NGX runtime: 310.9.1. NVIDIA app overrides can replace this hint. No DLSS frame generation or ray reconstruction.
+	#Allowed Values: TRANSFORMER_K, TRANSFORMER_M
+	dlssModel = "TRANSFORMER_K"
+
+[grass]
+	enabled = true
+	#Range: 0.0 ~ 2.0
+	strength = 1.0
+	#Range: 0.0 ~ 3.0
+	speed = 1.0
+	#Range: 0.0 ~ 2.0
+	gustStrength = 0.65
+	#Range: 16 ~ 192
+	distance = 64
+	#Range: 0.0 ~ 2.0
+	grassStrength = 1.0
+	#Range: 0.0 ~ 2.0
+	leavesStrength = 0.85
+	#Range: 0.0 ~ 2.0
+	aquaticStrength = 0.65
+	#Range: 0.0 ~ 2.0
+	bendStrength = 1.0
+	backlightEnabled = true
+	#Range: 0.0 ~ 2.0
+	backlightIntensity = 1.0
+
+#Opaque Ice
+[opaqueIce]
+	#Render only vanilla minecraft:ice in the SOLID chunk layer instead of TRANSLUCENT. This makes normal ice fully opaque and removes translucent sorting/blending/overdraw for it, which can improve performance in large frozen areas. This does not affect frosted_ice, packed_ice, blue_ice, water, glass, or any other block. Disabled by default.
+	enabled = true
+
+[debugHud]
+	enabled = false
+	fps = true
+	memory = true
+	allocated = false
+	#Allowed Values: TOP_LEFT, TOP_RIGHT, BOTTOM_LEFT, BOTTOM_RIGHT
+	position = "TOP_RIGHT"
+	#Range: 0 ~ 200
+	offsetX = 4
+	#Range: 0 ~ 200
+	offsetY = 4
+	#Range: 0.1 ~ 5.0
+	textScale = 1.0
+	#Range: 0.1 ~ 2.0
+	updateSeconds = 0.5
+
+#UI
+[ui]
+	#Set to true after the alpha warning screen has been acknowledged. Do not change manually.
+	alphaWarningShown = false
+

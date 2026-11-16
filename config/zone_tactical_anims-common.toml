@@ -1,0 +1,70 @@
+
+[weapon_ready]
+	#Movement speed while the weapon is raised (1.0 = normal, 0.5 = 50%).
+	#Range: 0.3 ~ 1.0
+	raisedSpeed = 0.5
+	#Milliseconds before you can fire after the weapon comes up from lowered.
+	#Range: 0 ~ 2000
+	raiseDelayMs = 300
+
+[headlamp]
+	#How far the headlamp cone reaches, in blocks (light pools at 10%, 25%, 42%, 62% and 85% of this).
+	#Range: 4.0 ~ 48.0
+	range = 24.0
+	#Brightness of the nearest light in the cone (1-15); the further pools get dimmer.
+	#Range: 1 ~ 15
+	brightness = 15
+	#Brightness of the soft glow around your head (1-15). 0 = off.
+	#Range: 0 ~ 15
+	nearBrightness = 11
+	#Give every new player a headlamp (worn in the Curios head slot) the first time they join.
+	starterHeadlamp = true
+
+[radiation]
+	#Give Anomaly Zone radiation protection to every armor piece (Anomaly Zone's own suits keep their values).
+	#Anomaly Zone adds the four pieces up (max 400). A zone of level N stops hurting you at N x 100 protection.
+	allArmor = true
+	#Radiation protection per armor point of the piece (iron chestplate = 6 points).
+	#Range: 0.0 ~ 50.0
+	perArmorPoint = 6.0
+	#Cap per piece from the formula above.
+	#Range: 0 ~ 100
+	maxPerPiece = 40
+	#Exact Zone protection for specific items: "id=radiation" or "id=radiation,thermal,chemical,psi" (Anomaly Zone suit pieces are 50 each).
+	#Everything else uses the formula above for radiation, with half of it as thermal/chemical and a quarter as psi.
+	overrides = ["itz:rookie_respirator=25,10,25,5", "projectarmor_:diy_chestplate=0,0,0,0", "projectarmor_:d_3_crx_chestplate=0,0,0,0", "projectarmor_:a_6b_4_chestplate=5,5,0,0", "projectarmor_:a_6b_2_chestplate=10,5,5,0", "projectarmor_:nfm_chestplate=10,5,5,0", "projectarmor_:a_6b_5_chestplate=10,10,5,0", "projectarmor_:lbt_chestplate=15,10,10,0", "projectarmor_:ghel_chestplate=15,10,10,0", "projectarmor_:un_chestplate=15,10,10,0", "projectarmor_:iotv_chestplate=20,15,10,0", "projectarmor_:fs_chestplate=20,15,10,0", "projectarmor_:wartech_chestplate=20,15,10,0", "projectarmor_:a_6b_43_chestplate=25,15,15,0", "projectarmor_:gb_helmet=0,0,0,0", "projectarmor_:ssh_68_helmet=5,5,0,5", "projectarmor_:striker_ulach_helmet=10,5,5,5", "projectarmor_:sai_helmet=10,5,5,5", "projectarmor_:oonh_helmet=10,5,5,5", "projectarmor_:lhs_helmet=10,10,5,5", "projectarmor_:exfil_helmet=10,10,5,10", "projectarmor_:exfi_lpnv_helmet=10,10,5,10", "projectarmor_:h_6b_47_helmet=15,10,5,10", "projectarmor_:h_6b_47_pnv_helmet=15,10,5,10", "projectarmor_:alt_helmet=20,15,15,10"]
+	#Armour values replaced to fit Anomaly Zone's suits: "id=armor,toughness,knockbackResistance".
+	#(AZ suit chest: light 6/0, standard 8/2, heavy 8/3 +0.1 knockback. Helmets 2-3.)
+	armorBalance = ["projectarmor_:diy_chestplate=3,0,0", "projectarmor_:d_3_crx_chestplate=3,0,0", "projectarmor_:a_6b_4_chestplate=4,0.5,0", "projectarmor_:a_6b_2_chestplate=5,0.5,0", "projectarmor_:nfm_chestplate=5,1,0", "projectarmor_:a_6b_5_chestplate=6,1,0", "projectarmor_:lbt_chestplate=6,1.5,0", "projectarmor_:ghel_chestplate=7,2,0", "projectarmor_:un_chestplate=7,2,0", "projectarmor_:iotv_chestplate=8,2.5,0", "projectarmor_:fs_chestplate=8,2.5,0", "projectarmor_:wartech_chestplate=8,3,0", "projectarmor_:a_6b_43_chestplate=9,3,0.1", "projectarmor_:gb_helmet=0,0,0", "projectarmor_:ssh_68_helmet=2,0,0", "projectarmor_:striker_ulach_helmet=2,0.5,0", "projectarmor_:sai_helmet=2,1,0", "projectarmor_:oonh_helmet=2,1,0", "projectarmor_:lhs_helmet=3,1,0", "projectarmor_:exfil_helmet=3,1.5,0", "projectarmor_:exfi_lpnv_helmet=3,1.5,0", "projectarmor_:h_6b_47_helmet=3,2,0", "projectarmor_:h_6b_47_pnv_helmet=3,2,0", "projectarmor_:alt_helmet=3,3,0.1"]
+	#Radiation zone level inside the city (Red Forest is 2 by default). 0 = off.
+	#Range: 0 ~ 4
+	cityLevel = 2
+	#City area: [minX, minZ, maxX, maxZ] in the overworld.
+	cityBox = [-330, -520, 710, 620]
+	#Armour mods capped at Anomaly Zone's heavy suits (any item from these mods that isn't listed above).
+	armorCeilingMods = ["brimm", "fracturepoint"]
+	#Caps for those mods: helmet, chest, legs, boots armour, then toughness and knockback resistance.
+	armorCeiling = [3.0, 9.0, 7.0, 3.0, 3.0, 0.1]
+
+[world]
+	#Real minutes for one full day/night. Vanilla 20; S.T.A.L.K.E.R.'s classic 10x clock is 144.
+	#Keep this the same on the server and every client.
+	#Range: 20.0 ~ 1440.0
+	dayLengthMinutes = 144.0
+	#Mute players' distance-based footsteps; each client plays them on the leg animation instead (client stepSync).
+	animatedFootsteps = true
+
+[npcs]
+	#Gun NPCs (bandits etc.): damage they deal to players, as a multiplier. 1 = full TaCZ damage.
+	#Range: 0.0 ~ 4.0
+	damageToPlayers = 0.5
+	#Gun NPCs: random aim error per shot, in degrees. 0 = perfect aim (TaCZ NPCs Mod default).
+	#Range: 0.0 ~ 30.0
+	aimSpread = 4.0
+	#NPCs on the same team as you (faction) can't hurt you, and you can't hurt them. Players can still hurt each other.
+	noFriendlyFire = true
+
+[emissions]
+	#Turn off Into The Zone's emission (the one without the siren). Anomaly Zone's emission stays.
+	itzEmissionsOff = true
+

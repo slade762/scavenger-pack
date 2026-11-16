@@ -1,0 +1,8 @@
+{
+  "name": "ra1k.attachment.drum_mag.name",
+  "display": "ra1k:drum_mag_display",
+  "data": "ra1k:drum_mag_data",
+  "tooltip": "ra1k.attachment.drum_mag.desc",
+  "type": "extended_mag",
+  "sort": 23
+}

@@ -1,0 +1,8 @@
+{
+  "name": "ra1k.handguard.grey.name",
+  "display": "ra1k:handguard_grey_display",
+  "data": "ra1k:sight40_small_data",
+  "tooltip": "ra1k.handguard.desc",
+  "type": "laser",
+  "sort": 24
+}

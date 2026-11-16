@@ -1,0 +1,27 @@
+{
+  "materials": [   
+	{
+      "item": {
+        "tag": "forge:ingots/iron"
+      },
+      "count": 20
+    },
+	{
+      "item": {
+        "tag": "forge:ingots/gold"
+      },
+      "count": 40
+    },
+	{
+      "item": {
+        "tag": "forge:rods/blaze"
+      },
+      "count": 1
+    }
+  ],
+  "result": {
+    "type": "attachment",
+    "id": "ra1k:kit_lmg"
+  },
+  "type": "tacz:gun_smith_table_crafting"
+}

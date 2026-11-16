@@ -1,0 +1,10 @@
+{
+  "name": "tacz.slot_adapter.cover.name",
+  "display": "ra1k:cover_adapter_display",
+  "data": "tacz:riser_pistol_high_data",
+  "slot": "scope",
+  "allowed_attachments": [
+    "#ra1k:okp_scope"
+  ],
+  "sort": 23
+}

@@ -1,0 +1,8 @@
+{
+  "name": "ra1k.attachment.spear_silencer.name",
+  "display": "ra1k:spear_silencer_display",
+  "tooltip": "ra1k.attachment.spear_silencer.desc",
+  "data": "ra1k:spear_silencer_data",
+  "type": "muzzle",
+  "sort": 23
+}

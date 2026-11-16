@@ -1,0 +1,27 @@
+{
+  "materials": [
+	{
+      "item": {
+        "tag": "forge:ingots/iron"
+      },
+      "count": 90
+    },
+	{
+      "item": {
+        "tag": "forge:gems/quartz"
+      },
+      "count": 5
+    }
+  ],
+  "result": {
+    "type": "gun",
+    "id": "ra1k:ak74",
+	"attachments": {
+      "scope": "ra1k:cover",
+	  "laser": "ra1k:handguard_tactical",
+	  "extended_mag": "ra1k:fast_mag",
+	  "stock": "tacz:oem_stock_tactical"
+    }
+  },
+  "type": "tacz:gun_smith_table_crafting"
+}

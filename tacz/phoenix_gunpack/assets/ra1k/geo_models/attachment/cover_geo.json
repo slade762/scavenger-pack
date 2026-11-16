@@ -1,0 +1,32 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.sight_eotech_hhs8_nozoom",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 312,
+				"visible_bounds_height": 49,
+				"visible_bounds_offset": [0, 0.5, 0]
+			},
+			"bones": [
+				{
+					"name": "views",
+					"pivot": [0, 0.2, 8.7]
+				},
+				{
+					"name": "scope_view",
+					"parent": "views",
+					"pivot": [0, 0.2, 8.7]
+				},
+				{
+					"name": "scope_view_2",
+					"parent": "views",
+					"pivot": [-1, 1.1, 8.7],
+					"rotation": [0, 0, -37.5]
+				}
+			]
+		}
+	]
+}

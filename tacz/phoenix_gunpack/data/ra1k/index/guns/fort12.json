@@ -1,0 +1,8 @@
+{
+    "name": "ra1k.gun.fort12.name",
+    "display": "ra1k:fort12_display",
+    "data": "ra1k:fort12_data",
+    "tooltip":"ra1k.gun.fort12.desc",
+    "type": "pistol",
+    "sort": 23
+}

@@ -1,0 +1,13 @@
+name = "WATERMeDIA: Multimedia API"
+filename = "watermedia-3.0.1.jar"
+side = "both"
+
+[download]
+url = "https://edge.forgecdn.net/files/9457/480/watermedia-3.0.1.jar"
+hash-format = "sha1"
+hash = "2547e8cb1f3352267b1cb667aeec42754dbdf101"
+
+[update]
+[update.curseforge]
+file-id = 9457480
+project-id = 869524

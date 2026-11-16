@@ -1,0 +1,19 @@
+{
+  "slot": "ra1k:attachment/slot/cover",
+  "model": "ra1k:attachment/cover_geo",
+  "adapter": "cover",
+  "show_mount": false,
+  "zoom": [
+    1.2
+  ],
+   "views": [
+    1,
+    2
+  ],
+  "fov": 55.0,
+  "texture": "ra1k:attachment/uv/cover",
+  "sounds": {
+    "install": "tacz:attachments/scope_general_d",
+    "uninstall": "tacz:attachments/scope_general_d"
+  }
+}

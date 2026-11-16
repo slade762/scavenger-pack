@@ -1,0 +1,27 @@
+{
+  "materials": [
+	{
+      "item": {
+        "tag": "minecraft:logs"
+      },
+      "count": 10
+    },
+	{
+      "item": {
+        "tag": "forge:ingots/iron"
+      },
+      "count": 60
+    },
+	{
+      "item": {
+        "tag": "forge:gems/quartz"
+      },
+      "count": 5
+    }
+  ],
+  "result": {
+    "type": "gun",
+    "id": "ra1k:ak74"
+  },
+  "type": "tacz:gun_smith_table_crafting"
+}
