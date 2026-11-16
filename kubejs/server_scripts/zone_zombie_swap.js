@@ -10,6 +10,10 @@ function zzsCall(o, names) {
 EntityEvents.spawned(event => {
   const e = event.entity
   if (!ZZS_SWAP[String(e.type)]) return
+  // Anomaly Zone's PDA jobs spawn tagged ones (lab test subjects): leave those alone, or the job keeps
+  // spawning replacements forever (it counts its tagged subjects, and the swapped zombies have no tag).
+  const zzsTags = zzsCall(e, ['getTags', 'm_19880_'])
+  if (zzsTags && !zzsTags.isEmpty()) return
   const x = Number(zzsCall(e, ['getX', 'm_20185_'])), y = Number(zzsCall(e, ['getY', 'm_20186_'])), z = Number(zzsCall(e, ['getZ', 'm_20189_']))
   const dim = String(event.level.dimension)
   const server = event.server

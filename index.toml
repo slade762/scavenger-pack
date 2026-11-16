@@ -1705,8 +1705,16 @@ file = "kubejs/server_scripts/zone_locked_slots.js"
 hash = "d0dc82263ffe4be9f5b90a8831dbbe782c7d8616ecf4f14d3988781bb5700ce1"
 
 [[files]]
+file = "kubejs/server_scripts/zone_mutant_gate.js"
+hash = "4da7548d5e9ba33edf871a907a5f694e9cff4a2bdd9fc7d9f7f432417d9f6d4d"
+
+[[files]]
 file = "kubejs/server_scripts/zone_npc_combat.js"
 hash = "75d219086bf89b159717640596d59df2c619cb2d096be4a1acffea2bb4d1f109"
+
+[[files]]
+file = "kubejs/server_scripts/zone_npc_unstuck.js"
+hash = "41bc2b00c8025d8d983fd0666d286e0fb97715b70896f8490f4150050bbc738c"
 
 [[files]]
 file = "kubejs/server_scripts/zone_pacifists.js"
@@ -1722,7 +1730,7 @@ hash = "9e54a01e06d1fea839fa00cd9345cdd60533448324c7ebf7df5d000caa4483c8"
 
 [[files]]
 file = "kubejs/server_scripts/zone_rubles.js"
-hash = "9da0da4dbc40c728fc328b4a799949aba333fb4d8fe71c3418f750c429549146"
+hash = "38d08d6d47f3b8536448f9484ab34c042feba12d293315442bfb478b3f152bb5"
 
 [[files]]
 file = "kubejs/server_scripts/zone_scavengers.js"
@@ -1734,7 +1742,7 @@ hash = "5c38ce28071b4049a9383a3343e364c3ab220f029cb964a71ba97e65d1b0199a"
 
 [[files]]
 file = "kubejs/server_scripts/zone_spawn_director.js"
-hash = "89e1d7b33c1cf20d1349be0af683c599abf9aa3fbfe3222d6f73dbef2d8d8269"
+hash = "56669933a6a14458e0a3b244bcd0e3aa53929b4a3563e2eb66beaf83e86ef603"
 
 [[files]]
 file = "kubejs/server_scripts/zone_spawnpoint.js"
@@ -1745,12 +1753,16 @@ file = "kubejs/server_scripts/zone_traders.js"
 hash = "b5404375ac2bec036e97a8ddb156dbf7b60f824ba80c574149602f631e699cc1"
 
 [[files]]
+file = "kubejs/server_scripts/zone_villages.js"
+hash = "e187dfe1bc7174d6a5a22948447dba16a1a629631f7198b9bb40901ec7b2d575"
+
+[[files]]
 file = "kubejs/server_scripts/zone_wallet.js"
 hash = "59b2991f1d2a29284fbe116a905efa0039f77721dc98f370a25add465b15a99e"
 
 [[files]]
 file = "kubejs/server_scripts/zone_zombie_swap.js"
-hash = "0c313395a225fb07167c1009b8a0962fae8beee0bf673c610dab86d0cdc79247"
+hash = "39070c99247bb1ffcd98b3bc5db30f865d1d1f0bdf7cf8c2fe891613a887a983"
 
 [[files]]
 file = "kubejs/startup_scripts/coupon_pack.js"
@@ -2245,7 +2257,7 @@ metafile = true
 
 [[files]]
 file = "mods/zone_tactical_anims-0.1.0.jar"
-hash = "b3a11a61b85aab664ee3ddebfc1385bd46223107f96390c7642619c5767bd98b"
+hash = "a9f6bbd60cf36029e85ccd00dd50be7114daf384ae5a3dca06c2909cbb2a4a74"
 
 [[files]]
 file = "options.txt"

@@ -39,7 +39,8 @@ ServerEvents.tick(function (event) {
           if (id === 'itz:coupon') coupons += s.count
           else if (id === 'kubejs:coupon_pack') coupons += s.count * ZRUB.PACK
           else if (id === 'kubejs:wallet') {
-            var t = s.getTag()
+            var t = s.nbt
+            if (t === undefined && typeof s.m_41783_ === 'function') t = s.m_41783_()
             coupons += t ? Number(t.getInt('Coupons')) || 0 : 0
           } else if (ZRUB.NOTES[id]) notes += ZRUB.NOTES[id] * s.count
           else continue

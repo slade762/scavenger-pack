@@ -113,7 +113,7 @@ function zsdCull(p) {
   level.getEntitiesWithin(AABB.of(p.x - r, p.y - 48, p.z - r, p.x + r, p.y + 48, p.z + r)).forEach(e => {
     if (!ZOMBIES[String(e.getEncodeId())]) return
     var tags = zsdCall(e, ['getTags', 'm_19880_'])
-    if (tags && (tags.contains('zone_horde') || tags.contains('zone_encounter'))) return
+    if (tags && (tags.contains('zone_horde') || tags.contains('zone_encounter') || tags.contains('az_test_subject'))) return
     list.push(e)
   })
   if (list.length <= cap) return
