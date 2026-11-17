@@ -222,5 +222,35 @@
                 "id": "anomalyzone:textures/entity/ambient/ambient_11_misc3.png"
             }
         ]
+    },
+    "choir_acolyte": {
+        "aligned": [
+            "choir_acolyte"
+        ],
+        "opposed": [
+            "players",
+            "scavengers",
+            "bandits",
+            "pacifists",
+            "villagers"
+        ],
+        "equipment": {
+            "table": "zone:npc/choir_acolyte",
+            "dropChances": {
+                "mainhand": 0.15,
+                "head": 0.1,
+                "chest": 0,
+                "legs": 0,
+                "feet": 0
+            }
+        },
+        "skin": [
+            {
+                "id": "customnpcs:textures/entity/humanmale/robeswhitesteve.png"
+            },
+            {
+                "id": "customnpcs:textures/entity/humanmale/robesblacksteve.png"
+            }
+        ]
     }
 }

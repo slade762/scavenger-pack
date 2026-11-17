@@ -14,7 +14,7 @@ var ZFAC = {
     { id: 'armoury',    name: 'The Armoury', color: 'gold' }
   ],
   // tacznpcs template -> team
-  TEMPLATES: { scavengers: 'scavengers', bandits: 'bandits', bandit_leader: 'bandits', pacifists: 'pacifists' }
+  TEMPLATES: { scavengers: 'scavengers', bandits: 'bandits', bandit_leader: 'bandits', pacifists: 'pacifists', choir_acolyte: 'choir' }
 }
 var zfacTick = 0
 var zfacMade = false

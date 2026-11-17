@@ -1,0 +1,18 @@
+// Act 1 story items (Slade). Quest items for "The Song"; see the Lore Bible.
+StartupEvents.registry('item', event => {
+  event.create('flight_recorder')
+    .displayName('Flight Recorder')
+    .maxStackSize(1)
+    .tooltip(Text.gray('Pulled from the Mi-8 that went down on the night of the First Chorus.'))
+    .tooltip(Text.darkGray('Fedya at the Bar can play it.'))
+  event.create('levs_tape')
+    .displayName("Lev's Tape")
+    .maxStackSize(1)
+    .tooltip(Text.gray('A copy of the song from the night of the First Chorus.'))
+    .tooltip(Text.darkGray('Somewhere under the hiss, it sings names.'))
+  event.create('scavenger_patch')
+    .displayName('Scavenger Patch')
+    .maxStackSize(1)
+    .tooltip(Text.gray('Given by Yarik. You brought Sparrow home.'))
+    .tooltip(Text.darkGray('"You\'re one of us now. Properly."'))
+})

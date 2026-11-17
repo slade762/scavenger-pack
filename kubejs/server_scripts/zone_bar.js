@@ -2,6 +2,7 @@
 //  - Old Mole is now Old Moe (renames the saved NPC the first time he's loaded).
 //  - Nobody but Old Moe stands behind his counter.
 //  - Sparrow and Grandpa chat to players who hang around the campfire, pointing new players at Old Moe.
+//    (Sparrow goes quiet while he's missing in Act 1; see zone_story.js.)
 var ZBAR = {
   // behind the counter (the counter itself is the line x = -1530, z 89..99)
   DESK: { minX: -1529.9, maxX: -1526.0, minY: 82, maxY: 86, minZ: 88.6, maxZ: 100.4 },
@@ -15,14 +16,22 @@ var ZBAR = {
       "Moe's been asking for anyone who can shoot straight. That you?",
       "Quiet out there today. Don't trust it.",
       "Heard something past the lake last night. Hope it was the wind.",
-      "If you're broke, talk to Moe. If you're stupid, go to the city."
+      "If you're broke, talk to Moe. If you're stupid, go to the city.",
+      "City's singing tonight, I can feel it in my teeth. Stay close to the door."
+    ],
+    // while Sparrow is missing (Act 1)
+    GrandpaWorried: [
+      "Sparrow's not back yet. Have you seen him? Come and talk to me.",
+      "That boy. Walked off east in the night. Somebody has to go after him.",
+      "Made it back before the City sang? Good. Sparrow didn't."
     ],
     Grandpa: [
       "Talk to Moe, kid. Then come back and tell me a story.",
       "Keep your boots dry and your magazines full.",
       "Rubles don't keep you warm. A good coat does.",
       "When the sky goes red, you get underground. No arguing.",
-      "The city used to have the best bakery in the oblast. Now it sings at night."
+      "The city used to have the best bakery in the oblast. Now it sings at night.",
+      "City's singing, kid? Get inside. Don't stand there listening to it."
     ]
   }
 }
@@ -54,8 +63,9 @@ ServerEvents.tick(function (event) {
       if (Math.hypot(p.x - c.x, p.z - c.z) <= r && Math.abs(p.y - c.y) < 4) listeners.push(p)
     })
     if (listeners.length === 0) return
-    var who = Math.random() < 0.5 ? 'Sparrow' : 'Grandpa'
-    var pool = ZBAR.LINES[who]
+    var home = global.zoneSparrowHome !== false          // zone_story.js: false while Sparrow is missing
+    var who = home && Math.random() < 0.5 ? 'Sparrow' : 'Grandpa'
+    var pool = (!home && Math.random() < 0.5) ? ZBAR.LINES.GrandpaWorried : ZBAR.LINES[who]
     var line = pool[Math.floor(Math.random() * pool.length)]
     listeners.forEach(function (p) {
       p.tell(Text.of(who + ': ').color(0x8FCB6A).append(Text.of(line).color(0xD9D9D0)))

@@ -850,7 +850,7 @@ hash = "2362458f3d0f21109801739128cd32c3e6dafe5ff25f84760fcd9f4bb927d4f2"
 
 [[files]]
 file = "config/tacznpc_loadouts.json"
-hash = "70ec7ebd8f03ed131ca30f3552678f247656e1ae54f82d5e8c57492c958b42e2"
+hash = "812d56a2b0a024a5daf671a10b1c38242ca40eedf985b25c2d2784d665a0683c"
 
 [[files]]
 file = "config/tacznpc_structures.json"
@@ -1525,6 +1525,18 @@ file = "kubejs/assets/kubejs/textures/item/coupon_pack.png"
 hash = "a39061dde6b2f1793bd050d5d4706e406d62db06c99ba639914790efb7bf3eab"
 
 [[files]]
+file = "kubejs/assets/kubejs/textures/item/flight_recorder.png"
+hash = "3fa4dbad9610f014e2604bf404bea34d055645fecab59c60a2485b634a370950"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/levs_tape.png"
+hash = "e603657c7d7aee19efd679469ccb5147246c1c30872b40fee6d6f9e424825c1f"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/scavenger_patch.png"
+hash = "0df664960197bd58f387168117db93b466a8d81e48f4297a8c27ee76a457ee55"
+
+[[files]]
 file = "kubejs/assets/kubejs/textures/item/wallet.png"
 hash = "cc054217fd0b6cbea4537e76145c6507c8f6cea1984edd965113f0263589a253"
 
@@ -1653,6 +1665,10 @@ file = "kubejs/data/zone/loot_tables/npc/bandit_leader.json"
 hash = "46f3310899c6f1c892fa02c9068343741c5e55f3b911bb6baf57db13ef989743"
 
 [[files]]
+file = "kubejs/data/zone/loot_tables/npc/choir_acolyte.json"
+hash = "d62366fc7590336bed0936638f9d8ff427686b563db63ba82694d3770ce42c7a"
+
+[[files]]
 file = "kubejs/data/zone/loot_tables/npc/pacifist.json"
 hash = "da8e27d159624de8e3b3c63229393239c0139cd7e55be9cf213e793c6250617e"
 
@@ -1718,7 +1734,7 @@ hash = "57ffddf82011eda84a2f39e0de31b248e6184b598bea95e790df17faf2677494"
 
 [[files]]
 file = "kubejs/server_scripts/zone_bar.js"
-hash = "c8e88bd5b21fa9a1a17eff12d9f296d4dde4fbe41afacc6220546c8ce1983257"
+hash = "a20c8874767b85a92464059c391c44e2487a12ede44906346f025d8707ee8c2d"
 
 [[files]]
 file = "kubejs/server_scripts/zone_city_biome.js"
@@ -1726,7 +1742,7 @@ hash = "31421777b7891612ba20ada832755d74c53b9caaafd97a2b294eafa19119cced"
 
 [[files]]
 file = "kubejs/server_scripts/zone_factions.js"
-hash = "7d649b4912f434100407b5113de5a21092587f642bd2e0b637aaf12b7b9d08f5"
+hash = "32ad60339ae6757e8e01b1824ae95523fdad45465e8349a89883f3c148aa47c4"
 
 [[files]]
 file = "kubejs/server_scripts/zone_fp_backpacks.js"
@@ -1762,7 +1778,7 @@ hash = "9e54a01e06d1fea839fa00cd9345cdd60533448324c7ebf7df5d000caa4483c8"
 
 [[files]]
 file = "kubejs/server_scripts/zone_rubles.js"
-hash = "38d08d6d47f3b8536448f9484ab34c042feba12d293315442bfb478b3f152bb5"
+hash = "7f3d809f365b8f6bd3a1baa4e59a4f773eb758bcdfbe72502d81375fc7001c8c"
 
 [[files]]
 file = "kubejs/server_scripts/zone_scavengers.js"
@@ -1774,11 +1790,15 @@ hash = "5c38ce28071b4049a9383a3343e364c3ab220f029cb964a71ba97e65d1b0199a"
 
 [[files]]
 file = "kubejs/server_scripts/zone_spawn_director.js"
-hash = "56669933a6a14458e0a3b244bcd0e3aa53929b4a3563e2eb66beaf83e86ef603"
+hash = "0d77447147527c7c3b9af9a1ec7f126ee34af118d39742bdffd18922a8bc62a4"
 
 [[files]]
 file = "kubejs/server_scripts/zone_spawnpoint.js"
 hash = "44b048dbd78a4c1a5afbc497bf008955b5d4e51ac61e236b28c0ea411ab71048"
+
+[[files]]
+file = "kubejs/server_scripts/zone_story.js"
+hash = "9a89290d36711f8adc50bc7eb4b319e51daf838372ed203fcbda018168323e2f"
 
 [[files]]
 file = "kubejs/server_scripts/zone_traders.js"
@@ -1807,6 +1827,10 @@ hash = "395c96d3ddd178821db851f387e91560e606ea752177f66d2016f12bd0542b8f"
 [[files]]
 file = "kubejs/startup_scripts/wallet_item.js"
 hash = "7d02278fdba23eb33119cb6b3fbb6c8479347633f94ce85bf14cb086c23eee4e"
+
+[[files]]
+file = "kubejs/startup_scripts/zone_story_items.js"
+hash = "65bdb2eb05232986bbb7046996d4f9ecfd0eba13680b54930658eff2d41f5ac2"
 
 [[files]]
 file = "mods/alltheleaks-1-1-6-1-20-1-forge.pw.toml"

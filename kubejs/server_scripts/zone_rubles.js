@@ -2,7 +2,8 @@
 // Anomaly Zone keeps rubles as a balance on your PDA. Everything else feeds into it:
 //  - Into The Zone coupons and Coupon Packs turn into rubles the moment they're in your pockets (loot still drops them)
 //  - old Wallets pay out their balance and disappear
-//  - Tarkov ruble notes (100 / 1,000 / 5,000) are paid in at face value
+//  - Tarkov ruble notes (100 / 1,000 / 5,000) are paid in at face value, except while you stand next to a
+//    Custom NPCs trader (so you can pay with them); walk away and any left over go back on the PDA
 //  - the bunker sell barrel pays rubles (zone_sell_barrel.js)
 // Rate: 1 coupon = 500 rubles (a pistol ~30,000, an AK-74 ~125,000; artifacts sell for 40,000-150,000).
 var ZRUB = { RATE: 500, PACK: 50, NOTES: { 'tarkovdayz:rubble_100': 100, 'tarkovdayz:rubble_1000': 1000, 'tarkovdayz:rubble_5000': 5000 } }
@@ -27,12 +28,17 @@ global.zoneAddRubles = function (p, amount) {
   return Number(J.cur.get(p))
 }
 
+// a Custom NPCs trader (Role 1) within 8 blocks?
+function zrubNearTrader(server, p) {
+  return Number(server.runCommandSilent('execute as ' + p.username + ' at @s if entity @e[type=customnpcs:customnpc,distance=..8,nbt={Role:1}]')) > 0
+}
+
 ServerEvents.tick(function (event) {
   zrubTick++
   if (zrubTick % 20 !== 0) return
   event.server.players.forEach(function (p) {
     try {
-      var inv = p.getInventory(), lists = [inv.items, inv.offhand], coupons = 0, notes = 0
+      var inv = p.getInventory(), lists = [inv.items, inv.offhand], coupons = 0, notes = 0, nearTrader = null
       lists.forEach(function (list) {
         for (var i = 0; i < list.size(); i++) {
           var s = list.get(i), id = String(s.id)
@@ -42,7 +48,11 @@ ServerEvents.tick(function (event) {
             var t = s.nbt
             if (t === undefined && typeof s.m_41783_ === 'function') t = s.m_41783_()
             coupons += t ? Number(t.getInt('Coupons')) || 0 : 0
-          } else if (ZRUB.NOTES[id]) notes += ZRUB.NOTES[id] * s.count
+          } else if (ZRUB.NOTES[id]) {
+            if (nearTrader === null) nearTrader = zrubNearTrader(event.server, p)
+            if (nearTrader) continue
+            notes += ZRUB.NOTES[id] * s.count
+          }
           else continue
           list.set(i, zrubJava().empty)
         }
