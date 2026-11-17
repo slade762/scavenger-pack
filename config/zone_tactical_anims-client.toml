@@ -329,11 +329,11 @@
 	enabled = true
 	#Grass/leaf colour drained toward grey (0 = vanilla, 1 = fully grey).
 	#Range: 0.0 ~ 1.0
-	grassDesaturate = 0.65
+	grassDesaturate = 0.8
 	#Dry tint mixed into grass/leaves (#RRGGBB).
-	grassTintColor = "#7E7650"
+	grassTintColor = "#6B5F3E"
 	#Range: 0.0 ~ 1.0
-	grassTint = 0.3
+	grassTint = 0.5
 	#Water surface colour (#RRGGBB) and how much it replaces the biome's own.
 	waterColor = "#48523C"
 	#Range: 0.0 ~ 1.0
@@ -344,8 +344,8 @@
 	waterFog = 0.85
 	#Sky colour drained toward grey.
 	#Range: 0.0 ~ 1.0
-	skyDesaturate = 0.65
+	skyDesaturate = 0.7
 	#Distance fog colour drained toward grey.
 	#Range: 0.0 ~ 1.0
-	fogDesaturate = 0.55
+	fogDesaturate = 0.6
 

@@ -34,7 +34,7 @@ hash = "1bda42d2ae426cb801e99ed1ba22952285e1cacae9722f2255d67a276e9bd2b3"
 
 [[files]]
 file = "config/backpack_side_gui-client.toml"
-hash = "1bfe26cf382a22d70d79c7fd2f4706c7375a853025528fd24c0d3383779a8964"
+hash = "a0d50538f848a17d53a2acae2a1293e10ba00a1d9cbfe16b3899c3f3844c3379"
 
 [[files]]
 file = "config/badmobs-common.toml"
@@ -55,6 +55,14 @@ hash = "d335fd00458005d989d55a6615073d5b390ea08d5e1d129229518f90d5d3ef9b"
 [[files]]
 file = "config/concord_deco-client.toml"
 hash = "171f3be9f14b3fad8503a6d1a300fb99a6235acb9dc253e9a73471be0b30a2f9"
+
+[[files]]
+file = "config/controllable/controller.properties"
+hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+
+[[files]]
+file = "config/controllable-client.toml"
+hash = "47206c504e4443fad5d4edc67661f7da935ce1ce59b5186f3bbf03d221f7b2a6"
 
 [[files]]
 file = "config/CoroUtil/General.toml"
@@ -678,7 +686,7 @@ hash = "f72dc2bce12a55066bd33e50c47b1ad33b1bdda65778cb5653d876e1fec3694d"
 
 [[files]]
 file = "config/oculus.properties"
-hash = "9132584a4d56c6c80b99a2fa534f0f48532fbe139d547e7a63cce68428307627"
+hash = "10cbbf7754b1acf0316a23b317b384bc8d0c896125e961a83b6fcfadf4bae01b"
 
 [[files]]
 file = "config/particlerain/config.json"
@@ -1474,11 +1482,11 @@ hash = "e766740f523b7da0d0cdc9db47f6e69c16489509c6b5e1eee63742c295f5f508"
 
 [[files]]
 file = "config/zone_tactical_anims-client.toml"
-hash = "6b374da2bb9a15000de37d757a71ed580bbc62db275af7578eca43d8d9a61b21"
+hash = "076f520f68ec002c58bb3e3bc7532c81c5d4a21d1f84dee7d0a7f953bc97f06a"
 
 [[files]]
 file = "config/zone_tactical_anims-common.toml"
-hash = "b06526708301601be2e5fdea13b9fe6dc8e364980e80a47858b5fdb267456bd3"
+hash = "3bad9a6f251986833ccd6bc5dc53b5148d97ccd4c74a5d2fc476b3161e97411d"
 
 [[files]]
 file = "customnpcs/assets/customnpcs/sounds.json"
@@ -2222,11 +2230,11 @@ metafile = true
 
 [[files]]
 file = "mods/zone_tactical_anims-0.1.0.jar"
-hash = "fce17111962830e68c76339af501279121a53db343c2cce071594afb2b91d79c"
+hash = "d1bb08dd40cfa7f15bc2b953b13b32b057b49ee92166df2f718474d7e3ad4868"
 
 [[files]]
 file = "options.txt"
-hash = "4b9e56e310da17a8251c76779126addd7d20d70aa740db08161db48817b66443"
+hash = "971b8b9ddd33d4e09bd1a8b19ae86f24d7170a1fea2672c55b0f0e594b4a704d"
 preserve = true
 
 [[files]]
@@ -2248,8 +2256,8 @@ hash = "4fb4dbe302df1dd784ca4a2cd51be6f2cff96817eee1d918a57fb0eaee5ad3ea"
 preserve = true
 
 [[files]]
-file = "shaderpacks/ComplementaryReimagined_r5.9.3 + EuphoriaPatches_1.10.5.txt"
-hash = "923099f839727de310410901b81231456c77ad567533fdd6b13c48f0ffb76605"
+file = "shaderpacks/Spooklementary_v2.0.4.zip.txt"
+hash = "722d45ce1baee9c6f2f5fe377e3c136a790caf6a8e33ca7cd7afb5b7f2d1bbaf"
 
 [[files]]
 file = "tacz/.export-state.json"

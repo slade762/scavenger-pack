@@ -73,4 +73,7 @@
 	#0.33 makes that about 10-20 min (2-5 min). 1.0 = Anomaly Zone's default.
 	#Range: 0.05 ~ 1.0
 	contractWait = 0.33
+	#PDA jobs whose target is farther than this many blocks from you are skipped (a new one is offered instead).
+	#Range: 200 ~ 100000
+	contractMaxDistance = 2000
 
