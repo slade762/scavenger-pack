@@ -666,7 +666,7 @@ hash = "fad9aea710ec3508eab562cd8f2b5f8e2dda6ee1c5fb1fe818f90ce253017f66"
 
 [[files]]
 file = "config/modernfix-mixins.properties"
-hash = "cc9db08ca3f44714cf14117fb1772eed88c9cc3272fea6d17e657292c8799fe0"
+hash = "d14187d95596f5ed803bdd51ff10c9ab0228c94e4d085005b6975332fb00b172"
 
 [[files]]
 file = "config/moonlight-client.toml"
@@ -686,7 +686,7 @@ hash = "f72dc2bce12a55066bd33e50c47b1ad33b1bdda65778cb5653d876e1fec3694d"
 
 [[files]]
 file = "config/oculus.properties"
-hash = "45883908953f07c5bffb828ef22328b88b90e56a0cabe8e3c618ee3219c059ff"
+hash = "736373cd3765bbd4dfc7091fdc624338e213888de01dd10f0f70b8212c2d3e79"
 
 [[files]]
 file = "config/particlerain/config.json"
@@ -695,6 +695,10 @@ hash = "d04b733542dd806c7f0990c8239087bdb78be64bb1112bfb38227560e7b08dd6"
 [[files]]
 file = "config/particular-common.toml"
 hash = "3a481b444160273ae42aae81eb0405eca4dee6d28687bed372427df6da8f80e4"
+
+[[files]]
+file = "config/prefab.toml"
+hash = "58f55f9ab84245340405f188f39c906a347ef0994e4f678258243f88fb13677b"
 
 [[files]]
 file = "config/punchy/menu_prefs.json"
@@ -810,7 +814,7 @@ hash = "e26b00784bb6239988759ed1a64551b9f301dc33c5a855d91e976ee4bf40ac8a"
 
 [[files]]
 file = "config/sound_physics_remastered/sound_rates.properties"
-hash = "d22eae1ec93e5a8c297d861bed8c4ca3d722bb0472bd105bcecb14d32761fc8b"
+hash = "3ab5f941883f838b4531e710c269fce33a46d8fb1e765fada93685231b83c6a6"
 
 [[files]]
 file = "config/sound_physics_remastered/soundphysics.properties"
@@ -2294,7 +2298,7 @@ hash = "bc4842ac99c10747167be0d60ce336b8f224f9525105fe0fea74a2e79e9f438f"
 
 [[files]]
 file = "options.txt"
-hash = "6315fc9810dbf89eef78d6a31a94cc25eb07d7589f8ce17a36767a5ed068bb0a"
+hash = "708d19da516f89734b12e4f460e3ac8c77723df3243c07b1d169f545ff1246f8"
 preserve = true
 
 [[files]]
@@ -2316,8 +2320,8 @@ hash = "4fb4dbe302df1dd784ca4a2cd51be6f2cff96817eee1d918a57fb0eaee5ad3ea"
 preserve = true
 
 [[files]]
-file = "shaderpacks/Spooklementary_v2.0.4.zip.txt"
-hash = "e0dff30f7f48facc96ee6214736abf953ffd6bb81c9afe404aa8106f44996532"
+file = "shaderpacks/ComplementaryReimagined_r5.9.3 + EuphoriaPatches_1.10.5.txt"
+hash = "6a16262b554c19c67ccb3f9e59b1a416c442a086a36e147a39ff75a0f1ee34e7"
 
 [[files]]
 file = "tacz/.export-state.json"
