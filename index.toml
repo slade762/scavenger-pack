@@ -686,7 +686,7 @@ hash = "f72dc2bce12a55066bd33e50c47b1ad33b1bdda65778cb5653d876e1fec3694d"
 
 [[files]]
 file = "config/oculus.properties"
-hash = "38fbaca82d518304d2e5e0732e4ad7ea2c09509d3749dc2fc64fa7951393303c"
+hash = "441ebd9cd9a1798f848eb8cfb184d36b286e7ea7f95f61d6e218ba6e288f1d74"
 
 [[files]]
 file = "config/particlerain/config.json"
