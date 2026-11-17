@@ -1,0 +1,7 @@
+#Draw Fracture Point models in place of Sophisticated Backpacks on players.
+enabled = true
+#Also use the Fracture Point look for the item icon (inventory, hand, dropped).
+icons = true
+#sophisticated backpack = fracture point model. Bigger tier, bigger pack.
+skins = ["sophisticatedbackpacks:backpack=fracturepoint:soviet_soldier_backpack", "sophisticatedbackpacks:copper_backpack=fracturepoint:iz_backpack_forest", "sophisticatedbackpacks:iron_backpack=fracturepoint:ratnik_backpack", "sophisticatedbackpacks:gold_backpack=fracturepoint:sso_soldier_backpack", "sophisticatedbackpacks:diamond_backpack=fracturepoint:shturmovik_ru_backpack", "sophisticatedbackpacks:netherite_backpack=fracturepoint:squad_lider_ru_backpack"]
+

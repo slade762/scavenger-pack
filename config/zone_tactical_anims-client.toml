@@ -305,12 +305,12 @@
 	[holster.backpack]
 		#Sideways (negative = your right side).
 		#Range: -1.0 ~ 1.0
-		x = -0.5
+		x = -0.42
 		#Range: -1.0 ~ 1.5
-		y = 0.3
+		y = 0.25
 		#Out from the back.
 		#Range: -1.0 ~ 1.0
-		z = 0.3
+		z = 0.36
 		#Range: -360.0 ~ 360.0
 		yaw = 88.0
 		#Range: -360.0 ~ 360.0
