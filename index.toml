@@ -686,7 +686,7 @@ hash = "f72dc2bce12a55066bd33e50c47b1ad33b1bdda65778cb5653d876e1fec3694d"
 
 [[files]]
 file = "config/oculus.properties"
-hash = "ff51859e82ba614051f24ee9bac6f47a7b018f8c35f9c27346550ae096562e3e"
+hash = "45883908953f07c5bffb828ef22328b88b90e56a0cabe8e3c618ee3219c059ff"
 
 [[files]]
 file = "config/particlerain/config.json"
@@ -2123,6 +2123,10 @@ hash = "0ed0b25c37cd05a38531b788d38b74e4c067cc9029536446f8f928536a39438e"
 metafile = true
 
 [[files]]
+file = "mods/prefab-1.10.0.2.jar"
+hash = "7290b6bed41616ef7508415272fc862b2e5398c8676e07f63246ef9cffeee540"
+
+[[files]]
 file = "mods/quantified-api-omni-2-2-4.pw.toml"
 hash = "2c0e3aa7926711c1e551113c02010f7bd12b6e2d8a9160192ef9e76f1806f7dd"
 metafile = true
@@ -2266,7 +2270,7 @@ hash = "bc4842ac99c10747167be0d60ce336b8f224f9525105fe0fea74a2e79e9f438f"
 
 [[files]]
 file = "options.txt"
-hash = "971b8b9ddd33d4e09bd1a8b19ae86f24d7170a1fea2672c55b0f0e594b4a704d"
+hash = "6315fc9810dbf89eef78d6a31a94cc25eb07d7589f8ce17a36767a5ed068bb0a"
 preserve = true
 
 [[files]]
@@ -2289,7 +2293,7 @@ preserve = true
 
 [[files]]
 file = "shaderpacks/Spooklementary_v2.0.4.zip.txt"
-hash = "556d961e3b23b4d5ec89910f20ba7030cf4dc7c994c668bea674a994c93a90a3"
+hash = "e0dff30f7f48facc96ee6214736abf953ffd6bb81c9afe404aa8106f44996532"
 
 [[files]]
 file = "tacz/.export-state.json"
