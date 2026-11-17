@@ -301,7 +301,7 @@
 	#Quest-giver NPCs (CustomNPCs) wear the gun they hold slung on their back instead of in their hands.
 	npcSling = true
 
-	#Where the slung gun goes while a backpack is worn (strapped to the backpack's side).
+	#Where the slung gun goes while a backpack is worn (strapped to the backpack's side). Each Sophisticated Backpacks tier has its own section below.
 	[holster.backpack]
 		#Sideways (negative = your right side).
 		#Range: -1.0 ~ 1.0
@@ -317,6 +317,114 @@
 		roll = 100.0
 		#Range: -360.0 ~ 360.0
 		pitch = 180.0
+
+		#Slung-gun position with the leather Sophisticated Backpack worn. The x/y/z/yaw/roll/pitch directly under [holster.backpack] are only for other mods' backpacks.
+		[holster.backpack.leather]
+			#Sideways (negative = your right side).
+			#Range: -1.0 ~ 1.0
+			x = -0.0
+			#Down the back.
+			#Range: -1.0 ~ 1.5
+			y = 0.1
+			#Out from the back.
+			#Range: -1.0 ~ 1.0
+			z = 0.42
+			#Range: -360.0 ~ 360.0
+			yaw = 90.0
+			#Range: -360.0 ~ 360.0
+			roll = 90.0
+			#Range: -360.0 ~ 360.0
+			pitch = 90.0
+
+		#Slung-gun position with the copper Sophisticated Backpack worn. The x/y/z/yaw/roll/pitch directly under [holster.backpack] are only for other mods' backpacks.
+		[holster.backpack.copper]
+			#Sideways (negative = your right side).
+			#Range: -1.0 ~ 1.0
+			x = -0.36
+			#Down the back.
+			#Range: -1.0 ~ 1.5
+			y = 0.25
+			#Out from the back.
+			#Range: -1.0 ~ 1.0
+			z = 0.36
+			#Range: -360.0 ~ 360.0
+			yaw = 88.0
+			#Range: -360.0 ~ 360.0
+			roll = 100.0
+			#Range: -360.0 ~ 360.0
+			pitch = 180.0
+
+		#Slung-gun position with the iron Sophisticated Backpack worn. The x/y/z/yaw/roll/pitch directly under [holster.backpack] are only for other mods' backpacks.
+		[holster.backpack.iron]
+			#Sideways (negative = your right side).
+			#Range: -1.0 ~ 1.0
+			x = -0.39
+			#Down the back.
+			#Range: -1.0 ~ 1.5
+			y = 0.25
+			#Out from the back.
+			#Range: -1.0 ~ 1.0
+			z = 0.36
+			#Range: -360.0 ~ 360.0
+			yaw = 88.0
+			#Range: -360.0 ~ 360.0
+			roll = 100.0
+			#Range: -360.0 ~ 360.0
+			pitch = 180.0
+
+		#Slung-gun position with the gold Sophisticated Backpack worn. The x/y/z/yaw/roll/pitch directly under [holster.backpack] are only for other mods' backpacks.
+		[holster.backpack.gold]
+			#Sideways (negative = your right side).
+			#Range: -1.0 ~ 1.0
+			x = -0.42
+			#Down the back.
+			#Range: -1.0 ~ 1.5
+			y = 0.25
+			#Out from the back.
+			#Range: -1.0 ~ 1.0
+			z = 0.36
+			#Range: -360.0 ~ 360.0
+			yaw = 88.0
+			#Range: -360.0 ~ 360.0
+			roll = 100.0
+			#Range: -360.0 ~ 360.0
+			pitch = 180.0
+
+		#Slung-gun position with the diamond Sophisticated Backpack worn. The x/y/z/yaw/roll/pitch directly under [holster.backpack] are only for other mods' backpacks.
+		[holster.backpack.diamond]
+			#Sideways (negative = your right side).
+			#Range: -1.0 ~ 1.0
+			x = -0.42
+			#Down the back.
+			#Range: -1.0 ~ 1.5
+			y = 0.25
+			#Out from the back.
+			#Range: -1.0 ~ 1.0
+			z = 0.36
+			#Range: -360.0 ~ 360.0
+			yaw = 88.0
+			#Range: -360.0 ~ 360.0
+			roll = 100.0
+			#Range: -360.0 ~ 360.0
+			pitch = 180.0
+
+		#Slung-gun position with the netherite Sophisticated Backpack worn. The x/y/z/yaw/roll/pitch directly under [holster.backpack] are only for other mods' backpacks.
+		[holster.backpack.netherite]
+			#Sideways (negative = your right side).
+			#Range: -1.0 ~ 1.0
+			x = -0.42
+			#Down the back.
+			#Range: -1.0 ~ 1.5
+			y = 0.25
+			#Out from the back.
+			#Range: -1.0 ~ 1.0
+			z = 0.36
+			#Range: -360.0 ~ 360.0
+			yaw = 88.0
+			#Range: -360.0 ~ 360.0
+			roll = 100.0
+			#Range: -360.0 ~ 360.0
+			pitch = 180.0
 
 [pose]
 	#Third person, weapon raised: how much of TaCZ's sideways torso twist to keep (0 = torso square with the legs, 1 = TaCZ default).

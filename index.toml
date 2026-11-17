@@ -686,7 +686,7 @@ hash = "f72dc2bce12a55066bd33e50c47b1ad33b1bdda65778cb5653d876e1fec3694d"
 
 [[files]]
 file = "config/oculus.properties"
-hash = "9332381d0e852e6cdaf4eeba296925af5c41cec879d0d6a50ea7f18b7be75ae6"
+hash = "38fbaca82d518304d2e5e0732e4ad7ea2c09509d3749dc2fc64fa7951393303c"
 
 [[files]]
 file = "config/particlerain/config.json"
@@ -1398,7 +1398,7 @@ hash = "6de833a135cc17b7426520b68bd7820a62fbb19aa1489c7fcc78b14c8ebc3d4e"
 
 [[files]]
 file = "config/worldedit/worldedit.properties"
-hash = "3744673cf3af44258aa4afae34c407de8c0b690b956757b81b1ffb17d984f644"
+hash = "7ede1d61785a75ff2988f6f1239e646d35acfd1dd04be8e835dac4a0a735e0f0"
 
 [[files]]
 file = "config/xaero/lib/client.cfg"
@@ -1494,7 +1494,7 @@ hash = "1f8670911537dcb8d8b67e51203f3095b27057ebe398ac3df9301ddd088abfbe"
 
 [[files]]
 file = "config/zone_tactical_anims-client.toml"
-hash = "7f3bf4acc5c335d742bad3bad51d6c294f9ad826ba3d08598471d47af1b895da"
+hash = "14b939852f862e90f8e770c4f09f4d6683642aa0597bda33a17a482746b22a21"
 
 [[files]]
 file = "config/zone_tactical_anims-common.toml"
@@ -1719,6 +1719,10 @@ hash = "57ffddf82011eda84a2f39e0de31b248e6184b598bea95e790df17faf2677494"
 [[files]]
 file = "kubejs/server_scripts/zone_bar.js"
 hash = "c8e88bd5b21fa9a1a17eff12d9f296d4dde4fbe41afacc6220546c8ce1983257"
+
+[[files]]
+file = "kubejs/server_scripts/zone_city_biome.js"
+hash = "31421777b7891612ba20ada832755d74c53b9caaafd97a2b294eafa19119cced"
 
 [[files]]
 file = "kubejs/server_scripts/zone_factions.js"
@@ -2258,7 +2262,7 @@ hash = "d6364e3b3ffea4b912889d3dcd3e2acebf7d663b22b96402402fbd383eefa460"
 
 [[files]]
 file = "mods/zone_tactical_anims-0.1.0.jar"
-hash = "d1bb08dd40cfa7f15bc2b953b13b32b057b49ee92166df2f718474d7e3ad4868"
+hash = "bc4842ac99c10747167be0d60ce336b8f224f9525105fe0fea74a2e79e9f438f"
 
 [[files]]
 file = "options.txt"
