@@ -686,7 +686,7 @@ hash = "f72dc2bce12a55066bd33e50c47b1ad33b1bdda65778cb5653d876e1fec3694d"
 
 [[files]]
 file = "config/oculus.properties"
-hash = "736373cd3765bbd4dfc7091fdc624338e213888de01dd10f0f70b8212c2d3e79"
+hash = "ec9bfe0fef5a476f0f6cdbd8685ee2a25d4974c8031b64464013e9974cb3dcdc"
 
 [[files]]
 file = "config/particlerain/config.json"
@@ -1802,7 +1802,7 @@ hash = "44b048dbd78a4c1a5afbc497bf008955b5d4e51ac61e236b28c0ea411ab71048"
 
 [[files]]
 file = "kubejs/server_scripts/zone_story.js"
-hash = "9a89290d36711f8adc50bc7eb4b319e51daf838372ed203fcbda018168323e2f"
+hash = "6cc70e1e36548220edac3fcd3be00ec172245a1dbf4e46e71d626ec5e99a989e"
 
 [[files]]
 file = "kubejs/server_scripts/zone_traders.js"
@@ -1897,6 +1897,14 @@ hash = "4a840e54415720ef104ec7d6fefb9b74f476f7f516c22be2b07e79e50521e9bd"
 metafile = true
 
 [[files]]
+file = "mods/Cinematic Interaction-Forge-1.20.1-0.18.30.jar"
+hash = "450633a9df4f5735ca484beb7168343e3919e182a08fd915fc13e2edb24b0443"
+
+[[files]]
+file = "mods/cinematic_respawn-1.20.1-forge-1.4.3.jar"
+hash = "d4906c31854af5536711f966ab6e4e5c2fe1d15a673aabffeca70d7eb66c6669"
+
+[[files]]
 file = "mods/cloth-config-11-1-136-forge.pw.toml"
 hash = "76634534f58a70e19b0a752db24b0e944318c252986ca63e565a12eba9292a55"
 metafile = true
@@ -1945,6 +1953,10 @@ metafile = true
 file = "mods/customnpcs-1-20-1-gbport-unofficial-1-20-1-20260711.pw.toml"
 hash = "b36d123e3813f072f82e2306bf4c2b3bd24fca35e53566230be6490c07acf7fb"
 metafile = true
+
+[[files]]
+file = "mods/diegesis-forge-1.20.1-1.0.0-beta.13.jar"
+hash = "09e42fafaf2019d3e7410205e56bb693e5e8bc8b50c3f413698a794bef1218be"
 
 [[files]]
 file = "mods/distantfriends-forge-1-20-1-0-5-6.pw.toml"
@@ -2017,6 +2029,10 @@ hash = "8c1ca9fbab5fcb5655b6f2e0ab185b835125e2d7f45f96f83f8f93b55f54865a"
 metafile = true
 
 [[files]]
+file = "mods/FarmersDelight-1.20.1-1.3.4.jar"
+hash = "34f03eb671ea1ca579b00c98e4541404cb96d1a292014aed9cc5eb45ad8afbce"
+
+[[files]]
 file = "mods/ferritecore-6-0-1-forge.pw.toml"
 hash = "64b424188c6d028f26c8f2ad40c4a5df875dce0c15bdab607dea5fb137182817"
 metafile = true
@@ -2041,6 +2057,10 @@ hash = "0c238c914d5be79a6a8a87f549d390b91c346fbf72beff10e15f6d54e7df81f4"
 metafile = true
 
 [[files]]
+file = "mods/handson_delight-forge-1.20.1-1.5.0.jar"
+hash = "7b581e265ac60d0af6a8c5480fe0d6ceb8608a9109573eae5203d20cabb8f373"
+
+[[files]]
 file = "mods/holdmyitems-1-20-1-4v2-1.pw.toml"
 hash = "cabafdb4e63477fcc42da5a73f193447790610b71669b411a782b8a9797323d4"
 metafile = true
@@ -2049,6 +2069,10 @@ metafile = true
 file = "mods/immediatelyfast-forge-1-5-5-1-20-4.pw.toml"
 hash = "6b46547f82dac9a061e1339338ca08eb64eb8abf1ec39946954f1741ca2fef1d"
 metafile = true
+
+[[files]]
+file = "mods/immersive_aircraft-1.5.0+1.20.1-forge.jar"
+hash = "7e00754f893d910f301134e0cada37dde0be36c8df15ebf98a5b6512fa664077"
 
 [[files]]
 file = "mods/immersive-weathering-1-20-1-2-0-5-forge.pw.toml"
@@ -2141,6 +2165,10 @@ hash = "a3d7fac0e3680c49758ed7080dc552ff0d83ae6ea6d5df14e910cc9533696dba"
 metafile = true
 
 [[files]]
+file = "mods/PickUpNotifier-v8.0.0-1.20.1-Forge.jar"
+hash = "b343d2068413d895deb45417f56d2c823fe07b173879c1b03575eebfc189011d"
+
+[[files]]
 file = "mods/player-animation-lib-forge-1-0-2-rc1-1-20.pw.toml"
 hash = "6d8256609c51c24dcfaab559b2da484d77c1c6fcb23d0bf6160354072a307e07"
 metafile = true
@@ -2153,6 +2181,10 @@ metafile = true
 [[files]]
 file = "mods/prefab-1.10.0.2.jar"
 hash = "7290b6bed41616ef7508415272fc862b2e5398c8676e07f63246ef9cffeee540"
+
+[[files]]
+file = "mods/PuzzlesLib-v8.1.36-1.20.1-Forge.jar"
+hash = "103f1d46c16023e346802a9b2024db885cf8dc3a43ee5106bcd5ed8165073efd"
 
 [[files]]
 file = "mods/quantified-api-omni-2-2-4.pw.toml"
@@ -2269,6 +2301,10 @@ hash = "3f1d7b11ea19f36f72aa4013969238a29263c1c8225f09d028e87440d31dd51b"
 metafile = true
 
 [[files]]
+file = "mods/weatherglass-0.6.2-1.20.1-forge.jar"
+hash = "2c58e2b6386d93ffd93b8086a9ddc2e8a81c89c49cdefcd9fd4dd17cd75de615"
+
+[[files]]
 file = "mods/worldedit-mod-7-2-15.pw.toml"
 hash = "8ccf7320293a993c717c6894348e07ba3507f3d467521ef9cb605d31ac3536d3"
 metafile = true
@@ -2298,7 +2334,7 @@ hash = "bc4842ac99c10747167be0d60ce336b8f224f9525105fe0fea74a2e79e9f438f"
 
 [[files]]
 file = "options.txt"
-hash = "708d19da516f89734b12e4f460e3ac8c77723df3243c07b1d169f545ff1246f8"
+hash = "539005362cd51c14a9ec7c0f82c729bd58fd4038045a745b1d18b80d601ec556"
 preserve = true
 
 [[files]]
@@ -2321,7 +2357,7 @@ preserve = true
 
 [[files]]
 file = "shaderpacks/ComplementaryReimagined_r5.9.3 + EuphoriaPatches_1.10.5.txt"
-hash = "6a16262b554c19c67ccb3f9e59b1a416c442a086a36e147a39ff75a0f1ee34e7"
+hash = "530f56ef68e54075ea7c1a002c5b1901cbae2c7d38fc3ca34e4a8577a50f3680"
 
 [[files]]
 file = "tacz/.export-state.json"

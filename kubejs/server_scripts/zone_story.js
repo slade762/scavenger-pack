@@ -11,6 +11,7 @@
 //  - The Cantor walks off after his one polite warning, and comes back later.
 //  - Trader stock tiers (world-wide: the highest anyone on the server has unlocked).
 //  - "Cash out rubles" at Custom NPCs traders: turns PDA rubles into Tarkov notes (dialogs 148/149).
+//  - Map waypoints (Xaero's) for the places quests send you to.
 //  - The Seraph speaks when players reach its vault (set VAULT once the vault is built). No quest points there.
 //
 // Op commands (stand on the spot, face the way they should face):
@@ -286,6 +287,65 @@ function zstVault(srv) {
   })
 }
 
+// ---------------------------------------------------------------- map waypoints (Xaero's Minimap)
+// When a quest sends a player somewhere new, they get a chat message Xaero turns into a waypoint they can add.
+// Each place is sent to each player once. Trigger: 'active' = while the quest is in progress, 'done' = once it's finished.
+var ZWP = {
+  PLACES: {
+    bar:        { name: 'The Bar', at: [-1530, 83, 95], color: 10 },
+    chalet:     { name: 'Mountainview Chalet', at: [-1488, 111, -140], color: 11 },
+    military:   { name: 'Military Base', at: [-271, 66, 315], color: 2 },
+    armoury:    { name: 'The Armoury', at: [259, 71, -503], color: 6 },
+    oldtown:    { name: 'Old Town', at: [-1233, '~', 22], color: 12 },
+    checkpoint: { name: 'Checkpoint 4', poi: 'checkpoint', at: [-1060, '~', 70], color: 2 },
+    farm:       { name: 'Kovalenko Farm', poi: 'farm', at: [-760, '~', -200], color: 10 },
+    pumping:    { name: 'Pumping Station', poi: 'pumping', at: [-890, '~', 260], color: 10 },
+    heli:       { name: 'Mi-8 Crash Site', poi: 'heli', at: [-620, '~', 330], color: 14 },
+    mast:       { name: 'Radio Mast', poi: 'mast', at: [-520, '~', -60], color: 14 },
+    orchard:    { name: 'Dead Orchard', poi: 'orchard', at: [-470, '~', 560], color: 4 }
+  },
+  TRIGGERS: [
+    [0, 'always', 'bar'],
+    [1, 'active', 'oldtown'], [50, 'active', 'oldtown'],
+    [22, 'active', 'military'], [23, 'active', 'chalet'], [24, 'active', 'armoury'],
+    [100, 'active', 'checkpoint'], [101, 'done', 'farm'], [102, 'active', 'heli'], [103, 'done', 'pumping'],
+    [104, 'active', 'mast'], [107, 'active', 'orchard'], [108, 'active', 'bar']
+  ]
+}
+function zwpPos(srv, pl) {
+  var st = pl.poi ? zstGetJson(srv, 'zone_pois', null) : null
+  var b = st && st.built ? st.built[pl.poi] : null
+  return b ? [b.x, b.y, b.z] : pl.at
+}
+function zwpSend(srv, p, key) {
+  var pl = ZWP.PLACES[key], pos = zwpPos(srv, pl)
+  var xz = Math.floor(pos[0]) + ', ' + Math.floor(pos[2])
+  p.tell(Text.of('New location on your map: ').color(0xD8B225).append(Text.of(pl.name).color(0xFFFFFF)).append(Text.of('  (' + xz + ')').color(0x9A9A90)))
+  p.tell(Text.of('xaero-waypoint:' + pl.name + ':' + pl.name.charAt(0).toUpperCase() + ':' + Math.floor(pos[0]) + ':' +
+    (pos[1] === '~' ? '~' : Math.floor(pos[1])) + ':' + Math.floor(pos[2]) + ':' + pl.color + ':false:0:Internal-overworld-waypoints'))
+}
+function zwpCheck(srv) {
+  srv.players.forEach(function (p) {
+    var sent = {}
+    try { sent = JSON.parse(String(p.persistentData.getString('zone_wp_sent') || '{}')) } catch (e) { sent = {} }
+    var ip = null, changed = false
+    ZWP.TRIGGERS.forEach(function (t) {
+      if (sent[t[2]]) return
+      if (!ip) ip = zstIP(p)
+      var hit = t[1] === 'always' || (t[1] === 'active' ? ip.hasActiveQuest(t[0]) : ip.hasFinishedQuest(t[0]))
+      if (!hit) return
+      zwpSend(srv, p, t[2]); sent[t[2]] = true; changed = true
+    })
+    if (changed) p.persistentData.putString('zone_wp_sent', JSON.stringify(sent))
+  })
+}
+// /kubejs custom_command zone_waypoints_reset  - resend every location you've earned (if you deleted them on the map)
+ServerEvents.customCommand('zone_waypoints_reset', function (event) {
+  if (!event.player) return
+  event.player.persistentData.putString('zone_wp_sent', '{}')
+  event.player.tell(Text.of('Your map locations will be sent again in a few seconds.').color(0x9BD86A))
+})
+
 ServerEvents.tick(function (event) {
   zstTick++
   var srv = event.server
@@ -303,6 +363,7 @@ ServerEvents.tick(function (event) {
   if (zstTick % 200 === 0) {
     try { zstUpdateFlags(srv) } catch (e) { zstErr('flags', e) }
     try { zstApplyTiers(srv) } catch (e) { zstErr('tiers', e) }
+    try { zwpCheck(srv) } catch (e) { zstErr('waypoints', e) }
   }
 })
 
