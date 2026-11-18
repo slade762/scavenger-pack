@@ -1,8 +1,5 @@
 
 [weapon_ready]
-	#Movement speed while the weapon is raised (1.0 = normal, 0.5 = 50%).
-	#Range: 0.3 ~ 1.0
-	raisedSpeed = 0.5
 	#Milliseconds before you can fire after the weapon comes up from lowered.
 	#Range: 0 ~ 2000
 	raiseDelayMs = 300
@@ -76,4 +73,12 @@
 	#PDA jobs whose target is farther than this many blocks from you are skipped (a new one is offered instead).
 	#Range: 200 ~ 100000
 	contractMaxDistance = 2000
+
+[pace]
+	#Slowest walking pace you can scroll down to (Alt + mouse wheel). 1.0 = normal speed.
+	#Range: 0.1 ~ 1.0
+	minPace = 0.3
+	#How quickly your speed eases to a new pace (share of the gap closed each tick). 1.0 = instant.
+	#Range: 0.02 ~ 1.0
+	smoothing = 0.25
 

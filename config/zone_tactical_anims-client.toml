@@ -457,3 +457,10 @@
 	#Range: 0.0 ~ 1.0
 	fogDesaturate = 0.6
 
+[pace]
+	#How much one notch of Alt + mouse wheel changes your pace (0.05 = 5%).
+	#Range: 0.01 ~ 0.5
+	scrollStep = 0.05
+	#Briefly show your pace above the hotbar when you change it.
+	showPace = true
+

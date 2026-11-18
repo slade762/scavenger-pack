@@ -54,7 +54,7 @@ hash = "d335fd00458005d989d55a6615073d5b390ea08d5e1d129229518f90d5d3ef9b"
 
 [[files]]
 file = "config/cinematic_respawn.properties"
-hash = "9d330f03671722325c9871ca998afaa62032210ef5bd2e0c82773b7139fb32bb"
+hash = "0fffdf0f1a2a03bf12e93a71856607fc878917d51b88ca38de3c71ea0fcac53f"
 
 [[files]]
 file = "config/cinematic-client.toml"
@@ -318,7 +318,7 @@ hash = "26ac5810c9b5dc5c1968827357f0a58c58ac2b6f7b082630960228e16585062f"
 
 [[files]]
 file = "config/handson_delight.properties"
-hash = "231fdbcaf0ca499ee34a5ec2aa64b9d498aeb091d0a621174fbb1934424d726a"
+hash = "1fc11f10d1dbeda8cd5e0d53bb6f2ef5f6926419dcd1358fbca3e73222788298"
 
 [[files]]
 file = "config/holdmyitems-client.toml"
@@ -710,7 +710,7 @@ hash = "f72dc2bce12a55066bd33e50c47b1ad33b1bdda65778cb5653d876e1fec3694d"
 
 [[files]]
 file = "config/oculus.properties"
-hash = "390bd47a809ce0f09a24eb87df485bc8cd304710d0a0824361b4913163feac85"
+hash = "3bf7e2314ead3b2cc2a0cc380823d2eebf2c7ee642eb6a2736f614c6eeef91bf"
 
 [[files]]
 file = "config/particlerain/config.json"
@@ -1530,11 +1530,11 @@ hash = "1f8670911537dcb8d8b67e51203f3095b27057ebe398ac3df9301ddd088abfbe"
 
 [[files]]
 file = "config/zone_tactical_anims-client.toml"
-hash = "14b939852f862e90f8e770c4f09f4d6683642aa0597bda33a17a482746b22a21"
+hash = "f1344e534273228a38b68479884db1650de2e55c25a10cd15aaa1c77f52f2bde"
 
 [[files]]
 file = "config/zone_tactical_anims-common.toml"
-hash = "3bad9a6f251986833ccd6bc5dc53b5148d97ccd4c74a5d2fc476b3161e97411d"
+hash = "fe8905a8c4cf9cae7381478fde90d937669282eabdf390b05579114689f98d6c"
 
 [[files]]
 file = "config/zone_tactical_anims-keys.done"
@@ -2370,7 +2370,7 @@ hash = "d6364e3b3ffea4b912889d3dcd3e2acebf7d663b22b96402402fbd383eefa460"
 
 [[files]]
 file = "mods/zone_tactical_anims-0.1.0.jar"
-hash = "47902bdae3a5a58545533ce5a141e895d0ad883027ccff30a3cb2a28236c8529"
+hash = "f1e9be3b284b4872767a91f0b67379b8eab8b8e01b82f9ccf9eab3afea6b12e2"
 
 [[files]]
 file = "options.txt"
@@ -2397,7 +2397,7 @@ preserve = true
 
 [[files]]
 file = "shaderpacks/ComplementaryReimagined_r5.9.3 + EuphoriaPatches_1.10.5.txt"
-hash = "91dbf5b33c79d91cb67c337d7676bbe1242bbebc832c348daca6868a13aab3f6"
+hash = "755b5031c46a5b3f096538ae029cfcba8fd2d1cdeb957d98379d3e9b2d082a9a"
 
 [[files]]
 file = "tacz/.export-state.json"
