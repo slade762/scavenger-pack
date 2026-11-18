@@ -151,11 +151,11 @@ key_key.aeroforge.charge:key.keyboard.r
 key_key.sophisticatedbackpacks.open_backpack:key.keyboard.b
 key_key.sophisticatedbackpacks.inventory_interaction:key.keyboard.c
 key_key.sophisticatedbackpacks.tool_swap:key.keyboard.unknown
+key_key.sophisticatedbackpacks.toggle_upgrade_2:key.keyboard.unknown
+key_key.sophisticatedbackpacks.toggle_upgrade_1:key.keyboard.z:ALT
 key_key.sophisticatedbackpacks.toggle_upgrade_5:key.keyboard.unknown
 key_key.sophisticatedbackpacks.toggle_upgrade_4:key.keyboard.unknown
 key_key.sophisticatedbackpacks.toggle_upgrade_3:key.keyboard.unknown
-key_key.sophisticatedbackpacks.toggle_upgrade_2:key.keyboard.unknown
-key_key.sophisticatedbackpacks.toggle_upgrade_1:key.keyboard.z:ALT
 key_key.corpse.death_history:key.keyboard.u
 key_key.curios.open.desc:key.keyboard.g
 key_iris.keybind.reload:key.keyboard.r:CONTROL
@@ -192,7 +192,7 @@ key_key.anomalyzone.cinema_clean_frame:key.keyboard.f7
 key_key.zone_tactical_anims.ready:key.keyboard.caps.lock
 key_key.zone_tactical_anims.pace:key.keyboard.left.alt
 key_key.zone_tactical_anims.headlamp:key.keyboard.y
-key_key.zone_tactical_anims.holster:key.keyboard.h
+key_key.zone_tactical_anims.holster:key.keyboard.unknown
 key_key.dochi_warfare.mercenary_status:key.keyboard.j
 key_key.concord_deco.guide:key.keyboard.w
 key_key.savaru_inv.swap_wh:key.keyboard.v
@@ -272,4 +272,3 @@ modelPart_right_sleeve:true
 modelPart_left_pants_leg:true
 modelPart_right_pants_leg:true
 modelPart_hat:true
-fullscreenResolution:1920x1080@60:24

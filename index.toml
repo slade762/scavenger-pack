@@ -54,7 +54,7 @@ hash = "d335fd00458005d989d55a6615073d5b390ea08d5e1d129229518f90d5d3ef9b"
 
 [[files]]
 file = "config/cinematic_respawn.properties"
-hash = "e15b759d536d40273ffc8c1c6593608cd526095b2974c64be5e4efc6d18dc458"
+hash = "cfc3767f4bbd90bb2434dd607e48771cc8029576f859d85f32069a1f528535df"
 
 [[files]]
 file = "config/cinematic-client.toml"
@@ -318,7 +318,7 @@ hash = "26ac5810c9b5dc5c1968827357f0a58c58ac2b6f7b082630960228e16585062f"
 
 [[files]]
 file = "config/handson_delight.properties"
-hash = "f91a4a279eb32203f7346c3fe0d09dc89d95e20c7ba380809c14408701a1c2ee"
+hash = "b1491fdb9eaf4374a3c84e90ef641bc1fe55a0448df4f33d2680056f1253fa5b"
 
 [[files]]
 file = "config/holdmyitems-client.toml"
@@ -710,7 +710,7 @@ hash = "f72dc2bce12a55066bd33e50c47b1ad33b1bdda65778cb5653d876e1fec3694d"
 
 [[files]]
 file = "config/oculus.properties"
-hash = "c99f42f676d64fb8e88cdb25cfb33e57e89e84359687295b7511feaee84dfd22"
+hash = "3b2e966e8722b8694e32a06b73d2c49503886db696d6885e2c00f56bab6eae7a"
 
 [[files]]
 file = "config/particlerain/config.json"
@@ -1530,11 +1530,11 @@ hash = "1f8670911537dcb8d8b67e51203f3095b27057ebe398ac3df9301ddd088abfbe"
 
 [[files]]
 file = "config/zone_tactical_anims-client.toml"
-hash = "f1344e534273228a38b68479884db1650de2e55c25a10cd15aaa1c77f52f2bde"
+hash = "5819054446dbecca87e372b44ccd12f7dd490bcad2fbab633d86eb10fbc54e9c"
 
 [[files]]
 file = "config/zone_tactical_anims-common.toml"
-hash = "b0a8cea63f2d1ae857dea48501da0218fb50bfdbe424035599f5323fdd2bbad7"
+hash = "639a6d82dbacaf5581f61caa6f6d78d99b91ab919b9068d8d6a537c8fbcddb3f"
 
 [[files]]
 file = "config/zone_tactical_anims-keys.done"
@@ -1818,7 +1818,7 @@ hash = "714935da6df24b7fdda6de534b78bc332a8a0821fa91ceeee5a7aa04d1bef530"
 
 [[files]]
 file = "kubejs/server_scripts/zone_questgivers.js"
-hash = "9e54a01e06d1fea839fa00cd9345cdd60533448324c7ebf7df5d000caa4483c8"
+hash = "00c8ed965afb95a6f3117b6bd68f3fd8b471f176387f2b4a8e4048feb262d719"
 
 [[files]]
 file = "kubejs/server_scripts/zone_rubles.js"
@@ -2365,11 +2365,11 @@ hash = "d6364e3b3ffea4b912889d3dcd3e2acebf7d663b22b96402402fbd383eefa460"
 
 [[files]]
 file = "mods/zone_tactical_anims-0.1.0.jar"
-hash = "d11cfb02250e6468b1b4be79a031388a7b0248a89e6e34b2d2047c0d10b451c7"
+hash = "2da1601c6df667b454050756cb73ec2841875111db5398d71f49617e73379e79"
 
 [[files]]
 file = "options.txt"
-hash = "c5f77563b3886cff84ad9931b2932bde830d0ac47e8fad9ebddfd34d8c949673"
+hash = "14bffa536a943e3a3f81d97087feed75762344a78947a6750388e21628d14502"
 preserve = true
 
 [[files]]
@@ -2392,7 +2392,12 @@ preserve = true
 
 [[files]]
 file = "shaderpacks/ComplementaryReimagined_r5.9.3 + EuphoriaPatches_1.10.5.txt"
-hash = "40aa19d45f8569b75a65bfb7cb11cde59d92dcc83657106cbe3f27d015e2f5a3"
+hash = "d90bf56b5c2361ae0e0a0ee089114ffe543bbb2617e733228d69fa6889ad088a"
+
+[[files]]
+file = "shaderpacks/complementaryreimagined-r5-9-3.pw.toml"
+hash = "08c118963b29e6fd9d0c901aec68fced00dde409af5ab17f8ad3287c2dbac172"
+metafile = true
 
 [[files]]
 file = "tacz/.export-state.json"

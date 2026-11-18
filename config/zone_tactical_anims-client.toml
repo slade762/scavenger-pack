@@ -464,3 +464,8 @@
 	#Briefly show your pace above the hotbar when you change it.
 	showPace = true
 
+[music]
+	#Anomaly Zone biomes where its own zone music is turned off, so the normal music keeps playing.
+	#Options: anomalyzone:red_forest, anomalyzone:psi_zone, anomalyzone:bio_zone, anomalyzone:thermo_zone, anomalyzone:klondike
+	keepMusicIn = ["anomalyzone:red_forest", "anomalyzone:psi_zone", "anomalyzone:bio_zone", "anomalyzone:thermo_zone", "anomalyzone:klondike"]
+
