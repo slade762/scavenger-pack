@@ -15,7 +15,10 @@ var ZSC = {
     { name: 'Guard', tag: 'zg_guard', x: -1532.5, y: 83, z: 93.5 },
     { name: 'Tolya', tag: 'zg_tolya', x: -1533.5, y: 83, z: 92.5 },
     { name: 'Vasko', tag: 'zg_vasko', x: -1534.5, y: 83, z: 94.5 },
-    { name: 'Lenka', tag: 'zg_lenka', x: -1533.0, y: 83, z: 95.5 }
+    { name: 'Lenka', tag: 'zg_lenka', x: -1533.0, y: 83, z: 95.5 },
+    // front door: these two hold their post (walked back if they wander off)
+    { name: 'Bohdan', tag: 'zg_bohdan', x: -1542.5, y: 82, z: 69.5, yaw: 33, post: true },
+    { name: 'Misha', tag: 'zg_misha', x: -1545.5, y: 82, z: 67.5, yaw: 33, post: true }
   ],
   GUARD_RESPAWN: 20 * 60 * 10
 }
@@ -44,17 +47,21 @@ ServerEvents.tick(function (event) {
       var sel = '@e[type=tacznpcs:npc,tag=' + g.tag
       var have = Number(zscServer.runCommandSilent('execute in minecraft:overworld if entity ' + sel + ']')) || 0
       // Killed defenders come back after GUARD_RESPAWN (fresh recruits), not instantly.
-      if (have >= 1) { g.lostAt = null; g.seen = true; return }
+      if (have >= 1) {
+        g.lostAt = null; g.seen = true
+        if (g.post) zscServer.runCommandSilent('execute in minecraft:overworld positioned ' + gpos + ' as @e[type=tacznpcs:npc,tag=' + g.tag + ',distance=5..48] run tp @s ' + gpos + ' ' + g.yaw + ' 0')
+        return
+      }
       if (g.seen) { if (g.lostAt == null) g.lostAt = zscTicks; if (zscTicks - g.lostAt < ZSC.GUARD_RESPAWN) return }
       g.seen = true; g.lostAt = null
       {
         zscServer.runCommandSilent('execute in minecraft:overworld run summon tacznpcs:npc ' + gpos +
-          ' {template:"scavengers",CustomName:\'{"text":"' + g.name + '"}\',PersistenceRequired:1b,Tags:["zone_guard","' + g.tag + '"]}')
+          ' {template:"scavengers",' + (g.yaw != null ? 'Rotation:[' + g.yaw + 'f,0f],' : '') + 'CustomName:\'{"text":"' + g.name + '"}\',PersistenceRequired:1b,Tags:["zone_guard","' + g.tag + '"]}')
         console.info('[zone] bunker defender placed: ' + g.name)
       }
     })
     // old untagged guard from the first version
-    zscServer.runCommandSilent('kill @e[type=tacznpcs:npc,tag=zone_guard,tag=!zg_dimka,tag=!zg_guard,tag=!zg_tolya,tag=!zg_vasko,tag=!zg_lenka]')
+    zscServer.runCommandSilent('kill @e[type=tacznpcs:npc,tag=zone_guard,tag=!zg_dimka,tag=!zg_guard,tag=!zg_tolya,tag=!zg_vasko,tag=!zg_lenka,tag=!zg_bohdan,tag=!zg_misha]')
     if (zscTooClose || zscTicks - zscLast < ZSC.REFILL_TICKS) return
     zscLast = zscTicks
     var have = Number(zscServer.runCommandSilent('execute in minecraft:overworld if entity @e[type=tacznpcs:npc,tag=zone_scav]')) || 0

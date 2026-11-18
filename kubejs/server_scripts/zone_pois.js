@@ -2,7 +2,7 @@
 // Hand-built locations between the bunker and Gresham. The land there regenerates as it's explored, so each one
 // builds itself the first time a player comes near, fitted to the ground (dry spot nearby if it lands in water).
 // They're also A-Life smart terrains (see zone_alife.js). Entering one shows its name, STALKER style.
-// Templates: kubejs/data/zone/structures/<tpl>.nbt   Ground level inside a template = 3.
+// Templates: kubejs/data/zone/structures/<tpl>.nbt   Ground level inside a template = 3 (or the entry's g).
 // Op commands: /kubejs custom_command zone_pois_status  (lists built/unbuilt)
 var ZPOI = {
   G: 3,
@@ -15,7 +15,10 @@ var ZPOI = {
     { id: 'heli',       name: 'Mi-8 Crash Site',  tpl: 'heli_crash',      x: -620,  z: 330,  sx: 21, sz: 13 },
     { id: 'mast',       name: 'Radio Mast',       tpl: 'radio_mast',      x: -520,  z: -60,  sx: 11, sz: 11 },
     { id: 'hollow',     name: 'Bone Hollow',      tpl: 'bone_hollow',     x: -960,  z: -330, sx: 17, sz: 17 },
-    { id: 'orchard',    name: 'Dead Orchard',     tpl: 'dead_orchard',    x: -470,  z: 560,  sx: 17, sz: 17 }
+    { id: 'orchard',    name: 'Dead Orchard',     tpl: 'dead_orchard',    x: -470,  z: 560,  sx: 17, sz: 17 },
+    // Yarik's hunting grounds (lairs: zone_lairs.js). g = template ground layer when it isn't 3.
+    { id: 'culverts',   name: 'The Culverts',     tpl: 'culverts',        x: -1640, z: 330,  sx: 21, sz: 15 },
+    { id: 'tunnels',    name: 'The Tunnels',      tpl: 'tunnels',         x: -1760, z: -100, sx: 15, sz: 17, g: 10 }
   ]
 }
 var zpoiState = null
@@ -116,7 +119,7 @@ function zpoiTerraform(server, level, ox, oz, sx, sz, gy) {
 function zpoiPlaceAt(server, level, p, cx, cz, deep) {
   var gy = zpoiGroundMedian(level, cx, cz, p)
   if (gy === null) return false
-  var ox = cx - Math.floor(p.sx / 2), oz = cz - Math.floor(p.sz / 2), oy = gy - 1 - ZPOI.G
+  var ox = cx - Math.floor(p.sx / 2), oz = cz - Math.floor(p.sz / 2), oy = gy - 1 - (p.g || ZPOI.G)
   var M = ZPOI_MARGIN
   zpoiClear(server, ox - M, gy - 2, oz - M, ox + p.sx + M, gy + 40, oz + p.sz + M, false)   // trees on and around the site
   if (deep) zpoiClear(server, ox - 1, gy, oz - 1, ox + p.sx, gy + 40, oz + p.sz, true)       // an older copy of this build

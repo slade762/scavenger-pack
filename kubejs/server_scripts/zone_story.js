@@ -40,7 +40,7 @@ var ZST = {
     shatun:    { name: 'Shatun', title: 'Bandit Boss', poi: null, team: 'bandits', dialog: 230,
                  skin: 'anomalyzone:textures/entity/ambient/ambient_01_bandit_marauder1.png' }
   },
-  GRANDPA_DIALOG: 100,
+  GRANDPA_DIALOG: 100, GRANDPA_NEW_DIALOG: 109,
   // which finished quest (by anyone) opens which market tier
   TIERS: {
     nadya:     [[108, 3], [121, 2], [0, 1]],
@@ -150,11 +150,21 @@ function zstNpcs(srv) {
     }
     if (pos) zstKeep(srv, key, pos)
   })
-  // the original Bar Sparrow is replaced by the story one
-  srv.runCommandSilent(zstOW('kill @e[type=customnpcs:customnpc,name=Sparrow,tag=!zq_sparrow]'))
+  // the original Bar Sparrow is replaced by the story one. Removed for good (discard), because /kill on a
+  // Custom NPC with respawn on only "kills" him until he revives at home, which looped every 5 seconds.
+  try {
+    srv.overworld().getEntities().forEach(function (e) {
+      if (String(e.type) !== 'customnpcs:customnpc') return
+      if (String(e.getName().getString()) !== 'Sparrow' || e.getTags().contains('zq_sparrow')) return
+      e.discard()
+      console.info('[zone] story: removed the original Bar Sparrow')
+    })
+  } catch (e) { zstErr('bar sparrow', e) }
   // Grandpa starts Act 1
-  srv.runCommandSilent(zstOW('execute as @e[type=customnpcs:customnpc,name=Grandpa,tag=!zq_grandpa] run data merge entity @s ' +
-    '{NPCDialogOptions:[{DialogSlot:0,NPCDialog:{Title:"Talk",Dialog:' + ZST.GRANDPA_DIALOG + ',DialogColor:14737632,OptionType:1,DialogCommand:""}}],Tags:["zq_grandpa","zone_story"]}'))
+  // (dialog 109 is the new-face greeting, shown until First Steps quest 13 is done; then 100 takes over)
+  srv.runCommandSilent(zstOW('execute as @e[type=customnpcs:customnpc,name=Grandpa,tag=!zq_grandpa2] run data merge entity @s ' +
+    '{NPCDialogOptions:[{DialogSlot:0,NPCDialog:{Title:"Talk",Dialog:' + ZST.GRANDPA_NEW_DIALOG + ',DialogColor:14737632,OptionType:1,DialogCommand:""}},' +
+    '{DialogSlot:1,NPCDialog:{Title:"Talk",Dialog:' + ZST.GRANDPA_DIALOG + ',DialogColor:14737632,OptionType:1,DialogCommand:""}}],Tags:["zq_grandpa","zq_grandpa2","zone_story"]}'))
 }
 
 // ---------------------------------------------------------------- tiers

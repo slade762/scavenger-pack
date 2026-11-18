@@ -11,10 +11,22 @@
 // Their dialogs and quests live in world/customnpcs (dialogs 30-92, quests 10-61).
 // Placing one again replaces the old copy, so you can move them any time.
 var ZQG = {
-  pasha:   { name: 'Pasha',               title: 'Instructor',         team: 'scavengers', dialog: 30 },
-  yarik:   { name: 'Yarik',               title: 'Scavenger Leader',   team: 'scavengers', dialog: 36 },
-  ilya:    { name: 'Doc Ilya',            title: 'Medic',              team: 'scavengers', dialog: 50 },
-  fedya:   { name: 'Fedya',               title: 'Mechanic',           team: 'scavengers', dialog: 57 },
+  pasha:   { name: 'Pasha',               title: 'Instructor',         team: 'scavengers', dialog: 30,
+             gun: 'tacz:modern_kinetic_gun{GunId:"ra1k:aks74u",GunFireMode:"AUTO",GunCurrentAmmoCount:30,HasBulletInBarrel:1b}',
+             skin: 'anomalyzone:textures/entity/ambient/ambient_08_debut_suit2.png',
+             armor: { 'armor.chest': 'itz:psz_chestplate_loner', 'armor.legs': 'itz:psz_leggings_loner', 'armor.feet': 'itz:psz_boots_loner' } },
+  yarik:   { name: 'Yarik',               title: 'Scavenger Leader',   team: 'scavengers', dialog: 36,
+             gun: 'tacz:modern_kinetic_gun{GunId:"ra1k:mp155",GunFireMode:"SEMI",GunCurrentAmmoCount:6,HasBulletInBarrel:1b}',
+             skin: 'anomalyzone:textures/entity/ambient/ambient_07_freedom_wind2.png',
+             armor: { 'armor.chest': 'itz:psz_chestplate_loner', 'armor.legs': 'itz:psz_leggings_loner', 'armor.feet': 'itz:psz_boots_loner' } },
+  ilya:    { name: 'Doc Ilya',            title: 'Medic',              team: 'scavengers', dialog: 50,
+             gun: 'tacz:modern_kinetic_gun{GunId:"ra1k:pm",GunFireMode:"SEMI",GunCurrentAmmoCount:8,HasBulletInBarrel:1b}',
+             skin: 'anomalyzone:textures/entity/ambient_npc.png',
+             armor: { 'armor.chest': 'itz:psz_chestplate_loner' } },
+  fedya:   { name: 'Fedya',               title: 'Mechanic',           team: 'scavengers', dialog: 57,
+             gun: 'tacz:modern_kinetic_gun{GunId:"fzbe:izh18_0_0",GunFireMode:"SEMI",GunCurrentAmmoCount:1,HasBulletInBarrel:1b}',
+             skin: 'anomalyzone:textures/entity/ambient/ambient_11_misc3.png',
+             armor: { 'armor.legs': 'itz:psz_leggings_loner', 'armor.feet': 'itz:psz_boots_loner' } },
   kravets: { name: 'Major Kravets',       title: 'Military Commander', team: 'military',   dialog: 64,
              gun: 'tacz:modern_kinetic_gun{GunId:"ra1k:nl545",GunFireMode:"AUTO",GunCurrentAmmoCount:30,HasBulletInBarrel:1b}',
              skin: 'anomalyzone:textures/entity/ambient/ambient_05_duty_recruit.png',
@@ -44,7 +56,7 @@ Object.keys(ZQG).forEach(function (key) {
     srv.runCommandSilent(dim + 'summon customnpcs:customnpc ' + (x + 0.5) + ' ' + y + ' ' + (z + 0.5) + ' ' + nbt)
     srv.runCommandSilent('team join ' + n.team + ' @e[type=customnpcs:customnpc,tag=' + tag + ']')
     if (n.armor) Object.keys(n.armor).forEach(function (s) { srv.runCommandSilent('execute in minecraft:overworld run item replace entity @e[type=customnpcs:customnpc,tag=' + tag + ',limit=1] ' + s + ' with ' + n.armor[s]) })
-    if (n.gun) srv.runCommandSilent('item replace entity @e[type=customnpcs:customnpc,tag=' + tag + ',limit=1] weapon.mainhand with ' + n.gun)
+    if (n.gun) srv.runCommandSilent('execute in minecraft:overworld run item replace entity @e[type=customnpcs:customnpc,tag=' + tag + ',limit=1] weapon.mainhand with ' + n.gun)
     p.tell(Text.of('Placed ' + n.name + ' at ' + x + ' ' + y + ' ' + z + '. Step off the spot and right-click to talk.').color(0x9BD86A))
   })
 })

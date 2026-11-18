@@ -34,7 +34,7 @@ hash = "1bda42d2ae426cb801e99ed1ba22952285e1cacae9722f2255d67a276e9bd2b3"
 
 [[files]]
 file = "config/backpack_side_gui-client.toml"
-hash = "a0d50538f848a17d53a2acae2a1293e10ba00a1d9cbfe16b3899c3f3844c3379"
+hash = "3b160468c93f6ff5897553884d704811ec86263aa60f89c1655b0a18e3e1bd3b"
 
 [[files]]
 file = "config/badmobs-common.toml"
@@ -54,7 +54,7 @@ hash = "d335fd00458005d989d55a6615073d5b390ea08d5e1d129229518f90d5d3ef9b"
 
 [[files]]
 file = "config/cinematic_respawn.properties"
-hash = "ec27ef4f2e849a8bfc576c388e2c8e013957a8211959cb773e81ea2d5ea0af2a"
+hash = "1ece19013bc914f28b75d319b18abe383adf594307d64e042628a06deb680871"
 
 [[files]]
 file = "config/cinematic-client.toml"
@@ -162,7 +162,7 @@ hash = "840e66ab53723e91c5d48bb2f8d495860a55e24364bace65b06d25a731097643"
 
 [[files]]
 file = "config/enhancedai/common.toml"
-hash = "c9a236122e785d53abbc349c23484f9bbe84aa395972a629d4c3f574b7f53f31"
+hash = "63c5d5dd58981667c9f681c1fc83e49e016ff58726ce38dfbfd0c4ebda7db1aa"
 
 [[files]]
 file = "config/enhancedai/Mobs/Break anger/break_anger_config.json"
@@ -202,7 +202,7 @@ hash = "a5ba22e63061c1fb67f0f895f17681351eaeccc225faef966c29ee630593275e"
 
 [[files]]
 file = "config/euphoria_patcher/.data.json"
-hash = "d252694ca1a89fbe655e21a53b7e2e72b67a2939ccd7f5ca21f03c92ab6774e5"
+hash = "f0ee27cdf5f10601b3415ee193a62897e26d6a9073d81cedb44e853aa19e1711"
 
 [[files]]
 file = "config/euphoria_patcher/settings.toml"
@@ -213,8 +213,16 @@ file = "config/fancymenu/assets/scavenger_logo.png"
 hash = "71958f3510c28f8e22f4253ccce00aa2423fc2e8a359e6195e150398fb1fde3f"
 
 [[files]]
+file = "config/fancymenu/assets/scavenger_title.gif"
+hash = "caa9a96606c87fc683a624d064c0b19587c7ade22d44e9d817a903e2578e3b15"
+
+[[files]]
 file = "config/fancymenu/assets/scavenger_title.mp4"
 hash = "797713cfe691c39ac8c60af80b5ccb2fcac42736c21e6ec53dbd9d3b1b69960f"
+
+[[files]]
+file = "config/fancymenu/assets/scavenger_title_song.ogg"
+hash = "5f3b9a03a50c78310c40aa41a751d3ea29ed5b26fb741d4f7cd6f1eb15427d17"
 
 [[files]]
 file = "config/fancymenu/custom_gui_screens.txt"
@@ -318,7 +326,7 @@ hash = "26ac5810c9b5dc5c1968827357f0a58c58ac2b6f7b082630960228e16585062f"
 
 [[files]]
 file = "config/handson_delight.properties"
-hash = "e33607b2b6c216bc222c67433e56585231d5f00cdb8a7f51a91a97ebbd320c94"
+hash = "ac9031479e1963f875615aee1d24673212efb978c7bf5fa1e6cca160a4ccda5a"
 
 [[files]]
 file = "config/holdmyitems-client.toml"
@@ -710,7 +718,7 @@ hash = "f72dc2bce12a55066bd33e50c47b1ad33b1bdda65778cb5653d876e1fec3694d"
 
 [[files]]
 file = "config/oculus.properties"
-hash = "22ea356e299ae5e6f2738ad5c13deec2131f0bd5ddffdd649dabd1f997cf6614"
+hash = "b123a8bab1a5bc4f0a5767dc426e3bd3188891f5d6a4a85a85f23a1efac0930c"
 
 [[files]]
 file = "config/particlerain/config.json"
@@ -1725,6 +1733,10 @@ file = "kubejs/data/zone/structures/checkpoint.nbt"
 hash = "5b6f56b1eeacde1380573fa9ad0fd02d8e03e1b30db3fe10fbb7bfc43f4c3018"
 
 [[files]]
+file = "kubejs/data/zone/structures/culverts.nbt"
+hash = "03d050001adb0bce40326b9c522ebfa5b310e95fc1db350e7d5c79ca49681339"
+
+[[files]]
 file = "kubejs/data/zone/structures/dead_orchard.nbt"
 hash = "90a7c00081a86a3f786775ee9635b29a80921702681d89d9e50580d01a221a8f"
 
@@ -1745,6 +1757,10 @@ file = "kubejs/data/zone/structures/radio_mast.nbt"
 hash = "649b0c8b1c0a906750fac0a474019a4e67c2f0b776708de374965ae20a6dee7c"
 
 [[files]]
+file = "kubejs/data/zone/structures/tunnels.nbt"
+hash = "3a287090908a3a1d78086835f43d4980c576e2e668768bae028fbfc3e6c634e0"
+
+[[files]]
 file = "kubejs/README.txt"
 hash = "989f3737ae4621b8ff6730bce4cbeeee756921e7e510e0c281c8a350501d98af"
 
@@ -1759,6 +1775,10 @@ hash = "a3087d4f20eaaaa7ababfe7439f64e48bd5932f4d90804215309458da407075a"
 [[files]]
 file = "kubejs/server_scripts/zone_ammo.js"
 hash = "8f260c8d6224b6da9a88d34dc171f54881dbe04e8a77b264cb61b6bd2dafcbef"
+
+[[files]]
+file = "kubejs/server_scripts/zone_anomalies.js"
+hash = "01e0720275b2a2121d60d45d11d890bfc9d52ad382336585cc6833c78689b1a2"
 
 [[files]]
 file = "kubejs/server_scripts/zone_artifacts.js"
@@ -1777,8 +1797,16 @@ file = "kubejs/server_scripts/zone_bar.js"
 hash = "a20c8874767b85a92464059c391c44e2487a12ede44906346f025d8707ee8c2d"
 
 [[files]]
+file = "kubejs/server_scripts/zone_bar_safe.js"
+hash = "4d862409c593504a54cc2b130f20e33cff9974f940177c3b99cae65f2071b0fc"
+
+[[files]]
 file = "kubejs/server_scripts/zone_city_biome.js"
 hash = "31421777b7891612ba20ada832755d74c53b9caaafd97a2b294eafa19119cced"
+
+[[files]]
+file = "kubejs/server_scripts/zone_dialog_quests.js"
+hash = "b2e8aa70a415e51cae159cf8d5873544db6b7b34607651e9e1780eba57ae9a36"
 
 [[files]]
 file = "kubejs/server_scripts/zone_factions.js"
@@ -1789,12 +1817,20 @@ file = "kubejs/server_scripts/zone_fp_backpacks.js"
 hash = "d5cfd9ca3b1abe2b87a37151e308aee116dadc1b33ea04a158ab6c78fbba0e45"
 
 [[files]]
+file = "kubejs/server_scripts/zone_lairs.js"
+hash = "4c63e38ee2080a7c9ab3ff39ab2a2abb20ddf0bd80098a7f31857cd1485c15e5"
+
+[[files]]
 file = "kubejs/server_scripts/zone_locked_slots.js"
 hash = "d0dc82263ffe4be9f5b90a8831dbbe782c7d8616ecf4f14d3988781bb5700ce1"
 
 [[files]]
 file = "kubejs/server_scripts/zone_mutant_gate.js"
 hash = "4da7548d5e9ba33edf871a907a5f694e9cff4a2bdd9fc7d9f7f432417d9f6d4d"
+
+[[files]]
+file = "kubejs/server_scripts/zone_npc_calm.js"
+hash = "04ec6cb4b17a1b76d15b5cfd730a44a561dc96962dfe2eb43dcfd4bae8e49467"
 
 [[files]]
 file = "kubejs/server_scripts/zone_npc_combat.js"
@@ -1814,11 +1850,11 @@ hash = "7a71ba8af2098da10b36f133565a0b8f5115001ff7c5e2de28aee9b1951619f2"
 
 [[files]]
 file = "kubejs/server_scripts/zone_pois.js"
-hash = "714935da6df24b7fdda6de534b78bc332a8a0821fa91ceeee5a7aa04d1bef530"
+hash = "1cb364803419ac44761ee673ed2c88370609f4bf55a8e9303526ca3a5c1d2693"
 
 [[files]]
 file = "kubejs/server_scripts/zone_questgivers.js"
-hash = "00c8ed965afb95a6f3117b6bd68f3fd8b471f176387f2b4a8e4048feb262d719"
+hash = "672e54560ef1753d8c2410da1cd49cb7320d265e3c75166d8b7f31cd29be4ae6"
 
 [[files]]
 file = "kubejs/server_scripts/zone_rubles.js"
@@ -1826,7 +1862,7 @@ hash = "7f3d809f365b8f6bd3a1baa4e59a4f773eb758bcdfbe72502d81375fc7001c8c"
 
 [[files]]
 file = "kubejs/server_scripts/zone_scavengers.js"
-hash = "2f465cf2aab848fb37b21719390fa4ee9ee75e885c7fccd5da2a88a9cc8ce9c3"
+hash = "e233f74c48bdfca569d7d1d39152c198c780cbce9facd93226f86152f5defdfc"
 
 [[files]]
 file = "kubejs/server_scripts/zone_sell_barrel.js"
@@ -1834,7 +1870,7 @@ hash = "5c38ce28071b4049a9383a3343e364c3ab220f029cb964a71ba97e65d1b0199a"
 
 [[files]]
 file = "kubejs/server_scripts/zone_spawn_director.js"
-hash = "0d77447147527c7c3b9af9a1ec7f126ee34af118d39742bdffd18922a8bc62a4"
+hash = "5315dd53eae9c8e2eb1ee0f6d94276faef5c4d5a278e4501b7607f92c10abcd4"
 
 [[files]]
 file = "kubejs/server_scripts/zone_spawnpoint.js"
@@ -1842,7 +1878,7 @@ hash = "44b048dbd78a4c1a5afbc497bf008955b5d4e51ac61e236b28c0ea411ab71048"
 
 [[files]]
 file = "kubejs/server_scripts/zone_story.js"
-hash = "6cc70e1e36548220edac3fcd3be00ec172245a1dbf4e46e71d626ec5e99a989e"
+hash = "2cd130eb5e2ae67abff75404da0727a85eb6329df431ff1c5a5ddb6764ec7ddf"
 
 [[files]]
 file = "kubejs/server_scripts/zone_traders.js"
@@ -1858,7 +1894,7 @@ hash = "59b2991f1d2a29284fbe116a905efa0039f77721dc98f370a25add465b15a99e"
 
 [[files]]
 file = "kubejs/server_scripts/zone_zombie_swap.js"
-hash = "39070c99247bb1ffcd98b3bc5db30f865d1d1f0bdf7cf8c2fe891613a887a983"
+hash = "b83e712a080e3a9291a252563360cca13f979e484632d61484b3ea2fe4955611"
 
 [[files]]
 file = "kubejs/startup_scripts/coupon_pack.js"
@@ -2369,7 +2405,7 @@ hash = "cf986763c8db289e33650a4836b7af7b6128e80126775aacd713140b65777395"
 
 [[files]]
 file = "options.txt"
-hash = "58f8cbcdf272d507bde1876e972f59690976de12d0db616148a8bb7b7a0e7830"
+hash = "d95f8e10be9aaa41d7697dcac96c05bba5670de2c06d06d20983678d09b14b46"
 preserve = true
 
 [[files]]
@@ -2391,13 +2427,8 @@ hash = "4fb4dbe302df1dd784ca4a2cd51be6f2cff96817eee1d918a57fb0eaee5ad3ea"
 preserve = true
 
 [[files]]
-file = "shaderpacks/ComplementaryReimagined_r5.9.3 + EuphoriaPatches_1.10.5.txt"
-hash = "145e1648b6b6f713debbce57095afd69a1b084a03b0c435191ae1e20b197d628"
-
-[[files]]
-file = "shaderpacks/complementaryreimagined-r5-9-3.pw.toml"
-hash = "08c118963b29e6fd9d0c901aec68fced00dde409af5ab17f8ad3287c2dbac172"
-metafile = true
+file = "shaderpacks/Spooklementary_v2.0.4.zip.txt"
+hash = "b89d7cf76e4294ca6d7aea739e6f25f0a1395c1bdec6ad45fa9217cb11709b44"
 
 [[files]]
 file = "tacz/.export-state.json"

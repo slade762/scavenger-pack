@@ -24,7 +24,7 @@ hideLightningFlashes:false
 mouseSensitivity:0.20440140845070426
 fov:0.75
 screenEffectScale:1.0
-fovEffectScale:1.0
+fovEffectScale:0.0
 darknessEffectScale:1.0
 glintSpeed:0.5
 glintStrength:0.75
@@ -272,3 +272,4 @@ modelPart_right_sleeve:true
 modelPart_left_pants_leg:true
 modelPart_right_pants_leg:true
 modelPart_hat:true
+fullscreenResolution:1920x1080@60:24
