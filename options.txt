@@ -32,7 +32,7 @@ damageTiltStrength:1.0
 highContrast:false
 gamma:0.5
 renderDistance:8
-simulationDistance:12
+simulationDistance:8
 entityDistanceScaling:1.0
 guiScale:3
 particles:0
@@ -124,6 +124,17 @@ key_treechop.key.toggle_felling:key.keyboard.unknown
 key_treechop.key.cycle_sneak_behavior:key.keyboard.unknown
 key_treechop.key.open_settings_overlay:key.keyboard.n
 key_Build Current Structure:key.keyboard.b:ALT
+key_key.immersive_aircraft.fallback_control_left:key.keyboard.unknown
+key_key.immersive_aircraft.fallback_control_right:key.keyboard.unknown
+key_key.immersive_aircraft.fallback_control_forward:key.keyboard.unknown
+key_key.immersive_aircraft.fallback_control_backward:key.keyboard.unknown
+key_key.immersive_aircraft.fallback_control_up:key.keyboard.unknown
+key_key.immersive_aircraft.fallback_control_down:key.keyboard.unknown
+key_key.immersive_aircraft.fallback_control_pull:key.keyboard.unknown
+key_key.immersive_aircraft.fallback_control_push:key.keyboard.unknown
+key_key.immersive_aircraft.fallback_use:key.keyboard.unknown
+key_key.immersive_aircraft.dismount:key.keyboard.r
+key_key.immersive_aircraft.boost:key.keyboard.b
 key_key.sophisticatedcore.sort:key.mouse.middle
 key_key.sophisticatedcore.transfer_to_storage:key.keyboard.left.bracket
 key_key.sophisticatedcore.transfer_to_inventory:key.keyboard.right.bracket
@@ -140,11 +151,11 @@ key_key.aeroforge.charge:key.keyboard.r
 key_key.sophisticatedbackpacks.open_backpack:key.keyboard.b
 key_key.sophisticatedbackpacks.inventory_interaction:key.keyboard.c
 key_key.sophisticatedbackpacks.tool_swap:key.keyboard.unknown
-key_key.sophisticatedbackpacks.toggle_upgrade_5:key.keyboard.unknown
 key_key.sophisticatedbackpacks.toggle_upgrade_1:key.keyboard.z:ALT
 key_key.sophisticatedbackpacks.toggle_upgrade_2:key.keyboard.x:ALT
 key_key.sophisticatedbackpacks.toggle_upgrade_3:key.keyboard.unknown
 key_key.sophisticatedbackpacks.toggle_upgrade_4:key.keyboard.unknown
+key_key.sophisticatedbackpacks.toggle_upgrade_5:key.keyboard.unknown
 key_key.corpse.death_history:key.keyboard.u
 key_key.curios.open.desc:key.keyboard.g
 key_iris.keybind.reload:key.keyboard.r:CONTROL
@@ -155,6 +166,7 @@ key_keybind.scene2:key.keyboard.keypad.2
 key_keybind.scene3:key.keyboard.keypad.3
 key_keybind.scenereset:key.keyboard.keypad.0
 key_keybind.questlog:key.keyboard.l
+key_key.cinematic_respawn.skip_cinematic:key.keyboard.space
 key_key.esap.nvg_key:key.keyboard.n
 key_key.tacz.inspect.desc:key.keyboard.semicolon
 key_key.tacz.reload.desc:key.keyboard.r
@@ -183,6 +195,8 @@ key_key.zone_tactical_anims.holster:key.keyboard.h
 key_key.dochi_warfare.mercenary_status:key.keyboard.j
 key_key.concord_deco.guide:key.keyboard.w
 key_key.savaru_inv.swap_wh:key.keyboard.v
+key_key.cinematic.sit:key.keyboard.h
+key_key.cinematic.look:key.keyboard.left.alt
 key_key.push_to_talk:key.keyboard.grave.accent
 key_key.whisper:key.keyboard.unknown
 key_key.mute_microphone:key.keyboard.m:CONTROL
@@ -241,7 +255,7 @@ key_key.warborn.toggle_special_vision:key.keyboard.n
 key_key.warborn.toggle_helmet_top:key.keyboard.h
 key_key.warborn.remove_plate_menu:key.keyboard.u
 soundCategory_master:1.0
-soundCategory_music:0.5033573534228628
+soundCategory_music:0.30897733518173687
 soundCategory_record:1.0
 soundCategory_weather:1.0
 soundCategory_block:1.0

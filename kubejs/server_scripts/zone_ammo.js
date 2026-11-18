@@ -8,7 +8,9 @@ var ZAMMO = {
   ZOMBIE_CHANCE: 0.35,  // chance a zombie drops ammo
   ZOMBIE_MAGS: 0.5,     // magazines' worth per zombie drop
   CRATE_MAGS: 4,        // magazines per crate use
-  CRATE_COOLDOWN: 20 * 60 * 5 // ticks between crate uses per player (5 min)
+  CRATE_COOLDOWN: 20 * 60 * 5, // ticks between crate uses per player (5 min)
+  SHOTGUN_MULT: 2,      // shotgun drops count double (small tubes made half a mag ~2 shells)
+  SHOTGUN_MIN: 4        // and never fewer than this many shells per drop (crate excluded)
 }
 var zammoJ = null
 function zammoJava() {
@@ -32,6 +34,9 @@ function zammoFor(p, mags) {
     var data = idx.get().getGunData()
     var per = Math.max(1, data.getAmmoAmount())
     var total = Math.max(1, Math.round(per * mags))
+    var ammoId = String(data.getAmmoId())
+    var shotgun = String(idx.get().getType()) === 'shotgun' || ammoId.indexOf('12g') >= 0
+    if (shotgun && mags < ZAMMO.CRATE_MAGS) total = Math.max(ZAMMO.SHOTGUN_MIN, Math.round(per * mags * ZAMMO.SHOTGUN_MULT))
     while (total > 0) {
       var n = Math.min(total, 64)
       out.push(J.builder.create().setId(data.getAmmoId()).setCount(n).build())

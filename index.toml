@@ -38,7 +38,7 @@ hash = "a0d50538f848a17d53a2acae2a1293e10ba00a1d9cbfe16b3899c3f3844c3379"
 
 [[files]]
 file = "config/badmobs-common.toml"
-hash = "f2948ce946c8e1065fad0ce2ef44952921e68c2bef88b2a3470f37effc6ed598"
+hash = "95ff3da941b1d5102f234ba03d05762be774ea9f7833af658105e7ee90e72d4d"
 
 [[files]]
 file = "config/badmobs-common.toml.original"
@@ -51,6 +51,14 @@ hash = "8fbb7db508c2d5b5d7031e2143f5a4ec2f1656cabdee5b8165e3571160584fea"
 [[files]]
 file = "config/blueprint-common.toml"
 hash = "d335fd00458005d989d55a6615073d5b390ea08d5e1d129229518f90d5d3ef9b"
+
+[[files]]
+file = "config/cinematic_respawn.properties"
+hash = "9d330f03671722325c9871ca998afaa62032210ef5bd2e0c82773b7139fb32bb"
+
+[[files]]
+file = "config/cinematic-client.toml"
+hash = "24e6463f443098e7c080b889cea3aadec2c6b61bbb2e63ea9fe44a3ecfd4fe7d"
 
 [[files]]
 file = "config/concord_deco-client.toml"
@@ -281,6 +289,14 @@ file = "config/fancymenu/video_element_controller_metas.json"
 hash = "701459331dc5c67126b14b274ac0f97927b9da659578c7763c37e0056986b3d7"
 
 [[files]]
+file = "config/farmersdelight-client.toml"
+hash = "940f68676859e852c600974c4776e986453ce7d3b2cf27ac156535e26c160e11"
+
+[[files]]
+file = "config/farmersdelight-common.toml"
+hash = "459c4d9fcf137f0533da3280349f2abe51510497632130cbc23507dd121b1bd8"
+
+[[files]]
 file = "config/ferritecore-mixin.toml"
 hash = "c164439c632aa7c95c07edec5cfef74b8e2d5671a8445a781deeb4de7ad0c8b6"
 
@@ -299,6 +315,10 @@ hash = "5038e9e2349a929385e68427a9d64ef6f7cf65641df396c93d0633f138697f0f"
 [[files]]
 file = "config/fzzy_config/keybinds.toml"
 hash = "26ac5810c9b5dc5c1968827357f0a58c58ac2b6f7b082630960228e16585062f"
+
+[[files]]
+file = "config/handson_delight.properties"
+hash = "231fdbcaf0ca499ee34a5ec2aa64b9d498aeb091d0a621174fbb1934424d726a"
 
 [[files]]
 file = "config/holdmyitems-client.toml"
@@ -459,6 +479,10 @@ hash = "92fe5e275027a6b0f30e14d08a330f933b68b38f823980a559d7af111bc5e6a4"
 [[files]]
 file = "config/immediatelyfast.json"
 hash = "f2b7f219198f0a911d04b09f545f2c1256e8d114951443924878dc10963e16aa"
+
+[[files]]
+file = "config/immersive_aircraft.json"
+hash = "f59a5e4197b653a3555e88f685f9052b8148898af77fcd94c66863ed63b15516"
 
 [[files]]
 file = "config/immersive_weathering-client.toml"
@@ -686,7 +710,7 @@ hash = "f72dc2bce12a55066bd33e50c47b1ad33b1bdda65778cb5653d876e1fec3694d"
 
 [[files]]
 file = "config/oculus.properties"
-hash = "ec9bfe0fef5a476f0f6cdbd8685ee2a25d4974c8031b64464013e9974cb3dcdc"
+hash = "390bd47a809ce0f09a24eb87df485bc8cd304710d0a0824361b4913163feac85"
 
 [[files]]
 file = "config/particlerain/config.json"
@@ -695,6 +719,10 @@ hash = "d04b733542dd806c7f0990c8239087bdb78be64bb1112bfb38227560e7b08dd6"
 [[files]]
 file = "config/particular-common.toml"
 hash = "3a481b444160273ae42aae81eb0405eca4dee6d28687bed372427df6da8f80e4"
+
+[[files]]
+file = "config/pickupnotifier/pickupnotifier-client.toml"
+hash = "242a0f58407ecc71ff5e2c6cd2910001c089ee4e6130454c377115e8a8f3c83a"
 
 [[files]]
 file = "config/prefab.toml"
@@ -814,7 +842,7 @@ hash = "e26b00784bb6239988759ed1a64551b9f301dc33c5a855d91e976ee4bf40ac8a"
 
 [[files]]
 file = "config/sound_physics_remastered/sound_rates.properties"
-hash = "3ab5f941883f838b4531e710c269fce33a46d8fb1e765fada93685231b83c6a6"
+hash = "e5dae4e2b8f77ceeca6f89c26572fa3b2262646c0d5c4ad1b726652a60cf99f8"
 
 [[files]]
 file = "config/sound_physics_remastered/soundphysics.properties"
@@ -927,6 +955,10 @@ hash = "e5806ca350b26f9c299c7b75728f3f9c0664c286470daa027e4ce547097b90a5"
 [[files]]
 file = "config/watermedia.toml"
 hash = "c167ad90e6fc2b409c7683dbeac88cbfd85849b90f8df13b5446c1203c1c510c"
+
+[[files]]
+file = "config/weatherglass.properties"
+hash = "843720691ceb10d620ab4f3455bf4ec342143ffed4bb3104d8ab9cfc7a02f0f6"
 
 [[files]]
 file = "config/worldedit/.archive-unpack/2e1dd752/.unpack_finished"
@@ -1505,6 +1537,10 @@ file = "config/zone_tactical_anims-common.toml"
 hash = "3bad9a6f251986833ccd6bc5dc53b5148d97ccd4c74a5d2fc476b3161e97411d"
 
 [[files]]
+file = "config/zone_tactical_anims-keys.done"
+hash = "11e7b832fad4f43bdf83a61b3a4c499f6a53ae7a3c9be68da0f8263c9546c6f1"
+
+[[files]]
 file = "customnpcs/assets/customnpcs/sounds.json"
 hash = "f8a5a26e3056eb6fb06deeb3dbccfd88ae74900200c98c70b5966bbb7ec9d4de"
 
@@ -1722,7 +1758,7 @@ hash = "a3087d4f20eaaaa7ababfe7439f64e48bd5932f4d90804215309458da407075a"
 
 [[files]]
 file = "kubejs/server_scripts/zone_ammo.js"
-hash = "e1f96d43fd2540084379623cbb38ddb6ecd7780a13d6fb79c40624f4d7776891"
+hash = "8f260c8d6224b6da9a88d34dc171f54881dbe04e8a77b264cb61b6bd2dafcbef"
 
 [[files]]
 file = "kubejs/server_scripts/zone_artifacts.js"
@@ -1730,7 +1766,7 @@ hash = "c58df5df938d18a02a7b516552d29cc05d0c111c419e2abc56c1911086b2e0e2"
 
 [[files]]
 file = "kubejs/server_scripts/zone_bandit_loot.js"
-hash = "7aa8db8980b428b5b5e5c0c1fda7a886f8b5afd5a93becd18a5824d6d5ed8300"
+hash = "d572057fd38816c9a14860a47b86968d816c5709eb1ab3110af19d94656e2d44"
 
 [[files]]
 file = "kubejs/server_scripts/zone_bandits.js"
@@ -1763,6 +1799,10 @@ hash = "4da7548d5e9ba33edf871a907a5f694e9cff4a2bdd9fc7d9f7f432417d9f6d4d"
 [[files]]
 file = "kubejs/server_scripts/zone_npc_combat.js"
 hash = "75d219086bf89b159717640596d59df2c619cb2d096be4a1acffea2bb4d1f109"
+
+[[files]]
+file = "kubejs/server_scripts/zone_npc_pace.js"
+hash = "6caae9b9bcb9078335a85c338f3c5fe77c0cd7dcc51bc8e88cad7950261826e7"
 
 [[files]]
 file = "kubejs/server_scripts/zone_npc_unstuck.js"
@@ -2330,11 +2370,11 @@ hash = "d6364e3b3ffea4b912889d3dcd3e2acebf7d663b22b96402402fbd383eefa460"
 
 [[files]]
 file = "mods/zone_tactical_anims-0.1.0.jar"
-hash = "bc4842ac99c10747167be0d60ce336b8f224f9525105fe0fea74a2e79e9f438f"
+hash = "47902bdae3a5a58545533ce5a141e895d0ad883027ccff30a3cb2a28236c8529"
 
 [[files]]
 file = "options.txt"
-hash = "539005362cd51c14a9ec7c0f82c729bd58fd4038045a745b1d18b80d601ec556"
+hash = "59c7d513bd6d46211d478c2fa5015c8016b4129d12c5fbc1600daa3ae86cb86f"
 preserve = true
 
 [[files]]
@@ -2357,7 +2397,7 @@ preserve = true
 
 [[files]]
 file = "shaderpacks/ComplementaryReimagined_r5.9.3 + EuphoriaPatches_1.10.5.txt"
-hash = "530f56ef68e54075ea7c1a002c5b1901cbae2c7d38fc3ca34e4a8577a50f3680"
+hash = "91dbf5b33c79d91cb67c337d7676bbe1242bbebc832c348daca6868a13aab3f6"
 
 [[files]]
 file = "tacz/.export-state.json"
