@@ -18,6 +18,15 @@
 	starterHeadlamp = true
 
 [radiation]
+	#Radiation protection comes from the helmet only. Body armour gives none.
+	#A helmet of tier N fully protects you in radiation zones up to level N (it shows this in its tooltip).
+	#When on, the allArmor/perArmorPoint/overrides settings below only affect thermal, chemical and psi.
+	helmetsOnly = true
+	#Helmet radiation tiers: "id=tier" (1-4). Helmets not listed have tier 0 (no radiation protection).
+	#1 = respirator, 2 = full gas mask, 3 = sealed helmet, 4 = endgame (the city).
+	helmetTiers = ["itz:rookie_respirator=1", "brimm:gasmask_h=2", "brimm:gasmask_alt_h=2", "itz:hazmat_mask=2", "itz:psz_helmet_loner=2", "itz:psz_helmet_freedom=2", "itz:psz_helmet_military=2", "itz:psz_helmet_monolith=2", "itz:bulat_helmet=3", "itz:berill_helmet=3", "itz:corundum_helmet=3", "itz:marauder_helmet=3", "anomalyzone:scientific_helmet=3", "anomalyzone:tishina_helmet=3", "anomalyzone:paladin_helmet=3", "anomalyzone:experiment_n83_helmet=3", "anomalyzone:k105a_helmet=3", "anomalyzone:ten_helmet=3", "itz:exo_bulat_helmet=4", "itz:exo_berill_helmet=4", "itz:exo_corundum_helmet=4", "itz:exo_marauder_helmet=4", "anomalyzone:shepot_helmet=4"]
+	#Action-bar message (and a warning beep if you're unprotected) when you enter a radiation zone or change helmets in one.
+	warnings = true
 	#Give Anomaly Zone radiation protection to every armor piece (Anomaly Zone's own suits keep their values).
 	#Anomaly Zone adds the four pieces up (max 400). A zone of level N stops hurting you at N x 100 protection.
 	allArmor = true
@@ -33,9 +42,9 @@
 	#Armour values replaced to fit Anomaly Zone's suits: "id=armor,toughness,knockbackResistance".
 	#(AZ suit chest: light 6/0, standard 8/2, heavy 8/3 +0.1 knockback. Helmets 2-3.)
 	armorBalance = ["projectarmor_:diy_chestplate=3,0,0", "projectarmor_:d_3_crx_chestplate=3,0,0", "projectarmor_:a_6b_4_chestplate=4,0.5,0", "projectarmor_:a_6b_2_chestplate=5,0.5,0", "projectarmor_:nfm_chestplate=5,1,0", "projectarmor_:a_6b_5_chestplate=6,1,0", "projectarmor_:lbt_chestplate=6,1.5,0", "projectarmor_:ghel_chestplate=7,2,0", "projectarmor_:un_chestplate=7,2,0", "projectarmor_:iotv_chestplate=8,2.5,0", "projectarmor_:fs_chestplate=8,2.5,0", "projectarmor_:wartech_chestplate=8,3,0", "projectarmor_:a_6b_43_chestplate=9,3,0.1", "projectarmor_:gb_helmet=0,0,0", "projectarmor_:ssh_68_helmet=2,0,0", "projectarmor_:striker_ulach_helmet=2,0.5,0", "projectarmor_:sai_helmet=2,1,0", "projectarmor_:oonh_helmet=2,1,0", "projectarmor_:lhs_helmet=3,1,0", "projectarmor_:exfil_helmet=3,1.5,0", "projectarmor_:exfi_lpnv_helmet=3,1.5,0", "projectarmor_:h_6b_47_helmet=3,2,0", "projectarmor_:h_6b_47_pnv_helmet=3,2,0", "projectarmor_:alt_helmet=3,3,0.1"]
-	#Radiation zone level inside the city (Red Forest is 2 by default). 0 = off.
+	#Radiation zone level inside the city (Anomaly Zone's zone biomes are 2). 0 = off. 4 = only endgame helmets protect.
 	#Range: 0 ~ 4
-	cityLevel = 2
+	cityLevel = 4
 	#City area: [minX, minZ, maxX, maxZ] in the overworld.
 	cityBox = [-330, -520, 710, 620]
 	#Armour mods capped at Anomaly Zone's heavy suits (any item from these mods that isn't listed above).
@@ -81,4 +90,9 @@
 	#How quickly your speed eases to a new pace (share of the gap closed each tick). 1.0 = instant.
 	#Range: 0.02 ~ 1.0
 	smoothing = 0.25
+
+[food]
+	#Modded items that only give buffs also fill the hunger bar: "id=hunger,saturation".
+	#Hunger is in half-shanks (20 = full bar; a cooked steak is 8,0.8). Items that are already normal food are skipped.
+	hungerValues = ["anomalyzone:stew_can=8,0.8", "anomalyzone:field_ration=10,0.8", "anomalyzone:energy_drink=1,0.1", "anomalyzone:vodka_hryuchevo=1,0.1", "itz:chocolate_bar=4,0.3", "itz:rad_bread=5,0.6", "itz:energy_drink=1,0.1", "itz:vodka=1,0.1", "tarkovdayz:mre=10,0.8", "tarkovdayz:tea=2,0.2", "tarkovdayz:cola=2,0.1"]
 
