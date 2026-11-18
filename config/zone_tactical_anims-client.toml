@@ -186,6 +186,9 @@
 	#How far around you they appear (blocks).
 	#Range: 4.0 ~ 48.0
 	radius = 18.0
+	#Level 4 radiation (the city): extra spores, bigger and darker, drifting down like ash. Multiplier on density. 0 = off.
+	#Range: 0.0 ~ 10.0
+	heavyLevel4 = 3.0
 
 [combat_audio]
 	#Tarkov-style gunshot distance / echo and longer-range footsteps.

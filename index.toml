@@ -54,7 +54,7 @@ hash = "d335fd00458005d989d55a6615073d5b390ea08d5e1d129229518f90d5d3ef9b"
 
 [[files]]
 file = "config/cinematic_respawn.properties"
-hash = "cfc3767f4bbd90bb2434dd607e48771cc8029576f859d85f32069a1f528535df"
+hash = "ec27ef4f2e849a8bfc576c388e2c8e013957a8211959cb773e81ea2d5ea0af2a"
 
 [[files]]
 file = "config/cinematic-client.toml"
@@ -318,7 +318,7 @@ hash = "26ac5810c9b5dc5c1968827357f0a58c58ac2b6f7b082630960228e16585062f"
 
 [[files]]
 file = "config/handson_delight.properties"
-hash = "b1491fdb9eaf4374a3c84e90ef641bc1fe55a0448df4f33d2680056f1253fa5b"
+hash = "e33607b2b6c216bc222c67433e56585231d5f00cdb8a7f51a91a97ebbd320c94"
 
 [[files]]
 file = "config/holdmyitems-client.toml"
@@ -710,7 +710,7 @@ hash = "f72dc2bce12a55066bd33e50c47b1ad33b1bdda65778cb5653d876e1fec3694d"
 
 [[files]]
 file = "config/oculus.properties"
-hash = "3b2e966e8722b8694e32a06b73d2c49503886db696d6885e2c00f56bab6eae7a"
+hash = "22ea356e299ae5e6f2738ad5c13deec2131f0bd5ddffdd649dabd1f997cf6614"
 
 [[files]]
 file = "config/particlerain/config.json"
@@ -1530,11 +1530,11 @@ hash = "1f8670911537dcb8d8b67e51203f3095b27057ebe398ac3df9301ddd088abfbe"
 
 [[files]]
 file = "config/zone_tactical_anims-client.toml"
-hash = "5819054446dbecca87e372b44ccd12f7dd490bcad2fbab633d86eb10fbc54e9c"
+hash = "c871010ad320d46f9685335850012e7f5c5977f4ec28669013d8d1b37a5e00b6"
 
 [[files]]
 file = "config/zone_tactical_anims-common.toml"
-hash = "639a6d82dbacaf5581f61caa6f6d78d99b91ab919b9068d8d6a537c8fbcddb3f"
+hash = "b5db55bfc9dfa1cafdffe74fcffc7335d0430164cc77b42074585311e01e05d4"
 
 [[files]]
 file = "config/zone_tactical_anims-keys.done"
@@ -2365,11 +2365,11 @@ hash = "d6364e3b3ffea4b912889d3dcd3e2acebf7d663b22b96402402fbd383eefa460"
 
 [[files]]
 file = "mods/zone_tactical_anims-0.1.0.jar"
-hash = "2da1601c6df667b454050756cb73ec2841875111db5398d71f49617e73379e79"
+hash = "cf986763c8db289e33650a4836b7af7b6128e80126775aacd713140b65777395"
 
 [[files]]
 file = "options.txt"
-hash = "14bffa536a943e3a3f81d97087feed75762344a78947a6750388e21628d14502"
+hash = "58f8cbcdf272d507bde1876e972f59690976de12d0db616148a8bb7b7a0e7830"
 preserve = true
 
 [[files]]
@@ -2392,7 +2392,7 @@ preserve = true
 
 [[files]]
 file = "shaderpacks/ComplementaryReimagined_r5.9.3 + EuphoriaPatches_1.10.5.txt"
-hash = "d90bf56b5c2361ae0e0a0ee089114ffe543bbb2617e733228d69fa6889ad088a"
+hash = "145e1648b6b6f713debbce57095afd69a1b084a03b0c435191ae1e20b197d628"
 
 [[files]]
 file = "shaderpacks/complementaryreimagined-r5-9-3.pw.toml"
