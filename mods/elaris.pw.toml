@@ -9,8 +9,7 @@ x-prismlauncher-version-number = 'elaris-1.0.5.jar'
 [download]
 hash = 'ca80c23512905e91f8e9fba72b5257613fc55aee'
 hash-format = 'sha1'
-mode = 'metadata:curseforge'
-url = ''
+url = 'https://edge.forgecdn.net/files/9266/993/elaris-1.0.5.jar'
 
 [update.curseforge]
 file-id = 9266993

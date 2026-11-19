@@ -62,7 +62,7 @@ hash = "a37eb7f218ab61f3277a103a85c5bd14ff0abe0dff94e17883bcbb5ea28a3855"
 
 [[files]]
 file = "config/cinematic_respawn.properties"
-hash = "a7fd621f77485623821b3f24a7c0c7d8497b5833f41e053278ee80d1bd925f52"
+hash = "e088e7987829633935492e0d8c4561ebf07138d3bb5f4a4e8e79051881078b12"
 
 [[files]]
 file = "config/cinematic-client.toml"
@@ -334,7 +334,7 @@ hash = "26ac5810c9b5dc5c1968827357f0a58c58ac2b6f7b082630960228e16585062f"
 
 [[files]]
 file = "config/handson_delight.properties"
-hash = "443328f2763d3efa2b816b88954c9cab7307b315cac91d320fec456a192fe306"
+hash = "259319d427744bbcd84e253a37baa9f70c1662bdbfe01c3b5ed0bb491e52dd4d"
 
 [[files]]
 file = "config/holdmyitems-client.toml"
@@ -2101,7 +2101,7 @@ metafile = true
 
 [[files]]
 file = "mods/elaris.pw.toml"
-hash = "c5698cd6949ed2f8a7b5612b8c99ffca14983f8013b3c5596cc72b747498601a"
+hash = "db67f8e62c23af2053137ec85bc16facc9985d4d26460bfc721f1529210dc4c3"
 metafile = true
 
 [[files]]
