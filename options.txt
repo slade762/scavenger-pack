@@ -30,9 +30,9 @@ glintSpeed:0.5
 glintStrength:0.75
 damageTiltStrength:1.0
 highContrast:false
-gamma:0.5
-renderDistance:8
-simulationDistance:8
+gamma:1.0
+renderDistance:6
+simulationDistance:6
 entityDistanceScaling:2.0
 guiScale:3
 particles:0
@@ -41,7 +41,7 @@ graphicsMode:1
 ao:true
 prioritizeChunkUpdates:0
 biomeBlendRadius:3
-renderClouds:"false"
+renderClouds:"true"
 resourcePacks:["vanilla","tacz_resources","mod_resources","Moonlight Mods Dynamic Assets","hordes-config","file/zone_ui.zip","mod/subtle_effects:resourcepacks/biome_color_water_particles","file/§fReanimated §3Blue §7v0.10.zip","file/FA+Player-v1.0.zip","file/zone_fa_patch.zip","file/Zone Soundtrack.zip"]
 incompatibleResourcePacks:["file/§fReanimated §3Blue §7v0.10.zip"]
 lastServer:

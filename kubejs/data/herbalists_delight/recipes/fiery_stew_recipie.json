@@ -1,0 +1,31 @@
+{
+  "type": "farmersdelight:cooking",
+  "cookingtime": 200,
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "item": "herbalists_delight:dried_molten_rose"
+    },
+    {
+      "item": "herbalists_delight:lavaroot"
+    },
+    [
+      {
+        "item": "minecraft:beef"
+      },
+      {
+        "item": "minecraft:porkchop"
+      }
+    ],
+    {
+      "item": "farmersdelight:tomato"
+    }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "item": "herbalists_delight:fiery_stew"
+  },
+  "container": {
+    "item": "minecraft:bowl"
+  }
+}

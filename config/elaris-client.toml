@@ -569,7 +569,7 @@ elarisEnabled = true
 	fogEnabled = true
 	#Volumetric fog density multiplier: 0 skips the fog pass, 1 preserves the existing fog. Updated live without recompiling shaders.
 	#Range: 0.0 ~ 1.0
-	intensity = 0.5
+	intensity = 0.25
 	#Enable restrained Sun and Moon scattering glow, even when distance AtmosphereFog is disabled.
 	fogCelestialScatteringEnabled = false
 	#True extinction multiplier. The shader squares this value so the upper range can produce very dense AtmosphereFog without changing its color toward white.

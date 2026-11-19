@@ -90,7 +90,7 @@ hash = "a37eb7f218ab61f3277a103a85c5bd14ff0abe0dff94e17883bcbb5ea28a3855"
 
 [[files]]
 file = "config/cinematic_respawn.properties"
-hash = "d2b65e9b20f19a2adeb8c419e979149a3cafa4008c8f7e0f8d65ea94354a3430"
+hash = "c377ed6194b86648df90102478fd689c018f3d364c5131e65e95a4967ec3fc8e"
 
 [[files]]
 file = "config/cinematic-client.toml"
@@ -178,7 +178,7 @@ hash = "95ce6a868535f6cd8d5e7dd4ea7ce65c372ca44a94b6a2ffb1de11d73cf20dbe"
 
 [[files]]
 file = "config/elaris-client.toml"
-hash = "cb2e6a9ba6c70b817f03d60c17e52032e509be79929f28495ceda2ce2cdeab21"
+hash = "61fe070725d442598dcf389eda7a32704b38d66c552bcbf0418533efc3512fa2"
 
 [[files]]
 file = "config/embeddium-fingerprint.json"
@@ -362,7 +362,7 @@ hash = "26ac5810c9b5dc5c1968827357f0a58c58ac2b6f7b082630960228e16585062f"
 
 [[files]]
 file = "config/handson_delight.properties"
-hash = "cbcae4cc822b3cd33362a66133ccf81a6f66e0524cc7b474fd53e5ed0d588d22"
+hash = "734105879be800e394119cfcd2bbaeaaa82b7d943bad3df8b9e7c3f7486d30ec"
 
 [[files]]
 file = "config/holdmyitems-client.toml"
@@ -1010,7 +1010,7 @@ hash = "99bd5591f573980d861365e4fe03f2e211d4dd0661c1d3385e0c0c9bf6596543"
 
 [[files]]
 file = "config/voicechat/voicechat-server.properties"
-hash = "47a2db42d63f8643d1b05fcc5cdf69a096500eaa405c2d96690766137fb47fc5"
+hash = "68b8d8f987bafa746f35db0a13e26f3b222b88649ee8d42508549ce991bceb33"
 
 [[files]]
 file = "config/voicechat-client.toml"
@@ -1506,7 +1506,7 @@ hash = "6de833a135cc17b7426520b68bd7820a62fbb19aa1489c7fcc78b14c8ebc3d4e"
 
 [[files]]
 file = "config/worldedit/worldedit.properties"
-hash = "3f4b73b1aaa3668b76289e7bbefcb09c639178cf41baa9d940740a51d6df05a7"
+hash = "70105201f42d92aba72f9714d3373ee670127649aa00ca77878126e5c56a6779"
 
 [[files]]
 file = "config/xaero/lib/client.cfg"
@@ -1606,11 +1606,11 @@ hash = "1f8670911537dcb8d8b67e51203f3095b27057ebe398ac3df9301ddd088abfbe"
 
 [[files]]
 file = "config/zone_tactical_anims-client.toml"
-hash = "3f2398722cfb0ba8604d73cc44a2870c38f2f8d176de5b10ba858f4371ad78c8"
+hash = "0297cee955489226362760a59a3c402bc8ed5daf7548be051dd1d429ad69370d"
 
 [[files]]
 file = "config/zone_tactical_anims-common.toml"
-hash = "ad82d8e276dec4eeb803e4dcde626da3735b75a5d84922a188d3e71a2fc59d0f"
+hash = "4dd3e8ddaccc968f8d113e5b029cd7932dd3bae7d6e8bec546395aaa881fc80f"
 
 [[files]]
 file = "config/zone_tactical_anims-keys.done"
@@ -1707,6 +1707,10 @@ hash = "5df54bbb8d5f665c96714bcf8a4a243747b66f3373a792bd9c94e8fd6b7cd26e"
 [[files]]
 file = "kubejs/data/fracturepoint/curios/slots/backpack.json"
 hash = "bbd3e2eb1b0ec865640593cd40b2f93b4fc8f0bd34d42d849d313f372f0c4b3b"
+
+[[files]]
+file = "kubejs/data/herbalists_delight/recipes/fiery_stew_recipie.json"
+hash = "37023aa5482ca96ce5ff6999163c29050f7d39d4d19e84e09f707fe7374f015e"
 
 [[files]]
 file = "kubejs/data/itz/curios/entities/entities.json"
@@ -2587,11 +2591,11 @@ hash = "d6364e3b3ffea4b912889d3dcd3e2acebf7d663b22b96402402fbd383eefa460"
 
 [[files]]
 file = "mods/zone_tactical_anims-0.1.0.jar"
-hash = "94966b1f8a8cc36d2ccb1bce64fc782cdf5c572f32b955a74f7a12a45bf30e59"
+hash = "df05239d2a46de42f63ef5bceeb65eaf364affe0ccb284ec0be20168b6898c50"
 
 [[files]]
 file = "options.txt"
-hash = "ae3cdb5ced790eda76598f2738ca754453276ea71c9e25732cd7eea486740b23"
+hash = "3a0ab880022ce04ca7612275222767b81e295efaf6931585f388fb165b148255"
 preserve = true
 
 [[files]]

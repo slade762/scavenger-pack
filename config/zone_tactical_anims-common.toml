@@ -3,6 +3,9 @@
 	#Milliseconds before you can fire after the weapon comes up from lowered.
 	#Range: 0 ~ 2000
 	raiseDelayMs = 300
+	#Top walking speed while the weapon is raised (1.0 = normal, 0.5 = 50%). Eases in; if your Alt + scroll pace is slower, that wins.
+	#Range: 0.2 ~ 1.0
+	raisedSpeed = 0.5
 
 [headlamp]
 	#How far the headlamp cone reaches, in blocks (light pools at 10%, 25%, 42%, 62% and 85% of this).
@@ -100,6 +103,12 @@
 	#PDA jobs whose target is farther than this many blocks from you are skipped (a new one is offered instead).
 	#Range: 200 ~ 100000
 	contractMaxDistance = 2000
+	#Our own PDA contract sites: "structure=minX,minY,minZ,maxX,maxY,maxZ" (Anomaly Zone structure name without anomalyzone:).
+	#A contract that needs that structure goes to the nearest box listed here (centre) instead of searching the world, so
+	#hand-built copies count. red_forest_laboratory boxes also count as 'inside the lab' for Test Subjects (the lab's lower
+	#part: you must be at least 8 blocks below the box top). Route uses psi_crater_basin, bio_chasm and red_forest_zgrls.
+	#Several boxes per structure are fine. Structures with no box here use Anomaly Zone's normal search.
+	sites = []
 
 [pace]
 	#Slowest walking pace you can scroll down to (Alt + mouse wheel). 1.0 = normal speed.
