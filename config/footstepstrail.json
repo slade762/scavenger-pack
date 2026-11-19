@@ -1,0 +1,23 @@
+{
+  "enabled": true,
+  "trackingMode": "COMBINED",
+  "maxDurationSeconds": 60,
+  "maxSteps": 50,
+  "minDistanceForStep": 1.0,
+  "type": "TERRAIN",
+  "typeChosen": false,
+  "markerSize": 0.2,
+  "colorR": 0.7,
+  "colorG": 0.7,
+  "colorB": 0.7,
+  "maxOpacity": 0.6,
+  "shape": "SQUARE",
+  "glow": false,
+  "hardSurfaceScuffs": true,
+  "maxRenderDistance": 48.0,
+  "deformationMaterials": {},
+  "enableRotation": true,
+  "enableAlternatingFeet": true,
+  "alternatingFootOffset": 0.15,
+  "stealthSneak": true
+}

@@ -276,6 +276,16 @@
 	#PDA screen brightness while a shader pack is on (Anomaly Zone paints it at 0.35; shaders then darken it further).
 	#Range: 0.1 ~ 2.0
 	pdaShaderBrightness = 1.0
+	#Fade the music out while you're inside the Bar (so the Bar's radio has the room to itself).
+	barMusicFade = true
+	#RadioMod radios sound like an old valve radio (thin speaker, a little drive). Off = the clean stream.
+	radioFilter = true
+	#How much AM hiss and crackle the old-radio sound adds (0 = none, 100 = lots).
+	#Range: 0 ~ 100
+	radioStatic = 35
+	#How strongly a radio pans between your ears, in % (100 = fully into one ear, 20 = the far ear keeps about half, 0 = always centred).
+	#Range: 0 ~ 100
+	radioPanMax = 20
 
 [holster]
 	#Gun in hotbar slot 1 is slung on your back when not held. 1 draws it, 1 again (or H) slings it.

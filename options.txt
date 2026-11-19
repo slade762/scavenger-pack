@@ -41,7 +41,7 @@ graphicsMode:1
 ao:true
 prioritizeChunkUpdates:0
 biomeBlendRadius:3
-renderClouds:"true"
+renderClouds:"false"
 resourcePacks:["vanilla","tacz_resources","mod_resources","Moonlight Mods Dynamic Assets","hordes-config","file/zone_ui.zip","mod/subtle_effects:resourcepacks/biome_color_water_particles","file/§fReanimated §3Blue §7v0.10.zip","file/FA+Player-v1.0.zip","file/zone_fa_patch.zip","file/Zone Soundtrack.zip"]
 incompatibleResourcePacks:["file/§fReanimated §3Blue §7v0.10.zip"]
 lastServer:
@@ -135,6 +135,7 @@ key_key.immersive_aircraft.fallback_control_push:key.keyboard.unknown
 key_key.immersive_aircraft.fallback_use:key.keyboard.unknown
 key_key.immersive_aircraft.dismount:key.keyboard.r
 key_key.immersive_aircraft.boost:key.keyboard.b
+key_key.footstepstrail.toggle:key.keyboard.z
 key_key.sophisticatedcore.sort:key.mouse.middle
 key_key.sophisticatedcore.transfer_to_storage:key.keyboard.left.bracket
 key_key.sophisticatedcore.transfer_to_inventory:key.keyboard.right.bracket
@@ -151,10 +152,10 @@ key_key.aeroforge.charge:key.keyboard.r
 key_key.sophisticatedbackpacks.open_backpack:key.keyboard.b
 key_key.sophisticatedbackpacks.inventory_interaction:key.keyboard.c
 key_key.sophisticatedbackpacks.tool_swap:key.keyboard.unknown
-key_key.sophisticatedbackpacks.toggle_upgrade_2:key.keyboard.unknown
-key_key.sophisticatedbackpacks.toggle_upgrade_1:key.keyboard.z:ALT
-key_key.sophisticatedbackpacks.toggle_upgrade_5:key.keyboard.unknown
 key_key.sophisticatedbackpacks.toggle_upgrade_4:key.keyboard.unknown
+key_key.sophisticatedbackpacks.toggle_upgrade_5:key.keyboard.unknown
+key_key.sophisticatedbackpacks.toggle_upgrade_1:key.keyboard.z:ALT
+key_key.sophisticatedbackpacks.toggle_upgrade_2:key.keyboard.unknown
 key_key.sophisticatedbackpacks.toggle_upgrade_3:key.keyboard.unknown
 key_supplementaries.keybind.quiver:key.keyboard.v
 key_key.elaris.open_settings:key.keyboard.o
@@ -256,8 +257,10 @@ key_key.warborn.open_backpack:key.keyboard.b
 key_key.warborn.toggle_special_vision:key.keyboard.n
 key_key.warborn.toggle_helmet_top:key.keyboard.h
 key_key.warborn.remove_plate_menu:key.keyboard.u
+key_key.simpleradio.use_handheld:key.keyboard.z
+key_key.presencefootsteps.settings:key.keyboard.f10
 soundCategory_master:1.0
-soundCategory_music:0.30897733518173687
+soundCategory_music:0.40943334425155603
 soundCategory_record:1.0
 soundCategory_weather:1.0
 soundCategory_block:1.0

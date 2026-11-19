@@ -46,7 +46,7 @@ hash = "c258692cbaad5cb7c44ffcd558f1893aba06a8748078327a6e1e2df2be697a4c"
 
 [[files]]
 file = "config/badmobs-common.toml"
-hash = "3914ceb3048ce10e8c83d8b7418fa85eeee48fae267c8052173d8cb9bfea84b1"
+hash = "a80f5124bea6d0754aa193610a351e7e448ff9941d5835eeb3fda0817c5f94ff"
 
 [[files]]
 file = "config/badmobs-common.toml.original"
@@ -90,7 +90,7 @@ hash = "a37eb7f218ab61f3277a103a85c5bd14ff0abe0dff94e17883bcbb5ea28a3855"
 
 [[files]]
 file = "config/cinematic_respawn.properties"
-hash = "c377ed6194b86648df90102478fd689c018f3d364c5131e65e95a4967ec3fc8e"
+hash = "03916018a5abab02307d35a6fb3f5b09b8336a3dd335eed650f4d539d24f7058"
 
 [[files]]
 file = "config/cinematic-client.toml"
@@ -349,6 +349,10 @@ file = "config/fml.toml"
 hash = "0dd9461aabcfe25333c5a2ee951b08e1d3b6a2be8eef28329fa87e8102608943"
 
 [[files]]
+file = "config/footstepstrail.json"
+hash = "23e75e6cee58e952fdbfb00f49e840b5a55ae6332414a521ee76d30a2b333b81"
+
+[[files]]
 file = "config/forge-client.toml"
 hash = "0b1b3c45343435184c9dde3149b38afcdb97953e287686ecda54385f53ebcddc"
 
@@ -362,7 +366,7 @@ hash = "26ac5810c9b5dc5c1968827357f0a58c58ac2b6f7b082630960228e16585062f"
 
 [[files]]
 file = "config/handson_delight.properties"
-hash = "734105879be800e394119cfcd2bbaeaaa82b7d943bad3df8b9e7c3f7486d30ec"
+hash = "2afece5206ee37a7b94061c0d050a4e5f63b60d08990ec63abc832ec85d69c22"
 
 [[files]]
 file = "config/holdmyitems-client.toml"
@@ -633,6 +637,10 @@ file = "config/konkrete/locals/pt_br.local"
 hash = "dca55a2792451b31424cd5c24037141ec57cdca51955d062dd908fa9ca6a3e9c"
 
 [[files]]
+file = "config/lexiconfig.toml"
+hash = "cd5a8cd00f4300c29fda27b0dce17cb6bddadaf6047f4357599ed46b09ca7345"
+
+[[files]]
 file = "config/lootr-client.toml"
 hash = "4e37c085446f2a5be3a3cc4765ffc9657e71473245574c3e398c64fef07615a0"
 
@@ -761,6 +769,14 @@ file = "config/oculus.properties"
 hash = "31bdd2466ddf8e38afcbbaf88ff3a40beb66f308551bcf61578de935d91dd5e6"
 
 [[files]]
+file = "config/particle_core_config.toml"
+hash = "9f21aae26ba31a4fd9bab85c4bb4e37d10ac408aff9feed91ad6acdf1e269634"
+
+[[files]]
+file = "config/particle_core_disabled_optimizations_v2.json"
+hash = "7189bb61c58cb1030b8ee486e66abf694d257192248b9b3ac4978df2b1366f7d"
+
+[[files]]
 file = "config/particlerain/config.json"
 hash = "d04b733542dd806c7f0990c8239087bdb78be64bb1112bfb38227560e7b08dd6"
 
@@ -779,6 +795,10 @@ hash = "6e18bfa2ec02629937474e436f3f44fb67d54fd6e6b47a7c9b4c5b3a3bd83916"
 [[files]]
 file = "config/prefab.toml"
 hash = "58f55f9ab84245340405f188f39c906a347ef0994e4f678258243f88fb13677b"
+
+[[files]]
+file = "config/presencefootsteps/userconfig.json"
+hash = "6cffea1c20852a079342429a0f223fcc45993a51596c4736e0fe1910c3fcba52"
 
 [[files]]
 file = "config/punchy/menu_prefs.json"
@@ -863,6 +883,14 @@ hash = "85f9ffa9a6bf27e6ce97c48c13179510c6378c6b71e1fbda407e014aee96d829"
 [[files]]
 file = "config/simplebedrockmodel-client.toml"
 hash = "b37982e0286a75e47ba11061f60d5cd721494e82603d5c1eb89714e1f77f180c"
+
+[[files]]
+file = "config/simpleradio-client.toml"
+hash = "a1dacc2b32b3e7f994c897a19e802d481a7757308d804c14758f806313e19e4d"
+
+[[files]]
+file = "config/simpleradio-server.toml"
+hash = "c87a27479984af2b6e19f3be1bc078da0a07df19b890ea26f975391c08a96524"
 
 [[files]]
 file = "config/skinlayers.json"
@@ -1506,7 +1534,7 @@ hash = "6de833a135cc17b7426520b68bd7820a62fbb19aa1489c7fcc78b14c8ebc3d4e"
 
 [[files]]
 file = "config/worldedit/worldedit.properties"
-hash = "70105201f42d92aba72f9714d3373ee670127649aa00ca77878126e5c56a6779"
+hash = "d38c6ff769aceef65e1e54f80e0c20c2d7035bbea0c22aa131f313e42d0f78c2"
 
 [[files]]
 file = "config/xaero/lib/client.cfg"
@@ -1606,7 +1634,7 @@ hash = "1f8670911537dcb8d8b67e51203f3095b27057ebe398ac3df9301ddd088abfbe"
 
 [[files]]
 file = "config/zone_tactical_anims-client.toml"
-hash = "0297cee955489226362760a59a3c402bc8ed5daf7548be051dd1d429ad69370d"
+hash = "815225b7a909cb5c1b267ee146cd9d1afc324ce4cc3f64c76845a54a8297b06b"
 
 [[files]]
 file = "config/zone_tactical_anims-common.toml"
@@ -2337,6 +2365,11 @@ hash = "40cb27d9276b330a99b193547caa16ce8a19899d208c32abebc515a48301341a"
 metafile = true
 
 [[files]]
+file = "mods/lexiconfig.pw.toml"
+hash = "9b782541cf9db28efc224a62a433fe7fc098c40247d5853b89ad8f05df25adc4"
+metafile = true
+
+[[files]]
 file = "mods/lootr-forge-1-20-0-7-35-94.pw.toml"
 hash = "5ea4c0e8cdd4530b1f25bc22a1387962da665f7b787e35d3650fc910aa509ad8"
 metafile = true
@@ -2438,11 +2471,6 @@ hash = "0ed0b25c37cd05a38531b788d38b74e4c067cc9029536446f8f928536a39438e"
 metafile = true
 
 [[files]]
-file = "mods/playermusic.pw.toml"
-hash = "f97578eb43b2d5b2d85655b46a3ba9eed515c7eb0340452844891f1561c4d8c3"
-metafile = true
-
-[[files]]
 file = "mods/prefab-1.10.0.2.jar"
 hash = "7290b6bed41616ef7508415272fc862b2e5398c8676e07f63246ef9cffeee540"
 
@@ -2457,6 +2485,11 @@ hash = "103f1d46c16023e346802a9b2024db885cf8dc3a43ee5106bcd5ed8165073efd"
 [[files]]
 file = "mods/quantified-api-omni-2-2-4.pw.toml"
 hash = "2c0e3aa7926711c1e551113c02010f7bd12b6e2d8a9160192ef9e76f1806f7dd"
+metafile = true
+
+[[files]]
+file = "mods/radiomod-akybeff.pw.toml"
+hash = "1a538ad28a56fcfa18faccba627d14426f5dff90acb3bb658b747348fce9bc1e"
 metafile = true
 
 [[files]]
@@ -2487,6 +2520,11 @@ metafile = true
 [[files]]
 file = "mods/shouldersurfing-forge-1-20-1-5-3-1.pw.toml"
 hash = "fcd8d74dc91143303275edf68b82257e8927bbfcffcc086ccd064a3085880ef4"
+metafile = true
+
+[[files]]
+file = "mods/simple-radio.pw.toml"
+hash = "5a2e124c798d9215f95f49d3bcc39f6b02b6804d6d5bdcf64ca9f713b5b778cf"
 metafile = true
 
 [[files]]
@@ -2580,11 +2618,6 @@ hash = "3f1d7b11ea19f36f72aa4013969238a29263c1c8225f09d028e87440d31dd51b"
 metafile = true
 
 [[files]]
-file = "mods/watermedia-platform-extension.pw.toml"
-hash = "d241ce00a7741b15a82acf9e281424301f27640b41a80214586286cafa07a453"
-metafile = true
-
-[[files]]
 file = "mods/weatherglass-0.6.2-1.20.1-forge.jar"
 hash = "2c58e2b6386d93ffd93b8086a9ddc2e8a81c89c49cdefcd9fd4dd17cd75de615"
 
@@ -2618,11 +2651,11 @@ hash = "d6364e3b3ffea4b912889d3dcd3e2acebf7d663b22b96402402fbd383eefa460"
 
 [[files]]
 file = "mods/zone_tactical_anims-0.1.0.jar"
-hash = "df05239d2a46de42f63ef5bceeb65eaf364affe0ccb284ec0be20168b6898c50"
+hash = "7c4e782bd8c378ee95714d96a2784fe678ac8f2f263b827dd49dc1932fde61d2"
 
 [[files]]
 file = "options.txt"
-hash = "3a0ab880022ce04ca7612275222767b81e295efaf6931585f388fb165b148255"
+hash = "aedd763e15ab770b3c16605acd47b129bc2537174a2dfbe733da1edfa262efc8"
 preserve = true
 
 [[files]]
