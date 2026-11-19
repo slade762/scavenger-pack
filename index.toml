@@ -2144,6 +2144,11 @@ hash = "64d840bd7e8f235391f98c40ffd0b2d2058db534c5249b24ce751edcc787e541"
 metafile = true
 
 [[files]]
+file = "mods/creativecore.pw.toml"
+hash = "7bbf67b27d45e668a24b04492286c0b1273321a58ac4939b73d56e41081c76a5"
+metafile = true
+
+[[files]]
 file = "mods/cucumber-1-20-1-7-0-16.pw.toml"
 hash = "7b9c5577d0e38d7c785bc39fed3abd9aeb14deeec73776c2b934806bd8ed72d2"
 metafile = true
@@ -2250,6 +2255,10 @@ hash = "34f03eb671ea1ca579b00c98e4541404cb96d1a292014aed9cc5eb45ad8afbce"
 file = "mods/ferritecore-6-0-1-forge.pw.toml"
 hash = "64b424188c6d028f26c8f2ad40c4a5df875dce0c15bdab607dea5fb137182817"
 metafile = true
+
+[[files]]
+file = "mods/footsteps-trail-1.5.2-1.20.1-forge.jar"
+hash = "3de983d6bede7b19bf0050ff26ffa9a4e5204efae2dd43c1c3b09a931a246652"
 
 [[files]]
 file = "mods/fracturepoint-1-20-1-3-0-0-pt2-all.pw.toml"
@@ -2401,6 +2410,10 @@ hash = "4e75c5d3a2e65be0f35d68c7fed7e0aa1068b8d6399476f457d0205a284ab252"
 metafile = true
 
 [[files]]
+file = "mods/particle_core-0.3.3+1.20.1+forge.jar"
+hash = "bd4023e4618333f3e6020a7d6f4db3ae7e8fe41b39a43f47e6a1da4fbd80bc1b"
+
+[[files]]
 file = "mods/particlerain-4-0-3-1-20-1-forge.pw.toml"
 hash = "b12f984b37f3cc86ae7314ccd52325f3b5938416dbcbcbd2f85c61db31baa9bd"
 metafile = true
@@ -2425,8 +2438,17 @@ hash = "0ed0b25c37cd05a38531b788d38b74e4c067cc9029536446f8f928536a39438e"
 metafile = true
 
 [[files]]
+file = "mods/playermusic.pw.toml"
+hash = "f97578eb43b2d5b2d85655b46a3ba9eed515c7eb0340452844891f1561c4d8c3"
+metafile = true
+
+[[files]]
 file = "mods/prefab-1.10.0.2.jar"
 hash = "7290b6bed41616ef7508415272fc862b2e5398c8676e07f63246ef9cffeee540"
+
+[[files]]
+file = "mods/PresenceFootsteps-1.20.1-1.9.1-beta.1.jar"
+hash = "447dd543e178a9454ccf3bf0d9d7bd7957b1af6da9d74f2cd3d9b5fbe8548e98"
 
 [[files]]
 file = "mods/PuzzlesLib-v8.1.36-1.20.1-Forge.jar"
@@ -2555,6 +2577,11 @@ metafile = true
 [[files]]
 file = "mods/watermedia-binaries-3-0-1.pw.toml"
 hash = "3f1d7b11ea19f36f72aa4013969238a29263c1c8225f09d028e87440d31dd51b"
+metafile = true
+
+[[files]]
+file = "mods/watermedia-platform-extension.pw.toml"
+hash = "d241ce00a7741b15a82acf9e281424301f27640b41a80214586286cafa07a453"
 metafile = true
 
 [[files]]
