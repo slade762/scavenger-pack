@@ -90,7 +90,7 @@ hash = "a37eb7f218ab61f3277a103a85c5bd14ff0abe0dff94e17883bcbb5ea28a3855"
 
 [[files]]
 file = "config/cinematic_respawn.properties"
-hash = "03916018a5abab02307d35a6fb3f5b09b8336a3dd335eed650f4d539d24f7058"
+hash = "f4b364ea9b8b1c1f178102dc6a9c7677af3d84140b9a9a2e70954245deeeec81"
 
 [[files]]
 file = "config/cinematic-client.toml"
@@ -366,7 +366,7 @@ hash = "26ac5810c9b5dc5c1968827357f0a58c58ac2b6f7b082630960228e16585062f"
 
 [[files]]
 file = "config/handson_delight.properties"
-hash = "2afece5206ee37a7b94061c0d050a4e5f63b60d08990ec63abc832ec85d69c22"
+hash = "04f64a57938403f79a75b8e387851304454d22b89f143a1652b47252fa1b9d04"
 
 [[files]]
 file = "config/holdmyitems-client.toml"
@@ -1977,6 +1977,10 @@ file = "kubejs/server_scripts/zone_pacifists.js"
 hash = "2ceed7d31715e6ae634ed756da51814ca3da345f79cb5a097edb75b0de7292c8"
 
 [[files]]
+file = "kubejs/server_scripts/zone_pda_waypoints.js"
+hash = "5591ea0001e083a2b8307f5c8be603d010d66aec6538dda944a1c78a9dcbfa0e"
+
+[[files]]
 file = "kubejs/server_scripts/zone_pois.js"
 hash = "07ef557c18ddd6af5ced433741d796badd54be14970ed258c729b0551a71679f"
 
@@ -2651,7 +2655,7 @@ hash = "d6364e3b3ffea4b912889d3dcd3e2acebf7d663b22b96402402fbd383eefa460"
 
 [[files]]
 file = "mods/zone_tactical_anims-0.1.0.jar"
-hash = "7c4e782bd8c378ee95714d96a2784fe678ac8f2f263b827dd49dc1932fde61d2"
+hash = "3dfad402aa7049b1e9d333018da5fb614858b87936811606f479f1469cb6be24"
 
 [[files]]
 file = "options.txt"
