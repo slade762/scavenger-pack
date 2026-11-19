@@ -5,9 +5,9 @@
 	#Apply voxel gore to players too (not only mobs).
 	hurtPlayers = true
 	#Make headshots carve bigger, deeper wounds.
-	headshotBonus = true
+	headshotBonus = false
 	#Play flesh impact sounds when a gun hits a mob.
-	hitSounds = true
+	hitSounds = false
 
 	[gore.gibs]
 		#Damage needed to spawn one gib chunk (minimum 1 gib per hit).

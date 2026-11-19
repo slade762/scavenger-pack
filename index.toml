@@ -42,7 +42,7 @@ hash = "9f7bd67346e47c5b01e96d31aa492635d5d3a2dcb5bc3c3baddb6e518891ad0c"
 
 [[files]]
 file = "config/backpack_side_gui-client.toml"
-hash = "a4e095a933d6dc16ac4225e9122ece42d05637bded3e1d91a22573de4a9b53cc"
+hash = "c258692cbaad5cb7c44ffcd558f1893aba06a8748078327a6e1e2df2be697a4c"
 
 [[files]]
 file = "config/badmobs-common.toml"
@@ -90,7 +90,7 @@ hash = "a37eb7f218ab61f3277a103a85c5bd14ff0abe0dff94e17883bcbb5ea28a3855"
 
 [[files]]
 file = "config/cinematic_respawn.properties"
-hash = "622fcbd68a9125e38905aa4db826fb92f678b4dd5f625f0387bfc41e8ed58386"
+hash = "d2b65e9b20f19a2adeb8c419e979149a3cafa4008c8f7e0f8d65ea94354a3430"
 
 [[files]]
 file = "config/cinematic-client.toml"
@@ -178,7 +178,7 @@ hash = "95ce6a868535f6cd8d5e7dd4ea7ce65c372ca44a94b6a2ffb1de11d73cf20dbe"
 
 [[files]]
 file = "config/elaris-client.toml"
-hash = "0d709c163cdf1c1c90a3f30374b69b92d3955a053c2c4b9f7ac47785f2ec40d3"
+hash = "cb2e6a9ba6c70b817f03d60c17e52032e509be79929f28495ceda2ce2cdeab21"
 
 [[files]]
 file = "config/embeddium-fingerprint.json"
@@ -362,7 +362,7 @@ hash = "26ac5810c9b5dc5c1968827357f0a58c58ac2b6f7b082630960228e16585062f"
 
 [[files]]
 file = "config/handson_delight.properties"
-hash = "a918dd37e7bc13e1ba3a501d4feaa43290969a4b6b7069697260e445b16eb197"
+hash = "cbcae4cc822b3cd33362a66133ccf81a6f66e0524cc7b474fd53e5ed0d588d22"
 
 [[files]]
 file = "config/holdmyitems-client.toml"
@@ -946,7 +946,7 @@ hash = "766c83bb570a24ef31f37eab5034c0c9740003a45a2df8beb9096a9024958564"
 
 [[files]]
 file = "config/taczgore-common.toml"
-hash = "118b76cdae5ae4e77b53280fddad78982af50ee58b237d7625bf0e2ef23fd414"
+hash = "6a95fadf0fee234029d98022e341bb7f1684b5ecf05ebeca8fa11eb41e478cae"
 
 [[files]]
 file = "config/tacznpc_factions.json"
@@ -1010,7 +1010,7 @@ hash = "99bd5591f573980d861365e4fe03f2e211d4dd0661c1d3385e0c0c9bf6596543"
 
 [[files]]
 file = "config/voicechat/voicechat-server.properties"
-hash = "03ea425e453ced0bc5bd983e2094818d5a2f639e9a995cb6458d9c00d77af561"
+hash = "47a2db42d63f8643d1b05fcc5cdf69a096500eaa405c2d96690766137fb47fc5"
 
 [[files]]
 file = "config/voicechat-client.toml"
@@ -1606,7 +1606,7 @@ hash = "1f8670911537dcb8d8b67e51203f3095b27057ebe398ac3df9301ddd088abfbe"
 
 [[files]]
 file = "config/zone_tactical_anims-client.toml"
-hash = "ec91ff8aada43e4dcb09728f7a394cc553d7f0cda5033aafa2ff914dfd7fc333"
+hash = "3f2398722cfb0ba8604d73cc44a2870c38f2f8d176de5b10ba858f4371ad78c8"
 
 [[files]]
 file = "config/zone_tactical_anims-common.toml"
@@ -1974,7 +1974,7 @@ hash = "16d8e25cb6d12dd7951f979823b1a6198d6da85cc665ae6b2c1f481748a13173"
 
 [[files]]
 file = "kubejs/server_scripts/zone_spawnpoint.js"
-hash = "44b048dbd78a4c1a5afbc497bf008955b5d4e51ac61e236b28c0ea411ab71048"
+hash = "855e539bdf691835f91348d4830cbd643134d880e473035a83ec5834af0bd0a0"
 
 [[files]]
 file = "kubejs/server_scripts/zone_story.js"
@@ -2587,11 +2587,11 @@ hash = "d6364e3b3ffea4b912889d3dcd3e2acebf7d663b22b96402402fbd383eefa460"
 
 [[files]]
 file = "mods/zone_tactical_anims-0.1.0.jar"
-hash = "f01925bbe5c6ef7f7fb19209ff83a562774e737d8e804f33842f04dc54a65a54"
+hash = "94966b1f8a8cc36d2ccb1bce64fc782cdf5c572f32b955a74f7a12a45bf30e59"
 
 [[files]]
 file = "options.txt"
-hash = "4b9d4d234b0d356faef39dcfc1be5686f5bfe32f7a022b32c3e288d79cb4dd3b"
+hash = "ae3cdb5ced790eda76598f2738ca754453276ea71c9e25732cd7eea486740b23"
 preserve = true
 
 [[files]]
