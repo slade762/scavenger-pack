@@ -62,7 +62,7 @@ hash = "a37eb7f218ab61f3277a103a85c5bd14ff0abe0dff94e17883bcbb5ea28a3855"
 
 [[files]]
 file = "config/cinematic_respawn.properties"
-hash = "45343a052a6c590308b10b422a338ae6864040336450ba2df5b65e53445a574d"
+hash = "a7fd621f77485623821b3f24a7c0c7d8497b5833f41e053278ee80d1bd925f52"
 
 [[files]]
 file = "config/cinematic-client.toml"
@@ -334,7 +334,7 @@ hash = "26ac5810c9b5dc5c1968827357f0a58c58ac2b6f7b082630960228e16585062f"
 
 [[files]]
 file = "config/handson_delight.properties"
-hash = "6027f605812f5494730d247d622d2be27715db597e566430049654e5a607fac3"
+hash = "443328f2763d3efa2b816b88954c9cab7307b315cac91d320fec456a192fe306"
 
 [[files]]
 file = "config/holdmyitems-client.toml"
@@ -1554,11 +1554,11 @@ hash = "1f8670911537dcb8d8b67e51203f3095b27057ebe398ac3df9301ddd088abfbe"
 
 [[files]]
 file = "config/zone_tactical_anims-client.toml"
-hash = "f75135011fd6089f7c1dfa82884c2b013c05f0f56088b6b73a9a7e43be9c8289"
+hash = "a35b227adf9b0a2338b2130010e2cf9009d4cd0f3567ecd590e03d3f36b8808f"
 
 [[files]]
 file = "config/zone_tactical_anims-common.toml"
-hash = "a094ba3ff3c65c66ca947b4cd4ed3da10a73d50d9eda521944a441d98637632e"
+hash = "dd7600299335659901dd93aedff6acf18e9aa75d7b88da08ae0b0d90d4d6e9e8"
 
 [[files]]
 file = "config/zone_tactical_anims-keys.done"
@@ -2100,8 +2100,9 @@ hash = "d904979b35440ccfe0a701efb3f06d849e5bd0ce6384f31b358d4e01bb31d89a"
 metafile = true
 
 [[files]]
-file = "mods/elaris-1.0.5.jar"
-hash = "d0a6d7beec10ebc93a563aceb2503c14816b954a3894b657af4dc790e921b0d5"
+file = "mods/elaris.pw.toml"
+hash = "c5698cd6949ed2f8a7b5612b8c99ffca14983f8013b3c5596cc72b747498601a"
+metafile = true
 
 [[files]]
 file = "mods/embeddium-0-3-31-mc1-20-1.pw.toml"
@@ -2449,11 +2450,11 @@ hash = "d6364e3b3ffea4b912889d3dcd3e2acebf7d663b22b96402402fbd383eefa460"
 
 [[files]]
 file = "mods/zone_tactical_anims-0.1.0.jar"
-hash = "d7feff6b93831368473d7455434544cd5e9e17aa3399ac638779555b36d4120a"
+hash = "cc07b6eab2f3ff8779ba12a7300a4aa77b66832ac2a68859154f732e7369c3b1"
 
 [[files]]
 file = "options.txt"
-hash = "591a66681e72756ec90ae1339bbd680d2fd233418f6cd00be0a2d5679661b879"
+hash = "4b9d4d234b0d356faef39dcfc1be5686f5bfe32f7a022b32c3e288d79cb4dd3b"
 preserve = true
 
 [[files]]
