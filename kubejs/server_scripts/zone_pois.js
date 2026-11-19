@@ -144,7 +144,7 @@ function zpoiBuild(server, level, p) {
   var tries = [[0, 0]]
   var rings = [16, 32, 48, 64, 80, 96]
   for (var r = 0; r < rings.length; r++) for (var a = 0; a < 12; a++)
-    tries.push([Math.round(Math.cos(a * Math.PI / 6) * rings[r]), Math.round(Math.sin(a * Math.PI / 6) * rings[r])])
+    tries.push([Math.round(Math.cos(a * 3.141592653589793 / 6) * rings[r]), Math.round(Math.sin(a * 3.141592653589793 / 6) * rings[r])])
   var wet = 0, unloaded = 0, noGround = 0
   for (var t = 0; t < tries.length; t++) {
     var cx = Math.floor(p.x + tries[t][0]), cz = Math.floor(p.z + tries[t][1])

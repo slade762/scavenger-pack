@@ -69,7 +69,7 @@
 	damageToPlayers = 0.5
 	#Gun NPCs: random aim error per shot, in degrees. 0 = perfect aim (TaCZ NPCs Mod default).
 	#Range: 0.0 ~ 30.0
-	aimSpread = 4.0
+	aimSpread = 2.0
 	#NPCs on the same team as you (faction) can't hurt you, and you can't hurt them. Players can still hurt each other.
 	noFriendlyFire = true
 

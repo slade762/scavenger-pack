@@ -252,5 +252,34 @@
                 "id": "customnpcs:textures/entity/humanmale/robesblacksteve.png"
             }
         ]
+    },
+    "military": {
+        "aligned": [
+            "military",
+            "players",
+            "scavengers",
+            "villagers"
+        ],
+        "opposed": [
+            "bandits",
+            "monster",
+            "mutants",
+            "zombies"
+        ],
+        "equipment": {
+            "table": "zone:npc/military",
+            "dropChances": {
+                "mainhand": 0.1,
+                "head": 0.03,
+                "chest": 0.03,
+                "legs": 0,
+                "feet": 0
+            }
+        },
+        "skin": [
+            {
+                "id": "anomalyzone:textures/entity/ambient/ambient_05_duty_recruit.png"
+            }
+        ]
     }
 }

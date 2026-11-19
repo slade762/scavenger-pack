@@ -7,7 +7,8 @@
 //   /kubejs custom_command zone_pacifists_raid    sends a raid to the Old Town right now (for testing)
 var ZPC = {
   MAX: 6,                        // roaming fighters kept around the Chalet
-  PATROL_R: 30,                  // how far they wander from home
+  PATROL_R: 16,                  // how far they may stray from home before being walked back (was 30)
+  WANDER_R: 11,                  // patrol points are picked within this radius of home
   NEAR: 160, MIN_DIST: 24,       // top up only while a player is near, but not right on top of the spawn spot
   REFILL_TICKS: 20 * 60 * 5,
   TOWN: { x: -1215, z: 30 },     // the Old Town (bandit camp)
@@ -18,7 +19,7 @@ var zpcTicks = 0, zpcLastFill = -ZPC.REFILL_TICKS, zpcLastRaid = 0, zpcRaidStart
 
 function zpcHome(srv) {
   var h = srv.persistentData.getCompound('zone_pac_home')
-  if (!h || !h.contains('x')) return null
+  if (!h || !h.contains('x')) return { x: -1488, y: 111, z: -140 }   // default: Mountainview Chalet
   return { x: h.getInt('x'), y: h.getInt('y'), z: h.getInt('z') }
 }
 function zpcGround(level, x, z) {
@@ -93,7 +94,7 @@ ServerEvents.tick(function (event) {
     if (near && !tooClose && zpcTicks - zpcLastFill >= ZPC.REFILL_TICKS) {
       zpcLastFill = zpcTicks
       for (var i = squad.length; i < ZPC.MAX; i++) {
-        var a = Math.random() * Math.PI * 2, r = 5 + Math.random() * 12
+        var a = Math.random() * 3.141592653589793 * 2, r = 5 + Math.random() * 12
         var sx = Math.floor(home.x + Math.cos(a) * r) + 0.5, sz = Math.floor(home.z + Math.sin(a) * r) + 0.5
         var nm = ZPC.NAMES[Math.floor(Math.random() * ZPC.NAMES.length)]
         srv.runCommandSilent('execute in minecraft:overworld positioned ' + sx + ' 0 ' + sz +
@@ -114,7 +115,7 @@ ServerEvents.tick(function (event) {
       var dx = tx - e.x, dz = tz - e.z, d = Math.sqrt(dx * dx + dz * dz)
       if (goingHome && d < ZPC.PATROL_R * 0.6) { e.removeTag('zone_pac_raid'); return }
       if (!goingHome && d < 18) {   // in the town: mill about looking for trouble
-        var ra = Math.random() * Math.PI * 2
+        var ra = Math.random() * 3.141592653589793 * 2
         var mx = ZPC.TOWN.x + Math.cos(ra) * 20, mz = ZPC.TOWN.z + Math.sin(ra) * 20
         zpcMove(e, mx, zpcGround(level, mx, mz), mz); return
       }
@@ -130,7 +131,7 @@ ServerEvents.tick(function (event) {
       if (e.getTarget && e.getTarget()) return
       var d = Math.sqrt(Math.pow(e.x - home.x, 2) + Math.pow(e.z - home.z, 2))
       if (d > ZPC.PATROL_R || Math.random() < 0.25) {
-        var a = Math.random() * Math.PI * 2, r = 4 + Math.random() * (ZPC.PATROL_R - 4)
+        var a = Math.random() * 3.141592653589793 * 2, r = 3 + Math.random() * (ZPC.WANDER_R - 3)
         var px = home.x + Math.cos(a) * r, pz = home.z + Math.sin(a) * r
         zpcMove(e, px, zpcGround(level, px, pz), pz)
       }

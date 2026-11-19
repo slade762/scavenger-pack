@@ -67,7 +67,7 @@ ServerEvents.tick(function (event) {
     var have = Number(zscServer.runCommandSilent('execute in minecraft:overworld if entity @e[type=tacznpcs:npc,tag=zone_scav]')) || 0
     var added = 0
     for (var i = have; i < ZSC.MAX; i++) {
-      var a = Math.random() * Math.PI * 2, r = 6 + Math.random() * 14
+      var a = Math.random() * 3.141592653589793 * 2, r = 6 + Math.random() * 14
       var sx = Math.floor(ZSC.HOME.x + Math.cos(a) * r) + 0.5, sz = Math.floor(ZSC.HOME.z + Math.sin(a) * r) + 0.5
       zscServer.runCommandSilent('execute in minecraft:overworld positioned ' + sx + ' 0 ' + sz +
         ' positioned over motion_blocking_no_leaves run summon tacznpcs:npc ~ ~ ~ {template:"scavengers",CustomName:\'{"text":"Scavenger"}\',PersistenceRequired:1b,Tags:["zone_scav"]}')

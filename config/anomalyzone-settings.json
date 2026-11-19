@@ -30,7 +30,7 @@
   "rarity.rare_pct": 1.0,
   "rarity.special_pct": 5.0,
   "rarity.uncommon_pct": 20,
-  "stamina.enabled": true,
+  "stamina.enabled": false,
   "stamina.regen_per_sec": 8.5,
   "stamina.drain_per_sec": 7.0,
   "stamina.regen_delay_sec": 0.5,

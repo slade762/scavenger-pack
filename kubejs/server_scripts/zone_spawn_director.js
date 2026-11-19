@@ -205,7 +205,7 @@ function groundAt(level, x, yStart, z) {
 function spawnAround(p, mob, count, dist, tag) {
   var level = p.level
   for (var attempt = 0; attempt < 8; attempt++) {
-    var a = Math.random() * Math.PI * 2
+    var a = Math.random() * 3.141592653589793 * 2
     var d = rnd(dist[0], dist[1])
     var x = Math.floor(p.x + Math.cos(a) * d)
     var z = Math.floor(p.z + Math.sin(a) * d)

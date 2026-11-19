@@ -346,7 +346,7 @@ elarisEnabled = true
 	normalStrength = 1.0
 	#Maximum side of each material atlas; smaller limits reduce video memory usage.
 	#Range: 256 ~ 4096
-	textureLimit = 2048
+	textureLimit = 1024
 
 #Planar Reflections
 [reflections]
@@ -537,7 +537,7 @@ elarisEnabled = true
 	enabled = true
 	#Color grading visual style preset: FILMIC_NATURAL, FANTASY_VIBRANT, or NORDIC_ATMOSPHERIC.
 	#Allowed Values: FILMIC_NATURAL, FANTASY_VIBRANT, NORDIC_ATMOSPHERIC
-	colorPreset = "NORDIC_ATMOSPHERIC"
+	colorPreset = "FILMIC_NATURAL"
 	#Exposure compensation in stops before the filmic curve.
 	#Range: -2.0 ~ 2.0
 	exposure = 1.14
@@ -622,7 +622,7 @@ elarisEnabled = true
 	depthAwareRefraction = true
 	#STANDARD (Low) keeps existing Elaris water. HIGH adds spectral waves and underwater optics (OpenGL 4.3). VANILLA disables Elaris water and restores the ordinary Minecraft/Embeddium fluid path. Switching rebuilds chunks without restarting.
 	#Allowed Values: STANDARD, HIGH, VANILLA
-	quality = "VANILLA"
+	quality = "STANDARD"
 	#Enable the finest texture-driven micro-ripple band. When disabled, the shader skips the extra high-frequency texture sample completely.
 	detailWaves = true
 	#Water shader scale relative to the window, capped at world resolution. SSR quality imposes a minimum: Minimum 25%, Medium 50%, High 100%. ESS does not multiply the scale again. Matching full-size water can resolve without a second geometry draw.
@@ -689,9 +689,9 @@ elarisEnabled = true
 [ssr]
 	#MINIMUM / MEDIUM / HIGH. Controls ray traversal, hit refinement, material resolution and history filtering. Water and materials share this preset.
 	#Allowed Values: MINIMUM, MEDIUM, HIGH
-	preset = "MEDIUM"
+	preset = "HIGH"
 	#Screen-space reflections on opaque Embeddium PBR terrain. Requires PBR materials. Does not re-render world geometry. Disabled by default.
-	materialsEnabled = false
+	materialsEnabled = true
 	#Legacy compatibility key. Reflection trace quality is now controlled by ssr.preset; this value is ignored.
 	#Range: 0.25 ~ 1.0
 	quality = 0.4
@@ -708,7 +708,7 @@ elarisEnabled = true
 	enabled = true
 	#MINIMUM / MEDIUM / HIGH. Controls resolution, horizon directions and samples.
 	#Allowed Values: MINIMUM, MEDIUM, HIGH
-	quality = "MINIMUM"
+	quality = "MEDIUM"
 
 #Experimental Rain Puddles
 [rainPuddles]
@@ -821,7 +821,7 @@ elarisEnabled = true
 #ESS / Elaris Super Sampling
 [ess]
 	#Legacy storage key for the unified upscaler selection. Enables shared reduced-resolution world rendering for one ESS or Vulkan SDK reconstruction algorithm. Disabled by default.
-	enabled = true
+	enabled = false
 	#PERFORMANCE: ESS 1.1 spatial reconstruction. QUALITY: ESS 2.0 temporal reconstruction with integrated antialiasing. Legacy ESS_1_0 / ESS_1_1 values migrate to PERFORMANCE.
 	#Allowed Values: PERFORMANCE, QUALITY, ESS_1_0, ESS_1_1
 	mode = "QUALITY"
@@ -856,7 +856,7 @@ elarisEnabled = true
 [antialiasing]
 	#OFF, FXAA, SMAA (spatial 1x), SMAA_2X (two real-frame samples), SMAA_4X (Elaris four real-frame samples, not MSAA+T2x). AA disables all upscalers.
 	#Allowed Values: OFF, FXAA, SMAA, SMAA_2X, SMAA_4X
-	mode = "OFF"
+	mode = "FXAA"
 
 #ESS FG / Elaris Super Sampling Frame Generation
 [essFg]
@@ -878,7 +878,7 @@ elarisEnabled = true
 #Opt-in access to advanced experimental rendering features. Disabled by default.
 [experiments]
 	#Unlock Vulkan SDK upscalers and future Vulkan effects. These features are under development and can be very unstable. Disabling hides their settings and prevents runtime use even if old Vulkan selector keys remain enabled.
-	advancedMode = false
+	advancedMode = true
 
 #Experimental Vulkan SDK super resolution. World rasterization remains OpenGL; HUD and hands stay native.
 [experimentalVulkan]

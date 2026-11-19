@@ -234,7 +234,7 @@ function zstAcolytes(srv) {
   if (have >= 2) return
   var level = srv.getLevel('minecraft:overworld')
   for (var i = have; i < a.count; i++) {
-    var ang = (i / a.count) * Math.PI * 2 + Math.random() * 0.6
+    var ang = (i / a.count) * 3.141592653589793 * 2 + Math.random() * 0.6
     var r = a.ring[0] + Math.random() * (a.ring[1] - a.ring[0])
     var x = Math.floor(center[0] + Math.cos(ang) * r), z = Math.floor(center[2] + Math.sin(ang) * r)
     var y = zstGround(level, x, z)

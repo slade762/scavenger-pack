@@ -40,6 +40,13 @@ var ZAN = {
     { x: -450, z: -700, r: 60 }       // Old Quarry
   ],
   POI_MARGIN: 70,
+  // fixed starter fields 250-330 m from the Bar (the hashed layout leaves the starter area empty), one per direction
+  STARTER: [
+    { key: 's_ne', x: -1268, z: 244, n: 3, family: 'thermo' },
+    { key: 's_s',  x: -1528, z: 394, n: 3, family: 'bio' },
+    { key: 's_w',  x: -1828, z: 94,  n: 2, family: 'thermo' },
+    { key: 's_n',  x: -1606, z: -196, n: 3, family: 'bio' }
+  ],
   SEED: 7177
 }
 var zanTick = 0, zanWarned = {}, zanDone = null, zanFails = {}
@@ -49,6 +56,11 @@ function zanCmd(srv, c) { return Number(srv.runCommandSilent(String(c))) || 0 }
 function zanLoad(srv) {
   if (zanDone) return zanDone
   try { var raw = String(srv.persistentData.getString('zone_anomalies') || ''); zanDone = raw ? JSON.parse(raw) : {} } catch (e) { zanDone = {} }
+  // one-off: squares visited while Math.PI was undefined (NaN positions) were wrongly saved as empty; forget them
+  if (!srv.persistentData.getBoolean('zone_anomalies_pifix')) {
+    Object.keys(zanDone).forEach(function (k) { if (zanDone[k] === 0) delete zanDone[k] })
+    srv.persistentData.putBoolean('zone_anomalies_pifix', true); zanSave(srv)
+  }
   return zanDone
 }
 function zanSave(srv) { srv.persistentData.putString('zone_anomalies', JSON.stringify(zanDone)) }
@@ -93,7 +105,7 @@ function zanBuild(srv, f, refY) {
   var spread = ZAN.SPREAD[0] + Math.random() * (ZAN.SPREAD[1] - ZAN.SPREAD[0])
   var want = f.n + (f.proto ? 1 : 0)
   for (var tries = 0; tries < want * 4 && placed < want; tries++) {
-    var a = Math.random() * Math.PI * 2, d = Math.sqrt(Math.random()) * spread
+    var a = Math.random() * 3.141592653589793 * 2, d = Math.sqrt(Math.random()) * spread
     var x = Math.floor(f.x + Math.cos(a) * d), z = Math.floor(f.z + Math.sin(a) * d)
     if (zanCmd(srv, 'execute in minecraft:overworld if loaded ' + x + ' 0 ' + z) <= 0) continue
     var y = typeof groundAt === 'function' ? groundAt(level, x, refY, z) : null
@@ -110,6 +122,12 @@ function zanStep(srv) {
   srv.players.forEach(function (p) {
     if (!String(p.level.dimension).includes('overworld')) return
     var pcx = Math.floor(p.x / ZAN.CELL), pcz = Math.floor(p.z / ZAN.CELL)
+    ZAN.STARTER.forEach(function (f) {
+      if (done[f.key] !== undefined || Math.hypot(p.x - f.x, p.z - f.z) > ZAN.BUILD_DIST) return
+      var n = zanBuild(srv, f, p.y)
+      if (n > 0) { done[f.key] = [f.x, f.z, n, f.family]; changed = true; console.info('[zone] anomalies: ' + n + 'x ' + f.family + ' starter field at ' + f.x + ', ' + f.z) }
+      else if ((zanFails[f.key] = (zanFails[f.key] || 0) + 1) > 12) { done[f.key] = 0; changed = true }
+    })
     for (var dx = -1; dx <= 1; dx++) for (var dz = -1; dz <= 1; dz++) {
       var cx = pcx + dx, cz = pcz + dz, key = cx + ',' + cz
       if (done[key] !== undefined) continue

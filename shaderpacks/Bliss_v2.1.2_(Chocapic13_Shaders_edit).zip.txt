@@ -1,0 +1,19 @@
+#Wed Nov 18 18:23:00 PST 2026
+shadowDistance=64.0
+SHADOWS_GRADE_R=0.9
+TRANSLUCENT_COLORED_SHADOWS=true
+MIDS_GRADE_B=0.9
+HIGHLIGHTS_GRADE_R=0.9
+sun_illuminance=100000.0
+COLOR_GRADING_ENABLED=true
+SHADOWS_GRADE_G=0.9
+shadowMapResolution=512
+moon_illuminance=0.0
+TAA=false
+Haze_amount=5.0
+VL_RENDER_RESOLUTION=0.25
+RainFog_amount=0.15
+entityShadowDistanceMul=0.05
+TOD_Fog_mult=2.00
+WAVY_STRENGTH=2.0
+VL_SAMPLES=6

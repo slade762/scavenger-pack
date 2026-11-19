@@ -30,11 +30,11 @@ hash = "543e4f372bc7b054f48eebd12990b477b135625e0038e92dd1564b436cc42ec7"
 
 [[files]]
 file = "config/anomalyzone-settings.json"
-hash = "1bda42d2ae426cb801e99ed1ba22952285e1cacae9722f2255d67a276e9bd2b3"
+hash = "9f7bd67346e47c5b01e96d31aa492635d5d3a2dcb5bc3c3baddb6e518891ad0c"
 
 [[files]]
 file = "config/backpack_side_gui-client.toml"
-hash = "3b160468c93f6ff5897553884d704811ec86263aa60f89c1655b0a18e3e1bd3b"
+hash = "64aceece8f40ae35bccde9d95d68a790451e36300fbce545767fe2baf375a54f"
 
 [[files]]
 file = "config/badmobs-common.toml"
@@ -53,8 +53,16 @@ file = "config/blueprint-common.toml"
 hash = "d335fd00458005d989d55a6615073d5b390ea08d5e1d129229518f90d5d3ef9b"
 
 [[files]]
+file = "config/c2me.toml"
+hash = "cf1fb4f31f222d85efe0c4e1d37228ee4038ddffd0eb389b254861361a2e4507"
+
+[[files]]
+file = "config/canary.properties"
+hash = "a37eb7f218ab61f3277a103a85c5bd14ff0abe0dff94e17883bcbb5ea28a3855"
+
+[[files]]
 file = "config/cinematic_respawn.properties"
-hash = "1ece19013bc914f28b75d319b18abe383adf594307d64e042628a06deb680871"
+hash = "45343a052a6c590308b10b422a338ae6864040336450ba2df5b65e53445a574d"
 
 [[files]]
 file = "config/cinematic-client.toml"
@@ -114,7 +122,7 @@ hash = "556eb7b8706d92662bababd89e7ade09b19625efe6e3ea25900084aee83195c8"
 
 [[files]]
 file = "config/DistantHorizons.toml"
-hash = "7ddd87bd681e9eaead3fb42afccbe796caaeb91fc7b7355e3f4f59426ae97aa2"
+hash = "8d76ff6f0f649863a167de34e5a4a67892556f51857bba7e276f8c8aa012c605"
 
 [[files]]
 file = "config/dochi_warfare/server-ai.json"
@@ -142,7 +150,7 @@ hash = "95ce6a868535f6cd8d5e7dd4ea7ce65c372ca44a94b6a2ffb1de11d73cf20dbe"
 
 [[files]]
 file = "config/elaris-client.toml"
-hash = "1ac26dd5ab6d0c6f7c1354d0f0779ac3630407aac09bfbf751ff1bc0d372e6c8"
+hash = "0d709c163cdf1c1c90a3f30374b69b92d3955a053c2c4b9f7ac47785f2ec40d3"
 
 [[files]]
 file = "config/embeddium-fingerprint.json"
@@ -154,7 +162,7 @@ hash = "09ff183e061d93b79514bc171bf9118497578757e7a5c45946039487656e2619"
 
 [[files]]
 file = "config/embeddium-options.json"
-hash = "b78e1a745d5080dc2e50dd192982aeb59f32b1645626b77ac38a2b725ea52122"
+hash = "2d0f7904cd206067a46c8b64a88e8b46e855baa11b403fb08355d0e8c4c81630"
 
 [[files]]
 file = "config/emf_compat.json"
@@ -326,7 +334,7 @@ hash = "26ac5810c9b5dc5c1968827357f0a58c58ac2b6f7b082630960228e16585062f"
 
 [[files]]
 file = "config/handson_delight.properties"
-hash = "ac9031479e1963f875615aee1d24673212efb978c7bf5fa1e6cca160a4ccda5a"
+hash = "6027f605812f5494730d247d622d2be27715db597e566430049654e5a607fac3"
 
 [[files]]
 file = "config/holdmyitems-client.toml"
@@ -486,7 +494,7 @@ hash = "92fe5e275027a6b0f30e14d08a330f933b68b38f823980a559d7af111bc5e6a4"
 
 [[files]]
 file = "config/immediatelyfast.json"
-hash = "f2b7f219198f0a911d04b09f545f2c1256e8d114951443924878dc10963e16aa"
+hash = "2855f4c1f0d4aa33a2bd1ae4e40f4bf17471d13759adbd6e2c0fceb2e8268d9b"
 
 [[files]]
 file = "config/immersive_aircraft.json"
@@ -698,7 +706,7 @@ hash = "fad9aea710ec3508eab562cd8f2b5f8e2dda6ee1c5fb1fe818f90ce253017f66"
 
 [[files]]
 file = "config/modernfix-mixins.properties"
-hash = "d14187d95596f5ed803bdd51ff10c9ab0228c94e4d085005b6975332fb00b172"
+hash = "54ff1bb72fc93d67c0d05083fd56983c52fd255501f8a26a760c91c57bc855e3"
 
 [[files]]
 file = "config/moonlight-client.toml"
@@ -707,6 +715,10 @@ hash = "47297d47ca3fa4525d1adbc7234b9b0dc2ee490b87216fe6002e34ff69acac08"
 [[files]]
 file = "config/moonlight-common.toml"
 hash = "02cd35fbcc371cf63303ae1264ad9f4613b3f73ace93417af825baf7d3ac7baf"
+
+[[files]]
+file = "config/moreculling.toml"
+hash = "51507abe602603dc5ba1284a48dc21fb62c792d0852d7fa0b5c33ebf8cf70f6f"
 
 [[files]]
 file = "config/necronomicon.json5"
@@ -718,7 +730,7 @@ hash = "f72dc2bce12a55066bd33e50c47b1ad33b1bdda65778cb5653d876e1fec3694d"
 
 [[files]]
 file = "config/oculus.properties"
-hash = "b123a8bab1a5bc4f0a5767dc426e3bd3188891f5d6a4a85a85f23a1efac0930c"
+hash = "31bdd2466ddf8e38afcbbaf88ff3a40beb66f308551bcf61578de935d91dd5e6"
 
 [[files]]
 file = "config/particlerain/config.json"
@@ -731,6 +743,10 @@ hash = "3a481b444160273ae42aae81eb0405eca4dee6d28687bed372427df6da8f80e4"
 [[files]]
 file = "config/pickupnotifier/pickupnotifier-client.toml"
 hash = "242a0f58407ecc71ff5e2c6cd2910001c089ee4e6130454c377115e8a8f3c83a"
+
+[[files]]
+file = "config/pickupnotifier/pickupnotifier-server.toml"
+hash = "6e18bfa2ec02629937474e436f3f44fb67d54fd6e6b47a7c9b4c5b3a3bd83916"
 
 [[files]]
 file = "config/prefab.toml"
@@ -890,7 +906,7 @@ hash = "2362458f3d0f21109801739128cd32c3e6dafe5ff25f84760fcd9f4bb927d4f2"
 
 [[files]]
 file = "config/tacznpc_loadouts.json"
-hash = "812d56a2b0a024a5daf671a10b1c38242ca40eedf985b25c2d2784d665a0683c"
+hash = "09a498a3bbd380a62857caf9dd119309eac8a56dc20ba18fe19147cd8b8c151b"
 
 [[files]]
 file = "config/tacznpc_structures.json"
@@ -966,7 +982,7 @@ hash = "c167ad90e6fc2b409c7683dbeac88cbfd85849b90f8df13b5446c1203c1c510c"
 
 [[files]]
 file = "config/weatherglass.properties"
-hash = "843720691ceb10d620ab4f3455bf4ec342143ffed4bb3104d8ab9cfc7a02f0f6"
+hash = "be0f9fe164262dcd18e6c9a1abbfd451edc692eb71f45e2c08f80a96fa78468c"
 
 [[files]]
 file = "config/worldedit/.archive-unpack/2e1dd752/.unpack_finished"
@@ -1442,7 +1458,7 @@ hash = "6de833a135cc17b7426520b68bd7820a62fbb19aa1489c7fcc78b14c8ebc3d4e"
 
 [[files]]
 file = "config/worldedit/worldedit.properties"
-hash = "7ede1d61785a75ff2988f6f1239e646d35acfd1dd04be8e835dac4a0a735e0f0"
+hash = "933546ba0dc91772f61ace5a6530534c9a6293a799e68291fc37ead06b6a051c"
 
 [[files]]
 file = "config/xaero/lib/client.cfg"
@@ -1538,11 +1554,11 @@ hash = "1f8670911537dcb8d8b67e51203f3095b27057ebe398ac3df9301ddd088abfbe"
 
 [[files]]
 file = "config/zone_tactical_anims-client.toml"
-hash = "c871010ad320d46f9685335850012e7f5c5977f4ec28669013d8d1b37a5e00b6"
+hash = "f75135011fd6089f7c1dfa82884c2b013c05f0f56088b6b73a9a7e43be9c8289"
 
 [[files]]
 file = "config/zone_tactical_anims-common.toml"
-hash = "b5db55bfc9dfa1cafdffe74fcffc7335d0430164cc77b42074585311e01e05d4"
+hash = "a094ba3ff3c65c66ca947b4cd4ed3da10a73d50d9eda521944a441d98637632e"
 
 [[files]]
 file = "config/zone_tactical_anims-keys.done"
@@ -1627,6 +1643,10 @@ hash = "07c005319b430b1687f7c4243722692976c6ba066ed999b48f4c8e0c5e4691d5"
 [[files]]
 file = "kubejs/data/curios/tags/items/body.json"
 hash = "060876121baec91104538b944f4bec01702da6e317a8d9f9d647b48e9513ebc4"
+
+[[files]]
+file = "kubejs/data/forge/tags/worldgen/biome/is_spooky.json"
+hash = "5df54bbb8d5f665c96714bcf8a4a243747b66f3373a792bd9c94e8fd6b7cd26e"
 
 [[files]]
 file = "kubejs/data/fracturepoint/curios/slots/backpack.json"
@@ -1717,6 +1737,10 @@ file = "kubejs/data/zone/loot_tables/npc/choir_acolyte.json"
 hash = "d62366fc7590336bed0936638f9d8ff427686b563db63ba82694d3770ce42c7a"
 
 [[files]]
+file = "kubejs/data/zone/loot_tables/npc/military.json"
+hash = "d3b291e94e8c3b26d6130da2d09bcc45b81ae67fccf6ab16ef0084635fe62b6d"
+
+[[files]]
 file = "kubejs/data/zone/loot_tables/npc/pacifist.json"
 hash = "da8e27d159624de8e3b3c63229393239c0139cd7e55be9cf213e793c6250617e"
 
@@ -1761,6 +1785,10 @@ file = "kubejs/data/zone/structures/tunnels.nbt"
 hash = "3a287090908a3a1d78086835f43d4980c576e2e668768bae028fbfc3e6c634e0"
 
 [[files]]
+file = "kubejs/data/zone/worldgen/biome/dead_city.json"
+hash = "cd0bbfc93f4d86d285cc3a4b7280d22b62cd5c13479587cd377a6abec01a5d2d"
+
+[[files]]
 file = "kubejs/README.txt"
 hash = "989f3737ae4621b8ff6730bce4cbeeee756921e7e510e0c281c8a350501d98af"
 
@@ -1778,7 +1806,7 @@ hash = "8f260c8d6224b6da9a88d34dc171f54881dbe04e8a77b264cb61b6bd2dafcbef"
 
 [[files]]
 file = "kubejs/server_scripts/zone_anomalies.js"
-hash = "01e0720275b2a2121d60d45d11d890bfc9d52ad382336585cc6833c78689b1a2"
+hash = "842b19a587a5549e3759f8ed38ab9a81776c0468767c7a9c590dbb890827017e"
 
 [[files]]
 file = "kubejs/server_scripts/zone_artifacts.js"
@@ -1802,7 +1830,7 @@ hash = "4d862409c593504a54cc2b130f20e33cff9974f940177c3b99cae65f2071b0fc"
 
 [[files]]
 file = "kubejs/server_scripts/zone_city_biome.js"
-hash = "31421777b7891612ba20ada832755d74c53b9caaafd97a2b294eafa19119cced"
+hash = "7a4e756563f4ee583dd9c8bedb202e1c52f83f97d7c5129341b94383d3050edb"
 
 [[files]]
 file = "kubejs/server_scripts/zone_dialog_quests.js"
@@ -1810,7 +1838,7 @@ hash = "b2e8aa70a415e51cae159cf8d5873544db6b7b34607651e9e1780eba57ae9a36"
 
 [[files]]
 file = "kubejs/server_scripts/zone_factions.js"
-hash = "32ad60339ae6757e8e01b1824ae95523fdad45465e8349a89883f3c148aa47c4"
+hash = "6ee72da1264b81a80cf78acf740b42eeea8dde30aefa3829a16d26e16b34c7fc"
 
 [[files]]
 file = "kubejs/server_scripts/zone_fp_backpacks.js"
@@ -1823,6 +1851,10 @@ hash = "4c63e38ee2080a7c9ab3ff39ab2a2abb20ddf0bd80098a7f31857cd1485c15e5"
 [[files]]
 file = "kubejs/server_scripts/zone_locked_slots.js"
 hash = "d0dc82263ffe4be9f5b90a8831dbbe782c7d8616ecf4f14d3988781bb5700ce1"
+
+[[files]]
+file = "kubejs/server_scripts/zone_military.js"
+hash = "921ebc99171769eac11cb0e7f1a3f4de49b8681c422e4da4d9455f66233988fa"
 
 [[files]]
 file = "kubejs/server_scripts/zone_mutant_gate.js"
@@ -1838,7 +1870,7 @@ hash = "75d219086bf89b159717640596d59df2c619cb2d096be4a1acffea2bb4d1f109"
 
 [[files]]
 file = "kubejs/server_scripts/zone_npc_pace.js"
-hash = "6caae9b9bcb9078335a85c338f3c5fe77c0cd7dcc51bc8e88cad7950261826e7"
+hash = "34b3e44591ce3e52cba20f5e3ac32656b3c55c5a682fac9709ec8546bc381fd5"
 
 [[files]]
 file = "kubejs/server_scripts/zone_npc_unstuck.js"
@@ -1846,11 +1878,11 @@ hash = "41bc2b00c8025d8d983fd0666d286e0fb97715b70896f8490f4150050bbc738c"
 
 [[files]]
 file = "kubejs/server_scripts/zone_pacifists.js"
-hash = "7a71ba8af2098da10b36f133565a0b8f5115001ff7c5e2de28aee9b1951619f2"
+hash = "2ceed7d31715e6ae634ed756da51814ca3da345f79cb5a097edb75b0de7292c8"
 
 [[files]]
 file = "kubejs/server_scripts/zone_pois.js"
-hash = "1cb364803419ac44761ee673ed2c88370609f4bf55a8e9303526ca3a5c1d2693"
+hash = "07ef557c18ddd6af5ced433741d796badd54be14970ed258c729b0551a71679f"
 
 [[files]]
 file = "kubejs/server_scripts/zone_questgivers.js"
@@ -1862,7 +1894,7 @@ hash = "7f3d809f365b8f6bd3a1baa4e59a4f773eb758bcdfbe72502d81375fc7001c8c"
 
 [[files]]
 file = "kubejs/server_scripts/zone_scavengers.js"
-hash = "e233f74c48bdfca569d7d1d39152c198c780cbce9facd93226f86152f5defdfc"
+hash = "3056b99177a11b88dae2bdf04dd04fafad986da870813a2249d1661958586c65"
 
 [[files]]
 file = "kubejs/server_scripts/zone_sell_barrel.js"
@@ -1870,7 +1902,7 @@ hash = "5c38ce28071b4049a9383a3343e364c3ab220f029cb964a71ba97e65d1b0199a"
 
 [[files]]
 file = "kubejs/server_scripts/zone_spawn_director.js"
-hash = "5315dd53eae9c8e2eb1ee0f6d94276faef5c4d5a278e4501b7607f92c10abcd4"
+hash = "16d8e25cb6d12dd7951f979823b1a6198d6da85cc665ae6b2c1f481748a13173"
 
 [[files]]
 file = "kubejs/server_scripts/zone_spawnpoint.js"
@@ -1878,7 +1910,7 @@ hash = "44b048dbd78a4c1a5afbc497bf008955b5d4e51ac61e236b28c0ea411ab71048"
 
 [[files]]
 file = "kubejs/server_scripts/zone_story.js"
-hash = "2cd130eb5e2ae67abff75404da0727a85eb6329df431ff1c5a5ddb6764ec7ddf"
+hash = "1c8c7c6a115b02e58b1b7f1764d375092837b3085d9919b3cf69627f0d8c7f1c"
 
 [[files]]
 file = "kubejs/server_scripts/zone_traders.js"
@@ -1973,6 +2005,14 @@ hash = "4a840e54415720ef104ec7d6fefb9b74f476f7f516c22be2b07e79e50521e9bd"
 metafile = true
 
 [[files]]
+file = "mods/c2meforge-0.2.0-forge.9.9.6-all.jar"
+hash = "e73681883b2c867049800f8b2f7bdcbbbda6c9a44eb5e165c0513914364abfc6"
+
+[[files]]
+file = "mods/canary-mc1.20.1-0.3.3.jar"
+hash = "51f6d78dd6c7874657e5757fd2f5d780aa3cd415052ad071077b8894c6430942"
+
+[[files]]
 file = "mods/Cinematic Interaction-Forge-1.20.1-0.18.30.jar"
 hash = "450633a9df4f5735ca484beb7168343e3919e182a08fd915fc13e2edb24b0443"
 
@@ -2058,6 +2098,10 @@ metafile = true
 file = "mods/e4mc-voice-bridge-1-2-0-1-20-1-forge.pw.toml"
 hash = "d904979b35440ccfe0a701efb3f06d849e5bd0ce6384f31b358d4e01bb31d89a"
 metafile = true
+
+[[files]]
+file = "mods/elaris-1.0.5.jar"
+hash = "d0a6d7beec10ebc93a563aceb2503c14816b954a3894b657af4dc790e921b0d5"
 
 [[files]]
 file = "mods/embeddium-0-3-31-mc1-20-1.pw.toml"
@@ -2219,6 +2263,10 @@ metafile = true
 file = "mods/moonlight-1-20-2-16-39-forge.pw.toml"
 hash = "d28c42b4d66278c0d878498f90fbfc2aabbfa58e54616a074b357204ebf29f4d"
 metafile = true
+
+[[files]]
+file = "mods/moreculling-0.24.6-all.jar"
+hash = "56734f0ccba99efa731e9d3bc2628cd601aa72a8202183b8e0358d4ad4fffc83"
 
 [[files]]
 file = "mods/necronomicon-forge-1-6-0-1-20-1.pw.toml"
@@ -2401,11 +2449,11 @@ hash = "d6364e3b3ffea4b912889d3dcd3e2acebf7d663b22b96402402fbd383eefa460"
 
 [[files]]
 file = "mods/zone_tactical_anims-0.1.0.jar"
-hash = "cf986763c8db289e33650a4836b7af7b6128e80126775aacd713140b65777395"
+hash = "d7feff6b93831368473d7455434544cd5e9e17aa3399ac638779555b36d4120a"
 
 [[files]]
 file = "options.txt"
-hash = "d95f8e10be9aaa41d7697dcac96c05bba5670de2c06d06d20983678d09b14b46"
+hash = "591a66681e72756ec90ae1339bbd680d2fd233418f6cd00be0a2d5679661b879"
 preserve = true
 
 [[files]]
@@ -2423,12 +2471,12 @@ hash = "b97d905ce57305721f0f5228c46814d9fbb0d90b0c5fc5b94f78d30ff6fcd850"
 
 [[files]]
 file = "servers.dat"
-hash = "4fb4dbe302df1dd784ca4a2cd51be6f2cff96817eee1d918a57fb0eaee5ad3ea"
+hash = "01a2a13f84243c47dd8c19648854fe9bfdc85a8ed5184ec13a6983223a40b6b6"
 preserve = true
 
 [[files]]
-file = "shaderpacks/Spooklementary_v2.0.4.zip.txt"
-hash = "b89d7cf76e4294ca6d7aea739e6f25f0a1395c1bdec6ad45fa9217cb11709b44"
+file = "shaderpacks/Bliss_v2.1.2_(Chocapic13_Shaders_edit).zip.txt"
+hash = "c109dec254cb064eba7513da9bb2b71793a8157bb9f4a7f056b99bd031589339"
 
 [[files]]
 file = "tacz/.export-state.json"
