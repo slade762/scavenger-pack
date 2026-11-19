@@ -6,7 +6,7 @@
 //   /kubejs custom_command zone_npc_fedya      Fedya, mechanic (Bar)          - fetch jobs
 //   /kubejs custom_command zone_npc_kravets    Major Kravets (Military base)
 //   /kubejs custom_command zone_npc_eliwood    Eliwood (Pacifists, Mountainview Chalet) - suppressed AKM
-//   /kubejs custom_command zone_npc_rusak      Quartermaster Rusak (The Armoury)
+//   /kubejs custom_command zone_npc_rusak      Forgemaster Rusak (The Armoury) - also auto-placed at 264 86 -499
 //   /kubejs custom_command zone_npc_remove     removes the quest-giver within 2 blocks of you
 // Their dialogs and quests live in world/customnpcs (dialogs 30-92, quests 10-61).
 // Placing one again replaces the old copy, so you can move them any time.
@@ -36,27 +36,34 @@ var ZQG = {
              gun: 'tacz:modern_kinetic_gun{GunId:"tacz:ak47",GunFireMode:"AUTO",GunCurrentAmmoCount:30,HasBulletInBarrel:1b,AttachmentMUZZLE:{id:"tacz:attachment",Count:1b,tag:{AttachmentId:"tacz:muzzle_silencer_ursus"}}}',
              skin: 'anomalyzone:textures/entity/ambient/ambient_10_misc2.png',
              armor: { 'armor.chest': 'itz:psz_chestplate_freedom', 'armor.legs': 'itz:psz_leggings_freedom', 'armor.feet': 'itz:psz_boots_freedom' } },
-  rusak:   { name: 'Quartermaster Rusak', title: 'The Armoury',        team: 'armoury',    dialog: 85 }
+  rusak:   { name: 'Forgemaster Rusak',   title: 'The Armoury',        team: 'armoury',    dialog: 85,
+             at: [264, 86, -499, 0] }   // fixed home: zone_armoury.js places him there if he's missing
 }
+
+// summons quest-giver `key` at x y z facing yaw (replaces any old copy). Used by the op command and zone_armoury.js.
+function zqgPlace(srv, key, x, y, z, yaw, dimId) {
+  var n = ZQG[key]
+  var dim = 'execute in ' + dimId + ' run '
+  var tag = 'zq_' + key
+  srv.runCommandSilent('kill @e[type=customnpcs:customnpc,tag=' + tag + ']')
+  var nbt = '{Name:"' + n.name + '",Title:"' + n.title + '",' +
+    'NPCDialogOptions:[{DialogSlot:0,NPCDialog:{Title:"Talk",Dialog:' + n.dialog + ',DialogColor:14737632,OptionType:1,DialogCommand:""}}],' +
+    'StartPosNew:[I;' + x + ',' + y + ',' + z + '],MovementType:0,ReturnToStart:1b,' +
+    (n.skin ? 'Texture:"' + n.skin + '",' : '') + 'Invulnerable:1b,PersistenceRequired:1b,Rotation:[' + yaw + 'f,0f],Tags:["zone_qnpc","' + tag + '"]}'
+  srv.runCommandSilent(dim + 'summon customnpcs:customnpc ' + (x + 0.5) + ' ' + y + ' ' + (z + 0.5) + ' ' + nbt)
+  srv.runCommandSilent('team join ' + n.team + ' @e[type=customnpcs:customnpc,tag=' + tag + ']')
+  if (n.armor) Object.keys(n.armor).forEach(function (s) { srv.runCommandSilent('execute in minecraft:overworld run item replace entity @e[type=customnpcs:customnpc,tag=' + tag + ',limit=1] ' + s + ' with ' + n.armor[s]) })
+  if (n.gun) srv.runCommandSilent('execute in minecraft:overworld run item replace entity @e[type=customnpcs:customnpc,tag=' + tag + ',limit=1] weapon.mainhand with ' + n.gun)
+  return n
+}
+global.zoneQgPlace = zqgPlace
 
 Object.keys(ZQG).forEach(function (key) {
   ServerEvents.customCommand('zone_npc_' + key, function (event) {
     var p = event.player
     if (!p) return
-    var n = ZQG[key], srv = event.server
     var x = Math.floor(p.x), y = Math.floor(p.y), z = Math.floor(p.z)
-    var yaw = Math.round(p.yaw * 10) / 10
-    var dim = 'execute in ' + p.level.dimension + ' run '
-    var tag = 'zq_' + key
-    srv.runCommandSilent('kill @e[type=customnpcs:customnpc,tag=' + tag + ']')
-    var nbt = '{Name:"' + n.name + '",Title:"' + n.title + '",' +
-      'NPCDialogOptions:[{DialogSlot:0,NPCDialog:{Title:"Talk",Dialog:' + n.dialog + ',DialogColor:14737632,OptionType:1,DialogCommand:""}}],' +
-      'StartPosNew:[I;' + x + ',' + y + ',' + z + '],MovementType:0,ReturnToStart:1b,' +
-      (n.skin ? 'Texture:"' + n.skin + '",' : '') + 'Invulnerable:1b,PersistenceRequired:1b,Rotation:[' + yaw + 'f,0f],Tags:["zone_qnpc","' + tag + '"]}'
-    srv.runCommandSilent(dim + 'summon customnpcs:customnpc ' + (x + 0.5) + ' ' + y + ' ' + (z + 0.5) + ' ' + nbt)
-    srv.runCommandSilent('team join ' + n.team + ' @e[type=customnpcs:customnpc,tag=' + tag + ']')
-    if (n.armor) Object.keys(n.armor).forEach(function (s) { srv.runCommandSilent('execute in minecraft:overworld run item replace entity @e[type=customnpcs:customnpc,tag=' + tag + ',limit=1] ' + s + ' with ' + n.armor[s]) })
-    if (n.gun) srv.runCommandSilent('execute in minecraft:overworld run item replace entity @e[type=customnpcs:customnpc,tag=' + tag + ',limit=1] weapon.mainhand with ' + n.gun)
+    var n = zqgPlace(event.server, key, x, y, z, Math.round(p.yaw * 10) / 10, String(p.level.dimension))
     p.tell(Text.of('Placed ' + n.name + ' at ' + x + ' ' + y + ' ' + z + '. Step off the spot and right-click to talk.').color(0x9BD86A))
   })
 })

@@ -1,0 +1,46 @@
+#Whether automatic airdrop scheduling is enabled.
+enabled = true
+#Minimum interval between automatic delivery starts in seconds. Only one aircraft may be in flight; landed crates do not count. Changing either interval resets the next check.
+#Range: > 1
+interval_min_seconds = 6300
+#Maximum automatic event interval in seconds. Set equal to interval_min_seconds for a fixed interval.
+#Range: > 1
+interval_max_seconds = 8100
+#Minimum horizontal distance from the selected player to the drop point.
+#Range: 0 ~ 200
+min_drop_distance = 64
+#Maximum horizontal distance from the selected player to the drop point.
+#Range: 0 ~ 200
+max_drop_distance = 150
+#Allow crates to land above liquid surfaces without replacing the liquid.
+allow_liquid_landing = true
+#Smoke color for all supply crates, as a hexadecimal RGB color (#RRGGBB). Sent by the server with each particle.
+smoke_color = "#FF0000"
+#Emit smoke while a supply crate is descending. Landed crates emit smoke while they contain supplies.
+airborne_smoke_enabled = false
+#Dimension IDs or #dimension tags where automatic airdrops and signal tubes may request deliveries. Tags group dimension IDs, not dimension types.
+allowed_dimensions = ["minecraft:overworld"]
+
+[signal_tube]
+	#Chance to add one signal tube to a vanilla structure chest loot roll. Zero disables this bonus.
+	#Range: 0.0 ~ 1.0
+	loot_chance = 0.0
+	#Fraction of bonus signal tubes that have no suffix and request a random type. Other tubes bind a loaded type by its weight.
+	#Range: 0.0 ~ 1.0
+	random_variant_chance = 0.3
+	#Maximum flare flight distance in blocks before bursting. Collisions burst sooner.
+	#Range: 1.0 ~ 256.0
+	range = 48.0
+	#Flare speed in blocks per tick, along the player's aim.
+	#Range: 0.25 ~ 4.0
+	speed = 1.5
+	#Burst damage radius in blocks. The burst does not break blocks or create ground fire.
+	#Range: 0.1 ~ 8.0
+	burst_radius = 3.0
+	#Raw burst damage before armour and other damage modifiers; 3 points are 1.5 hearts.
+	#Range: 0.0 ~ 100.0
+	damage = 3.0
+	#Fire duration on a directly hit living entity. Nearby burst victims are not ignited.
+	#Range: 0 ~ 60
+	direct_hit_burn_seconds = 5
+

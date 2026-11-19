@@ -1,12 +1,17 @@
 // One currency: rubles (Slade).
-// Anomaly Zone keeps rubles as a balance on your PDA. Everything else feeds into it:
-//  - Into The Zone coupons and Coupon Packs turn into rubles the moment they're in your pockets (loot still drops them)
-//  - old Wallets pay out their balance and disappear
-//  - Tarkov ruble notes (100 / 1,000 / 5,000) are paid in at face value, except while you stand next to a
-//    Custom NPCs trader (so you can pay with them); walk away and any left over go back on the PDA
-//  - the bunker sell barrel pays rubles (zone_sell_barrel.js)
-// Rate: 1 coupon = 500 rubles (a pistol ~30,000, an AK-74 ~125,000; artifacts sell for 40,000-150,000).
-var ZRUB = { RATE: 500, PACK: 50, NOTES: { 'tarkovdayz:rubble_100': 100, 'tarkovdayz:rubble_1000': 1000, 'tarkovdayz:rubble_5000': 5000 } }
+// Cash and the bank are separate now (STALKER/Tarkov tension):
+//  - CASH: Tarkov ruble notes (100 / 1,000 / 5,000) are real items. They stay in your pockets, you pay traders
+//    with them, and whatever you carry drops on your body when you die.
+//  - BANK: the Anomaly Zone PDA balance. Only the ATM at the Bar moves money in or out (zone_atm.js);
+//    PDA contract rewards are paid straight into it. It is never lost on death.
+//  - Coupons are gone from the economy. Any Into The Zone coupon, Coupon Pack or old Wallet that turns up
+//    is swapped for notes on the spot (1 coupon = 500 rubles), so nothing ever pays out in coupons again.
+// Rate reference: a pistol ~30,000, an AK-74 ~125,000; artifacts sell for 40,000-150,000.
+var ZRUB = {
+  RATE: 500, PACK: 50,
+  NOTES: [[5000, 'tarkovdayz:rubble_5000'], [1000, 'tarkovdayz:rubble_1000'], [100, 'tarkovdayz:rubble_100']],
+  VALUE: { 'tarkovdayz:rubble_100': 100, 'tarkovdayz:rubble_1000': 1000, 'tarkovdayz:rubble_5000': 5000 }
+}
 var zrubTick = 0
 var zrubWarned = false
 var zrubJ = null
@@ -20,26 +25,61 @@ function zrubJava() {
   return zrubJ
 }
 function zrubFmt(n) { return String(Math.round(n)).replace(/\B(?=(\d{3})+(?!\d))/g, ',') }
-// shared with the sell barrel
-global.zoneAddRubles = function (p, amount) {
+global.zoneFmt = zrubFmt
+global.zoneNoteValue = ZRUB.VALUE
+
+// ---- bank (PDA balance)
+global.zoneBank = function (p) { return Number(zrubJava().cur.get(p)) }
+global.zoneAddRubles = function (p, amount) {      // into the bank
   var J = zrubJava()
   J.cur.add(p, amount)
   J.net.sendBalance(p)
   return Number(J.cur.get(p))
 }
-
-// a Custom NPCs trader (Role 1) within 8 blocks?
-function zrubNearTrader(server, p) {
-  return Number(server.runCommandSilent('execute as ' + p.username + ' at @s if entity @e[type=customnpcs:customnpc,distance=..8,nbt={Role:1}]')) > 0
+global.zoneTakeRubles = function (p, amount) {     // out of the bank; false if not enough
+  var J = zrubJava()
+  var ok = J.cur.subtract(p, amount)
+  J.net.sendBalance(p)
+  return !!ok
 }
 
+// ---- cash (notes)
+// rubles -> list of [itemId, count] stacks (max 64 each), rounded down to 100
+global.zoneNoteStacks = function (rub) {
+  rub = Math.floor(rub / 100) * 100
+  var out = []
+  ZRUB.NOTES.forEach(function (n) {
+    var c = Math.floor(rub / n[0])
+    rub -= c * n[0]
+    while (c > 0) { var k = Math.min(64, c); out.push([n[1], k]); c -= k }
+  })
+  return out
+}
+global.zoneGiveCash = function (p, rub) {          // notes into the player's pockets (dropped at their feet if full)
+  global.zoneNoteStacks(rub).forEach(function (s) { p.give(Item.of(s[0], s[1])) })
+}
+// cash the player is carrying (main inventory + offhand). take=true also removes it.
+global.zoneCash = function (p, take) {
+  var inv = p.getInventory(), total = 0
+  ;[inv.items, inv.offhand].forEach(function (list) {
+    for (var i = 0; i < list.size(); i++) {
+      var s = list.get(i), v = ZRUB.VALUE[String(s.id)]
+      if (!v) continue
+      total += v * s.count
+      if (take) list.set(i, zrubJava().empty)
+    }
+  })
+  return total
+}
+
+// ---- coupons -> notes (they no longer exist in the economy)
 ServerEvents.tick(function (event) {
   zrubTick++
   if (zrubTick % 20 !== 0) return
   event.server.players.forEach(function (p) {
     try {
-      var inv = p.getInventory(), lists = [inv.items, inv.offhand], coupons = 0, notes = 0, nearTrader = null
-      lists.forEach(function (list) {
+      var inv = p.getInventory(), coupons = 0
+      ;[inv.items, inv.offhand].forEach(function (list) {
         for (var i = 0; i < list.size(); i++) {
           var s = list.get(i), id = String(s.id)
           if (id === 'itz:coupon') coupons += s.count
@@ -48,19 +88,14 @@ ServerEvents.tick(function (event) {
             var t = s.nbt
             if (t === undefined && typeof s.m_41783_ === 'function') t = s.m_41783_()
             coupons += t ? Number(t.getInt('Coupons')) || 0 : 0
-          } else if (ZRUB.NOTES[id]) {
-            if (nearTrader === null) nearTrader = zrubNearTrader(event.server, p)
-            if (nearTrader) continue
-            notes += ZRUB.NOTES[id] * s.count
-          }
-          else continue
+          } else continue
           list.set(i, zrubJava().empty)
         }
       })
-      if (coupons <= 0 && notes <= 0) return
-      var rub = coupons * ZRUB.RATE + notes
-      var bal = global.zoneAddRubles(p, rub)
-      p.statusMessage = Text.of('+' + zrubFmt(rub) + ' ₽   (balance ' + zrubFmt(bal) + ' ₽)').color(0xD8B225)
+      if (coupons <= 0) return
+      var rub = coupons * ZRUB.RATE
+      global.zoneGiveCash(p, rub)
+      p.statusMessage = Text.of('Coupons swapped for ' + zrubFmt(rub) + ' ₽ in cash').color(0xD8B225)
     } catch (err) {
       if (!zrubWarned) { zrubWarned = true; console.error('[zone] rubles failed: ' + err) }
     }

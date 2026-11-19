@@ -1,0 +1,6 @@
+<!-- SCAVENGER: only the 1,000 ruble note stacks big. Everything else keeps its normal stack size. -->
+<ruleset>
+    <rule stacksize="100000">
+        <condition>id = tarkovdayz:rubble_1000</condition>
+    </rule>
+</ruleset>

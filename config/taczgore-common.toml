@@ -1,0 +1,77 @@
+
+[gore]
+	#Master switch for the voxel gore wounds.
+	master = true
+	#Apply voxel gore to players too (not only mobs).
+	hurtPlayers = true
+	#Make headshots carve bigger, deeper wounds.
+	headshotBonus = true
+	#Play flesh impact sounds when a gun hits a mob.
+	hitSounds = true
+
+	[gore.gibs]
+		#Damage needed to spawn one gib chunk (minimum 1 gib per hit).
+		#Range: 0.5 ~ 64.0
+		damagePerGib = 4.0
+		#Maximum gib chunks a single shot can spawn.
+		#Range: 1 ~ 64
+		maxPerHit = 16
+		#Overall launch speed of gib chunks (1.0 = full, 1.7 = 2x higher as requested).
+		#Range: 0.05 ~ 2.0
+		velocityMultiplier = 1.7
+		#Overall size of gib chunks (1.0 = full, 0.5 = half, 0.781 = ~25% bigger than 0.625).
+		#Range: 0.1 ~ 2.0
+		sizeMultiplier = 0.78125
+		#Gib chunks tumble in the air and stop spinning once they land.
+		spin = true
+		#Play a wet squish when a gib chunk bounces off a surface.
+		bounceSounds = true
+		#Gib chunks paint a blood smear down the wall and drip dust while sliding.
+		slideBloodTrails = true
+		#How fast gibs slide down walls (1.0 = free fall, 0.15 = snappy, 0.05 = very slow).
+		#Range: 0.005 ~ 1.0
+		slideSpeedMultiplier = 0.15
+		#Gravity multiplier for gibs (1.0 = normal, 2.0 = twice as heavy).
+		#Range: 0.25 ~ 4.0
+		gravityMultiplier = 1.0
+		#Gib spread multiplier (0.5 = tighter cone, 2.0 = twice as scattered).
+		#Range: 0.1 ~ 4.0
+		spreadMultiplier = 1.0
+		#How long a gib stays before despawning (20 ticks = 1 second).
+		#Range: 60 ~ 1200
+		lifetimeTicks = 200
+		#Ticks between bloody footprints per entity.
+		#Range: 1 ~ 40
+		footprintCooldownTicks = 5
+		#Chance a stuck meat/brain gib creates a blood pool (percent).
+		#Range: 0 ~ 100
+		poolChancePercent = 45
+		#Blood particle count multiplier (0.5 = half particles, 2.0 = double).
+		#Range: 0.1 ~ 3.0
+		particleCountMultiplier = 1.0
+		#Master switch for gib chunks only - disable to keep blood particles and wounds but fix shader lag.
+		gibEnabled = true
+		#Global max gibs alive at once (shader lag fix).
+		#Range: 8 ~ 128
+		maxOnScreen = 48
+		#Max gibs spawned per server tick across all hits (ping fix for multiple zombies).
+		#Range: 4 ~ 32
+		globalPerTick = 12
+		#Bloody footprints when stepping on blood pools.
+		footprintsEnabled = true
+
+	[gore.splats]
+		#Paint blood-splat decals where gib chunks collide (floors, walls, ceilings).
+		enabled = true
+		#How long a blood-splat decal stays before it fades away (20 ticks = 1 second).
+		#Range: 60 ~ 72000
+		lifeTicks = 600
+		#Global max blood splats/pools alive at once.
+		#Range: 16 ~ 256
+		maxOnScreen = 96
+		#Max blood splats spawned per tick (ping fix).
+		#Range: 4 ~ 64
+		maxPerTick = 16
+		#Enable blood spray/dust particles (keep wounds even if disabled).
+		bloodParticlesEnabled = true
+

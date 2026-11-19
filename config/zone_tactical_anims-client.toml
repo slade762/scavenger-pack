@@ -477,7 +477,7 @@
 	#Options: stalker (muted, green shadows, warm grey highlights), tarkov (cold blue-grey, contrasty),
 	#vanilla_plus (light touch, close to normal colors), off.
 	#Cycle presets in game with the color grade key (F7 by default, Controls > Zone Tactical).
-	preset = "vanilla_plus"
+	preset = "off"
 	#How strong the grade is. 1.0 = full, 0.5 = half way between Elaris' look and the grade.
 	#Range: 0.0 ~ 1.0
 	strength = 1.0

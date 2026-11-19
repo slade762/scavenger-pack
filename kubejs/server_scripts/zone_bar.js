@@ -1,6 +1,6 @@
 // The Bar (Slade) - the bunker hub where everyone starts.
 //  - Old Mole is now Old Moe (renames the saved NPC the first time he's loaded).
-//  - Nobody but Old Moe stands behind his counter.
+//  - Nobody but Old Moe (and his Supply Crate) stands behind his counter.
 //  - Sparrow and Grandpa chat to players who hang around the campfire, pointing new players at Old Moe.
 //    (Sparrow goes quiet while he's missing in Act 1; see zone_story.js.)
 var ZBAR = {
@@ -54,7 +54,7 @@ ServerEvents.tick(function (event) {
     if (zbarTick % 200 === 0) srv.runCommandSilent('execute in minecraft:overworld as @e[type=customnpcs:customnpc,name="Old Mole",limit=1] run data merge entity @s {Name:"Old Moe"}')
     // keep the counter clear: tacz NPCs and any CustomNPC except Old Moe
     srv.runCommandSilent('execute in minecraft:overworld as @e[type=tacznpcs:npc,' + box + '] at @s run tp @s ' + ZBAR.DESK_OUT_X + ' ~ ~')
-    srv.runCommandSilent('execute in minecraft:overworld as @e[type=customnpcs:customnpc,' + box + ',name=!"Old Moe",name=!"Old Mole"] at @s run tp @s ' + ZBAR.DESK_OUT_X + ' ~ ~')
+    srv.runCommandSilent('execute in minecraft:overworld as @e[type=customnpcs:customnpc,' + box + ',name=!"Old Moe",name=!"Old Mole",name=!"Supply Crate"] at @s run tp @s ' + ZBAR.DESK_OUT_X + ' ~ ~')
     // campfire chatter
     if (zbarTick < zbarNextChat) return
     var c = ZBAR.CAMPFIRE, r = ZBAR.CHAT_RANGE

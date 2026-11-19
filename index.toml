@@ -13,6 +13,14 @@ file = "config/ambimod/ambicore.json"
 hash = "20f543e7edd6f5ec5e18d1f69db8e046ee924f5f6137349a370a2d9968bb7530"
 
 [[files]]
+file = "config/amendments-client.toml"
+hash = "8eab3ba39b22456ffd9d28281d4cff6a56bd8732d354190d8445c99ad2c02851"
+
+[[files]]
+file = "config/amendments-common.toml"
+hash = "7c0d6e5285fa81d9967a2562e03bc3e4aaf202b696defb3ad29973d38599c154"
+
+[[files]]
 file = "config/animation_overhaul/animations.json5"
 hash = "00f4a867204a3424faf35ecd8291bcf76dd212c330525fe5ecffb5f39aeea347"
 
@@ -34,15 +42,31 @@ hash = "9f7bd67346e47c5b01e96d31aa492635d5d3a2dcb5bc3c3baddb6e518891ad0c"
 
 [[files]]
 file = "config/backpack_side_gui-client.toml"
-hash = "64aceece8f40ae35bccde9d95d68a790451e36300fbce545767fe2baf375a54f"
+hash = "a4e095a933d6dc16ac4225e9122ece42d05637bded3e1d91a22573de4a9b53cc"
 
 [[files]]
 file = "config/badmobs-common.toml"
-hash = "95ff3da941b1d5102f234ba03d05762be774ea9f7833af658105e7ee90e72d4d"
+hash = "3914ceb3048ce10e8c83d8b7418fa85eeee48fae267c8052173d8cb9bfea84b1"
 
 [[files]]
 file = "config/badmobs-common.toml.original"
 hash = "501878368466063dedb735067a0dc9414077aeaab0ebb9cfb30a11312ce42453"
+
+[[files]]
+file = "config/biggerstacks-client.toml"
+hash = "e0339204399acca229cad4709bc0c430eba0bfc9353cb7c276af9a3791526e92"
+
+[[files]]
+file = "config/biggerstacks-local.toml"
+hash = "fa3208eea529de34309158eb7d3eb03552b2b43d5e4b382fcf23a857f8aaf830"
+
+[[files]]
+file = "config/biggerstacks-rules.xml"
+hash = "3614a22b337c50b4cd8c996d318d0443bb7213feac37e2e33586c491269a2ebf"
+
+[[files]]
+file = "config/birds.json5"
+hash = "75b7be0469ed7cd4a17d7d203ea32bdeea3523393d70922a180d50efb301c90b"
 
 [[files]]
 file = "config/blueprint-client.toml"
@@ -51,6 +75,10 @@ hash = "8fbb7db508c2d5b5d7031e2143f5a4ec2f1656cabdee5b8165e3571160584fea"
 [[files]]
 file = "config/blueprint-common.toml"
 hash = "d335fd00458005d989d55a6615073d5b390ea08d5e1d129229518f90d5d3ef9b"
+
+[[files]]
+file = "config/boids.json5"
+hash = "3364cef6ac62a84873ac5bd99ae1601375c75083477cda10afe2f35d288d7fef"
 
 [[files]]
 file = "config/c2me.toml"
@@ -62,7 +90,7 @@ hash = "a37eb7f218ab61f3277a103a85c5bd14ff0abe0dff94e17883bcbb5ea28a3855"
 
 [[files]]
 file = "config/cinematic_respawn.properties"
-hash = "e088e7987829633935492e0d8c4561ebf07138d3bb5f4a4e8e79051881078b12"
+hash = "622fcbd68a9125e38905aa4db826fb92f678b4dd5f625f0387bfc41e8ed58386"
 
 [[files]]
 file = "config/cinematic-client.toml"
@@ -334,7 +362,7 @@ hash = "26ac5810c9b5dc5c1968827357f0a58c58ac2b6f7b082630960228e16585062f"
 
 [[files]]
 file = "config/handson_delight.properties"
-hash = "259319d427744bbcd84e253a37baa9f70c1662bdbfe01c3b5ed0bb491e52dd4d"
+hash = "a918dd37e7bc13e1ba3a501d4feaa43290969a4b6b7069697260e445b16eb197"
 
 [[files]]
 file = "config/holdmyitems-client.toml"
@@ -706,7 +734,7 @@ hash = "fad9aea710ec3508eab562cd8f2b5f8e2dda6ee1c5fb1fe818f90ce253017f66"
 
 [[files]]
 file = "config/modernfix-mixins.properties"
-hash = "54ff1bb72fc93d67c0d05083fd56983c52fd255501f8a26a760c91c57bc855e3"
+hash = "d14187d95596f5ed803bdd51ff10c9ab0228c94e4d085005b6975332fb00b172"
 
 [[files]]
 file = "config/moonlight-client.toml"
@@ -866,7 +894,7 @@ hash = "e26b00784bb6239988759ed1a64551b9f301dc33c5a855d91e976ee4bf40ac8a"
 
 [[files]]
 file = "config/sound_physics_remastered/sound_rates.properties"
-hash = "e5dae4e2b8f77ceeca6f89c26572fa3b2262646c0d5c4ad1b726652a60cf99f8"
+hash = "2f62ffc921214d0909701b23340dc484f8b0027cd6434159b7b266e39c86ceb4"
 
 [[files]]
 file = "config/sound_physics_remastered/soundphysics.properties"
@@ -893,12 +921,32 @@ file = "config/subtle_effects/items.toml"
 hash = "6694604171ad1fe35a1d66b453377e39efa0d6c5765211b271449dfa144edf75"
 
 [[files]]
+file = "config/supplementaries-client.toml"
+hash = "33057c518c3901a5bfadedb064c0bcfbd6fc6fcb7519736ac11e4c9e440ae4d8"
+
+[[files]]
+file = "config/supplementaries-common.toml"
+hash = "0ec0c0ef3729d1135c51135fd7275807f72e293d20edafa30646040ac17773ad"
+
+[[files]]
 file = "config/tacz-client.toml"
 hash = "af02b1c3fa6aad8e28ec778e4fd4a7fe594447d98ee555980fef6477eecbf1c9"
 
 [[files]]
 file = "config/tacz-common.toml"
 hash = "98f4a33202d1e85e75413acaa3070d1ac791b7b2a94a732329a7f7d112ef6c21"
+
+[[files]]
+file = "config/taczcreativesupplement-client.toml"
+hash = "495772c9377176238a19f4b798d30713d95bd4cc30118d344ba1cb0dd8d743d0"
+
+[[files]]
+file = "config/taczcreativesupplement-common.toml"
+hash = "766c83bb570a24ef31f37eab5034c0c9740003a45a2df8beb9096a9024958564"
+
+[[files]]
+file = "config/taczgore-common.toml"
+hash = "118b76cdae5ae4e77b53280fddad78982af50ee58b237d7625bf0e2ef23fd414"
 
 [[files]]
 file = "config/tacznpc_factions.json"
@@ -982,7 +1030,7 @@ hash = "c167ad90e6fc2b409c7683dbeac88cbfd85849b90f8df13b5446c1203c1c510c"
 
 [[files]]
 file = "config/weatherglass.properties"
-hash = "be0f9fe164262dcd18e6c9a1abbfd451edc692eb71f45e2c08f80a96fa78468c"
+hash = "74b3b0d6cc9cebc19c48015cc42cbede1abbb261bb50b7e6db901b363a4748cd"
 
 [[files]]
 file = "config/worldedit/.archive-unpack/2e1dd752/.unpack_finished"
@@ -1458,7 +1506,7 @@ hash = "6de833a135cc17b7426520b68bd7820a62fbb19aa1489c7fcc78b14c8ebc3d4e"
 
 [[files]]
 file = "config/worldedit/worldedit.properties"
-hash = "933546ba0dc91772f61ace5a6530534c9a6293a799e68291fc37ead06b6a051c"
+hash = "3f4b73b1aaa3668b76289e7bbefcb09c639178cf41baa9d940740a51d6df05a7"
 
 [[files]]
 file = "config/xaero/lib/client.cfg"
@@ -1529,6 +1577,10 @@ file = "config/xaeropatreon.txt"
 hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
 
 [[files]]
+file = "config/yacl.json5"
+hash = "d26a63d3cdf326412ba86dcc2781060bc53ed6c74ac7808e65325452e264e820"
+
+[[files]]
 file = "config/zombieawareness/ClientConfig.toml"
 hash = "159ca0c651a10c34dc82f6b8ab4f9f07785a8ec3ca7a3a9330f21fcce439fc91"
 
@@ -1554,11 +1606,11 @@ hash = "1f8670911537dcb8d8b67e51203f3095b27057ebe398ac3df9301ddd088abfbe"
 
 [[files]]
 file = "config/zone_tactical_anims-client.toml"
-hash = "a35b227adf9b0a2338b2130010e2cf9009d4cd0f3567ecd590e03d3f36b8808f"
+hash = "ec91ff8aada43e4dcb09728f7a394cc553d7f0cda5033aafa2ff914dfd7fc333"
 
 [[files]]
 file = "config/zone_tactical_anims-common.toml"
-hash = "dd7600299335659901dd93aedff6acf18e9aa75d7b88da08ae0b0d90d4d6e9e8"
+hash = "ad82d8e276dec4eeb803e4dcde626da3735b75a5d84922a188d3e71a2fc59d0f"
 
 [[files]]
 file = "config/zone_tactical_anims-keys.done"
@@ -1571,6 +1623,10 @@ hash = "f8a5a26e3056eb6fb06deeb3dbccfd88ae74900200c98c70b5966bbb7ec9d4de"
 [[files]]
 file = "customnpcs/pack.mcmeta"
 hash = "d45bca62a2e6dee70eacef6dc68da43976e1f4cd32e2003786bcf642cf6d4e7c"
+
+[[files]]
+file = "defaultconfigs/airdrop_supply_drops-server.toml"
+hash = "cb5ebe6ab1f6b220cc8f8ca1eb55f478960c79d6647bb751f1a142281ca9cbc3"
 
 [[files]]
 file = "defaultconfigs/inventory_free-server.toml"
@@ -1809,8 +1865,16 @@ file = "kubejs/server_scripts/zone_anomalies.js"
 hash = "842b19a587a5549e3759f8ed38ab9a81776c0468767c7a9c590dbb890827017e"
 
 [[files]]
+file = "kubejs/server_scripts/zone_armoury.js"
+hash = "2700a7cc7bcd5277425984a9c7be4ac9f834f0bd6c3d17e7b96c9faa44306326"
+
+[[files]]
 file = "kubejs/server_scripts/zone_artifacts.js"
 hash = "c58df5df938d18a02a7b516552d29cc05d0c111c419e2abc56c1911086b2e0e2"
+
+[[files]]
+file = "kubejs/server_scripts/zone_atm.js"
+hash = "a8ca2c32f50e2bccddfabe449f9c3654f17770d5aa6e370784721da02098509b"
 
 [[files]]
 file = "kubejs/server_scripts/zone_bandit_loot.js"
@@ -1822,7 +1886,7 @@ hash = "57ffddf82011eda84a2f39e0de31b248e6184b598bea95e790df17faf2677494"
 
 [[files]]
 file = "kubejs/server_scripts/zone_bar.js"
-hash = "a20c8874767b85a92464059c391c44e2487a12ede44906346f025d8707ee8c2d"
+hash = "ee1e5dcdec2cb47d3ae6e10fcb2dfa1e6fd8d163fee7446f6c44deebfdebd18b"
 
 [[files]]
 file = "kubejs/server_scripts/zone_bar_safe.js"
@@ -1886,11 +1950,15 @@ hash = "07ef557c18ddd6af5ced433741d796badd54be14970ed258c729b0551a71679f"
 
 [[files]]
 file = "kubejs/server_scripts/zone_questgivers.js"
-hash = "672e54560ef1753d8c2410da1cd49cb7320d265e3c75166d8b7f31cd29be4ae6"
+hash = "8d19210c56eb25349fe94c899534ed4170628f152d0b4cd56fadeb8ba7964ca8"
+
+[[files]]
+file = "kubejs/server_scripts/zone_rep.js"
+hash = "ee8f0119a66c6af8ed83f5703c4b8fc455ba5b72568eb5548849311ed209914c"
 
 [[files]]
 file = "kubejs/server_scripts/zone_rubles.js"
-hash = "7f3d809f365b8f6bd3a1baa4e59a4f773eb758bcdfbe72502d81375fc7001c8c"
+hash = "6de1ca6edb090a25b8f3c9709f6576f5d947b4613686cd5ba08f9fa1d57c4a4e"
 
 [[files]]
 file = "kubejs/server_scripts/zone_scavengers.js"
@@ -1898,7 +1966,7 @@ hash = "3056b99177a11b88dae2bdf04dd04fafad986da870813a2249d1661958586c65"
 
 [[files]]
 file = "kubejs/server_scripts/zone_sell_barrel.js"
-hash = "5c38ce28071b4049a9383a3343e364c3ab220f029cb964a71ba97e65d1b0199a"
+hash = "eddd95bed5cdca828a622c5fe37cbec423db33e9e9a3dc19925abead157989c3"
 
 [[files]]
 file = "kubejs/server_scripts/zone_spawn_director.js"
@@ -1911,6 +1979,10 @@ hash = "44b048dbd78a4c1a5afbc497bf008955b5d4e51ac61e236b28c0ea411ab71048"
 [[files]]
 file = "kubejs/server_scripts/zone_story.js"
 hash = "1c8c7c6a115b02e58b1b7f1764d375092837b3085d9919b3cf69627f0d8c7f1c"
+
+[[files]]
+file = "kubejs/server_scripts/zone_trader_rubles.js"
+hash = "7f9be80c4061ca40e2cefcd63e896e60112e8e45bdb9aea89b0be808d6d1d495"
 
 [[files]]
 file = "kubejs/server_scripts/zone_traders.js"
@@ -1945,6 +2017,10 @@ file = "kubejs/startup_scripts/zone_story_items.js"
 hash = "65bdb2eb05232986bbb7046996d4f9ecfd0eba13680b54930658eff2d41f5ac2"
 
 [[files]]
+file = "mods/airdrop_supply_drops-forge-1.20.1.jar"
+hash = "6ff32ecc69c27c7c1ccd07be912041000e256b87817e62e9e25d25a7ac446b07"
+
+[[files]]
 file = "mods/alltheleaks-1-1-6-1-20-1-forge.pw.toml"
 hash = "a76edcdb50cb9da6bae251da305fc1752009378061c35ca2097eb0d88d2cb4d5"
 metafile = true
@@ -1957,6 +2033,11 @@ metafile = true
 [[files]]
 file = "mods/ambimod-forge-1-20-1-1-2-0.pw.toml"
 hash = "9b0c9574c35241a9af8de4e92133239a4af31fa53456d7cd3c74747ba6c354ad"
+metafile = true
+
+[[files]]
+file = "mods/amendments.pw.toml"
+hash = "aa47dd44e2f19320a806ea54c629a7c94385bbad533921fe7a09ac4152706aad"
 metafile = true
 
 [[files]]
@@ -1990,6 +2071,14 @@ hash = "f63782566917265c92ae1eac35731dc6708b7b0745ad7bc26c9d29f5b1b47d6b"
 metafile = true
 
 [[files]]
+file = "mods/biggerstacks-1.20.1-2026.06.17-all.jar"
+hash = "70840af81e6f734a6ea9c5eecf1f540eb470e42ce8339a5f4cb381a3cfc36204"
+
+[[files]]
+file = "mods/birds-1.20.1-Forge-1.0.3.jar"
+hash = "6f52687877b16f4d5d497cdd19d6362908599fb658247be8f25d2d000c4d6fe8"
+
+[[files]]
 file = "mods/bleak-and-barren-1-20-1-1-0-1.pw.toml"
 hash = "1395679548804bfd258e82bb5ba474c2630226b9bcba2e218b4d0b1aee33a4c9"
 metafile = true
@@ -2000,13 +2089,13 @@ hash = "f71107f2800b1abc24d69d6db81293e1d28bad5e0e0b95a136b5d4e7eddeb23e"
 metafile = true
 
 [[files]]
+file = "mods/boids-1.20.1-Forge-1.0.5.jar"
+hash = "ddbd4496c1501579dace026ad49ca936c10e51cc5e08c152b5ab694da88b6e00"
+
+[[files]]
 file = "mods/brimm-3-0-1.pw.toml"
 hash = "4a840e54415720ef104ec7d6fefb9b74f476f7f516c22be2b07e79e50521e9bd"
 metafile = true
-
-[[files]]
-file = "mods/c2meforge-0.2.0-forge.9.9.6-all.jar"
-hash = "e73681883b2c867049800f8b2f7bdcbbbda6c9a44eb5e165c0513914364abfc6"
 
 [[files]]
 file = "mods/canary-mc1.20.1-0.3.3.jar"
@@ -2182,6 +2271,10 @@ file = "mods/handson_delight-forge-1.20.1-1.5.0.jar"
 hash = "7b581e265ac60d0af6a8c5480fe0d6ceb8608a9109573eae5203d20cabb8f373"
 
 [[files]]
+file = "mods/herbalists_delight-1.0.0-forge-1.20.1.jar"
+hash = "9e2d5983b730810f1f59ee9fb216102d8bc3147fb9103e2c95930a63d854b6aa"
+
+[[files]]
 file = "mods/holdmyitems-1-20-1-4v2-1.pw.toml"
 hash = "cabafdb4e63477fcc42da5a73f193447790610b71669b411a782b8a9797323d4"
 metafile = true
@@ -2239,6 +2332,30 @@ metafile = true
 file = "mods/lostcities-1-20-7-5-7.pw.toml"
 hash = "ae986488a4be01ac8c44e447bed8a820711805345adbda39f310c040e1fd0787"
 metafile = true
+
+[[files]]
+file = "mods/mcw-furniture-3.4.1-mc1.20.1forge.jar"
+hash = "9f068315ac5ae7c4b76a6ac0679cde9be59d5cbf37488a477f13b95fe1cbc37d"
+
+[[files]]
+file = "mods/mcw-lights-1.1.5-mc1.20.1forge.jar"
+hash = "174437555ff8b3938b5af8fa3f6efcc528fc101e90e35b89570323e4a3726f0a"
+
+[[files]]
+file = "mods/mcw-mcwfences-1.2.1-mc1.20.1forge.jar"
+hash = "10deb617769e9674a767a3991af4c46afd081b5de42cee326f71ef2700a14313"
+
+[[files]]
+file = "mods/mcw-mcwpaths-1.1.1-mc1.20.1forge.jar"
+hash = "9a809897462ca11c1920748b0fdf4555f05ef3650db1bd82016906795d068c9f"
+
+[[files]]
+file = "mods/mcw-mcwstairs-1.0.2-mc1.20.1forge.jar"
+hash = "c952bf7b9eec89071d05da79f73459565847c65187b2f342fa0933c46605bfea"
+
+[[files]]
+file = "mods/mcw-mcwwindows-2.4.2-mc1.20.1forge.jar"
+hash = "7674d829d5a38d91ca68061e087fded92e976e3e461edcf75117e37a257e8f10"
 
 [[files]]
 file = "mods/melody-forge-1-0-3-mc-1-20-1-1-20-4.pw.toml"
@@ -2377,9 +2494,21 @@ hash = "9f583275135f3a5693c7a8757e8d520932e5a5db5711bb8c5e37c6425621dd8b"
 metafile = true
 
 [[files]]
+file = "mods/supplementaries-1.20-3.1.45-forge.jar"
+hash = "120608f1a43a63701ba24f42f3d3fe2baa9e846b22d2483a5c5b3614c4e3bdca"
+
+[[files]]
+file = "mods/tacz_airdrop-0.1.0-forge-1.20.1.jar"
+hash = "6efbefacf40ed11cc3606c83ad412eca8321cd4592d23a2e9550b8d6dc2c6fcc"
+
+[[files]]
 file = "mods/tacz-1-20-1-1-1-8-hotfix2.pw.toml"
 hash = "9206260775faf6b7ca962c2a355ed3ac8326fdd5adb7610cef9b06527c260d91"
 metafile = true
+
+[[files]]
+file = "mods/TaczCreativeSupplement-2.1-old-forge-compatibility.jar"
+hash = "27e3634e4037e0f0c8bfa73fcf63d69dc51505483fb9bfdef452f1d1403028fd"
 
 [[files]]
 file = "mods/tacz-mesh-loader-forge-1-20-1-0-1-8-1.pw.toml"
@@ -2390,6 +2519,10 @@ metafile = true
 file = "mods/tacznpcs-2-1-0-1-20-1.pw.toml"
 hash = "2596da86a8c7e1f99777e4330140d3f569145a003583c3ca64eb8ecb4d811165"
 metafile = true
+
+[[files]]
+file = "mods/taczvoxelgore-1.0.3.jar"
+hash = "80427a60d1312edc9c9b4f84b5da4480934dbd17863a255afee4f3372ec5fd20"
 
 [[files]]
 file = "mods/terrablender-forge-1-20-1-3-0-1-10.pw.toml"
@@ -2440,6 +2573,10 @@ hash = "c4a80bec89c54cac61c8d13e8eeb84d5305d89342713b765ab85c45b9cd4a404"
 metafile = true
 
 [[files]]
+file = "mods/yet_another_config_lib_v3-3.6.6+1.20.1-forge.jar"
+hash = "bd05da3d9df29b914165583f1c6dfd918a138996447ff32c0418329824027a8f"
+
+[[files]]
 file = "mods/zombieawareness-1-20-1-1-13-1.pw.toml"
 hash = "0107c1c61bc712c0834d6a0023c926fc8809db0f554b774dc5655910ef0423e1"
 metafile = true
@@ -2450,7 +2587,7 @@ hash = "d6364e3b3ffea4b912889d3dcd3e2acebf7d663b22b96402402fbd383eefa460"
 
 [[files]]
 file = "mods/zone_tactical_anims-0.1.0.jar"
-hash = "cc07b6eab2f3ff8779ba12a7300a4aa77b66832ac2a68859154f732e7369c3b1"
+hash = "f01925bbe5c6ef7f7fb19209ff83a562774e737d8e804f33842f04dc54a65a54"
 
 [[files]]
 file = "options.txt"

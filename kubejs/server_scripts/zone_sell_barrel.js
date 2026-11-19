@@ -1,10 +1,11 @@
-// Old Mole's Sell Barrel (Slade).
+// Old Moe's Sell Barrel (Slade).
 // A real barrel: put loot in (straight from your backpack with Backpack Side GUI), close it,
-// and Old Mole pays rubles (PDA balance) for everything he buys; anything he doesn't buy stays.
+// and Old Moe pays cash: ruble notes appear in the barrel for you to take (bank them at the ATM).
+// Anything he doesn't buy stays in the barrel. If the barrel is too full for the notes, they go in your pockets.
 var ZSB = {
   POS: { x: -1527, y: 83, z: 93 },
   RATE: 500,                        // rubles per coupon (prices below are in coupons)
-  AZ_SHARE: 0.75,                   // artifacts/junk: Old Mole pays 75% of the Valhalla buyer's base price
+  AZ_SHARE: 0.75,                   // artifacts/junk: Old Moe pays 75% of the Valhalla buyer's base price
   // item id (+ GunId for TaCZ guns) -> coupons
   GUNS: { 'ra1k:pm': 60, 'fzbe:izh18_0_0': 50, 'ra1k:m870_obrez': 64, 'ra1k:mp155': 100, 'ra1k:aks74u': 150,
           'ra1k:ak74': 250, 'ra1k:fort12': 100, 'tacz:sks_tactical': 250 },
@@ -21,6 +22,7 @@ function zsbCall(o, names, a, b) {
 var zsbAz = null
 function zsbPrice(stack) {          // rubles for ONE item, 0 = not bought
   var id = String(stack.id)
+  if (global.zoneNoteValue && global.zoneNoteValue[id]) return 0     // never buys back his own cash
   if (ZSB.ITEMS[id] !== undefined) return ZSB.ITEMS[id] * ZSB.RATE
   if (id === 'tacz:modern_kinetic_gun') {
     var tag = stack.nbt
@@ -42,7 +44,7 @@ BlockEvents.rightClicked(event => {
   var b = event.block
   if (b.x !== ZSB.POS.x || b.y !== ZSB.POS.y || b.z !== ZSB.POS.z) return
   if (String(b.id) !== 'minecraft:barrel') return
-  event.player.tell(Text.gray('Sell barrel: put guns, Rookie gear, artifacts or junk in and close it. Old Mole pays rubles to your PDA.'))
+  event.player.tell(Text.gray('Sell barrel: put guns, Rookie gear, artifacts or junk in and close it. Old Moe pays you in cash notes, left in the barrel.'))
 })
 
 PlayerEvents.inventoryClosed(event => {
@@ -71,10 +73,22 @@ PlayerEvents.inventoryClosed(event => {
       s.setCount(0)                    // take it out of the barrel
     }
     if (total <= 0) return
+    total = Math.floor(total / 100) * 100
+    var pocket = 0
+    global.zoneNoteStacks(total).forEach(function (st) {      // notes go into the barrel's free slots
+      for (var j = 0; j < size; j++) {
+        var cur = zsbCall(be, ['getItem', 'm_8020_'], j)
+        if (cur && !cur.isEmpty()) continue
+        zsbCall(be, ['setItem', 'm_6836_'], j, Item.of(st[0], st[1]))
+        return
+      }
+      pocket += global.zoneNoteValue[st[0]] * st[1]
+      p.give(Item.of(st[0], st[1]))
+    })
     zsbCall(be, ['setChanged', 'm_6596_'])
-    var bal = global.zoneAddRubles(p, total)
-    var fmt = function (n) { return String(Math.round(n)).replace(/\B(?=(\d{3})+(?!\d))/g, ',') }
-    p.tell(Text.gold('Old Mole: ').append(Text.white('Sold ' + sold.join(', ') + ' for ' + fmt(total) + ' \u20BD. Balance: ' + fmt(bal) + ' \u20BD.')))
+    var fmt = global.zoneFmt
+    p.tell(Text.gold('Old Moe: ').append(Text.white('Sold ' + sold.join(', ') + ' for ' + fmt(total) + ' \u20BD. ' +
+      (pocket > 0 ? 'Barrel was full, so ' + fmt(pocket) + ' \u20BD went in your pockets.' : 'Your cash is in the barrel.'))))
     try { p.server.runCommandSilent('playsound minecraft:entity.villager.trade player ' + p.username + ' ' + ZSB.POS.x + ' ' + ZSB.POS.y + ' ' + ZSB.POS.z + ' 0.8 1') } catch (e2) {}
   } catch (err) {
     console.error('[zone] sell barrel failed: ' + err)
