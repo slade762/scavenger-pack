@@ -217,6 +217,12 @@
 	#Loudness of other players' and NPCs' gunshots (your own gun is unchanged). 1 = TaCZ default.
 	#Range: 0.05 ~ 1.0
 	otherShotGain = 0.55
+	#Volume of every TaCZ sound except gunfire (reloads, draw/holster, inspect, bolt, fire select, dry fire, melee, hit and kill markers). 1 = TaCZ default; 0.65 = 35% quieter.
+	#Range: 0.0 ~ 1.0
+	taczOtherVolume = 0.65
+	#Volume of every sound from Pomkots Mechs Extension. 1 = default; 0.5 = half.
+	#Range: 0.0 ~ 1.0
+	pomkotsExtensionVolume = 0.4
 
 [ui]
 	#Paint over Inventory Free's locked slots in modded screens (backpacks etc.).

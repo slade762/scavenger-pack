@@ -46,7 +46,7 @@ hash = "c258692cbaad5cb7c44ffcd558f1893aba06a8748078327a6e1e2df2be697a4c"
 
 [[files]]
 file = "config/badmobs-common.toml"
-hash = "a80f5124bea6d0754aa193610a351e7e448ff9941d5835eeb3fda0817c5f94ff"
+hash = "34f95225c41b692c83c05da96c001cbb31391c864cd02cbce61b51778cfb08a1"
 
 [[files]]
 file = "config/badmobs-common.toml.original"
@@ -90,7 +90,7 @@ hash = "a37eb7f218ab61f3277a103a85c5bd14ff0abe0dff94e17883bcbb5ea28a3855"
 
 [[files]]
 file = "config/cinematic_respawn.properties"
-hash = "ca0beedba0e69f2ce3509dd5584516311aaa08a23a4068ba7dae9b253cf7a240"
+hash = "417a665a09474a8124174c35e4775b25d32344da8b6d6518ec1fdd4e6d665448"
 
 [[files]]
 file = "config/cinematic-client.toml"
@@ -366,7 +366,7 @@ hash = "26ac5810c9b5dc5c1968827357f0a58c58ac2b6f7b082630960228e16585062f"
 
 [[files]]
 file = "config/handson_delight.properties"
-hash = "55e6419b546e0160c0f313f0160a9ee43dc48e5901169f3456c8ecad6af00ddb"
+hash = "99a571c3786405a26e807aae8398796b0fba303f16e745f538deff716d4d9880"
 
 [[files]]
 file = "config/holdmyitems-client.toml"
@@ -637,6 +637,10 @@ file = "config/konkrete/locals/pt_br.local"
 hash = "dca55a2792451b31424cd5c24037141ec57cdca51955d062dd908fa9ca6a3e9c"
 
 [[files]]
+file = "config/leawind_third_person.json"
+hash = "56e347ad8134b9e70e7507fd715fc52cf95786469d34ca551a5d4a99bbbe1e36"
+
+[[files]]
 file = "config/lexiconfig.toml"
 hash = "cd5a8cd00f4300c29fda27b0dce17cb6bddadaf6047f4357599ed46b09ca7345"
 
@@ -785,12 +789,20 @@ file = "config/particular-common.toml"
 hash = "3a481b444160273ae42aae81eb0405eca4dee6d28687bed372427df6da8f80e4"
 
 [[files]]
+file = "config/perspective_api.json"
+hash = "addc4c12119c6c9d8c9a5e0ad946918058a0cf2a4e2e645142214685de35645c"
+
+[[files]]
 file = "config/pickupnotifier/pickupnotifier-client.toml"
 hash = "242a0f58407ecc71ff5e2c6cd2910001c089ee4e6130454c377115e8a8f3c83a"
 
 [[files]]
 file = "config/pickupnotifier/pickupnotifier-server.toml"
 hash = "6e18bfa2ec02629937474e436f3f44fb67d54fd6e6b47a7c9b4c5b3a3bd83916"
+
+[[files]]
+file = "config/pomkotsmechs.json"
+hash = "a16d98ddcf5f7ad6690c9ecaa3fd17be5cf970c73f3205db56f1717183121a7c"
 
 [[files]]
 file = "config/prefab.toml"
@@ -922,7 +934,7 @@ hash = "e26b00784bb6239988759ed1a64551b9f301dc33c5a855d91e976ee4bf40ac8a"
 
 [[files]]
 file = "config/sound_physics_remastered/sound_rates.properties"
-hash = "2f62ffc921214d0909701b23340dc484f8b0027cd6434159b7b266e39c86ceb4"
+hash = "84886794089c7680e7a94d9f8cd4cec28623a35a7c42f0828ee907ccf7c263e4"
 
 [[files]]
 file = "config/sound_physics_remastered/soundphysics.properties"
@@ -1534,7 +1546,7 @@ hash = "6de833a135cc17b7426520b68bd7820a62fbb19aa1489c7fcc78b14c8ebc3d4e"
 
 [[files]]
 file = "config/worldedit/worldedit.properties"
-hash = "5a57a86d05dfa3d2c93c2deebaa48ce91c68aea00fde8cad37b9c9c9b402dbe5"
+hash = "268122f737a203e4156a6e8ab4e5b77c980444c40dbc612fbf44bd4f87f44202"
 
 [[files]]
 file = "config/xaero/lib/client.cfg"
@@ -1622,7 +1634,7 @@ hash = "220e7cc0ace0b55cf9e1473b194ce8f2f05b7717ee9df9cd9945b14dfc273b35"
 
 [[files]]
 file = "config/zombieawareness/MobLists.toml"
-hash = "8398079e7cb3237c5569311f9fa6cb142e762e5e3330cb54de29708c1db1a0b3"
+hash = "a1886e63bcea662db683fa98e29c483c0102df12d8658e73b4608416559d5d7a"
 
 [[files]]
 file = "config/zombieawareness/PlayerRulesAndLists.toml"
@@ -1634,7 +1646,7 @@ hash = "1f8670911537dcb8d8b67e51203f3095b27057ebe398ac3df9301ddd088abfbe"
 
 [[files]]
 file = "config/zone_tactical_anims-client.toml"
-hash = "ea588431bd22c962f63273b61d04111ce2ea1e3047d8d81550d397749d684ce0"
+hash = "7182ba37c3accf7590c0afed687fe6962559b1c9149b1a45cc91a14490170918"
 
 [[files]]
 file = "config/zone_tactical_anims-common.toml"
@@ -1903,6 +1915,10 @@ hash = "8f260c8d6224b6da9a88d34dc171f54881dbe04e8a77b264cb61b6bd2dafcbef"
 [[files]]
 file = "kubejs/server_scripts/zone_anomalies.js"
 hash = "842b19a587a5549e3759f8ed38ab9a81776c0468767c7a9c590dbb890827017e"
+
+[[files]]
+file = "kubejs/server_scripts/zone_anon.js"
+hash = "7812d7e8f2baa710b4457f0c2d580f5a1d0ca948e902c5504737bba4b678832d"
 
 [[files]]
 file = "kubejs/server_scripts/zone_armoury.js"
@@ -2389,6 +2405,11 @@ hash = "40cb27d9276b330a99b193547caa16ce8a19899d208c32abebc515a48301341a"
 metafile = true
 
 [[files]]
+file = "mods/leawind-third-person.pw.toml"
+hash = "1da883f41baf030a7c95aa0a51d9033bdc7d30a702ea61c5954a0062055c80d4"
+metafile = true
+
+[[files]]
 file = "mods/lexiconfig.pw.toml"
 hash = "9b782541cf9db28efc224a62a433fe7fc098c40247d5853b89ad8f05df25adc4"
 metafile = true
@@ -2492,6 +2513,16 @@ metafile = true
 [[files]]
 file = "mods/player-jetpack-forge-1-20-1-1-0-0.pw.toml"
 hash = "0ed0b25c37cd05a38531b788d38b74e4c067cc9029536446f8f928536a39438e"
+metafile = true
+
+[[files]]
+file = "mods/pomkots-mechs.pw.toml"
+hash = "892de0eb1396414cf6c1ed9f833ca21d657eb6533ee804dfe5f4fd4104348358"
+metafile = true
+
+[[files]]
+file = "mods/pomkots-mechs-extension-pack.pw.toml"
+hash = "aeb5b7aa30002a161449356a869b48204b70768b5b4e854ccbe9024fc64f6864"
 metafile = true
 
 [[files]]
@@ -2675,11 +2706,11 @@ hash = "d6364e3b3ffea4b912889d3dcd3e2acebf7d663b22b96402402fbd383eefa460"
 
 [[files]]
 file = "mods/zone_tactical_anims-0.1.0.jar"
-hash = "42ae7bbc8108d3f1facd9925fd7716d1983e837924ba65038f2d851e408813dc"
+hash = "536f6e79334b4aa678078dcb8ecdfa642f85489e31ae7dee905e3afaff1cf572"
 
 [[files]]
 file = "options.txt"
-hash = "82cb5b96f55c8228e4f6c87a5d124cf6e7f16dab8b53351a62cadc47f77e4540"
+hash = "17fc02999ec1e360ae9e63f3fbef8ea3f9c6851f64612cf9b64323915a5d3c2c"
 preserve = true
 
 [[files]]
