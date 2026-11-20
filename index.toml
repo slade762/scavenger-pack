@@ -90,7 +90,7 @@ hash = "a37eb7f218ab61f3277a103a85c5bd14ff0abe0dff94e17883bcbb5ea28a3855"
 
 [[files]]
 file = "config/cinematic_respawn.properties"
-hash = "417a665a09474a8124174c35e4775b25d32344da8b6d6518ec1fdd4e6d665448"
+hash = "9d6077dfd6d2cf9e1dffa5c75562caf029839236d9f724df04119eb2fa13f225"
 
 [[files]]
 file = "config/cinematic-client.toml"
@@ -366,7 +366,7 @@ hash = "26ac5810c9b5dc5c1968827357f0a58c58ac2b6f7b082630960228e16585062f"
 
 [[files]]
 file = "config/handson_delight.properties"
-hash = "99a571c3786405a26e807aae8398796b0fba303f16e745f538deff716d4d9880"
+hash = "2e5e2027dc1181ebac4d0e1e120c62988c68bbac7477a9695e727eaafc78dfea"
 
 [[files]]
 file = "config/holdmyitems-client.toml"
@@ -810,7 +810,7 @@ hash = "58f55f9ab84245340405f188f39c906a347ef0994e4f678258243f88fb13677b"
 
 [[files]]
 file = "config/presencefootsteps/userconfig.json"
-hash = "6cffea1c20852a079342429a0f223fcc45993a51596c4736e0fe1910c3fcba52"
+hash = "042bdcb7c7c8acffacf605b0b808dc832b6a66b86c6a4e20eb7cf0c60f31df5f"
 
 [[files]]
 file = "config/punchy/menu_prefs.json"
@@ -1646,7 +1646,7 @@ hash = "1f8670911537dcb8d8b67e51203f3095b27057ebe398ac3df9301ddd088abfbe"
 
 [[files]]
 file = "config/zone_tactical_anims-client.toml"
-hash = "7182ba37c3accf7590c0afed687fe6962559b1c9149b1a45cc91a14490170918"
+hash = "8235b48a2c52c0cccd29dc1aca3b7dd254f7635b5235198766c16bd3a6af5dab"
 
 [[files]]
 file = "config/zone_tactical_anims-common.toml"
@@ -2706,11 +2706,11 @@ hash = "d6364e3b3ffea4b912889d3dcd3e2acebf7d663b22b96402402fbd383eefa460"
 
 [[files]]
 file = "mods/zone_tactical_anims-0.1.0.jar"
-hash = "536f6e79334b4aa678078dcb8ecdfa642f85489e31ae7dee905e3afaff1cf572"
+hash = "9986bdf4d41265bb6d41168685a3aa9ea9d97df572ed1a3d5a4b636a6b8bf951"
 
 [[files]]
 file = "options.txt"
-hash = "17fc02999ec1e360ae9e63f3fbef8ea3f9c6851f64612cf9b64323915a5d3c2c"
+hash = "a15b09cca0ca7eaf3449ccdf08e55279f29e068e0e4a923cd93813d5aaf9465d"
 preserve = true
 
 [[files]]

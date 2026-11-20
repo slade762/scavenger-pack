@@ -220,7 +220,7 @@
 	#Volume of every TaCZ sound except gunfire (reloads, draw/holster, inspect, bolt, fire select, dry fire, melee, hit and kill markers). 1 = TaCZ default; 0.65 = 35% quieter.
 	#Range: 0.0 ~ 1.0
 	taczOtherVolume = 0.65
-	#Volume of every sound from Pomkots Mechs Extension. 1 = default; 0.5 = half.
+	#Volume of every sound from Pomkots Mechs Extension. 1 = default; 0.4 = pack default.
 	#Range: 0.0 ~ 1.0
 	pomkotsExtensionVolume = 0.4
 
@@ -499,7 +499,7 @@
 	#Options: stalker (muted, green shadows, warm grey highlights), tarkov (cold blue-grey, contrasty),
 	#vanilla_plus (light touch, close to normal colors), off.
 	#Cycle presets in game with the color grade key (F7 by default, Controls > Zone Tactical).
-	preset = "vanilla_plus"
+	preset = "off"
 	#How strong the grade is. 1.0 = full, 0.5 = half way between Elaris' look and the grade.
 	#Range: 0.0 ~ 1.0
 	strength = 1.0
