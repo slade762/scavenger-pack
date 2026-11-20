@@ -90,7 +90,7 @@ hash = "a37eb7f218ab61f3277a103a85c5bd14ff0abe0dff94e17883bcbb5ea28a3855"
 
 [[files]]
 file = "config/cinematic_respawn.properties"
-hash = "9f29ab2183c748013382f9f18fb43b59bf51ced1c2c5664a3864b9e240d60fb5"
+hash = "cc76318cfcbfcaa54aa7588e274d97e7e935d097d43a6ed146bdb7cc8c53eb79"
 
 [[files]]
 file = "config/cinematic-client.toml"
@@ -370,7 +370,7 @@ hash = "26ac5810c9b5dc5c1968827357f0a58c58ac2b6f7b082630960228e16585062f"
 
 [[files]]
 file = "config/handson_delight.properties"
-hash = "f4dcfab3fc47f10c8cf25a37348516ade28f13cc43b35a79d73678813e5d5013"
+hash = "32f84f196736796d460a8db35deca5617c73abd60c9de1bd97685bc6680275de"
 
 [[files]]
 file = "config/holdmyitems-client.toml"
@@ -642,7 +642,7 @@ hash = "dca55a2792451b31424cd5c24037141ec57cdca51955d062dd908fa9ca6a3e9c"
 
 [[files]]
 file = "config/leawind_third_person.json"
-hash = "56e347ad8134b9e70e7507fd715fc52cf95786469d34ca551a5d4a99bbbe1e36"
+hash = "ef1feef0c88b5f98f21e7d5b1d11c9c246b270d3c04179488b9b2d251ffd32ad"
 
 [[files]]
 file = "config/lexiconfig.toml"
@@ -1550,7 +1550,7 @@ hash = "6de833a135cc17b7426520b68bd7820a62fbb19aa1489c7fcc78b14c8ebc3d4e"
 
 [[files]]
 file = "config/worldedit/worldedit.properties"
-hash = "bf9d35d855d374cd8e81ce585a7ef2777ca1d6dde5212fcfaf58f98546ecee8b"
+hash = "1deb924efe34aa412db40d82d34aaad83922b2787b1a0abe6344a455001a21f9"
 
 [[files]]
 file = "config/xaero/lib/client.cfg"
@@ -1659,6 +1659,10 @@ hash = "61f9c29969213eae1d722e0f614e420a13df97df6c73fab266ad9fede3fa1cf7"
 [[files]]
 file = "config/zone_tactical_anims-keys.done"
 hash = "11e7b832fad4f43bdf83a61b3a4c499f6a53ae7a3c9be68da0f8263c9546c6f1"
+
+[[files]]
+file = "config/zone_tactical_anims-tracking.properties"
+hash = "fda3a4b70d4b02c09bb52a7a8c61cac40958aff45236fb41f91a2b7dbdc0d5c2"
 
 [[files]]
 file = "customnpcs/assets/customnpcs/sounds.json"
@@ -2332,6 +2336,11 @@ file = "mods/FarmersDelight-1.20.1-1.3.4.jar"
 hash = "34f03eb671ea1ca579b00c98e4541404cb96d1a292014aed9cc5eb45ad8afbce"
 
 [[files]]
+file = "mods/fast-item-frames.pw.toml"
+hash = "9145f3b75995be08b704a70c7115bf2e9f0e7b19d70cbfd5dbff3f83906b93db"
+metafile = true
+
+[[files]]
 file = "mods/ferritecore-6-0-1-forge.pw.toml"
 hash = "64b424188c6d028f26c8f2ad40c4a5df875dce0c15bdab607dea5fb137182817"
 metafile = true
@@ -2723,11 +2732,11 @@ hash = "d6364e3b3ffea4b912889d3dcd3e2acebf7d663b22b96402402fbd383eefa460"
 
 [[files]]
 file = "mods/zone_tactical_anims-0.1.0.jar"
-hash = "9b2c1dd418923fd84e927dba87f7bf9e59bd155f31cefae4b0fe8e07c4dedeae"
+hash = "e52143a0b223961044a202f1016f16c2dcfd9b40dd2d39a4ebfd19cc669780c9"
 
 [[files]]
 file = "options.txt"
-hash = "22cb4a20586793a7cc2efee1f80dcfc042deb675b753c1c3eb7eab2568b42bbd"
+hash = "0f10921cef1d687c275b96d211652b54cbbda3e24b4d1d932d6b51a4a25b5e0b"
 preserve = true
 
 [[files]]
