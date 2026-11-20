@@ -135,7 +135,7 @@ elarisEnabled = true
 	#Render vanilla clouds into directional sky-shadow depth maps.
 	cloudShadowsEnabled = false
 	#Render entities into a separate frequently updated celestial shadow map.
-	entityShadowsEnabled = false
+	entityShadowsEnabled = true
 	#Resolution of the celestial entity shadow map.
 	#Range: 512 ~ 2048
 	entityShadowResolution = 1536
@@ -165,7 +165,7 @@ elarisEnabled = true
 	moonStrengthPercent = 24.0
 	#Hemispheric sky ambient-light strength in percent.
 	#Range: 0.0 ~ 200.0
-	ambientStrengthPercent = 30.0
+	ambientStrengthPercent = 75.0
 	realisticShadowTemperature = true
 	#Range: 0.0 ~ 1.0
 	shadowTemperatureStrength = 1.0
@@ -173,7 +173,7 @@ elarisEnabled = true
 	shadowTemperatureBias = 0
 	#How much vanilla torch/lamp block light remains visible inside GPU-cast Sun shadows in percent. 0 hides the extra block-light contribution in bright Sun shadows, 100 keeps the full vanilla contribution there. Direct sunlight remains daylight-adapted. Does not affect GPU local lighting.
 	#Range: 0.0 ~ 100.0
-	vanillaBlockLightInSunShadowsPercent = 10.0
+	vanillaBlockLightInSunShadowsPercent = 100.0
 
 #ElarisSkyRenderer
 [sky]
@@ -346,7 +346,7 @@ elarisEnabled = true
 	normalStrength = 1.0
 	#Maximum side of each material atlas; smaller limits reduce video memory usage.
 	#Range: 256 ~ 4096
-	textureLimit = 1024
+	textureLimit = 512
 
 #Planar Reflections
 [reflections]
@@ -376,7 +376,7 @@ elarisEnabled = true
 [postEffects]
 	#MINIMUM / MEDIUM / HIGH: atmosphere buffer scale and volumetric integration accuracy. Does not change artistic intensity or the selected upscaler.
 	#Allowed Values: MINIMUM, MEDIUM, HIGH
-	quality = "HIGH"
+	quality = "MEDIUM"
 	#Legacy compatibility key. Atmosphere resolution is now controlled by postEffects.quality; this value is ignored.
 	#Range: 0.1 ~ 1.0
 	renderScale = 0.44
@@ -385,7 +385,7 @@ elarisEnabled = true
 [kawaseBloom]
 	#MINIMUM keeps legacy sourceScale/levels. MEDIUM: 75% source, 5 bands; HIGH: full source, 7 bands and hot-pixel suppression.
 	#Allowed Values: MINIMUM, MEDIUM, HIGH
-	quality = "MEDIUM"
+	quality = "MINIMUM"
 	#Enable isolated bloom for blocks whose current state emits vanilla block light.
 	enabled = true
 	#Final additive bloom intensity.
@@ -431,7 +431,7 @@ elarisEnabled = true
 	visualPreset = "CUSTOM"
 	#Overall intensity multiplier for ElarisSkyRenderer God Rays shafts.
 	#Range: 0.0 ~ 2.5
-	rayIntensity = 1.63
+	rayIntensity = 2.1
 	#Overall intensity multiplier for the separate Sun/Moon halo.
 	#Range: 0.0 ~ 2.5
 	haloIntensity = 1.63
@@ -469,10 +469,10 @@ elarisEnabled = true
 	skyVolumetricGodRaysEnabled = true
 	#Overall brightness multiplier for ElarisSkyRenderer Volumetric God Rays.
 	#Range: 0.0 ~ 3.0
-	intensity = 0.97
+	intensity = 2.0
 	#Atmospheric scattering density used by ElarisSkyRenderer Volumetric God Rays. Higher values make shafts denser and more opaque-looking.
 	#Range: 0.0 ~ 3.0
-	density = 0.76
+	density = 1.15
 	#Legacy compatibility key. Volumetric ray samples are now 8 / 16 / 32 according to postEffects.quality; this value is ignored.
 	#Range: 8 ~ 32
 	raymarchSamples = 13
@@ -481,12 +481,12 @@ elarisEnabled = true
 	rayUniformityPercent = 0.0
 	#Artistic side-angle visibility for volumetric shafts. 0 keeps the original strongly directional phase response; 100 raises side-angle scattering toward a neutral visibility floor without reducing the forward highlight.
 	#Range: 0.0 ~ 100.0
-	sideVisibilityPercent = 0.0
+	sideVisibilityPercent = 20.0
 	#Suppresses broad, low-structure volumetric haze created by the artistic Ray Uniformity and Side Visibility boosts without simply lowering Ray Intensity. 0 preserves the original output exactly. Higher values increasingly remove blanket-like screen tint in open views while preserving the physical directional component and shadow-structured shafts. Default: 40%.
 	#Range: 0.0 ~ 100.0
 	hazeSuppressionPercent = 41.0
 	#Allow the separate Celestial Entity Shadow Map to occlude volumetric shafts. This only has an effect while Entity Shadows are enabled under Celestial Shadows.
-	entityOcclusion = false
+	entityOcclusion = true
 	#Maximum raymarch distance in blocks. Actual distance is capped by the far sky-shadow cascade coverage.
 	#Range: 16.0 ~ 384.0
 	maxDistance = 144.0
@@ -549,7 +549,7 @@ elarisEnabled = true
 	highlightCompression = 0.65
 	#Adds a subtle toe to deepen flat shadows without crushing them.
 	#Range: 0.0 ~ 1.0
-	shadowDepth = 0.1
+	shadowDepth = 0.0
 	#Overall color saturation multiplier.
 	#Range: 0.0 ~ 2.0
 	saturation = 1.0
@@ -574,7 +574,7 @@ elarisEnabled = true
 	fogCelestialScatteringEnabled = false
 	#True extinction multiplier. The shader squares this value so the upper range can produce very dense AtmosphereFog without changing its color toward white.
 	#Range: 0.0 ~ 20.0
-	density = 7.12
+	density = 6.0
 	#Brightness of the AtmosphereFog scattering color, independent from extinction/density.
 	#Range: 0.25 ~ 1.2
 	scatteringBrightness = 1.2
@@ -594,13 +594,13 @@ elarisEnabled = true
 	celestialColorBlend = 0.63
 	#Distance in blocks before the custom AtmosphereFog starts becoming visible.
 	#Range: 0.0 ~ 160.0
-	startDistance = 8.0
+	startDistance = 160.0
 	#Distance in blocks over which AtmosphereFog reaches full local strength after its start point. Zero makes it appear almost immediately.
 	#Range: 0.0 ~ 64.0
-	nearFade = 42.6
+	nearFade = 64.0
 	#Maximum opacity of the custom AtmosphereFog. Keeping this below one prevents a white wall.
 	#Range: 0.0 ~ 1.0
-	maxOpacity = 0.64
+	maxOpacity = 0.5
 	#How strongly the AtmosphereFog inherits the blue sky gradient instead of a neutral gray.
 	#Range: 0.0 ~ 1.0
 	skyTint = 0.78
@@ -689,7 +689,7 @@ elarisEnabled = true
 [ssr]
 	#MINIMUM / MEDIUM / HIGH. Controls ray traversal, hit refinement, material resolution and history filtering. Water and materials share this preset.
 	#Allowed Values: MINIMUM, MEDIUM, HIGH
-	preset = "HIGH"
+	preset = "MINIMUM"
 	#Screen-space reflections on opaque Embeddium PBR terrain. Requires PBR materials. Does not re-render world geometry. Disabled by default.
 	materialsEnabled = true
 	#Legacy compatibility key. Reflection trace quality is now controlled by ssr.preset; this value is ignored.
@@ -708,7 +708,7 @@ elarisEnabled = true
 	enabled = true
 	#MINIMUM / MEDIUM / HIGH. Controls resolution, horizon directions and samples.
 	#Allowed Values: MINIMUM, MEDIUM, HIGH
-	quality = "MEDIUM"
+	quality = "MINIMUM"
 
 #Experimental Rain Puddles
 [rainPuddles]
@@ -821,7 +821,7 @@ elarisEnabled = true
 #ESS / Elaris Super Sampling
 [ess]
 	#Legacy storage key for the unified upscaler selection. Enables shared reduced-resolution world rendering for one ESS or Vulkan SDK reconstruction algorithm. Disabled by default.
-	enabled = false
+	enabled = true
 	#PERFORMANCE: ESS 1.1 spatial reconstruction. QUALITY: ESS 2.0 temporal reconstruction with integrated antialiasing. Legacy ESS_1_0 / ESS_1_1 values migrate to PERFORMANCE.
 	#Allowed Values: PERFORMANCE, QUALITY, ESS_1_0, ESS_1_1
 	mode = "QUALITY"
@@ -856,7 +856,7 @@ elarisEnabled = true
 [antialiasing]
 	#OFF, FXAA, SMAA (spatial 1x), SMAA_2X (two real-frame samples), SMAA_4X (Elaris four real-frame samples, not MSAA+T2x). AA disables all upscalers.
 	#Allowed Values: OFF, FXAA, SMAA, SMAA_2X, SMAA_4X
-	mode = "FXAA"
+	mode = "OFF"
 
 #ESS FG / Elaris Super Sampling Frame Generation
 [essFg]
@@ -883,13 +883,13 @@ elarisEnabled = true
 #Experimental Vulkan SDK super resolution. World rasterization remains OpenGL; HUD and hands stay native.
 [experimentalVulkan]
 	#Legacy storage key for the unified upscaler selector: together with ess.enabled, chooses the Vulkan SDK instead of ESS. Requires Windows x64, Vulkan 1.2, OpenGL timer queries and explicit fragment outputs, matching GPU/driver and external memory/semaphores. If unavailable, ESS uses OpenGL. Disabled by default.
-	enabled = false
+	enabled = true
 	#FSR31: shader-based FSR 3.1.4. DLSS: NVIDIA RTX only. XESS: restricted to the active Intel GPU in Elaris, with additional Intel runtime checks.
 	#Allowed Values: FSR31, DLSS, XESS
 	upscaler = "DLSS"
 	#Requested DLSS SR transformer model: K (DLSS 4, lower cost) or M (DLSS 4.5, higher cost). Packaged NGX runtime: 310.9.1. NVIDIA app overrides can replace this hint. No DLSS frame generation or ray reconstruction.
 	#Allowed Values: TRANSFORMER_K, TRANSFORMER_M
-	dlssModel = "TRANSFORMER_M"
+	dlssModel = "TRANSFORMER_K"
 
 [grass]
 	enabled = true
@@ -911,7 +911,7 @@ elarisEnabled = true
 	bendStrength = 1.0
 	backlightEnabled = true
 	#Range: 0.0 ~ 2.0
-	backlightIntensity = 1.0
+	backlightIntensity = 2.0
 
 #Opaque Ice
 [opaqueIce]

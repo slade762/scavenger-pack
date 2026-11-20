@@ -87,6 +87,11 @@
 	shaderFixOnFirstGun = true
 	#Shaders: draw held guns in the shadow pass. false = players still cast a shadow, but the gun doesn't (much cheaper).
 	gunShadows = false
+	#Shaders: when gunShadows is false, the held gun still casts a shadow as a plain static model
+	#(same model as the gun on your back: no reload/inspect animation, attachments or muzzle flash in the shadow). false = no gun in the shadow.
+	staticGunShadow = true
+	#Shaders (Elaris): draw the worn Sophisticated Backpack into the player shadow as a solid model (it was missing).
+	backpackShadow = true
 
 [third_person]
 	#(old setting, no longer used)
@@ -504,7 +509,7 @@
 	#Options: stalker (muted, green shadows, warm grey highlights), tarkov (cold blue-grey, contrasty),
 	#vanilla_plus (light touch, close to normal colors), off.
 	#Cycle presets in game with the color grade key (F7 by default, Controls > Zone Tactical).
-	preset = "off"
+	preset = "stalker"
 	#How strong the grade is. 1.0 = full, 0.5 = half way between Elaris' look and the grade.
 	#Range: 0.0 ~ 1.0
 	strength = 1.0
@@ -512,4 +517,35 @@
 	#1.0 = same colour, so near fog and far LOD fog blend seamlessly. 0 = Elaris' own sky-lit fog colour.
 	#Range: 0.0 ~ 1.0
 	elarisFogMatch = 1.0
+
+[zone_fx]
+	#Zone FX (with Elaris): screen effects drawn in Elaris' final pass. false = all off.
+	enabled = true
+	#Film grain, flicker and colour loss while you're in radiation (and during emissions). 0 = off, 1 = default.
+	#Range: 0.0 ~ 2.0
+	radiationGrain = 1.0
+	#Psi fields: colour fringes (chromatic aberration) and a slow wobble. Weaker while your gear shields you. 0 = off.
+	#Range: 0.0 ~ 2.0
+	psiAberration = 1.0
+	#Emissions: red tint and a slow pulse that builds while the City sings. 0 = off.
+	#Range: 0.0 ~ 2.0
+	emission = 1.0
+	#Low health (below 40%): darker edges, colour drains, a pulse with your heartbeat. 0 = off.
+	#Range: 0.0 ~ 2.0
+	lowHealth = 1.0
+	#Rain drops on the lens while you look up in the rain (first person). 0 = off.
+	#Range: 0.0 ~ 2.0
+	lensRain = 1.0
+	#Smudges on a closed helmet / gas mask visor that light up in bright light (first person). 0 = off.
+	#Range: 0.0 ~ 2.0
+	visorDirt = 1.0
+	#Always-on subtle vignette (darker corners). 0 = off.
+	#Range: 0.0 ~ 0.6
+	vignette = 0.16
+	#Soft bloom around bright things (sky, lamps, fire, sunlit surfaces). 0 = off.
+	#Range: 0.0 ~ 2.0
+	bloom = 0.25
+	#Softens what is deep in the fog (pixels close to the fog colour). 0 = off.
+	#Range: 0.0 ~ 1.5
+	fogBlur = 0.0
 

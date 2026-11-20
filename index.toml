@@ -90,7 +90,7 @@ hash = "a37eb7f218ab61f3277a103a85c5bd14ff0abe0dff94e17883bcbb5ea28a3855"
 
 [[files]]
 file = "config/cinematic_respawn.properties"
-hash = "cc76318cfcbfcaa54aa7588e274d97e7e935d097d43a6ed146bdb7cc8c53eb79"
+hash = "29a03dcb5d198112558167b546abc6140af4a2aa809d34e055c415849f7a5143"
 
 [[files]]
 file = "config/cinematic-client.toml"
@@ -178,7 +178,7 @@ hash = "95ce6a868535f6cd8d5e7dd4ea7ce65c372ca44a94b6a2ffb1de11d73cf20dbe"
 
 [[files]]
 file = "config/elaris-client.toml"
-hash = "ad863efa04cfd4d02d804519059e5fe75a68e5c65d566684574eb200a4ea06c2"
+hash = "cbbb8b02b9552dc1e4e89069fceff5eb47979263fbb5da5846606b28295439a0"
 
 [[files]]
 file = "config/embeddium-fingerprint.json"
@@ -190,7 +190,7 @@ hash = "09ff183e061d93b79514bc171bf9118497578757e7a5c45946039487656e2619"
 
 [[files]]
 file = "config/embeddium-options.json"
-hash = "2d0f7904cd206067a46c8b64a88e8b46e855baa11b403fb08355d0e8c4c81630"
+hash = "daeeb0010dfbe6bee3d6edb89cd14cf7de8f72e87147d9151e3e4934d8e10494"
 
 [[files]]
 file = "config/emf_compat.json"
@@ -370,7 +370,7 @@ hash = "26ac5810c9b5dc5c1968827357f0a58c58ac2b6f7b082630960228e16585062f"
 
 [[files]]
 file = "config/handson_delight.properties"
-hash = "32f84f196736796d460a8db35deca5617c73abd60c9de1bd97685bc6680275de"
+hash = "59d3284fe1421cfb48b1c4a81defb6d7d43358e2122241ad89e295f623495279"
 
 [[files]]
 file = "config/holdmyitems-client.toml"
@@ -642,7 +642,7 @@ hash = "dca55a2792451b31424cd5c24037141ec57cdca51955d062dd908fa9ca6a3e9c"
 
 [[files]]
 file = "config/leawind_third_person.json"
-hash = "ef1feef0c88b5f98f21e7d5b1d11c9c246b270d3c04179488b9b2d251ffd32ad"
+hash = "56e347ad8134b9e70e7507fd715fc52cf95786469d34ca551a5d4a99bbbe1e36"
 
 [[files]]
 file = "config/lexiconfig.toml"
@@ -1038,7 +1038,7 @@ hash = "94c1c4f70e5b995fbd71e86d4fa646030437fecae0685875b560a55fbd0d0e56"
 
 [[files]]
 file = "config/voicechat/player-volumes.properties"
-hash = "0332261861a5ace96f503e85b0d48a8df74ea6c2f3545cd229543a6afb55ad96"
+hash = "231210ce329fd2d6ee75a517a9dbc6308a95955322d6dcdcb238a05b5c8551d6"
 
 [[files]]
 file = "config/voicechat/translations.properties"
@@ -1046,11 +1046,11 @@ hash = "693643b1d393cbb3ea7f062afc4474fcd66e4036c4f8d7c056434979cbf512d1"
 
 [[files]]
 file = "config/voicechat/username-cache.json"
-hash = "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+hash = "d5ef728215fc01d936bfb43ed68a1aa06cbb884497511ef0285662deb6c69781"
 
 [[files]]
 file = "config/voicechat/voicechat-client.properties"
-hash = "99bd5591f573980d861365e4fe03f2e211d4dd0661c1d3385e0c0c9bf6596543"
+hash = "b86bc2b8875cafc41f1c51d60c76614b8417dffb42e5ae60fca2a0a3aa425500"
 
 [[files]]
 file = "config/voicechat/voicechat-server.properties"
@@ -1074,7 +1074,7 @@ hash = "c167ad90e6fc2b409c7683dbeac88cbfd85849b90f8df13b5446c1203c1c510c"
 
 [[files]]
 file = "config/weatherglass.properties"
-hash = "f028e97da537d91e21d4036ad4aacc96ba85254905f62339006daa1715e8ff20"
+hash = "b2d98109c9e3b4152d60d19437ebb17e75780db62bb8abdfd038b48a49db8dae"
 
 [[files]]
 file = "config/worldedit/.archive-unpack/2e1dd752/.unpack_finished"
@@ -1550,7 +1550,7 @@ hash = "6de833a135cc17b7426520b68bd7820a62fbb19aa1489c7fcc78b14c8ebc3d4e"
 
 [[files]]
 file = "config/worldedit/worldedit.properties"
-hash = "1deb924efe34aa412db40d82d34aaad83922b2787b1a0abe6344a455001a21f9"
+hash = "e9ae46b90b7b8bec26018ee6dabc42585dbf74a2cf9bec8e02b8042088957602"
 
 [[files]]
 file = "config/xaero/lib/client.cfg"
@@ -1650,11 +1650,11 @@ hash = "1f8670911537dcb8d8b67e51203f3095b27057ebe398ac3df9301ddd088abfbe"
 
 [[files]]
 file = "config/zone_tactical_anims-client.toml"
-hash = "4bb65828f46f50e426c4f5a669ce33726bf3c7b57c49b956e86a549f13218e60"
+hash = "43e955f767f72dc4e3223db63ead2cf3612fa6a92fe481067e157655877b31fd"
 
 [[files]]
 file = "config/zone_tactical_anims-common.toml"
-hash = "61f9c29969213eae1d722e0f614e420a13df97df6c73fab266ad9fede3fa1cf7"
+hash = "dfd9923e711c97cb1d7d60a3a03e0598dd1b1b2a257598f4cc0f52a592b93700"
 
 [[files]]
 file = "config/zone_tactical_anims-keys.done"
@@ -1662,7 +1662,7 @@ hash = "11e7b832fad4f43bdf83a61b3a4c499f6a53ae7a3c9be68da0f8263c9546c6f1"
 
 [[files]]
 file = "config/zone_tactical_anims-tracking.properties"
-hash = "fda3a4b70d4b02c09bb52a7a8c61cac40958aff45236fb41f91a2b7dbdc0d5c2"
+hash = "730bd4831a9d5446ab08fc5e72850ffdbcf77ecf40bf3895bf2fcb1d08a718ab"
 
 [[files]]
 file = "customnpcs/assets/customnpcs/sounds.json"
@@ -2732,11 +2732,11 @@ hash = "d6364e3b3ffea4b912889d3dcd3e2acebf7d663b22b96402402fbd383eefa460"
 
 [[files]]
 file = "mods/zone_tactical_anims-0.1.0.jar"
-hash = "e52143a0b223961044a202f1016f16c2dcfd9b40dd2d39a4ebfd19cc669780c9"
+hash = "c285949cbc8d95151c323ed144d73930607088d1322ab7f0f558ba008185aaeb"
 
 [[files]]
 file = "options.txt"
-hash = "0f10921cef1d687c275b96d211652b54cbbda3e24b4d1d932d6b51a4a25b5e0b"
+hash = "1ad0beaaf9cd1eeaa8381dc0cef0cdc62dfd90ea4381a87ecd298776cf88234e"
 preserve = true
 
 [[files]]
