@@ -127,3 +127,8 @@
 	#Hunger is in half-shanks (20 = full bar; a cooked steak is 8,0.8). Items that are already normal food are skipped.
 	hungerValues = ["anomalyzone:stew_can=8,0.8", "anomalyzone:field_ration=10,0.8", "anomalyzone:energy_drink=1,0.1", "anomalyzone:vodka_hryuchevo=1,0.1", "itz:chocolate_bar=4,0.3", "itz:rad_bread=5,0.6", "itz:energy_drink=1,0.1", "itz:vodka=1,0.1", "tarkovdayz:mre=10,0.8", "tarkovdayz:tea=2,0.2", "tarkovdayz:cola=2,0.1"]
 
+[inventory]
+	#Guns only ever go in pocket slot 1 (the holster slot), and slot 1 only takes guns. A second gun goes to your backpack.
+	#Stops quick-swapping between guns instead of reloading. Creative mode is exempt.
+	gunSlotOnly = true
+

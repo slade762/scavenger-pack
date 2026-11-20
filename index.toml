@@ -6,7 +6,7 @@ hash = "e2c621ae85ff73e9bddde340b0ac983e71e7cccd93453c85896e8b8ceee18b74"
 
 [[files]]
 file = "config/ambimod.json"
-hash = "6f24be6511bf9179edb548c52c2ced692e56f97f891cc8a09b7ab24c4407dbe9"
+hash = "b6c78a298474c600dfc99544484e39b98c4d86836b80512e61012a0dfd86a033"
 
 [[files]]
 file = "config/ambimod/ambicore.json"
@@ -90,7 +90,7 @@ hash = "a37eb7f218ab61f3277a103a85c5bd14ff0abe0dff94e17883bcbb5ea28a3855"
 
 [[files]]
 file = "config/cinematic_respawn.properties"
-hash = "736a53c8a28869e45c2bc5b2d08d57372a7f59f3e3244e9dc2b574df13e31bc0"
+hash = "24b806bd8726cc3696b85598052a874bd34b5e88f1e6296ad16de3fa108d0f80"
 
 [[files]]
 file = "config/cinematic-client.toml"
@@ -366,7 +366,7 @@ hash = "26ac5810c9b5dc5c1968827357f0a58c58ac2b6f7b082630960228e16585062f"
 
 [[files]]
 file = "config/handson_delight.properties"
-hash = "27fb8a1fca02556b412d243815d1d3c6898d59df93e69cb1abf8b0951482bf2d"
+hash = "bf50d9f66104326228307ab4483f0033a471547ce8ebe360450d3b5985879c43"
 
 [[files]]
 file = "config/holdmyitems-client.toml"
@@ -782,7 +782,7 @@ hash = "7189bb61c58cb1030b8ee486e66abf694d257192248b9b3ac4978df2b1366f7d"
 
 [[files]]
 file = "config/particlerain/config.json"
-hash = "d04b733542dd806c7f0990c8239087bdb78be64bb1112bfb38227560e7b08dd6"
+hash = "1d3936b26b2dd9f990fae74b556c9e6f1608cc6149393580c46144219673b0ad"
 
 [[files]]
 file = "config/particular-common.toml"
@@ -1546,7 +1546,7 @@ hash = "6de833a135cc17b7426520b68bd7820a62fbb19aa1489c7fcc78b14c8ebc3d4e"
 
 [[files]]
 file = "config/worldedit/worldedit.properties"
-hash = "a3b965d900dcbc770ab59ec81c8856b69564780006af40f1703f04924d8acc95"
+hash = "2a2cbfdaae29b30aaa365b467d8f735f33a4b9744037bb172ed96ea22525d91d"
 
 [[files]]
 file = "config/xaero/lib/client.cfg"
@@ -1650,7 +1650,7 @@ hash = "8235b48a2c52c0cccd29dc1aca3b7dd254f7635b5235198766c16bd3a6af5dab"
 
 [[files]]
 file = "config/zone_tactical_anims-common.toml"
-hash = "ab93dae14a17146417de01c9742376545246ce1208eb8471f1d0fbd7d64ca076"
+hash = "f15f5d87c3e56c3d60fe896087ef0ea1797f06d5542c6f8ec465faf1ebec5953"
 
 [[files]]
 file = "config/zone_tactical_anims-keys.done"
@@ -1905,6 +1905,10 @@ file = "kubejs/server_scripts/no_baby_zombies.js"
 hash = "2d180fc461a875bf31ad6ed7a84ebd44351f211fd5d0a672c55de4be3347d8e9"
 
 [[files]]
+file = "kubejs/server_scripts/zone_a_firstday.js"
+hash = "63a90dedf6010f5c8936bf86eebdedef749183a1cacb495b2c6709468f072cf0"
+
+[[files]]
 file = "kubejs/server_scripts/zone_alife.js"
 hash = "a3087d4f20eaaaa7ababfe7439f64e48bd5932f4d90804215309458da407075a"
 
@@ -2002,7 +2006,7 @@ hash = "2ceed7d31715e6ae634ed756da51814ca3da345f79cb5a097edb75b0de7292c8"
 
 [[files]]
 file = "kubejs/server_scripts/zone_pda_chatter.js"
-hash = "02e42aa8ab0ffd5189730b3e52c3a36aa09669abb7d688f6a96d29ae012ee229"
+hash = "ac745c678e20b54a61a668dca0a9d3761acd81b86e898e0765eac713a1a2c26e"
 
 [[files]]
 file = "kubejs/server_scripts/zone_pda_waypoints.js"
@@ -2014,7 +2018,11 @@ hash = "07ef557c18ddd6af5ced433741d796badd54be14970ed258c729b0551a71679f"
 
 [[files]]
 file = "kubejs/server_scripts/zone_poppy.js"
-hash = "d6ad7ba8f4d9a297de71faaa91bb231d30fe0b73e67b68a05471f0778ac98b1c"
+hash = "4a7bb5ecb60296a72ee166a7fe968f677269a0825120fda0becfc91335eb420a"
+
+[[files]]
+file = "kubejs/server_scripts/zone_quest_markers.js"
+hash = "236c79a2f4a62913dd1dc2716cf87cc3ca52b7abd7c8e0cf1f2b84c768f82cfe"
 
 [[files]]
 file = "kubejs/server_scripts/zone_questgivers.js"
@@ -2034,7 +2042,7 @@ hash = "3056b99177a11b88dae2bdf04dd04fafad986da870813a2249d1661958586c65"
 
 [[files]]
 file = "kubejs/server_scripts/zone_scorcher.js"
-hash = "fdc77ed585c9b73f5ef4819a9d535ad634a69eec27441b8148cdbf464d635565"
+hash = "0ad78919fba8b9c2300d4a0dc2c502dc72f70c395ff7f8fc284a6c0740ba06b5"
 
 [[files]]
 file = "kubejs/server_scripts/zone_sell_barrel.js"
@@ -2042,7 +2050,7 @@ hash = "eddd95bed5cdca828a622c5fe37cbec423db33e9e9a3dc19925abead157989c3"
 
 [[files]]
 file = "kubejs/server_scripts/zone_spawn_director.js"
-hash = "16d8e25cb6d12dd7951f979823b1a6198d6da85cc665ae6b2c1f481748a13173"
+hash = "6e535c7510f3ed6274c510c986536edf2de9b053c5b931b2be6a0f8577a4fa7f"
 
 [[files]]
 file = "kubejs/server_scripts/zone_spawnpoint.js"
@@ -2050,7 +2058,7 @@ hash = "855e539bdf691835f91348d4830cbd643134d880e473035a83ec5834af0bd0a0"
 
 [[files]]
 file = "kubejs/server_scripts/zone_story.js"
-hash = "1c8c7c6a115b02e58b1b7f1764d375092837b3085d9919b3cf69627f0d8c7f1c"
+hash = "e069030513a85ca134ecbde6528d48c33d35f65f9cfc54281e0965137432daa8"
 
 [[files]]
 file = "kubejs/server_scripts/zone_trader_rubles.js"
@@ -2497,6 +2505,11 @@ hash = "a3d7fac0e3680c49758ed7080dc552ff0d83ae6ea6d5df14e910cc9533696dba"
 metafile = true
 
 [[files]]
+file = "mods/perfect-birbs.pw.toml"
+hash = "ef5ab72219554dc1f84507c0a8ea99ced041bfa5c8bf6bb07247f40b59e010ac"
+metafile = true
+
+[[files]]
 file = "mods/PickUpNotifier-v8.0.0-1.20.1-Forge.jar"
 hash = "b343d2068413d895deb45417f56d2c823fe07b173879c1b03575eebfc189011d"
 
@@ -2696,11 +2709,11 @@ hash = "d6364e3b3ffea4b912889d3dcd3e2acebf7d663b22b96402402fbd383eefa460"
 
 [[files]]
 file = "mods/zone_tactical_anims-0.1.0.jar"
-hash = "ab660fa271ef112fb1b93332c193a66c550666f40a1a3d5630e938506b43befb"
+hash = "6c01cefa225542c96262c8152185ecdc9c6f0bb9692ac7cc7afc3aaa0dbfc9f3"
 
 [[files]]
 file = "options.txt"
-hash = "a15b09cca0ca7eaf3449ccdf08e55279f29e068e0e4a923cd93813d5aaf9465d"
+hash = "c56c26f8c55ccf5b4d977d3bc049901e24749f1eb8289b7354c9c7620b5ef9b0"
 preserve = true
 
 [[files]]

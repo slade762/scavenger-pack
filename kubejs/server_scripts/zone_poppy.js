@@ -204,6 +204,7 @@ BlockEvents.rightClicked(function (event) {
 
 // ---------------------------------------------------------------- map waypoint
 function zppWaypoint(srv) {
+  if (global.zoneQuestMarkers) return   // 0.77: zone_quest_markers.js shows quest markers + adds places on discovery
   srv.players.forEach(function (p) {
     var sent = {}
     try { sent = JSON.parse(String(p.persistentData.getString('zone_wp_sent') || '{}')) } catch (e) { sent = {} }

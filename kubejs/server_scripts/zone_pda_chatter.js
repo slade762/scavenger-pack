@@ -50,7 +50,7 @@ var ZPC = {
   SURNAMES: ['Lysenko', 'Danylenko', 'Bondar', 'Hnatyuk', 'Petrenko', 'Moroz', 'Savchuk', 'Tkachenko', 'Kravchuk'],
   BANDIT_NICKS: ['Kaban', 'Shnyr', 'Gvozdik', 'Lom', 'Sopla', 'Kosmach', 'Chuma', 'Bulka'],
   PACIFIST_NAMES: ['Mira', 'Anton', 'Lesya', 'Yevhen', 'Dana', 'Marko', 'Oksana', 'Ilko'],
-  ARMOURY_NAMES: ['Shieldbrother Hlib', 'Shieldsister Vira', 'Shieldbrother Danylo', 'Shieldsister Raisa']
+  ARMOURY_NAMES: ['Brother Hlib', 'Sister Vira', 'Shieldbrother Danylo', 'Sister Raisa', 'Brother Ostap']   // casual on the PDA; Danylo keeps the full title
 }
 
 var ZPC_LINES = {
@@ -129,9 +129,12 @@ var ZPC_LINES = {
   ],
   armoury: [
     'Rusak pays well for chimera hide. Bring it whole.',
-    'Shieldbrothers, the forge is lit. Bring artifacts, leave with steel.',
+    'Brothers, sisters, the forge is lit. Bring artifacts, leave with steel.',
     'Reminder: we don\'t repair junk. Bring something worth fixing.',
-    'A good helmet is cheaper than a funeral. Visit the Armoury.'
+    'A good helmet is cheaper than a funeral. Visit the Armoury.',
+    'Whoever borrowed my good hammer, brother, put it back. I know it was you.',
+    'Quiet night at the forge. Stay sharp out there, sisters.',
+    'Chimera tracks north of the walls again. Hunting party at dawn, brothers.'
   ],
   choir: [
     'Join the song. It is warm in the song.',

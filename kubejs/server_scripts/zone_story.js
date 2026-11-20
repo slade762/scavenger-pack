@@ -335,6 +335,7 @@ function zwpSend(srv, p, key) {
     (pos[1] === '~' ? '~' : Math.floor(pos[1])) + ':' + Math.floor(pos[2]) + ':' + pl.color + ':false:0:Internal-overworld-waypoints'))
 }
 function zwpCheck(srv) {
+  if (global.zoneQuestMarkers) return   // 0.77: zone_quest_markers.js shows quest markers + adds places on discovery
   srv.players.forEach(function (p) {
     var sent = {}
     try { sent = JSON.parse(String(p.persistentData.getString('zone_wp_sent') || '{}')) } catch (e) { sent = {} }

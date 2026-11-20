@@ -326,6 +326,8 @@ var ZTN = {
   COUNT: 6,
   ACTIVE: 96,                        // spawn only while a player is this close (chunks loaded)
   RESPAWN_SEC: 90,
+  LEASH: 16,                         // a turned scavenger farther than this from the spot, with nobody near it, is put back
+  LEASH_FREE: 20,                    // ...unless a player is this close to it (it's chasing someone)
   WAYPOINT: { name: 'Lost Patrol', color: 12 },
   DIALOGS: {
     30: "Moe sent you? Good, he's got an eye for the ones worth saving. I'm Pasha. I teach new scavengers how not to die in their first week. " +
@@ -370,11 +372,31 @@ function ztnStep(srv) {
   })
   if (!near) return
   var have = ztnCmd(srv, 'execute in minecraft:overworld if entity @e[type=minecraft:zombie,tag=zone_turned]')
-  if (have > 0) { if (!st.alive) { st.alive = true; ztnSave(srv, st) } return }
+  if (have > 0) { if (!st.alive) { st.alive = true; ztnSave(srv, st) } try { ztnLeash(srv, st) } catch (e) { ztnErr('leash', e) } return }
   if (st.alive) { st.alive = false; st.next = now + ZTN.RESPAWN_SEC * 1000; ztnSave(srv, st); return }   // just cleared
   if (!wanted || now < st.next) return
   var n = ztnSpawn(srv, st)
   if (n > 0) { st.alive = true; ztnSave(srv, st); console.info('[zone] turned: ' + n + ' Turned Scavengers at ' + st.x + ', ' + st.z) }
+}
+// keep the patrol at the Lost Patrol spot: vanilla zombies wander off (and the Bar safe zone removes any that get near the Bar)
+function ztnLeash(srv, st) {
+  var players = []
+  srv.players.forEach(function (p) { if (String(p.level.dimension).includes('overworld')) players.push([p.x, p.z]) })
+  srv.overworld().getEntities().forEach(function (e) {
+    try {
+      if (!e.tags.contains('zone_turned')) return
+      if (Math.hypot(e.x - st.x, e.z - st.z) <= ZTN.LEASH) return
+      for (var i = 0; i < players.length; i++) if (Math.hypot(players[i][0] - e.x, players[i][1] - e.z) < ZTN.LEASH_FREE) return
+      var x = Math.floor(st.x + (Math.random() - 0.5) * 10) + 0.5, z = Math.floor(st.z + (Math.random() - 0.5) * 10) + 0.5
+      ztnCmd(srv, 'execute in minecraft:overworld as ' + e.uuid + ' positioned ' + x + ' 0 ' + z + ' positioned over motion_blocking_no_leaves run tp @s ~ ~ ~')
+    } catch (err) {}
+  })
+}
+// where the patrol is now (middle of the loaded ones), else the spot. Used by zone_quest_markers.js.
+global.zoneTurnedWhere = function (srv) {
+  var st = ztnLoad(srv), sx = 0, sz = 0, n = 0
+  try { srv.overworld().getEntities().forEach(function (e) { try { if (e.tags.contains('zone_turned')) { sx += e.x; sz += e.z; n++ } } catch (err) {} }) } catch (e) {}
+  return n > 0 ? [Math.floor(sx / n), Math.floor(sz / n)] : [st.x, st.z]
 }
 function ztnTexts() {
   var api = Java.loadClass('noppes.npcs.api.NpcAPI').Instance(), ok = 0, fail = []

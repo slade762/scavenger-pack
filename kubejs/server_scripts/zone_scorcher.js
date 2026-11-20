@@ -73,6 +73,7 @@ BlockEvents.rightClicked(function (event) {
 
 // ---------------------------------------------------------------- map waypoint
 function zscWaypoint(srv) {
+  if (global.zoneQuestMarkers) return   // 0.77: zone_quest_markers.js shows quest markers + adds places on discovery
   var w = ZSC.WAYPOINT, c = zscCenter(srv)
   srv.players.forEach(function (p) {
     var sent = {}
