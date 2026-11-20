@@ -7,7 +7,7 @@
     "surfaceRange": 100
   },
   "sound": {
-    "rainVolume": 0.08,
+    "rainVolume": 0.04,
     "snowVolume": 0.1,
     "windVolume": 0.1
   },

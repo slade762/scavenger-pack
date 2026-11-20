@@ -144,3 +144,11 @@
 	#Stops quick-swapping between guns instead of reloading. Creative mode is exempt.
 	gunSlotOnly = true
 
+[jetpack]
+	#0.78.7: a charged Player Jetpack lets you fly like creative flight (jump, tap Space again; Space up, Shift down, hover).
+	#Drains the pack's charge while flying; empty = you fall. false = the jetpack mod's own thrust controls.
+	creativeFlight = true
+	#Minutes of flight on a full charge (any upgrade level). Ward: 2 hours.
+	#Range: 1 ~ 1440
+	flightMinutes = 120
+

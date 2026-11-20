@@ -376,7 +376,7 @@ elarisEnabled = true
 [postEffects]
 	#MINIMUM / MEDIUM / HIGH: atmosphere buffer scale and volumetric integration accuracy. Does not change artistic intensity or the selected upscaler.
 	#Allowed Values: MINIMUM, MEDIUM, HIGH
-	quality = "MEDIUM"
+	quality = "HIGH"
 	#Legacy compatibility key. Atmosphere resolution is now controlled by postEffects.quality; this value is ignored.
 	#Range: 0.1 ~ 1.0
 	renderScale = 0.44
@@ -385,7 +385,7 @@ elarisEnabled = true
 [kawaseBloom]
 	#MINIMUM keeps legacy sourceScale/levels. MEDIUM: 75% source, 5 bands; HIGH: full source, 7 bands and hot-pixel suppression.
 	#Allowed Values: MINIMUM, MEDIUM, HIGH
-	quality = "MINIMUM"
+	quality = "HIGH"
 	#Enable isolated bloom for blocks whose current state emits vanilla block light.
 	enabled = true
 	#Final additive bloom intensity.
@@ -505,7 +505,7 @@ elarisEnabled = true
 #Camera
 [camera]
 	#Enable the cinematic lens flare effect from the Sun and Moon independently from ElarisSkyRenderer God Rays.
-	lensFlareEnabled = true
+	lensFlareEnabled = false
 	#Overall intensity multiplier for the entire lens flare effect.
 	#Range: 0.0 ~ 3.0
 	flareIntensity = 1.87
@@ -622,7 +622,7 @@ elarisEnabled = true
 	depthAwareRefraction = true
 	#STANDARD (Low) keeps existing Elaris water. HIGH adds spectral waves and underwater optics (OpenGL 4.3). VANILLA disables Elaris water and restores the ordinary Minecraft/Embeddium fluid path. Switching rebuilds chunks without restarting.
 	#Allowed Values: STANDARD, HIGH, VANILLA
-	quality = "STANDARD"
+	quality = "HIGH"
 	#Enable the finest texture-driven micro-ripple band. When disabled, the shader skips the extra high-frequency texture sample completely.
 	detailWaves = true
 	#Water shader scale relative to the window, capped at world resolution. SSR quality imposes a minimum: Minimum 25%, Medium 50%, High 100%. ESS does not multiply the scale again. Matching full-size water can resolve without a second geometry draw.
@@ -689,7 +689,7 @@ elarisEnabled = true
 [ssr]
 	#MINIMUM / MEDIUM / HIGH. Controls ray traversal, hit refinement, material resolution and history filtering. Water and materials share this preset.
 	#Allowed Values: MINIMUM, MEDIUM, HIGH
-	preset = "MINIMUM"
+	preset = "HIGH"
 	#Screen-space reflections on opaque Embeddium PBR terrain. Requires PBR materials. Does not re-render world geometry. Disabled by default.
 	materialsEnabled = true
 	#Legacy compatibility key. Reflection trace quality is now controlled by ssr.preset; this value is ignored.
@@ -708,7 +708,7 @@ elarisEnabled = true
 	enabled = true
 	#MINIMUM / MEDIUM / HIGH. Controls resolution, horizon directions and samples.
 	#Allowed Values: MINIMUM, MEDIUM, HIGH
-	quality = "MINIMUM"
+	quality = "MEDIUM"
 
 #Experimental Rain Puddles
 [rainPuddles]

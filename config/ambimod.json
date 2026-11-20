@@ -19,7 +19,7 @@
   "windEnabled": true,
   "windVolume": 0.35,
   "rainEnabled": true,
-  "rainVolume": 0.19,
+  "rainVolume": 0.095,
   "thunderEnabled": true,
   "thunderVolume": 0.66,
   "desertStormEnabled": true,
