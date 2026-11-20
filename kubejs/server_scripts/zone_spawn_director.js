@@ -322,7 +322,7 @@ ServerEvents.customCommand('zone_spawn_info', event => {
 // they're all dead (so every player in a group can get their 5). They count as minecraft:zombie for the quest.
 var ZTN = {
   QUEST: 11,
-  SPOT: { x: -1400, z: 180 },        // default spot; move with /kubejs custom_command zone_turned_here
+  SPOT: { x: -1310, z: 291 },        // default spot; move with /kubejs custom_command zone_turned_here
   COUNT: 6,
   ACTIVE: 96,                        // spawn only while a player is this close (chunks loaded)
   RESPAWN_SEC: 90,
@@ -342,6 +342,8 @@ var ztnTick = 0, ztnWarned = {}, ztnTextDone = false
 function ztnErr(k, e) { if (!ztnWarned[k]) { ztnWarned[k] = true; console.error('[zone] turned ' + k + ': ' + e) } }
 function ztnCmd(srv, c) { return Number(srv.runCommandSilent(String(c))) || 0 }
 function ztnLoad(srv) {
+  // 11/19: Lost Patrol moved off the mountainside to -1310, 291 (Ward). One-time move of the saved spot.
+  try { if (!srv.persistentData.getBoolean('zone_turned_moved_1119')) { srv.persistentData.putBoolean('zone_turned_moved_1119', true); srv.runCommandSilent('kill @e[type=minecraft:zombie,tag=zone_turned]'); srv.persistentData.putString('zone_turned', JSON.stringify({ x: -1310, z: 291, alive: false, next: 0 })) } } catch (e) {}
   try { var raw = String(srv.persistentData.getString('zone_turned') || ''); if (raw) return JSON.parse(raw) } catch (e) {}
   return { x: ZTN.SPOT.x, z: ZTN.SPOT.z, alive: false, next: 0 }
 }

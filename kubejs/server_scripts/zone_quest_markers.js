@@ -9,6 +9,8 @@
 //  2. POI discovery: the first time a player walks into one of our places, it's added to their Xaero map
 //     (gold waypoint, saved by their client). Already-there waypoints with the same name aren't doubled.
 //
+// 0.78: one marker per quest with its height and quest id/name; players pick which to show (J / Shift+J).
+// Needs zone_tactical_anims 0.78+ for that format (0.77 would read the extra fields as part of the label).
 // Needs zone_tactical_anims 0.77+. With an older jar this script does nothing and the old chat waypoints stay on.
 // Op commands:
 //   /kubejs custom_command zone_markers_status    your active quests and where their markers point
@@ -28,7 +30,7 @@ var ZQM = {
     range:      { label: 'Firing Range', fd: 'range', at: [-1530, 95] },
     crate:      { label: 'Ammo crate', crate: true, at: [-1527, 89] },
     barrel:     { label: 'Sell barrel', at: [-1527, 89] },
-    lostpatrol: { label: 'Lost Patrol', turned: true, at: [-1400, 180] },   // follows the patrol itself (zone_spawn_director.js)
+    lostpatrol: { label: 'Lost Patrol', turned: true, at: [-1310, 291] },   // follows the patrol itself (zone_spawn_director.js)
     oldtown:    { label: 'Old Town', at: [-1233, 22] },
     kravets:    { label: 'Major Kravets', npc: 'Major Kravets', at: [-271, 315] },
     eliwood:    { label: 'Eliwood', npc: 'Eliwood', at: [-1488, -140] },
@@ -121,22 +123,47 @@ function zqmNpcs(srv) {
       try {
         if (String(e.type) !== 'customnpcs:customnpc') return
         var n = String(e.getName().getString())
-        if (!out[n]) out[n] = [Math.floor(e.x), Math.floor(e.z)]
+        if (!out[n]) out[n] = [Math.floor(e.x), Math.floor(e.z), Math.floor(e.y) + 2]   // 0.78: y = just above the head
       } catch (err) {}
     })
   } catch (e) { zqmErr('npc scan', e) }
   return out
 }
+// 0.78: marker heights. Ground height from the server when the chunk is loaded, remembered (and saved) for later.
+var zqmHT = null, zqmGroundCache = null, zqmGroundDirty = false
+function zqmGround(srv, x, z) {
+  if (!zqmGroundCache) zqmGroundCache = zqmJson(srv, 'zone_marker_y') || {}
+  var k = x + ',' + z
+  try {
+    var lvl = srv.overworld()
+    if (lvl.hasChunk(x >> 4, z >> 4)) {
+      if (!zqmHT) zqmHT = Java.loadClass('net.minecraft.world.level.levelgen.Heightmap$Types')
+      var h = Number(lvl.getHeight(zqmHT.MOTION_BLOCKING_NO_LEAVES, x, z))
+      if (h > -60) { if (zqmGroundCache[k] !== h) { zqmGroundCache[k] = h; zqmGroundDirty = true } return h + 1 }
+    }
+  } catch (e) { zqmErr('ground', e) }
+  return zqmGroundCache[k] !== undefined ? zqmGroundCache[k] + 1 : ''
+}
+function zqmWithY(srv, at, y) {
+  if (!at) return null
+  var yy = (y !== undefined && y !== null && y !== '' && !isNaN(y)) ? y : (at.length > 2 ? at[2] : '')
+  if (yy === '' || yy === undefined) yy = zqmGround(srv, Math.floor(at[0]), Math.floor(at[1]))
+  return [Math.floor(at[0]), Math.floor(at[1]), yy]
+}
 function zqmWhere(srv, key, npcs) {
+  var at = zqmWhere0(srv, key, npcs)
+  return zqmWithY(srv, at)
+}
+function zqmWhere0(srv, key, npcs) {
   var pl = ZQM.PLACES[key]
   if (!pl) return null
   if (pl.npc && npcs[pl.npc]) return npcs[pl.npc]
-  if (pl.fd) { var f = zqmJson(srv, 'zone_fd_' + pl.fd); if (f) return [Math.floor(f.x), Math.floor(f.z)] }
+  if (pl.fd) { var f = zqmJson(srv, 'zone_fd_' + pl.fd); if (f) return f.y !== undefined ? [Math.floor(f.x), Math.floor(f.z), Math.floor(f.y) + 1] : [Math.floor(f.x), Math.floor(f.z)] }
   if (pl.crate) { var c = zqmCrate(srv); if (c) return c }
   if (pl.scorcher) return zqmScorcher(srv)
   if (pl.turned && typeof global.zoneTurnedWhere === 'function') { try { return global.zoneTurnedWhere(srv) } catch (e) {} }
   if (pl.poi) { var b = zqmBuilt(srv, pl.poi); if (b) return [b[0], b[1]] }
-  return pl.at
+  return pl.at.slice(0, 2)
 }
 function zqmClean(s) { return String(s).replace(/[;,]/g, ' ') }
 // is the quest's goal done? (kills counted / items carried / dialog read)
@@ -148,18 +175,20 @@ function zqmGoalDone(q, ip) {
     return true
   } catch (e) { return false }
 }
+// 0.78: one marker per quest: "x,z,place,y,questId,questName" (the client picks which quests to show)
 function zqmSpecFor(srv, p, npcs) {
-  var ip = zqmIP(p), parts = [], seen = {}
+  var ip = zqmIP(p), parts = []
   var qs = ip.getActiveQuests()
-  for (var i = 0; i < qs.length; i++) {
+  for (var i = 0; i < qs.length && parts.length < 24; i++) {
     var q = qs[i], def = ZQM.QUESTS[q.getId()]
     if (!def) continue
     var key = (!def.go || (def.back && zqmGoalDone(q, ip))) ? (def.back || def.go) : def.go
-    if (!key || seen[key]) continue
-    seen[key] = true
+    if (!key) continue
     var at = zqmWhere(srv, key, npcs)
     if (!at) continue
-    parts.push(at[0] + ',' + at[1] + ',' + zqmClean(ZQM.PLACES[key].label))
+    var qn = ''
+    try { qn = zqmClean(q.getName()) } catch (e) {}
+    parts.push(at[0] + ',' + at[1] + ',' + zqmClean(ZQM.PLACES[key].label) + ',' + at[2] + ',' + q.getId() + ',' + qn)
   }
   return parts.join(';')
 }
@@ -173,6 +202,7 @@ function zqmUpdate(srv) {
       zqmQM.set(p, zqmSpecFor(srv, p, npcs))
     } catch (e) { zqmErr('update', e) }
   })
+  if (zqmGroundDirty) { zqmGroundDirty = false; try { srv.persistentData.putString('zone_marker_y', JSON.stringify(zqmGroundCache)) } catch (e) {} }
 }
 
 // ---------------------------------------------------------------- POI discovery

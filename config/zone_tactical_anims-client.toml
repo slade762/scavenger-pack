@@ -298,6 +298,11 @@
 	#Where the label sits down the screen (0 = top, 0.5 = crosshair height, 1 = bottom).
 	#Range: 0.0 ~ 1.0
 	factionIdY = 0.5
+	#0.78: size of the quest / PDA job diamonds and their text (1.0 = the 0.77 size).
+	#Range: 0.4 ~ 1.5
+	markerScale = 0.75
+	#0.78: draw headlamps (yours and other players') with Sodium Dynamic Lights. Needs the server's headlamp.serverLightBlocks off.
+	dynamicHeadlamp = true
 
 [holster]
 	#Gun in hotbar slot 1 is slung on your back when not held. 1 draws it, 1 again (or H) slings it.

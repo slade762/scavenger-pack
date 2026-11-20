@@ -90,7 +90,7 @@ hash = "a37eb7f218ab61f3277a103a85c5bd14ff0abe0dff94e17883bcbb5ea28a3855"
 
 [[files]]
 file = "config/cinematic_respawn.properties"
-hash = "6aa7fc4754e72a4bbc74888c32e87fbc1c3540e24bf403f0d2c9674b3c3ab5f7"
+hash = "9f29ab2183c748013382f9f18fb43b59bf51ced1c2c5664a3864b9e240d60fb5"
 
 [[files]]
 file = "config/cinematic-client.toml"
@@ -178,7 +178,7 @@ hash = "95ce6a868535f6cd8d5e7dd4ea7ce65c372ca44a94b6a2ffb1de11d73cf20dbe"
 
 [[files]]
 file = "config/elaris-client.toml"
-hash = "f90a0accf96e43107d2981e5d912a32d6470ca9be7a523448af63460735fe083"
+hash = "ad863efa04cfd4d02d804519059e5fe75a68e5c65d566684574eb200a4ea06c2"
 
 [[files]]
 file = "config/embeddium-fingerprint.json"
@@ -370,7 +370,7 @@ hash = "26ac5810c9b5dc5c1968827357f0a58c58ac2b6f7b082630960228e16585062f"
 
 [[files]]
 file = "config/handson_delight.properties"
-hash = "aef3139b05c18a45c8e2fc6ba3fab514735fe99e8fa2069912ec8d5452161d3d"
+hash = "f4dcfab3fc47f10c8cf25a37348516ade28f13cc43b35a79d73678813e5d5013"
 
 [[files]]
 file = "config/holdmyitems-client.toml"
@@ -1550,7 +1550,7 @@ hash = "6de833a135cc17b7426520b68bd7820a62fbb19aa1489c7fcc78b14c8ebc3d4e"
 
 [[files]]
 file = "config/worldedit/worldedit.properties"
-hash = "2a2cbfdaae29b30aaa365b467d8f735f33a4b9744037bb172ed96ea22525d91d"
+hash = "bf9d35d855d374cd8e81ce585a7ef2777ca1d6dde5212fcfaf58f98546ecee8b"
 
 [[files]]
 file = "config/xaero/lib/client.cfg"
@@ -1650,11 +1650,11 @@ hash = "1f8670911537dcb8d8b67e51203f3095b27057ebe398ac3df9301ddd088abfbe"
 
 [[files]]
 file = "config/zone_tactical_anims-client.toml"
-hash = "8235b48a2c52c0cccd29dc1aca3b7dd254f7635b5235198766c16bd3a6af5dab"
+hash = "4bb65828f46f50e426c4f5a669ce33726bf3c7b57c49b956e86a549f13218e60"
 
 [[files]]
 file = "config/zone_tactical_anims-common.toml"
-hash = "f15f5d87c3e56c3d60fe896087ef0ea1797f06d5542c6f8ec465faf1ebec5953"
+hash = "61f9c29969213eae1d722e0f614e420a13df97df6c73fab266ad9fede3fa1cf7"
 
 [[files]]
 file = "config/zone_tactical_anims-keys.done"
@@ -2017,6 +2017,10 @@ file = "kubejs/server_scripts/zone_pda_waypoints.js"
 hash = "5591ea0001e083a2b8307f5c8be603d010d66aec6538dda944a1c78a9dcbfa0e"
 
 [[files]]
+file = "kubejs/server_scripts/zone_pets.js"
+hash = "8b20f3b402ff3d69c1f62b8e115722c302afe33f477fa51eecee39b6bd2ee996"
+
+[[files]]
 file = "kubejs/server_scripts/zone_pois.js"
 hash = "07ef557c18ddd6af5ced433741d796badd54be14970ed258c729b0551a71679f"
 
@@ -2026,7 +2030,7 @@ hash = "4a7bb5ecb60296a72ee166a7fe968f677269a0825120fda0becfc91335eb420a"
 
 [[files]]
 file = "kubejs/server_scripts/zone_quest_markers.js"
-hash = "236c79a2f4a62913dd1dc2716cf87cc3ca52b7abd7c8e0cf1f2b84c768f82cfe"
+hash = "66bce5196884ec516c1c62751165a9752b23640a81a5034030d3fa906d9509a8"
 
 [[files]]
 file = "kubejs/server_scripts/zone_questgivers.js"
@@ -2054,7 +2058,7 @@ hash = "eddd95bed5cdca828a622c5fe37cbec423db33e9e9a3dc19925abead157989c3"
 
 [[files]]
 file = "kubejs/server_scripts/zone_spawn_director.js"
-hash = "6e535c7510f3ed6274c510c986536edf2de9b053c5b931b2be6a0f8577a4fa7f"
+hash = "6078396d302fc1f54186d90f6359a625db9257ab32199445e13ebbb8a3c23191"
 
 [[files]]
 file = "kubejs/server_scripts/zone_spawnpoint.js"
@@ -2719,11 +2723,11 @@ hash = "d6364e3b3ffea4b912889d3dcd3e2acebf7d663b22b96402402fbd383eefa460"
 
 [[files]]
 file = "mods/zone_tactical_anims-0.1.0.jar"
-hash = "6c01cefa225542c96262c8152185ecdc9c6f0bb9692ac7cc7afc3aaa0dbfc9f3"
+hash = "9b2c1dd418923fd84e927dba87f7bf9e59bd155f31cefae4b0fe8e07c4dedeae"
 
 [[files]]
 file = "options.txt"
-hash = "c56c26f8c55ccf5b4d977d3bc049901e24749f1eb8289b7354c9c7620b5ef9b0"
+hash = "22cb4a20586793a7cc2efee1f80dcfc042deb675b753c1c3eb7eab2568b42bbd"
 preserve = true
 
 [[files]]

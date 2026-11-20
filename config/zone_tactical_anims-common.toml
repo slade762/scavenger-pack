@@ -19,6 +19,9 @@
 	nearBrightness = 11
 	#Give every new player a headlamp (worn in the Curios head slot) the first time they join.
 	starterHeadlamp = true
+	#0.78: the server places invisible light blocks for headlamps (the old way; can flicker).
+	#Off = each client draws headlamps with Sodium Dynamic Lights instead (smooth, follows the view every frame).
+	serverLightBlocks = false
 
 [radiation]
 	#Radiation protection comes from the helmet only. Body armour gives none.
