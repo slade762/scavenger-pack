@@ -90,7 +90,7 @@ hash = "a37eb7f218ab61f3277a103a85c5bd14ff0abe0dff94e17883bcbb5ea28a3855"
 
 [[files]]
 file = "config/cinematic_respawn.properties"
-hash = "9d6077dfd6d2cf9e1dffa5c75562caf029839236d9f724df04119eb2fa13f225"
+hash = "736a53c8a28869e45c2bc5b2d08d57372a7f59f3e3244e9dc2b574df13e31bc0"
 
 [[files]]
 file = "config/cinematic-client.toml"
@@ -366,7 +366,7 @@ hash = "26ac5810c9b5dc5c1968827357f0a58c58ac2b6f7b082630960228e16585062f"
 
 [[files]]
 file = "config/handson_delight.properties"
-hash = "2e5e2027dc1181ebac4d0e1e120c62988c68bbac7477a9695e727eaafc78dfea"
+hash = "27fb8a1fca02556b412d243815d1d3c6898d59df93e69cb1abf8b0951482bf2d"
 
 [[files]]
 file = "config/holdmyitems-client.toml"
@@ -1546,7 +1546,7 @@ hash = "6de833a135cc17b7426520b68bd7820a62fbb19aa1489c7fcc78b14c8ebc3d4e"
 
 [[files]]
 file = "config/worldedit/worldedit.properties"
-hash = "268122f737a203e4156a6e8ab4e5b77c980444c40dbc612fbf44bd4f87f44202"
+hash = "a3b965d900dcbc770ab59ec81c8856b69564780006af40f1703f04924d8acc95"
 
 [[files]]
 file = "config/xaero/lib/client.cfg"
@@ -2483,11 +2483,6 @@ hash = "a387f7dcb6566e93149041783437f19b6faee8209f44bf2caf054b2b816a2a41"
 metafile = true
 
 [[files]]
-file = "mods/oculus-mc1-20-1-1-8-0.pw.toml"
-hash = "4e75c5d3a2e65be0f35d68c7fed7e0aa1068b8d6399476f457d0205a284ab252"
-metafile = true
-
-[[files]]
 file = "mods/particle_core-0.3.3+1.20.1+forge.jar"
 hash = "bd4023e4618333f3e6020a7d6f4db3ae7e8fe41b39a43f47e6a1da4fbd80bc1b"
 
@@ -2570,11 +2565,6 @@ metafile = true
 [[files]]
 file = "mods/searchcarefully-1201-10-0.pw.toml"
 hash = "cca834b321c2c6a5042a3ded6150951fd7e00ac98f1a0ef75aa14187d2169946"
-metafile = true
-
-[[files]]
-file = "mods/shouldersurfing-forge-1-20-1-5-3-1.pw.toml"
-hash = "fcd8d74dc91143303275edf68b82257e8927bbfcffcc086ccd064a3085880ef4"
 metafile = true
 
 [[files]]
@@ -2706,7 +2696,7 @@ hash = "d6364e3b3ffea4b912889d3dcd3e2acebf7d663b22b96402402fbd383eefa460"
 
 [[files]]
 file = "mods/zone_tactical_anims-0.1.0.jar"
-hash = "9986bdf4d41265bb6d41168685a3aa9ea9d97df572ed1a3d5a4b636a6b8bf951"
+hash = "ab660fa271ef112fb1b93332c193a66c550666f40a1a3d5630e938506b43befb"
 
 [[files]]
 file = "options.txt"
