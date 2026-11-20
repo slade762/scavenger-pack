@@ -46,7 +46,7 @@ hash = "c258692cbaad5cb7c44ffcd558f1893aba06a8748078327a6e1e2df2be697a4c"
 
 [[files]]
 file = "config/badmobs-common.toml"
-hash = "34f95225c41b692c83c05da96c001cbb31391c864cd02cbce61b51778cfb08a1"
+hash = "61a34cceadecbf24344dffdb3870f175d67e15a2d1aa34b9e8ef35554f620773"
 
 [[files]]
 file = "config/badmobs-common.toml.original"
@@ -90,7 +90,7 @@ hash = "a37eb7f218ab61f3277a103a85c5bd14ff0abe0dff94e17883bcbb5ea28a3855"
 
 [[files]]
 file = "config/cinematic_respawn.properties"
-hash = "24b806bd8726cc3696b85598052a874bd34b5e88f1e6296ad16de3fa108d0f80"
+hash = "6aa7fc4754e72a4bbc74888c32e87fbc1c3540e24bf403f0d2c9674b3c3ab5f7"
 
 [[files]]
 file = "config/cinematic-client.toml"
@@ -357,6 +357,10 @@ file = "config/forge-client.toml"
 hash = "0b1b3c45343435184c9dde3149b38afcdb97953e287686ecda54385f53ebcddc"
 
 [[files]]
+file = "config/fowlplay.json5"
+hash = "1f17d61bc52454e3e1cc353ccf58a332dd7e1314dca350b330c81628b3b69f7a"
+
+[[files]]
 file = "config/fracturepoint-common.toml"
 hash = "5038e9e2349a929385e68427a9d64ef6f7cf65641df396c93d0633f138697f0f"
 
@@ -366,7 +370,7 @@ hash = "26ac5810c9b5dc5c1968827357f0a58c58ac2b6f7b082630960228e16585062f"
 
 [[files]]
 file = "config/handson_delight.properties"
-hash = "bf50d9f66104326228307ab4483f0033a471547ce8ebe360450d3b5985879c43"
+hash = "aef3139b05c18a45c8e2fc6ba3fab514735fe99e8fa2069912ec8d5452161d3d"
 
 [[files]]
 file = "config/holdmyitems-client.toml"
@@ -934,7 +938,7 @@ hash = "e26b00784bb6239988759ed1a64551b9f301dc33c5a855d91e976ee4bf40ac8a"
 
 [[files]]
 file = "config/sound_physics_remastered/sound_rates.properties"
-hash = "84886794089c7680e7a94d9f8cd4cec28623a35a7c42f0828ee907ccf7c263e4"
+hash = "224cebe1cfbd1f9b0eb690085ebba3ac80b423a67a4d47c3ffa012b791a73861"
 
 [[files]]
 file = "config/sound_physics_remastered/soundphysics.properties"
@@ -2588,7 +2592,7 @@ metafile = true
 
 [[files]]
 file = "mods/smartbrainlib.pw.toml"
-hash = "a5a5dcea43a02efbd0bcc6e8278aeef7a38cf22e6640992487ae1374e3299921"
+hash = "3445c76534774af74ef1fceafa8570ced43d83c903aa4c3c8c716ab2439e8a34"
 metafile = true
 
 [[files]]
