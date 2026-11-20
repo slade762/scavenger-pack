@@ -286,6 +286,12 @@
 	#How strongly a radio pans between your ears, in % (100 = fully into one ear, 20 = the far ear keeps about half, 0 = always centred).
 	#Range: 0 ~ 100
 	radioPanMax = 20
+	#Where the name + faction label sits across the screen (0 = left edge, 0.5 = crosshair, 1 = right edge). The label is centred on this point.
+	#Range: 0.0 ~ 1.0
+	factionIdX = 0.395
+	#Where the label sits down the screen (0 = top, 0.5 = crosshair height, 1 = bottom).
+	#Range: 0.0 ~ 1.0
+	factionIdY = 0.5
 
 [holster]
 	#Gun in hotbar slot 1 is slung on your back when not held. 1 draws it, 1 again (or H) slings it.
@@ -487,7 +493,7 @@
 	#Options: stalker (muted, green shadows, warm grey highlights), tarkov (cold blue-grey, contrasty),
 	#vanilla_plus (light touch, close to normal colors), off.
 	#Cycle presets in game with the color grade key (F7 by default, Controls > Zone Tactical).
-	preset = "tarkov"
+	preset = "vanilla_plus"
 	#How strong the grade is. 1.0 = full, 0.5 = half way between Elaris' look and the grade.
 	#Range: 0.0 ~ 1.0
 	strength = 1.0

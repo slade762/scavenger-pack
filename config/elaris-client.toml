@@ -178,7 +178,7 @@ elarisEnabled = true
 #ElarisSkyRenderer
 [sky]
 	#Enable cinematic physical sky rendering.
-	enabled = true
+	enabled = false
 	#Sky cubemap face resolution. 256/512 are economical; 1024 uses 96 MiB for the double-buffered HDR sky.
 	#Range: 256 ~ 1024
 	cacheResolution = 512
@@ -569,7 +569,7 @@ elarisEnabled = true
 	fogEnabled = true
 	#Volumetric fog density multiplier: 0 skips the fog pass, 1 preserves the existing fog. Updated live without recompiling shaders.
 	#Range: 0.0 ~ 1.0
-	intensity = 0.25
+	intensity = 1.0
 	#Enable restrained Sun and Moon scattering glow, even when distance AtmosphereFog is disabled.
 	fogCelestialScatteringEnabled = false
 	#True extinction multiplier. The shader squares this value so the upper range can produce very dense AtmosphereFog without changing its color toward white.
@@ -700,7 +700,7 @@ elarisEnabled = true
 [lighting]
 	#LOW keeps existing lighting. HIGH adds colored directional/hemisphere diffuse lighting in the terrain pass; renderer reload only, no game restart.
 	#Allowed Values: LOW, HIGH
-	quality = "HIGH"
+	quality = "LOW"
 
 #Ground-truth ambient occlusion. OpenGL raster passes; HUD and hands are excluded.
 [gtao]
@@ -821,13 +821,13 @@ elarisEnabled = true
 #ESS / Elaris Super Sampling
 [ess]
 	#Legacy storage key for the unified upscaler selection. Enables shared reduced-resolution world rendering for one ESS or Vulkan SDK reconstruction algorithm. Disabled by default.
-	enabled = false
+	enabled = true
 	#PERFORMANCE: ESS 1.1 spatial reconstruction. QUALITY: ESS 2.0 temporal reconstruction with integrated antialiasing. Legacy ESS_1_0 / ESS_1_1 values migrate to PERFORMANCE.
 	#Allowed Values: PERFORMANCE, QUALITY, ESS_1_0, ESS_1_1
 	mode = "QUALITY"
 	#Internal resolution: ESS Ultra/Quality/Balanced/Performance = 85/77/67/58%; SDKs = 77/67/58/50%. LEGACY preserves an older renderScale until a preset is selected.
 	#Allowed Values: LEGACY, ULTRA_QUALITY, QUALITY, BALANCED, PERFORMANCE
-	preset = "LEGACY"
+	preset = "QUALITY"
 	#Legacy internal world render scale, used only with preset=LEGACY. Choosing a preset in the menu also updates this value.
 	#Range: 0.5 ~ 0.85
 	renderScale = 0.77
@@ -856,7 +856,7 @@ elarisEnabled = true
 [antialiasing]
 	#OFF, FXAA, SMAA (spatial 1x), SMAA_2X (two real-frame samples), SMAA_4X (Elaris four real-frame samples, not MSAA+T2x). AA disables all upscalers.
 	#Allowed Values: OFF, FXAA, SMAA, SMAA_2X, SMAA_4X
-	mode = "FXAA"
+	mode = "OFF"
 
 #ESS FG / Elaris Super Sampling Frame Generation
 [essFg]
@@ -883,13 +883,13 @@ elarisEnabled = true
 #Experimental Vulkan SDK super resolution. World rasterization remains OpenGL; HUD and hands stay native.
 [experimentalVulkan]
 	#Legacy storage key for the unified upscaler selector: together with ess.enabled, chooses the Vulkan SDK instead of ESS. Requires Windows x64, Vulkan 1.2, OpenGL timer queries and explicit fragment outputs, matching GPU/driver and external memory/semaphores. If unavailable, ESS uses OpenGL. Disabled by default.
-	enabled = false
+	enabled = true
 	#FSR31: shader-based FSR 3.1.4. DLSS: NVIDIA RTX only. XESS: restricted to the active Intel GPU in Elaris, with additional Intel runtime checks.
 	#Allowed Values: FSR31, DLSS, XESS
-	upscaler = "FSR31"
+	upscaler = "DLSS"
 	#Requested DLSS SR transformer model: K (DLSS 4, lower cost) or M (DLSS 4.5, higher cost). Packaged NGX runtime: 310.9.1. NVIDIA app overrides can replace this hint. No DLSS frame generation or ray reconstruction.
 	#Allowed Values: TRANSFORMER_K, TRANSFORMER_M
-	dlssModel = "TRANSFORMER_K"
+	dlssModel = "TRANSFORMER_M"
 
 [grass]
 	enabled = true

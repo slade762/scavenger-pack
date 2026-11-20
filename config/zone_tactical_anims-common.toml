@@ -57,6 +57,10 @@
 	#Spots inside the city with no city radiation (bases, quest NPCs): "x,z,radius" in blocks.
 	#The city fog still covers them; only the radiation is switched off.
 	citySafeZones = ["-270,327,48"]
+	#Our own psi fields (the Brain Scorcher north of the Radio Mast): "x,z,radius,level" in the overworld.
+	#Inside one you are in an Anomaly Zone psi zone of that level: the psi dose builds while your psi protection is below level x 100.
+	#Lev's Psy-Helmet gives 300, an Anomaly Zone suit piece 50. Overlapping circles: the highest level wins. Empty = off.
+	psiFields = ["-540,-330,100,2", "-540,-330,50,3"]
 
 [world]
 	#Real minutes for one full day/night. Vanilla 20; S.T.A.L.K.E.R.'s classic 10x clock is 144.
