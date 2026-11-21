@@ -61,6 +61,10 @@ file = "config/badmobs-common.toml.original"
 hash = "501878368466063dedb735067a0dc9414077aeaab0ebb9cfb30a11312ce42453"
 
 [[files]]
+file = "config/badoptimizations.txt"
+hash = "cae5ba66971b2f61e0b523c5aeb8b8d4fa806f0bea8a1709860e4fea94426ac9"
+
+[[files]]
 file = "config/betterdays-client.toml"
 hash = "9be0f6e8110477e7fa24be732b6f82d6b48c3fde02bcf4745679a09f437525cf"
 
@@ -101,12 +105,16 @@ file = "config/c2me.toml"
 hash = "cf1fb4f31f222d85efe0c4e1d37228ee4038ddffd0eb389b254861361a2e4507"
 
 [[files]]
+file = "config/camera_inertia-client.toml"
+hash = "cd182dd5d0a110fbe7dd6b30e2d7c6fd15381a5d011918e8986b316d328aa8d1"
+
+[[files]]
 file = "config/canary.properties"
 hash = "a37eb7f218ab61f3277a103a85c5bd14ff0abe0dff94e17883bcbb5ea28a3855"
 
 [[files]]
 file = "config/cinematic_respawn.properties"
-hash = "b2fee1ff093c1bcfac0f67bbaea3d073d61e64c831fd756d4330013ab8b95ef3"
+hash = "07ce33234ec3fd0905a1e1089f0999eb45540a56bf63d65e3dc0c233c9d35d55"
 
 [[files]]
 file = "config/cinematic-client.toml"
@@ -182,7 +190,7 @@ hash = "556eb7b8706d92662bababd89e7ade09b19625efe6e3ea25900084aee83195c8"
 
 [[files]]
 file = "config/DistantHorizons.toml"
-hash = "8d76ff6f0f649863a167de34e5a4a67892556f51857bba7e276f8c8aa012c605"
+hash = "fffd75e34849660fa669a616b9ec1b66c963214ba13c789a72885f1663565973"
 
 [[files]]
 file = "config/dochi_warfare/server-ai.json"
@@ -210,7 +218,7 @@ hash = "95ce6a868535f6cd8d5e7dd4ea7ce65c372ca44a94b6a2ffb1de11d73cf20dbe"
 
 [[files]]
 file = "config/elaris-client.toml"
-hash = "a67207d680f48331089b5005002df42b63757f335f28e599d0808c9f2f144448"
+hash = "8a51bb27b4bf0912fb71937a4db0e4027955d8a2d538dc5927ee47a7382d15f9"
 
 [[files]]
 file = "config/embeddium-fingerprint.json"
@@ -222,7 +230,7 @@ hash = "09ff183e061d93b79514bc171bf9118497578757e7a5c45946039487656e2619"
 
 [[files]]
 file = "config/embeddium-options.json"
-hash = "daeeb0010dfbe6bee3d6edb89cd14cf7de8f72e87147d9151e3e4934d8e10494"
+hash = "2d0f7904cd206067a46c8b64a88e8b46e855baa11b403fb08355d0e8c4c81630"
 
 [[files]]
 file = "config/emf_compat.json"
@@ -386,7 +394,7 @@ hash = "0dd9461aabcfe25333c5a2ee951b08e1d3b6a2be8eef28329fa87e8102608943"
 
 [[files]]
 file = "config/footstepstrail.json"
-hash = "14461f402b9aa6efeb80430081318f921e663198df8ae66e9efd6043b2c20cf0"
+hash = "c368d0eec8cf9da2d8bc84b75f94cd720828e20911e10ce36cadbbf3c4cf94aa"
 
 [[files]]
 file = "config/forge-client.toml"
@@ -406,7 +414,7 @@ hash = "26ac5810c9b5dc5c1968827357f0a58c58ac2b6f7b082630960228e16585062f"
 
 [[files]]
 file = "config/handson_delight.properties"
-hash = "e41998171a33e57a2fc6750c3c8126196fb6be823a5bc3cbd2e7c1d29562c671"
+hash = "4b91c77056194df5dfd0446120dd151c506653e3dc459ca0892cb2805295991c"
 
 [[files]]
 file = "config/holdmyitems-client.toml"
@@ -1397,6 +1405,10 @@ file = "config/items-displayed-common.toml"
 hash = "631ef3ec391974d763a03c1cfd667e1741c3b9999d7480a15eecde54a3be9be7"
 
 [[files]]
+file = "config/ixeris.toml"
+hash = "6000d427168aaab2066d9223caefeafed677a38b638e732dbdd1fff7102471ed"
+
+[[files]]
 file = "config/konkrete/locals/de_de.local"
 hash = "79a34cfd15c2d9c06498dc221be79279507d9b57666cd44f8d2c2cf95d3582ef"
 
@@ -1574,15 +1586,15 @@ hash = "f72dc2bce12a55066bd33e50c47b1ad33b1bdda65778cb5653d876e1fec3694d"
 
 [[files]]
 file = "config/oculus.properties"
-hash = "31bdd2466ddf8e38afcbbaf88ff3a40beb66f308551bcf61578de935d91dd5e6"
+hash = "997ffeb0033e2ef4de8329fce92795f06464e3db937bddc4a1b2b11737d3e110"
 
 [[files]]
 file = "config/packetfixer.properties"
-hash = "2003c9289b4d02917a34feffb8bb812846f3618a69b3dcb68af758cc165dc5ec"
+hash = "5326ab9c28bf6100ee19ba4e0fb5b77c88dd36748d633c429a3bb9c0cbf9529c"
 
 [[files]]
 file = "config/particle_core_config.toml"
-hash = "9f21aae26ba31a4fd9bab85c4bb4e37d10ac408aff9feed91ad6acdf1e269634"
+hash = "081acd07e04c1fe3c66f6badf01e925396871f315bb720472105e7e664c9846b"
 
 [[files]]
 file = "config/particle_core_disabled_optimizations_v2.json"
@@ -2043,6 +2055,10 @@ hash = "5e10292c894fd55e9f42b96eeb17722cab5ddb0f87e0cc7bb88875999c922efc"
 [[files]]
 file = "config/sway.json"
 hash = "2341f44a0ffb1b08e9029163acfa666b2d15c3b5070d54ef910d20c136ece786"
+
+[[files]]
+file = "config/tacz_x_guns_lights_addon-client.toml"
+hash = "7a10e3c0b01e3625fac3487ac28a791a48f88e3c7553b370a07905c5330580cc"
 
 [[files]]
 file = "config/tacz-client.toml"
@@ -2646,7 +2662,7 @@ hash = "6de833a135cc17b7426520b68bd7820a62fbb19aa1489c7fcc78b14c8ebc3d4e"
 
 [[files]]
 file = "config/worldedit/worldedit.properties"
-hash = "80216688a5c419aabd6a36beba4a89699d548f758544c894a9d075ac11313fb6"
+hash = "257fee324bea7cf1d38a2a7a65a739533fa113a12b8cef3fc62e1f3d6825df18"
 
 [[files]]
 file = "config/xaero/lib/client.cfg"
@@ -2746,11 +2762,11 @@ hash = "1f8670911537dcb8d8b67e51203f3095b27057ebe398ac3df9301ddd088abfbe"
 
 [[files]]
 file = "config/zone_tactical_anims-client.toml"
-hash = "f9763bc3543bbce602ace487ae18835ddfd1a95bf5f42fff97a3cd7eda772020"
+hash = "caddadf4fab0edaee214fcc6c8ab287591725b6535e7642d9091388cf79b1f0c"
 
 [[files]]
 file = "config/zone_tactical_anims-common.toml"
-hash = "5e5e64095600b0a9669a382faae624a9b56ea1beb67d3a31b72fed15d9a614d7"
+hash = "0e6e6fd7819bd91725bb9688677167c38f0b035d20be255c4c3d6e5881998f0e"
 
 [[files]]
 file = "config/zone_tactical_anims-keys.done"
@@ -2758,7 +2774,7 @@ hash = "11e7b832fad4f43bdf83a61b3a4c499f6a53ae7a3c9be68da0f8263c9546c6f1"
 
 [[files]]
 file = "config/zone_tactical_anims-tracking.properties"
-hash = "e700ad9b9280b28825cdf211c5ac0d81892479bd3fb58684372572d5941ff07f"
+hash = "712f0ea5188f6fb3000c36224bf4f94738aaaa0daeb8cef275585a14eaec1cd4"
 
 [[files]]
 file = "customnpcs/assets/customnpcs/sounds.json"
@@ -3057,6 +3073,10 @@ file = "kubejs/server_scripts/zone_bar_safe.js"
 hash = "4d862409c593504a54cc2b130f20e33cff9974f940177c3b99cae65f2071b0fc"
 
 [[files]]
+file = "kubejs/server_scripts/zone_catalogues.js"
+hash = "baee8c3d14ba649458e0ba649252bce7a0a8c08e1d5a00a5e054b8f0d6048d20"
+
+[[files]]
 file = "kubejs/server_scripts/zone_city_biome.js"
 hash = "7a4e756563f4ee583dd9c8bedb202e1c52f83f97d7c5129341b94383d3050edb"
 
@@ -3177,6 +3197,10 @@ file = "kubejs/server_scripts/zone_traders.js"
 hash = "b5404375ac2bec036e97a8ddb156dbf7b60f824ba80c574149602f631e699cc1"
 
 [[files]]
+file = "kubejs/server_scripts/zone_villa.js"
+hash = "34890a406fd8433dc497df562d1ad593b69558fd4523d0e04b12d0345bfd3ecc"
+
+[[files]]
 file = "kubejs/server_scripts/zone_villages.js"
 hash = "e187dfe1bc7174d6a5a22948447dba16a1a629631f7198b9bb40901ec7b2d575"
 
@@ -3254,6 +3278,11 @@ hash = "2870ad815b13ce73c90e453fe2573bb74bc2ac5b76d67b04c59d9bb0493f504f"
 metafile = true
 
 [[files]]
+file = "mods/badoptimizations.pw.toml"
+hash = "d7e27f9da4a3d52fd233f314b640b06b3978332f4ddb4c60a12727e700412b5b"
+metafile = true
+
+[[files]]
 file = "mods/baguettelib-1-20-1-forge-2-0-7.pw.toml"
 hash = "f63782566917265c92ae1eac35731dc6708b7b0745ad7bc26c9d29f5b1b47d6b"
 metafile = true
@@ -3284,6 +3313,11 @@ hash = "ddbd4496c1501579dace026ad49ca936c10e51cc5e08c152b5ab694da88b6e00"
 [[files]]
 file = "mods/brimm-3-0-1.pw.toml"
 hash = "4a840e54415720ef104ec7d6fefb9b74f476f7f516c22be2b07e79e50521e9bd"
+metafile = true
+
+[[files]]
+file = "mods/camerainertia.pw.toml"
+hash = "8fe574f09d99942f539fd5bb6487d74c33208bfe03a6cbc688f405534dae5940"
 metafile = true
 
 [[files]]
@@ -3412,11 +3446,6 @@ hash = "d904979b35440ccfe0a701efb3f06d849e5bd0ce6384f31b358d4e01bb31d89a"
 metafile = true
 
 [[files]]
-file = "mods/elaris.pw.toml"
-hash = "db67f8e62c23af2053137ec85bc16facc9985d4d26460bfc721f1529210dc4c3"
-metafile = true
-
-[[files]]
 file = "mods/embeddium-0-3-31-mc1-20-1.pw.toml"
 hash = "4ef9edfe1bd765d91f2394682a5e5589025733180c3c52707b8c8391915397e5"
 metafile = true
@@ -3542,10 +3571,6 @@ hash = "6b46547f82dac9a061e1339338ca08eb64eb8abf1ec39946954f1741ca2fef1d"
 metafile = true
 
 [[files]]
-file = "mods/ImmersedLeaves-Forge-1.20.1-0.1.0.jar"
-hash = "50f0b940a42824a37c642697d2eb5e5c2d7dafc1250b8997c18d46974533c82f"
-
-[[files]]
 file = "mods/immersive_aircraft-1.5.0+1.20.1-forge.jar"
 hash = "7e00754f893d910f301134e0cada37dde0be36c8df15ebf98a5b6512fa664077"
 
@@ -3577,6 +3602,11 @@ metafile = true
 [[files]]
 file = "mods/items-displayed-forge.pw.toml"
 hash = "6689c7bd69a185f38b0ba4be6fe88a2fc976c98c1ffb3d8be4500c9654692c16"
+metafile = true
+
+[[files]]
+file = "mods/ixeris.pw.toml"
+hash = "90d77da414ad1f483fb98305fefcb0928acc20c6ca92efd146995aad40b40332"
 metafile = true
 
 [[files]]
@@ -3693,6 +3723,11 @@ metafile = true
 [[files]]
 file = "mods/OctoLib-FORGE-0.5.0.2-1.20.1.jar"
 hash = "ba29d707cb19c718f39a035218bab3f72046f734943a9be5d30efff82345b259"
+
+[[files]]
+file = "mods/oculus-mc1-20-1-1-8-0.pw.toml"
+hash = "4e75c5d3a2e65be0f35d68c7fed7e0aa1068b8d6399476f457d0205a284ab252"
+metafile = true
 
 [[files]]
 file = "mods/packet-fixer.pw.toml"
@@ -3852,6 +3887,11 @@ hash = "9f583275135f3a5693c7a8757e8d520932e5a5db5711bb8c5e37c6425621dd8b"
 metafile = true
 
 [[files]]
+file = "mods/starlight-forge.pw.toml"
+hash = "964802eee7553528657461ca46a246251bc63c67dc60f7a11caf10283c6ff544"
+metafile = true
+
+[[files]]
 file = "mods/supplementaries-1.20-3.1.45-forge.jar"
 hash = "120608f1a43a63701ba24f42f3d3fe2baa9e846b22d2483a5c5b3614c4e3bdca"
 
@@ -3894,6 +3934,11 @@ metafile = true
 [[files]]
 file = "mods/taczvoxelgore-1.0.3.jar"
 hash = "80427a60d1312edc9c9b4f84b5da4480934dbd17863a255afee4f3372ec5fd20"
+
+[[files]]
+file = "mods/tacz-x-guns-lights-addon.pw.toml"
+hash = "f8869769c4a48a1a2b41ad635cd704e04ea8d4a4020373552c180060d090e2c2"
+metafile = true
 
 [[files]]
 file = "mods/terrablender-forge-1-20-1-3-0-1-10.pw.toml"
@@ -3970,11 +4015,11 @@ hash = "d6364e3b3ffea4b912889d3dcd3e2acebf7d663b22b96402402fbd383eefa460"
 
 [[files]]
 file = "mods/zone_tactical_anims-0.1.0.jar"
-hash = "91cae92b87c265c297592e8016973e0ef49fa3b346f2f741ce4521e6eff28285"
+hash = "6296aa6424a75b49aee043fd680d08f022772c57fcae578521b1406a4f699189"
 
 [[files]]
 file = "options.txt"
-hash = "04f7fffa9c29b78ec00661dfa2696f64e1d034206358680dc9ae58edfa604876"
+hash = "cc9003cf17bdcb99bb5634946b03e1452cf2d431e2d39367ce654f2ac6d8f615"
 preserve = true
 
 [[files]]
@@ -4005,7 +4050,7 @@ preserve = true
 
 [[files]]
 file = "shaderpacks/Bliss_v2.1.2_(Chocapic13_Shaders_edit).zip.txt"
-hash = "c109dec254cb064eba7513da9bb2b71793a8157bb9f4a7f056b99bd031589339"
+hash = "fb986f19c1769c21ec5b18fafdd7c3c0d3fd90bd24d5e30682152bd1b5dee55c"
 
 [[files]]
 file = "tacz/.export-state.json"

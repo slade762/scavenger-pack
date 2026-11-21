@@ -1,5 +1,5 @@
 {
-  "enabled": true,
+  "enabled": false,
   "trackingMode": "COMBINED",
   "maxDurationSeconds": 60,
   "maxSteps": 50,

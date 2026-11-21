@@ -35,8 +35,8 @@ renderDistance:8
 simulationDistance:8
 entityDistanceScaling:1.0
 guiScale:3
-particles:0
-maxFps:180
+particles:1
+maxFps:260
 graphicsMode:1
 ao:true
 prioritizeChunkUpdates:0
@@ -194,11 +194,11 @@ key_key.aeroforge.charge:key.keyboard.r
 key_key.sophisticatedbackpacks.open_backpack:key.keyboard.b
 key_key.sophisticatedbackpacks.inventory_interaction:key.keyboard.c
 key_key.sophisticatedbackpacks.tool_swap:key.keyboard.unknown
-key_key.sophisticatedbackpacks.toggle_upgrade_1:key.keyboard.z:ALT
-key_key.sophisticatedbackpacks.toggle_upgrade_2:key.keyboard.unknown
 key_key.sophisticatedbackpacks.toggle_upgrade_3:key.keyboard.unknown
 key_key.sophisticatedbackpacks.toggle_upgrade_4:key.keyboard.unknown
 key_key.sophisticatedbackpacks.toggle_upgrade_5:key.keyboard.unknown
+key_key.sophisticatedbackpacks.toggle_upgrade_1:key.keyboard.z:ALT
+key_key.sophisticatedbackpacks.toggle_upgrade_2:key.keyboard.unknown
 key_keybind.scene1:key.keyboard.keypad.1
 key_keybind.scene2:key.keyboard.keypad.2
 key_keybind.scene3:key.keyboard.keypad.3
@@ -221,7 +221,7 @@ key_lock:key.keyboard.u
 key_mode:key.keyboard.y
 key_ext1:key.keyboard.n
 key_ext2:key.keyboard.m
-key_reload:key.keyboard.h
+key_reload:key.keyboard.r
 key_repair:key.keyboard.comma
 key_key.cinematic_respawn.skip_cinematic:key.keyboard.space
 key_key.esap.nvg_key:key.keyboard.n
@@ -249,6 +249,7 @@ key_key.anomalyzone.cinema_clean_frame:key.keyboard.f1
 key_key.zone_tactical_anims.ready:key.keyboard.caps.lock
 key_key.zone_tactical_anims.pace:key.keyboard.left.alt
 key_key.zone_tactical_anims.headlamp:key.keyboard.y
+key_key.zone_tactical_anims.visor_wipe:key.keyboard.e
 key_key.zone_tactical_anims.holster:key.keyboard.unknown
 key_key.zone_tactical_anims.color_grade:key.keyboard.f7
 key_key.dochi_warfare.mercenary_status:key.keyboard.j
@@ -260,13 +261,13 @@ key_key.savaru_inv.swap_wh:key.keyboard.v
 key_Inspect Key:key.keyboard.semicolon
 key_key.warborn.open_backpack:key.keyboard.b
 key_key.warborn.toggle_special_vision:key.keyboard.n
-key_key.warborn.toggle_helmet_top:key.keyboard.h
+key_key.warborn.toggle_helmet_top:key.keyboard.n
 key_key.warborn.remove_plate_menu:key.keyboard.u
 key_key.simpleradio.use_handheld:key.keyboard.z
-key_key.roadweaver.open_map:key.keyboard.h
+key_key.roadweaver.open_map:key.keyboard.unknown
 key_key.presencefootsteps.settings:key.keyboard.f10
 soundCategory_master:1.0
-soundCategory_music:0.35073083851948883
+soundCategory_music:0.3061169341631181
 soundCategory_record:1.0
 soundCategory_weather:1.0
 soundCategory_block:1.0

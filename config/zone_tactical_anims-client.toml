@@ -89,9 +89,11 @@
 	gunShadows = false
 	#Shaders: when gunShadows is false, the held gun still casts a shadow as a plain static model
 	#(same model as the gun on your back: no reload/inspect animation, attachments or muzzle flash in the shadow). false = no gun in the shadow.
-	staticGunShadow = true
+	staticGunShadow = false
 	#Shaders (Elaris): draw the worn Sophisticated Backpack into the player shadow as a solid model (it was missing).
 	backpackShadow = true
+	#Shaders: guns held by NPCs and mobs (quest-givers, bandits) cast a shadow. false (0.79) = no NPC gun shadows (cheaper).
+	npcGunShadows = false
 
 [third_person]
 	#(old setting, no longer used)
@@ -335,6 +337,10 @@
 	emptyHand = true
 	#Quest-giver NPCs (CustomNPCs) wear the gun they hold slung on their back instead of in their hands.
 	npcSling = true
+	#Draw the slung gun on quest-giver NPCs' backs. false (0.79) = not drawn at all: a full gun model per NPC is costly in the Bar.
+	npcBackGuns = false
+	#Shaders: players' slung (back) guns cast a shadow. false = no back gun in the shadow (cheaper).
+	backGunShadow = false
 
 	#Where the slung gun goes while a backpack is worn (strapped to the backpack's side). Each Sophisticated Backpacks tier has its own section below.
 	[holster.backpack]
@@ -527,7 +533,7 @@
 	#Options: stalker (muted, green shadows, warm grey highlights), tarkov (cold blue-grey, contrasty),
 	#vanilla_plus (light touch, close to normal colors), off.
 	#Cycle presets in game with the color grade key (F7 by default, Controls > Zone Tactical).
-	preset = "stalker"
+	preset = "tarkov"
 	#How strong the grade is. 1.0 = full, 0.5 = half way between Elaris' look and the grade.
 	#Range: 0.0 ~ 1.0
 	strength = 1.0
@@ -569,5 +575,13 @@
 	#0.78.7 auto exposure: in daytime shade (under trees, indoors, under bridges) the picture
 	#brightens its dark tones over about a second, and settles back in the open. No boost at night. 0 = off, 1 = normal, 2 = strong.
 	#Range: 0.0 ~ 2.0
-	autoExposure = 1.0
+	autoExposure = 0.7
+
+[quest_givers]
+	#0.82: gold ! over NPCs with a quest you can take now, gold ? over NPCs you can hand a finished quest to.
+	#Only you see your own icons.
+	icons = true
+	#Size of the icons (1.0 = about three times a name tag's letters).
+	#Range: 0.3 ~ 3.0
+	iconScale = 1.0
 

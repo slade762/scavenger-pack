@@ -1,0 +1,97 @@
+#Allowed Values: CLASSIC, SHOOTER, REALISM, DRUNKARD, CUSTOM
+activePreset = "CLASSIC"
+enabled = true
+firstLaunchNotificationShown = true
+
+[general]
+	firstPersonBodyEnabled = false
+	item_blacklist = []
+	vanilla_hands_mod_ids = ["some_mod_id"]
+
+[movement]
+	movementAnimationsEnabled = false
+	#Range: 0.0 ~ 3.0
+	movementIntensity = 0.0
+	#Allowed Values: SHOOTER, REALISM, DRUNKARD
+	breathPattern = "SHOOTER"
+	#Range: 0.0 ~ 3.0
+	standingBreathIntensity = 1.0
+	#Range: 0.0 ~ 3.0
+	strafeRollIntensity = 0.0
+	#Range: 0.0 ~ 3.0
+	crosshairSwayIntensity = 1.0
+	fallShakeEnabled = false
+	#Range: 0 ~ 100
+	fallShakeThresholdTicks = 15
+	#Range: 0.0 ~ 5.0
+	fallShakeStrength = 0.0
+	#Range: -1.0 ~ 3.0
+	damageShakeStrength = 1.0
+
+[turning]
+	turnAnimationsEnabled = false
+	#Range: 0.0 ~ 3.0
+	turnIntensity = 0.0
+
+[items]
+	itemAnimationsEnabled = false
+	weaponZoomEnabled = false
+	#Range: 0.0 ~ 1.0
+	weaponZoomStrength = 0.0
+	consumeZoomEnabled = false
+	#Range: 0.0 ~ 1.0
+	consumeZoomStrength = 0.0
+	zoomInverted = false
+
+[actions]
+	miningInertiaEnabled = false
+	#Range: 0.0 ~ 3.0
+	miningInertiaStrength = 0.0
+	vehicleInertiaEnabled = false
+	#Range: 0.0 ~ 3.0
+	vehicleInertiaStrength = 0.0
+	vehicleBoatWaves = true
+	vehicleBoatRowing = true
+	#Range: 0.0 ~ 3.0
+	vehicleBoatRowingStrength = 1.0
+
+[perspective]
+	perspectiveTransitionEnabled = false
+	#Range: 1 ~ 100
+	perspectiveTransitionDuration = 10
+
+[motion_blur]
+	motionBlurEnabled = false
+	#Range: 0.0 ~ 20.0
+	motionBlurSensitivity = 1.0
+	#Range: 0.0 ~ 1.0
+	motionBlurMaxIntensity = 1.0
+	#Range: 0.01 ~ 1.0
+	motionBlurSmoothing = 0.1
+	#Range: 0.0 ~ 10.0
+	motionBlurDeadzone = 0.5
+	#Range: 0.1 ~ 100.0
+	motionBlurFullMotion = 15.0
+	#Range: 0.1 ~ 5.0
+	motionBlurCurvePower = 1.0
+	motionBlurOppositeSide = false
+	#Range: 0.0 ~ 5.0
+	motionBlurAttackMultiplier = 1.0
+	#Range: 0.0 ~ 5.0
+	motionBlurReleaseMultiplier = 0.5
+	#Range: 0.0 ~ 1.0
+	motionBlurSideStart = 0.2
+	#Range: 0.0 ~ 1.0
+	motionBlurSideEnd = 1.0
+	#Range: 0.1 ~ 5.0
+	motionBlurEdgePower = 1.5
+	#Range: 0.0 ~ 250.0
+	motionBlurPixels = 16.0
+	#Range: 0.0 ~ 50.0
+	motionBlurChromaPixels = 2.0
+	#Range: 0.2 ~ 2.0
+	motionBlurDuration = 1.0
+	fallBlurEnabled = false
+	#Range: 0.0 ~ 5.0
+	fallBlurStrength = 0.0
+

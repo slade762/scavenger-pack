@@ -30,7 +30,7 @@
 	helmetsOnly = true
 	#Helmet radiation tiers: "id=tier" (1-4). Helmets not listed have tier 0 (no radiation protection).
 	#1 = respirator, 2 = full gas mask, 3 = sealed helmet, 4 = endgame (the city).
-	helmetTiers = ["itz:rookie_respirator=1", "brimm:gasmask_h=2", "brimm:gasmask_alt_h=2", "itz:hazmat_mask=2", "itz:psz_helmet_loner=2", "itz:psz_helmet_freedom=2", "itz:psz_helmet_military=2", "itz:psz_helmet_monolith=2", "itz:bulat_helmet=3", "itz:berill_helmet=3", "itz:corundum_helmet=3", "itz:marauder_helmet=3", "anomalyzone:scientific_helmet=3", "anomalyzone:tishina_helmet=3", "anomalyzone:paladin_helmet=3", "anomalyzone:experiment_n83_helmet=3", "anomalyzone:k105a_helmet=3", "anomalyzone:ten_helmet=3", "itz:exo_bulat_helmet=4", "itz:exo_berill_helmet=4", "itz:exo_corundum_helmet=4", "itz:exo_marauder_helmet=4", "anomalyzone:shepot_helmet=4", "projectarmor_:alt_helmet=4", "zone_tactical_anims:bunny_mask=4", "brimm:hazard_kit_h=4"]
+	helmetTiers = ["itz:rookie_respirator=1", "brimm:gasmask_h=4", "brimm:gasmask_alt_h=4", "itz:hazmat_mask=4", "fracturepoint:ratnik_pmk-4=4", "itz:psz_helmet_loner=2", "itz:psz_helmet_freedom=2", "itz:psz_helmet_military=2", "itz:psz_helmet_monolith=2", "itz:bulat_helmet=3", "itz:berill_helmet=3", "itz:corundum_helmet=3", "itz:marauder_helmet=3", "anomalyzone:scientific_helmet=3", "anomalyzone:tishina_helmet=3", "anomalyzone:paladin_helmet=3", "anomalyzone:experiment_n83_helmet=3", "anomalyzone:k105a_helmet=3", "anomalyzone:ten_helmet=3", "itz:exo_bulat_helmet=4", "itz:exo_berill_helmet=4", "itz:exo_corundum_helmet=4", "itz:exo_marauder_helmet=4", "anomalyzone:shepot_helmet=4", "projectarmor_:alt_helmet=4", "zone_tactical_anims:bunny_mask=4", "brimm:hazard_kit_h=4"]
 	#Action-bar message (and a warning beep if you're unprotected) when you enter a radiation zone or change helmets in one.
 	warnings = true
 	#Give Anomaly Zone radiation protection to every armor piece (Anomaly Zone's own suits keep their values).
@@ -151,4 +151,28 @@
 	#Minutes of flight on a full charge (any upgrade level). Ward: 2 hours.
 	#Range: 1 ~ 1440
 	flightMinutes = 120
+
+[az_prices]
+	#Anomaly Zone trader prices (what players PAY; selling to them is unchanged). Both client and server read these,
+	#so keep the pack's copy and the server's copy the same or the shown price differs from the charged one.
+	#Suits/armour (Scientific set: chest 39,000 -> 312,000 at 8.0; Lev sells it for 500,000).
+	#Range: 0.01 ~ 1000.0
+	suits = 8.0
+	#Everything else the Seller has: anomalous core/batteries, PDA, bolts, phases, essence, serum.
+	#Range: 0.01 ~ 1000.0
+	gear = 2.0
+	#Food, drinks and meds listed in consumableIds (AZ stew 3,200 is already above Vera's 1,500).
+	#Range: 0.01 ~ 1000.0
+	consumables = 1.0
+	#Artifacts the Seller sells (125,000 - 3,300,000).
+	#Range: 0.01 ~ 1000.0
+	artifacts = 1.0
+	#Everything the Gunsmith sells (guns, ammo, attachments; already close to ours: AK-74 110k at Hrytsenko).
+	#The Gunsmith's tier rows still use the original prices.
+	#Range: 0.01 ~ 1000.0
+	gunsmith = 1.0
+	#Items priced as consumables.
+	consumableIds = ["anomalyzone:injection_800", "anomalyzone:injection_run_heal", "anomalyzone:udar", "anomalyzone:topot", "anomalyzone:adrenaline", "anomalyzone:neurostim", "anomalyzone:barricade", "anomalyzone:phoenix", "anomalyzone:berserk", "anomalyzone:nuka_kola", "anomalyzone:thermos", "anomalyzone:stew_can", "anomalyzone:field_ration", "anomalyzone:adaptogen", "anomalyzone:solyanka", "anomalyzone:energy_drink", "anomalyzone:vodka_hryuchevo"]
+	#Exact prices that win over the multipliers: "itemid=rubles" (e.g. "anomalyzone:pda=50000").
+	overrides = []
 

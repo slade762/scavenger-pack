@@ -346,7 +346,7 @@ elarisEnabled = true
 	normalStrength = 1.0
 	#Maximum side of each material atlas; smaller limits reduce video memory usage.
 	#Range: 256 ~ 4096
-	textureLimit = 512
+	textureLimit = 256
 
 #Planar Reflections
 [reflections]
@@ -376,7 +376,7 @@ elarisEnabled = true
 [postEffects]
 	#MINIMUM / MEDIUM / HIGH: atmosphere buffer scale and volumetric integration accuracy. Does not change artistic intensity or the selected upscaler.
 	#Allowed Values: MINIMUM, MEDIUM, HIGH
-	quality = "HIGH"
+	quality = "MEDIUM"
 	#Legacy compatibility key. Atmosphere resolution is now controlled by postEffects.quality; this value is ignored.
 	#Range: 0.1 ~ 1.0
 	renderScale = 0.44
@@ -385,7 +385,7 @@ elarisEnabled = true
 [kawaseBloom]
 	#MINIMUM keeps legacy sourceScale/levels. MEDIUM: 75% source, 5 bands; HIGH: full source, 7 bands and hot-pixel suppression.
 	#Allowed Values: MINIMUM, MEDIUM, HIGH
-	quality = "HIGH"
+	quality = "MINIMUM"
 	#Enable isolated bloom for blocks whose current state emits vanilla block light.
 	enabled = true
 	#Final additive bloom intensity.
@@ -622,7 +622,7 @@ elarisEnabled = true
 	depthAwareRefraction = true
 	#STANDARD (Low) keeps existing Elaris water. HIGH adds spectral waves and underwater optics (OpenGL 4.3). VANILLA disables Elaris water and restores the ordinary Minecraft/Embeddium fluid path. Switching rebuilds chunks without restarting.
 	#Allowed Values: STANDARD, HIGH, VANILLA
-	quality = "HIGH"
+	quality = "STANDARD"
 	#Enable the finest texture-driven micro-ripple band. When disabled, the shader skips the extra high-frequency texture sample completely.
 	detailWaves = true
 	#Water shader scale relative to the window, capped at world resolution. SSR quality imposes a minimum: Minimum 25%, Medium 50%, High 100%. ESS does not multiply the scale again. Matching full-size water can resolve without a second geometry draw.
@@ -689,7 +689,7 @@ elarisEnabled = true
 [ssr]
 	#MINIMUM / MEDIUM / HIGH. Controls ray traversal, hit refinement, material resolution and history filtering. Water and materials share this preset.
 	#Allowed Values: MINIMUM, MEDIUM, HIGH
-	preset = "HIGH"
+	preset = "MINIMUM"
 	#Screen-space reflections on opaque Embeddium PBR terrain. Requires PBR materials. Does not re-render world geometry. Disabled by default.
 	materialsEnabled = true
 	#Legacy compatibility key. Reflection trace quality is now controlled by ssr.preset; this value is ignored.
@@ -833,7 +833,7 @@ elarisEnabled = true
 	renderScale = 0.67
 	#Reconstruction sharpness. 0 disables added sharpening; higher values restore more apparent texture detail after upscale.
 	#Range: 0.0 ~ 1.0
-	sharpness = 0.35
+	sharpness = 0.15
 	#Optional measured native/upscaler comparison. May use native rendering when reconstruction costs more. Selection is preserved; recalibrates on settings, world or output changes.
 	autoByFrameTime = false
 	#Optional bounded SDK queue wait. Allows temporary ESS fallback on a busy queue; can change image stability.
@@ -911,7 +911,7 @@ elarisEnabled = true
 	bendStrength = 1.0
 	backlightEnabled = true
 	#Range: 0.0 ~ 2.0
-	backlightIntensity = 2.0
+	backlightIntensity = 1.0
 
 #Opaque Ice
 [opaqueIce]
