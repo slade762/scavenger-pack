@@ -2971,6 +2971,11 @@ hash = "f63782566917265c92ae1eac35731dc6708b7b0745ad7bc26c9d29f5b1b47d6b"
 metafile = true
 
 [[files]]
+file = "mods/betterdays.pw.toml"
+hash = "75797dd39d32acf95de8db73ddd873538689a0a7191ef15b7a0cc3300896d964"
+metafile = true
+
+[[files]]
 file = "mods/biggerstacks-1.20.1-2026.06.17-all.jar"
 hash = "70840af81e6f734a6ea9c5eecf1f540eb470e42ce8339a5f4cb381a3cfc36204"
 
@@ -3023,10 +3028,6 @@ metafile = true
 [[files]]
 file = "mods/collective-1.20.1-8.87.jar"
 hash = "5206c9a902dbc498657c06c092924afc08d8b7e1c8680d21b0c1a3bdcc2f8115"
-
-[[files]]
-file = "mods/Connectible Chains-forge-1.20.1-1.1.1.jar"
-hash = "23106f03ac434864d2dc32a7f8266bd46fd746102f0d6ec44452e87fd2d9c151"
 
 [[files]]
 file = "mods/controlling-forge-1-20-1-12-0-2.pw.toml"
@@ -3163,6 +3164,11 @@ hash = "46fadfb333b3f6cc7e9c6faa1a9f0c7aa1230b900b2d417e297ef0f47928249c"
 metafile = true
 
 [[files]]
+file = "mods/fallingleavesforge.pw.toml"
+hash = "1c8ff2f6ba8947958173f382e696d89e6654aa24af07378987619d9278af179e"
+metafile = true
+
+[[files]]
 file = "mods/fancymenu-forge-3-10-0-mc-1-20-1.pw.toml"
 hash = "8c1ca9fbab5fcb5655b6f2e0ab185b835125e2d7f45f96f83f8f93b55f54865a"
 metafile = true
@@ -3210,8 +3216,18 @@ hash = "0b304bcf9e4caaceced6bd4470edabcee3ff00c0bd25ba462946d7ffbf4c2554"
 metafile = true
 
 [[files]]
+file = "mods/gabous-libs.pw.toml"
+hash = "d397f55d92347719ae657121ab46543e9ecd88d6bbd42cdbd489b72078eb12e6"
+metafile = true
+
+[[files]]
 file = "mods/geckolib-forge-1-20-1-4-8-4.pw.toml"
 hash = "0c238c914d5be79a6a8a87f549d390b91c346fbf72beff10e15f6d54e7df81f4"
+metafile = true
+
+[[files]]
+file = "mods/glitchcore.pw.toml"
+hash = "04d53dcb7f9baf7956aff4a9a778730d3a6cf9aaab3f4e6de5226c36684d8bec"
 metafile = true
 
 [[files]]
@@ -3239,6 +3255,11 @@ hash = "50f0b940a42824a37c642697d2eb5e5c2d7dafc1250b8997c18d46974533c82f"
 [[files]]
 file = "mods/immersive_aircraft-1.5.0+1.20.1-forge.jar"
 hash = "7e00754f893d910f301134e0cada37dde0be36c8df15ebf98a5b6512fa664077"
+
+[[files]]
+file = "mods/immersive-furniture.pw.toml"
+hash = "62f0c5b7880d5cf6318e9778d0f59c2b5b7641397ee10053ec5ed158c1f1786c"
+metafile = true
 
 [[files]]
 file = "mods/immersive-weathering-1-20-1-2-0-5-forge.pw.toml"
@@ -3476,6 +3497,16 @@ metafile = true
 [[files]]
 file = "mods/searchcarefully-1201-10-0.pw.toml"
 hash = "cca834b321c2c6a5042a3ded6150951fd7e00ac98f1a0ef75aa14187d2169946"
+metafile = true
+
+[[files]]
+file = "mods/serene-seasons.pw.toml"
+hash = "779a0fbc44f59f1cdd2cf0b67e59aa57e9cb3ca934cfb0f0c77db2ba15836f94"
+metafile = true
+
+[[files]]
+file = "mods/serene-seasons-plus.pw.toml"
+hash = "0e3c633c99025c478494863061a6937a06bd5e1d06a6c1e751b0205fb8b21d61"
 metafile = true
 
 [[files]]

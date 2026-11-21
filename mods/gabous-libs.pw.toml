@@ -1,0 +1,21 @@
+filename = 'gaboulibs-forge-1.9.jar'
+name = "Gabou's Libs"
+side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = 'Forge-1.9'
+
+[download]
+hash = '169184c212c4b2dbd3c0548229afd8f07c6ce4beea49fff309a08288f3c3ff3bab8069223b2f8778ceb00dd1bc42421c71fe2e13183738edc0c6e0a7273ba2fd'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/N8aGZtvj/versions/Id3aMgpE/gaboulibs-forge-1.9.jar'
+
+[update.modrinth]
+mod-id = 'N8aGZtvj'
+version = 'Id3aMgpE'
+
+[[x-prismlauncher-dependencies]]
+addonId = 'lhGA9TYQ'
+type = 'REQUIRED'
