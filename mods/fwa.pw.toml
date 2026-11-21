@@ -1,0 +1,18 @@
+filename = 'fwa+1.20.1-forge-1.3.8.jar'
+name = 'Fancy World Animations [FWA]'
+side = 'client'
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = [ 'neoforge', 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '1.3.8'
+
+[download]
+hash = 'bdaccd32bc11b7df55af4aa49cb6241210077f63dfa98382b9e45a70be4ac58cf2879742e36d555ae16db5757aa7841465ff1259a0c03e39aca3f888661dcf18'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/IAzUFvS6/versions/M5dLIJYp/fwa%2B1.20.1-forge-1.3.8.jar'
+
+[update.modrinth]
+mod-id = 'IAzUFvS6'
+version = 'M5dLIJYp'

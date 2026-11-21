@@ -1,12 +1,12 @@
 name = "SCAVENGER"
 author = "Slade"
-version = "2026.11.20.1617"
+version = "2026.11.20.1749"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "7b1148ae8dc132e3170f42faef322ab66dd34a39824426778991c58d1a2488f6"
+hash = "1374ea1fd98868b35dd62f2d18b3b72328ee827b04292a5825402528ee0625fc"
 
 [versions]
 forge = "47.4.29"
