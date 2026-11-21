@@ -1,0 +1,38 @@
+#Show the med bag button on the inventory screen while one is worn
+inventoryButton = true
+
+#Worn med bag position, in blocks from the top of the body (1 block = 16 pixels; the body is 0.75 tall).
+#x: + = to the player's left, y: + = down, z: + = further behind the back
+[wornMedBag]
+	#Range: -1.0 ~ 1.0
+	x = 0.0
+	#Height of the bag's top
+	#Range: -1.0 ~ 2.0
+	y = 0.55
+	#Distance behind the back with no backpack on
+	#Range: -1.0 ~ 2.0
+	z = 0.32
+	#Distance behind the back while a backpack is worn
+	#Range: -1.0 ~ 2.0
+	zWithBackpack = 0.45
+	#Range: 0.1 ~ 2.0
+	scale = 0.8
+	#Tilt in degrees (+ = bottom swings out)
+	#Range: -90.0 ~ 90.0
+	pitch = 0.0
+
+#Worn sleeping bag / tent roll, same units (centre of the roll). y: - = higher, above the shoulders
+[wornBedroll]
+	#Range: -1.0 ~ 1.0
+	x = 0.0
+	#Range: -1.0 ~ 2.0
+	y = -0.02
+	#Distance behind the back with no backpack on
+	#Range: -1.0 ~ 2.0
+	z = 0.25
+	#Distance behind the back while a backpack is worn
+	#Range: -1.0 ~ 2.0
+	zWithBackpack = 0.33
+	#Range: 0.1 ~ 2.0
+	scale = 0.85
+

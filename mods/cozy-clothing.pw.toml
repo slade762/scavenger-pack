@@ -1,0 +1,21 @@
+filename = 'cozyclothing_1.0.0-1.20.1-Forge.jar'
+name = 'Cozy Clothing'
+side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '1.0.0'
+
+[download]
+hash = '5e357780a1cdfda4abe025649556d7d25e356f2b64120ff96e4074ee2fddbca862ca714ee093b32df3d7fab16e0706b502e8e77ea920ad25f8ec2398fb80a014'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/1Og70Sv9/versions/TOeAffWD/cozyclothing_1.0.0-1.20.1-Forge.jar'
+
+[update.modrinth]
+mod-id = '1Og70Sv9'
+version = 'TOeAffWD'
+
+[[x-prismlauncher-dependencies]]
+addonId = '8BmcQJ2H'
+type = 'REQUIRED'

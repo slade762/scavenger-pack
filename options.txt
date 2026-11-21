@@ -31,7 +31,7 @@ glintStrength:0.75
 damageTiltStrength:1.0
 highContrast:false
 gamma:0.5
-renderDistance:12
+renderDistance:8
 simulationDistance:8
 entityDistanceScaling:1.0
 guiScale:3
@@ -42,8 +42,8 @@ ao:true
 prioritizeChunkUpdates:0
 biomeBlendRadius:3
 renderClouds:"false"
-resourcePacks:["vanilla","tacz_resources","mod_resources","Moonlight Mods Dynamic Assets","hordes-config","file/zone_ui.zip","mod/subtle_effects:resourcepacks/biome_color_water_particles","file/§fReanimated §3Blue §7v0.10.zip","file/FA+Player-v1.0.zip","file/zone_fa_patch.zip","zta_elaris_dh_fog","file/Zone Soundtrack 1.zip","file/Zone Soundtrack 2.zip","visualoverhaul:rounddiscs","visualoverhaul:coloredwaterbucket","visualoverhaul:fancyfurnace","file/Better-Leaves-9.6.zip"]
-incompatibleResourcePacks:["file/§fReanimated §3Blue §7v0.10.zip","visualoverhaul:rounddiscs","visualoverhaul:coloredwaterbucket","visualoverhaul:fancyfurnace"]
+resourcePacks:["trmtgtnh:wear_textures","vanilla","tacz_resources","mod_resources","Moonlight Mods Dynamic Assets","hordes-config","file/zone_ui.zip","mod/subtle_effects:resourcepacks/biome_color_water_particles","file/§fReanimated §3Blue §7v0.10.zip","file/FA+Player-v1.0.zip","file/zone_fa_patch.zip","zta_elaris_dh_fog","file/Zone Soundtrack 1.zip","file/Zone Soundtrack 2.zip","file/Better-Leaves-9.6.zip","file/§e§lAllure 3D Plants§r§0.zip"]
+incompatibleResourcePacks:["file/§fReanimated §3Blue §7v0.10.zip","file/§e§lAllure 3D Plants§r§0.zip"]
 lastServer:
 lang:en_us
 soundDevice:""
@@ -126,7 +126,9 @@ key_key.modernfix.config:key.keyboard.unknown
 key_supplementaries.keybind.quiver:key.keyboard.v
 key_key.elaris.open_settings:key.keyboard.keypad.multiply
 key_key.corpse.death_history:key.keyboard.u
+key_key.survival_essentials.open_bag:key.keyboard.unknown
 key_key.curios.open.desc:key.keyboard.g
+key_key.trmtgtnh.settings:key.keyboard.unknown
 key_waves.key.draw_shore_map:key.keyboard.unknown
 key_key.cinematic.sit:key.keyboard.x
 key_key.cinematic.look:key.keyboard.left.alt
@@ -192,11 +194,11 @@ key_key.aeroforge.charge:key.keyboard.r
 key_key.sophisticatedbackpacks.open_backpack:key.keyboard.b
 key_key.sophisticatedbackpacks.inventory_interaction:key.keyboard.c
 key_key.sophisticatedbackpacks.tool_swap:key.keyboard.unknown
+key_key.sophisticatedbackpacks.toggle_upgrade_1:key.keyboard.z:ALT
+key_key.sophisticatedbackpacks.toggle_upgrade_2:key.keyboard.unknown
 key_key.sophisticatedbackpacks.toggle_upgrade_3:key.keyboard.unknown
 key_key.sophisticatedbackpacks.toggle_upgrade_4:key.keyboard.unknown
 key_key.sophisticatedbackpacks.toggle_upgrade_5:key.keyboard.unknown
-key_key.sophisticatedbackpacks.toggle_upgrade_1:key.keyboard.z:ALT
-key_key.sophisticatedbackpacks.toggle_upgrade_2:key.keyboard.unknown
 key_keybind.scene1:key.keyboard.keypad.1
 key_keybind.scene2:key.keyboard.keypad.2
 key_keybind.scene3:key.keyboard.keypad.3
@@ -261,6 +263,7 @@ key_key.warborn.toggle_special_vision:key.keyboard.n
 key_key.warborn.toggle_helmet_top:key.keyboard.h
 key_key.warborn.remove_plate_menu:key.keyboard.u
 key_key.simpleradio.use_handheld:key.keyboard.z
+key_key.roadweaver.open_map:key.keyboard.h
 key_key.presencefootsteps.settings:key.keyboard.f10
 soundCategory_master:1.0
 soundCategory_music:0.35073083851948883

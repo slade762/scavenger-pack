@@ -827,10 +827,10 @@ elarisEnabled = true
 	mode = "QUALITY"
 	#Internal resolution: ESS Ultra/Quality/Balanced/Performance = 85/77/67/58%; SDKs = 77/67/58/50%. LEGACY preserves an older renderScale until a preset is selected.
 	#Allowed Values: LEGACY, ULTRA_QUALITY, QUALITY, BALANCED, PERFORMANCE
-	preset = "QUALITY"
+	preset = "BALANCED"
 	#Legacy internal world render scale, used only with preset=LEGACY. Choosing a preset in the menu also updates this value.
 	#Range: 0.5 ~ 0.85
-	renderScale = 0.77
+	renderScale = 0.67
 	#Reconstruction sharpness. 0 disables added sharpening; higher values restore more apparent texture detail after upscale.
 	#Range: 0.0 ~ 1.0
 	sharpness = 0.35

@@ -1,0 +1,22 @@
+
+[camp]
+	#Sleeping bag / tent need a lantern or lit campfire within this many blocks
+	#Range: 1 ~ 32
+	lightRadius = 6
+	#A campsite blocks NATURAL mob spawns within this many blocks
+	#Range: 0 ~ 128
+	campRadius = 24
+	#minX,minZ,maxX,maxZ where campsites don't protect (the City)
+	cityBox = "-330,-520,710,620"
+	#While lying in a sleeping bag / tent: heal every this many ticks (20 = 1 s). 0 = off
+	#Range: 0 ~ 1200
+	regenIntervalTicks = 40
+	#Health per heal (1 = half a heart)
+	#Range: 0.0 ~ 20.0
+	regenAmount = 1.0
+
+[medicalBag]
+	#Besides anything edible and the item tag survival_essentials:med_bag_items,
+	#items whose id (modid:name) matches this regex fit in the bag
+	medItemIdPattern = ".*(medkit|med_kit|first_aid|firstaid|bandage|splint|tourniquet|morphine|painkiller|pills|syringe|injector|stim|antirad|anti_rad|radaway|antidote|salve|ointment|plaster|gauze|medicine|vinca|adrenaline).*"
+
