@@ -94,7 +94,7 @@ hash = "a37eb7f218ab61f3277a103a85c5bd14ff0abe0dff94e17883bcbb5ea28a3855"
 
 [[files]]
 file = "config/cinematic_respawn.properties"
-hash = "8360fb0c65c8df17f365e3c2157cf20fe88da4ab91a1833326423929208e8652"
+hash = "3f3b2b358ac224b1b962cf50e2f4e1d52db182b57fc3be4f1e0d7b21a85e40e8"
 
 [[files]]
 file = "config/cinematic-client.toml"
@@ -390,7 +390,7 @@ hash = "26ac5810c9b5dc5c1968827357f0a58c58ac2b6f7b082630960228e16585062f"
 
 [[files]]
 file = "config/handson_delight.properties"
-hash = "4d1fe1e1a5b4b354b52ac308bb760f2a956d9e43ec84d19e69b8bccbe6b4e0ba"
+hash = "e27aa0729e1dc0d9024b7a6cbea44ccf2fa3fbc9d072fbee3232223327e748bc"
 
 [[files]]
 file = "config/holdmyitems-client.toml"
