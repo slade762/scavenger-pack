@@ -54,7 +54,7 @@ hash = "b41fe8caacb87c1e18ca99a79dff37fa1e50e780bbece15c2c27450df46c5762"
 
 [[files]]
 file = "config/badmobs-common.toml"
-hash = "121246673f028a5cd6ad8ca029706960b65b681f48b59b5413b7657011a19694"
+hash = "cd936fc5dc53ca56ac6df3b4bd01dbfd949ba349d314b095b7020015121a262f"
 
 [[files]]
 file = "config/badmobs-common.toml.original"
@@ -118,7 +118,7 @@ hash = "a37eb7f218ab61f3277a103a85c5bd14ff0abe0dff94e17883bcbb5ea28a3855"
 
 [[files]]
 file = "config/cinematic_respawn.properties"
-hash = "85c53c68abfbf4052261f2cdbef2137573c6599b5dbfd781188e82ad707a6473"
+hash = "b2784382f4fa1f1be13ce764bdb1ec60ce2db528fb40e6f796dc7370c8e783ba"
 
 [[files]]
 file = "config/cinematic-client.toml"
@@ -442,7 +442,7 @@ hash = "26ac5810c9b5dc5c1968827357f0a58c58ac2b6f7b082630960228e16585062f"
 
 [[files]]
 file = "config/handson_delight.properties"
-hash = "cb082103477ec59f038c8a2141143e2ad53f0079d08dafa9aa70a98a9f31a09f"
+hash = "9460201dfe0a9442ae23a5962908fb0471905821cc2971672225c14e1adaee6e"
 
 [[files]]
 file = "config/holdmyitems-client.toml"
@@ -1509,6 +1509,30 @@ file = "config/ixeris.toml"
 hash = "6000d427168aaab2066d9223caefeafed677a38b638e732dbdd1fff7102471ed"
 
 [[files]]
+file = "config/jei/blacklist.json"
+hash = "3ca754fefc49ea02e5203353bc3390e520e6717dd8b148aa07042f0b48a78621"
+
+[[files]]
+file = "config/jei/client/default/jei-client.ini"
+hash = "cdadcf027b25930a10d7aa888883e78d0e3b1b46fb75b7982022130d9bb75d54"
+
+[[files]]
+file = "config/jei/client/default/jei-colors.ini"
+hash = "c6d4ae48280627d04a7ae2b6d3db65e71d73670a72732f5aed9f4cfaac3837c7"
+
+[[files]]
+file = "config/jei/client/default/jei-debug.ini"
+hash = "376cc883cac002d07792f209f7bc1915ea7fa8822effc67734f1589bab9bb806"
+
+[[files]]
+file = "config/jei/client/default/jei-mod-id-format.ini"
+hash = "2e5119684366f75bc8a6df871381c6094a812cadd0d5ed0547405b5f1353f9e1"
+
+[[files]]
+file = "config/jeioptimizer-client.toml"
+hash = "adb256c3faff52a7515f91ebf0c8604a111891ec5441d17ca9babf805da85c8f"
+
+[[files]]
 file = "config/konkrete/locals/de_de.local"
 hash = "79a34cfd15c2d9c06498dc221be79279507d9b57666cd44f8d2c2cf95d3582ef"
 
@@ -1531,6 +1555,10 @@ hash = "e1a31faddc9b38f26d0b2ebc8f2394299437a58a38fbce0f3a06f3be78504568"
 [[files]]
 file = "config/lexiconfig.toml"
 hash = "cd5a8cd00f4300c29fda27b0dce17cb6bddadaf6047f4357599ed46b09ca7345"
+
+[[files]]
+file = "config/loafcats-client.toml"
+hash = "5452549315eab1070a9593dd955ebd192f3328b60954eae00970547d627d8094"
 
 [[files]]
 file = "config/lootr-client.toml"
@@ -1649,6 +1677,10 @@ file = "config/meteor_shower_natural.toml"
 hash = "8a1aa6ae4c2dc478b39e608bea527c03b3af0f187695f953193a71f9967c8fd6"
 
 [[files]]
+file = "config/mezz_config/client/default/settings.ini"
+hash = "1febf6ff1d35f4ffe34d6e5444e3c9496155a6abf3f49eb4ef5650d102645249"
+
+[[files]]
 file = "config/midnightlib.json"
 hash = "9bcdd9f5ae6c9fecc3a0dfee7507bf17c56702f14e40db9cdde90148f1d3b387"
 
@@ -1690,11 +1722,11 @@ hash = "f72dc2bce12a55066bd33e50c47b1ad33b1bdda65778cb5653d876e1fec3694d"
 
 [[files]]
 file = "config/oculus.properties"
-hash = "3f9c933f8f2f257c98367529698c3ecf35a6040072a65a904bf756e19d01ce15"
+hash = "c03328fb5acda192cca2b2d9bc9a69afc8908c4473508b5204ad9c5be9436c92"
 
 [[files]]
 file = "config/packetfixer.properties"
-hash = "4861b149c5cbfc60e4b1cf6cd861ac50da247cc046d62f25d7bb8ff696d17d5b"
+hash = "7667596920ada2ef7fa6260e3750d1e90811f1d8e7901f334b46ad9ddeb06377"
 
 [[files]]
 file = "config/particle_core_config.toml"
@@ -2114,7 +2146,7 @@ hash = "e26b00784bb6239988759ed1a64551b9f301dc33c5a855d91e976ee4bf40ac8a"
 
 [[files]]
 file = "config/sound_physics_remastered/sound_rates.properties"
-hash = "799ee1afb85e4b70567e4262735af0e116ede0c3153074ba185540e8f4ea9c52"
+hash = "7a3b0f76bf3b443741d2f65ddf639f9ce06c501853a191f0f753a6e4fb027f8a"
 
 [[files]]
 file = "config/sound_physics_remastered/soundphysics.properties"
@@ -2154,7 +2186,7 @@ hash = "c6a96ee8259a7f1a552130c72067ee76a9c75808e24093da8b48a2fb5309eed7"
 
 [[files]]
 file = "config/survival_essentials-common.toml"
-hash = "067f630232e4689c8e784d098ca10f75d17be181012bee15f123af27d921ef24"
+hash = "84c9e50ead946ef6ca80fde8baa8af062366c00b8bf28810c6fbb9a532e1f87b"
 
 [[files]]
 file = "config/sway.json"
@@ -2222,7 +2254,7 @@ hash = "fe0bed19bd0927b3d519816c73378730689080a8f07e66a6167c266ffde29dd2"
 
 [[files]]
 file = "config/trmtgtnh.cfg"
-hash = "5ec6a2d701b8164948db7799efdc5f808e0b96e23859faefe2328f1eba92eaac"
+hash = "9ce293c9b59ae7c52637207c61034c3a70f5bdb89627ee97801dec5c53e19eda"
 
 [[files]]
 file = "config/truewindow/truewindow.toml"
@@ -3767,11 +3799,6 @@ hash = "26726ae54a49a47c337b9c23cfec4036d202fd059e4ccf3697e2f4622b0a2b5b"
 metafile = true
 
 [[files]]
-file = "mods/jeioptimizer.pw.toml"
-hash = "f326b5f72179f21d360a58825db7fb1247fcc22496e9106a1580180fa885d9fc"
-metafile = true
-
-[[files]]
 file = "mods/konkrete-forge-1-8-0-mc-1-20-1-20-1.pw.toml"
 hash = "c6a6e8d07b4fd42fb14a1c282768974753cf3830ec1e6e83f360334d67283133"
 metafile = true
@@ -4230,7 +4257,7 @@ hash = "da0929b38f5fd99befaaa8cd141cbf60e1fad05b92d916d0eeeee7c79f86c0fd"
 
 [[files]]
 file = "shaderpacks/photon_v1.4.zip.txt"
-hash = "2416ab690d3ab1b5d7958072b0c0bb8de583187dee256707e9f262d66b543147"
+hash = "4b1a5f6a679d97b74bc02fea61732ad7087cf2d30bc3026ee8f3bc718f477fec"
 
 [[files]]
 file = "tacz/.export-state.json"

@@ -1,0 +1,4 @@
+#Volume scale for the Loaf Cat
+#Range: 0.0 ~ 1.0
+mobVolume = 1.0
+
