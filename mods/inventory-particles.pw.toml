@@ -1,0 +1,33 @@
+filename = 'InventoryParticles-4.0.0+1.20.1+forge.jar'
+name = 'Inventory Particles'
+side = 'client'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '4.0.0+1.20.1+forge'
+
+[download]
+hash = '49f43a4be9acb4802c1eccbf886f959916dac19fe2e8eb8ea3d91499523cb8e8999c9d663f70ac44ca1628b273af9a43124b9674816bd85837151a64694a9cae'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/XYnKrsxH/versions/bJDXPKk7/InventoryParticles-4.0.0%2B1.20.1%2Bforge.jar'
+
+[update.modrinth]
+mod-id = 'XYnKrsxH'
+version = 'bJDXPKk7'
+
+[[x-prismlauncher-dependencies]]
+addonId = '1eAoo2KR'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = 'FCzmUKBr'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = 'PLAGcSFJ'
+type = 'OPTIONAL'
+
+[[x-prismlauncher-dependencies]]
+addonId = 'ffLDUGbm'
+type = 'REQUIRED'

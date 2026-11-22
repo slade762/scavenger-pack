@@ -31,7 +31,7 @@ glintStrength:0.75
 damageTiltStrength:1.0
 highContrast:false
 gamma:0.5
-renderDistance:8
+renderDistance:4
 simulationDistance:12
 entityDistanceScaling:1.0
 guiScale:3
@@ -124,10 +124,12 @@ key_key.footstepstrail.toggle:key.keyboard.z
 key_key.ambicore.open_hub:key.keyboard.i
 key_key.modernfix.config:key.keyboard.unknown
 key_supplementaries.keybind.quiver:key.keyboard.v
-key_key.elaris.open_settings:key.keyboard.o
 key_key.corpse.death_history:key.keyboard.u
 key_key.survival_essentials.open_bag:key.keyboard.unknown
 key_key.curios.open.desc:key.keyboard.g
+key_iris.keybind.reload:key.keyboard.r:CONTROL
+key_iris.keybind.toggleShaders:key.keyboard.k
+key_iris.keybind.shaderPackSelection:key.keyboard.o
 key_key.trmtgtnh.settings:key.keyboard.unknown
 key_waves.key.draw_shore_map:key.keyboard.unknown
 key_key.cinematic.sit:key.keyboard.x
@@ -255,8 +257,6 @@ key_key.zone_tactical_anims.color_grade:key.keyboard.f7
 key_key.dochi_warfare.mercenary_status:key.keyboard.j
 key_key.concord_deco.guide:key.keyboard.w
 key_key.taczgore.config:key.keyboard.g
-key_key.mc2_interactivefoliage.open_config:key.keyboard.unknown
-key_key.mc2_interactivefoliage.toggle:key.keyboard.unknown
 key_key.savaru_inv.swap_wh:key.keyboard.v
 key_Inspect Key:key.keyboard.semicolon
 key_key.warborn.open_backpack:key.keyboard.b

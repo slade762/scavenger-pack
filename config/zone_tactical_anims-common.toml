@@ -72,7 +72,11 @@
 	#Range: 0 ~ 100000
 	cityPsiQuest = 153
 	#Spots inside the city box with no city psi field: "x,z,radius" (the Military base, the Armoury).
-	cityPsiSafeZones = ["-270,327,48", "264,-499,40"]
+	cityPsiSafeZones = ["-270,327,80", "264,-499,40", "-350,200,45"]
+	#0.83: anti-radiation meds from other mods (they only know their own mod's radiation) now lower Anomaly Zone's
+	#radiation dose when you finish using them: "id=percent of the full scale removed" (100 = clears it; damage starts at 20%).
+	#Server side. Empty = off.
+	radMeds = ["tarkovdayz:anti_radpill=35", "itz:anti_rads=100", "itz:radio_protectant=20"]
 
 [world]
 	#Real minutes for one full day/night. Vanilla 20; S.T.A.L.K.E.R.'s classic 10x clock is 144.

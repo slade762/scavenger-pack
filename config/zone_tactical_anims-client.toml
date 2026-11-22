@@ -310,6 +310,10 @@
 	markerScale = 0.75
 	#0.78: draw headlamps (yours and other players') with Sodium Dynamic Lights. Needs the server's headlamp.serverLightBlocks off.
 	dynamicHeadlamp = true
+	#0.83: never draw the vanilla hearts row (Anomaly Zone's health panel shows your health).
+	hideHearts = false
+	#0.83: never draw the vanilla armour row (the inventory shows your armour).
+	hideArmorBar = true
 
 [holster]
 	#Gun in hotbar slot 1 is slung on your back when not held. 1 draws it, 1 again (or H) slings it.
@@ -584,4 +588,25 @@
 	#Size of the icons (1.0 = about three times a name tag's letters).
 	#Range: 0.3 ~ 3.0
 	iconScale = 1.0
+
+[helmetOnBack]
+	#0.84: a helmet taken off with the hide key hangs on your back / backpack (third person, other players) instead of vanishing.
+	enabled = true
+	#Down from the shoulders, in blocks (the helmet's bottom edge).
+	#Range: -1.0 ~ 2.0
+	y = 0.3
+	#Out from the spine with no backpack.
+	#Range: -1.0 ~ 2.0
+	z = 0.16
+	#Out from the spine with a backpack worn.
+	#Range: -1.0 ~ 2.0
+	zWithBackpack = 0.4
+	#Range: 0.2 ~ 2.0
+	scale = 0.85
+	#180 = the helmet faces backwards.
+	#Range: -360.0 ~ 360.0
+	yaw = 180.0
+	#Tilt, degrees.
+	#Range: -180.0 ~ 180.0
+	pitch = 90.0
 
