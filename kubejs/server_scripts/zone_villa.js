@@ -22,7 +22,7 @@ var ZVILLA = {
 var zvTick = 0, zvWarned = {}
 function zvErr(k, e) { if (!zvWarned[k]) { zvWarned[k] = true; console.error('[zone] villa ' + k + ': ' + e) } }
 function zvOW(c) { return 'execute in minecraft:overworld run ' + c }
-function zvSpots(srv) { try { var r = srv.persistentData.getString('zone_villa_spots'); return r ? JSON.parse(r) : {} } catch (e) { return {} } }
+function zvSpots(srv) { try { var r = srv.persistentData.getString('zone_villa_spots'); return r ? JSON.parse(String(r).replace(/NaN/g, '0')) : {} } catch (e) { return {} } }
 function zvSaveSpots(srv, s) { srv.persistentData.putString('zone_villa_spots', JSON.stringify(s)) }
 function zvCount(srv, sel) { return Number(srv.runCommandSilent(zvOW('execute if entity @e[' + sel + ']').replace('run execute ', ''))) || 0 }
 
@@ -133,7 +133,8 @@ Object.keys(ZVILLA.NPCS).forEach(function (key) {
     var p = event.player
     if (!p) return
     var spots = zvSpots(event.server)
-    var yaw = Math.round(Number(p.yRot) / 45) * 45
+    var yaw = Math.round(Number(p.yaw) / 45) * 45   // 11/21: was p.yRot (undefined in KubeJS -> NaN -> summon failed)
+    if (!isFinite(yaw)) yaw = 0
     spots[key] = { x: Math.floor(p.x) + 0.5, y: Math.floor(p.y), z: Math.floor(p.z) + 0.5, yaw: yaw }
     zvSaveSpots(event.server, spots)
     zvSummon(event.server, key, spots[key])

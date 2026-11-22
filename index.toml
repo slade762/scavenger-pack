@@ -101,6 +101,10 @@ file = "config/boids.json5"
 hash = "3364cef6ac62a84873ac5bd99ae1601375c75083477cda10afe2f35d288d7fef"
 
 [[files]]
+file = "config/borderlesswindow-client.toml"
+hash = "8fc19943fd720316f8e5d6fbb264b72a363499c397011abf2c926aab2841f068"
+
+[[files]]
 file = "config/c2me.toml"
 hash = "cf1fb4f31f222d85efe0c4e1d37228ee4038ddffd0eb389b254861361a2e4507"
 
@@ -114,7 +118,7 @@ hash = "a37eb7f218ab61f3277a103a85c5bd14ff0abe0dff94e17883bcbb5ea28a3855"
 
 [[files]]
 file = "config/cinematic_respawn.properties"
-hash = "07ce33234ec3fd0905a1e1089f0999eb45540a56bf63d65e3dc0c233c9d35d55"
+hash = "54810dd2cba1bc11d6c950cbcde839dd8c9ccae65ee293a64d929baff86227cb"
 
 [[files]]
 file = "config/cinematic-client.toml"
@@ -190,7 +194,7 @@ hash = "556eb7b8706d92662bababd89e7ade09b19625efe6e3ea25900084aee83195c8"
 
 [[files]]
 file = "config/DistantHorizons.toml"
-hash = "fffd75e34849660fa669a616b9ec1b66c963214ba13c789a72885f1663565973"
+hash = "d7b3673441af7ac5688b1212e9067ebaeef401eee81f6832f22ad51d7776e4d1"
 
 [[files]]
 file = "config/dochi_warfare/server-ai.json"
@@ -278,7 +282,7 @@ hash = "a5ba22e63061c1fb67f0f895f17681351eaeccc225faef966c29ee630593275e"
 
 [[files]]
 file = "config/euphoria_patcher/.data.json"
-hash = "f0ee27cdf5f10601b3415ee193a62897e26d6a9073d81cedb44e853aa19e1711"
+hash = "10b0ecf91485ca3980f46965b29e5aa0642d12a331c9d1c648a5fa64f8843a82"
 
 [[files]]
 file = "config/euphoria_patcher/settings.toml"
@@ -401,6 +405,18 @@ file = "config/forge-client.toml"
 hash = "0b1b3c45343435184c9dde3149b38afcdb97953e287686ecda54385f53ebcddc"
 
 [[files]]
+file = "config/forgematica.json"
+hash = "9755942a966ab0c0369d908ead8c05b8d95289799f11600bba7c8b7c865a03bb"
+
+[[files]]
+file = "config/forgematica/forgematica_66.51.98.61_25550.json"
+hash = "12174fd2e7b7105aa4aa98a486df7baa470fd770ff30a731cf314c4fd571701a"
+
+[[files]]
+file = "config/forgematica/forgematica_66.51.98.61_25550_dim_minecraft_overworld.json"
+hash = "4a6809e2e3fd89774626b695a48533eaeee73131af4f27333f09af1807eae2bf"
+
+[[files]]
 file = "config/fowlplay.json5"
 hash = "1f17d61bc52454e3e1cc353ccf58a332dd7e1314dca350b330c81628b3b69f7a"
 
@@ -414,7 +430,7 @@ hash = "26ac5810c9b5dc5c1968827357f0a58c58ac2b6f7b082630960228e16585062f"
 
 [[files]]
 file = "config/handson_delight.properties"
-hash = "4b91c77056194df5dfd0446120dd151c506653e3dc459ca0892cb2805295991c"
+hash = "fe61534f4844a19223039d5639f2d9dee928571bf3543700d41f7d0ad58efe0d"
 
 [[files]]
 file = "config/holdmyitems-client.toml"
@@ -1533,6 +1549,10 @@ file = "config/lumalight-client.properties"
 hash = "129378401d7cc49feb8cb37ccf9f3b3156f737cd6711e170f3160dcf64945363"
 
 [[files]]
+file = "config/mafglib.json"
+hash = "a4976d6a5206a02939ee0ad164b06eb0bd0530dc5ffff42c9372327d1f5e5b64"
+
+[[files]]
 file = "config/mc2_interactivefoliage.json"
 hash = "c7be9ae5c53e220649f7ddbcbbd8eaf8be86c2624239c86c0a93ea91e218cda9"
 
@@ -1586,11 +1606,11 @@ hash = "f72dc2bce12a55066bd33e50c47b1ad33b1bdda65778cb5653d876e1fec3694d"
 
 [[files]]
 file = "config/oculus.properties"
-hash = "997ffeb0033e2ef4de8329fce92795f06464e3db937bddc4a1b2b11737d3e110"
+hash = "a734e573020b26c6085bc91c5a7c368689be7ddcd9db9b80c024f0257c0b217a"
 
 [[files]]
 file = "config/packetfixer.properties"
-hash = "5326ab9c28bf6100ee19ba4e0fb5b77c88dd36748d633c429a3bb9c0cbf9529c"
+hash = "c390e3230d6c1a81a9073dadfdd760107b44585d4fbdeb1cf3a08cb1aeffb5d1"
 
 [[files]]
 file = "config/particle_core_config.toml"
@@ -2119,6 +2139,10 @@ hash = "fe0bed19bd0927b3d519816c73378730689080a8f07e66a6167c266ffde29dd2"
 [[files]]
 file = "config/trmtgtnh.cfg"
 hash = "5ec6a2d701b8164948db7799efdc5f808e0b96e23859faefe2328f1eba92eaac"
+
+[[files]]
+file = "config/truewindow/truewindow.toml"
+hash = "a5299ed0f16ccd0fdc81e1f735c6f54f6a0879907ed8999f9432e01bc9641c86"
 
 [[files]]
 file = "config/upscalecraft-client.toml"
@@ -2762,7 +2786,7 @@ hash = "1f8670911537dcb8d8b67e51203f3095b27057ebe398ac3df9301ddd088abfbe"
 
 [[files]]
 file = "config/zone_tactical_anims-client.toml"
-hash = "caddadf4fab0edaee214fcc6c8ab287591725b6535e7642d9091388cf79b1f0c"
+hash = "faeade371eec5775282ceed065af72fee4bca03bdb8e68f2b18117817d6bd15d"
 
 [[files]]
 file = "config/zone_tactical_anims-common.toml"
@@ -2774,7 +2798,7 @@ hash = "11e7b832fad4f43bdf83a61b3a4c499f6a53ae7a3c9be68da0f8263c9546c6f1"
 
 [[files]]
 file = "config/zone_tactical_anims-tracking.properties"
-hash = "712f0ea5188f6fb3000c36224bf4f94738aaaa0daeb8cef275585a14eaec1cd4"
+hash = "7106007c55080fc819fb98099a9ef749a0ce36f86e2b21a49183b17b9288f9c4"
 
 [[files]]
 file = "customnpcs/assets/customnpcs/sounds.json"
@@ -3074,7 +3098,7 @@ hash = "4d862409c593504a54cc2b130f20e33cff9974f940177c3b99cae65f2071b0fc"
 
 [[files]]
 file = "kubejs/server_scripts/zone_catalogues.js"
-hash = "baee8c3d14ba649458e0ba649252bce7a0a8c08e1d5a00a5e054b8f0d6048d20"
+hash = "f01c5a8807a80f271794b7e17c7c130d6fdff9372d98588ece4d0e977c3d8ff7"
 
 [[files]]
 file = "kubejs/server_scripts/zone_city_biome.js"
@@ -3198,7 +3222,7 @@ hash = "b5404375ac2bec036e97a8ddb156dbf7b60f824ba80c574149602f631e699cc1"
 
 [[files]]
 file = "kubejs/server_scripts/zone_villa.js"
-hash = "34890a406fd8433dc497df562d1ad593b69558fd4523d0e04b12d0345bfd3ecc"
+hash = "1694790e4bf82227604200fa0bb2c9cc8a024dbd8a1812a62120f4cb5208368f"
 
 [[files]]
 file = "kubejs/server_scripts/zone_villages.js"
@@ -3514,6 +3538,11 @@ file = "mods/footsteps-trail-1.5.2-1.20.1-forge.jar"
 hash = "3de983d6bede7b19bf0050ff26ffa9a4e5204efae2dd43c1c3b09a931a246652"
 
 [[files]]
+file = "mods/forgematica.pw.toml"
+hash = "e2a28132a8bee9ebe8c7c0adf7f6378ed2e4f1dcd51b10268f8c00b8b9d00c67"
+metafile = true
+
+[[files]]
 file = "mods/fowlplay.pw.toml"
 hash = "26884c09ea9efe0cb0b62cfc60a6512335087b3da4a39e01da93aad1f4a53535"
 metafile = true
@@ -3649,6 +3678,11 @@ hash = "ae986488a4be01ac8c44e447bed8a820711805345adbda39f310c040e1fd0787"
 metafile = true
 
 [[files]]
+file = "mods/mafglib.pw.toml"
+hash = "1c6eb23fff5fd24fb579ab2bb998009259df37cb2ff59a961b55f4924bbd4fc2"
+metafile = true
+
+[[files]]
 file = "mods/mc2-interactive-foliage.pw.toml"
 hash = "bcf94008a910c91dbb5169848da9ce47e235bee8108efb8fd67f8fe0b3c6aeaa"
 metafile = true
@@ -3730,9 +3764,8 @@ hash = "4e75c5d3a2e65be0f35d68c7fed7e0aa1068b8d6399476f457d0205a284ab252"
 metafile = true
 
 [[files]]
-file = "mods/packet-fixer.pw.toml"
-hash = "23b515509d98a6816fe1337aea9e14854e5dda5656aa0e31ff0631212c440321"
-metafile = true
+file = "mods/packetfixer-3.3.2-1.18-1.20.4-merged.jar"
+hash = "12f96ecb8e61e0b3d3f0ca5701f479904904501dd251aa7bb60205afdf6bc2ce"
 
 [[files]]
 file = "mods/particle_core-0.3.3+1.20.1+forge.jar"
@@ -3963,6 +3996,11 @@ file = "mods/trmtr-1.20.1-1.0.0-forge.jar"
 hash = "b6242d714ada9003be934d430460447210bb0ee29ab6a901b679552fc81b209a"
 
 [[files]]
+file = "mods/true-window.pw.toml"
+hash = "bb3ea6105a33a7915c9a8e908a28e304b8c9b586239ba5729f3ec8dbde21f686"
+metafile = true
+
+[[files]]
 file = "mods/voicechat-forge-1-20-1-2-6-22.pw.toml"
 hash = "1f3466d3327330f5c78c5fb648c4f4803a01302cd3cf87c2d807f9753d70d771"
 metafile = true
@@ -4019,7 +4057,7 @@ hash = "6296aa6424a75b49aee043fd680d08f022772c57fcae578521b1406a4f699189"
 
 [[files]]
 file = "options.txt"
-hash = "cc9003cf17bdcb99bb5634946b03e1452cf2d431e2d39367ce654f2ac6d8f615"
+hash = "441650a2bfc1aa5ed42f0a676a969d3f9c16b3bf4d8f99c35f386ab12df59912"
 preserve = true
 
 [[files]]
@@ -4049,8 +4087,13 @@ hash = "01a2a13f84243c47dd8c19648854fe9bfdc85a8ed5184ec13a6983223a40b6b6"
 preserve = true
 
 [[files]]
-file = "shaderpacks/Bliss_v2.1.2_(Chocapic13_Shaders_edit).zip.txt"
-hash = "fb986f19c1769c21ec5b18fafdd7c3c0d3fd90bd24d5e30682152bd1b5dee55c"
+file = "shaderpacks/ComplementaryReimagined_r5.9.3 + EuphoriaPatches_1.10.5.txt"
+hash = "32fa0e497aaaa176cdd36c3895e2ac974c43488d4b94192a9c6899aa2d67b753"
+
+[[files]]
+file = "shaderpacks/complementaryreimagined-r5-9-3.pw.toml"
+hash = "08c118963b29e6fd9d0c901aec68fced00dde409af5ab17f8ad3287c2dbac172"
+metafile = true
 
 [[files]]
 file = "tacz/.export-state.json"
