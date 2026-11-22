@@ -2870,7 +2870,7 @@ hash = "1f8670911537dcb8d8b67e51203f3095b27057ebe398ac3df9301ddd088abfbe"
 
 [[files]]
 file = "config/zone_tactical_anims-client.toml"
-hash = "8b35bbf52982a71bdd685b5b16fe6ab6bf970943a229321a4fb1c9b565e59876"
+hash = "96b5a2d9a2f4f55181e4711b1a1f177f5083cbf12bce29c0d50c05979cca8947"
 
 [[files]]
 file = "config/zone_tactical_anims-common.toml"
@@ -4042,7 +4042,7 @@ hash = "32856aaa5e5fdcd6bf986b6b2798e53030a22367180cf9f25d721bae8e065a2e"
 
 [[files]]
 file = "mods/survival_essentials-0.2.0.jar"
-hash = "3ab767854a30343a4cdf2b93ffe16af120b6408f8c84ec99492d2ea5ea171d77"
+hash = "152322c6b4032af63156837a2231249e97dcd9e8aae9bb37a988f49df00a6d45"
 
 [[files]]
 file = "mods/sway.pw.toml"
@@ -4161,7 +4161,7 @@ hash = "d6364e3b3ffea4b912889d3dcd3e2acebf7d663b22b96402402fbd383eefa460"
 
 [[files]]
 file = "mods/zone_tactical_anims-0.1.0.jar"
-hash = "895321d5d1095d38a6fa72765f5dc13266a936587a3ed8ab6743a10111dca4d8"
+hash = "807fd25bb77e5c8f4741133cb62daaf0b4cc93a890d0c6481a9fa7bce9db3007"
 
 [[files]]
 file = "options.txt"
