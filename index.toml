@@ -118,7 +118,7 @@ hash = "a37eb7f218ab61f3277a103a85c5bd14ff0abe0dff94e17883bcbb5ea28a3855"
 
 [[files]]
 file = "config/cinematic_respawn.properties"
-hash = "b2784382f4fa1f1be13ce764bdb1ec60ce2db528fb40e6f796dc7370c8e783ba"
+hash = "13713f64e776eaab51f143f95f37d8201dc1028a05f1633b95c8b4123a68637d"
 
 [[files]]
 file = "config/cinematic-client.toml"
@@ -442,7 +442,7 @@ hash = "26ac5810c9b5dc5c1968827357f0a58c58ac2b6f7b082630960228e16585062f"
 
 [[files]]
 file = "config/handson_delight.properties"
-hash = "9460201dfe0a9442ae23a5962908fb0471905821cc2971672225c14e1adaee6e"
+hash = "1fa7d2d2be13c390478c8c968a12d59f38b6f53f54b9007e8f206b70ef04729f"
 
 [[files]]
 file = "config/holdmyitems-client.toml"
@@ -1722,11 +1722,11 @@ hash = "f72dc2bce12a55066bd33e50c47b1ad33b1bdda65778cb5653d876e1fec3694d"
 
 [[files]]
 file = "config/oculus.properties"
-hash = "c03328fb5acda192cca2b2d9bc9a69afc8908c4473508b5204ad9c5be9436c92"
+hash = "3805e339e7f9b337e92b1e4c0f13a0a0bbd5d68860d98387e1c5dc6bd895b8ef"
 
 [[files]]
 file = "config/packetfixer.properties"
-hash = "7667596920ada2ef7fa6260e3750d1e90811f1d8e7901f334b46ad9ddeb06377"
+hash = "0576bcda79987f8ced787e5d49956d10a2a9c0d153e77276e659750cadf7a069"
 
 [[files]]
 file = "config/particle_core_config.toml"
@@ -3571,11 +3571,6 @@ hash = "b36d123e3813f072f82e2306bf4c2b3bd24fca35e53566230be6490c07acf7fb"
 metafile = true
 
 [[files]]
-file = "mods/cute-cats.pw.toml"
-hash = "7b3d55798ebb84db83fba21c9247b1e95ba458a2073b57b382c485adc2ace79d"
-metafile = true
-
-[[files]]
 file = "mods/decorative-food.pw.toml"
 hash = "e39f915beb1dcfc335b8b38cf6041d0f9c751b1a479082871df9349bc61b1e5b"
 metafile = true
@@ -3795,7 +3790,7 @@ metafile = true
 
 [[files]]
 file = "mods/jei.pw.toml"
-hash = "26726ae54a49a47c337b9c23cfec4036d202fd059e4ccf3697e2f4622b0a2b5b"
+hash = "c421a774b4b599140b56edbfbed999ee9e4385f1bb0b94e5ba7a22a3c3f4699a"
 metafile = true
 
 [[files]]
@@ -3879,11 +3874,6 @@ metafile = true
 [[files]]
 file = "mods/meteor_shower-0.0.4.2.jar"
 hash = "6f66e0f6fdbef823edaabd944ca626d5d492c4783d0664d8476e5eb7412754f0"
-
-[[files]]
-file = "mods/mezzconfig.pw.toml"
-hash = "528fb21fc01baea0d87d47be22c28d7bf999a01c42d7b47253b511e3efd91944"
-metafile = true
 
 [[files]]
 file = "mods/midnightlib-forge-1-9-2-1-20-1.pw.toml"
@@ -4257,7 +4247,7 @@ hash = "da0929b38f5fd99befaaa8cd141cbf60e1fad05b92d916d0eeeee7c79f86c0fd"
 
 [[files]]
 file = "shaderpacks/photon_v1.4.zip.txt"
-hash = "4b1a5f6a679d97b74bc02fea61732ad7087cf2d30bc3026ee8f3bc718f477fec"
+hash = "ba72908452c3d8a56e6836515089634a08c307a109c9bb348f75354c45b4f240"
 
 [[files]]
 file = "tacz/.export-state.json"
