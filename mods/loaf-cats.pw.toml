@@ -1,0 +1,21 @@
+filename = 'loafcats-1.4-1.20.1.jar'
+name = 'Loaf Cats'
+side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '1.4-1.20.1'
+
+[download]
+hash = 'eb978431319a94d9b35f814360d79711085df62b0e911698862047da3a00915498da7ac7ad0d9191fee62e470e6595e63e7540815537a1e67310a4e5194e1a03'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/XoNFzpmn/versions/uit99dZ6/loafcats-1.4-1.20.1.jar'
+
+[update.modrinth]
+mod-id = 'XoNFzpmn'
+version = 'uit99dZ6'
+
+[[x-prismlauncher-dependencies]]
+addonId = '8BmcQJ2H'
+type = 'REQUIRED'

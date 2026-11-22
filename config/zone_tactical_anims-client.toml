@@ -593,7 +593,7 @@
 	iconScale = 1.0
 
 [helmetOnBack]
-	#0.84: a helmet taken off with the hide key hangs on your back / backpack (third person, other players) instead of vanishing.
+	#0.86.1: OFF by default (players did not like it). 0.84: a helmet taken off with the hide key hangs on your back / backpack (third person, other players) instead of vanishing.
 	enabled = false
 	#Down from the shoulders, in blocks (the helmet's neck opening; with pitch 90 that is the helmet's middle).
 	#Range: -1.0 ~ 2.0

@@ -1,0 +1,18 @@
+filename = 'cutecats-forge-1.20.1-.jar'
+name = 'Cute Cats'
+side = 'both'
+x-prismlauncher-dependencies = []
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+x-prismlauncher-version-number = '1.1.0'
+
+[download]
+hash = '377ab8bb9a34d827e20f41ec7f4422c694173eb0d1dcd0389b821f8a6757fca4b54cf367697e377a9c7fb04a2957a6254ea5f2a316e3097377c2246b19e251fe'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/xVD4Kzbq/versions/dvoRgyhs/cutecats-forge-1.20.1-.jar'
+
+[update.modrinth]
+mod-id = 'xVD4Kzbq'
+version = 'dvoRgyhs'
