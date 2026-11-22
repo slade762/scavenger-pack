@@ -180,3 +180,8 @@
 	#Exact prices that win over the multipliers: "itemid=rubles" (e.g. "anomalyzone:pda=50000").
 	overrides = []
 
+[ammoBag]
+	#0.85: TaCZ guns also reload from the Survival Essentials ammo bag worn in the Backpack Accessory slot
+	#(pockets/inventory are used first, then the bag). The ammo counter on the HUD includes it.
+	reloadFromWornBag = true
+

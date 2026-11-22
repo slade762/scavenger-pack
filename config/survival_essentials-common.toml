@@ -19,6 +19,17 @@
 	#Besides anything edible and the item tag survival_essentials:med_bag_items,
 	#items whose id (modid:name) matches this regex fit in the bag
 	medItemIdPattern = ".*(medkit|med_kit|first_aid|firstaid|bandage|splint|tourniquet|morphine|painkiller|pills|syringe|injector|stim|antirad|anti_rad|radaway|antidote|salve|ointment|plaster|gauze|medicine|vinca|adrenaline).*"
+	#0.9: right-click the back of someone wearing a medical bag to be patched up with the first healing item in it
+	#(crouch + right-click opens the bag instead).
+	healFromBack = true
+	#Healing items and the hearts each gives when used this way: "modid:item=hearts". Slot order in the bag decides which is used.
+	healItems = ["tarkovdayz:bandge=2", "tarkovdayz:bandgecivil=2", "tarkovdayz:ibuprofen=1", "tarkovdayz:morphine=3", "fracturepoint:propital=3", "anomalyzone:injection_run_heal=4", "tarkovdayz:salewafirstaidkit=5", "anomalyzone:injection_800=6", "tarkovdayz:grizzly=8"]
+	#Seconds it takes (stay close to the medic).
+	#Range: 0.0 ~ 30.0
+	healSeconds = 2.0
+	#Seconds before the same player can be patched up again.
+	#Range: 0.0 ~ 600.0
+	healCooldown = 4.0
 
 [ammoBag]
 	#Besides the item tag survival_essentials:ammo_bag_items,
@@ -29,4 +40,19 @@
 	#How close (blocks) they have to be
 	#Range: 1.0 ~ 8.0
 	othersReach = 3.5
+	#0.9.1: TaCZ ammo boxes never come out of loot tables. A diamond one turns into an empty ammo bag (random colour); the others are removed.
+	lootSwapAmmoBoxes = true
+
+[accessory]
+	#0.9: crouch + right-click the ground with an empty hand sets down whatever is in your Backpack Accessory slot
+	#(bag, tent, sleeping bag); picking a placed one up puts it straight back on your pack if the slot is free.
+	deployFromSlot = true
+
+[backpack]
+	#1.0: the worn backpack opens the 27 inventory slots (through the Inventory Free mod); no backpack = pockets only.
+	#false = this mod never touches how many slots are open.
+	controlsInventory = true
+	#1.0: Sophisticated Backpacks a player wears or carries are turned into our backpack (first 27 stacks inside it,
+	#the rest and its upgrades in an Old Gear crate). Needs Sophisticated Backpacks still installed. One-way.
+	convertSophisticated = true
 

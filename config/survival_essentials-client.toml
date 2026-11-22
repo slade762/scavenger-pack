@@ -24,7 +24,7 @@ inventoryButton = true
 	x = 0.0
 	#Height of the bag's top (- = above the shoulders)
 	#Range: -1.0 ~ 2.0
-	y = -0.35
+	y = -0.27
 	#Distance behind the back with no backpack on
 	#Range: -1.0 ~ 2.0
 	z = 0.25
@@ -36,4 +36,13 @@ inventoryButton = true
 	#Tilt in degrees (+ = bottom swings out)
 	#Range: -90.0 ~ 90.0
 	pitch = 0.0
+
+#Worn backpack (1.0). y: where its top sits below the neck (+ = lower); z: how far behind the spine its strap side is.
+[wornBackpack]
+	#Range: -1.0 ~ 2.0
+	y = 0.03
+	#Range: -1.0 ~ 2.0
+	z = 0.19
+	#Range: 0.1 ~ 2.0
+	scale = 1.0
 

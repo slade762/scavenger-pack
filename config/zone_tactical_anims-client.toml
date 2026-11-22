@@ -153,6 +153,9 @@
 	openHelmets = []
 	#Masks and respirators: no visor overlay and no muffling, but you still hear the breathing loop.
 	breathingOnly = ["itz:rookie_respirator"]
+	#0.85: fade the visor view out while an emission is active. Safety switch for the white screen some setups got with a visor helmet during an emission;
+	#0.85 also stops the visor pass from changing the frame's alpha / blend state, which is the suspected cause. Set false to keep the visor during emissions.
+	offDuringEmission = true
 
 [helmet]
 	#Seconds the take-off sequence lasts (the helmet flips at the halfway point).
@@ -310,10 +313,10 @@
 	markerScale = 0.75
 	#0.78: draw headlamps (yours and other players') with Sodium Dynamic Lights. Needs the server's headlamp.serverLightBlocks off.
 	dynamicHeadlamp = true
-	#0.83: never draw the vanilla hearts row (Anomaly Zone's health panel shows your health).
-	hideHearts = false
 	#0.83: never draw the vanilla armour row (the inventory shows your armour).
 	hideArmorBar = true
+	#Never draw the vanilla hearts row (Anomaly Zone's health panel shows your health). 0.85: the panel is kept.
+	hideHeartsRow = true
 
 [holster]
 	#Gun in hotbar slot 1 is slung on your back when not held. 1 draws it, 1 again (or H) slings it.
@@ -592,7 +595,7 @@
 [helmetOnBack]
 	#0.84: a helmet taken off with the hide key hangs on your back / backpack (third person, other players) instead of vanishing.
 	enabled = true
-	#Down from the shoulders, in blocks (the helmet's bottom edge).
+	#Down from the shoulders, in blocks (the helmet's neck opening; with pitch 90 that is the helmet's middle).
 	#Range: -1.0 ~ 2.0
 	y = 0.3
 	#Out from the spine with no backpack.
@@ -606,7 +609,10 @@
 	#180 = the helmet faces backwards.
 	#Range: -360.0 ~ 360.0
 	yaw = 180.0
-	#Tilt, degrees.
+	#Tilt, degrees. 90 = the front of the helmet points down, the top points away from your back.
 	#Range: -180.0 ~ 180.0
 	pitch = 90.0
+	#0.86: out from the spine with the Survival Essentials backpack worn (its outer pocket ends about 0.60 out).
+	#Range: -1.0 ~ 2.0
+	zWithZoneBackpack = 0.62
 
