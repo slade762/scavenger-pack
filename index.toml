@@ -50,7 +50,7 @@ hash = "9f7bd67346e47c5b01e96d31aa492635d5d3a2dcb5bc3c3baddb6e518891ad0c"
 
 [[files]]
 file = "config/backpack_side_gui-client.toml"
-hash = "c258692cbaad5cb7c44ffcd558f1893aba06a8748078327a6e1e2df2be697a4c"
+hash = "b41fe8caacb87c1e18ca99a79dff37fa1e50e780bbece15c2c27450df46c5762"
 
 [[files]]
 file = "config/badmobs-common.toml"
@@ -118,7 +118,7 @@ hash = "a37eb7f218ab61f3277a103a85c5bd14ff0abe0dff94e17883bcbb5ea28a3855"
 
 [[files]]
 file = "config/cinematic_respawn.properties"
-hash = "54810dd2cba1bc11d6c950cbcde839dd8c9ccae65ee293a64d929baff86227cb"
+hash = "1092308ce444851ebd7244bfc43116a80e6dcc8bc729f992f403ec0d0a868df1"
 
 [[files]]
 file = "config/cinematic-client.toml"
@@ -222,7 +222,7 @@ hash = "95ce6a868535f6cd8d5e7dd4ea7ce65c372ca44a94b6a2ffb1de11d73cf20dbe"
 
 [[files]]
 file = "config/elaris-client.toml"
-hash = "8a51bb27b4bf0912fb71937a4db0e4027955d8a2d538dc5927ee47a7382d15f9"
+hash = "f9645fc683a9e8a67e9e70808a3d5873ce5dd45661c0cb933238d22c7461277a"
 
 [[files]]
 file = "config/embeddium-fingerprint.json"
@@ -334,7 +334,7 @@ hash = "9a25d3dc708e43eabafce5479a13c02dae15bc7f673afb2745b8b2ba48a97dc0"
 
 [[files]]
 file = "config/fancymenu/options.txt"
-hash = "6e004cbc71f46c042a726eb8ab41d206f07ff5eda1747ef12918bc3ac883f7df"
+hash = "6ecbf01e226fb1e4f3c6aedc34c97afbdf55327157cb93102629c6fa50d16a44"
 
 [[files]]
 file = "config/fancymenu/ui_themes/cherry_blossom.json"
@@ -413,6 +413,10 @@ file = "config/forgematica/forgematica_66.51.98.61_25550.json"
 hash = "12174fd2e7b7105aa4aa98a486df7baa470fd770ff30a731cf314c4fd571701a"
 
 [[files]]
+file = "config/forgematica/forgematica_66.51.98.61_25550_dim_anomalyzone_valhalla.json"
+hash = "4a6809e2e3fd89774626b695a48533eaeee73131af4f27333f09af1807eae2bf"
+
+[[files]]
 file = "config/forgematica/forgematica_66.51.98.61_25550_dim_minecraft_overworld.json"
 hash = "4a6809e2e3fd89774626b695a48533eaeee73131af4f27333f09af1807eae2bf"
 
@@ -430,7 +434,7 @@ hash = "26ac5810c9b5dc5c1968827357f0a58c58ac2b6f7b082630960228e16585062f"
 
 [[files]]
 file = "config/handson_delight.properties"
-hash = "fe61534f4844a19223039d5639f2d9dee928571bf3543700d41f7d0ad58efe0d"
+hash = "d4ba30d9838dab7a6d2589772b28678bc19e2de98e31bac8064c61232c6be46f"
 
 [[files]]
 file = "config/holdmyitems-client.toml"
@@ -1606,11 +1610,11 @@ hash = "f72dc2bce12a55066bd33e50c47b1ad33b1bdda65778cb5653d876e1fec3694d"
 
 [[files]]
 file = "config/oculus.properties"
-hash = "a734e573020b26c6085bc91c5a7c368689be7ddcd9db9b80c024f0257c0b217a"
+hash = "6516d2f4fbe14fa3648224b80e9de8130ae55c2c6946a54a97b8c9961249200d"
 
 [[files]]
 file = "config/packetfixer.properties"
-hash = "c390e3230d6c1a81a9073dadfdd760107b44585d4fbdeb1cf3a08cb1aeffb5d1"
+hash = "514c27c18644199c7b8d7b5ba9fdd85365a511620b86721c8f4dae5788e1b755"
 
 [[files]]
 file = "config/particle_core_config.toml"
@@ -1626,7 +1630,7 @@ hash = "149e7ad99484259b3852378f6c38797ff226f8c29f9461312e37a41ff021b154"
 
 [[files]]
 file = "config/particular-common.toml"
-hash = "3a481b444160273ae42aae81eb0405eca4dee6d28687bed372427df6da8f80e4"
+hash = "eff0d5ab9ffcde809f31ba34cf204e4eff95a74aef66d5d91cf37056bab3079d"
 
 [[files]]
 file = "config/perspective_api.json"
@@ -2786,11 +2790,11 @@ hash = "1f8670911537dcb8d8b67e51203f3095b27057ebe398ac3df9301ddd088abfbe"
 
 [[files]]
 file = "config/zone_tactical_anims-client.toml"
-hash = "faeade371eec5775282ceed065af72fee4bca03bdb8e68f2b18117817d6bd15d"
+hash = "075fe82cabe41b6ad9255a26f5f513f3fcff085a611ff1b3b4a805a476439e84"
 
 [[files]]
 file = "config/zone_tactical_anims-common.toml"
-hash = "0e6e6fd7819bd91725bb9688677167c38f0b035d20be255c4c3d6e5881998f0e"
+hash = "e2e3ca62d1c88db76acefa5ad16307d5eed9d6fa85b62169e5695783b9e7c1cb"
 
 [[files]]
 file = "config/zone_tactical_anims-keys.done"
@@ -2798,7 +2802,7 @@ hash = "11e7b832fad4f43bdf83a61b3a4c499f6a53ae7a3c9be68da0f8263c9546c6f1"
 
 [[files]]
 file = "config/zone_tactical_anims-tracking.properties"
-hash = "7106007c55080fc819fb98099a9ef749a0ce36f86e2b21a49183b17b9288f9c4"
+hash = "9098423d5981bd81ffba469fbcd8929241b4a3bcbb9ad41e0ed2a9f3042b0b37"
 
 [[files]]
 file = "customnpcs/assets/customnpcs/sounds.json"
@@ -2883,6 +2887,26 @@ hash = "07c005319b430b1687f7c4243722692976c6ba066ed999b48f4c8e0c5e4691d5"
 [[files]]
 file = "kubejs/data/curios/tags/items/body.json"
 hash = "060876121baec91104538b944f4bec01702da6e317a8d9f9d647b48e9513ebc4"
+
+[[files]]
+file = "kubejs/data/esap/loot_tables/chests/airdrop.json"
+hash = "1142f30a886d04122af8a47566eaf63fce479f3ff0443ae74ea10ab9b6d92d7d"
+
+[[files]]
+file = "kubejs/data/esap/loot_tables/chests/generic.json"
+hash = "b002567b9b2b1195e67e84a7c2c9161f06b7d6fbebc8c9514e4a30a9a7aca3bd"
+
+[[files]]
+file = "kubejs/data/esap/loot_tables/chests/military.json"
+hash = "72ec0ab26e327a7684ea7e83083dd605f652fbcd9da87c587a1d44e594cf1dc1"
+
+[[files]]
+file = "kubejs/data/esap/loot_tables/tiers/airdrop_rare.json"
+hash = "41c0856a99bb97fce6fee83d76089f89ab8a4732ad5875419e117651e0433913"
+
+[[files]]
+file = "kubejs/data/esap/loot_tables/tiers/generic_rare.json"
+hash = "b1b0542e4bba76c6cb30ee755cb8b9216be87acadbefd59b50228c446dbc678d"
 
 [[files]]
 file = "kubejs/data/forge/tags/worldgen/biome/is_spooky.json"
@@ -3058,7 +3082,7 @@ hash = "a3087d4f20eaaaa7ababfe7439f64e48bd5932f4d90804215309458da407075a"
 
 [[files]]
 file = "kubejs/server_scripts/zone_ammo.js"
-hash = "8f260c8d6224b6da9a88d34dc171f54881dbe04e8a77b264cb61b6bd2dafcbef"
+hash = "bb7c07e42a2757a3c160a9001da7d7983e8369333a77b7b9b53e8de8686293cc"
 
 [[files]]
 file = "kubejs/server_scripts/zone_anomalies.js"
@@ -3086,7 +3110,7 @@ hash = "d572057fd38816c9a14860a47b86968d816c5709eb1ab3110af19d94656e2d44"
 
 [[files]]
 file = "kubejs/server_scripts/zone_bandits.js"
-hash = "57ffddf82011eda84a2f39e0de31b248e6184b598bea95e790df17faf2677494"
+hash = "327b4463ce41627fb83ba83a12eedaeb4a94f090db3747661e7e8c2ff76d564f"
 
 [[files]]
 file = "kubejs/server_scripts/zone_bar.js"
@@ -3098,7 +3122,7 @@ hash = "4d862409c593504a54cc2b130f20e33cff9974f940177c3b99cae65f2071b0fc"
 
 [[files]]
 file = "kubejs/server_scripts/zone_catalogues.js"
-hash = "f01c5a8807a80f271794b7e17c7c130d6fdff9372d98588ece4d0e977c3d8ff7"
+hash = "6f8591f0144d4b8f3abfeb9af48f85693aa80e57b2619a0d17ca5068f2592949"
 
 [[files]]
 file = "kubejs/server_scripts/zone_city_biome.js"
@@ -3198,7 +3222,7 @@ hash = "0ad78919fba8b9c2300d4a0dc2c502dc72f70c395ff7f8fc284a6c0740ba06b5"
 
 [[files]]
 file = "kubejs/server_scripts/zone_sell_barrel.js"
-hash = "eddd95bed5cdca828a622c5fe37cbec423db33e9e9a3dc19925abead157989c3"
+hash = "49c6a755fac71e749c2436f77f1b865d4c8eee0ca2f1b6c8dc54bad3b67a6eab"
 
 [[files]]
 file = "kubejs/server_scripts/zone_spawn_director.js"
@@ -3467,6 +3491,11 @@ metafile = true
 [[files]]
 file = "mods/e4mc-voice-bridge-1-2-0-1-20-1-forge.pw.toml"
 hash = "d904979b35440ccfe0a701efb3f06d849e5bd0ce6384f31b358d4e01bb31d89a"
+metafile = true
+
+[[files]]
+file = "mods/elaris.pw.toml"
+hash = "db67f8e62c23af2053137ec85bc16facc9985d4d26460bfc721f1529210dc4c3"
 metafile = true
 
 [[files]]
@@ -3759,11 +3788,6 @@ file = "mods/OctoLib-FORGE-0.5.0.2-1.20.1.jar"
 hash = "ba29d707cb19c718f39a035218bab3f72046f734943a9be5d30efff82345b259"
 
 [[files]]
-file = "mods/oculus-mc1-20-1-1-8-0.pw.toml"
-hash = "4e75c5d3a2e65be0f35d68c7fed7e0aa1068b8d6399476f457d0205a284ab252"
-metafile = true
-
-[[files]]
 file = "mods/packetfixer-3.3.2-1.18-1.20.4-merged.jar"
 hash = "12f96ecb8e61e0b3d3f0ca5701f479904904501dd251aa7bb60205afdf6bc2ce"
 
@@ -3934,7 +3958,7 @@ hash = "32856aaa5e5fdcd6bf986b6b2798e53030a22367180cf9f25d721bae8e065a2e"
 
 [[files]]
 file = "mods/survival_essentials-0.2.0.jar"
-hash = "0ef5311949be6382636af6a73fc62c6b5a28c8cdf255f96b590c3ad05eb5fd38"
+hash = "33cf76c6de34f49f297e765e4320dd53a58f280fa6ec136949f7d922fbe2980a"
 
 [[files]]
 file = "mods/sway.pw.toml"
@@ -4053,11 +4077,11 @@ hash = "d6364e3b3ffea4b912889d3dcd3e2acebf7d663b22b96402402fbd383eefa460"
 
 [[files]]
 file = "mods/zone_tactical_anims-0.1.0.jar"
-hash = "6296aa6424a75b49aee043fd680d08f022772c57fcae578521b1406a4f699189"
+hash = "0d5a5c42db7573f62568f2b619b2fd36a8920bdce333870bc42b3e7473e63d9f"
 
 [[files]]
 file = "options.txt"
-hash = "441650a2bfc1aa5ed42f0a676a969d3f9c16b3bf4d8f99c35f386ab12df59912"
+hash = "b95541fd8be9154d069fee58574671b84c1cc768c6ec468de5427c8b3c14ac08"
 preserve = true
 
 [[files]]
@@ -4087,13 +4111,8 @@ hash = "01a2a13f84243c47dd8c19648854fe9bfdc85a8ed5184ec13a6983223a40b6b6"
 preserve = true
 
 [[files]]
-file = "shaderpacks/ComplementaryReimagined_r5.9.3 + EuphoriaPatches_1.10.5.txt"
-hash = "32fa0e497aaaa176cdd36c3895e2ac974c43488d4b94192a9c6899aa2d67b753"
-
-[[files]]
-file = "shaderpacks/complementaryreimagined-r5-9-3.pw.toml"
-hash = "08c118963b29e6fd9d0c901aec68fced00dde409af5ab17f8ad3287c2dbac172"
-metafile = true
+file = "shaderpacks/Bliss_v2.1.2_(Chocapic13_Shaders_edit).zip.txt"
+hash = "6b8be27cd1034d8c8811151be186e452e45c72a92a67e9d114d67577aae4a979"
 
 [[files]]
 file = "tacz/.export-state.json"

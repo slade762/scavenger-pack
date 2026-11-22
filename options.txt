@@ -32,7 +32,7 @@ damageTiltStrength:1.0
 highContrast:false
 gamma:0.5
 renderDistance:8
-simulationDistance:8
+simulationDistance:12
 entityDistanceScaling:1.0
 guiScale:3
 particles:1
@@ -67,7 +67,7 @@ mipmapLevels:1
 useNativeTransport:true
 mainHand:"right"
 attackIndicator:1
-narrator:0
+narrator:2
 tutorialStep:none
 mouseWheelSensitivity:1.0
 rawMouseInput:true
@@ -124,12 +124,10 @@ key_key.footstepstrail.toggle:key.keyboard.z
 key_key.ambicore.open_hub:key.keyboard.i
 key_key.modernfix.config:key.keyboard.unknown
 key_supplementaries.keybind.quiver:key.keyboard.v
+key_key.elaris.open_settings:key.keyboard.o
 key_key.corpse.death_history:key.keyboard.u
 key_key.survival_essentials.open_bag:key.keyboard.unknown
 key_key.curios.open.desc:key.keyboard.g
-key_iris.keybind.reload:key.keyboard.r:CONTROL
-key_iris.keybind.toggleShaders:key.keyboard.k
-key_iris.keybind.shaderPackSelection:key.keyboard.o
 key_key.trmtgtnh.settings:key.keyboard.unknown
 key_waves.key.draw_shore_map:key.keyboard.unknown
 key_key.cinematic.sit:key.keyboard.x
@@ -239,7 +237,7 @@ key_key.tacz.zoom.desc:key.mouse.4
 key_key.tacz.melee.desc:key.keyboard.v
 key_key.tacz.open_config.desc:key.keyboard.t:ALT
 key_key.anomalyzone.toggle_detector_mode:key.keyboard.v
-key_key.anomalyzone.toggle_detector_power:key.keyboard.b
+key_key.anomalyzone.toggle_detector_power:key.keyboard.b:SHIFT
 key_key.anomalyzone.guitar_wheel:key.keyboard.r
 key_key.anomalyzone.pickup_artifact:key.keyboard.g
 key_key.anomalyzone.toggle_helmet:key.keyboard.h

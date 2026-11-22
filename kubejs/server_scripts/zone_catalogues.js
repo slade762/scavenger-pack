@@ -26,3 +26,6 @@ function zcatRegister() {
   console.info('[zone] catalogues: ' + n + ' entries for ' + Object.keys(ZCAT).length + ' traders')
 }
 ServerEvents.tick(function (event) { if (zcatDone) return; zcatDone = true; zcatRegister() })
+// 11/21: cheapest catalogue price per item id, for the sell barrel (zone_sell_barrel.js pays a share of it)
+global.zoneCatPrice = {}
+Object.keys(ZCAT).forEach(function (name) { ZCAT[name].forEach(function (r) { var c = global.zoneCatPrice[r[0]]; if (!c || r[1] < c) global.zoneCatPrice[r[0]] = r[1] }) })

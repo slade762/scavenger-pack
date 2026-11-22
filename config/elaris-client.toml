@@ -1,4 +1,4 @@
-elarisEnabled = true
+elarisEnabled = false
 
 #NeoFlood RTX Settings
 [rtx]
@@ -376,7 +376,7 @@ elarisEnabled = true
 [postEffects]
 	#MINIMUM / MEDIUM / HIGH: atmosphere buffer scale and volumetric integration accuracy. Does not change artistic intensity or the selected upscaler.
 	#Allowed Values: MINIMUM, MEDIUM, HIGH
-	quality = "MEDIUM"
+	quality = "HIGH"
 	#Legacy compatibility key. Atmosphere resolution is now controlled by postEffects.quality; this value is ignored.
 	#Range: 0.1 ~ 1.0
 	renderScale = 0.44
@@ -821,16 +821,16 @@ elarisEnabled = true
 #ESS / Elaris Super Sampling
 [ess]
 	#Legacy storage key for the unified upscaler selection. Enables shared reduced-resolution world rendering for one ESS or Vulkan SDK reconstruction algorithm. Disabled by default.
-	enabled = true
+	enabled = false
 	#PERFORMANCE: ESS 1.1 spatial reconstruction. QUALITY: ESS 2.0 temporal reconstruction with integrated antialiasing. Legacy ESS_1_0 / ESS_1_1 values migrate to PERFORMANCE.
 	#Allowed Values: PERFORMANCE, QUALITY, ESS_1_0, ESS_1_1
 	mode = "QUALITY"
 	#Internal resolution: ESS Ultra/Quality/Balanced/Performance = 85/77/67/58%; SDKs = 77/67/58/50%. LEGACY preserves an older renderScale until a preset is selected.
 	#Allowed Values: LEGACY, ULTRA_QUALITY, QUALITY, BALANCED, PERFORMANCE
-	preset = "BALANCED"
+	preset = "PERFORMANCE"
 	#Legacy internal world render scale, used only with preset=LEGACY. Choosing a preset in the menu also updates this value.
 	#Range: 0.5 ~ 0.85
-	renderScale = 0.67
+	renderScale = 0.58
 	#Reconstruction sharpness. 0 disables added sharpening; higher values restore more apparent texture detail after upscale.
 	#Range: 0.0 ~ 1.0
 	sharpness = 0.15
@@ -883,7 +883,7 @@ elarisEnabled = true
 #Experimental Vulkan SDK super resolution. World rasterization remains OpenGL; HUD and hands stay native.
 [experimentalVulkan]
 	#Legacy storage key for the unified upscaler selector: together with ess.enabled, chooses the Vulkan SDK instead of ESS. Requires Windows x64, Vulkan 1.2, OpenGL timer queries and explicit fragment outputs, matching GPU/driver and external memory/semaphores. If unavailable, ESS uses OpenGL. Disabled by default.
-	enabled = true
+	enabled = false
 	#FSR31: shader-based FSR 3.1.4. DLSS: NVIDIA RTX only. XESS: restricted to the active Intel GPU in Elaris, with additional Intel runtime checks.
 	#Allowed Values: FSR31, DLSS, XESS
 	upscaler = "DLSS"

@@ -1,14 +1,18 @@
 // Bandit camp in the ruined town to the east, across the lake (Old Mole's first job).
 // Keeps 15 Bandits plus 1 leader (suppressed AK-74, 25% drop) in the town, mostly in the long hall at the back.
 // They only spawn while a player is nearby (so the area is loaded) but out of sight (40+ blocks from the centre),
-// and the camp tops up at most once every 10 minutes. Several players can do the quest at once.
+// and the camp tops up at most once every 5 minutes. Several players can do the quest at once.
+// Once the camp is wiped out (every bandit and the leader dead), it stays empty for RESPAWN_MIN minutes, then the
+// whole camp moves back in. The timer is saved, so a server restart doesn't reset it. No partial top-ups while
+// a player is in the town (within 110 blocks), so a fight can't be refilled halfway through.
 const CAMP = { x: -1233, z: 22, near: 170, minDist: 40 }
 const SPAWNS = [[-1203, 68, 14], [-1217, 71, 51], [-1200, 72, 30], [-1200, 68, 39], [-1207, 71, 49], [-1210, 72, 10],
   [-1211, 69, 43], [-1207, 71, 23], [-1220, 68, 13], [-1211, 68, 25], [-1236, 69, 9], [-1244, 68, -4],
   [-1236, 68, 3], [-1243, 83, 1], [-1245, 70, 5], [-1268, 71, 38]]
 const LEADER_SPAWN = [-1208, 68, 38]
 const MAX = 15
-const REFILL_TICKS = 20 * 60 * 10
+const REFILL_TICKS = 20 * 60 * 5    // 11/21 21:16 (Ward): top-ups every 5 min (was 20)
+const RESPAWN_MIN = 5               // 11/21 21:16 (Ward): a wiped-out camp is back after 5 min (was 20)
 const AREA = `x=${CAMP.x - 60},y=40,z=${CAMP.z - 60},dx=120,dy=80,dz=120`
 // Awareness (blocks). Seen = clear line of sight. Heard = through walls, close by.
 const SIGHT = 40, SIGHT_SNEAK = 20, HEAR = 10, HEAR_SNEAK = 4, SQUAD = 24
@@ -80,10 +84,30 @@ ServerEvents.tick(event => {
     if (d < CAMP.near) near = true
     if (d < CAMP.minDist) tooClose = true
   })
-  if (!near || tooClose || ticks - lastRefill < REFILL_TICKS) return
-  lastRefill = ticks
+  if (!near) return
+  let inTown = false
+  server.players.forEach(p => { if (String(p.level.dimension).includes('overworld') && Math.hypot(p.x - CAMP.x, p.z - CAMP.z) < 110) inTown = true })
+  const pd = server.persistentData
+  const clearedAt = Number(pd.getLong('zone_bandits_cleared')) || 0
   const grunts = server.runCommandSilent(`execute if entity @e[type=tacznpcs:npc,name=Bandit,tag=!zone_leader,${AREA}]`) || 0
   const leaders = server.runCommandSilent(`execute if entity @e[type=tacznpcs:npc,tag=zone_leader,${AREA}]`) || 0
+  const loaded = server.runCommandSilent(`execute in minecraft:overworld if loaded ${CAMP.x} 0 ${CAMP.z}`) || 0
+  // camp just wiped out: start the 20 minute timer
+  if (inTown && loaded && grunts === 0 && leaders === 0 && !clearedAt) {
+    pd.putLong('zone_bandits_cleared', Date.now())
+    server.players.forEach(p => { if (Math.hypot(p.x - CAMP.x, p.z - CAMP.z) < 140) p.tell(Text.gray('The old town has gone quiet.')) })
+    console.info('[zone] bandit camp cleared, back in ' + RESPAWN_MIN + ' min')
+    return
+  }
+  if (clearedAt) {
+    if (Date.now() - clearedAt < RESPAWN_MIN * 60000) return     // still empty
+    if (tooClose) return                                           // wait until nobody is watching
+    pd.remove('zone_bandits_cleared')
+    lastRefill = -REFILL_TICKS                                     // full camp moves back in right now
+    console.info('[zone] bandit camp respawning after being cleared')
+  }
+  if (tooClose || (inTown && grunts + leaders > 0) || ticks - lastRefill < REFILL_TICKS) return
+  lastRefill = ticks
   const missing = Math.max(0, MAX - grunts)
   const start = Math.floor(Math.random() * SPAWNS.length)
   const order = SPAWNS.slice(start).concat(SPAWNS.slice(0, start))
