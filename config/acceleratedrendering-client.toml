@@ -37,7 +37,7 @@
 	#- DISABLED: Translucent RenderType will fallback to vanilla rendering pipeline if the accelerated pipeline does not support translucent sorting unless mods explicitly enable force translucent acceleration temporarily when rendering their own geometries.
 	#- ENABLED: Translucent RenderType will still be rendered in accelerated pipeline even if the pipeline does not support translucent sorting unless mods explicitly disable force translucent acceleration temporarily when rendering their own geometries.
 	#Allowed Values: DISABLED, ENABLED
-	force_translucent_acceleration = "ENABLED"
+	force_translucent_acceleration = "DISABLED"
 	#- SIMPLE: The most basic implementation of cache. Usually used for testing if other cache types are working correctly.
 	#- HANDLE: Faster implementation of cache using VarHandle and flatten values to improve performance on read/write operations.
 	#- UNSAFE: Fastest implementation of cache using unsafe memory operations that skip multiple safety checks to read/write.
@@ -198,7 +198,7 @@
 	#- DISABLED: Entity filter will be disabled and all entities will be accelerated.
 	#- ENABLED: Entity filter will test if the entities should be accelerated when rendering based on the filter values and the filter type.
 	#Allowed Values: DISABLED, ENABLED
-	entity_filter = "DISABLED"
+	entity_filter = "ENABLED"
 	#- DISABLED: Block entity filter will be disabled and all block entities will be accelerated.
 	#- ENABLED: Block entity filter will test if the block entities should be accelerated when rendering based on the filter values and the filter type.
 	#Allowed Values: DISABLED, ENABLED
@@ -236,7 +236,7 @@
 	menu_filter_values = ["minecraft:.*"]
 	#You can configure the entity filter by this list.
 	#Entity filter will use this list and the filter type to determine if an entity can pass the filter.
-	entity_filter_values = []
+	entity_filter_values = ["extinction:.*"]
 	#You can configure the block entity filter by this list.
 	#Block entity filter will use this list and the filter type to determine if a block entity can pass the filter.
 	block_entity_filter_values = []

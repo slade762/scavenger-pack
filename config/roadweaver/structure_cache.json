@@ -406,6 +406,96 @@
       ]
     },
     {
+      "id": "extinction:apartment",
+      "displayName": "Apartment",
+      "isVanilla": false,
+      "dimensions": []
+    },
+    {
+      "id": "extinction:base",
+      "displayName": "Base",
+      "isVanilla": false,
+      "dimensions": []
+    },
+    {
+      "id": "extinction:build",
+      "displayName": "Build",
+      "isVanilla": false,
+      "dimensions": []
+    },
+    {
+      "id": "extinction:build_destroyed",
+      "displayName": "Build Destroyed",
+      "isVanilla": false,
+      "dimensions": []
+    },
+    {
+      "id": "extinction:build_ruin",
+      "displayName": "Build Ruin",
+      "isVanilla": false,
+      "dimensions": []
+    },
+    {
+      "id": "extinction:bunker",
+      "displayName": "Bunker",
+      "isVanilla": false,
+      "dimensions": []
+    },
+    {
+      "id": "extinction:crash",
+      "displayName": "Crash",
+      "isVanilla": false,
+      "dimensions": []
+    },
+    {
+      "id": "extinction:destroyed",
+      "displayName": "Destroyed",
+      "isVanilla": false,
+      "dimensions": []
+    },
+    {
+      "id": "extinction:gas_station",
+      "displayName": "Gas Station",
+      "isVanilla": false,
+      "dimensions": []
+    },
+    {
+      "id": "extinction:hospital",
+      "displayName": "Hospital",
+      "isVanilla": false,
+      "dimensions": []
+    },
+    {
+      "id": "extinction:house",
+      "displayName": "House",
+      "isVanilla": false,
+      "dimensions": []
+    },
+    {
+      "id": "extinction:house_ruin",
+      "displayName": "House Ruin",
+      "isVanilla": false,
+      "dimensions": []
+    },
+    {
+      "id": "extinction:military_dead",
+      "displayName": "Military Dead",
+      "isVanilla": false,
+      "dimensions": []
+    },
+    {
+      "id": "extinction:ruin_house",
+      "displayName": "Ruin House",
+      "isVanilla": false,
+      "dimensions": []
+    },
+    {
+      "id": "extinction:supply_drop",
+      "displayName": "Supply Drop",
+      "isVanilla": false,
+      "dimensions": []
+    },
+    {
       "id": "roadweaver:bridge_bridge_0",
       "displayName": "Bridge Bridge 0",
       "isVanilla": false,
