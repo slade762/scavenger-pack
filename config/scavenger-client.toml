@@ -1,0 +1,37 @@
+
+[patch]
+	#Top edge of the patch below the shoulder (pixels).
+	#Range: -2.0 ~ 8.0
+	y = 0.6
+	#Patch width and height (pixels).
+	#Range: 1.0 ~ 6.0
+	size = 3.4
+	#Shift toward the front (+) or back (-) of the arm (pixels).
+	#Range: -2.0 ~ 2.0
+	z = 0.0
+	#Extra distance out from the arm when wearing a chest piece (pixels).
+	#Range: 0.0 ~ 4.0
+	armorOut = 1.15
+	#Gap between the sleeve and the patch (pixels), so it never flickers into the arm.
+	#Range: 0.0 ~ 1.0
+	surface = 0.06
+
+[ambience]
+	#Volume of the Deep's ambience loop (0 = off).
+	#Range: 0.0 ~ 1.0
+	deepVolume = 0.6
+	#Volume of the Deep's one-shot sounds (rumbles, knocks...).
+	#Range: 0.0 ~ 1.0
+	deepOneShotVolume = 1.0
+	#Seconds the loop takes to fade in or out at the edge of the Deep.
+	#Range: 0.5 ~ 20.0
+	deepFadeSeconds = 4.0
+	#Shortest gap between one-shots (seconds).
+	#Range: 3 ~ 600
+	deepOneShotMin = 14
+	#Longest gap between one-shots (seconds).
+	#Range: 3 ~ 600
+	deepOneShotMax = 45
+	#Hold off the background music while in the Deep.
+	deepMuteMusic = true
+

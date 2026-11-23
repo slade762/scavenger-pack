@@ -194,3 +194,7 @@
 	#Range: 0.0 ~ 3.0
 	volume = 1.1
 
+[quests]
+	#0.88.5: Custom NPCs' "Quest Complete" / "New Quest" lines stay out of chat (the toast pop-up still shows).
+	noQuestChat = true
+

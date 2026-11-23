@@ -359,6 +359,19 @@
 	npcBackGuns = false
 	#Shaders: players' slung (back) guns cast a shadow. false = no back gun in the shadow (cheaper).
 	backGunShadow = false
+	#TaCZ NPCs (scavengers, bandits, military) put their gun away when they are not fighting: no gun drawn until they aim or get hurt. Also a big FPS saving where NPCs gather.
+	npcIdleHolster = true
+	#Seconds a TaCZ NPC keeps its gun out after it last aimed or was hurt.
+	#Range: 1 ~ 120
+	npcCombatSeconds = 10
+	#NPCs farther than this many blocks are drawn without their GeckoLib armor model (Anomaly Zone suits etc.). Big FPS saving where armored NPCs gather. 0 = always draw. Players are never affected.
+	#Range: 0.0 ~ 256.0
+	npcArmorDistance = 24.0
+	#Shaders: NPCs' GeckoLib armor casts a shadow. false = shadows show the body only (cheaper).
+	npcArmorShadows = false
+	#TaCZ ammo and guns lying on the ground are not drawn beyond this many blocks (they are still there to pick up), and never in the shader shadow pass. 0 = always draw.
+	#Range: 0.0 ~ 256.0
+	groundGunDistance = 16.0
 
 	#Where the slung gun goes while a backpack is worn (strapped to the backpack's side). Each Sophisticated Backpacks tier has its own section below.
 	[holster.backpack]
