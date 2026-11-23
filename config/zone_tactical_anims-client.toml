@@ -94,6 +94,9 @@
 	backpackShadow = true
 	#Shaders: guns held by NPCs and mobs (quest-givers, bandits) cast a shadow. false (0.79) = no NPC gun shadows (cheaper).
 	npcGunShadows = false
+	#Shaders: skip Brimm armour in the shadow pass. Brimm draws its armour into the main frame buffer, so with shaders a tiny
+	#copy of the armour (seen from the sun) showed at the centre of the screen and in scopes. false = Brimm's own behaviour.
+	brimmShadowFix = true
 
 [third_person]
 	#(old setting, no longer used)

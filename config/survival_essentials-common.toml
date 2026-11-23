@@ -63,3 +63,15 @@
 	#Wearing a materials bag: when you place the last block in your hand, the hand is refilled from the bag.
 	refillHand = true
 
+[radioPack]
+	#1.2 (needs the Simple Radio mod): while the radio pack is worn, whatever the wearer's voice chat sends also goes out on the radio.
+	#Voice chat only sends while the player is talking by THEIR OWN voice chat setting (push-to-talk key held, or voice activation),
+	#so this follows each player's setting; there is no separate radio key. false = the pack only receives.
+	alwaysTransmit = true
+	#How far (blocks) the pack's speaker carries what comes in over the radio.
+	#Range: 1.0 ~ 64.0
+	speakerRange = 16.0
+	#1.3: set-down radio pack (camp radio) with its mic switched on: how far (blocks) it picks up the voices around it.
+	#Range: 1.0 ~ 32.0
+	placedMicRange = 8.0
+

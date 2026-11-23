@@ -113,12 +113,16 @@ file = "config/camera_inertia-client.toml"
 hash = "cd182dd5d0a110fbe7dd6b30e2d7c6fd15381a5d011918e8986b316d328aa8d1"
 
 [[files]]
+file = "config/cameraoverhaul.json"
+hash = "0533f4b29c8baf3f19aecadfda5309294e0234a4b096e65584d9f894371058e8"
+
+[[files]]
 file = "config/canary.properties"
 hash = "a37eb7f218ab61f3277a103a85c5bd14ff0abe0dff94e17883bcbb5ea28a3855"
 
 [[files]]
 file = "config/cinematic_respawn.properties"
-hash = "339b30aa54c1e74b99aede65e37e1e8aa2dfcc19f4ae2290fc53508be2204436"
+hash = "181c09fc3fffbd5372c6ba9fc559905bdfd1df71845f98a66fdbd4f8dbaea913"
 
 [[files]]
 file = "config/cinematic-client.toml"
@@ -298,7 +302,7 @@ hash = "13aee892d000bdd43d88178fbcaa96549f28ae4ae528e1f1eacaf791742f9ec6"
 
 [[files]]
 file = "config/fabric/indigo-renderer.properties"
-hash = "4bb8dd072012a6749dcee358126f1d2746a912e3488e5efd1f3473be0b4b2899"
+hash = "d149c7cec71240a53b400e7dfddafdc87d40ec14fef7f698092ffba54d3929fe"
 
 [[files]]
 file = "config/fallingleaves-client.toml"
@@ -462,7 +466,7 @@ hash = "26ac5810c9b5dc5c1968827357f0a58c58ac2b6f7b082630960228e16585062f"
 
 [[files]]
 file = "config/handson_delight.properties"
-hash = "fef9a68b04d8bf9b83f678d5ec1f5dd1314746add0f2cc2868c8b675cfdaa962"
+hash = "d4dd60df40391a26993f41174b85ee61f3d3b3ed3ed49c0d0c63acd5bf42aaf7"
 
 [[files]]
 file = "config/holdmyitems-client.toml"
@@ -846,7 +850,7 @@ hash = "c354fd6bae49e9b02d4e226ad934eeb38ec3a88b4a5ce11fcb84631255c3ffad"
 
 [[files]]
 file = "config/inventory-interactions/cache/survival_essentials/base_textures.cached"
-hash = "d79ddef4af6c8446527d9491e1fa531a23732297f3b32d4a7cc27b9048073809"
+hash = "625973aac63d62da88f62d5b12307c96ff27bceb6e4d82db1f9dfa2f08652233"
 
 [[files]]
 file = "config/inventory-interactions/cache/tacz/base_textures.cached"
@@ -922,7 +926,7 @@ hash = "d241829b4e8a3f421e5c96cf5c22da140bd404755be83bb6717f5c621ed63b64"
 
 [[files]]
 file = "config/inventory-particles/cache/brimm/atlas.png"
-hash = "2c0953ab4e34929d8376475217bcb4dfe083fb30095cf38ed1d5216f18a960da"
+hash = "7fe94e66cf50f3cf4fa309b3775bc338e3641599731889ba8b7bd49546dbdd4c"
 
 [[files]]
 file = "config/inventory-particles/cache/brimm/regions.txt"
@@ -970,7 +974,7 @@ hash = "b1d65676f922adcf3e9cc7c7d261e41a6d1b0c0534a7ff6e86139432c6f79f99"
 
 [[files]]
 file = "config/inventory-particles/cache/displaydelight/atlas.png"
-hash = "f112592f839b972a83c4bfdf8d5981b1655a689f9efc00045a5933e5fa6a7d79"
+hash = "341a3127e65670439ba7bffe4b4a46ebc32ce5751c12becd6246639799b13037"
 
 [[files]]
 file = "config/inventory-particles/cache/displaydelight/regions.txt"
@@ -994,7 +998,7 @@ hash = "c96592ab01e0df59d1f16077ba85967feb848fe18bf48a6491f96c395116163c"
 
 [[files]]
 file = "config/inventory-particles/cache/esap/atlas.png"
-hash = "ec200bfa19706cdc2a51d7ac95c94d2c8561d1cae717e4b1cf6adba328221ea0"
+hash = "94e990853af9ba85e9add5f41d3fb4f6b2915e2e48985badb78f88a14454a297"
 
 [[files]]
 file = "config/inventory-particles/cache/esap/regions.txt"
@@ -1006,7 +1010,7 @@ hash = "5f8954dc61b48a4a6b0d0804e880aed266015f97363e17009e7a9b8e930e17a4"
 
 [[files]]
 file = "config/inventory-particles/cache/farmersdelight/atlas.png"
-hash = "7dc75ecd91bff2d68e090cb009930f3d00e457ad9416c82c9474ab1acc7cd150"
+hash = "da216364bb4a0cb3af49ddd4d7af924ee0069354501ebe84c77afa74d3559797"
 
 [[files]]
 file = "config/inventory-particles/cache/farmersdelight/regions.txt"
@@ -1030,7 +1034,7 @@ hash = "dbfa0fc8d05de6208ed29bd14af651df138c385568ac5a7e026bea21f9ceb325"
 
 [[files]]
 file = "config/inventory-particles/cache/fracturepoint/atlas.png"
-hash = "3c77dc39eeda0be62d7e0bb55822771d51155c7b5e7039d82af66483d11ebc7b"
+hash = "eda5cb8ec855f269d04a3cc52b5c43b37e9304bfb739992ec462be7b81cdee28"
 
 [[files]]
 file = "config/inventory-particles/cache/fracturepoint/regions.txt"
@@ -1054,7 +1058,7 @@ hash = "1af87d261fcc9e9e782eb95c4dadcd8019d7292824828d0c0189e219e5f432cf"
 
 [[files]]
 file = "config/inventory-particles/cache/herbalists_delight/atlas.png"
-hash = "f226ac04d8dcf9f64dc162e24ff9b28de348a17fc9e407c022e476df97597b51"
+hash = "366eaada3cde138fb7a7b204bccbd63b8a760035b6c00937f06718893e8471cc"
 
 [[files]]
 file = "config/inventory-particles/cache/herbalists_delight/regions.txt"
@@ -1066,7 +1070,7 @@ hash = "9e00d00f959607f82c194e49001b406ee1b05ba26f45c1c9923886bf13a81f99"
 
 [[files]]
 file = "config/inventory-particles/cache/immersive_aircraft/atlas.png"
-hash = "69a2e74a86bfc8ae7b5028fbbee34300db91a18a8cb93b0baae1fb5470bf4daa"
+hash = "c34ab7c497e463c73dad55562abc4ce186d065b4f4930630a3060bae75a14b66"
 
 [[files]]
 file = "config/inventory-particles/cache/immersive_aircraft/regions.txt"
@@ -1102,7 +1106,7 @@ hash = "cb41fb764e56cade1caef79d67d82b38c7679d247ea3bb5a608d9b7b6ee050d5"
 
 [[files]]
 file = "config/inventory-particles/cache/items_displayed/atlas.png"
-hash = "2aba882c69e3eff84a4c5827ad19f75a830c4db5ec02ba33e6abcd185ce2cc36"
+hash = "90ff946ea1fd500075f97004fe74e98b3cf1054c385aed7ff648e79e704a3f0d"
 
 [[files]]
 file = "config/inventory-particles/cache/items_displayed/regions.txt"
@@ -1162,7 +1166,7 @@ hash = "09c43d7eb9bd38b3f47239eb62e7984ba04e2f39c5c85471130cae3de6746e22"
 
 [[files]]
 file = "config/inventory-particles/cache/mcwfences/atlas.png"
-hash = "05d15f6a2aceaa19c1ea768e5ccd96f6f6cc74cb0ddc01a40f1d79c636ca742d"
+hash = "60581c00361a7114ec7d82ddcd4fba71764e69f7f54a690890d74d66322e7054"
 
 [[files]]
 file = "config/inventory-particles/cache/mcwfences/regions.txt"
@@ -1186,7 +1190,7 @@ hash = "6de6d5d81f5e365a06e4fdd43cb84734fddaf3d14bcc699ecaac5987bbd4f629"
 
 [[files]]
 file = "config/inventory-particles/cache/mcwlights/atlas.png"
-hash = "164b61214104e113c8e144e3727147872b84fbc96057d1282ac67ef5a420c6cb"
+hash = "4749cfd759e3f67a42253d863c04faad3995d92fc9de436726662365ae5cd150"
 
 [[files]]
 file = "config/inventory-particles/cache/mcwlights/regions.txt"
@@ -1198,7 +1202,7 @@ hash = "310fdf4111130105f59ba10c50006ef7d4b82aedeadc56d0355d8bee7afc8f59"
 
 [[files]]
 file = "config/inventory-particles/cache/mcwpaths/atlas.png"
-hash = "03b8606e8dee3c2151bd854af419dc787b657f19df1d63c3e963307d7d3913a1"
+hash = "0da039749372ada04ab92b4773a2c497b0e483e76f4bbc1a429534a7ff95c864"
 
 [[files]]
 file = "config/inventory-particles/cache/mcwpaths/regions.txt"
@@ -1210,7 +1214,7 @@ hash = "3fa5c69a51d7a3cdcb9b168fac42d7ed3088cfdc86a0bfd8603c9766b8461442"
 
 [[files]]
 file = "config/inventory-particles/cache/mcwstairs/atlas.png"
-hash = "e292e9a745cb07cf76e5a02600919cb7fbc82278d7d2739dbe73df25c16c8be4"
+hash = "47a295137d94097fb793bc489434d420dd04557c4041d02a56c3be6da130af3e"
 
 [[files]]
 file = "config/inventory-particles/cache/mcwstairs/regions.txt"
@@ -1258,7 +1262,7 @@ hash = "3410999959be9f989241bddf560b67c3b551241a8c7b66bc5c456db137453ac9"
 
 [[files]]
 file = "config/inventory-particles/cache/perfectbirbs/atlas.png"
-hash = "a0bb2d28db22f843081a3354a7874c5bb1a2e456305ff9cf8fa2ad73c4710961"
+hash = "432a666bb16ab7c42a3689555dae0b9d78a0e464688dcac4e464033decbdcc8e"
 
 [[files]]
 file = "config/inventory-particles/cache/perfectbirbs/regions.txt"
@@ -1270,7 +1274,7 @@ hash = "89df6780d19f05f22ed0b8f0ee404cec169f77f0eedb6eb95a7494ba7d90d409"
 
 [[files]]
 file = "config/inventory-particles/cache/pomkotsmechs/atlas.png"
-hash = "dbaa78cd92d58442c0fd99b77c435b201c77b1c7210968ae10c6c390a279ed78"
+hash = "137b117ba33b1e900262d6c1cd549c09dd5e07e2aa236b6ee63314f8f7afd27d"
 
 [[files]]
 file = "config/inventory-particles/cache/pomkotsmechs/regions.txt"
@@ -1294,7 +1298,7 @@ hash = "1befc4fd479ce310624d19a94c41f8ede79116a012b7c951ef835e1c29a25620"
 
 [[files]]
 file = "config/inventory-particles/cache/prefab/atlas.png"
-hash = "a7d1f8c7cfeb7363cef04075843c301d992f4183cc6d217c2f998e9780d12409"
+hash = "5ba2cca1c4be9afd47c22669b8b6c085eeda4c95fe296c55b2657f175e1bcac9"
 
 [[files]]
 file = "config/inventory-particles/cache/prefab/regions.txt"
@@ -1306,7 +1310,7 @@ hash = "6077eeb96f50467fba1ff47e5a1244046fa2c8ab7898812d7e7d90bc15a27a2a"
 
 [[files]]
 file = "config/inventory-particles/cache/projectarmor_/atlas.png"
-hash = "dd5a0df9619452c398f94530673ae5f08b5f6acd9d59b22aa6454749ee24a39c"
+hash = "f68f05bf6616d7e765289351134022527ebd7d066ab1d187372898c4676bdff7"
 
 [[files]]
 file = "config/inventory-particles/cache/projectarmor_/regions.txt"
@@ -1378,7 +1382,7 @@ hash = "f535da4388a5d6fc99fefd667204371bd83a9baf6f0ebbf7569301e0057e51f5"
 
 [[files]]
 file = "config/inventory-particles/cache/sophisticatedbackpacks/atlas.png"
-hash = "0f7b4e47541dc2a09dca0308e17dabb14d33d8796e7f76eb098b67da385d31d0"
+hash = "14ec1ae7e656f9bd5f3454b6467099ca39ed4d60680e5645986b578734c39fcd"
 
 [[files]]
 file = "config/inventory-particles/cache/sophisticatedbackpacks/regions.txt"
@@ -1414,15 +1418,15 @@ hash = "ac7a79370fd93a4d877c5387f3defa2b9ff6f0e78d7ce6b4a3866adebc7a4a3f"
 
 [[files]]
 file = "config/inventory-particles/cache/survival_essentials/atlas.png"
-hash = "2471617ce46f220336b5ab0ed170434c308ef07c1000114eabed1e95807f621a"
+hash = "b9fc1e04d75287e251b61490c3a3638aabbd7b5772e8a1c5ab43adb03edc6cb2"
 
 [[files]]
 file = "config/inventory-particles/cache/survival_essentials/regions.txt"
-hash = "404820a50f668760e4eff203f2eefcc5b9975e390e6c73a272b687d67bd6580c"
+hash = "abe79b50f783652f31fd9c86cece0730019077fe27a45e413483b561d4adccdb"
 
 [[files]]
 file = "config/inventory-particles/cache/survival_essentials/spawn_areas.cached"
-hash = "70465d37e42959cb4abd90b51f27b4130d8f12bc1cb88a5348dc3c79624d7b1f"
+hash = "7d50f50c7c349c07837ddfc26e2b7ffb9365b2d449a16d16d58befcb535a8704"
 
 [[files]]
 file = "config/inventory-particles/cache/tacz/atlas.png"
@@ -1450,7 +1454,7 @@ hash = "f46e0d14836e98ace3cf2b7240ccd595eeeb8f4967447838bbaf00a8a1c06e1c"
 
 [[files]]
 file = "config/inventory-particles/cache/tarkovdayz/atlas.png"
-hash = "b55ec588434e8864375ad439343b3fb797979168e2c9fde520bf5543eb29687a"
+hash = "cd1d0d259360e2b14a5a5b44963654025da036c5f19bef4ac3394b10b8e1bc92"
 
 [[files]]
 file = "config/inventory-particles/cache/tarkovdayz/regions.txt"
@@ -1462,7 +1466,7 @@ hash = "9dfc1f1c14d63fb46800d2b5f7c76f3b89a679a16adbec3a992fc00e808dee31"
 
 [[files]]
 file = "config/inventory-particles/cache/tidal/atlas.png"
-hash = "b09f140cceb3f41509e61ac0f867b16f158152fc93a2de94a6c6336a4e954841"
+hash = "50918d02d2f32008ac6b49fedfefe4f85dfbf1b8f8da5111580a079d471def35"
 
 [[files]]
 file = "config/inventory-particles/cache/tidal/regions.txt"
@@ -1474,7 +1478,7 @@ hash = "e3e7b6e07c0077dbadad30df7e80721211345e2285eda25f4efcad56411a7a7d"
 
 [[files]]
 file = "config/inventory-particles/cache/trmtgtnh/atlas.png"
-hash = "a97a1e80551caac4d6cfe0104c61da4759c567368c93e739c57d04698fd2b6f9"
+hash = "6ec0e1d4ea63895bedf6d643010bbe4a40964691d03fed64de548e47d7e51209"
 
 [[files]]
 file = "config/inventory-particles/cache/trmtgtnh/regions.txt"
@@ -1814,11 +1818,11 @@ hash = "f72dc2bce12a55066bd33e50c47b1ad33b1bdda65778cb5653d876e1fec3694d"
 
 [[files]]
 file = "config/oculus.properties"
-hash = "1495da2dfe0695143e88861ccc2f0e131937fb534a8c0fdbe0f31548311d9cda"
+hash = "6abd8a69512b6aa22c7091653c102a70d63dc9846062d2e3708b247438e50f58"
 
 [[files]]
 file = "config/packetfixer.properties"
-hash = "2be69b3020e003d43cbd7443d75978d4c85a0427b4a845a40edf8e03e6113091"
+hash = "b402e7c4223cc3bffa2803e77b922f144dbeb454b8ebe4fde7236f0262045703"
 
 [[files]]
 file = "config/particle_core_config.toml"
@@ -2278,7 +2282,7 @@ hash = "c6a96ee8259a7f1a552130c72067ee76a9c75808e24093da8b48a2fb5309eed7"
 
 [[files]]
 file = "config/survival_essentials-common.toml"
-hash = "84c9e50ead946ef6ca80fde8baa8af062366c00b8bf28810c6fbb9a532e1f87b"
+hash = "ae1c0c088b1affd584dcda541fe89ea07656564b3cc4271189a812c1ee514409"
 
 [[files]]
 file = "config/sway.json"
@@ -2378,7 +2382,7 @@ hash = "d5ef728215fc01d936bfb43ed68a1aa06cbb884497511ef0285662deb6c69781"
 
 [[files]]
 file = "config/voicechat/voicechat-client.properties"
-hash = "b86bc2b8875cafc41f1c51d60c76614b8417dffb42e5ae60fca2a0a3aa425500"
+hash = "820a5f53ebcc38e6c7bf3b80fb0c8e2db55a2a4967833f781562f88c6350819c"
 
 [[files]]
 file = "config/voicechat/voicechat-server.properties"
@@ -2894,7 +2898,7 @@ hash = "6de833a135cc17b7426520b68bd7820a62fbb19aa1489c7fcc78b14c8ebc3d4e"
 
 [[files]]
 file = "config/worldedit/worldedit.properties"
-hash = "6383d5fdb27de4aca05eedc7b6b32fc79050c4d7c4a584520bf21e1f763b4568"
+hash = "61ff51df83e1d1704f87a135c710c39d3b19501987a094cc1e17d0dc038f903d"
 
 [[files]]
 file = "config/xaero/lib/client.cfg"
@@ -2994,7 +2998,7 @@ hash = "1f8670911537dcb8d8b67e51203f3095b27057ebe398ac3df9301ddd088abfbe"
 
 [[files]]
 file = "config/zone_tactical_anims-client.toml"
-hash = "72c486fbf35745c198308b3751d883b4ead85c3058f36d30dce019b231d5bf14"
+hash = "3c46972be36e7fc4ba65339e4b9b55faf86aa2bcf6f51c45547a63f4560b6e3e"
 
 [[files]]
 file = "config/zone_tactical_anims-common.toml"
@@ -3572,8 +3576,8 @@ hash = "4a840e54415720ef104ec7d6fefb9b74f476f7f516c22be2b07e79e50521e9bd"
 metafile = true
 
 [[files]]
-file = "mods/camerainertia.pw.toml"
-hash = "8fe574f09d99942f539fd5bb6487d74c33208bfe03a6cbc688f405534dae5940"
+file = "mods/camera-overhaul-reforged.pw.toml"
+hash = "46ac7acb114cc1b855e1c264698a8041e892e9faaac8d7ceb571d0b9432345f1"
 metafile = true
 
 [[files]]
@@ -4200,7 +4204,7 @@ hash = "32856aaa5e5fdcd6bf986b6b2798e53030a22367180cf9f25d721bae8e065a2e"
 
 [[files]]
 file = "mods/survival_essentials-0.2.0.jar"
-hash = "4d830235693e273c0b61cf386c65bd357031faa787a8b55651c9340f1911d28b"
+hash = "d41636457b80c33288fbf1a6cdd65d2d04be90297772eb96ed5f9d1826de705f"
 
 [[files]]
 file = "mods/sway.pw.toml"
@@ -4319,11 +4323,11 @@ hash = "d6364e3b3ffea4b912889d3dcd3e2acebf7d663b22b96402402fbd383eefa460"
 
 [[files]]
 file = "mods/zone_tactical_anims-0.1.0.jar"
-hash = "2b5293f09a70a2f44df21cc12fdb3ee8b5ea23c34504a9b21086e8a302fcf0a5"
+hash = "c0c23598b924d732ded5da54df14d1615ceb374ce0d086bbde88ac5336f21fcf"
 
 [[files]]
 file = "options.txt"
-hash = "bf9d9c2330b8fef779435caf48e74cc00a3ecd57a55afcace4fabe59244a7c7c"
+hash = "1b19656b0b2130e42c5151f124eab2525f0be0b25ed31650bc5fd3173ff46ca4"
 preserve = true
 
 [[files]]
@@ -4358,7 +4362,7 @@ hash = "da0929b38f5fd99befaaa8cd141cbf60e1fad05b92d916d0eeeee7c79f86c0fd"
 
 [[files]]
 file = "shaderpacks/photon_v1.4.zip.txt"
-hash = "97df3d7e913de75dd5169167f451398659c02ac2aeccf59f21bf2f93dfcf8d90"
+hash = "d4503681df008db348f4aaaba1ea05d41ca0d6a32a08906215ef6455c3d95c16"
 
 [[files]]
 file = "tacz/.export-state.json"
