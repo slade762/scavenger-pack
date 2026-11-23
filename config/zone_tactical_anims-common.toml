@@ -185,3 +185,12 @@
 	#(pockets/inventory are used first, then the bag). The ammo counter on the HUD includes it.
 	reloadFromWornBag = true
 
+[bullet_impacts]
+	#0.88: a material sound where a TaCZ bullet hits a block (dirt, stone, metal, glass, wood), heard by everyone nearby.
+	enabled = true
+	#Also a hit sound when a bullet hits a player, NPC or mob (separate headshot sound).
+	entityHits = true
+	#Loudness (1 = about 16 blocks of range, 2 = about 32).
+	#Range: 0.0 ~ 3.0
+	volume = 1.1
+

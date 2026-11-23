@@ -236,6 +236,14 @@
 	#Volume of every sound from Pomkots Mechs Extension. 1 = default; 0.4 = pack default.
 	#Range: 0.0 ~ 1.0
 	pomkotsExtensionVolume = 0.4
+	#0.88: crack/whiz when someone else's bullet passes close to your head (players and NPCs).
+	bulletPassby = true
+	#How close (blocks) a bullet must pass your head to be heard.
+	#Range: 0.5 ~ 8.0
+	bulletPassbyRadius = 3.0
+	#Loudness of the bullet pass-by.
+	#Range: 0.0 ~ 2.0
+	bulletPassbyVolume = 1.0
 
 [ui]
 	#Paint over Inventory Free's locked slots in modded screens (backpacks etc.).
