@@ -14,7 +14,7 @@
 	#TRACER_ONLY - no muzzle flash, but bullets still leave their trail light.
 	#NORMAL      - the attachment changes nothing, same light as a bare barrel.
 	#Allowed Values: NONE, TRACER_ONLY, NORMAL
-	silencedLight = "NONE"
+	silencedLight = "TRACER_ONLY"
 	#How many client ticks a muzzle flash stays lit (1 tick = 1/20 sec).
 	#Range: 1 ~ 20
 	durationTicks = 1
