@@ -2,7 +2,20 @@
 // Inventory Free leaves you 9 pocket slots, but some moves (shift-clicking into a full hotbar, mods that add items
 // straight to your inventory) can still drop items into the 27 locked slots, where they're stuck and invisible.
 // Every half second anything found there is moved into your backpack, or dropped at your feet if it won't fit.
-var ZLS = { FIRST: 9, LAST: 35 }
+var ZLS = { FIRST: 9, LAST: 35, CORPSE_GRACE: 60 }
+var zlsCorpseSeen = {}
+function zlsCorpseBusy(p) {
+  var id = String(p.uuid)
+  try {
+    var m = p.containerMenu
+    if (m && String(m.getClass().getName()).toLowerCase().indexOf('corpse') >= 0) { zlsCorpseSeen[id] = zlsTick; return true }
+  } catch (e) {}
+  var t = zlsCorpseSeen[id]
+  if (t === undefined) return false
+  if (zlsTick - t < ZLS.CORPSE_GRACE) return true
+  delete zlsCorpseSeen[id]
+  return false
+}
 var zlsTick = 0
 var zlsWarned = false
 var zlsCaps = null
@@ -69,6 +82,10 @@ ServerEvents.tick(function (event) {
   event.server.players.forEach(function (p) {
     try {
       if (p.isCreative() || p.isSpectator()) return
+      // 11/23 (Ward): "Transfer items" from your own body puts the items back before the backpack is worn again,
+      // so for a moment the 27 slots look locked and everything was dropped. While a Corpse screen is open, and for
+      // ZLS.CORPSE_GRACE ticks after it closes, leave this player alone.
+      if (zlsCorpseBusy(p)) return
       var open = zlsOpenSlots(p)
       if (open >= 36) return
       var inv = p.getInventory(), pack = null, moved = 0, dropped = 0

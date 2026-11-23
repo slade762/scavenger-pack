@@ -7,7 +7,7 @@
 	#The actual radius per weapon is this value scaled by the [balance] section,
 	#so a pistol and an RPG do not flash identically.
 	#Range: 1 ~ 15
-	radiusBlocks = 12
+	radiusBlocks = 15
 	#What still lights up when a silencer or a muzzle brake/compensator is
 	#attached (TaCZ keeps both in the same slot, so this covers either).
 	#NONE        - nothing at all: no muzzle flash, no bullet trail (default).
@@ -51,23 +51,23 @@
 	#light-engine updates. Note that bullets fly tens of blocks per tick, so this
 	#is what decides whether a shot reads as a streak or as a few stray dots.
 	#Range: 0.5 ~ 16.0
-	stepBlocks = 1.0
+	stepBlocks = 0.5
 	#How many ticks each trail spark stays lit (1 tick = 1/20 sec).
 	#Keep it short: light that outlives the shot itself reads as lag rather than
 	#as a flash. 2 ticks = 100 ms. The impact flash lives twice this long.
 	#With subTickLight on, the light engine flushes every frame, so even 1 tick
 	#is reliably visible.
 	#Range: 1 ~ 20
-	ttlTicks = 2
+	ttlTicks = 3
 	#Base light radius of each trail spark, in blocks (1..15).
 	#Scaled per weapon by the [balance] section below.
 	#Range: 1 ~ 15
-	radiusBlocks = 3
+	radiusBlocks = 5
 	#Extra radius (in blocks) for the spark sitting on the bullet itself, on top
 	#of radiusBlocks. A brighter head with a dimmer tail is what makes a tracer
 	#read as a moving projectile rather than a static line. 0 disables the effect.
 	#Range: 0 ~ 8
-	headBonusBlocks = 1
+	headBonusBlocks = 2
 	#If true, only bullets TaCZ itself marks as tracer ammo emit trail light.
 	#Matches TaCZ's own tracer rendering, but means ordinary ammo flies dark.
 	onlyTracerAmmo = false

@@ -35,6 +35,24 @@ var ZBAR = {
     ]
   }
 }
+var zbarAnon
+// The NPC called 'who' nearest the campfire says 'line' as a bubble. True if it worked.
+function zbarBubble(srv, who, line) {
+  try {
+    if (zbarAnon === undefined) { try { zbarAnon = Java.loadClass('com.slade.zonetactical.anon.Anon') } catch (e) { zbarAnon = null } }
+    if (!zbarAnon) return false
+    var c = ZBAR.CAMPFIRE, best = null, bd = 1e9
+    srv.getLevel('minecraft:overworld').getEntitiesWithin(AABB.of(c.x - 24, c.y - 6, c.z - 24, c.x + 24, c.y + 6, c.z + 24)).forEach(function (e) {
+      try {
+        if (String(e.type) !== 'customnpcs:customnpc' || String(e.name.string) !== who) return
+        var d = Math.hypot(e.x - c.x, e.z - c.z)
+        if (d < bd) { bd = d; best = e }
+      } catch (x) {}
+    })
+    if (!best) return false
+    return zbarAnon.say(best, line, 24) > 0
+  } catch (err) { return false }
+}
 var zbarTick = 0
 var zbarNextChat = 0
 var zbarWarned = false
@@ -67,9 +85,13 @@ ServerEvents.tick(function (event) {
     var who = home && Math.random() < 0.5 ? 'Sparrow' : 'Grandpa'
     var pool = (!home && Math.random() < 0.5) ? ZBAR.LINES.GrandpaWorried : ZBAR.LINES[who]
     var line = pool[Math.floor(Math.random() * pool.length)]
-    listeners.forEach(function (p) {
-      p.tell(Text.of(who + ': ').color(0x8FCB6A).append(Text.of(line).color(0xD9D9D0)))
-    })
+    // 0.88.4 (Ward 11/22): said out loud as a speech bubble over the NPC's head (like player talk), not in chat.
+    // Falls back to chat if the NPC isn't loaded or the mod is older.
+    if (!zbarBubble(srv, who, line)) {
+      listeners.forEach(function (p) {
+        p.tell(Text.of(who + ': ').color(0x8FCB6A).append(Text.of(line).color(0xD9D9D0)))
+      })
+    }
     zbarNextChat = zbarTick + 20 * Math.floor(ZBAR.CHAT_GAP[0] + Math.random() * (ZBAR.CHAT_GAP[1] - ZBAR.CHAT_GAP[0]))
   } catch (err) {
     if (!zbarWarned) { zbarWarned = true; console.error('[zone] bar script failed: ' + err) }

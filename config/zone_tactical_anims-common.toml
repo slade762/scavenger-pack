@@ -82,7 +82,7 @@
 	#Real minutes for one full day/night. Vanilla 20; S.T.A.L.K.E.R.'s classic 10x clock is 144.
 	#Keep this the same on the server and every client.
 	#Range: 20.0 ~ 1440.0
-	dayLengthMinutes = 144.0
+	dayLengthMinutes = 20.0
 	#Mute players' distance-based footsteps; each client plays them on the leg animation instead (client stepSync).
 	animatedFootsteps = true
 

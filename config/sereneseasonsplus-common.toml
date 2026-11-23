@@ -34,10 +34,10 @@
 	#Allow Serene Seasons Plus to control Better Days day and night speed values. Disable this if Better Days or another mod should control time speed by itself.
 	allowSeasonalControlOfBetterDaysTimeSpeed = true
 	#Keep one complete day and night at a fixed total elapsed length while seasons change the daylight/night split. When false, the original seasonal speed behavior is preserved. This does not sync to the computer clock.
-	keepFullDayNightCycleAtFixedLength = false
+	keepFullDayNightCycleAtFixedLength = true
 	#Total elapsed real-world minutes in one complete day and night when keepFullDayNightCycleAtFixedLength is enabled. Set to 1440 for 24 hours. This controls duration only and does not sync to the computer clock.
 	#Range: 0.1 ~ 10080.0
-	fullDayNightCycleLengthInRealMinutes = 20.0
+	fullDayNightCycleLengthInRealMinutes = 144.0
 	#After Better Days finishes accelerating through sleep, move the world to the configured wake time. This does not alter Better Days day-start or night-start boundaries.
 	setWakeTimeAfterBetterDaysSleep = true
 	#Minecraft time-of-day tick used after a Better Days sleep cycle. Valid values are 0 through 23999; 1000 is approximately 7:00 AM.
