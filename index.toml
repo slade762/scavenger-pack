@@ -3550,7 +3550,7 @@ hash = "6f8591f0144d4b8f3abfeb9af48f85693aa80e57b2619a0d17ca5068f2592949"
 
 [[files]]
 file = "kubejs/server_scripts/zone_catalogues_lrarmor.js"
-hash = "377db5ecb5ec2d09fa8e1cd5f69e803910ef1ea80474bec30724e3a33c429852"
+hash = "3de303d5743dc72f05db21e1785e8a03b882aba3660b8f8d12b3f186cb3b674d"
 
 [[files]]
 file = "kubejs/server_scripts/zone_city_biome.js"
@@ -4568,7 +4568,7 @@ hash = "d6364e3b3ffea4b912889d3dcd3e2acebf7d663b22b96402402fbd383eefa460"
 
 [[files]]
 file = "mods/zone_tactical_anims-0.1.0.jar"
-hash = "960695b6a827ee51adeea31c6f43f57cf945047ec441e19f2ad8c134b3f73e37"
+hash = "26f31c0833903c93e1a9795659a2eb076e1bcb0bfa31f856742d3b80029e1e2b"
 
 [[files]]
 file = "options.txt"
