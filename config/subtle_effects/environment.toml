@@ -3,11 +3,11 @@ version = 1
 biomeColorRain = true
 
 [biomes]
-mushroomSporeDensity = 0.5
+mushroomSporeDensity = 0.25
 mushroomSporeBiomes = [
     "minecraft:mushroom_fields"
 ]
-pollenDensity = 0.75
+pollenDensity = 0.35
 pollenBiomes = [
     "minecraft:flower_forest",
     "minecraft:sunflower_plains"

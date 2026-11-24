@@ -670,3 +670,25 @@
 	#and fades back in over about a second after you step away, so the two camera mods don't fight.
 	quietAtStations = true
 
+[performance]
+	#0.89.7 (Ward's institute profile: ~19% of the frame): many modded armour pieces (MCreator, e.g. Extinction Z)
+	#build their 3D model from scratch every time it is asked for, several times per frame in first person. When on, a modded
+	#model layer is built once and reused (vanilla 'minecraft:' layers are never touched; cleared on resource reload).
+	cacheModdedModelLayers = true
+	#Comma-separated namespaces (mod ids) to leave alone if one of them misbehaves with the cache.
+	cacheExcludeNamespaces = ""
+	#0.89.8: Concord Deco clutter decals (cobwebs, dust, damp, drips) are only drawn within this many blocks
+	#of the camera (the mod draws to 64). They're drawn every frame, so a shorter range is a cheap FPS win.
+	#Range: 8 ~ 64
+	decalRange = 32
+	#0.89.9: also draw Concord Deco decals into the shader shadow map. They are flat, so their shadows are
+	#practically invisible; off saves ~2% of the frame with shaders on.
+	decalShadows = false
+	#0.90.0: TaCZ NPC soldiers' guns are not drawn beyond this many blocks (0 = always draw). Players' guns are never affected.
+	#Each NPC gun costs ~1% of the frame; past ~48 blocks it's only a few pixels.
+	#Range: 0 ~ 256
+	npcGunDistance = 48
+	#0.90.0: TaCZ NPC soldiers' gun attachments are not drawn beyond this many blocks (0 = always draw).
+	#Range: 0 ~ 256
+	npcAttachmentDistance = 16
+

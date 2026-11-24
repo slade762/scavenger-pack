@@ -8,29 +8,29 @@
 	grassSparsity = 0.0
 	#Height of the grass blades.
 	#Range: 0.1 ~ 1.3
-	bladeHeight = 0.25
+	bladeHeight = 0.4000000059604645
 	#Scales the built-in blade height variation. 1.0 is the default look; 0 makes blades uniform.
 	#Range: 0.0 ~ 5.0
-	heightVariation = 1.0499999523162842
+	heightVariation = 1.0
 	#Width multiplier for grass blades.
 	#Range: 0.25 ~ 2.0
-	bladeWidth = 1.399999976158142
+	bladeWidth = 0.6499999761581421
 	#How far (in blocks) grass renders around you. Cached per chunk, so distance is cheap.
 	#Range: 16 ~ 160
-	renderRadius = 48
+	renderRadius = 64
 	#Blade look: TAPERED (smooth gradient) or SEGMENTED (vanilla-like banded blades).
 	#Allowed Values: TAPERED, SEGMENTED
 	grassStyle = "SEGMENTED"
 	#Replace vanilla short and tall grass plants with generated custom blades.
 	grassPlantsAsBlades = true
 	#Flowers surrounded by more flowers sprout extra companions, filling out patches.
-	denseFlowers = false
+	denseFlowers = true
 	#Shed occasional grass-blade particles into sufficiently strong wind.
 	bladeParticles = true
 	#Render grass blades when a thin snow layer covers the grass block.
 	grassThroughSnow = false
 	#Render grass blades and re-rendered plants into Iris/Oculus shader-pack shadow maps.
-	shaderPackShadows = true
+	shaderPackShadows = false
 	#Brightness multiplier for the grass colour. Tune to match how your shaderpack lights it.
 	#Range: 0.25 ~ 2.0
 	grassBrightness = 1.0

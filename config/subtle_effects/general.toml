@@ -1,7 +1,7 @@
 # Don't change this! Version used to track needed updates.
 version = 1
 enableParticleCulling = true
-particleRenderDistance = 5
+particleRenderDistance = 4
 particleCullingBlocklist = [
     "minecraft:portal",
     "minecraft:reverse_portal",
@@ -27,9 +27,9 @@ translucentEnchantmentGlyphParticles = true
 disableRandomizedEnchantmentGlyphShading = true
 potionParticleAlpha = 0.7
 potionParticleAlphaNearPlayer = 0.2
-leavesLandOnGround = true
+leavesLandOnGround = false
 leavesLandOnWater = true
-leavesLandingOnWaterRipples = true
+leavesLandingOnWaterRipples = false
 leavesLandingOnWaterKeepMomentum = true
 fallenLeavesLifeTime = 40
 rainIncreasesLeavesMovementSpeed = true
