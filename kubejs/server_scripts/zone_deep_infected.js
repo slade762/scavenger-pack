@@ -39,7 +39,7 @@ var ZDI_STATS = {
 }
 var ZDI_PZ = {
   trigger: [214, -53, -562, 230, -45, -557],   // corridor in front of the lair
-  spawn: [222.5, -51, -551.5], runners: [[221.5, -51, -552.5], [223.5, -51, -552.5]],
+  lair: [220, -54, -556, 224, -46, -550],      // PZ + runners stand on the free floor spots nearest the back (z -550)
   COOLDOWN_MIN: 60, KEY: 'zone_deep_pz_next'
 }
 var zdiTick = 0, zdiWarned = false, zdiHasMod = null, zdiMade = 0
@@ -200,12 +200,25 @@ function zdiPz(srv, level) {
   var alive = false
   zdiOurs(level, ZDI.DEEP).forEach(function (e) { if (zdiKind(e) === 'pz') alive = true })
   if (alive) return
+  var spots = zdiFloorSpots(level, ZDI_PZ.lair)
+  if (spots.length === 0) { zdiErr('no floor in the lair'); return }
+  spots.sort(function (a, b) { return b[2] - a[2] })
   pd.putDouble(ZDI_PZ.KEY, now + ZDI_PZ.COOLDOWN_MIN * 60000)
-  var s = ZDI_PZ.spawn
+  var s = spots[0]
   zdiSummon(srv, 'pz', s[0], s[1], s[2])
-  ZDI_PZ.runners.forEach(function (r) { zdiSummon(srv, 'runner', r[0], r[1], r[2]) })
+  for (var i = 1; i < spots.length && i <= 2; i++) zdiSummon(srv, 'runner', spots[i][0], spots[i][1], spots[i][2])
   srv.runCommandSilent('execute in minecraft:overworld positioned ' + s[0] + ' ' + s[1] + ' ' + s[2] + ' run playsound scavenger:deep.screech hostile @a[distance=..48] ~ ~ ~ 1.6 0.8')
   console.info('[zone] deep infected: Patient Zero woke up in the lair')
+}
+// every free standing spot (solid below, 2 air) in a box, as [x+.5, y, z+.5]; one per column, the lowest
+function zdiFloorSpots(level, b) {
+  var out = []
+  for (var x = b[0]; x <= b[3]; x++) for (var z = b[2]; z <= b[5]; z++) {
+    for (var y = b[1]; y <= b[4] - 2; y++) {
+      if (zdiSolid(level, x, y, z) && zdiAir(level, x, y + 1, z) && zdiAir(level, x, y + 2, z)) { out.push([x + 0.5, y + 1, z + 0.5]); break }
+    }
+  }
+  return out
 }
 function zdiCleanup(srv, level) {
   var gone = 0

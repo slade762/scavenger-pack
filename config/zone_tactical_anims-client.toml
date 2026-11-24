@@ -153,7 +153,7 @@
 	#false = only the helmets in the helmets list count.
 	allHelmets = true
 	#Helmets that do NOT cover the face (item ids, e.g. "minecraft:leather_helmet"). Used when allHelmets = true.
-	openHelmets = []
+	openHelmets = ["lrarmor:atf_helmet", "lrarmor:dea_helmet", "lrarmor:fbi_helmet", "lrarmor:irs_helmet", "lrarmor:joker_helmet"]
 	#Masks and respirators: no visor overlay and no muffling, but you still hear the breathing loop.
 	breathingOnly = ["itz:rookie_respirator"]
 	#0.85: fade the visor view out while an emission is active. Safety switch for the white screen some setups got with a visor helmet during an emission;
