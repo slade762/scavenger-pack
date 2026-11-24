@@ -4637,6 +4637,65 @@
         "endDistance": 1.0,
         "color": 16777215
       }
+    },
+    "anomalyzone:red_forest": {
+      "enabled": true,
+      "fogColor": 9881850,
+      "skyColor": 9881850,
+      "skyZenithColor": 0,
+      "cloudColor": 16777215,
+      "nightFogColor": 397598,
+      "nightSkyColor": 0,
+      "nightCloudColor": 526361,
+      "intensity": 1.0,
+      "fogDensity": 1.0,
+      "startDistance": 15.0,
+      "endDistance": 350.0,
+      "nightStartDistance": 15.0,
+      "nightEndDistance": 350.0,
+      "nightFogDensity": 1.0,
+      "underwaterFogDensity": 1.0,
+      "underwaterFogStartDistance": -8.0,
+      "underwaterFogEndDistance": 96.0,
+      "haze": {
+        "enabled": true,
+        "color": 15398143,
+        "nightColor": 2957956,
+        "strength": 100.0,
+        "bottomY": -128.0,
+        "middleY": -5.0,
+        "topY": 9.0,
+        "radius": 30.0,
+        "nightStrength": 100.0,
+        "nightBottomY": -128.0,
+        "nightMiddleY": -40.0,
+        "nightTopY": 30.0,
+        "nightRadius": 40.0
+      },
+      "backHaze": {
+        "enabled": false,
+        "color": 15398143,
+        "nightColor": 2957956,
+        "strength": 100.0,
+        "bottomY": -128.0,
+        "middleY": -10.0,
+        "topY": 20.0,
+        "radius": 80.0,
+        "nightStrength": 100.0,
+        "nightBottomY": -128.0,
+        "nightMiddleY": -10.0,
+        "nightTopY": 20.0,
+        "nightRadius": 80.0
+      },
+      "airHaze": {
+        "enabled": true,
+        "intensity": 1.0,
+        "spawnRate": 1.0,
+        "size": 1.0,
+        "startDistance": 1.0,
+        "endDistance": 1.0,
+        "color": 16777215
+      }
     }
   }
 }

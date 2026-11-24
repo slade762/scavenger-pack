@@ -341,6 +341,10 @@
 	hideArmorBar = true
 	#Never draw the vanilla hearts row (Anomaly Zone's health panel shows your health). 0.85: the panel is kept.
 	hideHeartsRow = true
+	#0.89.5: brightness of your own headlamp's shader spotlight (SCAVENGER shader: a smooth white beam where you look).
+	#1.0 = normal, 0 = off (only the Sodium Dynamic Lights glow is left). Width, range and colour are in the shader's Lighting -> SCAVENGER Headlamp menu.
+	#Range: 0.0 ~ 3.0
+	headlampBeam = 1.0
 
 [holster]
 	#Gun in hotbar slot 1 is slung on your back when not held. 1 draws it, 1 again (or H) slings it.
