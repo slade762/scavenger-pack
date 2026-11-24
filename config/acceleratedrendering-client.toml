@@ -236,7 +236,7 @@
 	menu_filter_values = ["minecraft:.*"]
 	#You can configure the entity filter by this list.
 	#Entity filter will use this list and the filter type to determine if an entity can pass the filter.
-	entity_filter_values = ["extinction:.*"]
+	entity_filter_values = ["extinction:.*", "pomkotsmechs:.*", "pomkotsmechsextension:.*"]
 	#You can configure the block entity filter by this list.
 	#Block entity filter will use this list and the filter type to determine if a block entity can pass the filter.
 	block_entity_filter_values = []

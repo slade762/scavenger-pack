@@ -28,8 +28,8 @@
 	#A helmet of tier N fully protects you in radiation zones up to level N (it shows this in its tooltip).
 	#When on, the allArmor/perArmorPoint/overrides settings below only affect thermal, chemical and psi.
 	helmetsOnly = true
-	#Helmet radiation tiers: "id=tier" (1-4). Helmets not listed have tier 0 (no radiation protection).
-	#1 = respirator, 2 = full gas mask, 3 = sealed helmet, 4 = endgame (the city).
+	#Helmet radiation tiers: "id=tier" (1-6). Helmets not listed have tier 0 (no radiation protection).
+	#1 = respirator, 2 = full gas mask, 3 = sealed helmet, 4 = endgame (the city), 6 = chemical suit helmets (Bortyant).
 	helmetTiers = ["itz:rookie_respirator=1", "brimm:gasmask_h=4", "brimm:gasmask_alt_h=4", "itz:hazmat_mask=4", "fracturepoint:ratnik_pmk-4=4", "itz:psz_helmet_loner=2", "itz:psz_helmet_freedom=2", "itz:psz_helmet_military=2", "itz:psz_helmet_monolith=2", "itz:bulat_helmet=3", "itz:berill_helmet=3", "itz:corundum_helmet=3", "itz:marauder_helmet=3", "anomalyzone:scientific_helmet=3", "anomalyzone:tishina_helmet=3", "anomalyzone:paladin_helmet=3", "anomalyzone:experiment_n83_helmet=3", "anomalyzone:k105a_helmet=3", "anomalyzone:ten_helmet=3", "itz:exo_bulat_helmet=4", "itz:exo_berill_helmet=4", "itz:exo_corundum_helmet=4", "itz:exo_marauder_helmet=4", "anomalyzone:shepot_helmet=4", "projectarmor_:alt_helmet=4", "zone_tactical_anims:bunny_mask=4", "brimm:hazard_kit_h=4", "lrarmor:chemical_protective_helmet=6", "lrarmor:armored_chemical_helmet=6"]
 	#Action-bar message (and a warning beep if you're unprotected) when you enter a radiation zone or change helmets in one.
 	warnings = true
@@ -77,6 +77,11 @@
 	#radiation dose when you finish using them: "id=percent of the full scale removed" (100 = clears it; damage starts at 20%).
 	#Server side. Empty = off.
 	radMeds = ["tarkovdayz:anti_radpill=35", "itz:anti_rads=100", "itz:radio_protectant=20"]
+	#0.89: radiation zone level over Bortyant (the imported Pripyat). 0 = off. 6 = only the chemical suit helmets protect.
+	#Range: 0 ~ 6
+	bortyantLevel = 6
+	#Bortyant area: [minX, minZ, maxX, maxZ] in the overworld.
+	bortyantBox = [-2048, -4608, 1535, -1025]
 
 [world]
 	#Real minutes for one full day/night. Vanilla 20; S.T.A.L.K.E.R.'s classic 10x clock is 144.
