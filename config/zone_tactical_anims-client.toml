@@ -250,6 +250,13 @@
 	#Loudness of the bullet pass-by.
 	#Range: 0.0 ~ 2.0
 	bulletPassbyVolume = 1.0
+	#0.89.4 (Ward: vanilla ambience in the Deep much too loud): volume of vanilla ambience (cave noises, biome loops / additions / mood)
+	#while you are below undergroundAmbienceY. 1 = vanilla.
+	#Range: 0.0 ~ 1.0
+	undergroundAmbienceVolume = 0.3
+	#Height below which undergroundAmbienceVolume applies (the Deep starts around y 0).
+	#Range: -64 ~ 320
+	undergroundAmbienceY = 20
 
 [ui]
 	#Paint over Inventory Free's locked slots in modded screens (backpacks etc.).
@@ -362,11 +369,11 @@
 	#Quest-giver NPCs (CustomNPCs) wear the gun they hold slung on their back instead of in their hands.
 	npcSling = true
 	#Draw the slung gun on quest-giver NPCs' backs. false (0.79) = not drawn at all: a full gun model per NPC is costly in the Bar.
-	npcBackGuns = false
+	npcBackGuns = true
 	#Shaders: players' slung (back) guns cast a shadow. false = no back gun in the shadow (cheaper).
 	backGunShadow = false
 	#TaCZ NPCs (scavengers, bandits, military) put their gun away when they are not fighting: no gun drawn until they aim or get hurt. Also a big FPS saving where NPCs gather.
-	npcIdleHolster = true
+	npcIdleHolster = false
 	#Seconds a TaCZ NPC keeps its gun out after it last aimed or was hurt.
 	#Range: 1 ~ 120
 	npcCombatSeconds = 10
@@ -378,6 +385,14 @@
 	#TaCZ ammo and guns lying on the ground are not drawn beyond this many blocks (they are still there to pick up), and never in the shader shadow pass. 0 = always draw.
 	#Range: 0.0 ~ 256.0
 	groundGunDistance = 16.0
+	#0.89.3: TaCZ NPCs (scavengers, bandits, military) often wear a Sophisticated Backpacks backpack in a field colour. Visual only, same for every player.
+	npcBackpacks = true
+	#Share of TaCZ NPCs that carry a backpack (picked per NPC, stays the same).
+	#Range: 0.0 ~ 1.0
+	npcBackpackChance = 0.65
+	#NPC backpacks are only drawn within this many blocks (never in the shader shadow pass). 0 = always.
+	#Range: 0.0 ~ 256.0
+	npcBackpackDistance = 48.0
 
 	#Where the slung gun goes while a backpack is worn (strapped to the backpack's side). Each Sophisticated Backpacks tier has its own section below.
 	[holster.backpack]
@@ -645,4 +660,9 @@
 	#0.86: out from the spine with the Survival Essentials backpack worn (its outer pocket ends about 0.60 out).
 	#Range: -1.0 ~ 2.0
 	zWithZoneBackpack = 0.62
+
+[cameraInertia]
+	#0.89.3: Camera Inertia (tilt/sway/shake) pauses while a Cinematic Interactions station scene runs (workbench, furnace, campfire...)
+	#and fades back in over about a second after you step away, so the two camera mods don't fight.
+	quietAtStations = true
 

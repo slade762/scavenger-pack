@@ -1,0 +1,11 @@
+{
+  "geiger_click": {
+    "replace": true,
+    "category": "players",
+    "sounds": [
+      { "name": "anomalyzone:contamination/geiger_click_1", "stream": false, "volume": 0.35 },
+      { "name": "anomalyzone:contamination/geiger_click_2", "stream": false, "volume": 0.35 },
+      { "name": "anomalyzone:contamination/geiger_click_3", "stream": false, "volume": 0.35 }
+    ]
+  }
+}

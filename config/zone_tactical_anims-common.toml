@@ -189,6 +189,8 @@
 	#0.85: TaCZ guns also reload from the Survival Essentials ammo bag worn in the Backpack Accessory slot
 	#(pockets/inventory are used first, then the bag). The ammo counter on the HUD includes it.
 	reloadFromWornBag = true
+	#0.89.3: TaCZ ammo you pick up goes into the worn ammo bag first (what doesn't fit goes to the backpack / pockets).
+	pickupToWornBag = true
 
 [bullet_impacts]
 	#0.88: a material sound where a TaCZ bullet hits a block (dirt, stone, metal, glass, wood), heard by everyone nearby.

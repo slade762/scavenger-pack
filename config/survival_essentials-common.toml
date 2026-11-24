@@ -5,7 +5,7 @@
 	lightRadius = 6
 	#A campsite blocks NATURAL mob spawns within this many blocks
 	#Range: 0 ~ 128
-	campRadius = 24
+	campRadius = 48
 	#minX,minZ,maxX,maxZ where campsites don't protect (the City)
 	cityBox = "-330,-520,710,620"
 	#While lying in a sleeping bag / tent: heal every this many ticks (20 = 1 s). 0 = off

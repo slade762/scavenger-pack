@@ -9,12 +9,16 @@ file = "config/acceleratedrendering-client.toml"
 hash = "0e5e8d37bb901af27587bb14f55df9e0a81205986b6f1f1b03b374149512cab1"
 
 [[files]]
+file = "config/acceleratedrendering-client.toml.bak-before-mechs"
+hash = "0e5e8d37bb901af27587bb14f55df9e0a81205986b6f1f1b03b374149512cab1"
+
+[[files]]
 file = "config/alltheleaks.json"
 hash = "e2c621ae85ff73e9bddde340b0ac983e71e7cccd93453c85896e8b8ceee18b74"
 
 [[files]]
 file = "config/ambientfog/biome_fog.json"
-hash = "ea6adb9f6efde87f3c2a18351f021ae07282947306d8c6590dafb5b1346b7d50"
+hash = "1f300d47e0f2450cfb59680f5d3f0ab8e9897ddf1b71257927688a9513789241"
 
 [[files]]
 file = "config/ambimod.json"
@@ -125,8 +129,12 @@ file = "config/canary.properties"
 hash = "a37eb7f218ab61f3277a103a85c5bd14ff0abe0dff94e17883bcbb5ea28a3855"
 
 [[files]]
+file = "config/chatanimation.json"
+hash = "b0fa9ec5d41f666fa2c770bb2bde4753cbeeef76909f4765d6ebbf5683c4ae58"
+
+[[files]]
 file = "config/cinematic_respawn.properties"
-hash = "114239170637c1eadbbbcd13190a08656a9d6c85c231cce87dd55525c8b61c5a"
+hash = "e4765ffb0f67caef9a49a04fa735b61faef6142a64d0461a6c350b79fb680037"
 
 [[files]]
 file = "config/cinematic-client.toml"
@@ -306,7 +314,7 @@ hash = "13aee892d000bdd43d88178fbcaa96549f28ae4ae528e1f1eacaf791742f9ec6"
 
 [[files]]
 file = "config/fabric/indigo-renderer.properties"
-hash = "1d259d167f0ceac8fca964155e29c62401af0de5ffe559e6cb0ad8f1f804e8fa"
+hash = "92323c15c7b7061343daee14661a1ad7d080fb14fd70078f017fbe5454b4a298"
 
 [[files]]
 file = "config/fallingleaves-client.toml"
@@ -469,8 +477,16 @@ file = "config/fzzy_config/keybinds.toml"
 hash = "26ac5810c9b5dc5c1968827357f0a58c58ac2b6f7b082630960228e16585062f"
 
 [[files]]
+file = "config/grassiergrass-client.toml"
+hash = "db57524ffeb296016446974d1b338c1469e01be578b691e8dd1aa58508ec9cf7"
+
+[[files]]
 file = "config/handson_delight.properties"
-hash = "ee85b85e9d4688b87accd305b096b45a0a9e69416397928243668e5b9e7f0ae0"
+hash = "eaa672db4bd9332c825d773655abc595af30f0af7074ba77d1bdc738204521e8"
+
+[[files]]
+file = "config/handson_vanilla.properties"
+hash = "9f04a2796fc3cfa35224cbfdee817d4b04af61585583009cece12b2d3edc2152"
 
 [[files]]
 file = "config/holdmyitems-client.toml"
@@ -942,7 +958,7 @@ hash = "d241829b4e8a3f421e5c96cf5c22da140bd404755be83bb6717f5c621ed63b64"
 
 [[files]]
 file = "config/inventory-particles/cache/brimm/atlas.png"
-hash = "310b6e516e541e88042b38f827dc8dde0b489172991e4582576c6cffd4b1cb08"
+hash = "aac57774275822f4028f5fb4c09cf75dae9d94a9a4e3a4ef367bf10e9ce7cde8"
 
 [[files]]
 file = "config/inventory-particles/cache/brimm/regions.txt"
@@ -1014,7 +1030,7 @@ hash = "c96592ab01e0df59d1f16077ba85967feb848fe18bf48a6491f96c395116163c"
 
 [[files]]
 file = "config/inventory-particles/cache/esap/atlas.png"
-hash = "d01241e7a29b9072fef236b7d4fd95ac9e4900beacc7ef193253bee96b5eb397"
+hash = "26aa8918c75777c8a88d40e33f6c3e8744b39c4aa6fb3d49710496d477a01e83"
 
 [[files]]
 file = "config/inventory-particles/cache/esap/regions.txt"
@@ -1026,7 +1042,7 @@ hash = "5f8954dc61b48a4a6b0d0804e880aed266015f97363e17009e7a9b8e930e17a4"
 
 [[files]]
 file = "config/inventory-particles/cache/extinction/atlas.png"
-hash = "599712d6451f54745e362f9cfae5b59185c84e8bc51856a9fcd6a849d34c5377"
+hash = "2d98fcaa38bb1e89be340f7ca415dc4b694c8fe9408532358bce78a15b3fd1c8"
 
 [[files]]
 file = "config/inventory-particles/cache/extinction/regions.txt"
@@ -1038,7 +1054,7 @@ hash = "f4a35deda357b65a9945fe5a9544b1c04e8f80853ae3334e4d1d335bc6b1a0cd"
 
 [[files]]
 file = "config/inventory-particles/cache/farmersdelight/atlas.png"
-hash = "2c04eb825c8d0c09a2086c2cf55ae5223a138eaeee32fab51c685e784fdbd31f"
+hash = "a52a00ae16a7cda5a01607cac5c644288865b8fbf903e9cea403dd7cb4d75e6a"
 
 [[files]]
 file = "config/inventory-particles/cache/farmersdelight/regions.txt"
@@ -1062,7 +1078,7 @@ hash = "dbfa0fc8d05de6208ed29bd14af651df138c385568ac5a7e026bea21f9ceb325"
 
 [[files]]
 file = "config/inventory-particles/cache/fracturepoint/atlas.png"
-hash = "461625bc968efd37e56c475274a2da65f95a638509017fb2423b125a7ecf019f"
+hash = "cc27cd85a489985cc61ed18720ae2f363d9fbeb12640d5445a0a1e4798e761b3"
 
 [[files]]
 file = "config/inventory-particles/cache/fracturepoint/regions.txt"
@@ -1086,7 +1102,7 @@ hash = "1af87d261fcc9e9e782eb95c4dadcd8019d7292824828d0c0189e219e5f432cf"
 
 [[files]]
 file = "config/inventory-particles/cache/herbalists_delight/atlas.png"
-hash = "25d6ab6b6388f378896955c93b91b740263060a20464950f157b2893fd8539ec"
+hash = "234630d94b64b771cb1d105e0c2b025f3fab69d92635eb51ec809639ca1a6b2f"
 
 [[files]]
 file = "config/inventory-particles/cache/herbalists_delight/regions.txt"
@@ -1098,7 +1114,7 @@ hash = "9e00d00f959607f82c194e49001b406ee1b05ba26f45c1c9923886bf13a81f99"
 
 [[files]]
 file = "config/inventory-particles/cache/immersive_aircraft/atlas.png"
-hash = "1a70426c1be821fdf3e9550ac5aefe37a530f32f2ad66257b06259dcb7063ee0"
+hash = "ca12b0e2c44ca47afc67cc50f711eb71608fdd3ecd4d57286a94145d7049c782"
 
 [[files]]
 file = "config/inventory-particles/cache/immersive_aircraft/regions.txt"
@@ -1134,7 +1150,7 @@ hash = "cb41fb764e56cade1caef79d67d82b38c7679d247ea3bb5a608d9b7b6ee050d5"
 
 [[files]]
 file = "config/inventory-particles/cache/items_displayed/atlas.png"
-hash = "5eba1a50f51e7ae22ade657f63dde9ce3697653f48fbdf0ed45012e76412a9be"
+hash = "5eee9d0a84a7deaf29d244b6b4addfe3f2f4fda82a6a8c4e85e40a705c1bbc67"
 
 [[files]]
 file = "config/inventory-particles/cache/items_displayed/regions.txt"
@@ -1146,7 +1162,7 @@ hash = "a0ba2436d2a6b2508573c4f56dfb30fb8668ad52bdc8270b335cf4a918875021"
 
 [[files]]
 file = "config/inventory-particles/cache/itz/atlas.png"
-hash = "780c070eda8fbc8e28971e6199f8e5e58fb0ad8291c3821fe4749f54b8007dda"
+hash = "ad07aef0dbe860c6d1996d900f3751772e20da3f7b0e0860e93063c6cb0d2ce6"
 
 [[files]]
 file = "config/inventory-particles/cache/itz/regions.txt"
@@ -1206,7 +1222,7 @@ hash = "a6edbe7d28cc1253987a99dabf7b574cec7f7eda5ab3fe59249d156bada5c64e"
 
 [[files]]
 file = "config/inventory-particles/cache/mcwfences/atlas.png"
-hash = "de2553c3c1c12c7f4943049220733c1b4160232427102b0119197dc6e44dbdd7"
+hash = "57f53f6e7baad20c6e4f8af00362fdbe7934991aafdd353e1b38b8c15f974ae8"
 
 [[files]]
 file = "config/inventory-particles/cache/mcwfences/regions.txt"
@@ -1230,7 +1246,7 @@ hash = "6de6d5d81f5e365a06e4fdd43cb84734fddaf3d14bcc699ecaac5987bbd4f629"
 
 [[files]]
 file = "config/inventory-particles/cache/mcwlights/atlas.png"
-hash = "6bea0e658ca548b4d556c99d9432d6a86f852c6d70806761b3d7cd01a476966b"
+hash = "259b786a74e6faa1d1970d52026eea62f9aa32e4d368e17b92426aa2e7f0afe4"
 
 [[files]]
 file = "config/inventory-particles/cache/mcwlights/regions.txt"
@@ -1254,7 +1270,7 @@ hash = "3fa5c69a51d7a3cdcb9b168fac42d7ed3088cfdc86a0bfd8603c9766b8461442"
 
 [[files]]
 file = "config/inventory-particles/cache/mcwstairs/atlas.png"
-hash = "8c4b3458a1e2bf2237530438ff4bf19661e5ae52b0f9b94ecae673d9ff91014c"
+hash = "c890af814daa89f1dd69c21b68a5685e80607e1ce4b02ad4d5613511e665fba0"
 
 [[files]]
 file = "config/inventory-particles/cache/mcwstairs/regions.txt"
@@ -1302,7 +1318,7 @@ hash = "3410999959be9f989241bddf560b67c3b551241a8c7b66bc5c456db137453ac9"
 
 [[files]]
 file = "config/inventory-particles/cache/perfectbirbs/atlas.png"
-hash = "3f3e9841cd09a5de488b39f20cec4f6c3973c1108c377cb07d55ffc9964f7a0b"
+hash = "5bee3a84f441d744dc3b7e9632da67bb591d62c164db109cf68f5fa2a7e8ef29"
 
 [[files]]
 file = "config/inventory-particles/cache/perfectbirbs/regions.txt"
@@ -1350,7 +1366,7 @@ hash = "6077eeb96f50467fba1ff47e5a1244046fa2c8ab7898812d7e7d90bc15a27a2a"
 
 [[files]]
 file = "config/inventory-particles/cache/projectarmor_/atlas.png"
-hash = "6de6540bc970ff87fe02a07899868a0503073b4e550cf8d769dddfa517f48366"
+hash = "08097a946b0a781697b0970ed6e8d7630eae8452dba72f11f57dc0f580ce5922"
 
 [[files]]
 file = "config/inventory-particles/cache/projectarmor_/regions.txt"
@@ -1434,7 +1450,7 @@ hash = "f535da4388a5d6fc99fefd667204371bd83a9baf6f0ebbf7569301e0057e51f5"
 
 [[files]]
 file = "config/inventory-particles/cache/sophisticatedbackpacks/atlas.png"
-hash = "0de8bb2774d1c63f218abb8c060990b1f79361ef42facbdf34481f0de4858d07"
+hash = "ddc66a0c935f9ce7b42d8a5800490ecf6595e4337f3296328fc0e1bd7dbc6ba8"
 
 [[files]]
 file = "config/inventory-particles/cache/sophisticatedbackpacks/regions.txt"
@@ -1470,7 +1486,7 @@ hash = "ac7a79370fd93a4d877c5387f3defa2b9ff6f0e78d7ce6b4a3866adebc7a4a3f"
 
 [[files]]
 file = "config/inventory-particles/cache/survival_essentials/atlas.png"
-hash = "108fa6d7b1c4588b18698e0cc0e810503a64e917342146571db7cac38ca97620"
+hash = "ed21b113ff6b1a0a2e50b91f18312b0cb5d7f4f31d2cbece8b46562d2453c600"
 
 [[files]]
 file = "config/inventory-particles/cache/survival_essentials/regions.txt"
@@ -1506,7 +1522,7 @@ hash = "f46e0d14836e98ace3cf2b7240ccd595eeeb8f4967447838bbaf00a8a1c06e1c"
 
 [[files]]
 file = "config/inventory-particles/cache/tarkovdayz/atlas.png"
-hash = "50f33472d8b8fe2137527da19ece30ed6949931af97255f3ef93cd4d4056e520"
+hash = "65e87424fc1b9d3f5b2177b510b304e8794bcf5fbc45f09f65e87569910d7169"
 
 [[files]]
 file = "config/inventory-particles/cache/tarkovdayz/regions.txt"
@@ -1518,7 +1534,7 @@ hash = "9dfc1f1c14d63fb46800d2b5f7c76f3b89a679a16adbec3a992fc00e808dee31"
 
 [[files]]
 file = "config/inventory-particles/cache/tidal/atlas.png"
-hash = "7dbc4cd648fb7b15eb5cb3639bf62f478a5636020e141450b060fdd4262f8080"
+hash = "cdc6be623781c645c4a592c06c66b45ad85ea2f218f779c45e4a5b03af2b0c0c"
 
 [[files]]
 file = "config/inventory-particles/cache/tidal/regions.txt"
@@ -1530,7 +1546,7 @@ hash = "e3e7b6e07c0077dbadad30df7e80721211345e2285eda25f4efcad56411a7a7d"
 
 [[files]]
 file = "config/inventory-particles/cache/trmtgtnh/atlas.png"
-hash = "54aac7f1f17e3988d512294986ab8eb62406fbd31faeb4f74430c0658f2f3a28"
+hash = "7380a997ab8f6873582149c93cf1f00910d83f8ed30d90eb19c8c184c0dc2b13"
 
 [[files]]
 file = "config/inventory-particles/cache/trmtgtnh/regions.txt"
@@ -1694,7 +1710,7 @@ hash = "dca55a2792451b31424cd5c24037141ec57cdca51955d062dd908fa9ca6a3e9c"
 
 [[files]]
 file = "config/leawind_third_person.json"
-hash = "e1a31faddc9b38f26d0b2ebc8f2394299437a58a38fbce0f3a06f3be78504568"
+hash = "484bd2572873256c2e22c1f7a446008f46de7a84e44a0becb01d7f52b98cbf58"
 
 [[files]]
 file = "config/lexiconfig.toml"
@@ -1874,11 +1890,11 @@ hash = "f72dc2bce12a55066bd33e50c47b1ad33b1bdda65778cb5653d876e1fec3694d"
 
 [[files]]
 file = "config/oculus.properties"
-hash = "5006f494c04473b2b1d2188b623139081d9327aedba7051f0245e42ee802a2fe"
+hash = "9cda263f11c35227e729aabf8ded3199a86bf750515e0413631c6fcb5ca26eee"
 
 [[files]]
 file = "config/packetfixer.properties"
-hash = "bc435b9a9a464b5399b19f5b23e5054f7cff9cdf24b07c250410f3e35f145073"
+hash = "0f3eddca1c681d51d6cb688e62d65592d627df44387f9eb7768a965e293543cb"
 
 [[files]]
 file = "config/particle_core_config.toml"
@@ -2225,6 +2241,10 @@ file = "config/savaru_inv/rules.json"
 hash = "5d6ec2b242beace20c6ea266a45a60fafac5a57b24f9848a3e1f264435140b93"
 
 [[files]]
+file = "config/scav_shadows.properties"
+hash = "0c682fd5cdf1614cc568a8f3ae60153d69f6380b793a6427af16bb5f13109a24"
+
+[[files]]
 file = "config/scav_villager-client.toml"
 hash = "04275bd03b3bbc6af340f20151e4dd5f7a67dc7007462c18537fe0ff92e65901"
 
@@ -2275,6 +2295,14 @@ hash = "c87a27479984af2b6e19f3be1bc078da0a07df19b890ea26f975391c08a96524"
 [[files]]
 file = "config/skinlayers.json"
 hash = "45162f45aa2db525a0edc483959f35b6d958ba2e54066a4f87e7f3c3f0f99166"
+
+[[files]]
+file = "config/smoothswapping.json"
+hash = "3edb7a3cca0e7c3ec09f642516aba923bd8eba7ca414289a4103912fd24a7e66"
+
+[[files]]
+file = "config/smooththirdpersoncamera.json"
+hash = "faa36309ee68d988c5d42f3a28288ff7fdd0eea6da7fa1b27e864f96049c5782"
 
 [[files]]
 file = "config/sodiumdynamiclights-client.toml"
@@ -2342,7 +2370,7 @@ hash = "c6a96ee8259a7f1a552130c72067ee76a9c75808e24093da8b48a2fb5309eed7"
 
 [[files]]
 file = "config/survival_essentials-common.toml"
-hash = "ae1c0c088b1affd584dcda541fe89ea07656564b3cc4271189a812c1ee514409"
+hash = "414913989e22958f14c6865c5d4c2c19342c147ed70acf082610bf0a3403f73e"
 
 [[files]]
 file = "config/sway.json"
@@ -3066,11 +3094,11 @@ hash = "1f8670911537dcb8d8b67e51203f3095b27057ebe398ac3df9301ddd088abfbe"
 
 [[files]]
 file = "config/zone_tactical_anims-client.toml"
-hash = "40679b8237d62079dafd2b6ace673d37339e4cd2e690f77f025361f65e8b3808"
+hash = "a0cf06f82771eed986d6c1cbb4e67f517782c81aa6742200e514d54908bcfb3b"
 
 [[files]]
 file = "config/zone_tactical_anims-common.toml"
-hash = "91a0cfa87b4ad9c13403bb49076964c1c46968e748edd3f5b9107bde0d81e364"
+hash = "b906c8277103907a3c1494e5746a989d8b4a4e6681da007cf004406f1ed7846e"
 
 [[files]]
 file = "config/zone_tactical_anims-keys.done"
@@ -3078,7 +3106,7 @@ hash = "11e7b832fad4f43bdf83a61b3a4c499f6a53ae7a3c9be68da0f8263c9546c6f1"
 
 [[files]]
 file = "config/zone_tactical_anims-tracking.properties"
-hash = "51ea3be9644bd9db366f0ef392c7820c1e073d805e331905ea4370fb6c71b3a4"
+hash = "c12229212bd6623b84635b65ecd6cb5f0708818891003db8aeba64546628b4c3"
 
 [[files]]
 file = "customnpcs/assets/customnpcs/sounds.json"
@@ -3101,8 +3129,1004 @@ file = "defaultconfigs/inventory_free-server.toml"
 hash = "d06e2c03544084a40b443e526293cd8b6a1b51f0da876e4aa7683a732e5e7931"
 
 [[files]]
+file = "kubejs/assets/anomalyzone/lang/en_us.json"
+hash = "032e6d45a286e7a53f2eafe09a2d0151cd2be894fe7a4ec3a69ced2e15b6fdae"
+
+[[files]]
+file = "kubejs/assets/anomalyzone/sounds.json"
+hash = "719da24cf18a3978667bf3b644de1bc69de22f1670a8a1a198b186b3eb422a55"
+
+[[files]]
+file = "kubejs/assets/extinction/sounds/abricontenedor2.ogg"
+hash = "4bf873a84da4fe73a34b74f46c2e48304b761981211bc48258372a9cc8dcbc0d"
+
+[[files]]
+file = "kubejs/assets/extinction/sounds/abrircont3.ogg"
+hash = "a5da2e0e46753ce43b48d7fa0a5a64317ec07d13e0798ef644829a511adfa80e"
+
+[[files]]
+file = "kubejs/assets/extinction/sounds/abrircontenedor.ogg"
+hash = "360b4212a361498fa6dbcdff18898e804fe2aecebfd81e9ea9d1a849a496c5f5"
+
+[[files]]
+file = "kubejs/assets/extinction/sounds/ambientdesoltaedlands.ogg"
+hash = "99a5d4be2f1231854bca79b8d405d41e2c2bd753ce3340b1f96fa489039018cc"
+
+[[files]]
+file = "kubejs/assets/extinction/sounds/backpackopen.ogg"
+hash = "370eeaa60315898c8776b0032b8d88cc4440a3070bfdf945208a3651a11edb4e"
+
+[[files]]
+file = "kubejs/assets/extinction/sounds/beardeathnew.ogg"
+hash = "2328800c6d1b6a8505fb4ef0679bdc82a2292a99c787a288b24531b523e5e434"
+
+[[files]]
+file = "kubejs/assets/extinction/sounds/bearhurtnew.ogg"
+hash = "56920bb2b49d6f4783609afa12543b71fab6e948e117d27ed43eb5eb337afdd5"
+
+[[files]]
+file = "kubejs/assets/extinction/sounds/bearidlenew.ogg"
+hash = "6034d5c204a5ce2612e96da2c30af21df2665493b97bd9defe378bb9648df50b"
+
+[[files]]
+file = "kubejs/assets/extinction/sounds/boomerdeathnew.ogg"
+hash = "9d73f7a89b948ea66a080c446669a831b62f9f6574a65e5d0638f0f692e52e9d"
+
+[[files]]
+file = "kubejs/assets/extinction/sounds/boomerhurtnew.ogg"
+hash = "1de52003506290a20076c113cc1fd047b59a01e998b3772d1271c1e942180895"
+
+[[files]]
+file = "kubejs/assets/extinction/sounds/boomeridlenew.ogg"
+hash = "66c326ad8f63943e1d791a5b89476263a7f57f05185dfca082b6efc6a3aaf1b0"
+
+[[files]]
+file = "kubejs/assets/extinction/sounds/clickerdeathnew.ogg"
+hash = "8ff4c1b6913302cdaab60246b053187c785436b4fcc292e28ac21048b990e6a0"
+
+[[files]]
+file = "kubejs/assets/extinction/sounds/clickerhurtnew.ogg"
+hash = "671d2dfff8a0ee073a07ba8051ca9163c60599a22026eccbebeee1aa8aa21308"
+
+[[files]]
+file = "kubejs/assets/extinction/sounds/clickeridlenew.ogg"
+hash = "9f3d9ee0ecaf2a0b8faa08cb211212e922eefb0f63611036ede4b559fc61723f"
+
+[[files]]
+file = "kubejs/assets/extinction/sounds/fallendeathnew.ogg"
+hash = "03857c6ce51772e1e8ebd8bd56f57c2c63703dd80c3c31e652c1487c97bf4234"
+
+[[files]]
+file = "kubejs/assets/extinction/sounds/fallenhurtnew.ogg"
+hash = "c4588d05e31266d0ae3852f2f30767ef4b37f5dce753c2475d88b823dcd46e6a"
+
+[[files]]
+file = "kubejs/assets/extinction/sounds/fallenidlenew.ogg"
+hash = "f928f7f0364eec69a7496599d69414cfbe561c52890b27a5bf2afa38f5b90deb"
+
+[[files]]
+file = "kubejs/assets/extinction/sounds/goondeathnew.ogg"
+hash = "88ce578e602d74237cc0b3896e9f96d7e96813aa7a7565cab8008fa6e12faa93"
+
+[[files]]
+file = "kubejs/assets/extinction/sounds/goondilenew.ogg"
+hash = "deb9b954d6123e358717440b0c7373811c9e7bffa0ca061750a061e7a53b967d"
+
+[[files]]
+file = "kubejs/assets/extinction/sounds/goonhurtnew.ogg"
+hash = "59bf66b2ca67e7751be832e40ba27da7dbf1925a61592bb9b816610407aaca8d"
+
+[[files]]
+file = "kubejs/assets/extinction/sounds/hazmatdeathnew.ogg"
+hash = "57519cfa17482c1c43b019e0ec624c06f778ffa0bfbea8be2240b37682099b02"
+
+[[files]]
+file = "kubejs/assets/extinction/sounds/hazmathurtnew.ogg"
+hash = "da3fedcaa348d6d84611b846b3c12c3786b36dd7d3df616546d56d414e71219b"
+
+[[files]]
+file = "kubejs/assets/extinction/sounds/hazmatidlenew.ogg"
+hash = "5ebf01f79f4f936f5dfc65fa0092ddfd1cf991d327ae6950378924141f216812"
+
+[[files]]
+file = "kubejs/assets/extinction/sounds/hunterdeathnew.ogg"
+hash = "29d5b275fa16ae6972f85e39f3924ed4f50ad3b942f5b21f9678d21f1c7e2356"
+
+[[files]]
+file = "kubejs/assets/extinction/sounds/hunterhurtnew.ogg"
+hash = "c0fc3434535e099f32ce9008a9e8901ed8a9383f495119175edf7f907e64e0af"
+
+[[files]]
+file = "kubejs/assets/extinction/sounds/marinedeathremaster.ogg"
+hash = "8f0c95951e7531576118a74c2272b6dcb429a4918d024c621e364d4746881d7b"
+
+[[files]]
+file = "kubejs/assets/extinction/sounds/marinehurtremaster.ogg"
+hash = "a1bd53295d37fe992e9357a03a66a7112bb4b27b9944892c2ccbd2532b3a7c05"
+
+[[files]]
+file = "kubejs/assets/extinction/sounds/marineremaster.ogg"
+hash = "60bac907774a7416807040842e7d031f74e8e722b8afeaeb636abcb7dac10102"
+
+[[files]]
+file = "kubejs/assets/extinction/sounds/mercenarydeathnew.ogg"
+hash = "a91d637c184951213f7341923b5e0fcf8b20be3dd68a7d8240fd0928d669b53c"
+
+[[files]]
+file = "kubejs/assets/extinction/sounds/mercenaryhurtnew.ogg"
+hash = "ea6b7fb2af821e26d62091835c05d2f6cd3494ce5b450f5bbeeb82b0c1fadce8"
+
+[[files]]
+file = "kubejs/assets/extinction/sounds/mutateddeathnew.ogg"
+hash = "4e50e5ed499b74309c19f18877007f6ad459113bc60dde5246fade5b38f46729"
+
+[[files]]
+file = "kubejs/assets/extinction/sounds/mutatedhurtnew.ogg"
+hash = "ee475ce2f2571a9553766decab0238421621fe5aff61cb05499869e89cf41a49"
+
+[[files]]
+file = "kubejs/assets/extinction/sounds/mutatedidlenew.ogg"
+hash = "3217ad8d2d0f9a9754e0f0a1c932edbb950442ee1534bd154298881d65ac0f96"
+
+[[files]]
+file = "kubejs/assets/extinction/sounds/opencrate.ogg"
+hash = "478e0065e6eb32ed90ef62bdcedb6f709a56b7222f2e7a85c47d35505ef04e08"
+
+[[files]]
+file = "kubejs/assets/extinction/sounds/opendropnew.ogg"
+hash = "2823943f32c3aa61adf78377fcb98028d587e74f887bb6e8c9bba233036537a5"
+
+[[files]]
+file = "kubejs/assets/extinction/sounds/openfridge.ogg"
+hash = "6ff594fe9abbfb321ac1dba111be48ed4b52c8bc8177c224913998b011019d23"
+
+[[files]]
+file = "kubejs/assets/extinction/sounds/openmil.ogg"
+hash = "adf9860fecbd5b091f83f67ae8a7fa50c570c8d2bd6e5864d39d4c81cad52f1a"
+
+[[files]]
+file = "kubejs/assets/extinction/sounds/opentrash.ogg"
+hash = "3ea12c142645eb897593612bc66404b23d8278ddf9f30f029503c9084aa513e2"
+
+[[files]]
+file = "kubejs/assets/extinction/sounds/openvending.ogg"
+hash = "72787fb7d3608a53544a9268ed969f37d4694a37f5fc98ab1c8156f41414682e"
+
+[[files]]
+file = "kubejs/assets/extinction/sounds/parasitehurtnew.ogg"
+hash = "bbca8bfcce381660b66cc85a4b50662b9dd9b3240bcea2592065ce4358c4c4a7"
+
+[[files]]
+file = "kubejs/assets/extinction/sounds/parasiteidlenew.ogg"
+hash = "4e7dc8a4614beef65a4243cd5b3021c9884ff13e77f505e10240e06104bcb53f"
+
+[[files]]
+file = "kubejs/assets/extinction/sounds/patideathremaster.ogg"
+hash = "6b84ce0d619d1d5682fc72e895563d59b5833abc195fad1ea5053d5fe71849f4"
+
+[[files]]
+file = "kubejs/assets/extinction/sounds/patihurtremaster.ogg"
+hash = "af69e5b5b0f8883cd46aaf04a7e8f795d76c48364e06d924e17cf6114b045d94"
+
+[[files]]
+file = "kubejs/assets/extinction/sounds/patiremaster.ogg"
+hash = "9ba014e05a2384b50f4dc15ec7c2cf87faf842d511ea2514c9f15d0c590acf28"
+
+[[files]]
+file = "kubejs/assets/extinction/sounds/policedeathnew.ogg"
+hash = "242c53900bbb130a732a1feaed2e4d8ad4f0e772c27daaff626251c637e40530"
+
+[[files]]
+file = "kubejs/assets/extinction/sounds/policehurtnew.ogg"
+hash = "c1ca4e30886944add2dca267f9c866e5872014d80d85089071f79901cb5e7138"
+
+[[files]]
+file = "kubejs/assets/extinction/sounds/policeidlenew.ogg"
+hash = "7141bd65948da5c0164cf44eb392a13bd75352064ade39bb9ef8e952800142b7"
+
+[[files]]
+file = "kubejs/assets/extinction/sounds/remakepatienidle.ogg"
+hash = "5427cc7100029c5865a262bc786c6c2e58279b84bf7e787cfb3a95182ac5f061"
+
+[[files]]
+file = "kubejs/assets/extinction/sounds/remakepatienzerodeat.ogg"
+hash = "2f8757940301c2361c0ae54b6b5ab28a944ed2c2d64b75f06990800a4da69320"
+
+[[files]]
+file = "kubejs/assets/extinction/sounds/remakepatienzerohurt.ogg"
+hash = "8a545b564349858297aa7eae2b6d7ea1abd7174e10d2647fbe64eae420ad25f1"
+
+[[files]]
+file = "kubejs/assets/extinction/sounds/riotdeathnew.ogg"
+hash = "26a011ca4e2b79092f04e7ff88d3b636cd18e1e95725b7bd383492ca394b27ad"
+
+[[files]]
+file = "kubejs/assets/extinction/sounds/riothurtnew.ogg"
+hash = "d625785a41fbffbc991abf184fa26d5be4ab7ef7a517e7cf54e1e84d6daa1bf5"
+
+[[files]]
+file = "kubejs/assets/extinction/sounds/riotidlenew.ogg"
+hash = "6b64a415b980a892db7a52b607b0bcbee75f92e49b42467d8e3ea21f837c6bab"
+
+[[files]]
+file = "kubejs/assets/extinction/sounds/runner22deathnewnew.ogg"
+hash = "f4a863717a5dc4367103c84138505a1c0764b49bacbbc697c659e2b44f16efff"
+
+[[files]]
+file = "kubejs/assets/extinction/sounds/runner22hurtnewnew.ogg"
+hash = "3a1b581632413c7cb51d0415a4d87d08f8e4d6ded9f3bfa4506635b2bc9d8de9"
+
+[[files]]
+file = "kubejs/assets/extinction/sounds/runner22remater.ogg"
+hash = "641bcccacca2af4cb6f9d6f9e45f111730db1f7fca0fe58ce62175280fe5537e"
+
+[[files]]
+file = "kubejs/assets/extinction/sounds/runnerdeathnewnew.ogg"
+hash = "e61a871b753e125659bb2e1fe222ad9d56f45111a9cbdbf6611db169db49e5c5"
+
+[[files]]
+file = "kubejs/assets/extinction/sounds/runnerhurtnewnew.ogg"
+hash = "329eca32a2984a62e056cd9e0ab9a9dd62410d9623ec441aae918c6ff838080d"
+
+[[files]]
+file = "kubejs/assets/extinction/sounds/runneridlenewnew.ogg"
+hash = "04f575afea6e5e4899927b1c7ac90ff3c3842077c0e7b8e15702236b88f62bcf"
+
+[[files]]
+file = "kubejs/assets/extinction/sounds/soldierdeathnew.ogg"
+hash = "dc6703b16a3a4c56d6842780d5dae04ac558954fa6d1872597798b195f5993cc"
+
+[[files]]
+file = "kubejs/assets/extinction/sounds/soldierhurtnew.ogg"
+hash = "e61e73341e24396584bf420d4aa2c5c05bf9a88b9b490b7c984155fab5682b9d"
+
+[[files]]
+file = "kubejs/assets/extinction/sounds/soldieridlenew.ogg"
+hash = "6e4135223cc4f6495efb533f1ab7e5b472e3c406e6ae63bd760e4a35f7de68b7"
+
+[[files]]
+file = "kubejs/assets/extinction/sounds/soldieridlenewhhh.ogg"
+hash = "2bfe6daf3ffda776f2fe9939d6dcdd0b96d2f4ad71d9c631f453f5fc8d266d5a"
+
+[[files]]
+file = "kubejs/assets/extinction/sounds/soldierremaster.ogg"
+hash = "fa8903fa09bf83c88d7e88a37494be6f586a8b469826bb3ef2620724bad34033"
+
+[[files]]
+file = "kubejs/assets/extinction/sounds/stalker22deathremaster.ogg"
+hash = "1ce51f4c7c0d8aeed1e97567c9fd86f47c3e17eee7281f906151f013b57474b1"
+
+[[files]]
+file = "kubejs/assets/extinction/sounds/stalker22hurtremaster.ogg"
+hash = "7cc41ab9a740c316f2badc032be34db7cf6266109a14df17f32f597512a1a216"
+
+[[files]]
+file = "kubejs/assets/extinction/sounds/stalker22remaster.ogg"
+hash = "2008eff7c444c2cafcac3e7a647fa9c9a335a49e25f8c887a4451a23a925787c"
+
+[[files]]
+file = "kubejs/assets/extinction/sounds/stalkerdeathremaster.ogg"
+hash = "2cea84408d2566b796dad9d00fd528bbc5996b0d825ba158edc70e3f4a87b1d2"
+
+[[files]]
+file = "kubejs/assets/extinction/sounds/stalkerhurtremaster.ogg"
+hash = "8ba4b544d1d97abffc2774a58862c4ade4221bb3ab052cce7df5f7531457ec7e"
+
+[[files]]
+file = "kubejs/assets/extinction/sounds/stalkerremaster.ogg"
+hash = "e6bc850855bde41da7ecd6aa4593ebd48695e47e0f9c3848ae1f5b62e460c90f"
+
+[[files]]
+file = "kubejs/assets/extinction/sounds/yamecan2.ogg"
+hash = "206bd0c58c061c3083c347273b2d224c0c96a70d2297f1aa5411d9421848e78e"
+
+[[files]]
+file = "kubejs/assets/extinction/sounds/yamecansemask.ogg"
+hash = "048197875699687543a28b5a021e507ace3ad1c22a8f9798215f2472d6fdd7f0"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/block/124235346.png"
+hash = "8409e1a7741cc542d1d70356bce130c77cf654a41750d6e3f56dddc9194a5f7b"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/block/2e585664-d579-4b5a-9c62-da7fc65c2ebb.png"
+hash = "624c15fd04f6e7a83d480b1d7c1d45714b486105d491d067cf9d958949def85b"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/block/4534dumpster1213.png"
+hash = "0d55a549844757e9319d868136396b00106e4eeda69aa88ee2f5d7c5c358c2ea"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/block/58a6ac23-87c1-4a9d-898a-dbc7ebd5eba4.png"
+hash = "46e845422522ea3af2452da5e40d3bf68604efe65b9b2568c1fb0bf6245ccda5"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/block/898981.png"
+hash = "02060a7a86aa3e9d858bca413b7300e5af73c1b6d25f86980bde7089fb706447"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/block/ba565.png"
+hash = "ac235644a73d69cad87c3322117243c49f11e8f46f5a47dab042926544f500d8"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/block/bababba.png"
+hash = "ca3b2d91bb9597cfc49d466dc7865cf73ba6937b44bcb9f15ad1ee3f3df505ec"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/block/barrbarr.png"
+hash = "c6f9eaf929a3b5de3445de017a2823fae1f3b23e80939f845bf6951ef5fdc559"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/block/barrel.png"
+hash = "a395b2f0f62c52033f84de8ba9bdb83ef11375baa57ae9569e6a11a4b0f57ea4"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/block/barrelel.png"
+hash = "dfed6447a0b08e1ab898305ae0d37e62799b4e82fb36086ee918a27094dbe5e0"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/block/barrier.png"
+hash = "ddf78f18756335e2e55b98d806e97c664821b6bdadf39835732ac3539fa3bb8e"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/block/barrier2.png"
+hash = "93723c3acf4da36474bcde80ae089dd04e71e314d3dfea4b889572c2d001a9ba"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/block/barrier44.png"
+hash = "d4d909867975f880442b8011d04f801d83aa4d3f6e415f4b3bb4e33ff5ad601b"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/block/barrierhus.png"
+hash = "982991991cd71010dc7eb10d2b385bf70f8788760091eb2d8bc6079aeea58348"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/block/barrierhusjd.png"
+hash = "36fe5b09c62c054a0413857c414a3f2bb14d394e3beef0e0bb488df45eeaca86"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/block/baseballbat56565.png"
+hash = "ab8672d62df290b6d9f75a17ae96b6c6cffe308e2a81935a88aace11ae6afcf3"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/block/bodybag.png"
+hash = "b7d07e1379c5934bcd84706f11bc6651f30f0c16ec481259286da2643292edbe"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/block/bodybaggg77g.png"
+hash = "056c2252477794e0820a9dd4e16456e0803dd01a880fcc279382736e44b367b9"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/block/bodybagggg.png"
+hash = "2784fabaa6eb2f8c24dbcb31493d134e0a5db66684291f94ba245edd1d0de4d5"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/block/cabicabicabi.png"
+hash = "384b6b045231199fd13d2e44a9685d93fd4f6a6761c39eda3b030d31771794bc"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/block/cabinet1.png"
+hash = "3176ad3b64cadf29a8759142e263104d4e0a598f2727ae975533189f34333cb0"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/block/cabinet2.png"
+hash = "4062ac132b123fd20215efd6fd9eb4bbe5c3d745223d7feedc50af9118f6d983"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/block/cabinet555.png"
+hash = "080cbf58c00eebdce8fc295c03fd96c257a8f064fe9009c24b5ab66991b29c68"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/block/cabinetaaaa.png"
+hash = "9a3bfb7b53b94598f4f339caca7143d75801f6cf4be306f505e28b52a4c22dcb"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/block/concretewall.png"
+hash = "c88f0fcf95a288bebf5a5c0aaa952972940e9b8ab461e0aa8df847c20f2b953d"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/block/dhelf4.png"
+hash = "9bf149c385c24d6fb4ee09e6a855993526875023c375cf32c95df2a7f5f5eb92"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/block/dumps32.png"
+hash = "e4455d08fdf64c5ec2f9f4b952f7c12c3da7cf6ede466c426adf212b7835df87"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/block/dumpster2w.png"
+hash = "48f291a2b3db0693998bb0afe6344402f7c6f921bdcbb05674e251d668d28c87"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/block/dumpster5653.png"
+hash = "ff8ffd4e61640a98375c55b13c4ace1bc8d6f8b4e1817b9a01f2496daecece50"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/block/dumpstergggg.png"
+hash = "d4085330dd183d9647a7827b73c1a19a2dc5b2499ee7a6531389353e47908533"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/block/e7f65fcb-5989-4d87-9af3-9f2291adce01.png"
+hash = "562c7c8239ad79bba4f1642f3ec42c1b0f8d35ccc4f7d6c58c1c11ec5f5c5756"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/block/efefefeef4.png"
+hash = "836190434fc8618ed192186596a36a22a1017214f6b3bb4699f4a599aea87f37"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/block/fridge2.png"
+hash = "98e7f9dce121c6e783baa57aa42d5b7742598ad38002ff5b735a322e1dfbce4a"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/block/gtgt.png"
+hash = "88de76542ca7120e528d4285987d6e4cf39dc4db5192cceb25768777f746086f"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/block/gtgtgtg.png"
+hash = "211916c11fda9664a576e4d15d707c5ae70d400bab2bb1ccc4be1d49b8a0509d"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/block/hospital_gurney.png"
+hash = "0473171d33c59a92f2037c6f31d93fa0ae147641a42b34575fc4738021952618"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/block/hummveeg.png"
+hash = "bc25c6515f55419ccf3fa1d5d3804428367bc845974355d2b4a604f7203ebdb1"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/block/humve3.png"
+hash = "c75ccaa3f6765c2315b4b5e11728200f548e7c6dcfaaef726baf4db1e7757801"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/block/huve.png"
+hash = "9190c459d29b13cbcd2265fb5759243b2c12e7edee8c2f91e2a5f95227df9451"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/block/huvey.png"
+hash = "bb5cb8e688a1513997dc3ec9e0cf72556d3e3799c1450585a6ba82938aa81514"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/block/huveyuut.png"
+hash = "9feb540cb14ebef6756c61b499edbe8809f24e1783ff803427d1de771c391000"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/block/jugcropse.png"
+hash = "512d535965cf5fc0f7d18695fda368c4d985d48110ae6b35686ad148fdef5fbd"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/block/juggernautcorpseg.png"
+hash = "c8bc2b4018c2f292c9982729b130d271e7c17f0b2f1c063b58ac946393ed62ce"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/block/juggernautcorpserr.png"
+hash = "59716dc381ddb777e3932c61ab219babe8efc3db5eba987506cbb8ee83bbb5e8"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/block/locjker3.png"
+hash = "178c790d3f79306df4fa88893b514bd38fc6f9bd32b190069f9e6947441b3785"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/block/locker2.png"
+hash = "00cb0714b3322e91b1d4a492c35db89bec869761c7abbf541e9e7795b0394cd5"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/block/locker4.png"
+hash = "87ba95970e606eda374a5357937c9a90a9cfe429cd698613722ae2e51ccf1987"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/block/mili.png"
+hash = "f7ef93e3e3142cbb55d769fe043de6ab1f5ea1ddde0fa59c54a9c052f5a1f37d"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/block/milimilic.png"
+hash = "c812c88fa911e912ee5bd96da427533510cec1d846b469964efb8fded82140c8"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/block/militaryco.png"
+hash = "b97080a851dcd2ceb35baaac44eedf5e7406c83c6aafb4d9bcba0bb0f4b50936"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/block/militarycor.png"
+hash = "0f87aa201d28a3e3506ea8bbf148a57035dfb725d59baa05e6aa7a3702b2fc02"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/block/militarycorpse.png"
+hash = "ca89138ccf5229761a8e4df897279527e43968cb5692184d58eaf2ecf1701621"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/block/mmmm1.png"
+hash = "0247bc8e8772b8b1b5eef9571779cfddd8186f2117b8e1338335bd46788031cd"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/block/mmmm2.png"
+hash = "63f8dad7f6c8a89361e1e70e8d0281c730eea335e67cf9b947e1ee16eb28104c"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/block/nnn22.png"
+hash = "fa462770ad724a4d12fe7a67adbf6d61def6167de0937f2466fb433b73afd0ae"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/block/nnnn12.png"
+hash = "7d404bfb045bbb3c49d004592355dc96c404e6b1cc95d98f0abd410aeedd8efd"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/block/ouiui.png"
+hash = "1758e14584da7d7289d6672896381a9cd4fe4c36d890c47980f6f1cdaecf1276"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/block/phonebooth.png"
+hash = "1ad9fa56140028efc4f64a9734405b4e8ce72ecfaca8c38c6a3bc9cd14e8c4d9"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/block/pickuptruckd.png"
+hash = "fe07003030768aa8a8fa32e65ceae4d87dca150299a5f2dc2883595808f30b28"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/block/pickuptruckki.png"
+hash = "7075d4278367532f66a0de6790747fd67e8f138333e97547bbd27e0bb06e46a8"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/block/policebaton.png"
+hash = "e7be95c77ffc0ca569c6f63a5156d6d19704cf90e5144bcd4af9e7d2eba71a8c"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/block/policecarsi.png"
+hash = "51ff1ec19b4f8a899bb0af3587ede45084cd41412ac956950d46549ddd9e903f"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/block/policecaryyhhhhh.png"
+hash = "94bbc766dd53f67064dfb0e1f2d0e8c0c3451c34658daf0edeec6c18695f0238"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/block/qqqqqq.png"
+hash = "e38f9498f3ac728a3d94e0f14c8c4d9ece6bc1ae2cb926ba2fe552454e29c524"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/block/rustyshovel.png"
+hash = "d9fba67212ecf50b07331006eb7243da4a7945fa93a66c30ae1381c4cf44e1d4"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/block/sandbagssss.png"
+hash = "d2b83b4ac912dd7398edfe8ec6e97b86ccef3c5ac91b5f6a5fab4b0fec6c0b73"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/block/sandbagssss4.png"
+hash = "58e0d902e973072225510adb96ee6bf37b9d9b07fb1aa8b1c414a9621c5b7cf6"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/block/sandddg5.png"
+hash = "5aa3da67473ae18ef799880dd85d92ee2ecb285823db576fab1e4b841af84f22"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/block/sandddw.png"
+hash = "dc29055ccbacc8201a1db61b05c0c0129d3aae9b7c4c9c570f9cf9df6f011913"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/block/shelfmetal.png"
+hash = "d96d0089a716502acc2ebb441f00bac26aa1ec082ce0d02ad9be0535dacd3e51"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/block/shelgh.png"
+hash = "523f0ab7f130a2a94e4e4f01530239199da33fb3387d5c0b93c38e799f75d9dc"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/block/spiked_baseball_bat89000.png"
+hash = "5788b24f528e49fbfa03ef0d6e824fe47988e9d362d6c74f3a28f49007377020"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/block/steelhoe.png"
+hash = "bbfdb249552066ac065cc397e50aa705ad0c30d7ea4f06c08f1183062eeb0c00"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/block/supplydrop1.png"
+hash = "69b119041165a305b4521a009864a99262613a8e217e06f080a65f82f604e722"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/block/supplydrop2.png"
+hash = "46d65ca27c3fab35738fe289f8460210312e3819ca3a8032c9e52f41fe450475"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/block/supplydrop3.png"
+hash = "f3d57e0a7f18c855ebe8a29ccf89bfa3bb187e454e88cf3760abf549c3ea0598"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/block/supplydropppss.png"
+hash = "80145edba6ecece958bef0ca51bc0eb0e629e8b7f4f1e0081ee64fc7bc213783"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/block/tactibackapackremakenew.png"
+hash = "d36576d33f25635dd6307bc8085f3ddb3d5163ecd8a8247da09ca0ba0d2f60cd"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/block/tacticaltomahawk676.png"
+hash = "79f7726d27ad3e136bbcbe5b46524f8ab0a0139372f7fb9cdfffd1a34d7dcef2"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/block/toperare.png"
+hash = "1e7cf8268c27a2bf6b7b3aad58c15563d3fef20880e1aee9a7ab7cc7724bbb7d"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/block/tradingm.png"
+hash = "51404369e7322899890efbd6b1021b700198fc39815d22a2f3d6ba1e1e40b372"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/block/tradingtable.png"
+hash = "fcdd1b7d1ee7552398ffcfae815fdea96281c7faf5be504792f5206d27f9f727"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/block/tradingtablehh.png"
+hash = "9742bef51347cdcb007a5cd6666b294ada9e7d9dd8ea3b27e28744037f632796"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/block/trashcan.png"
+hash = "7f9c8375c6d5ec30c768daac47328168cbd142e1f122ed6ef8d0d51296c44e0a"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/block/trashcannt.png"
+hash = "b21b34444000b4ba2ca8cf9845eda3d5a9273f77f730ca5155e3be5d2a68c5b5"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/block/vendingmachine1.png"
+hash = "1b0f9c403ecc09fb811059f709f246aa388033a01c1e3d6e7ece80b4096893b5"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/block/washingmachine5.png"
+hash = "3b3f3b0ab02fba04cebf5056858ea07cc441c86d6bec9d4bc2321092eef4c36e"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/block/weaponscase.png"
+hash = "68f54608ffb54953111fda57dc2687c007593ad760db2aa6ff0cc79c630d209c"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/block/weaponscasedouble.png"
+hash = "a79c867d12ab6af3c14cc599d98b70c6b39a0338da7e0cbf7df3ff99c56fd6bc"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/block/wirefencesdsd.png"
+hash = "10d8176edcc727bcb86b18b6116d4e24f856c0786f1cea330b92f291d29ae198"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/block/woodencrateopen.png"
+hash = "bed36b0b21e07e66074bb4d8d4e141d7ffd2478cfb1891da5660aac3dc002b52"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/block/woopen.png"
+hash = "908186eaf6636249fd1a4cc0a6d3341fb4da54794dca6f5f979f2e0691dc83e4"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/item/112.png"
+hash = "9af5e1ce12ee8e2b4e357050a8a9c2484f13e55986e1a4c62a8b6f8ef0e4ff8b"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/item/12.png"
+hash = "c39e4d42144ab0b54fdb28aec7cc1b3814c08dc0e48b5e6530c60c767fabdb66"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/item/233.png"
+hash = "e1854532b20d12065639c7f2794ce3e9ab33a61f72f063681afaeec6d4122198"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/item/334545.png"
+hash = "571f0e543092a1d42e4bd550a628b046294f47b18518658d1e0bde7b6d89c4fc"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/item/67skullamas.png"
+hash = "86d2e1d05ff16bcdbdc324fccb0b3e705de20b3bd898006f11079328204ffbf3"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/item/ads.png"
+hash = "48360db0361837fbaaec74219b5dee32bb6eb922b65e7cf70ac86434ddc50b1d"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/item/apv4est.png"
+hash = "217eadcea93f14b10d28e1e2770b1452cb6c395988eab933b84af0b009121dec"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/item/axe.png"
+hash = "eb36e60158efb10c65533e957fe0d6d68d9a42343ad6d154724d8c8832e4de70"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/item/baseballbat.png"
+hash = "54eda9c348cfeb187f173ba42db7697a00a58a218df0bed4ed5bf8c17c5b3575"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/item/baseballbat56565.png"
+hash = "a6662649f15087576193e65af8c9cb96313d98b7baa7dde517d437f83731be70"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/item/baseballbat888.png"
+hash = "6671868ab8f5e32d46cc6f8045523fab413122e1e3c5ca3f9f33e5c1b483f42c"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/item/bh.png"
+hash = "0d72e676831cb284cb6957259618cec735854223477c68c61b46406fd86c8deb"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/item/bulletproofshield.png"
+hash = "be20e3b84047467285347871a3d85d65e4364c74ecd024421b3ee0f0af89a721"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/item/butcher_knife.png"
+hash = "22c2806d6c44196df7af59682af91725c7acde7f98562ebdb28e4272ca8f4f88"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/item/camouflagemask.png"
+hash = "8310ab7cb119819a98c053f7f34d5d5cfc8985ad51d8ea3cd13bafb8f4abe34b"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/item/camu3hel.png"
+hash = "478a37f9498a614e128ab9a04f99bd7facdbd30dd8d0ae1b35d24e0b4f94103f"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/item/camuflagevestol.png"
+hash = "2164a50297566a2b4085b9d402dda818b3ccaa8f78a64c0099dafe0b7dc4aa46"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/item/cannedmeat.png"
+hash = "9fc35c4506378f82e8f08fe4d8377ece9737b46361048f843b9a01f7ab024c79"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/item/capmask.png"
+hash = "23b78337f26eaaccad849cdcf6664907e9c5f63634348ce2eb3d94ea51f7811b"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/item/coatmodel.png"
+hash = "a300b626ed5a736056531d530c426180494b4dc38d541cf120101cf2e3af99e3"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/item/combat_knife.png"
+hash = "01888f4c4e0b32279d0705eeae52c4f690880cac656ea09914c59e46436af3f8"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/item/cricketbat.png"
+hash = "656bea7c12f0822dd6e000c274f158fab9d299dfbac212278f612bbe370284a8"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/item/crmvestchestplateremake.png"
+hash = "c6720c09db38046ced9c77c3839807a8c77c1acd2a5317b2a86b0e8aca9260f1"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/item/crowbar333.png"
+hash = "80a32895c8643a6d9db4250be88ae784f60e99a999f491a8cb0d88d56b0cb231"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/item/ete.png"
+hash = "4ea2812b1f67e5be3b04445037421d44eb204cfd912e009f65cd981d1b0ebfc9"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/item/fireaxe555.png"
+hash = "c53d2d6ae6928c2fc9c5e97267bac33ac6ee1db28fa30b29f446ab87353ce4cd"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/item/fryingpan777.png"
+hash = "ab38aecab9c62b0913f417eeeb6b0c79c46af96514b01f77dd4444171040f422"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/item/golfclubaaa.png"
+hash = "7aa02d9b90bc26049e8be475095289dd03077a5dc06cc274f852156e7d6bf92b"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/item/halberd.png"
+hash = "d986e570ce442cbdea856305040d44d780b23663eaa3f767b50b9e9c7d468b9e"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/item/hammer.png"
+hash = "e122975469eb3a0a124c28d4bb38902c6772a7daa851c951177c3559241d9ed1"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/item/hammer1122.png"
+hash = "b6d4a1b3465ccbdb88d0a3ff7dca35c8657190590686bd0c78dcc62747d23e91"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/item/hammer4511.png"
+hash = "5a3a974868d731550d07bd74562da9702b2433a0736023dda24db3ae13e0340d"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/item/hammer455.png"
+hash = "f8b18e20289004c45f6a97060363a79523b922fcdb93c41bd3ad5ceb8d691544"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/item/hammerr2vv.png"
+hash = "2dd1409a8b466bba90561e2271a8bc7535954dfdcffeda0900142a771f40c605"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/item/hammm22.png"
+hash = "5aa1b0d52f4f7b546d2390eb79c099f5547d812576981c43de75ea9a5dfc7c0c"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/item/hangingbodyy.png"
+hash = "b824a5c852c759126919655a9ee4332b9088e7c9acf4205ff1fd9e378052e25a"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/item/iuiuiui.png"
+hash = "c3b21c7b6e9d8a2a8364daf991f112fd75f783fcdf6d682525aa2984ab906f08"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/item/katana542.png"
+hash = "1a313c6bc33f68748e71a6db0ad558ea64f51d3aa384a99a9b1ef10bd9bbd306"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/item/kol.png"
+hash = "522f4a308980bd24ce474003477f09d9ea967e57ef4c21ca05ca0003c81b00b3"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/item/kukrimachete4.png"
+hash = "795ba44920dc0068cdbbd65638c44095c650101e0566618d48532c161ef56d9b"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/item/lance.png"
+hash = "301e757c5b2e5ffefbc8a7f09e58af99d8a5642ef7da1594d9df31696366e501"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/item/machete.png"
+hash = "5956d7605399fee9a4342cd2496fccebef90446b86359a732bd88231cf3ec4a2"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/item/machete225378.png"
+hash = "e1ccccb32c7e915be8764af4ec43355b14b0aecb42797cc3b0ba6f186c2d7c9b"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/item/military_shovel.png"
+hash = "b2a9e60e3d0fc97a474fbbc3fec8c4c90d36f49e1b7dc850ea2bdde6be6afb31"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/item/militaryboots.png"
+hash = "7fdb4af4bdbc4b88db4de69778e305f9168927d8f5f6b06348d1e073480787eb"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/item/militaryvest.png"
+hash = "77c1983c7e434d1ad2f47542c4c49cec6bf9993faa1a2f728a011a6cb68a9530"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/item/mmm.png"
+hash = "a2c36c781a6859c64feb7a562a4e9956945b567042f50b3789c7530e88518c39"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/item/modelmarine_vestttt.png"
+hash = "58435eb4e57e669ca1b997c0cfcf81e74e24fe45ec3302561efbc7e6890630f5"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/item/nailboard.png"
+hash = "19474bb56e599ed93b188c9dfec0c4f9ae767b3bc58dcf1ce5c90903f0c67fb9"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/item/pipe.png"
+hash = "d4fa3ccc05e25a2691b426c0b31d1da312950bb4b592334e61a7a9f5adb68564"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/item/pipe123.png"
+hash = "68f0d73e484cfef204a88c7e85ef8e5f2263486f9bd4aa6f2949b6551b063e81"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/item/policebaton.png"
+hash = "24809adf75f1336cd06cea308b06e7e1afbb715c3a0feb6101093657dc7fe645"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/item/policebaton_model111.png"
+hash = "85d90f18ffb394ad8d88a23e924410a93ef66dd7e14db2006c1f150ea45b0e91"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/item/pp.png"
+hash = "1417a1262fadfc97bfbd0886a1bfbbdec3ca293bbe279393cd334cbefe2d4a43"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/item/ppouikuku.png"
+hash = "ed92c3742d3632553375073976c074c4ae45b8b92e69d87c26695efa605259a3"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/item/repurposedsawblade.png"
+hash = "53e7da372a3c84ad73e4bb369a83705dd442dcc8a4821c1965f56bfa70d1b1c9"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/item/repurposedscythe.png"
+hash = "2d6a249985f1372c0454e7444e282b1a4d2d04a63bcc2e7bb344ee438cbb7be3"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/item/rerer.png"
+hash = "6de42aa86dbe8551dca53f1d1a5b6313537abdc17d0b6316d9b2b709a9b7a913"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/item/riotshield.png"
+hash = "398dd7560d2fafc1459524ca86265036e99ddfa8b2392126b561090459f705cb"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/item/riotvestremakenewww.png"
+hash = "4ff4a17e065b09dce51c70ba41f2354590131fb4d87b27053f5a0a5e93e76fda"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/item/rustyaxe.png"
+hash = "a7eeb986f236e5c69f6b2f3be9408370bf0979dc438e25590054b4abc775cd64"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/item/rustyhoe.png"
+hash = "fb51d5f4986e39c7f762577b3ba7e36b3edcb466bd6ede078ec05c731fe464c4"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/item/rustypickaxe.png"
+hash = "dc4e6dd6558c6605a5ab7a50fa4dfd76789ffd252dfcb7872d0a8a48b8f999ab"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/item/rustyshovel.png"
+hash = "cf06c2a351db9c929c3856ae4a7b4731e63d40c187992099a983d56d49506679"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/item/s2.png"
+hash = "bcc061353803d0c7676f3d3e9849d5df08ca0760afc320a3b655a04b854349c9"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/item/sawblademace.png"
+hash = "581b17a6ad0339511e896e1aa3e17b983a9bec2f75cb0386814dba2508d5eab8"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/item/shieldblocking.png"
+hash = "82be1f9b46027227fa7b8fdb7d7aec6ed1ec43379c4917764fd862fcf071ccbd"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/item/shiv.png"
+hash = "5d4b6a41d1d5c4a3e57dd54b0ae936b3d65ca06a1cd05bb6b600d7140c164962"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/item/sickle9807.png"
+hash = "19b9537a5f3a2a999271c9e461872b593fe24eb193bad5a919b1bf24c0cfdbf9"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/item/skullmask11.png"
+hash = "c8655d5abc363cb3f6321d6b9bf2a70a6836cbf14d09ca2ba4e81f864420ac9c"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/item/skullmaskmodel.png"
+hash = "8fbe1049189b840540b7952a9a9be80b570cfe28a4d8f098a6a9161315f258c5"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/item/spear.png"
+hash = "5c9f281dc1ba13b47fdf1253eac92f0953eb23cd178d6f0162d607e82966ffa4"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/item/spiked_baseball_bat89000.png"
+hash = "fa86fcb3d149f2aab1d35e08321b2b2f589a319e9fb2865d72b4a8924a554bd4"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/item/steelaxe.png"
+hash = "339576dabc6d92e543a421db5ac23b4304c3a1b2ff38c46a610838d55228fc48"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/item/steelhoe.png"
+hash = "4cde25a53e2a6793f7d5dd2f72ada6f94470a52573d6061e5ae4cdcd9034b104"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/item/steelpickaxe.png"
+hash = "1408c8c4c0ae6631387fe6a86056262cd89fd211cda0ed9a0dbd168e266afe7b"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/item/steelshovel.png"
+hash = "802fbb9541f8b0449873313551d1691685137a0268601799f958f90d515780fc"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/item/tactibackapackremakenew.png"
+hash = "f78b917f6a4a11c894bc363837053ac5134867ed6b3377408432eb22e0bacc14"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/item/tactical_tomahawk910101.png"
+hash = "d526c6717113e0cf1dea84e2b4abd173f1d721ac6b771ec9dafff2e1826a84da"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/item/tacticaltomahawk676.png"
+hash = "464a72f3c18b77eebbbdbd0e68fb022516258dc99acf47fc54308b5974b0f3a3"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/item/uiuiuiuiuo.png"
+hash = "5bf9d3f02be965cc720365378841a27413d5bf6e208f8dec0ed03611878f4d25"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/item/vestremakenewnewremake.png"
+hash = "9b9c22ad893998745f659b11b6ea5e9642730b26d0b5dc4a4f8f18f26c054ca6"
+
+[[files]]
+file = "kubejs/assets/extinction/textures/item/wrench.png"
+hash = "bd75a1ae190b284ac07c5531fb77e79acfa795358468ac690f7d611927a3533b"
+
+[[files]]
 file = "kubejs/assets/itz/lang/en_us.json"
-hash = "d40183aebc2d0e6c8b6d75b695743f965156ff90c0bd0f287a7d17f05484d97e"
+hash = "4f9713997aae2f0e03b7529804ec99ffbf47f0feab4d6e628217958393b40cb3"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/entity/blank.png"
@@ -3764,6 +4788,11 @@ hash = "5a8d9f98b73186e54900a8740d1a9c81fbe897c2dfa3813d88d2324e9a7cf403"
 metafile = true
 
 [[files]]
+file = "mods/atmospherics.pw.toml"
+hash = "11412bdf71187d8d774cb844060704c4b8b6c4ac2bfc91405d50e14b3ccbb37e"
+metafile = true
+
+[[files]]
 file = "mods/backpack-side-gui-1-2-9-beta.pw.toml"
 hash = "ecd9551ddc68ad6a54ce4d2eef8ff605621b7fd7e2a6d347a3cf836cbcc18554"
 metafile = true
@@ -3812,8 +4841,8 @@ hash = "4a840e54415720ef104ec7d6fefb9b74f476f7f516c22be2b07e79e50521e9bd"
 metafile = true
 
 [[files]]
-file = "mods/camera-overhaul-reforged.pw.toml"
-hash = "46ac7acb114cc1b855e1c264698a8041e892e9faaac8d7ceb571d0b9432345f1"
+file = "mods/camerainertia.pw.toml"
+hash = "8fe574f09d99942f539fd5bb6487d74c33208bfe03a6cbc688f405534dae5940"
 metafile = true
 
 [[files]]
@@ -3821,8 +4850,9 @@ file = "mods/canary-mc1.20.1-0.3.3.jar"
 hash = "51f6d78dd6c7874657e5757fd2f5d780aa3cd415052ad071077b8894c6430942"
 
 [[files]]
-file = "mods/Cinematic Interaction-Forge-1.20.1-0.18.30.jar"
-hash = "450633a9df4f5735ca484beb7168343e3919e182a08fd915fc13e2edb24b0443"
+file = "mods/chatanimation.pw.toml"
+hash = "fecc2d1a5361f20c582e0a44d89eaa89d6d069243ebae49c4bccaeb55d0e523f"
+metafile = true
 
 [[files]]
 file = "mods/cinematic_respawn-1.20.1-forge-1.4.3.jar"
@@ -3918,8 +4948,8 @@ hash = "e39f915beb1dcfc335b8b38cf6041d0f9c751b1a479082871df9349bc61b1e5b"
 metafile = true
 
 [[files]]
-file = "mods/diegesis-forge-1.20.1-1.0.0-beta.13.jar"
-hash = "09e42fafaf2019d3e7410205e56bb693e5e8bc8b50c3f413698a794bef1218be"
+file = "mods/diegesis-forge-1.20.1-1.0.0-beta.14.jar"
+hash = "003e37402b4d38302adb6dcf4f90f6f3db759b9d28c8a5001632b3f3e69cfa8a"
 
 [[files]]
 file = "mods/display-delight.pw.toml"
@@ -4073,8 +5103,25 @@ hash = "04d53dcb7f9baf7956aff4a9a778730d3a6cf9aaab3f4e6de5226c36684d8bec"
 metafile = true
 
 [[files]]
+file = "mods/grassier-grass.pw.toml"
+hash = "7142576d8445228f500123bbdde323693c8d15b0e5347dfc648585a5851856cb"
+metafile = true
+
+[[files]]
+file = "mods/grassiergrassfix-1.0.1.1.jar"
+hash = "afd00234384840e1e2ed53f026a0ea919efdbf666a802138a4b46772438ebd3d"
+
+[[files]]
+file = "mods/hands_on_delight_advantage-1.0.1.jar"
+hash = "dcaaddd5c9d41babc190c2bb750c0a247b182b9853a59487f3b1911e1159e91d"
+
+[[files]]
 file = "mods/handson_delight-forge-1.20.1-1.5.0.jar"
 hash = "7b581e265ac60d0af6a8c5480fe0d6ceb8608a9109573eae5203d20cabb8f373"
+
+[[files]]
+file = "mods/handson_vanilla-forge-1.20.1-1.2.4.jar"
+hash = "47d60a480a65c512da4bd26351f2a3092323ea72d2ed5e44b92c6f573b77a00b"
 
 [[files]]
 file = "mods/herbalists_delight-1.0.0-forge-1.20.1.jar"
@@ -4365,6 +5412,18 @@ file = "mods/roadweaver-forge-2.1.1-1.20.1.jar"
 hash = "8c28831d0a18f7c7366737fb14cd987af7e34b660ad3a175550775f060fe2eb2"
 
 [[files]]
+file = "mods/scav_meshfix-1.0.0.jar"
+hash = "4af2a5835a22f39238908903929b293682fd3398c3901aa7efdf4103fbde0f2e"
+
+[[files]]
+file = "mods/scav_reticle-1.0.0.jar"
+hash = "0d1e2506c003a39520bc779949708d39317f80a8b331e13f28aa7922a88e04a3"
+
+[[files]]
+file = "mods/scav_shadows-1.0.0.jar"
+hash = "1a601967a87cb276937d2f54da440feff331d73a1cf57062e661c6d5a1a77cbe"
+
+[[files]]
 file = "mods/scavenger-0.2.0.jar"
 hash = "33abdd42c1b0e8dd9c7f2c87c6840ab406125154a5d2a00dc9441ce5d719f75e"
 
@@ -4396,6 +5455,16 @@ metafile = true
 [[files]]
 file = "mods/smartbrainlib.pw.toml"
 hash = "3445c76534774af74ef1fceafa8570ced43d83c903aa4c3c8c716ab2439e8a34"
+metafile = true
+
+[[files]]
+file = "mods/smooth-swapping.pw.toml"
+hash = "09407f05c9c7875fa1a41f4b9371e40d874c7f0b7bdfb5d77016f9dad88397da"
+metafile = true
+
+[[files]]
+file = "mods/smooth-third-person-camera.pw.toml"
+hash = "daa133a6d6d5c9712ee9bd6642ba351d76e91a09e2ab9e65dd862378ef5d18d5"
 metafile = true
 
 [[files]]
@@ -4566,20 +5635,16 @@ hash = "d6364e3b3ffea4b912889d3dcd3e2acebf7d663b22b96402402fbd383eefa460"
 
 [[files]]
 file = "mods/zone_tactical_anims-0.1.0.jar"
-hash = "a6b15757ef02db655e8352db2d853746a01a6f56b96ee6b284b08047bee63149"
+hash = "a74700b4b0a35670c4ffa7a82ec915afad658470af50ede223edbb388968e2e0"
 
 [[files]]
 file = "options.txt"
-hash = "6078340dfb4650fd9a6f280cb1532f7c73b75ba344aaeecc6bd268099de1b0fa"
+hash = "df7224589bdeb469ed2b4bf3ec7747af205902f1386d2f6d2f1e6813a6373d4a"
 preserve = true
 
 [[files]]
 file = "resourcepacks/§e§lAllure 3D Plants§r§0.zip"
 hash = "b2a0d752bb6af5cb24e163b3805b65fc8518d5abe0fd8d3467bf824e847c0856"
-
-[[files]]
-file = "resourcepacks/Alternative Rain Sounds 26.1-26.2.zip"
-hash = "f6b2ed234820fbbceab9e25ac79210369ba2a8e17e8fe749d7422fa26144ae06"
 
 [[files]]
 file = "resourcepacks/Ashen_16x.zip"
@@ -4588,10 +5653,6 @@ hash = "6f01c16cf8d24b894850d4e3151f3f2d0823d9c42cdeafcf742bae49b0afd5c0"
 [[files]]
 file = "resourcepacks/Better-Leaves-9.6.zip"
 hash = "cbeeccd774f910ed270dbe9651d789a8f785d055499f846e466d86f9cae91e90"
-
-[[files]]
-file = "resourcepacks/Enhanced Audio r7.zip"
-hash = "77baaeb8469acf33c6f852aa70336d09cda781322dd32cb599eb6089ab4f323c"
 
 [[files]]
 file = "resourcepacks/fa-player-v1-0.pw.toml"
@@ -4612,12 +5673,12 @@ hash = "01a2a13f84243c47dd8c19648854fe9bfdc85a8ed5184ec13a6983223a40b6b6"
 preserve = true
 
 [[files]]
-file = "shaderpacks/photon_v1.4_lite.zip"
-hash = "825c98130f270a5308c0e5a774ae62946a18254a702c22c34d0379eb015c39bd"
+file = "shaderpacks/SCAVENGER-Shader-2.0.zip"
+hash = "4979ffdcf502f47b3737229ef78640f808284decaee1f3a6a0ef1bbf92188cd5"
 
 [[files]]
-file = "shaderpacks/photon_v1.4_lite.zip.txt"
-hash = "d9b39cdad7da7f6d087bb0fd671ca4c6dde693359f5ed0475273bd6911f2d6ba"
+file = "shaderpacks/SCAVENGER-Shader-2.0.zip.txt"
+hash = "848e5a18f0f475ade6b2e197505bfa1099250d40188737334b2f4c2a684aebad"
 
 [[files]]
 file = "tacz/.export-state.json"
