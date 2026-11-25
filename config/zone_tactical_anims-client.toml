@@ -97,6 +97,49 @@
 	#Shaders: skip Brimm armour in the shadow pass. Brimm draws its armour into the main frame buffer, so with shaders a tiny
 	#copy of the armour (seen from the sun) showed at the centre of the screen and in scopes. false = Brimm's own behaviour.
 	brimmShadowFix = true
+	#0.91.1: Brimm shoulder patches follow the arm (they floated when the arm moved) and sit 1 px in on slim arms.
+	brimmPatchesOnArms = true
+	#A Brimm torso patch further than this from the centre line (blocks; torso half-width = 0.25) counts as a shoulder patch.
+	#Range: 0.0 ~ 1.0
+	brimmPatchArmEdge = 0.24
+	#0.91.1 Holster Rig, no backpack: the second slung gun sits this much higher than the first (blocks, negative = up).
+	#Range: -1.0 ~ 1.0
+	holsterRigUp = -0.2
+	#0.91.1 Holster Rig, no backpack: and this much further off the back (so the two guns don't clip).
+	#Range: -0.5 ~ 0.5
+	holsterRigOut = 0.04
+	#0.91.1: how Anomaly Zone draws anomalies (same as its /anomalyshader command). 1 = normal lit render (visible with our
+	#shader pack), 2 = unlit baked texture, 0 = AZ auto (unlit whenever a shader pack is on: anomalies vanish with ours), -1 = don't touch.
+	#Range: -1 ~ 2
+	anomalyShaderMode = 1
+	#0.91.1: the Brimm patch on your chest armour also shows on the top right of your backpack.
+	backpackPatch = true
+	#Backpack patch centre, body space in blocks: x (negative = wearer's right = top right seen from behind).
+	#Range: -1.0 ~ 1.0
+	backpackPatchX = -0.16
+	#Backpack patch top edge (blocks below the neck).
+	#Range: -1.0 ~ 1.0
+	backpackPatchY = 0.05
+	#Backpack patch distance out from the body (the pack's back face).
+	#Range: -1.0 ~ 2.0
+	backpackPatchZ = 0.44
+	#Backpack patch width in blocks (height follows the patch image).
+	#Range: 0.02 ~ 1.0
+	backpackPatchSize = 0.16
+	#0.91.1: armour worn in the Curios body (cosmetic) slot is drawn instead of the real chest armour (the real one is hidden, its stats still count).
+	cosmeticHidesChest = true
+	#0.91.1: Weather Glass redraws the rain/frost/dust on glass only every N client ticks (20 ticks = 1 s). Each redraw writes into
+	#the block atlas, which stalls the frame; 4 = 5 times a second (stepped, stop-motion drops). 1 = Weather Glass's own (every tick).
+	#Range: 1 ~ 20
+	weatherGlassUploadEvery = 4
+	#0.91.1: a faint beam cone in front of other players' (and NPCs') lit headlamps. Never drawn for yourself in first person.
+	headlampCone = true
+	#Headlamp cone length in blocks.
+	#Range: 1.0 ~ 12.0
+	headlampConeLength = 4.0
+	#Headlamp cone strength at the lamp (fades to 0 at the end).
+	#Range: 0.0 ~ 1.0
+	headlampConeAlpha = 0.22
 
 [third_person]
 	#(old setting, no longer used)

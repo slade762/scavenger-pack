@@ -14,6 +14,8 @@
 	#Health per heal (1 = half a heart)
 	#Range: 0.0 ~ 20.0
 	regenAmount = 1.0
+	#1.4.1: a normal bed with a lantern or lit campfire nearby is a campsite too (registered when placed or right-clicked)
+	bedCampsites = true
 
 [medicalBag]
 	#Besides anything edible and the item tag survival_essentials:med_bag_items,
