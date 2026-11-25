@@ -62,7 +62,7 @@ hash = "b41fe8caacb87c1e18ca99a79dff37fa1e50e780bbece15c2c27450df46c5762"
 
 [[files]]
 file = "config/badmobs-common.toml"
-hash = "7097734810bf16106ec7291d2d72fa3f96fdc79185a3bf694128d0ed31c77db2"
+hash = "e8660c790172c0e81d7a0e955f8e68bed41645db65cc6bbd12e7d7d86db216b9"
 
 [[files]]
 file = "config/badmobs-common.toml.original"
@@ -134,7 +134,7 @@ hash = "b0fa9ec5d41f666fa2c770bb2bde4753cbeeef76909f4765d6ebbf5683c4ae58"
 
 [[files]]
 file = "config/cinematic_respawn.properties"
-hash = "28342848d9ec87caedcff47ede27809455a748ae03f605fad516f9855fb0d3c2"
+hash = "176243f1d6f729077af05885dfa510f6901f6d1dbebe1cff2da2e08006b165d9"
 
 [[files]]
 file = "config/cinematic-client.toml"
@@ -314,7 +314,7 @@ hash = "13aee892d000bdd43d88178fbcaa96549f28ae4ae528e1f1eacaf791742f9ec6"
 
 [[files]]
 file = "config/fabric/indigo-renderer.properties"
-hash = "03d10374a68757875100c09f24d35a39d527c80426406391d872aaec901544ce"
+hash = "a2aaabd7eac26b69cd571d9ff7329c236f116af6b427e3f024696dbeb86d24d9"
 
 [[files]]
 file = "config/fallingleaves-client.toml"
@@ -482,7 +482,7 @@ hash = "6a455b11a74f6dfe1a41e8aff866bde270aca2a34ba752f350c1ba9daf5adb89"
 
 [[files]]
 file = "config/handson_delight.properties"
-hash = "5115ef48c2b4dc2c2c64f8be0c445d4d26cd7c9c7074b11c3d64ad2ac5209c29"
+hash = "296819bb07344829a498b02ae161de0519f3314b78884292e331f19be6fcdcc4"
 
 [[files]]
 file = "config/handson_delight-book.properties"
@@ -1926,11 +1926,11 @@ hash = "f72dc2bce12a55066bd33e50c47b1ad33b1bdda65778cb5653d876e1fec3694d"
 
 [[files]]
 file = "config/oculus.properties"
-hash = "9fdf96f056db29090db6850539ffe0bd25eb2cffc4cb379f9ed0ed3649d54e75"
+hash = "af96624580c811a80293cea1ee450eb6ea6c4a7d5c249dc362e1e43266c5ee0d"
 
 [[files]]
 file = "config/packetfixer.properties"
-hash = "52e34f0bc7e07257622f228db8e529a52184718003d9f90ae66168f702d774a1"
+hash = "53e4103313954119abfdeaef36edf2f6a8e5b4eb8ca62bd5bc43a649f87c7516"
 
 [[files]]
 file = "config/particle_core_config.toml"
@@ -2031,6 +2031,10 @@ hash = "96e775dd28339aabffa306ee15ceb39cb17da9faf8998ba6ca517cf497d85430"
 [[files]]
 file = "config/raritycore/TagRarity.json"
 hash = "16f47fb8f0dc15c7287ccc52779729da4d2b6f7c6d970fe16cd0d712b9137350"
+
+[[files]]
+file = "config/refurbished_furniture.client.toml"
+hash = "f151762bc99261b0244618cb3cc856e4d1fe089b6cf9eaf7b23c42a9fbc57970"
 
 [[files]]
 file = "config/renderscale.json5"
@@ -2366,7 +2370,7 @@ hash = "e26b00784bb6239988759ed1a64551b9f301dc33c5a855d91e976ee4bf40ac8a"
 
 [[files]]
 file = "config/sound_physics_remastered/sound_rates.properties"
-hash = "afd9d924e79fff42d43787364e7984e83a697103da770c158c058c8427fa12d5"
+hash = "9c704784e0a5796c471d43475f693641bd96f23dff24e9c6205be5a0a974a8f7"
 
 [[files]]
 file = "config/sound_physics_remastered/soundphysics.properties"
@@ -5792,8 +5796,8 @@ hash = "e39f915beb1dcfc335b8b38cf6041d0f9c751b1a479082871df9349bc61b1e5b"
 metafile = true
 
 [[files]]
-file = "mods/diegesis-forge-1.20.1-1.0.0-beta.14.jar"
-hash = "003e37402b4d38302adb6dcf4f90f6f3db759b9d28c8a5001632b3f3e69cfa8a"
+file = "mods/diegesis-forge-1.20.1-1.0.0-beta.19.3.jar"
+hash = "c00dfa9a65040b45943c0a6eed3eddbdfcec7bebe412b8499fe5e4e7ea962a1f"
 
 [[files]]
 file = "mods/display-delight.pw.toml"
@@ -6540,7 +6544,7 @@ hash = "22f46afdf395330422fff18c5dd6d000de159194c261e75d5b6ac83284991494"
 
 [[files]]
 file = "shaderpacks/SCAVENGER-Shader-2.0.zip.txt"
-hash = "a5962bfe5895d23de444e2d8cf910391cad92cab06be1638aa3efaa130f25093"
+hash = "4a29a2a7e3a1e3373359702c663d02524d57536bed3e64c912734493ce62c7ad"
 
 [[files]]
 file = "tacz/.export-state.json"
