@@ -134,7 +134,7 @@ hash = "b0fa9ec5d41f666fa2c770bb2bde4753cbeeef76909f4765d6ebbf5683c4ae58"
 
 [[files]]
 file = "config/cinematic_respawn.properties"
-hash = "ed93a8e510a33119d6d0812d3003c86081a0d958f2e347cf57768a7673dac3b9"
+hash = "28342848d9ec87caedcff47ede27809455a748ae03f605fad516f9855fb0d3c2"
 
 [[files]]
 file = "config/cinematic-client.toml"
@@ -314,7 +314,7 @@ hash = "13aee892d000bdd43d88178fbcaa96549f28ae4ae528e1f1eacaf791742f9ec6"
 
 [[files]]
 file = "config/fabric/indigo-renderer.properties"
-hash = "5d8ee609ae4d6f5ab788cf1059a206fe8ea162685dab89a84143212ab2a92f66"
+hash = "03d10374a68757875100c09f24d35a39d527c80426406391d872aaec901544ce"
 
 [[files]]
 file = "config/fallingleaves-client.toml"
@@ -482,7 +482,7 @@ hash = "6a455b11a74f6dfe1a41e8aff866bde270aca2a34ba752f350c1ba9daf5adb89"
 
 [[files]]
 file = "config/handson_delight.properties"
-hash = "2e14c9bb1ece983dafe5c5ec1aee146ce8bfcf7adf975228f2c33ddadba45af2"
+hash = "5115ef48c2b4dc2c2c64f8be0c445d4d26cd7c9c7074b11c3d64ad2ac5209c29"
 
 [[files]]
 file = "config/handson_delight-book.properties"
@@ -1926,11 +1926,11 @@ hash = "f72dc2bce12a55066bd33e50c47b1ad33b1bdda65778cb5653d876e1fec3694d"
 
 [[files]]
 file = "config/oculus.properties"
-hash = "8da400ea75b3e198cf8878660da5f3eda0e41cb39764609fd37b6ff37865db9e"
+hash = "9fdf96f056db29090db6850539ffe0bd25eb2cffc4cb379f9ed0ed3649d54e75"
 
 [[files]]
 file = "config/packetfixer.properties"
-hash = "df44b1c374f29b66c4f66987510882aa49e853325963a06c0eb07037c0a4295b"
+hash = "52e34f0bc7e07257622f228db8e529a52184718003d9f90ae66168f702d774a1"
 
 [[files]]
 file = "config/particle_core_config.toml"
@@ -5913,6 +5913,10 @@ hash = "95c36091c5a5d047c4dd5adbe68e49112d911b6c4eac428f253076b4c16283ad"
 metafile = true
 
 [[files]]
+file = "mods/framework-forge-1.20.1-0.8.0.jar"
+hash = "37c267f46d8b8dfa81bae8c9fa9fa6467e456cadecae10722ee91b43437f25a0"
+
+[[files]]
 file = "mods/frontline-1.20.1-0.6.3-multiloader.jar"
 hash = "912d8c132cd579d3166e7c194f8d2bddc0786c22c900253b2d94fa8e69763926"
 
@@ -5952,6 +5956,10 @@ hash = "dcaaddd5c9d41babc190c2bb750c0a247b182b9853a59487f3b1911e1159e91d"
 [[files]]
 file = "mods/handson_delight-forge-1.20.1-1.5.0.jar"
 hash = "7b581e265ac60d0af6a8c5480fe0d6ceb8608a9109573eae5203d20cabb8f373"
+
+[[files]]
+file = "mods/handson_furniture-forge-1.20.1-1.2.1.jar"
+hash = "4716e0919da9053c95aaf85c449330ba3c0420bc39caab75364fd12e5ac8d95c"
 
 [[files]]
 file = "mods/handson_vanilla-forge-1.20.1-1.2.4.jar"
@@ -6234,6 +6242,10 @@ metafile = true
 file = "mods/raritycore-1201-14-4.pw.toml"
 hash = "641ff5905815959f31638dc867dd98ba3435b4f0aaa2e35205db68d788518e55"
 metafile = true
+
+[[files]]
+file = "mods/refurbished_furniture-forge-1.20.1-1.0.20.jar"
+hash = "480546202aa21fa07e6b1571f3e3263e5690e9804afb7c35984642bcf473bc6e"
 
 [[files]]
 file = "mods/rhino-forge-2001-2-3-build-10.pw.toml"
@@ -6528,7 +6540,7 @@ hash = "22f46afdf395330422fff18c5dd6d000de159194c261e75d5b6ac83284991494"
 
 [[files]]
 file = "shaderpacks/SCAVENGER-Shader-2.0.zip.txt"
-hash = "508b086375dd93ff3b20faa016a5b6908321121db217c7bacf67beebe9ebaa08"
+hash = "a5962bfe5895d23de444e2d8cf910391cad92cab06be1638aa3efaa130f25093"
 
 [[files]]
 file = "tacz/.export-state.json"
