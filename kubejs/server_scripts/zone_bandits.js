@@ -46,7 +46,7 @@ function awareness(server) {
   if (players.length === 0) return
   const box = AABB.of(CAMP.x - 70, 40, CAMP.z - 70, CAMP.x + 70, 120, CAMP.z + 70)
   const bandits = []
-  level.getEntitiesWithin(box).forEach(e => { if (String(e.getEncodeId()) == 'tacznpcs:npc' && String(e.name.string) == 'Bandit' && zbCall(e, ['isAlive', 'm_6084_']) !== false) bandits.push(e) })
+  level.getEntitiesWithin(box).forEach(e => { if (String(e.getEncodeId()) == 'tacznpcs:npc' && (String(e.name.string) == 'Bandit' || e.tags.contains('zn_bandit')) && zbCall(e, ['isAlive', 'm_6084_']) !== false) bandits.push(e) })
   let set = 0, had = 0
   bandits.forEach(b => {
     const cur = zbCall(b, ['m_5448_', 'getTarget'])
@@ -89,7 +89,7 @@ ServerEvents.tick(event => {
   server.players.forEach(p => { if (String(p.level.dimension).includes('overworld') && Math.hypot(p.x - CAMP.x, p.z - CAMP.z) < 110) inTown = true })
   const pd = server.persistentData
   const clearedAt = Number(pd.getLong('zone_bandits_cleared')) || 0
-  const grunts = server.runCommandSilent(`execute if entity @e[type=tacznpcs:npc,name=Bandit,tag=!zone_leader,${AREA}]`) || 0
+  const grunts = server.runCommandSilent(`execute if entity @e[type=tacznpcs:npc,tag=zn_bandit,tag=!zone_leader,${AREA}]`) || 0
   const leaders = server.runCommandSilent(`execute if entity @e[type=tacznpcs:npc,tag=zone_leader,${AREA}]`) || 0
   const loaded = server.runCommandSilent(`execute in minecraft:overworld if loaded ${CAMP.x} 0 ${CAMP.z}`) || 0
   // camp just wiped out: start the 20 minute timer

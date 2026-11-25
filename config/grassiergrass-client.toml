@@ -8,13 +8,13 @@
 	grassSparsity = 0.0
 	#Height of the grass blades.
 	#Range: 0.1 ~ 1.3
-	bladeHeight = 0.4000000059604645
+	bladeHeight = 0.25
 	#Scales the built-in blade height variation. 1.0 is the default look; 0 makes blades uniform.
 	#Range: 0.0 ~ 5.0
-	heightVariation = 1.0
+	heightVariation = 0.699999988079071
 	#Width multiplier for grass blades.
 	#Range: 0.25 ~ 2.0
-	bladeWidth = 0.6499999761581421
+	bladeWidth = 0.800000011920929
 	#How far (in blocks) grass renders around you. Cached per chunk, so distance is cheap.
 	#Range: 16 ~ 160
 	renderRadius = 64

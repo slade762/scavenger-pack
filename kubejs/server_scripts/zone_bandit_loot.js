@@ -11,7 +11,7 @@ function zlootNotes(e, rub) {
 }
 EntityEvents.death(event => {
   const e = event.entity
-  if (String(e.getEncodeId()) !== 'tacznpcs:npc' || String(e.name.string) !== 'Bandit') return
+  if (String(e.getEncodeId()) !== 'tacznpcs:npc' || (String(e.name.string) !== 'Bandit' && !e.tags.contains('zn_bandit'))) return
   const leader = e.tags.contains('zone_leader')
   const rub = leader ? 30000 + Math.floor(Math.random() * 16) * 500 : 2000 + Math.floor(Math.random() * 9) * 500
   zlootNotes(e, rub)

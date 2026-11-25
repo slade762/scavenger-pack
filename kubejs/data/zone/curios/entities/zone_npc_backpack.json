@@ -1,0 +1,9 @@
+{
+  "entities": [
+    "tacznpcs:npc"
+  ],
+  "slots": [
+    "back",
+    "head"
+  ]
+}
