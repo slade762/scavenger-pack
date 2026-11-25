@@ -1,0 +1,45 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "anomalyzone:stew_can",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:baked_cod_stew",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:beef_stew",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:fish_stew",
+      "required": false
+    },
+    {
+      "id": "itz:anti_rads",
+      "required": false
+    },
+    {
+      "id": "itz:radio_protectant",
+      "required": false
+    },
+    {
+      "id": "minecraft:honey_bottle",
+      "required": false
+    },
+    {
+      "id": "minecraft:mushroom_stew",
+      "required": false
+    },
+    {
+      "id": "minecraft:rabbit_stew",
+      "required": false
+    },
+    {
+      "id": "minecraft:suspicious_stew",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "anomalyzone:energy_drink",
+      "required": false
+    },
+    {
+      "id": "extinction:canned_fruit",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:milk_bottle",
+      "required": false
+    },
+    {
+      "id": "itz:energy_drink",
+      "required": false
+    },
+    {
+      "id": "minecraft:beetroot_soup",
+      "required": false
+    }
+  ]
+}

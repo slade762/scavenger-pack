@@ -1,0 +1,41 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "anomalyzone:nuka_kola",
+      "required": false
+    },
+    {
+      "id": "extinction:soda",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:bone_broth",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:hot_cocoa",
+      "required": false
+    },
+    {
+      "id": "herbalists_delight:blue_tea",
+      "required": false
+    },
+    {
+      "id": "herbalists_delight:crimson_tea",
+      "required": false
+    },
+    {
+      "id": "herbalists_delight:ghost_petal_tea",
+      "required": false
+    },
+    {
+      "id": "herbalists_delight:weeping_fern_tea",
+      "required": false
+    },
+    {
+      "id": "tarkovdayz:cola",
+      "required": false
+    }
+  ]
+}

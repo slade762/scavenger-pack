@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "extinction:bottle_water",
+      "required": false
+    }
+  ]
+}

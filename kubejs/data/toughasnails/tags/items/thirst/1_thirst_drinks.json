@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "anomalyzone:vodka_hryuchevo",
+      "required": false
+    },
+    {
+      "id": "extinction:vodka",
+      "required": false
+    },
+    {
+      "id": "extinction:whiskey",
+      "required": false
+    },
+    {
+      "id": "itz:vodka",
+      "required": false
+    }
+  ]
+}

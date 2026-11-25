@@ -3,7 +3,7 @@
 	#Master switch for the voxel gore wounds.
 	master = true
 	#Apply voxel gore to players too (not only mobs).
-	hurtPlayers = true
+	hurtPlayers = false
 	#Make headshots carve bigger, deeper wounds.
 	headshotBonus = false
 	#Play flesh impact sounds when a gun hits a mob.

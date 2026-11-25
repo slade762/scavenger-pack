@@ -47,7 +47,7 @@ var ZQM = {
     orchard:    { label: 'Dead Orchard', poi: 'orchard', at: [-470, 560] },
     culverts:   { label: 'The Culverts', poi: 'culverts', at: [-1640, 330] },
     tunnels:    { label: 'The Tunnels', poi: 'tunnels', at: [-1760, -100] },
-    crater:     { label: 'Psi crater', at: [-520, -60] },
+    crater:     { label: 'Psi crater', at: [-544, -92] },
     scorcher:   { label: 'The Scorcher', scorcher: true, at: [-540, -330] },
     poppy:      { label: 'Poppy Field', poi: 'poppy', at: [-480, 170] }
   },

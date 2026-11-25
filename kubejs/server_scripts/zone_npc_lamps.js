@@ -16,7 +16,7 @@ function znlUpdate(level, e) {
   var h = inv.getStacksHandler('head').orElse(null)
   if (!h) return                                           // no head slot yet (before the restart)
   var cur = h.getStacks().getStackInSlot(0), has = !cur.isEmpty() && String(cur.getId()) === ZNL.ITEM
-  var on = has && cur.hasTag() && cur.getTag().getBoolean('ZtaLampOn')
+  var tag = has ? cur.nbt : null, on = has && tag != null && tag.getBoolean('ZtaLampOn')
   var light = level.getRawBrightness(e.blockPosition().above(), level.getSkyDarken())
   var want = on ? light < ZNL.OFF_FROM : light < ZNL.ON_BELOW
   if (has && on === want) return

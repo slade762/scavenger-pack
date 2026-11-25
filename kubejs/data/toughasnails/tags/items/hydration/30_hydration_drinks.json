@@ -1,0 +1,49 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "anomalyzone:nuka_kola",
+      "required": false
+    },
+    {
+      "id": "anomalyzone:solyanka",
+      "required": false
+    },
+    {
+      "id": "extinction:canned_soup",
+      "required": false
+    },
+    {
+      "id": "extinction:soda",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:chicken_soup",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:hot_cocoa",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:noodle_soup",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:onion_soup",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:pumpkin_soup",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:vegetable_soup",
+      "required": false
+    },
+    {
+      "id": "tarkovdayz:cola",
+      "required": false
+    }
+  ]
+}

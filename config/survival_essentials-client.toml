@@ -1,5 +1,7 @@
 #Show the med bag button on the inventory screen while one is worn
 inventoryButton = true
+#Hide the outline on the block you're aiming at (1.4.0). Still shown in creative and spectator.
+hideBlockOutline = true
 
 #Worn sleeping bag / tent roll, same units (centre of the roll). y: - = higher, above the shoulders
 [wornBedroll]
@@ -45,4 +47,24 @@ inventoryButton = true
 	z = 0.19
 	#Range: 0.1 ~ 2.0
 	scale = 1.0
+
+#Anomaly Zone artifact container (1.4.0): with a backpack, strapped onto the pack's outer face; without one, on the upper back (no hip belt).
+#Pixels from the top of the body (16 = 1 block). x: + = left, y: + = down (top edge of the container), z: + = further back
+[containerOnPack]
+	enabled = true
+	#Range: -16.0 ~ 16.0
+	x = 0.0
+	#Range: -16.0 ~ 32.0
+	y = 3.3
+	#Range: -16.0 ~ 32.0
+	z = 9.0
+	#Size compared with Anomaly Zone's own (1.0)
+	#Range: 0.1 ~ 2.0
+	scale = 0.75
+	#No backpack worn: height on the upper back (top edge, pixels below the neck)
+	#Range: -16.0 ~ 32.0
+	yNoBackpack = 2.5
+	#No backpack worn: extra distance from the back (added to Anomaly Zone's armour-aware gap)
+	#Range: -16.0 ~ 16.0
+	zNoBackpack = 0.0
 

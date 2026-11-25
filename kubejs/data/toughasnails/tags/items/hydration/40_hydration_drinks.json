@@ -1,0 +1,29 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "farmersdelight:apple_cider",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:bone_broth",
+      "required": false
+    },
+    {
+      "id": "herbalists_delight:blue_tea",
+      "required": false
+    },
+    {
+      "id": "herbalists_delight:crimson_tea",
+      "required": false
+    },
+    {
+      "id": "herbalists_delight:ghost_petal_tea",
+      "required": false
+    },
+    {
+      "id": "herbalists_delight:weeping_fern_tea",
+      "required": false
+    }
+  ]
+}
