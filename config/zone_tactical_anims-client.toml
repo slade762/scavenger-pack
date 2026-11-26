@@ -140,6 +140,8 @@
 	#Headlamp cone strength at the lamp (fades to 0 at the end).
 	#Range: 0.0 ~ 1.0
 	headlampConeAlpha = 0.22
+	#0.92.0: also draw the cone shape while a shader pack is on (off: the SCAVENGER shader draws real beams in the air instead).
+	headlampConeWithShaders = false
 
 [third_person]
 	#(old setting, no longer used)
@@ -388,6 +390,11 @@
 	#1.0 = normal, 0 = off (only the Sodium Dynamic Lights glow is left). Width, range and colour are in the shader's Lighting -> SCAVENGER Headlamp menu.
 	#Range: 0.0 ~ 3.0
 	headlampBeam = 1.0
+	#0.92.0: other players' and NPCs' lit headlamps light the world as real shader spotlights too (SCAVENGER shader; nearest 8).
+	headlampOthersBeam = true
+	#How far other people's headlamp beams reach (blocks). Each beam stops at the first wall it hits.
+	#Range: 8.0 ~ 64.0
+	headlampOthersRange = 32.0
 
 [holster]
 	#Gun in hotbar slot 1 is slung on your back when not held. 1 draws it, 1 again (or H) slings it.

@@ -1,0 +1,11 @@
+mutantmonsters:hulk_hammer	inventory_particles:hulk_hammer/glint/glint0_0	0	0	8	8
+mutantmonsters:hulk_hammer	inventory_particles:hulk_hammer/glint/glint0_1	8	0	8	8
+mutantmonsters:hulk_hammer	inventory_particles:hulk_hammer/glint/glint0_2	16	0	8	8
+mutantmonsters:hulk_hammer	inventory_particles:hulk_hammer/glint/glint0_3	24	0	8	8
+mutantmonsters:hulk_hammer	inventory_particles:hulk_hammer/glint/glint0_4	32	0	8	8
+mutantmonsters:mutant_zombie_spawn_egg	inventory_particles:mutant_zombie_spawn_egg/fallback/standard_0	40	0	8	8
+mutantmonsters:mutant_zombie_spawn_egg	inventory_particles:mutant_zombie_spawn_egg/fallback/standard_1	48	0	8	8
+mutantmonsters:mutant_zombie_spawn_egg	inventory_particles:mutant_zombie_spawn_egg/fallback/standard_2	56	0	8	8
+mutantmonsters:mutant_zombie_spawn_egg	inventory_particles:mutant_zombie_spawn_egg/fallback/standard_3	64	0	8	8
+mutantmonsters:mutant_zombie_spawn_egg	inventory_particles:mutant_zombie_spawn_egg/fallback/standard_4	72	0	8	8
+mutantmonsters:mutant_zombie_spawn_egg	inventory_particles:mutant_zombie_spawn_egg/fallback/standard_5	80	0	8	8
