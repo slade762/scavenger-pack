@@ -7,7 +7,7 @@
   "wetGrass": true,
   "modPlantWind": true,
   "texMesh": true,
-  "density": 0.7851762,
+  "density": 0.52167857,
   "clumpSize": 0.99523693,
   "colorVariation": 1.918796,
   "brightness": 0.5,
@@ -23,7 +23,7 @@
   "ambient": true,
   "trample": true,
   "recoverSeconds": 6.0,
-  "renderChunks": 8,
+  "renderChunks": 4,
   "renderDistance": 128,
   "nearDistance": 32,
   "shaderPackFallback": true
