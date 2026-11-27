@@ -57,6 +57,9 @@
 	#1.0: Sophisticated Backpacks a player wears or carries are turned into our backpack (first 27 stacks inside it,
 	#the rest and its upgrades in an Old Gear crate). Needs Sophisticated Backpacks still installed. One-way.
 	convertSophisticated = true
+	#1.6: walking speed lost with the Expedition Pack's compartment completely full (0.10 = 10%; scales with how full it is)
+	#Range: 0.0 ~ 0.5
+	expeditionSlowdown = 0.1
 
 [materialsBag]
 	#1.1: besides anything placeable as a block and the item tag survival_essentials:materials_bag_items

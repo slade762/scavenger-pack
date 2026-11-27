@@ -1,0 +1,20 @@
+
+[general]
+	#Si es true, el modo altura libre empieza activado para cada jugador.
+	enabledByDefault = false
+	#Aplicar la altura libre tambien a bloques de otros mods (casilla principal).
+	applyToModdedBlocks = true
+	#Al colocar un bloque al costado de otro desplazado, hereda su altura.
+	inheritHeightOnSides = true
+	#Desplazamiento maximo hacia abajo, en pixeles (1/16 de bloque). 1024 = 64 bloques; permite apilar muchas losas.
+	#Range: 1 ~ 4096
+	maxStackDropPixels = 1024
+	#Baja a quien se sienta en una entidad-asiento de otro mod creada dentro de un bloque desplazado.
+	autoShiftSeats = true
+	#Muestra en el chat el calculo de altura al colocar (para diagnosticar).
+	debug = false
+	#Bloques excluidos: 'modid:bloque' o 'modid:*' para un mod entero.
+	blacklist = []
+	#Mods (namespaces) desactivados desde la interfaz del juego.
+	disabledMods = []
+

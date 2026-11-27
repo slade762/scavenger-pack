@@ -112,7 +112,7 @@
 	#shader pack), 2 = unlit baked texture, 0 = AZ auto (unlit whenever a shader pack is on: anomalies vanish with ours), -1 = don't touch.
 	#Range: -1 ~ 2
 	anomalyShaderMode = 1
-	#0.91.1: the Brimm patch on your chest armour also shows on the top right of your backpack.
+	#0.91.1 / 0.93.6: your SCAVENGER faction patch (patch slot) also shows on the top right of your backpack.
 	backpackPatch = true
 	#Backpack patch centre, body space in blocks: x (negative = wearer's right = top right seen from behind).
 	#Range: -1.0 ~ 1.0
@@ -122,7 +122,7 @@
 	backpackPatchY = 0.05
 	#Backpack patch distance out from the body (the pack's back face).
 	#Range: -1.0 ~ 2.0
-	backpackPatchZ = 0.44
+	backpackPatchZ = 0.505
 	#Backpack patch width in blocks (height follows the patch image).
 	#Range: 0.02 ~ 1.0
 	backpackPatchSize = 0.16
@@ -591,6 +591,24 @@
 		#Range: -360.0 ~ 360.0
 		pitch = 180.0
 
+	#0.93.3: where the slung gun goes while the Survival Essentials Expedition Pack is worn (strapped to its side).
+	[holster.expedition_pack]
+		#Sideways (negative = your right side).
+		#Range: -1.0 ~ 1.0
+		x = -0.45
+		#Down the back.
+		#Range: -1.0 ~ 1.5
+		y = 0.25
+		#Out from the back.
+		#Range: -1.0 ~ 1.0
+		z = 0.4
+		#Range: -360.0 ~ 360.0
+		yaw = 88.0
+		#Range: -360.0 ~ 360.0
+		roll = 100.0
+		#Range: -360.0 ~ 360.0
+		pitch = 180.0
+
 [pose]
 	#Third person, weapon raised: how much of TaCZ's sideways torso twist to keep (0 = torso square with the legs, 1 = TaCZ default).
 	#Range: 0.0 ~ 1.0
@@ -741,4 +759,70 @@
 	#0.90.0: TaCZ NPC soldiers' gun attachments are not drawn beyond this many blocks (0 = always draw).
 	#Range: 0 ~ 256
 	npcAttachmentDistance = 16
+
+[watch]
+	#0.93 wrist check (Y): seconds the watch stays up.
+	#Range: 0.8 ~ 8.0
+	seconds = 2.6
+	#Third person, no gun out: left arm pose [pitch, yaw, roll] in degrees. -90 pitch = straight forward, + yaw = across the chest.
+	armPose = [-70.0, 32.0, 0.0]
+	#Third person, no gun out: head pitch while looking at the watch (degrees, + = down).
+	#Range: -30.0 ~ 80.0
+	headPitch = 28.0
+	#Third person, gun out: degrees ADDED to the left arm's gun pose [pitch, yaw, roll] (a small wrist turn).
+	gunArmTurn = [-14.0, 12.0, 0.0]
+	#Third person, gun out: degrees the head tips down toward the wrist.
+	#Range: -30.0 ~ 60.0
+	gunHeadTip = 12.0
+	#Worn watch: extra pixels of clearance around the wrist (raise it if a jacket sleeve covers the strap).
+	#Range: 0.0 ~ 3.0
+	wornClearance = 0.35
+	#Worn watch: pixels up (-) / down (+) the arm from the wrist.
+	#Range: -6.0 ~ 3.0
+	wornOffsetY = -1.5
+	#Worn watch: where the face sits round the wrist, degrees. 0 = inside of the wrist (faces up while aiming),
+	#90 = toward the body, 180 = back of the wrist, 270 = outer side.
+	#Range: 0.0 ~ 360.0
+	faceAngle = 0.0
+	#Third person, no gun out: head turn toward the watch (degrees, - = left).
+	#Range: -60.0 ~ 60.0
+	headYaw = -10.0
+	#First person, no gun: extra rotation of the raised forearm [x, y, z] in degrees (camera space).
+	fpArmTurn = [50.0, -50.0, 50.0]
+	#First person, no gun: twist of the forearm round its own length, degrees (turns the watch face toward you).
+	#Range: -180.0 ~ 180.0
+	fpTwist = 15.0
+	#First person: degrees your view tips down toward the wrist. 0 = off.
+	#Range: 0.0 ~ 40.0
+	fpViewDip = 8.0
+	#First person, gun out: how far the gun dips (blocks).
+	#Range: 0.0 ~ 1.0
+	fpGunDrop = 0.18
+	#First person, gun out: degrees the gun tips down.
+	#Range: -45.0 ~ 45.0
+	fpGunPitch = 10.0
+	#First person, gun out: degrees the gun cants (+ = to the right, as the support wrist turns).
+	#Range: -60.0 ~ 60.0
+	fpGunRoll = 14.0
+
+#0.93.6: the SCAVENGER faction patch on your right sleeve (pixels of the player model).
+[sleeve_patch]
+	#Top edge of the patch below the shoulder.
+	#Range: -2.0 ~ 8.0
+	y = 0.6
+	#Patch width and height.
+	#Range: 1.0 ~ 6.0
+	size = 3.4
+	#Shift toward the front (+) or back (-) of the arm.
+	#Range: -2.0 ~ 2.0
+	z = 0.0
+	#Gap between the sleeve and the patch, so it never flickers into it.
+	#Range: 0.0 ~ 1.0
+	surface = 0.02
+	#How far out the sleeve of our Survival Essentials jackets is (from the arm's centre line, same for slim and normal skins).
+	#Range: 2.0 ~ 6.0
+	jacketSleeve = 4.0
+	#0.93.8: the same for any other armour on the chest / in the body slot (Ward 11/27: 3.75 sat right on his armour).
+	#Range: 2.0 ~ 6.0
+	armourSleeve = 3.75
 

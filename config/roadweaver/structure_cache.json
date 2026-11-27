@@ -1,5 +1,10 @@
 {
   "dimensions": [
+    "immersive_portals:alternate1",
+    "immersive_portals:alternate2",
+    "immersive_portals:alternate3",
+    "immersive_portals:alternate4",
+    "immersive_portals:alternate5",
     "anomalyzone:klondike",
     "lostcities:lostcity",
     "minecraft:overworld",
@@ -13,7 +18,11 @@
       "displayName": "Ancient City",
       "isVanilla": true,
       "dimensions": [
+        "immersive_portals:alternate1",
+        "immersive_portals:alternate2",
+        "immersive_portals:alternate3",
         "lostcities:lostcity",
+        "immersive_portals:alternate4",
         "minecraft:overworld"
       ]
     },
@@ -30,7 +39,11 @@
       "displayName": "Buried Treasure",
       "isVanilla": true,
       "dimensions": [
+        "immersive_portals:alternate1",
+        "immersive_portals:alternate2",
+        "immersive_portals:alternate3",
         "lostcities:lostcity",
+        "immersive_portals:alternate4",
         "minecraft:overworld"
       ]
     },
@@ -39,7 +52,11 @@
       "displayName": "Desert Pyramid",
       "isVanilla": true,
       "dimensions": [
+        "immersive_portals:alternate1",
+        "immersive_portals:alternate2",
+        "immersive_portals:alternate3",
         "lostcities:lostcity",
+        "immersive_portals:alternate4",
         "minecraft:overworld"
       ]
     },
@@ -64,7 +81,11 @@
       "displayName": "Igloo",
       "isVanilla": true,
       "dimensions": [
+        "immersive_portals:alternate1",
+        "immersive_portals:alternate2",
+        "immersive_portals:alternate3",
         "lostcities:lostcity",
+        "immersive_portals:alternate4",
         "minecraft:overworld"
       ]
     },
@@ -73,7 +94,11 @@
       "displayName": "Jungle Pyramid",
       "isVanilla": true,
       "dimensions": [
+        "immersive_portals:alternate1",
+        "immersive_portals:alternate2",
+        "immersive_portals:alternate3",
         "lostcities:lostcity",
+        "immersive_portals:alternate4",
         "minecraft:overworld"
       ]
     },
@@ -82,7 +107,11 @@
       "displayName": "Mansion",
       "isVanilla": true,
       "dimensions": [
+        "immersive_portals:alternate1",
+        "immersive_portals:alternate2",
+        "immersive_portals:alternate3",
         "lostcities:lostcity",
+        "immersive_portals:alternate4",
         "minecraft:overworld"
       ]
     },
@@ -91,8 +120,13 @@
       "displayName": "Mineshaft",
       "isVanilla": true,
       "dimensions": [
+        "immersive_portals:alternate1",
+        "immersive_portals:alternate2",
+        "immersive_portals:alternate3",
         "lostcities:lostcity",
-        "minecraft:overworld"
+        "immersive_portals:alternate4",
+        "minecraft:overworld",
+        "immersive_portals:alternate5"
       ]
     },
     {
@@ -100,7 +134,11 @@
       "displayName": "Mineshaft Mesa",
       "isVanilla": true,
       "dimensions": [
+        "immersive_portals:alternate1",
+        "immersive_portals:alternate2",
+        "immersive_portals:alternate3",
         "lostcities:lostcity",
+        "immersive_portals:alternate4",
         "minecraft:overworld"
       ]
     },
@@ -109,7 +147,11 @@
       "displayName": "Monument",
       "isVanilla": true,
       "dimensions": [
+        "immersive_portals:alternate1",
+        "immersive_portals:alternate2",
+        "immersive_portals:alternate3",
         "lostcities:lostcity",
+        "immersive_portals:alternate4",
         "minecraft:overworld"
       ]
     },
@@ -127,7 +169,11 @@
       "displayName": "Ocean Ruin Cold",
       "isVanilla": true,
       "dimensions": [
+        "immersive_portals:alternate1",
+        "immersive_portals:alternate2",
+        "immersive_portals:alternate3",
         "lostcities:lostcity",
+        "immersive_portals:alternate4",
         "minecraft:overworld"
       ]
     },
@@ -136,7 +182,11 @@
       "displayName": "Ocean Ruin Warm",
       "isVanilla": true,
       "dimensions": [
+        "immersive_portals:alternate1",
+        "immersive_portals:alternate2",
+        "immersive_portals:alternate3",
         "lostcities:lostcity",
+        "immersive_portals:alternate4",
         "minecraft:overworld"
       ]
     },
@@ -145,8 +195,13 @@
       "displayName": "Pillager Outpost",
       "isVanilla": true,
       "dimensions": [
+        "immersive_portals:alternate1",
+        "immersive_portals:alternate2",
+        "immersive_portals:alternate3",
         "lostcities:lostcity",
-        "minecraft:overworld"
+        "immersive_portals:alternate4",
+        "minecraft:overworld",
+        "immersive_portals:alternate5"
       ]
     },
     {
@@ -154,8 +209,13 @@
       "displayName": "Ruined Portal",
       "isVanilla": true,
       "dimensions": [
+        "immersive_portals:alternate1",
+        "immersive_portals:alternate2",
+        "immersive_portals:alternate3",
         "lostcities:lostcity",
-        "minecraft:overworld"
+        "immersive_portals:alternate4",
+        "minecraft:overworld",
+        "immersive_portals:alternate5"
       ]
     },
     {
@@ -163,7 +223,11 @@
       "displayName": "Ruined Portal Desert",
       "isVanilla": true,
       "dimensions": [
+        "immersive_portals:alternate1",
+        "immersive_portals:alternate2",
+        "immersive_portals:alternate3",
         "lostcities:lostcity",
+        "immersive_portals:alternate4",
         "minecraft:overworld"
       ]
     },
@@ -172,7 +236,11 @@
       "displayName": "Ruined Portal Jungle",
       "isVanilla": true,
       "dimensions": [
+        "immersive_portals:alternate1",
+        "immersive_portals:alternate2",
+        "immersive_portals:alternate3",
         "lostcities:lostcity",
+        "immersive_portals:alternate4",
         "minecraft:overworld"
       ]
     },
@@ -181,7 +249,11 @@
       "displayName": "Ruined Portal Mountain",
       "isVanilla": true,
       "dimensions": [
+        "immersive_portals:alternate1",
+        "immersive_portals:alternate2",
+        "immersive_portals:alternate3",
         "lostcities:lostcity",
+        "immersive_portals:alternate4",
         "minecraft:overworld"
       ]
     },
@@ -198,7 +270,11 @@
       "displayName": "Ruined Portal Ocean",
       "isVanilla": true,
       "dimensions": [
+        "immersive_portals:alternate1",
+        "immersive_portals:alternate2",
+        "immersive_portals:alternate3",
         "lostcities:lostcity",
+        "immersive_portals:alternate4",
         "minecraft:overworld"
       ]
     },
@@ -207,7 +283,11 @@
       "displayName": "Ruined Portal Swamp",
       "isVanilla": true,
       "dimensions": [
+        "immersive_portals:alternate1",
+        "immersive_portals:alternate2",
+        "immersive_portals:alternate3",
         "lostcities:lostcity",
+        "immersive_portals:alternate4",
         "minecraft:overworld"
       ]
     },
@@ -216,7 +296,11 @@
       "displayName": "Shipwreck",
       "isVanilla": true,
       "dimensions": [
+        "immersive_portals:alternate1",
+        "immersive_portals:alternate2",
+        "immersive_portals:alternate3",
         "lostcities:lostcity",
+        "immersive_portals:alternate4",
         "minecraft:overworld"
       ]
     },
@@ -225,7 +309,11 @@
       "displayName": "Shipwreck Beached",
       "isVanilla": true,
       "dimensions": [
+        "immersive_portals:alternate1",
+        "immersive_portals:alternate2",
+        "immersive_portals:alternate3",
         "lostcities:lostcity",
+        "immersive_portals:alternate4",
         "minecraft:overworld"
       ]
     },
@@ -234,8 +322,13 @@
       "displayName": "Stronghold",
       "isVanilla": true,
       "dimensions": [
+        "immersive_portals:alternate1",
+        "immersive_portals:alternate2",
+        "immersive_portals:alternate3",
         "lostcities:lostcity",
-        "minecraft:overworld"
+        "immersive_portals:alternate4",
+        "minecraft:overworld",
+        "immersive_portals:alternate5"
       ]
     },
     {
@@ -243,7 +336,11 @@
       "displayName": "Swamp Hut",
       "isVanilla": true,
       "dimensions": [
+        "immersive_portals:alternate1",
+        "immersive_portals:alternate2",
+        "immersive_portals:alternate3",
         "lostcities:lostcity",
+        "immersive_portals:alternate4",
         "minecraft:overworld"
       ]
     },
@@ -252,7 +349,11 @@
       "displayName": "Trail Ruins",
       "isVanilla": true,
       "dimensions": [
+        "immersive_portals:alternate1",
+        "immersive_portals:alternate2",
+        "immersive_portals:alternate3",
         "lostcities:lostcity",
+        "immersive_portals:alternate4",
         "minecraft:overworld"
       ]
     },
@@ -261,7 +362,11 @@
       "displayName": "Village Desert",
       "isVanilla": true,
       "dimensions": [
+        "immersive_portals:alternate1",
+        "immersive_portals:alternate2",
+        "immersive_portals:alternate3",
         "lostcities:lostcity",
+        "immersive_portals:alternate4",
         "minecraft:overworld"
       ]
     },
@@ -270,8 +375,13 @@
       "displayName": "Village Plains",
       "isVanilla": true,
       "dimensions": [
+        "immersive_portals:alternate1",
+        "immersive_portals:alternate2",
+        "immersive_portals:alternate3",
         "lostcities:lostcity",
-        "minecraft:overworld"
+        "immersive_portals:alternate4",
+        "minecraft:overworld",
+        "immersive_portals:alternate5"
       ]
     },
     {
@@ -279,7 +389,11 @@
       "displayName": "Village Savanna",
       "isVanilla": true,
       "dimensions": [
+        "immersive_portals:alternate1",
+        "immersive_portals:alternate2",
+        "immersive_portals:alternate3",
         "lostcities:lostcity",
+        "immersive_portals:alternate4",
         "minecraft:overworld"
       ]
     },
@@ -288,7 +402,11 @@
       "displayName": "Village Snowy",
       "isVanilla": true,
       "dimensions": [
+        "immersive_portals:alternate1",
+        "immersive_portals:alternate2",
+        "immersive_portals:alternate3",
         "lostcities:lostcity",
+        "immersive_portals:alternate4",
         "minecraft:overworld"
       ]
     },
@@ -297,7 +415,11 @@
       "displayName": "Village Taiga",
       "isVanilla": true,
       "dimensions": [
+        "immersive_portals:alternate1",
+        "immersive_portals:alternate2",
+        "immersive_portals:alternate3",
         "lostcities:lostcity",
+        "immersive_portals:alternate4",
         "minecraft:overworld"
       ]
     },
@@ -500,8 +622,13 @@
       "displayName": "Bridge Bridge 0",
       "isVanilla": false,
       "dimensions": [
+        "immersive_portals:alternate1",
+        "immersive_portals:alternate2",
+        "immersive_portals:alternate3",
         "lostcities:lostcity",
-        "minecraft:overworld"
+        "immersive_portals:alternate4",
+        "minecraft:overworld",
+        "immersive_portals:alternate5"
       ]
     },
     {
@@ -509,8 +636,13 @@
       "displayName": "Bridge Bridge 1",
       "isVanilla": false,
       "dimensions": [
+        "immersive_portals:alternate1",
+        "immersive_portals:alternate2",
+        "immersive_portals:alternate3",
         "lostcities:lostcity",
-        "minecraft:overworld"
+        "immersive_portals:alternate4",
+        "minecraft:overworld",
+        "immersive_portals:alternate5"
       ]
     },
     {
@@ -518,8 +650,13 @@
       "displayName": "Roadside Bench",
       "isVanilla": false,
       "dimensions": [
+        "immersive_portals:alternate1",
+        "immersive_portals:alternate2",
+        "immersive_portals:alternate3",
         "lostcities:lostcity",
-        "minecraft:overworld"
+        "immersive_portals:alternate4",
+        "minecraft:overworld",
+        "immersive_portals:alternate5"
       ]
     },
     {
@@ -527,8 +664,13 @@
       "displayName": "Roadside Campfire",
       "isVanilla": false,
       "dimensions": [
+        "immersive_portals:alternate1",
+        "immersive_portals:alternate2",
+        "immersive_portals:alternate3",
         "lostcities:lostcity",
-        "minecraft:overworld"
+        "immersive_portals:alternate4",
+        "minecraft:overworld",
+        "immersive_portals:alternate5"
       ]
     },
     {
@@ -536,8 +678,13 @@
       "displayName": "Roadside Campsite 1",
       "isVanilla": false,
       "dimensions": [
+        "immersive_portals:alternate1",
+        "immersive_portals:alternate2",
+        "immersive_portals:alternate3",
         "lostcities:lostcity",
-        "minecraft:overworld"
+        "immersive_portals:alternate4",
+        "minecraft:overworld",
+        "immersive_portals:alternate5"
       ]
     },
     {
@@ -545,8 +692,13 @@
       "displayName": "Roadside Campsite 2",
       "isVanilla": false,
       "dimensions": [
+        "immersive_portals:alternate1",
+        "immersive_portals:alternate2",
+        "immersive_portals:alternate3",
         "lostcities:lostcity",
-        "minecraft:overworld"
+        "immersive_portals:alternate4",
+        "minecraft:overworld",
+        "immersive_portals:alternate5"
       ]
     },
     {
@@ -554,8 +706,13 @@
       "displayName": "Roadside Campsite 3",
       "isVanilla": false,
       "dimensions": [
+        "immersive_portals:alternate1",
+        "immersive_portals:alternate2",
+        "immersive_portals:alternate3",
         "lostcities:lostcity",
-        "minecraft:overworld"
+        "immersive_portals:alternate4",
+        "minecraft:overworld",
+        "immersive_portals:alternate5"
       ]
     },
     {
@@ -563,8 +720,13 @@
       "displayName": "Roadside Maid House",
       "isVanilla": false,
       "dimensions": [
+        "immersive_portals:alternate1",
+        "immersive_portals:alternate2",
+        "immersive_portals:alternate3",
         "lostcities:lostcity",
-        "minecraft:overworld"
+        "immersive_portals:alternate4",
+        "minecraft:overworld",
+        "immersive_portals:alternate5"
       ]
     },
     {
@@ -572,8 +734,13 @@
       "displayName": "Roadside Sakura Coffee House",
       "isVanilla": false,
       "dimensions": [
+        "immersive_portals:alternate1",
+        "immersive_portals:alternate2",
+        "immersive_portals:alternate3",
         "lostcities:lostcity",
-        "minecraft:overworld"
+        "immersive_portals:alternate4",
+        "minecraft:overworld",
+        "immersive_portals:alternate5"
       ]
     },
     {
@@ -581,8 +748,13 @@
       "displayName": "Spawn Cabin",
       "isVanilla": false,
       "dimensions": [
+        "immersive_portals:alternate1",
+        "immersive_portals:alternate2",
+        "immersive_portals:alternate3",
         "lostcities:lostcity",
-        "minecraft:overworld"
+        "immersive_portals:alternate4",
+        "minecraft:overworld",
+        "immersive_portals:alternate5"
       ]
     },
     {
@@ -590,8 +762,13 @@
       "displayName": "Stone Bridge Shiqiao",
       "isVanilla": false,
       "dimensions": [
+        "immersive_portals:alternate1",
+        "immersive_portals:alternate2",
+        "immersive_portals:alternate3",
         "lostcities:lostcity",
-        "minecraft:overworld"
+        "immersive_portals:alternate4",
+        "minecraft:overworld",
+        "immersive_portals:alternate5"
       ]
     },
     {
@@ -611,7 +788,11 @@
       "displayName": "Wood Bridge Jinhehuan",
       "isVanilla": false,
       "dimensions": [
+        "immersive_portals:alternate1",
+        "immersive_portals:alternate2",
+        "immersive_portals:alternate3",
         "lostcities:lostcity",
+        "immersive_portals:alternate4",
         "minecraft:overworld"
       ]
     },
@@ -620,7 +801,11 @@
       "displayName": "Wood Bridge Shensexiangmu",
       "isVanilla": false,
       "dimensions": [
+        "immersive_portals:alternate1",
+        "immersive_portals:alternate2",
+        "immersive_portals:alternate3",
         "lostcities:lostcity",
+        "immersive_portals:alternate4",
         "minecraft:overworld"
       ]
     },
@@ -629,7 +814,11 @@
       "displayName": "Wood Bridge Yinghuamu",
       "isVanilla": false,
       "dimensions": [
+        "immersive_portals:alternate1",
+        "immersive_portals:alternate2",
+        "immersive_portals:alternate3",
         "lostcities:lostcity",
+        "immersive_portals:alternate4",
         "minecraft:overworld"
       ]
     },
@@ -638,7 +827,11 @@
       "displayName": "Wood Bridge Zhuzi",
       "isVanilla": false,
       "dimensions": [
+        "immersive_portals:alternate1",
+        "immersive_portals:alternate2",
+        "immersive_portals:alternate3",
         "lostcities:lostcity",
+        "immersive_portals:alternate4",
         "minecraft:overworld"
       ]
     },
@@ -647,8 +840,13 @@
       "displayName": "Way Sign",
       "isVanilla": false,
       "dimensions": [
+        "immersive_portals:alternate1",
+        "immersive_portals:alternate2",
+        "immersive_portals:alternate3",
         "lostcities:lostcity",
-        "minecraft:overworld"
+        "immersive_portals:alternate4",
+        "minecraft:overworld",
+        "immersive_portals:alternate5"
       ]
     }
   ],

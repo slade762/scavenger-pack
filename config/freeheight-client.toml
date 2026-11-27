@@ -1,0 +1,3 @@
+#Desplaza tambien el dibujo de cofres, camas, carteles, etc. Desactivar si hay incompatibilidades.
+wrapBlockEntityRenderers = true
+

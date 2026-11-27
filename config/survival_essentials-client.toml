@@ -47,6 +47,27 @@ hideBlockOutline = true
 	z = 0.19
 	#Range: 0.1 ~ 2.0
 	scale = 1.0
+	#1.6 Expedition Pack: same as z
+	#Range: -1.0 ~ 2.0
+	expeditionZ = 0.17
+	#1.6.1 Expedition Pack: where its top sits (- = above the shoulders; Ward 11/26: 3 px higher than the day pack)
+	#Range: -1.0 ~ 2.0
+	expeditionTop = -0.1575
+	#1.6.1 With an Expedition Pack on, the bag / bedroll / radio on top of it goes up this much (blocks; 0.21875 = 3.5 px)
+	#Range: -1.0 ~ 1.0
+	expeditionAccessoryRaise = 0.21875
+	#1.6.1 With an Expedition Pack on, the artifact container moves this many pixels (- = up)
+	#Range: -16.0 ~ 16.0
+	expeditionContainerY = -3.0
+	#1.6.1 ...and this many pixels further out (the pack is deeper)
+	#Range: -16.0 ~ 16.0
+	expeditionContainerZ = 0.75
+	#1.7.1 With an Expedition Pack on, the bag / bedroll / radio on top of it also moves this much further from the back (blocks; 0.0625 = 1 px)
+	#Range: -1.0 ~ 1.0
+	expeditionAccessoryBack = 0.0625
+	#1.7.6 On the day backpack, the ammo bag sits this much higher than the other bags (blocks; 0.03125 = 0.5 px)
+	#Range: -0.5 ~ 0.5
+	dayPackAmmoBagRaise = 0.03125
 
 #Anomaly Zone artifact container (1.4.0): with a backpack, strapped onto the pack's outer face; without one, on the upper back (no hip belt).
 #Pixels from the top of the body (16 = 1 block). x: + = left, y: + = down (top edge of the container), z: + = further back
@@ -67,4 +88,19 @@ hideBlockOutline = true
 	#No backpack worn: extra distance from the back (added to Anomaly Zone's armour-aware gap)
 	#Range: -16.0 ~ 16.0
 	zNoBackpack = 0.0
+
+#1.6 herb pouch on the belt, front right. Blocks from the neck: x: - = the player's right, y: + = down (top of the pouch), z: - = in front
+[herbPouch]
+	#Range: -1.0 ~ 1.0
+	x = -0.15
+	#Range: -1.0 ~ 2.0
+	y = 0.62
+	#In front of the body, nothing over the chest
+	#Range: -1.0 ~ 1.0
+	z = -0.135
+	#In front of the body while a jacket / chest armour is worn
+	#Range: -1.0 ~ 1.0
+	zJacket = -0.21
+	#Range: 0.1 ~ 2.0
+	scale = 0.55
 

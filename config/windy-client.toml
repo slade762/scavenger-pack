@@ -1,0 +1,64 @@
+
+#How much wind there is and how far it reaches.
+[general]
+	#Master switch for the living wind.
+	enabled = true
+	#How much of the wind you see per tick. OFF stops it entirely.
+	#Allowed Values: OFF, SUBTLE, NORMAL, LIVELY
+	intensity = "NORMAL"
+	#How far around you the wind is drawn, in blocks.
+	#Range: 8 ~ 48
+	radius = 18
+	#How often the wind gathers into a gust, as a percentage. 0 keeps the world calm.
+	#Range: 0 ~ 100
+	gustiness = 65
+
+#Individual wind effects.
+[effects]
+	#Long flowing ribbons of air that snake downwind and follow the land over hills.
+	stripes = true
+	#Tiny specks tumbling in the current, everywhere the wind reaches.
+	motes = true
+	#Pale streaks that ride the wind while a gust is up.
+	wisps = true
+	#Leaves pulled from tree canopies, tinted to each biome's own foliage.
+	leaves = true
+	#Snow whipped near-horizontal while it snows in cold biomes.
+	snow = true
+	#Dry motes lifted off sand in hot, rainless biomes.
+	dust = true
+
+#Ambient motes that hang in the air of each biome.
+[ambient]
+	#Master switch for the ambient biome motes.
+	enabled = true
+	#How much living air to emit. OFF stops it entirely.
+	#Allowed Values: OFF, SUBTLE, LUSH, DENSE
+	density = "LUSH"
+	#Radius of the sphere around you that motes appear in, in blocks.
+	#Range: 8 ~ 64
+	radius = 18
+	#Warm motes over swamps and forests after dark.
+	fireflies = true
+	#Spores drifting through jungles, flower forests and lush caves by day.
+	pollen = true
+	#Fine ash skidding across deserts, badlands and savannas.
+	heatDust = true
+	#Embers, flame flecks and smoke near lava and in the volcanic Nether.
+	embers = true
+	#Sparkling snow motes on frozen peaks and snowy biomes.
+	snowSparkle = true
+	#Blossom petals swirling through cherry groves.
+	cherryPetals = true
+	#Fireflies come out at dusk; spores and dust show by day.
+	dayNightAware = true
+	#Fade outdoor motes out during rain and thunder.
+	weatherAware = true
+	#Damp outdoor motes when you can't see the sky (indoors / deep underground).
+	respectEnclosure = true
+
+#How Windy behaves alongside vanilla settings.
+[compatibility]
+	#Ease off when the vanilla particle setting is Decreased, and stop on Minimal.
+	respectVanillaParticleSetting = true
+
