@@ -47,10 +47,10 @@
 	#The proximity which constitutes near a heat or cool source
 	near_heat_cool_proximity = 8
 
-# SCAVENGER (Ward 11/25): thirst first, temperature off for now. Tough As Nails fills in the other keys on first boot.
+# SCAVENGER (Ward 11/26): temperature ON in Dev for the jacket test (gentle). Tough As Nails fills in the other keys on first boot.
 [toggles]
 	#Enable or disable temperature.
-	enable_temperature = false
+	enable_temperature = true
 
 [time]
 	#Amount to change the temperature at night when the original temperature is hot.
