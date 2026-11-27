@@ -150,7 +150,7 @@ hash = "b0fa9ec5d41f666fa2c770bb2bde4753cbeeef76909f4765d6ebbf5683c4ae58"
 
 [[files]]
 file = "config/cinematic_respawn.properties"
-hash = "629da6528b2574e206e2e13cc4c157dac0154d7e738cc6398baf5f47cac457da"
+hash = "d8c8c5d61268711b16d3128891bc0e93fd0136e78821ec8d6e3cf2be8e09fc54"
 
 [[files]]
 file = "config/cinematic-client.toml"
@@ -346,7 +346,7 @@ hash = "13aee892d000bdd43d88178fbcaa96549f28ae4ae528e1f1eacaf791742f9ec6"
 
 [[files]]
 file = "config/fabric/indigo-renderer.properties"
-hash = "7fceaa9cdb83d5e02f9d429e33a771f0d66483f5a74491262e9d66e080fa21b0"
+hash = "5349d6c961faf3326867ed0de085ad2a0f7a8d8034d3a68c3ce1ffda1ee1d28f"
 
 [[files]]
 file = "config/fallingleaves-client.toml"
@@ -538,7 +538,7 @@ hash = "6a455b11a74f6dfe1a41e8aff866bde270aca2a34ba752f350c1ba9daf5adb89"
 
 [[files]]
 file = "config/handson_delight.properties"
-hash = "a4c461070fad691dc9e04d5f4d39cf26dc48246d91e83679e59eff9581cf6cb3"
+hash = "cec92d5169377f8e1db6d13facf6dc9a1bee8f2fa8aa84fadde8b7b68c707c30"
 
 [[files]]
 file = "config/handson_delight-book.properties"
@@ -1898,7 +1898,7 @@ hash = "6a91c09d1cabc1980d90ab102a03ec58c0551213ab16a459b599d768b334d054"
 
 [[files]]
 file = "config/jei/recipe-category-sort-order.ini"
-hash = "49ea5f077683c7cd6aa4909e3fce4f1c3930fd370cbad7e7cbf5137d575abd83"
+hash = "67ecd0a9bd49bc03f7e49304d0cc372c297df002c60bbe7841f0a2bb6a3dcee8"
 
 [[files]]
 file = "config/jei/world/server/S_C_A_V_E_N_G_E_R_ (66_51_98_61 25550)/bookmarks.json"
@@ -2126,11 +2126,11 @@ hash = "f72dc2bce12a55066bd33e50c47b1ad33b1bdda65778cb5653d876e1fec3694d"
 
 [[files]]
 file = "config/oculus.properties"
-hash = "c0dc18846d55b773d2cbb3f90a6023b086d2f97f12a2d34c031ab58662b453ae"
+hash = "28aa09a90f047b8aa25ed1dc545ecfe889cac68d073556eb54bd4d68e12c5aab"
 
 [[files]]
 file = "config/packetfixer.properties"
-hash = "13dd0698f8698e79b99a1ad779d9ab4ab76eb16c83747013ceadf9454511713e"
+hash = "1f2f8888d4fbdc47d13eb3a7a34ff8841854c022beedab4b35b4d08a76729d1e"
 
 [[files]]
 file = "config/particle_core_config.toml"
@@ -6195,11 +6195,6 @@ hash = "64b424188c6d028f26c8f2ad40c4a5df875dce0c15bdab607dea5fb137182817"
 metafile = true
 
 [[files]]
-file = "mods/first-person-immersive-audio.pw.toml"
-hash = "e91c490921706437741f327fd615cac992d04b48fa7d46948b5e6e9d01e76fb5"
-metafile = true
-
-[[files]]
 file = "mods/footsteps-trail-1.5.2-1.20.1-forge.jar"
 hash = "3de983d6bede7b19bf0050ff26ffa9a4e5204efae2dd43c1c3b09a931a246652"
 
@@ -6826,10 +6821,6 @@ file = "mods/watut-forge-1.20.1-1.2.3.jar"
 hash = "19a7291187e1074dac0ade56f95cdb84936e8563c55afdc0b86c90ea7cd80a9e"
 
 [[files]]
-file = "mods/windy-forge-1.20.1.jar"
-hash = "9210693fcdb06d785b31ead96e597a63001adcc8839f4fdebc9d7b5eaf7fadf2"
-
-[[files]]
 file = "mods/worldedit-mod-7-2-15.pw.toml"
 hash = "8ccf7320293a993c717c6894348e07ba3507f3d467521ef9cb605d31ac3536d3"
 metafile = true
@@ -6914,7 +6905,7 @@ hash = "a6650046adc444759514ced28e03b851bdc6bd8de45d446ecfbc52b3edfb2eba"
 
 [[files]]
 file = "shaderpacks/SCAVENGER-Shader-2.0.zip.txt"
-hash = "ab897e791e9a09bc0b093d4e95afb7b1b775dd9b449272faad5187e3f108bbb6"
+hash = "acfd0bec974efccf9e1f720febda3fb370e68ba4acb264cbd59072beb1333923"
 
 [[files]]
 file = "tacz/.export-state.json"
