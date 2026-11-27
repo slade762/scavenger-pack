@@ -1,0 +1,9 @@
+{
+  "animation_render_distance": "48",
+  "infinite_animation_render_distance": "20",
+  "shadow_animation_render_distance": "0.0",
+  "door_easing": "SPRINGY",
+  "lantern_state": "false",
+  "chain_state": "false",
+  "hanging_sign_state": "false"
+}

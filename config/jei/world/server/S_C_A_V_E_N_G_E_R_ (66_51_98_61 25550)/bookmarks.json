@@ -1,4 +1,5 @@
 [
   {"version":1},
-  {"type":"item_stack","value":"{Count:1b,id:\"minecraft:dirt\"}"}
+  {"type":"item_stack","value":"{Count:1b,id:\"minecraft:dirt\"}"},
+  {"type":"item_stack","value":"{Count:1b,id:\"brimm:sobr_kit_b\",tag:{Damage:13,itemModifier:\"modifiers:violent\"}}"}
 ]

@@ -427,7 +427,7 @@
 	#Shaders: players' slung (back) guns cast a shadow. false = no back gun in the shadow (cheaper).
 	backGunShadow = false
 	#TaCZ NPCs (scavengers, bandits, military) put their gun away when they are not fighting: no gun drawn until they aim or get hurt. Also a big FPS saving where NPCs gather.
-	npcIdleHolster = false
+	npcIdleHolster = true
 	#Seconds a TaCZ NPC keeps its gun out after it last aimed or was hurt.
 	#Range: 1 ~ 120
 	npcCombatSeconds = 10
